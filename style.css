@@ -41,6 +41,26 @@ button:disabled{opacity:.35;cursor:default}
 .list-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px}
 .list-head h2{font-size:20px;letter-spacing:-.4px;margin:0}
 .chip-button{background:var(--card);border:1px solid var(--border);color:var(--accent);border-radius:999px;padding:8px 14px;font-size:13px;font-weight:600}
+.list-tools{display:flex;gap:6px}
+.list-tools .chip-button{padding:8px 11px}
+.chip-button.active{background:var(--accent);color:var(--accentText);border-color:var(--accent)}
+body.sorting #toggleCompact,body.sorting #addZikir{display:none}
+.sort-hint{font-size:12px;color:var(--muted);margin:4px 0 0;line-height:1.5}
+
+/* Sade görünüm */
+body.compact .zikir:not(.sort-row) .arabic,body.compact .zikir:not(.sort-row) .translit,body.compact .zikir:not(.sort-row) .meaning,body.compact .zikir:not(.sort-row) .category{display:none}
+body.compact .zikir{padding:15px 16px;margin:9px 0}
+body.compact .zikir .bar{margin:11px 0}
+body.compact .tap{padding:12px}
+
+/* Sıralama modu */
+.sort-row{display:flex;align-items:center;gap:10px;padding:12px 12px 12px 6px;margin:8px 0;transform:translateY(var(--dy,0));will-change:transform}
+.sort-row .category{margin-top:3px}
+.handle{width:40px;height:44px;display:grid;place-items:center;font-size:22px;color:var(--muted);touch-action:none;cursor:grab;flex:none;-webkit-user-select:none;user-select:none}
+.arrow{width:40px;height:40px;border-radius:11px;border:1px solid var(--border);background:transparent;color:var(--text);font-size:17px;flex:none;padding:0}
+.sort-row.dragging{position:relative;z-index:5;box-shadow:0 12px 30px rgb(0 0 0 / .3);border-color:var(--accent);transition:none;cursor:grabbing}
+.sort-row.moved{animation:flash .6s ease}
+@keyframes flash{0%{border-color:var(--accent);background:var(--hero)}100%{}}
 .empty{color:var(--muted);font-size:14px;text-align:center;padding:20px}
 .zikir{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:20px;margin:12px 0;transition:border-color .3s}
 .zikir.done{border-color:var(--accent)}

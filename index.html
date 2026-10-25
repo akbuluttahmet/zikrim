@@ -49,8 +49,13 @@
   <section class="list">
     <div class="list-head">
       <h2>Zikirlerim</h2>
-      <button id="addZikir" class="chip-button">＋ Yeni zikir</button>
+      <div class="list-tools">
+        <button id="toggleCompact" class="chip-button" aria-pressed="false" title="Kartlarda yalnızca ad ve sayaç">☰ Sade</button>
+        <button id="toggleSort" class="chip-button">⇅ Sırala</button>
+        <button id="addZikir" class="chip-button" aria-label="Yeni zikir">＋ Yeni</button>
+      </div>
     </div>
+    <p class="sort-hint" id="sortHint" hidden>≡ tutamacından sürükle ya da okları kullan. Bitince “Bitti”ye dokun.</p>
     <div id="cards"></div>
     <p class="empty" id="empty" hidden>Henüz zikir yok. “Yeni zikir” ile ekleyebilir ya da ayarlardan varsayılanları geri yükleyebilirsin.</p>
   </section>
@@ -132,7 +137,7 @@
     <button type="button" id="restoreDefaults" class="ghost">Varsayılan zikirler</button>
   </div>
   <div class="row"><button type="button" id="closeSettings" class="primary">Tamam</button></div>
-  <p class="note center">Zikrim · sürüm 2</p>
+  <p class="note center">Zikrim · sürüm 2.1</p>
 </dialog>
 
 <div id="toast" role="status" aria-live="polite"></div>
