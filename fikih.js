@@ -347,3 +347,337 @@ const FIQH_BOOKS = [
   ['Keşşâfü’l-Kınâ‘', 'el-Behûtî (ö. 1051)', 'el-İknâ‘ şerhi; ileri seviye.'],
   ['Ahsarü’l-Muhtasarât', 'İbn Belbân (ö. 1083)', 'En kısa muhtasarlardan; ezber için.']
 ];
+
+/* Deliller: her konu için ayet veya hadis (Türkçe anlamı) ve kaynağı.
+   Anahtar: "bölüm no:konu başlığı". Hadis numaraları yaygın baskılara göredir
+   (Buhârî ve Müslim: M. F. Abdülbâkî numaralandırması). */
+const DELIL = {
+  '1:Sular': [
+    'Su temizdir, onu hiçbir şey necis kılmaz. — Ebû Dâvûd 66; Tirmizî 66',
+    'Su iki kulle olunca necaset taşımaz. — Ebû Dâvûd 63; Tirmizî 67',
+    'Altın ve gümüş kaplardan içmeyin, onların tabaklarından yemeyin; bunlar dünyada onlar için, ahirette sizin içindir. — Buhârî 5426; Müslim 2067'
+  ],
+  '1:Tuvalet Âdabı ve İstincâ': [
+    'Enes: Peygamber helaya girerken “Allâhümme innî e‘ûzü bike mine’l-hubsi ve’l-habâis” derdi. — Buhârî 142; Müslim 375',
+    'Def-i hacette kıbleye yönelmeyin, ona arkanızı da dönmeyin. — Buhârî 144; Müslim 264',
+    'Biriniz def-i hacete gittiğinde yanında üç taş götürsün; bunlar ona yeter. — Ebû Dâvûd 40; Nesâî 44'
+  ],
+  '1:Abdest': [
+    '“Ey iman edenler! Namaza kalkacağınız zaman yüzlerinizi, dirseklere kadar ellerinizi yıkayın, başlarınızı meshedin ve topuklara kadar ayaklarınızı yıkayın.” — Mâide 5/6',
+    'Ameller ancak niyetlere göredir. — Buhârî 1; Müslim 1907',
+    'Allah’ın adını anmayanın abdesti yoktur. — Ebû Dâvûd 101; İbn Mâce 399',
+    'Peygamber, ayağında kuru bir yer kalan adama abdestini yeniden almasını emretti (muvâlâtın delili). — Ebû Dâvûd 175'
+  ],
+  '1:Mest ve Sargı Üzerine Mesh': [
+    'Ali: Resûlullah yolcu için üç gün üç gece, mukim için bir gün bir gece süre belirledi. — Müslim 276',
+    'Muğîre: Mestlerini çıkarmak istedim; “Bırak, ben onları temiz olarak giydim” dedi ve üzerlerine meshetti. — Buhârî 206; Müslim 274',
+    'Peygamber alnına, sarığına ve mestlerine meshetti. — Müslim 274'
+  ],
+  '1:Abdesti Bozanlar': [
+    'Câbir b. Semüre: “Deve etinden abdest alalım mı?” denildi; “Evet” buyurdu. — Müslim 360',
+    'Zekerine dokunan abdest alsın. — Ebû Dâvûd 181; Tirmizî 82',
+    '“…ya da kadınlara dokunduysanız…” — Nisâ 4/43',
+    'Gözler makadın bağıdır; uyuyan abdest alsın. — Ebû Dâvûd 203'
+  ],
+  '1:Gusül': [
+    'Kadının dört uzvu arasına oturup zorladığında gusül vacip olur. — Buhârî 291; Müslim 348',
+    'Su (gusül), sudan (meniden) dolayıdır. — Müslim 343',
+    'Kays b. Âsım Müslüman olunca Peygamber ona gusletmesini emretti. — Ebû Dâvûd 355; Tirmizî 605'
+  ],
+  '1:Teyemmüm': [
+    '“…su bulamazsanız temiz bir toprakla teyemmüm edin; yüzlerinize ve ellerinize meshedin.” — Mâide 5/6',
+    'Yeryüzü bana mescit ve temizleyici kılındı. — Buhârî 335; Müslim 521',
+    'Ammâr hadisi: Peygamber ellerini yere bir kez vurup yüzüne ve ellerine meshetti. — Buhârî 347; Müslim 368'
+  ],
+  '1:Necasetin Giderilmesi': [
+    'Köpek birinizin kabını yaladığında temizliği, ilki toprakla olmak üzere yedi kez yıkamaktır. — Müslim 279',
+    'Kız çocuğunun idrarı yıkanır, erkek çocuğun idrarına su serpilir. — Ebû Dâvûd 376; Nesâî 304',
+    'Ureyneliler kıssası: Peygamber onlara develerin sütünden ve sidiğinden içmelerini emretti. — Buhârî 233; Müslim 1671'
+  ],
+  '1:Hayız ve Nifas': [
+    'Hayız geldiğinde namazı bırak; gidince kanı yıka ve namaz kıl. — Buhârî 306; Müslim 333',
+    'Âişe: Orucu kaza etmekle emrolunurduk, namazı kaza etmekle emrolunmazdık. — Müslim 335',
+    'Ümmü Seleme: Lohusalar Peygamber zamanında kırk gün beklerdi. — Ebû Dâvûd 311; Tirmizî 139'
+  ],
+
+  '2:Hükmü ve Vakitleri': [
+    'Çocuklarınıza yedi yaşında namazı emredin, on yaşında (kılmazlarsa) dövün. — Ebû Dâvûd 495',
+    'Kişi ile şirk ve küfür arasında namazın terki vardır. — Müslim 82',
+    'Öğlenin vakti güneş zevale erdiğinde başlar… sabahın vakti fecirden güneş doğana kadardır. — Müslim 612',
+    'Cibrîl’in iki gün imamlık ederek vakitlerin başını ve sonunu göstermesi. — Ebû Dâvûd 393; Tirmizî 149'
+  ],
+  '2:Ezan ve Kamet': [
+    'Namaz vakti girince biriniz size ezan okusun, en büyüğünüz imam olsun. — Buhârî 628; Müslim 674',
+    'Abdullah b. Zeyd’in rüyasında ezan ve kametin öğretilmesi. — Ebû Dâvûd 499'
+  ],
+  '2:Namazın Şartları': [
+    '“Her namaz yerinde ziynetinizi (elbisenizi) alın.” — A‘râf 7/31',
+    'Allah ergenlik çağına girmiş kadının namazını başörtüsü olmadan kabul etmez. — Ebû Dâvûd 641; Tirmizî 377',
+    'Biriniz omzunda bir şey olmadan tek elbiseyle namaz kılmasın. — Buhârî 359; Müslim 516',
+    '“Yüzünü Mescid-i Haram tarafına çevir.” — Bakara 2/144'
+  ],
+  '2:Namazın Rükünleri': [
+    'Namazını yanlış kılan adam hadisi: “Kalk, namaz kıl; sen namaz kılmadın” ve rükünlerin öğretilmesi. — Buhârî 757; Müslim 397',
+    'Fatiha’yı okumayanın namazı yoktur. — Buhârî 756; Müslim 394',
+    'Namazın anahtarı temizlik, girişi tekbir, çıkışı selamdır. — Ebû Dâvûd 61; Tirmizî 3'
+  ],
+  '2:Namazın Vacipleri': [
+    'Beni nasıl namaz kılarken gördüyseniz öyle kılın. — Buhârî 631',
+    'Huzeyfe: Peygamber rükûda “Sübhâne Rabbiye’l-Azîm”, secdede “Sübhâne Rabbiye’l-A‘lâ” derdi. — Müslim 772',
+    'İbn Buhayne: Peygamber ilk teşehhüdü unutup kalktı, selamdan önce iki secde yaptı. — Buhârî 829; Müslim 570'
+  ],
+  '2:Namazın Sünnetleri': [
+    'İbn Ömer: Peygamber namaza başlarken, rükûya giderken ve rükûdan kalkarken ellerini omuz hizasına kaldırırdı. — Buhârî 735; Müslim 390',
+    'Vâil b. Hucr: Peygamber sağ elini sol elinin üzerine koyardı. — Müslim 401',
+    'Ebû Humeyd: Son teşehhüdde sol ayağını öne çıkarıp kalçası üzerine otururdu (teverrük). — Buhârî 828'
+  ],
+  '2:Namazı Bozanlar': [
+    'Bu namazda insan sözünden hiçbir şey uygun düşmez; o ancak tesbih, tekbir ve Kur’an okumaktır. — Müslim 537',
+    'Önünde sütre olmayanın namazını kadın, eşek ve siyah köpek keser… Siyah köpek şeytandır. — Müslim 510 (Mezhep, Âişe’nin itirazı sebebiyle yalnızca siyah köpekle amel eder.)'
+  ],
+  '2:Sehiv Secdesi': [
+    'Biriniz namazında şüphe ederse şüpheyi atsın, kesin olana göre devam etsin, sonra selamdan önce iki secde yapsın. — Müslim 571',
+    'Zü’l-Yedeyn hadisi: Peygamber iki rekâtta selam verdi, sonra tamamlayıp selamdan sonra iki secde yaptı. — Buhârî 1229; Müslim 573'
+  ],
+  '2:Nafile Namazlar': [
+    'İbn Ömer: Peygamber’den on rekât ezberledim… — Buhârî 1180',
+    'Âişe: Peygamber hiçbir nafileye sabahın iki rekâtına gösterdiği kadar özen göstermezdi. — Buhârî 1169; Müslim 724',
+    'Vitir her Müslümanın üzerine bir haktır. — Ebû Dâvûd 1422',
+    'Ukbe b. Âmir: Peygamber bizi üç vakitte namaz kılmaktan ve ölülerimizi gömmekten nehyederdi… — Müslim 831',
+    'Kim bir namazı unutursa hatırlayınca kılsın. — Buhârî 597; Müslim 684'
+  ],
+  '2:Cemaatle Namaz ve İmamlık': [
+    'Namaza çıkmayanların evlerini yakmayı düşündüm. — Buhârî 644; Müslim 651',
+    'Âmâ adama: “Ezanı işitiyor musun? Öyleyse icabet et.” — Müslim 653',
+    'Topluluğa Allah’ın Kitabını en iyi okuyan imam olur. — Müslim 673'
+  ],
+  '2:Mazeret Sahiplerinin Namazı': [
+    'Ayakta kıl; gücün yetmezse oturarak, yine yetmezse yan üstü. — Buhârî 1117',
+    '“Yeryüzünde yolculuğa çıktığınızda namazı kısaltmanızda size bir günah yoktur.” — Nisâ 4/101',
+    'Muâz: Peygamber Tebük seferinde öğle ile ikindiyi, akşam ile yatsıyı birleştirdi. — Müslim 706'
+  ],
+  '2:Cuma Namazı': [
+    '“Ey iman edenler! Cuma günü namaz için çağrı yapıldığında Allah’ı anmaya koşun ve alışverişi bırakın.” — Cum‘a 62/9',
+    'Cuma, köle, kadın, çocuk ve hasta dışında her Müslümana cemaatle vacip bir haktır. — Ebû Dâvûd 1067',
+    'Câbir b. Semüre: Peygamber’in iki hutbesi vardı, aralarında otururdu. — Müslim 862'
+  ],
+  '2:Bayram, Küsûf ve İstiskâ Namazları': [
+    '“Rabbin için namaz kıl ve kurban kes.” — Kevser 108/2',
+    'Bayram namazında tekbir, birinci rekâtta yedi, ikincide beştir. — Ebû Dâvûd 1151',
+    'Âişe: Güneş tutulduğunda Peygamber iki rekâtta dört rükû ve dört secde ile namaz kıldı. — Buhârî 1044; Müslim 901',
+    'Abdullah b. Zeyd: Peygamber yağmur duasına çıktı, kıbleye döndü, ridâsını çevirdi ve iki rekât kıldı. — Buhârî 1024; Müslim 894'
+  ],
+
+  '3:Hükümler': [
+    'Ölmek üzere olanlarınıza “lâ ilâhe illallâh”ı telkin edin. — Müslim 916',
+    'Âişe: Resûlullah üç beyaz Yemen bezine kefenlendi. — Buhârî 1264; Müslim 941',
+    'Peygamber Necâşî için dört tekbirle cenaze namazı kıldı. — Buhârî 1245; Müslim 951',
+    'İbn Abbas cenaze namazında Fatiha okudu ve “Sünnet olduğunu bilesiniz diye” dedi. — Buhârî 1335',
+    'Câbir: Peygamber kabrin sıvanmasını, üzerine oturulmasını ve bina yapılmasını yasakladı. — Müslim 970',
+    'Yanaklarına vuran, yakasını yırtan ve cahiliye çağrısıyla çağıran bizden değildir. — Buhârî 1294; Müslim 103'
+  ],
+
+  '4:Şartları ve Zekâta Tabi Mallar': [
+    '“Onların mallarından sadaka al; onunla onları temizler ve arındırırsın.” — Tevbe 9/103',
+    'Üzerinden yıl geçmedikçe malda zekât yoktur. — Ebû Dâvûd 1573; İbn Mâce 1792'
+  ],
+  '4:Altın, Gümüş ve Ticaret Malı': [
+    'Beş ukiyyeden (200 dirhem) az gümüşte zekât yoktur. — Buhârî 1447; Müslim 979',
+    'Ali: Yirmi dinarda yarım dinar zekât vardır. — Ebû Dâvûd 1573',
+    'Semüre: Peygamber, satış için hazırladığımız şeylerden zekât vermemizi emrederdi. — Ebû Dâvûd 1562',
+    'Âişe, himayesindeki yetimlerin ziynet eşyasının zekâtını vermezdi. — Muvatta’, Kitâbü’z-Zekât'
+  ],
+  '4:Toprak Ürünleri': [
+    'Beş vesk’ten az (hurma ve tahılda) zekât yoktur. — Buhârî 1447; Müslim 979',
+    'Yağmurun ve pınarların suladığında onda bir, sulamayla (hayvanla) sulananda yirmide bir vardır. — Buhârî 1483'
+  ],
+  '4:Fıtır Sadakası': [
+    'İbn Ömer: Peygamber fıtır sadakasını bir sâ‘ hurma veya bir sâ‘ arpa olarak farz kıldı ve namaza çıkmadan önce verilmesini emretti. — Buhârî 1503; Müslim 984',
+    'Ebû Saîd: Onu bir sâ‘ yiyecek, bir sâ‘ arpa, bir sâ‘ hurma, bir sâ‘ keş veya bir sâ‘ kuru üzüm olarak verirdik. — Buhârî 1506; Müslim 985',
+    'İbn Ömer bayramdan bir iki gün önce verirdi. — Buhârî 1511'
+  ],
+  '4:Zekâtın Verileceği Yerler': [
+    '“Sadakalar ancak fakirler, düşkünler, zekât memurları, kalpleri ısındırılacaklar, köleler, borçlular, Allah yolundakiler ve yolcular içindir.” — Tevbe 9/60',
+    'Sadaka Muhammed ailesine helal değildir; o insanların kirleridir. — Müslim 1072'
+  ],
+
+  '5:Ramazan’ın Başlaması ve Niyet': [
+    'Onu (hilali) görünce oruç tutun, görünce bayram yapın; hava kapalı olursa onun için takdir edin. — Buhârî 1900; Müslim 1080 (Mezhebin delili, ravi İbn Ömer’in bulutlu gecede oruç tutmasıdır.)',
+    'Fecirden önce orucu niyet etmeyenin orucu yoktur. — Ebû Dâvûd 2454; Tirmizî 730',
+    'Âişe: Peygamber “Yanınızda bir şey var mı?” dedi; “Yok” dedik; “Öyleyse ben oruçluyum” buyurdu. — Müslim 1154'
+  ],
+  '5:Orucu Bozanlar': [
+    'Hacamat yapanın da yaptıranın da orucu bozuldu. — Ebû Dâvûd 2367; Tirmizî 774',
+    'Kusmaya mağlup olana kaza yoktur; kasten kusan kaza etsin. — Ebû Dâvûd 2380; Tirmizî 720',
+    'Unutarak yiyen ya da içen orucunu tamamlasın; onu Allah yedirmiş ve içirmiştir. — Buhârî 1933; Müslim 1155',
+    'Ramazan’da eşiyle birleşen adama kefaret emredilmesi. — Buhârî 1936; Müslim 1111'
+  ],
+  '5:Ruhsatlar': [
+    '“Sizden kim hasta veya yolculukta olursa, tutamadığı günler kadar başka günlerde tutar. Ona güç yetiremeyenlere bir fakir doyurmak fidyedir.” — Bakara 2/184'
+  ],
+  '5:Nafile Oruçlar ve Yasak Günler': [
+    'Ramazan’ı tutup ardından Şevval’den altı gün tutan, bütün yılı oruçlu geçirmiş gibidir. — Müslim 1164',
+    'Arefe orucu, önceki ve sonraki yılın günahlarına kefaret olur. — Müslim 1162',
+    'Peygamber Ramazan Bayramı ve Kurban Bayramı günlerinde oruç tutmayı yasakladı. — Buhârî 1991; Müslim 1138',
+    'Teşrik günlerinde oruç tutmaya, hedy bulamayan dışında ruhsat verilmedi. — Buhârî 1997'
+  ],
+  '5:İ‘tikâf': [
+    '“Mescitlerde i‘tikâfta iken eşlerinize yaklaşmayın.” — Bakara 2/187',
+    'Âişe: Peygamber vefat edene kadar Ramazan’ın son on gününde i‘tikâfa girerdi. — Buhârî 2026; Müslim 1172'
+  ],
+
+  '6:Farziyeti ve Mîkatlar': [
+    '“Yoluna gücü yetenlerin Beyt’i haccetmesi, Allah’ın insanlar üzerindeki hakkıdır.” — Âl-i İmrân 3/97',
+    'Âişe: “Kadınlara cihad var mı?” dedim; “Onlara savaşsız bir cihad vardır: hac ve umre” buyurdu. — İbn Mâce 2901',
+    'Kadın mahremi olmadan yolculuk yapmaz. — Buhârî 1862; Müslim 1341',
+    'İbn Abbas: Peygamber Medineliler için Zülhuleyfe’yi, Şamlılar için Cuhfe’yi, Necidliler için Karnülmenâzil’i, Yemenliler için Yelemlem’i mîkat belirledi. — Buhârî 1524; Müslim 1181',
+    'Şimdi bildiğimi önceden bilseydim kurban getirmez, (haccımı) umreye çevirirdim. — Buhârî 1651; Müslim 1216'
+  ],
+  '6:İhram Yasakları': [
+    'İhramlı gömlek, sarık, şalvar, başlık ve mest giymez; zafran veya vers değmiş elbise giymez. — Buhârî 1542; Müslim 1177',
+    'İhramlı kadın peçe takmaz, eldiven giymez. — Buhârî 1838',
+    'İhramlı nikâh kıymaz, kıydırmaz, nişanlanmaz. — Müslim 1409',
+    '“Hacda cinsel ilişki, fısk ve kavga yoktur.” — Bakara 2/197'
+  ],
+  '6:Haccın Rükün ve Vacipleri': [
+    'Hac Arafat’tır. — Ebû Dâvûd 1949; Tirmizî 889',
+    '“…Beyt-i Atîk’i tavaf etsinler.” — Hac 22/29',
+    'Hac ibadetlerinizi benden alın. — Müslim 1297',
+    'İnsanlara son işlerinin Beyt’te olması emredildi; ancak hayızlı kadına hafifletildi. — Buhârî 1755; Müslim 1328',
+    'İbn Abbas: Haccın bir ibadetini terk eden veya unutan kan akıtsın (kurban kessin). — Muvatta’ (mevkûf)'
+  ],
+  '6:Umre': [
+    '“Haccı ve umreyi Allah için tamamlayın.” — Bakara 2/196'
+  ],
+
+  '7:Kurban': [
+    'Enes: Peygamber alaca iki koç kurban etti; besmele çekip tekbir getirdi. — Buhârî 5565; Müslim 1966',
+    'Müsinne dışında kesmeyin; zorlanırsanız koyundan cez‘a kesin. — Müslim 1963',
+    'Kurbanda dört kusur caiz olmaz: körlüğü belli kör, hastalığı belli hasta, topallığı belli topal ve iliği kalmamış zayıf. — Ebû Dâvûd 2802; Tirmizî 1497',
+    'Câbir: Hudeybiye’de deveyi yedi kişi, sığırı yedi kişi adına kestik. — Müslim 1318',
+    'Namazdan önce kesen kendisi için kesmiştir; namazdan sonra kesen kurbanını tamamlamıştır. — Buhârî 5546; Müslim 1961',
+    'Zilhicce’nin onu girince kurban kesmek isteyen, saçından ve derisinden bir şey almasın. — Müslim 1977'
+  ],
+  '7:Akîka': [
+    'Her çocuk akîkasına rehindir; yedinci günü onun adına kesilir, başı tıraş edilir ve adı konur. — Ebû Dâvûd 2838; Tirmizî 1522',
+    'Erkek çocuk için birbirine denk iki koyun, kız için bir koyun. — Ebû Dâvûd 2834; Tirmizî 1513'
+  ],
+
+  '8:Yiyecekler': [
+    '“…Onlara temiz şeyleri helal, pis şeyleri haram kılar.” — A‘râf 7/157',
+    'Peygamber azı dişi olan her yırtıcıyı ve pençesi olan her kuşu yemeyi yasakladı. — Müslim 1934',
+    'Peygamber Hayber günü evcil eşek etini yasakladı. — Buhârî 4219; Müslim 1941',
+    'Denizin suyu temiz, ölüsü helaldir. — Ebû Dâvûd 83; Tirmizî 69'
+  ],
+  '8:Kesim (Zekât)': [
+    'Kanı akıtan ve üzerine Allah’ın adı anılanı yiyin; diş ve tırnak hariç. — Buhârî 2488; Müslim 1968',
+    '“Üzerine Allah’ın adı anılmayanlardan yemeyin.” — En‘âm 6/121',
+    '“Kitap verilenlerin yiyeceği size helaldir.” — Mâide 5/5'
+  ],
+  '8:Av': [
+    '“…Allah’ın size öğrettiği şekilde eğittiğiniz avcı hayvanların sizin için tuttuklarını yiyin ve üzerine Allah’ın adını anın.” — Mâide 5/4',
+    'Adî b. Hâtim: Eğitilmiş köpeğini gönderip Allah’ın adını andıysan (yakaladığını) ye. — Buhârî 5475; Müslim 1929'
+  ],
+
+  '9:Hükümler': [
+    'Kim yemin edecekse Allah adına yemin etsin ya da sussun. — Buhârî 2679; Müslim 1646',
+    '“…Kefareti on fakiri doyurmak, ya giydirmek ya da bir köle azat etmektir. Bulamayan üç gün oruç tutar.” — Mâide 5/89 (İbn Mes‘ûd’un kıraatinde “peş peşe” kaydı vardır.)',
+    'Allah’a itaat etmeyi adayan itaat etsin; isyanı adayan isyan etmesin. — Buhârî 6696',
+    'Günahta adak yoktur; kefareti yemin kefaretidir. — Ebû Dâvûd 3290; Tirmizî 1524'
+  ],
+
+  '10:Satış': [
+    '“…Ancak karşılıklı rızaya dayalı ticaret olursa başka.” — Nisâ 4/29',
+    'Yanında olmayan şeyi satma. — Ebû Dâvûd 3503; Tirmizî 1232',
+    'Peygamber garar satışını yasakladı. — Müslim 1513',
+    'Îne ile alışveriş ederseniz… Allah üzerinize bir zillet musallat eder. — Ebû Dâvûd 3462'
+  ],
+  '10:Ribâ (Faiz)': [
+    'Altın altınla, gümüş gümüşle, buğday buğdayla, arpa arpayla, hurma hurmayla, tuz tuzla; misli misline, eşit ve peşin. Cinsler farklı olursa peşin olmak şartıyla dilediğiniz gibi satın. — Müslim 1587',
+    'Menfaat sağlayan her borç ribâdır. — Fudâle b. Ubeyd’den mevkûf, Beyhakî'
+  ],
+  '10:Muhayyerlik (Hıyâr)': [
+    'Alışveriş yapan iki taraf ayrılmadıkça muhayyerdir. — Buhârî 2079; Müslim 1532',
+    'Sütü bekletilmiş (musarrât) hayvanı alan, sağdıktan sonra muhayyerdir: ya tutar ya da bir sâ‘ hurma ile geri verir. — Buhârî 2148; Müslim 1515'
+  ],
+  '10:Diğer Akitler': [
+    '“…teslim alınmış bir rehin…” — Bakara 2/283',
+    'Ömer’e Hayber arazisi hakkında: “Aslını alıkoy, gelirini tasadduk et; satılmaz, hibe edilmez, miras bırakılmaz.” — Buhârî 2737; Müslim 1632',
+    'Babanın çocuğuna verdiği hariç, hibe eden kişinin hibesinden dönmesi helal değildir. — Ebû Dâvûd 3539; Tirmizî 2132',
+    'Allah’tan korkun ve çocuklarınız arasında adaletli olun. — Buhârî 2587; Müslim 1623'
+  ],
+
+  '11:Vasiyet': [
+    'Sa‘d’a: “Üçte bir; üçte bir de çoktur.” — Buhârî 2742; Müslim 1628',
+    'Mirasçıya vasiyet yoktur. — Ebû Dâvûd 2870; Tirmizî 2120',
+    'Ebû Bekir malının beşte birini vasiyet etti. — Abdürrezzâk, Musannef'
+  ],
+  '11:Miras (Ferâiz)': [
+    '“Allah size çocuklarınız hakkında erkeğe iki kadın payı kadarını emreder… yapılan vasiyetten ve borçtan sonra.” — Nisâ 4/11',
+    'Payları sahiplerine verin; kalan en yakın erkeğe aittir. — Buhârî 6732; Müslim 1615',
+    'Dayı, mirasçısı olmayanın mirasçısıdır. — Ebû Dâvûd 2899',
+    'Müslüman kâfire, kâfir de Müslümana mirasçı olmaz. — Buhârî 6764; Müslim 1614',
+    'Katil mirasçı olmaz. — Tirmizî 2109; İbn Mâce 2645'
+  ],
+
+  '12:Hükmü, Rükünleri ve Şartları': [
+    'Ey gençler! Evlenmeye gücü yeten evlensin. — Buhârî 5066; Müslim 1400',
+    'Velisiz nikâh olmaz. — Ebû Dâvûd 2085; Tirmizî 1101',
+    'Dul kadın istişare edilmeden, bakire de izni alınmadan evlendirilmez. — Buhârî 5136; Müslim 1419'
+  ],
+  '12:Mehir ve Nikâhtaki Şartlar': [
+    '“Kadınlara mehirlerini gönül hoşluğuyla verin.” — Nisâ 4/4',
+    'Demirden bir yüzük de olsa (mehir olarak) ara. — Buhârî 5135; Müslim 1425',
+    'Yerine getirilmeye en layık şartlar, onlarla fercleri helal kıldığınız şartlardır. — Buhârî 2721; Müslim 1418',
+    'Peygamber mut‘a nikâhını kıyamete kadar haram kıldı. — Müslim 1406',
+    'Allah hülle yapana ve yaptırana lanet etsin. — Ebû Dâvûd 2076; Tirmizî 1120'
+  ],
+  '12:Süt Akrabalığı': [
+    'Nesebin haram kıldığını süt de haram kılar. — Buhârî 2645; Müslim 1447',
+    'Âişe: Kur’an’da on bilinen emme indirilmişti, sonra beş bilinen emme ile neshedildi. — Müslim 1452',
+    '“Anneler, emzirmeyi tamamlamak isteyenler için çocuklarını tam iki yıl emzirir.” — Bakara 2/233'
+  ],
+
+  '13:Talâk': [
+    '“Ey Peygamber! Kadınları boşadığınızda iddetleri içinde boşayın.” — Talâk 65/1',
+    'İbn Ömer hayızlı hanımını boşayınca Peygamber ona dönmesini, temizlenince dilerse boşamasını emretti. — Buhârî 5251; Müslim 1471',
+    'Ömer, tek sözle verilen üç talakı üç olarak geçerli saydı. — Müslim 1472',
+    '“Talak iki defadır… Eğer onu (üçüncü kez) boşarsa, başka bir kocayla evlenmedikçe ona helal olmaz.” — Bakara 2/229-230',
+    'Sâbit b. Kays’ın hanımına: “Bahçesini geri verir misin?” — Buhârî 5273'
+  ],
+  '13:İddet': [
+    '“Hamile olanların iddeti, doğum yapmalarıyla biter.” — Talâk 65/4',
+    '“Boşanmış kadınlar kendi kendilerine üç kur’ (hayız) beklerler.” — Bakara 2/228',
+    '“Sizden ölenlerin geride bıraktığı eşler dört ay on gün beklerler.” — Bakara 2/234',
+    'Kadın ölü için üç günden fazla yas tutmaz; kocası hariç, ona dört ay on gün yas tutar. — Buhârî 5334; Müslim 1486',
+    'Furey‘a’ya: “İddet süresi dolana kadar evinde kal.” — Ebû Dâvûd 2300; Tirmizî 1204'
+  ],
+  '13:Nafaka': [
+    '“Onların yiyeceği ve giyeceği, örfe uygun şekilde çocuğun babasına aittir.” — Bakara 2/233',
+    'Hind’e: “Sana ve çocuğuna yetecek kadarını örfe uygun şekilde al.” — Buhârî 5364; Müslim 1714'
+  ],
+
+  '14:Hükümler': [
+    '“Ey iman edenler! Öldürülenler hakkında size kısas yazıldı…” — Bakara 2/178',
+    'Bir yakını öldürülen iki şeyden en hayırlısını seçer: ya diyet alır ya da kısas yapar. — Buhârî 112; Müslim 1355',
+    'Amr b. Hazm’ın mektubu: Canın diyeti yüz devedir. — Nesâî 4853',
+    'Hüzeylli iki kadın kıssası: Peygamber diyeti öldüren kadının âkilesine yükledi. — Buhârî 6910; Müslim 1681',
+    '“Kim bir mümini yanlışlıkla öldürürse bir mümin köle azat etmesi ve ailesine diyet ödemesi gerekir… Bulamayan peş peşe iki ay oruç tutar.” — Nisâ 4/92'
+  ],
+
+  '15:Genel Hükümler': [
+    'Kalem üç kişiden kaldırılmıştır: uyuyan uyanıncaya, çocuk ergenliğe erinceye, deli akıllanıncaya kadar. — Ebû Dâvûd 4403',
+    'Hadleri gücünüz yettiğince düşürün. — Tirmizî 1424 (senedinde zayıflık vardır; İbn Mes‘ûd’dan mevkûf olarak da gelmiştir)',
+    '“İffetli kadınlara zina iftirasında bulunup sonra dört şahit getiremeyenlere seksen değnek vurun.” — Nûr 24/4',
+    'Ali: Peygamber (içki için) kırk, Ebû Bekir kırk vurdu; Ömer seksen tamamladı, hepsi sünnettir. — Müslim 1707',
+    'Çeyrek dinar ve üzerinde el kesilir. — Buhârî 6789; Müslim 1684'
+  ],
+
+  '16:Hükümler': [
+    '“Allah size emanetleri ehline vermenizi ve insanlar arasında hükmettiğinizde adaletle hükmetmenizi emreder.” — Nisâ 4/58',
+    'Hâkim ictihad eder de isabet ederse iki ecir, hata ederse bir ecir alır. — Buhârî 7352; Müslim 1716',
+    'Yemin, davalıya düşer. — Müslim 1711',
+    'Peygamber bir şahit ve (davacının) yeminiyle hüküm verdi. — Müslim 1712',
+    '“…İki erkek yoksa razı olduğunuz şahitlerden bir erkek ve iki kadın…” — Bakara 2/282'
+  ]
+};

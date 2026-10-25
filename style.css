@@ -203,3 +203,9 @@ body.view-selef #toggleCompact,body.view-selef .sort-hint{display:none}
 .fq-topic li{font-size:14px;line-height:1.6;margin:0 0 7px}
 .fq-desc{font-size:14px;line-height:1.55;margin:4px 0 10px}
 .fq-topic[hidden],.fq-cat[hidden]{display:none}
+
+.fq-delil{margin:2px 0 12px;padding:10px 12px;border-radius:12px;background:var(--hero);border:1px solid var(--border)}
+.fq-delil-h{margin:0 0 6px;font-size:12px;font-weight:700;letter-spacing:.6px;color:var(--accent)}
+.fq-delil p{margin:0 0 8px;font-size:13px;line-height:1.55}
+.fq-delil p:last-child{margin-bottom:0}
+.fq-delil small{display:block;margin-top:2px;font-size:11.5px;color:var(--muted)}

@@ -452,6 +452,11 @@ const QUOTES = [
   {who:'el-Hallâl (ö. 311)', ar:'كَفَّ رَجُلٌ يَدَهُ، وَمَلَكَ لِسَانَهُ، وَعَالَجَ قَلْبَهُ', tr:'Kişi (fitne zamanında) elini çeksin, diline hâkim olsun ve kalbini ıslah etsin.', src:'es-Sünne, 91 · Kûfeli Süleyman’ın sözü; İmam Ahmed beğenmiştir (92)'},
   {who:'el-Hallâl (ö. 311)', ar:'الصَّبْرُ عَلَى مَا نَحْنُ فِيهِ خَيْرٌ مِنَ الْفِتْنَةِ يُسْفَكُ فِيهَا الدِّمَاءُ', tr:'(İmam Ahmed:) İçinde bulunduğumuz duruma sabretmek, kanların döküldüğü fitneden daha hayırlıdır.', src:'es-Sünne, 89'},
   {who:'el-Hallâl (ö. 311)', ar:'مَا يُعْجِبُنِي أَنْ يَرْوِيَ الرَّجُلُ حَدِيثًا فِيهِ عَلَى أَصْحَابِ رَسُولِ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ شَيْءٌ', tr:'(İmam Ahmed:) Bir kimsenin, Resûlullah’ın ashabı aleyhine bir şey içeren bir hadisi rivayet etmesini hoş görmem.', src:'es-Sünne, 800 (c. 3, s. 501)'},
+  {who:'el-Hallâl (ö. 311)', ar:'الرُّجُوعُ إِلَى الْحَقِّ خَيْرٌ مِنَ الْإِقَامَةِ عَلَى الْبَاطِلِ', tr:'Hakka dönmek, batılda ısrar etmekten hayırlıdır.', src:'es-Sünne (Hallâl’in kendi sözü), c. 2, s. 208'},
+  {who:'el-Hallâl (ö. 311)', ar:'لَوْ تَدَبَّرَ إِنْسَانٌ الْقُرْآنَ كَانَ فِيهِ مَا يَرُدُّ عَلَى كُلِّ مُبْتَدِعٍ بِبِدْعَتِهِ', tr:'(İmam Ahmed:) İnsan Kur’an’ı tefekkür etse, onda her bid‘atçinin bid‘atini reddedecek şeyi bulur.', src:'es-Sünne, c. 1, s. 461'},
+  {who:'el-Hallâl (ö. 311)', ar:'مِنَ اللَّهِ عَزَّ وَجَلَّ الْعِلْمُ، وَعَلَى الرَّسُولِ الْبَلَاغُ، وَعَلَيْنَا التَّسْلِيمُ', tr:'(ez-Zührî:) İlim Allah’tandır; tebliğ Resûl’e, teslimiyet bize düşer.', src:'es-Sünne, c. 1, s. 504'},
+  {who:'el-Hallâl (ö. 311)', ar:'لَا تَزَالُ عَلَى الطَّرِيقِ مَا زِلْتَ تَطْلُبُ الْأَثَرَ', tr:'(İbn Sîrîn:) Eseri (sünneti) aradığın sürece doğru yoldasın.', src:'es-Sünne, c. 1, s. 197'},
+  {who:'el-Hallâl (ö. 311)', ar:'لَوْ شَهِدْتُ لِأَحَدٍ حَيٍّ أَنَّهُ مِنْ أَهْلِ الْجَنَّةِ لَشَهِدْتُ لِعَبْدِ اللَّهِ بْنِ عُمَرَ', tr:'(Saîd b. el-Müseyyeb:) Yaşayan birinin cennetlik olduğuna şahitlik edecek olsaydım, Abdullah b. Ömer için ederdim.', src:'es-Sünne, c. 1, s. 292'},
   {who:'el-Berbehârî (ö. 329)', ar:'اعْلَمُوا أَنَّ الْإِسْلَامَ هُوَ السُّنَّةُ، وَالسُّنَّةَ هِيَ الْإِسْلَامُ، وَلَا يَقُومُ أَحَدُهُمَا إِلَّا بِالْآخَرِ', tr:'Bilin ki İslam sünnettir, sünnet de İslam’dır. Biri diğeri olmadan ayakta duramaz.', src:'Şerhu’s-Sünne, 1. paragraf'},
   {who:'el-Berbehârî (ö. 329)', ar:'وَاعْلَمْ رَحِمَكَ اللَّهُ أَنَّ الْعِلْمَ لَيْسَ بِكَثْرَةِ الرِّوَايَةِ وَالْكُتُبِ، وَلَكِنَّ الْعَالِمَ مَنِ اتَّبَعَ الْعِلْمَ وَالسُّنَنَ', tr:'Bil, Allah sana rahmet etsin, ilim çok rivayet ve çok kitapla olmaz. Âlim, ilme ve sünnetlere uyandır.', src:'Şerhu’s-Sünne'},
   {who:'el-Berbehârî (ö. 329)', ar:'وَاحْذَرْ صِغَارَ الْمُحْدَثَاتِ مِنَ الْأُمُورِ', tr:'Dinde sonradan çıkarılan küçük şeylerden sakın.', src:'Şerhu’s-Sünne'},
@@ -466,7 +471,9 @@ const QUOTES = [
   {who:'el-Âcurrî (ö. 360)', ar:'لَا يَتَأَكَّلُ بِالْقُرْآنِ، وَلَا يُحِبُّ أَنْ تُقْضَى لَهُ بِهِ الْحَوَائِجُ', tr:'Kur’an’ı geçim aracı yapmaz; onun sayesinde ihtiyaçlarının görülmesini istemez.', src:'Ahlâku Hameleti’l-Kur’ân'},
   {who:'el-Âcurrî (ö. 360)', ar:'إِذَا دَرَسَ الْقُرْآنَ فَبِحُضُورِ فَهْمٍ وَعَقْلٍ', tr:'Kur’an’ı okuduğunda, anlayışını ve aklını hazır ederek okur.', src:'Ahlâku Hameleti’l-Kur’ân'},
   {who:'el-Âcurrî (ö. 360)', ar:'لَا يَغْتَابُ أَحَدًا، وَلَا يَحْقِرُ أَحَدًا، وَلَا يَسُبُّ أَحَدًا', tr:'Kimseyi gıybet etmez, kimseyi küçümsemez, kimseye sövmez.', src:'Ahlâku Hameleti’l-Kur’ân'},
-  {who:'İbn Batta el-Ukberî (ö. 387)', ar:'اتَّبِعُوا وَلَا تَبْتَدِعُوا، فَقَدْ كُفِيتُمْ', tr:'(İbn Mes‘ûd:) Uyun, bid‘at çıkarmayın; size yetecek olan verildi.', src:'el-İbânetü’l-Kübrâ, 174 · senedi sahih'}
+  {who:'İbn Batta el-Ukberî (ö. 387)', ar:'اتَّبِعُوا وَلَا تَبْتَدِعُوا، فَقَدْ كُفِيتُمْ', tr:'(İbn Mes‘ûd:) Uyun, bid‘at çıkarmayın; size yetecek olan verildi.', src:'el-İbânetü’l-Kübrâ, 174 · senedi sahih'},
+  {who:'İbn Batta el-Ukberî (ö. 387)', ar:'نَسْتَوْفِقُ اللَّهَ لِصَوَابِ الْقَوْلِ وَصَالِحِ الْعَمَلِ', tr:'Allah’tan sözde isabet ve amelde salâh için muvaffakiyet dileriz.', src:'el-İbânetü’s-Suğrâ, mukaddime'},
+  {who:'İbn Batta el-Ukberî (ö. 387)', ar:'وَنَسْأَلُهُ أَنْ يَجْعَلَ غَرَضَنَا فِيمَا نَتَكَلَّفُهُ مِنْ ذَلِكَ ابْتِغَاءَ وَجْهِهِ وَإِيثَارَ رِضَاهُ وَمَحَبَّتِهِ', tr:'Bu işte üstlendiğimiz her şeyde gayemizi yalnızca O’nun rızasını aramak, O’nun hoşnutluğunu ve sevgisini her şeye tercih etmek kılmasını O’ndan dileriz.', src:'el-İbânetü’s-Suğrâ, mukaddime'}
 ];
 
 /* ---------- Kartlar ---------- */
@@ -577,7 +584,26 @@ function renderFiqh() {
       const ul = document.createElement('ul');
       for (const it of tp.items) { const li = document.createElement('li'); li.textContent = it; ul.append(li); }
       a.append(h, ul);
-      a.dataset.search = [c.cat, tp.t, ...tp.items].join(' ');
+      const dl = DELIL[c.cat.split(' ')[0] + ':' + tp.t] || [];
+      if (dl.length) {
+        const box = document.createElement('div');
+        box.className = 'fq-delil';
+        const lab = document.createElement('p');
+        lab.className = 'fq-delil-h';
+        lab.textContent = '📖 Delil';
+        box.append(lab);
+        for (const d of dl) {
+          const i = d.lastIndexOf(' — ');
+          const p = document.createElement('p');
+          const txt = document.createElement('span');
+          txt.textContent = i > 0 ? d.slice(0, i) : d;
+          p.append(txt);
+          if (i > 0) { const src = document.createElement('small'); src.textContent = d.slice(i + 3); p.append(src); }
+          box.append(p);
+        }
+        a.append(box);
+      }
+      a.dataset.search = [c.cat, tp.t, ...tp.items, ...dl].join(' ');
       d.append(a);
     }
     cardsEl.append(d);
