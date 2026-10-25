@@ -122,6 +122,15 @@ const PATCHES_V3 = [
   {v:4, id:'uyanis2', from:{category:'Uyanış duası'}, to:{category:'Tirmizî 3401'}},
   {v:4, id:'rizik2', from:{category:'Faydalı ilim, helal rızık'}, to:{category:'İbn Mâce 925 · Faydalı ilim, helal rızık'}},
   // v6: Yâ Fettâh rızık bölümüne taşındı
+  // v7: sabah bölümüne taşınan kartlar
+  {v:7, id:'ayetelkursi', from:{name:'Âyetü’l-Kürsî', category:'Bakara 2:255 · Sabah-akşam koruma', meaning:'Sabah ve akşam okunan koruyucu ayet. Metni mushaftan okuyabilirsin.'}, to:{name:'Âyetü’l-Kürsî (Sabah)', category:'Bakara 2:255 · Nesâî, Kübrâ', meaning:'Sabah okuyan akşama kadar korunur. Metni mushaftan okuyabilirsin.'}},
+  {v:7, id:'felak', from:{name:'Felak Sûresi', category:'Sabah-akşam 3 defa · Koruma'}, to:{name:'Felak Sûresi (Sabah)', category:'3 defa · Ebû Dâvûd 5082, Tirmizî 3575'}},
+  {v:7, id:'nas', from:{name:'Nâs Sûresi', category:'Sabah-akşam 3 defa · Koruma'}, to:{name:'Nâs Sûresi (Sabah)', category:'3 defa · Ebû Dâvûd 5082, Tirmizî 3575'}},
+  {v:7, id:'bismillahillezi', from:{name:'Koruyucu Dua (Bismillâhillezî)', category:'Sabah-akşam 3 defa · Ebû Dâvûd, Tirmizî'}, to:{name:'Bismillâhillezî (Sabah)', category:'3 defa · Ebû Dâvûd 5088, Tirmizî 3388'}},
+  {v:7, id:'afini', from:{name:'Âfiyet Duası (Allâhümme âfinî)', category:'Sabah-akşam 3 defa · Ebû Dâvûd'}, to:{name:'Âfiyet Duası (Sabah)', category:'3 defa · Ebû Dâvûd 5090'}},
+  {v:7, id:'bihamdihi', from:{name:'Sübhânallâhi ve bihamdihî', category:'Günde 100 defa · Buhârî, Müslim'}, to:{name:'Sübhânallâhi ve bihamdihî (Sabah)', category:'100 defa · Müslim 2692'}},
+  {v:7, id:'adede_halkihi', from:{category:'Sabah 3 defa · Müslim'}, to:{category:'Sabah 3 defa · Müslim 2726'}},
+  {v:7, id:'kelimat', from:{name:'Eûzü bi-kelimâtillâhi’t-tâmmât', category:'Akşam · Müslim, Zikir 2709'}, to:{name:'Eûzü bi-kelimâtillâhi’t-tâmmât (Akşam)', category:'Akşam 3 defa · Müslim 2709'}},
   {v:6, id:'ya_fettah', from:{category:'Esmâü’l-Hüsnâ · Kapalı yolları açar'}, to:{category:'Esmâü’l-Hüsnâ · Rızık ve hayır kapılarını açar'}}
 ];
 function applyPatches(list, since = 0) {
@@ -138,14 +147,66 @@ const ADDED_V5 = [
   {id:'kapanis',name:'Kapanış: Sübhâne Rabbike',category:'Sâffât 37:180-182 · Duayı hamd ile bitirmek',arabic:'سُبْحَانَ رَبِّكَ رَبِّ الْعِزَّةِ عَمَّا يَصِفُونَ وَسَلَامٌ عَلَى الْمُرْسَلِينَ وَالْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ',translit:'Sübhâne Rabbike Rabbi’l-izzeti ammâ yesifûn, ve selâmün ale’l-mürselîn, ve’l-hamdü lillâhi Rabbi’l-âlemîn.',meaning:'Senin Rabbin, kudret sahibi Rab, onların nitelendirmelerinden yücedir. Peygamberlere selam olsun. Hamd, âlemlerin Rabbi Allah’a mahsustur.',target:1}
 ];
 
+// v7: Sahih sabah ve akşam zikirleri (sabah ve akşam sayaçları ayrı kartlarda)
+const _SEYYID_AR = 'اللَّهُمَّ أَنْتَ رَبِّي لَا إِلَٰهَ إِلَّا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَىٰ عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ بِذَنْبِي، فَاغْفِرْ لِي، فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ';
+const _SEYYID_TR = 'Allâhümme ente Rabbî lâ ilâhe illâ ente, halaktenî ve ene abdük, ve ene alâ ahdike ve va’dike mesteta’tü, e’ûzü bike min şerri mâ sana’tü, ebû’ü leke bi-ni’metike aleyye, ve ebû’ü bi-zenbî, fağfir lî, fe-innehû lâ yağfiru’z-zünûbe illâ ente.';
+const _SEYYID_ME = 'Allah’ım! Sen benim Rabbimsin, Senden başka ilah yoktur. Beni Sen yarattın, ben Senin kulunum. Gücüm yettiğince Sana verdiğim söz ve ahid üzereyim. Yaptıklarımın şerrinden Sana sığınırım. Bana verdiğin nimetleri ikrar eder, günahımı itiraf ederim. Beni bağışla; çünkü günahları ancak Sen bağışlarsın.';
+const _AFV_AR = 'اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِي الدُّنْيَا وَالْآخِرَةِ، اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِي دِينِي وَدُنْيَايَ وَأَهْلِي وَمَالِي، اللَّهُمَّ اسْتُرْ عَوْرَاتِي وَآمِنْ رَوْعَاتِي، اللَّهُمَّ احْفَظْنِي مِنْ بَيْنِ يَدَيَّ وَمِنْ خَلْفِي وَعَنْ يَمِينِي وَعَنْ شِمَالِي وَمِنْ فَوْقِي، وَأَعُوذُ بِعَظَمَتِكَ أَنْ أُغْتَالَ مِنْ تَحْتِي';
+const _AFV_TR = 'Allâhümme innî es’elüke’l-afve ve’l-âfiyete fi’d-dünyâ ve’l-âhira. Allâhümme innî es’elüke’l-afve ve’l-âfiyete fî dînî ve dünyâye ve ehlî ve mâlî. Allâhümmestur avrâtî ve âmin rev’âtî. Allâhümmahfaznî min beyni yedeyye ve min halfî ve an yemînî ve an şimâlî ve min fevkî, ve e’ûzü bi-azametike en uğtâle min tahtî.';
+const _AFV_ME = 'Allah’ım! Senden dünyada ve ahirette af ve afiyet isterim. Allah’ım! Dinimde, dünyamda, ailemde ve malımda af ve afiyet isterim. Allah’ım! Ayıplarımı ört, korkularımdan emin kıl. Allah’ım! Beni önümden, arkamdan, sağımdan, solumdan ve üstümden koru. Altımdan helak edilmekten azametine sığınırım.';
+const _GAYB_AR = 'اللَّهُمَّ عَالِمَ الْغَيْبِ وَالشَّهَادَةِ، فَاطِرَ السَّمَاوَاتِ وَالْأَرْضِ، رَبَّ كُلِّ شَيْءٍ وَمَلِيكَهُ، أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا أَنْتَ، أَعُوذُ بِكَ مِنْ شَرِّ نَفْسِي، وَمِنْ شَرِّ الشَّيْطَانِ وَشِرْكِهِ، وَأَنْ أَقْتَرِفَ عَلَىٰ نَفْسِي سُوءًا أَوْ أَجُرَّهُ إِلَىٰ مُسْلِمٍ';
+const _GAYB_TR = 'Allâhümme âlime’l-ğaybi ve’ş-şehâdeti, fâtıra’s-semâvâti ve’l-ard, Rabbe külli şey’in ve melîkeh, eşhedü en lâ ilâhe illâ ente, e’ûzü bike min şerri nefsî ve min şerri’ş-şeytâni ve şirkih, ve en akterife alâ nefsî sû’en ev ecürrahû ilâ müslim.';
+const _GAYB_ME = 'Allah’ım! Ey gizliyi ve açığı bilen, gökleri ve yeri yaratan, her şeyin Rabbi ve sahibi! Senden başka ilah olmadığına şahitlik ederim. Nefsimin şerrinden, şeytanın şerrinden ve şirkinden, kendime bir kötülük yapmaktan ya da onu bir Müslümana bulaştırmaktan Sana sığınırım.';
+const _HAYY_AR = 'يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَغِيثُ، أَصْلِحْ لِي شَأْنِي كُلَّهُ، وَلَا تَكِلْنِي إِلَىٰ نَفْسِي طَرْفَةَ عَيْنٍ';
+const _HAYY_TR = 'Yâ Hayyu yâ Kayyûm, bi-rahmetike esteğîs, aslih lî şe’nî küllehû ve lâ tekilnî ilâ nefsî tarfete ayn.';
+const _HAYY_ME = 'Ey Hayy, ey Kayyûm! Rahmetinle yardım dilerim. Bütün işlerimi düzelt, beni göz açıp kapayıncaya kadar bile nefsime bırakma.';
+const _TEVHID_AR = 'لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ';
+const _TEVHID_TR = 'Lâ ilâhe illallâhu vahdehû lâ şerîke leh, lehü’l-mülkü ve lehü’l-hamdü ve hüve alâ külli şey’in kadîr.';
+const _TEVHID_ME = 'Allah’tan başka ilah yoktur. O tektir, ortağı yoktur. Mülk O’nundur, hamd O’nadır. O, her şeye gücü yetendir.';
+
+const ADDED_V7 = [
+  // Sabah
+  {id:'ihlas',name:'İhlâs Sûresi (Sabah)',category:'İhlâs, Felak, Nâs 3’er defa · Ebû Dâvûd 5082, Tirmizî 3575',arabic:'',translit:'',meaning:'Allah’ın birliğini anlatan sûre. Felak ve Nâs ile birlikte sabah-akşam üçer kez okuyana “her şeye karşı yeter” buyrulmuştur.',target:3},
+  {id:'asbahna',name:'Asbahnâ ve asbaha’l-mülkü lillâh',category:'Sabah · Müslim 2723',arabic:'أَصْبَحْنَا وَأَصْبَحَ الْمُلْكُ لِلَّهِ، وَالْحَمْدُ لِلَّهِ، لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ، رَبِّ أَسْأَلُكَ خَيْرَ مَا فِي هَٰذَا الْيَوْمِ وَخَيْرَ مَا بَعْدَهُ، وَأَعُوذُ بِكَ مِنْ شَرِّ مَا فِي هَٰذَا الْيَوْمِ وَشَرِّ مَا بَعْدَهُ، رَبِّ أَعُوذُ بِكَ مِنَ الْكَسَلِ وَسُوءِ الْكِبَرِ، رَبِّ أَعُوذُ بِكَ مِنْ عَذَابٍ فِي النَّارِ وَعَذَابٍ فِي الْقَبْرِ',translit:'Asbahnâ ve asbaha’l-mülkü lillâh, ve’l-hamdü lillâh, lâ ilâhe illallâhu vahdehû lâ şerîke leh, lehü’l-mülkü ve lehü’l-hamdü ve hüve alâ külli şey’in kadîr. Rabbi es’elüke hayra mâ fî hâze’l-yevmi ve hayra mâ ba’deh, ve e’ûzü bike min şerri mâ fî hâze’l-yevmi ve şerri mâ ba’deh. Rabbi e’ûzü bike mine’l-keseli ve sû’i’l-kiber. Rabbi e’ûzü bike min azâbin fi’n-nâri ve azâbin fi’l-kabr.',meaning:'Sabaha erdik, mülk de Allah’ın olarak sabaha erdi. Hamd Allah’adır. Allah’tan başka ilah yoktur, tektir, ortağı yoktur. Mülk O’nundur, hamd O’nadır, O her şeye kadirdir. Rabbim! Bu günün ve sonrasının hayrını Senden isterim; bu günün ve sonrasının şerrinden Sana sığınırım. Rabbim! Tembellikten ve ihtiyarlığın kötülüğünden Sana sığınırım. Rabbim! Cehennem azabından ve kabir azabından Sana sığınırım.',target:1},
+  {id:'bike_asbahna',name:'Allâhümme bike asbahnâ',category:'Sabah · Tirmizî 3391, Ebû Dâvûd 5068',arabic:'اللَّهُمَّ بِكَ أَصْبَحْنَا، وَبِكَ أَمْسَيْنَا، وَبِكَ نَحْيَا، وَبِكَ نَمُوتُ، وَإِلَيْكَ النُّشُورُ',translit:'Allâhümme bike asbahnâ, ve bike emseynâ, ve bike nahyâ, ve bike nemûtü, ve ileyke’n-nüşûr.',meaning:'Allah’ım! Seninle sabaha erdik, Seninle akşama erdik. Seninle yaşar, Seninle ölürüz. Dönüş Sanadır.',target:1},
+  {id:'seyyid',name:'Seyyidü’l-İstiğfâr (Sabah)',category:'Buhârî 6306 · En faziletli istiğfar',arabic:_SEYYID_AR,translit:_SEYYID_TR,meaning:_SEYYID_ME,target:1},
+  {id:'afv',name:'Af ve Âfiyet Duası (Sabah)',category:'Ebû Dâvûd 5074 · İbn Mâce 3871',arabic:_AFV_AR,translit:_AFV_TR,meaning:_AFV_ME,target:1},
+  {id:'gayb',name:'Allâhümme Âlime’l-ğayb (Sabah)',category:'Tirmizî 3392 · Ebû Dâvûd 5067',arabic:_GAYB_AR,translit:_GAYB_TR,meaning:_GAYB_ME,target:1},
+  {id:'sb_hayy',name:'Yâ Hayyu yâ Kayyûm (Sabah)',category:'Nesâî, Kübrâ · Hâkim',arabic:_HAYY_AR,translit:_HAYY_TR,meaning:_HAYY_ME,target:1},
+  {id:'fitrat',name:'Asbahnâ alâ fıtrati’l-İslâm',category:'Sabah · Ahmed, Müsned',arabic:'أَصْبَحْنَا عَلَىٰ فِطْرَةِ الْإِسْلَامِ، وَعَلَىٰ كَلِمَةِ الْإِخْلَاصِ، وَعَلَىٰ دِينِ نَبِيِّنَا مُحَمَّدٍ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ، وَعَلَىٰ مِلَّةِ أَبِينَا إِبْرَاهِيمَ حَنِيفًا مُسْلِمًا وَمَا كَانَ مِنَ الْمُشْرِكِينَ',translit:'Asbahnâ alâ fıtrati’l-İslâm, ve alâ kelimeti’l-ihlâs, ve alâ dîni nebiyyinâ Muhammedin sallallâhu aleyhi ve sellem, ve alâ milleti ebînâ İbrâhîme hanîfen müslimen ve mâ kâne mine’l-müşrikîn.',meaning:'İslam fıtratı, ihlas kelimesi, Peygamberimiz Muhammed’in (s.a.v.) dini ve hanif bir Müslüman olan, müşriklerden olmayan atamız İbrahim’in milleti üzere sabaha erdik.',target:1},
+  {id:'sb_tevhid',name:'Lâ ilâhe illallâhu vahdehû (Sabah)',category:'10 defa · Ahmed, Müsned',arabic:_TEVHID_AR,translit:_TEVHID_TR,meaning:_TEVHID_ME,target:10},
+
+  // Akşam
+  {id:'ak_kursi',name:'Âyetü’l-Kürsî (Akşam)',category:'Bakara 2:255 · Nesâî, Kübrâ',arabic:'',translit:'',meaning:'Akşam okuyan sabaha kadar korunur. Metni mushaftan okuyabilirsin.',target:1},
+  {id:'ak_ihlas',name:'İhlâs Sûresi (Akşam)',category:'3 defa · Ebû Dâvûd 5082, Tirmizî 3575',arabic:'',translit:'',meaning:'Allah’ın birliğini anlatan sûre.',target:3},
+  {id:'ak_felak',name:'Felak Sûresi (Akşam)',category:'3 defa · Ebû Dâvûd 5082, Tirmizî 3575',arabic:'',translit:'',meaning:'Sabahın Rabbine, yarattıklarının şerrinden sığınma sûresi.',target:3},
+  {id:'ak_nas',name:'Nâs Sûresi (Akşam)',category:'3 defa · Ebû Dâvûd 5082, Tirmizî 3575',arabic:'',translit:'',meaning:'İnsanların Rabbine, vesvese verenin şerrinden sığınma sûresi.',target:3},
+  {id:'emseyna',name:'Emseynâ ve emse’l-mülkü lillâh',category:'Akşam · Müslim 2723',arabic:'أَمْسَيْنَا وَأَمْسَى الْمُلْكُ لِلَّهِ، وَالْحَمْدُ لِلَّهِ، لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ، رَبِّ أَسْأَلُكَ خَيْرَ مَا فِي هَٰذِهِ اللَّيْلَةِ وَخَيْرَ مَا بَعْدَهَا، وَأَعُوذُ بِكَ مِنْ شَرِّ مَا فِي هَٰذِهِ اللَّيْلَةِ وَشَرِّ مَا بَعْدَهَا، رَبِّ أَعُوذُ بِكَ مِنَ الْكَسَلِ وَسُوءِ الْكِبَرِ، رَبِّ أَعُوذُ بِكَ مِنْ عَذَابٍ فِي النَّارِ وَعَذَابٍ فِي الْقَبْرِ',translit:'Emseynâ ve emse’l-mülkü lillâh, ve’l-hamdü lillâh, lâ ilâhe illallâhu vahdehû lâ şerîke leh, lehü’l-mülkü ve lehü’l-hamdü ve hüve alâ külli şey’in kadîr. Rabbi es’elüke hayra mâ fî hâzihi’l-leyleti ve hayra mâ ba’dehâ, ve e’ûzü bike min şerri mâ fî hâzihi’l-leyleti ve şerri mâ ba’dehâ. Rabbi e’ûzü bike mine’l-keseli ve sû’i’l-kiber. Rabbi e’ûzü bike min azâbin fi’n-nâri ve azâbin fi’l-kabr.',meaning:'Akşama erdik, mülk de Allah’ın olarak akşama erdi. Hamd Allah’adır. Allah’tan başka ilah yoktur, tektir, ortağı yoktur. Mülk O’nundur, hamd O’nadır, O her şeye kadirdir. Rabbim! Bu gecenin ve sonrasının hayrını Senden isterim; bu gecenin ve sonrasının şerrinden Sana sığınırım. Rabbim! Tembellikten ve ihtiyarlığın kötülüğünden Sana sığınırım. Rabbim! Cehennem azabından ve kabir azabından Sana sığınırım.',target:1},
+  {id:'bike_emseyna',name:'Allâhümme bike emseynâ',category:'Akşam · Tirmizî 3391, Ebû Dâvûd 5068',arabic:'اللَّهُمَّ بِكَ أَمْسَيْنَا، وَبِكَ أَصْبَحْنَا، وَبِكَ نَحْيَا، وَبِكَ نَمُوتُ، وَإِلَيْكَ الْمَصِيرُ',translit:'Allâhümme bike emseynâ, ve bike asbahnâ, ve bike nahyâ, ve bike nemûtü, ve ileyke’l-masîr.',meaning:'Allah’ım! Seninle akşama erdik, Seninle sabaha erdik. Seninle yaşar, Seninle ölürüz. Varış Sanadır.',target:1},
+  {id:'ak_seyyid',name:'Seyyidü’l-İstiğfâr (Akşam)',category:'Buhârî 6306 · En faziletli istiğfar',arabic:_SEYYID_AR,translit:_SEYYID_TR,meaning:_SEYYID_ME,target:1},
+  {id:'ak_afini',name:'Âfiyet Duası (Akşam)',category:'3 defa · Ebû Dâvûd 5090',arabic:'اللَّهُمَّ عَافِنِي فِي بَدَنِي، اللَّهُمَّ عَافِنِي فِي سَمْعِي، اللَّهُمَّ عَافِنِي فِي بَصَرِي، لَا إِلَٰهَ إِلَّا أَنْتَ، اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْكُفْرِ وَالْفَقْرِ، اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، لَا إِلَٰهَ إِلَّا أَنْتَ',translit:'Allâhümme âfinî fî bedenî, Allâhümme âfinî fî sem’î, Allâhümme âfinî fî basarî, lâ ilâhe illâ ente. Allâhümme innî e’ûzü bike mine’l-küfri ve’l-fakr, Allâhümme innî e’ûzü bike min azâbi’l-kabr, lâ ilâhe illâ ente.',meaning:'Allah’ım! Bedenimi sıhhatli kıl. Allah’ım! İşitmemi sıhhatli kıl. Allah’ım! Gözümü sıhhatli kıl. Senden başka ilah yoktur. Allah’ım! Küfürden ve fakirlikten Sana sığınırım. Allah’ım! Kabir azabından Sana sığınırım. Senden başka ilah yoktur.',target:3},
+  {id:'ak_afv',name:'Af ve Âfiyet Duası (Akşam)',category:'Ebû Dâvûd 5074 · İbn Mâce 3871',arabic:_AFV_AR,translit:_AFV_TR,meaning:_AFV_ME,target:1},
+  {id:'ak_gayb',name:'Allâhümme Âlime’l-ğayb (Akşam)',category:'Tirmizî 3392 · Ebû Dâvûd 5067',arabic:_GAYB_AR,translit:_GAYB_TR,meaning:_GAYB_ME,target:1},
+  {id:'ak_bismillah',name:'Bismillâhillezî (Akşam)',category:'3 defa · Ebû Dâvûd 5088, Tirmizî 3388',arabic:'بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ',translit:'Bismillâhillezî lâ yedurru mea’smihî şey’ün fi’l-ardı ve lâ fi’s-semâi ve hüve’s-semî’u’l-alîm.',meaning:'O Allah’ın adıyla ki, O’nun adı anıldığında yerde ve gökte hiçbir şey zarar veremez. O, hakkıyla işiten ve her şeyi bilendir.',target:3},
+  {id:'ak_hayy',name:'Yâ Hayyu yâ Kayyûm (Akşam)',category:'Nesâî, Kübrâ · Hâkim',arabic:_HAYY_AR,translit:_HAYY_TR,meaning:_HAYY_ME,target:1},
+  {id:'ak_fitrat',name:'Emseynâ alâ fıtrati’l-İslâm',category:'Akşam · Ahmed, Müsned',arabic:'أَمْسَيْنَا عَلَىٰ فِطْرَةِ الْإِسْلَامِ، وَعَلَىٰ كَلِمَةِ الْإِخْلَاصِ، وَعَلَىٰ دِينِ نَبِيِّنَا مُحَمَّدٍ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ، وَعَلَىٰ مِلَّةِ أَبِينَا إِبْرَاهِيمَ حَنِيفًا مُسْلِمًا وَمَا كَانَ مِنَ الْمُشْرِكِينَ',translit:'Emseynâ alâ fıtrati’l-İslâm, ve alâ kelimeti’l-ihlâs, ve alâ dîni nebiyyinâ Muhammedin sallallâhu aleyhi ve sellem, ve alâ milleti ebînâ İbrâhîme hanîfen müslimen ve mâ kâne mine’l-müşrikîn.',meaning:'İslam fıtratı, ihlas kelimesi, Peygamberimiz Muhammed’in (s.a.v.) dini ve hanif bir Müslüman olan, müşriklerden olmayan atamız İbrahim’in milleti üzere akşama erdik.',target:1},
+  {id:'ak_tevhid',name:'Lâ ilâhe illallâhu vahdehû (Akşam)',category:'10 defa · Ahmed, Müsned',arabic:_TEVHID_AR,translit:_TEVHID_TR,meaning:_TEVHID_ME,target:10},
+  {id:'ak_bihamdihi',name:'Sübhânallâhi ve bihamdihî (Akşam)',category:'100 defa · Müslim 2692',arabic:'سُبْحَانَ اللَّهِ وَبِحَمْدِهِ',translit:'Sübhânallâhi ve bihamdihî.',meaning:'Allah’ı hamdiyle birlikte tesbih ederim.',target:100}
+];
+
+const MORNING = ['ayetelkursi','ihlas','felak','nas','asbahna','bike_asbahna','seyyid','afini','afv','gayb','bismillahillezi','sb_hayy','fitrat','sb_tevhid','adede_halkihi','bihamdihi'];
+const EVENING = ['ak_kursi','ak_ihlas','ak_felak','ak_nas','emseyna','bike_emseyna','ak_seyyid','ak_afini','ak_afv','ak_gayb','ak_bismillah','kelimat','ak_hayy','ak_fitrat','ak_tevhid','ak_bihamdihi'];
+
 /* ---------- Dua sırası (Hanbelî: hamd-senâ → salavat → tevbe-istiğfar → istek → kapanış) ---------- */
 const DUA_GROUPS = [
-  ['1 · Hamd ve Senâ', ['tawhid','aksam','kerb','mulk','bakiyat','tasbih','bihamdihi','subhanallahil_azim','adede_halkihi','melik_kuddus','masaallah','la_havle','raditu']],
+  ['☀︎ Sabah Zikirleri', MORNING],
+  ['☾ Akşam Zikirleri', EVENING],
+  ['1 · Hamd ve Senâ', ['tawhid','aksam','kerb','mulk','bakiyat','tasbih','subhanallahil_azim','melik_kuddus','masaallah','la_havle','raditu']],
   ['2 · Salavat', ['salavat']],
   ['3 · Tevbe ve İstiğfar', ['istighfar','istigfar_tevbe','istigfar_hayy','yunus','adem']],
   ['4 · Dua: Ahiret İçin', ['mukallib','husnu_huluk','rabbena_atina','ecirni','kabir','ibrahim','yusuf','nuh']],
   ['4 · Dua: Dünya ve Sıkıntı', ['musa_sadr','musa','rizik1','rizik2','maide','rizik_ayet','ya_fettah','aile','zekeriya','suleyman','rahmeteke','hayy','eyyub','gam','sabir','tevekkul','hasbunallah','lokman22','suayb']],
-  ['4 · Dua: Korunma', ['afini','bismillahillezi','kelimat','ayetelkursi','felak','nas','yunus81']],
+  ['4 · Dua: Korunma', ['yunus81']],
   ['Kendi Zikirlerin', null],
   ['5 · Kapanış', ['kapanis']],
   ['Özel Durumlarda', ['uyanis1','uyanis2','sukur','hakaret','kader','musibet','sinanan']]
@@ -163,9 +224,9 @@ function sortByDuaOrder(list) {
 
 // v6: kullanıcı isteğiyle kaldırılan Esmâ kartları
 const REMOVED_V6 = new Set(['ya_sabur', 'ya_latif', 'ya_selam', 'ya_vedud']);
-const DEFAULTS = sortByDuaOrder([...BASE, ...ADDED_V2, ...ADDED_V3, ...ADDED_V5].filter(z => !REMOVED_V6.has(z.id)));
+const DEFAULTS = sortByDuaOrder([...BASE, ...ADDED_V2, ...ADDED_V3, ...ADDED_V5, ...ADDED_V7].filter(z => !REMOVED_V6.has(z.id)));
 applyPatches(DEFAULTS);
-const CATALOG = 6;
+const CATALOG = 7;
 
 const KEY = 'zikrim-v2';
 const OLD_KEY = 'zikrim-v1';
@@ -237,6 +298,14 @@ function load() {
         const rest = out.zikirs.filter(z => !moving.includes(z));
         const anchor = ['maide', 'rizik2', 'rizik1'].map(id => rest.findIndex(z => z.id === id)).find(i => i >= 0);
         if (moving.length && anchor !== undefined) { rest.splice(anchor + 1, 0, ...moving); out.zikirs = rest; }
+      }
+      if (out.catalog < 7) {
+        add(ADDED_V7);
+        // Sabah ve akşam zikirlerini en üste, kendi bölümlerine al
+        const block = [...MORNING, ...EVENING].map(id => out.zikirs.find(z => z.id === id)).filter(Boolean);
+        out.zikirs = [...block, ...out.zikirs.filter(z => !block.includes(z))];
+        setTimeout(() => toast('Sabah ve Akşam zikirleri eklendi ☀️🌙'), 800);
+        added = 0;
       }
       out.catalog = CATALOG;
       persistState(out);
