@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0d1526">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Zikrim">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="format-detection" content="telephone=no">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
+<title>Zikrim — Günlük Zikir</title>
+</head>
+<body data-theme="night">
+<div class="app">
+  <header>
+    <div>
+      <span class="eyebrow" id="today">GÜNLÜK HUZUR</span>
+      <h1>Zikrim <span class="sparkle">✦</span></h1>
+      <p>Her an, gönülden bir hatırlayış.</p>
+    </div>
+    <button id="openSettings" class="icon-button" aria-label="Ayarlar" title="Ayarlar">⚙︎</button>
+  </header>
+
+  <section class="hero">
+    <span class="hero-subtitle">BUGÜNKÜ TOPLAM ZİKİR</span>
+    <div class="grand" id="grand">0</div>
+    <div class="stats">
+      <span class="stat" id="streak">🔥 0 gün</span>
+      <span class="stat" id="progress">0 / 7 tamamlandı</span>
+    </div>
+    <div class="week" id="week" aria-label="Son 7 gün"></div>
+    <div class="hero-foot" lang="ar" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+  </section>
+
+  <section class="themes">
+    <span class="section-title">Görünüm</span>
+    <div class="theme-controls" role="group" aria-label="Tema seçimi">
+      <button data-set-theme="night">☾ Gece</button>
+      <button data-set-theme="nature">❀ Doğa</button>
+      <button data-set-theme="classic">✧ Klasik</button>
+    </div>
+  </section>
+
+  <section class="list">
+    <div class="list-head">
+      <h2>Zikirlerim</h2>
+      <button id="addZikir" class="chip-button">＋ Yeni zikir</button>
+    </div>
+    <div id="cards"></div>
+    <p class="empty" id="empty" hidden>Henüz zikir yok. “Yeni zikir” ile ekleyebilir ya da ayarlardan varsayılanları geri yükleyebilirsin.</p>
+  </section>
+
+  <footer>“Kalpler ancak Allah'ı anmakla huzur bulur.” <small>Ra'd 13:28</small></footer>
+</div>
+
+<!-- Odak modu: ekrana dokunarak sayma -->
+<div id="focus" class="focus" hidden>
+  <div class="focus-top">
+    <button id="focusClose" class="icon-button" aria-label="Kapat">✕</button>
+    <div class="focus-title">
+      <h2 id="fName"></h2>
+      <p id="fArabic" class="f-arabic" lang="ar" dir="rtl"></p>
+    </div>
+    <span class="focus-spacer"></span>
+  </div>
+  <button id="focusTap" class="focus-tap" aria-label="Bir zikir say">
+    <svg class="ring" viewBox="0 0 220 220" aria-hidden="true">
+      <circle class="ring-track" cx="110" cy="110" r="96"/>
+      <circle class="ring-bar" id="fRing" cx="110" cy="110" r="96"/>
+    </svg>
+    <span class="focus-center">
+      <span class="focus-num" id="fCount">0</span>
+      <span class="focus-target" id="fTarget">/ 0</span>
+      <span class="focus-done" id="fDone"></span>
+    </span>
+  </button>
+  <p class="focus-hint">Saymak için ekrana dokun</p>
+  <div class="focus-bottom">
+    <button id="focusPrev" class="ghost" aria-label="Önceki zikir">‹</button>
+    <button id="focusMinus" class="ghost">−1 geri al</button>
+    <button id="focusNext" class="ghost" aria-label="Sonraki zikir">›</button>
+  </div>
+</div>
+
+<!-- Zikir ekle / düzenle -->
+<dialog id="editor" class="sheet">
+  <form method="dialog" id="editorForm">
+    <h2 id="editorTitle">Yeni zikir</h2>
+    <label>Ad<input name="name" required maxlength="80" placeholder="ör. Hasbunallah"></label>
+    <label>Kısa açıklama<input name="category" maxlength="80" placeholder="ör. Tevekkül"></label>
+    <label>Arapça (isteğe bağlı)<textarea name="arabic" rows="2" dir="rtl" lang="ar"></textarea></label>
+    <label>Okunuşu (isteğe bağlı)<textarea name="translit" rows="2"></textarea></label>
+    <label>Anlamı (isteğe bağlı)<textarea name="meaning" rows="2"></textarea></label>
+    <label>Günlük hedef<input name="target" type="number" inputmode="numeric" min="1" max="100000" required value="33"></label>
+    <div class="quick-targets"><button type="button" data-t="33">33</button><button type="button" data-t="99">99</button><button type="button" data-t="100">100</button><button type="button" data-t="1000">1000</button></div>
+    <div class="edit-only">
+      <div class="row">
+        <button type="button" id="moveUp" class="ghost">↑ Yukarı</button>
+        <button type="button" id="moveDown" class="ghost">↓ Aşağı</button>
+      </div>
+      <div class="row">
+        <button type="button" id="resetOne" class="ghost">↻ Bugünü sıfırla</button>
+        <button type="button" id="deleteOne" class="ghost danger">Sil</button>
+      </div>
+    </div>
+    <div class="row">
+      <button type="button" class="ghost" id="editorCancel">Vazgeç</button>
+      <button type="submit" class="primary">Kaydet</button>
+    </div>
+  </form>
+</dialog>
+
+<!-- Ayarlar -->
+<dialog id="settings" class="sheet">
+  <h2>Ayarlar</h2>
+  <label class="switch-row">Titreşim <input type="checkbox" id="hapticsToggle" switch></label>
+  <h3>Son 30 gün</h3>
+  <div id="history" class="history"></div>
+  <h3>Veriler</h3>
+  <p class="note">Veriler yalnızca bu telefonda tutulur. Uygulamayı silmeden ya da adresini değiştirmeden önce yedek al.</p>
+  <div class="row">
+    <button type="button" id="exportData" class="ghost">⇪ Yedeği kaydet</button>
+    <label class="ghost file-button">⇩ Yedekten yükle<input type="file" id="importData" accept="application/json,.json" hidden></label>
+  </div>
+  <div class="row">
+    <button type="button" id="resetToday" class="ghost">↻ Bugünü sıfırla</button>
+    <button type="button" id="restoreDefaults" class="ghost">Varsayılan zikirler</button>
+  </div>
+  <div class="row"><button type="button" id="closeSettings" class="primary">Tamam</button></div>
+  <p class="note center">Zikrim · sürüm 2</p>
+</dialog>
+
+<div id="toast" role="status" aria-live="polite"></div>
+<label id="haptic" class="haptic" aria-hidden="true"><input type="checkbox" switch tabindex="-1"></label>
+<script src="script.js"></script>
+</body>
+</html>
