@@ -1,7 +1,7 @@
 'use strict';
 
 /* ---------- Varsayılan zikirler ---------- */
-const DEFAULTS = [
+const BASE = [
   {id:'istighfar',name:'Estağfirullah el-Azîm',category:'Tevbe ve istiğfar',arabic:'أَسْتَغْفِرُ اللَّهَ الْعَظِيمَ',translit:'Estağfirullâhe’l-Azîm',meaning:'Yüce Allah’tan bağışlanma dilerim.',target:100},
   {id:'yunus',name:'Hz. Yûnus’un Duası',category:'Tevbe ve dua',arabic:'لَا إِلَٰهَ إِلَّا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ',translit:'Lâ ilâhe illâ ente subhâneke innî küntü mine’z-zâlimîn.',meaning:'Senden başka ilah yoktur. Seni tenzih ederim. Gerçekten ben zalimlerden oldum.',target:33},
   {id:'tasbih',name:'Tesbih, Hamd ve Tekbir',category:'Allah’ı anmak',arabic:'سُبْحَانَ اللَّهِ · الْحَمْدُ لِلَّهِ · اللَّهُ أَكْبَرُ',translit:'Sübhânallah · Elhamdülillâh · Allâhu ekber',meaning:'Allah’ı noksanlıklardan tenzih ederim · Hamd Allah’adır · Allah en büyüktür.',target:99},
@@ -10,6 +10,54 @@ const DEFAULTS = [
   {id:'musa',name:'Hz. Mûsâ’nın Duası',category:'Kasas 28:24',arabic:'رَبِّ إِنِّي لِمَا أَنْزَلْتَ إِلَيَّ مِنْ خَيْرٍ فَقِيرٌ',translit:'Rabbi innî limâ enzelte ileyye min hayrin fakîr.',meaning:'Rabbim, bana indireceğin her hayra muhtacım.',target:33},
   {id:'tawhid',name:'Tevhid',category:'Allah’ın birliği',arabic:'لَا إِلَٰهَ إِلَّا اللَّهُ',translit:'Lâ ilâhe illallah.',meaning:'Allah’tan başka hak ilah yoktur.',target:100}
 ];
+
+// Sürüm 2.3 ile eklenen zikir ve dualar (fotoğraflardan; tekrar edenler birleştirildi)
+const ADDED_V2 = [
+  // Peygamberlerin duaları
+  {id:'adem',name:'Hz. Âdem’in Duası',category:'A’râf 7:23 · Bağışlanma ve rahmet',arabic:'رَبَّنَا ظَلَمْنَا أَنْفُسَنَا وَإِنْ لَمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُونَنَّ مِنَ الْخَاسِرِينَ',translit:'Rabbenâ zalemnâ enfusenâ ve in lem tağfir lenâ ve terhamnâ lenekûnenne mine’l-hâsirîn.',meaning:'Rabbimiz! Biz kendimize zulmettik. Eğer bizi bağışlamaz ve bize merhamet etmezsen, muhakkak ziyana uğrayanlardan oluruz.',target:7},
+  {id:'eyyub',name:'Hz. Eyyûb’un Duası',category:'Enbiyâ 21:83 · Sıkıntı anında',arabic:'أَنِّي مَسَّنِيَ الضُّرُّ وَأَنْتَ أَرْحَمُ الرَّاحِمِينَ',translit:'Ennî messeniye’d-durru ve ente erhamü’r-râhimîn.',meaning:'Rabbim! Bana gerçekten sıkıntı dokundu; Sen merhametlilerin en merhametlisisin.',target:7},
+  {id:'nuh',name:'Hz. Nûh’un Duası',category:'Nûh 71:28 · Aile ve müminler için',arabic:'رَبِّ اغْفِرْ لِي وَلِوَالِدَيَّ وَلِمَنْ دَخَلَ بَيْتِيَ مُؤْمِنًا وَلِلْمُؤْمِنِينَ وَالْمُؤْمِنَاتِ',translit:'Rabbiğfir lî ve li-vâlideyye ve li-men dehale beytiye mü’minen ve li’l-mü’minîne ve’l-mü’minât.',meaning:'Rabbim! Beni, anne babamı, evime mümin olarak girenleri, bütün mümin erkek ve kadınları bağışla.',target:7},
+  {id:'yusuf',name:'Hz. Yûsuf’un Duası',category:'Yûsuf 12:101 · Güzel son',arabic:'أَنْتَ وَلِيِّي فِي الدُّنْيَا وَالْآخِرَةِ تَوَفَّنِي مُسْلِمًا وَأَلْحِقْنِي بِالصَّالِحِينَ',translit:'Ente veliyyî fi’d-dünyâ ve’l-âhira, teveffenî müslimen ve elhıknî bi’s-sâlihîn.',meaning:'Dünyada da ahirette de benim velim Sensin. Beni Müslüman olarak öldür ve beni salih kullarına kat.',target:7},
+  {id:'ibrahim',name:'Hz. İbrâhim’in Duası',category:'İbrâhim 14:40 · Namaz ve nesil',arabic:'رَبِّ اجْعَلْنِي مُقِيمَ الصَّلَاةِ وَمِنْ ذُرِّيَّتِي رَبَّنَا وَتَقَبَّلْ دُعَاءِ',translit:'Rabbi’c’alnî mukîme’s-salâti ve min zürriyyetî, Rabbenâ ve tekabbel duâ.',meaning:'Rabbim! Beni ve soyumdan gelenleri namazı dosdoğru kılanlardan eyle. Rabbimiz! Duamı kabul buyur.',target:7},
+  {id:'suayb',name:'Hz. Şuayb’ın Duası',category:'A’râf 7:89 · Adalete erişmek için',arabic:'رَبَّنَا افْتَحْ بَيْنَنَا وَبَيْنَ قَوْمِنَا بِالْحَقِّ وَأَنْتَ خَيْرُ الْفَاتِحِينَ',translit:'Rabbenâ’ftah beynenâ ve beyne kavminâ bi’l-hakkı ve ente hayru’l-fâtihîn.',meaning:'Ey Rabbimiz! Bizimle kavmimiz arasında hak ile hükmet. Sen hükmedenlerin en hayırlısısın.',target:7},
+  {id:'rabbena_atina',name:'Hz. Muhammed’in Duası',category:'Bakara 2:201 · Dünya ve ahiret iyiliği',arabic:'رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ',translit:'Rabbenâ âtinâ fi’d-dünyâ haseneten ve fi’l-âhireti haseneten ve kınâ azâbe’n-nâr.',meaning:'Ey Rabbimiz! Bize dünyada da iyilik ver, ahirette de iyilik ver; bizi cehennem azabından koru.',target:7},
+  {id:'musa_sadr',name:'Hz. Mûsâ’nın Duası (Rabbişrah)',category:'Tâhâ 20:25-28 · Kolaylık için',arabic:'رَبِّ اشْرَحْ لِي صَدْرِي وَيَسِّرْ لِي أَمْرِي وَاحْلُلْ عُقْدَةً مِنْ لِسَانِي يَفْقَهُوا قَوْلِي',translit:'Rabbişrah lî sadrî, ve yessir lî emrî, vahlul ukdeten min lisânî, yefkahû kavlî.',meaning:'Rabbim! Gönlümü genişlet, işimi bana kolaylaştır, dilimden düğümü çöz ki sözümü iyi anlasınlar.',target:7},
+  {id:'suleyman',name:'Hz. Süleyman’ın Duası',category:'Sâd 38:35',arabic:'رَبِّ اغْفِرْ لِي وَهَبْ لِي مُلْكًا لَا يَنْبَغِي لِأَحَدٍ مِنْ بَعْدِي إِنَّكَ أَنْتَ الْوَهَّابُ',translit:'Rabbiğfir lî ve heb lî mülken lâ yenbeğî li-ehadin min ba’dî, inneke ente’l-Vehhâb.',meaning:'Ey Rabbim! Beni bağışla; bana, benden sonra kimsenin ulaşamayacağı bir hükümranlık ver. Şüphesiz Sen, daima bağışta bulunansın.',target:7},
+
+  // Günlük
+  {id:'uyanis1',name:'Uyanınca (1)',category:'Buhârî 6312',arabic:'الْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ',translit:'Elhamdü lillâhillezî ahyânâ ba’de mâ emâtenâ ve ileyhi’n-nüşûr.',meaning:'Bizi öldürdükten sonra yeniden dirilten Allah’a hamdolsun. Dönüş yalnız O’nadır.',target:1},
+  {id:'uyanis2',name:'Uyanınca (2)',category:'Uyanış duası',arabic:'الْحَمْدُ لِلَّهِ الَّذِي عَافَانِي فِي جَسَدِي وَرَدَّ عَلَيَّ رُوحِي وَأَذِنَ لِي بِذِكْرِهِ',translit:'Elhamdü lillâhillezî âfânî fî cesedî, ve redde aleyye rûhî, ve ezine lî bi-zikrih.',meaning:'Vücuduma sıhhat veren, ruhumu bana geri veren ve kendisini zikretmeme izin veren Allah’a hamdolsun.',target:1},
+  {id:'sukur',name:'Uyanınca (3) · Allah’a Şükür',category:'İbn Mâce 3878',arabic:'لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ، سُبْحَانَ اللَّهِ، وَالْحَمْدُ لِلَّهِ، وَلَا إِلَٰهَ إِلَّا اللَّهُ، وَاللَّهُ أَكْبَرُ، وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ الْعَلِيِّ الْعَظِيمِ، رَبِّ اغْفِرْ لِي',translit:'Lâ ilâhe illallâhu vahdehû lâ şerîke leh, lehü’l-mülkü ve lehü’l-hamd, ve hüve alâ külli şey’in kadîr. Sübhânallâh, velhamdü lillâh, ve lâ ilâhe illallâh, vallâhu ekber, ve lâ havle ve lâ kuvvete illâ billâhi’l-aliyyi’l-azîm. Rabbiğfir lî.',meaning:'Allah’tan başka ilah yoktur. O tektir, ortağı yoktur. Mülk O’nundur, hamd O’nadır. O, her şeye kadirdir. Allah’ı tesbih ederim, hamd Allah’a mahsustur, Allah’tan başka ilah yoktur, Allah en büyüktür. Kuvvet ve kudret ancak yüce ve azîm olan Allah’ın yardımıyladır. Rabbim, beni bağışla.',target:1},
+  {id:'aksam',name:'Akşam Zikri',category:'Tevhid',arabic:'لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ',translit:'Lâ ilâhe illallâhu vahdehû lâ şerîke leh, lehü’l-mülkü ve lehü’l-hamdü ve hüve alâ külli şey’in kadîr.',meaning:'Allah’tan başka ilah yoktur. O tektir, ortağı yoktur. Mülk O’nundur, hamd O’nadır. O, her şeye gücü yetendir.',target:10},
+  {id:'kabir',name:'Kabir Azabından Sığınma',category:'Müslim 589 · Günlük zikir',arabic:'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، وَأَعُوذُ بِكَ مِنْ فِتْنَةِ الْمَسِيحِ الدَّجَّالِ، وَأَعُوذُ بِكَ مِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَاتِ، اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْمَأْثَمِ وَالْمَغْرَمِ',translit:'Allâhümme innî e’ûzü bike min azâbi’l-kabr, ve e’ûzü bike min fitneti’l-mesîhi’d-deccâl, ve e’ûzü bike min fitneti’l-mahyâ ve’l-memât. Allâhümme innî e’ûzü bike mine’l-me’semi ve’l-mağram.',meaning:'Allah’ım! Kabir azabından Sana sığınırım. Deccal’in fitnesinden Sana sığınırım. Hayatın ve ölümün fitnesinden Sana sığınırım. Allah’ım! Günah ve borçtan Sana sığınırım.',target:1},
+
+  // Allah’ı yüceltmek
+  {id:'bakiyat',name:'Allah’ı Yüceltmek (Bâkiyât-ı Sâlihât)',category:'Tesbih, hamd, tevhid, tekbir',arabic:'سُبْحَانَ اللَّهِ وَالْحَمْدُ لِلَّهِ وَلَا إِلَٰهَ إِلَّا اللَّهُ وَاللَّهُ أَكْبَرُ',translit:'Sübhânallâh, velhamdü lillâh, ve lâ ilâhe illallâh, vallâhu ekber.',meaning:'Allah’ı tesbih ederim, O’na hamdolsun, O’ndan başka ilah yoktur, Allah en büyüktür.',target:33},
+  {id:'masaallah',name:'Mâşâallah lâ kuvvete illâ billâh',category:'Allah’ı yüceltmek',arabic:'مَا شَاءَ اللَّهُ لَا قُوَّةَ إِلَّا بِاللَّهِ',translit:'Mâ şâallâhu lâ kuvvete illâ billâh.',meaning:'Allah’ın dilediği olur; güç ve kuvvet yalnız Allah’tandır.',target:33},
+  {id:'mulk',name:'Allah’a Övgü (Mülk Duası)',category:'Âl-i İmrân 3:26-27',arabic:'اللَّهُمَّ مَالِكَ الْمُلْكِ تُؤْتِي الْمُلْكَ مَنْ تَشَاءُ وَتَنْزِعُ الْمُلْكَ مِمَّنْ تَشَاءُ وَتُعِزُّ مَنْ تَشَاءُ وَتُذِلُّ مَنْ تَشَاءُ بِيَدِكَ الْخَيْرُ إِنَّكَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ · تُولِجُ اللَّيْلَ فِي النَّهَارِ وَتُولِجُ النَّهَارَ فِي اللَّيْلِ وَتُخْرِجُ الْحَيَّ مِنَ الْمَيِّتِ وَتُخْرِجُ الْمَيِّتَ مِنَ الْحَيِّ وَتَرْزُقُ مَنْ تَشَاءُ بِغَيْرِ حِسَابٍ',translit:'Allâhümme mâlike’l-mülki tü’ti’l-mülke men teşâ’ ve tenzi’u’l-mülke mimmen teşâ’, ve tu’izzu men teşâ’ ve tüzillü men teşâ’, bi-yedike’l-hayr, inneke alâ külli şey’in kadîr. Tûlicu’l-leyle fi’n-nehâri ve tûlicu’n-nehâra fi’l-leyl, ve tuhricu’l-hayye mine’l-meyyiti ve tuhricu’l-meyyite mine’l-hayy, ve terzuku men teşâ’ü bi-ğayri hisâb.',meaning:'Ey mülkün sahibi Allah’ım! Mülkü dilediğine verirsin, dilediğinden çekip alırsın. Dilediğini aziz, dilediğini zelil kılarsın. Hayır yalnız Senin elindedir. Şüphesiz Sen her şeye kadirsin. Geceyi gündüze, gündüzü geceye katarsın. Diriyi ölüden, ölüyü diriden çıkarırsın. Dilediğine hesapsız rızık verirsin.',target:1},
+
+  // Korunma
+  {id:'ecirni',name:'Cehennemden Korunmak İçin',category:'Korunma duası',arabic:'اللَّهُمَّ أَجِرْنِي مِنَ النَّارِ',translit:'Allâhümme ecirnî mine’n-nâr.',meaning:'Allah’ım! Beni cehennem ateşinden koru.',target:7},
+  {id:'gam',name:'Üzüntü ve Gam Zamanlarında',category:'Buhârî 6369',arabic:'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْهَمِّ وَالْحَزَنِ، وَالْعَجْزِ وَالْكَسَلِ، وَالْبُخْلِ وَالْجُبْنِ، وَضَلَعِ الدَّيْنِ وَغَلَبَةِ الرِّجَالِ',translit:'Allâhümme innî e’ûzü bike mine’l-hemmi ve’l-hazen, ve’l-aczi ve’l-kesel, ve’l-buhli ve’l-cübn, ve dala’i’d-deyni ve ğalebeti’r-ricâl.',meaning:'Allah’ım! Keder ve üzüntüden, acizlik ve tembellikten, cimrilik ve korkaklıktan, borç altında ezilmekten ve insanların baskısı altında kalmaktan Sana sığınırım.',target:3},
+
+  // Zor zamanlar
+  {id:'sabir',name:'Zor Zamanlarda Sabır',category:'A’râf 7:126',arabic:'رَبَّنَا أَفْرِغْ عَلَيْنَا صَبْرًا وَتَوَفَّنَا مُسْلِمِينَ',translit:'Rabbenâ efriğ aleynâ sabran ve teveffenâ müslimîn.',meaning:'Ey Rabbimiz! Üzerimize sabır yağdır ve bizi Müslümanlar olarak vefat ettir.',target:7},
+  {id:'tevekkul',name:'Allah’a Tevekkül ve Teslimiyet',category:'Tevbe 9:129 · Mü’min 40:44',arabic:'حَسْبِيَ اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ عَلَيْهِ تَوَكَّلْتُ وَهُوَ رَبُّ الْعَرْشِ الْعَظِيمِ · وَأُفَوِّضُ أَمْرِي إِلَى اللَّهِ إِنَّ اللَّهَ بَصِيرٌ بِالْعِبَادِ',translit:'Hasbiyallâhu lâ ilâhe illâ hû, aleyhi tevekkeltü ve hüve rabbü’l-arşi’l-azîm. Ve ufavvidu emrî ilallâh, innallâhe basîrun bi’l-ibâd.',meaning:'Allah bana yeter, O’ndan başka ilah yoktur. O’na tevekkül ettim; O, yüce Arş’ın Rabbidir. İşimi Allah’a havale ediyorum; şüphesiz Allah kullarını görür, gözetir.',target:7},
+  {id:'hakaret',name:'Biri Size Hakaret Ettiğinde',category:'Enbiyâ 21:112',arabic:'رَبِّ احْكُمْ بِالْحَقِّ وَرَبُّنَا الرَّحْمَٰنُ الْمُسْتَعَانُ عَلَىٰ مَا تَصِفُونَ',translit:'Rabbi’hkum bi’l-hakk, ve Rabbüne’r-Rahmânü’l-müste’ânu alâ mâ tasifûn.',meaning:'Rabbim! Hak ile hükmet. Bizim Rabbimiz Rahmân’dır. Sizin nitelendirmelerinize karşı O’ndan yardım dileriz.',target:1},
+  {id:'kader',name:'Başarısızlıkta veya Bir Şeyi Kaybedince',category:'İbn Mâce 4168',arabic:'قَدَرُ اللَّهِ وَمَا شَاءَ فَعَلَ',translit:'Kaderullâhi ve mâ şâe fe’al.',meaning:'Bu, Allah’ın takdiridir; O dilediğini yapar.',target:1},
+  {id:'musibet',name:'Bir Badire Yaşandığında',category:'Müslim 918',arabic:'إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ، اللَّهُمَّ أْجُرْنِي فِي مُصِيبَتِي وَأَخْلِفْ لِي خَيْرًا مِنْهَا',translit:'İnnâ lillâhi ve innâ ileyhi râci’ûn. Allâhümme’curnî fî musîbetî ve ahlif lî hayran minhâ.',meaning:'Şüphesiz biz Allah’a aidiz ve yine O’na döneceğiz. Allah’ım! Musibetimden dolayı bana ecir ver ve bana ondan daha hayırlısını nasip et.',target:1},
+  {id:'sinanan',name:'Musibete Uğramış Birini Görünce',category:'İbn Mâce 3892',arabic:'الْحَمْدُ لِلَّهِ الَّذِي عَافَانِي مِمَّا ابْتَلَاكَ بِهِ وَفَضَّلَنِي عَلَىٰ كَثِيرٍ مِمَّنْ خَلَقَ تَفْضِيلًا',translit:'Elhamdü lillâhillezî âfânî mimmebtelâke bihî ve faddalenî alâ kesîrin mimmen haleka tafdîlâ.',meaning:'Beni senin uğradığın beladan koruyan ve beni yarattıklarının birçoğuna üstün kılan Allah’a hamdolsun.',target:1},
+
+  // Aile ve rızık
+  {id:'aile',name:'Huzurlu Bir Aile İçin',category:'Furkân 25:74',arabic:'رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا',translit:'Rabbenâ heb lenâ min ezvâcinâ ve zürriyyâtinâ kurrete a’yünin vec’alnâ li’l-müttekîne imâmâ.',meaning:'Ey Rabbimiz! Bize eşlerimizden ve çocuklarımızdan göz aydınlığı olacak kimseler lütfet ve bizi takva sahiplerine önder kıl.',target:7},
+  {id:'rizik_ayet',name:'Rızık Ayeti (Latîf)',category:'Şûrâ 42:19',arabic:'اللَّهُ لَطِيفٌ بِعِبَادِهِ يَرْزُقُ مَنْ يَشَاءُ وَهُوَ الْقَوِيُّ الْعَزِيزُ',translit:'Allâhu latîfun bi-ibâdihî yerzuku men yeşâ’, ve hüve’l-kaviyyü’l-azîz.',meaning:'Allah kullarına karşı lütuf sahibidir. Dilediğine rızık verir. O, kuvvetli ve yücedir.',target:7},
+  {id:'maide',name:'Rızık Ayeti (Mâide)',category:'Mâide 5:114',arabic:'رَبَّنَا أَنْزِلْ عَلَيْنَا مَائِدَةً مِنَ السَّمَاءِ تَكُونُ لَنَا عِيدًا لِأَوَّلِنَا وَآخِرِنَا وَآيَةً مِنْكَ وَارْزُقْنَا وَأَنْتَ خَيْرُ الرَّازِقِينَ',translit:'Rabbenâ enzil aleynâ mâideten mine’s-semâi tekûnü lenâ îden li-evvelinâ ve âhirinâ ve âyeten minke, verzuknâ ve ente hayru’r-râzikîn.',meaning:'Rabbimiz! Bize gökten bir sofra indir ki hem öncekilerimiz hem sonrakilerimiz için bir bayram ve Senden bir mucize olsun. Bizi rızıklandır; çünkü Sen rızık verenlerin en hayırlısısın.',target:7},
+  {id:'rizik1',name:'Rızık (Geçim) İçin Dua 1',category:'Ebû Dâvûd 850',arabic:'اللَّهُمَّ اغْفِرْ لِي، وَارْحَمْنِي، وَعَافِنِي، وَاهْدِنِي، وَارْزُقْنِي',translit:'Allâhümmağfir lî, verhamnî, ve âfinî, vehdinî, verzuknî.',meaning:'Allah’ım! Beni bağışla, bana merhamet et, bana afiyet ver, bana hidayet et ve bana rızık ver.',target:7},
+  {id:'rizik2',name:'Rızık (Geçim) İçin Dua 2',category:'Faydalı ilim, helal rızık',arabic:'اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْمًا نَافِعًا، وَرِزْقًا طَيِّبًا، وَعَمَلًا مُتَقَبَّلًا',translit:'Allâhümme innî es’elüke ilmen nâfi’an, ve rızkan tayyiben, ve amelen mütekabbelen.',meaning:'Allah’ım! Senden faydalı ilim, helal ve güzel rızık, makbul amel isterim.',target:7}
+];
+
+const DEFAULTS = [...BASE, ...ADDED_V2];
+const CATALOG = 2;
 
 const KEY = 'zikrim-v2';
 const OLD_KEY = 'zikrim-v1';
@@ -26,7 +74,7 @@ const clampTarget = v => Math.min(100000, Math.max(1, Math.floor(Number(v)) || 3
 
 /* ---------- Durum ve kayıt ---------- */
 function sanitize(s) {
-  const out = {v: 2, theme: THEMES[s && s.theme] ? s.theme : 'night', haptics: !s || s.haptics !== false, compact: !!(s && s.compact), zikirs: [], days: {}};
+  const out = {v: 2, theme: THEMES[s && s.theme] ? s.theme : 'night', haptics: !s || s.haptics !== false, compact: !!(s && s.compact), catalog: Number(s && s.catalog) || 1, zikirs: [], days: {}};
   const seen = new Set();
   for (const z of (s && Array.isArray(s.zikirs) ? s.zikirs : [])) {
     if (!z || typeof z.id !== 'string' || !z.id || seen.has(z.id)) continue;
@@ -52,9 +100,20 @@ function sanitize(s) {
 function load() {
   let s = null;
   try { s = JSON.parse(localStorage.getItem(KEY)); } catch {}
-  if (s && typeof s === 'object') return sanitize(s);
+  if (s && typeof s === 'object') {
+    const out = sanitize(s);
+    // Yeni sürümde eklenen zikirleri mevcut listeye bir kez ekle
+    if (out.catalog < 2) {
+      const have = new Set(out.zikirs.map(z => z.id));
+      for (const z of ADDED_V2) if (!have.has(z.id)) out.zikirs.push({...z});
+      out.catalog = CATALOG;
+      persistState(out);
+      setTimeout(() => toast(`${ADDED_V2.length} yeni zikir eklendi ✨`), 600);
+    }
+    return out;
+  }
   // İlk açılış: eski sürümün (v1) verisini taşı
-  s = {theme: 'night', zikirs: DEFAULTS, days: {}};
+  s = {theme: 'night', catalog: CATALOG, zikirs: DEFAULTS, days: {}};
   try {
     const old = JSON.parse(localStorage.getItem(OLD_KEY));
     if (old && typeof old === 'object') {
@@ -156,8 +215,26 @@ function renderCards() {
     }
     cardsEl.append(box);
   }
+  applyFilter();
   update();
 }
+
+/* ---------- Arama ---------- */
+const searchEl = $('#search');
+const norm = t => String(t).toLocaleLowerCase('tr-TR').normalize('NFD').replace(/[\u0300-\u036f’'`]/g, '').replace(/ı/g, 'i');
+function applyFilter() {
+  const q = norm(searchEl.value.trim());
+  document.body.classList.toggle('filtering', !!q);
+  let shown = 0;
+  for (const box of cardsEl.children) {
+    const z = findZ(box.dataset.id);
+    const hit = !q || norm([z.name, z.category, z.translit, z.meaning].join(' ')).includes(q);
+    box.hidden = !hit;
+    if (hit) shown++;
+  }
+  $('#noResult').hidden = !q || shown > 0;
+}
+searchEl.addEventListener('input', applyFilter);
 
 function update() {
   let done = 0;

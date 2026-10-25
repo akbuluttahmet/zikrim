@@ -8,6 +8,8 @@ Ana ekrana eklenen, çevrimdışı çalışan kişisel zikir sayacı. Veriler te
 - **Odak modu (⤢):** Tam ekran sayaç açılır. Ekranın herhangi bir yerine dokunarak sayılır. Ekran kapanmaz, zikirler arasında ‹ › ile geçilir.
 - **−1 geri al:** Yanlış dokunuşları düzeltmek için kullanılır.
 - **Sıralama:** Ana ekranda kartın solundaki ⋮⋮ tutamacını basılı tutup sürükleyerek sıra değiştirilir.
+- **Yeni zikirler (2.3):** 30 dua ve zikir eklendi (peygamber duaları, uyanış, rızık, sabır, tevekkül vb.); mevcut listeye bir kez otomatik eklenir.
+- **Arama:** Ad, anlam veya okunuşa göre zikir arama.
 - **Sade görünüm (☰ Sade):** Kartlarda yalnızca ad, sayaç ve düğmeler gösterilir.
 - **Kendi zikrini ekle / düzenle (⋯):** Ad, Arapça metin, okunuş, anlam ve hedef girilebilir. Sıralama değiştirilebilir, zikir silinebilir (geri alınabilir).
 - **Geri alınabilir sıfırlama:** Onay penceresi yerine "Geri al" düğmesi çıkar.

@@ -54,8 +54,10 @@
         <button id="addZikir" class="chip-button" aria-label="Yeni zikir">＋ Yeni</button>
       </div>
     </div>
+    <input id="search" class="search" type="search" placeholder="Zikir ara (ad, anlam, okunuş)…" autocomplete="off" enterkeyhint="search">
     <p class="sort-hint">Sırayı değiştirmek için kartın solundaki ⋮⋮ tutamacını basılı tutup sürükle.</p>
     <div id="cards"></div>
+    <p class="empty" id="noResult" hidden>Aramana uyan zikir yok.</p>
     <p class="empty" id="empty" hidden>Henüz zikir yok. “Yeni zikir” ile ekleyebilir ya da ayarlardan varsayılanları geri yükleyebilirsin.</p>
   </section>
 
@@ -136,7 +138,7 @@
     <button type="button" id="restoreDefaults" class="ghost">Varsayılan zikirler</button>
   </div>
   <div class="row"><button type="button" id="closeSettings" class="primary">Tamam</button></div>
-  <p class="note center">Zikrim · sürüm 2.2</p>
+  <p class="note center">Zikrim · sürüm 2.3</p>
 </dialog>
 
 <div id="toast" role="status" aria-live="polite"></div>
