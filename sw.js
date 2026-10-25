@@ -1,5 +1,5 @@
 // Güncelleme yaptığında bu sürüm adını artır (zikrim-v3, v4...)
-const CACHE = 'zikrim-v10';
+const CACHE = 'zikrim-v11';
 const ASSETS = ['./', './index.html', './style.css', './script.js', './manifest.webmanifest', './icon.svg', './apple-touch-icon.png', './icon-192.png', './icon-512.png'];
 
 self.addEventListener('install', event => {
