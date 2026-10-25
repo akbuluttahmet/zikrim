@@ -120,7 +120,9 @@ const PATCHES_V3 = [
   {v:4, id:'yunus', from:{category:'Tevbe ve dua'}, to:{category:'Enbiyâ 21:87 · Tevbe ve dua'}},
   {v:4, id:'masaallah', from:{category:'Allah’ı yüceltmek'}, to:{category:'Kehf 18:39 · Allah’ı yüceltmek'}},
   {v:4, id:'uyanis2', from:{category:'Uyanış duası'}, to:{category:'Tirmizî 3401'}},
-  {v:4, id:'rizik2', from:{category:'Faydalı ilim, helal rızık'}, to:{category:'İbn Mâce 925 · Faydalı ilim, helal rızık'}}
+  {v:4, id:'rizik2', from:{category:'Faydalı ilim, helal rızık'}, to:{category:'İbn Mâce 925 · Faydalı ilim, helal rızık'}},
+  // v6: Yâ Fettâh rızık bölümüne taşındı
+  {v:6, id:'ya_fettah', from:{category:'Esmâü’l-Hüsnâ · Kapalı yolları açar'}, to:{category:'Esmâü’l-Hüsnâ · Rızık ve hayır kapılarını açar'}}
 ];
 function applyPatches(list, since = 0) {
   for (const p of PATCHES_V3) {
@@ -138,11 +140,11 @@ const ADDED_V5 = [
 
 /* ---------- Dua sırası (Hanbelî: hamd-senâ → salavat → tevbe-istiğfar → istek → kapanış) ---------- */
 const DUA_GROUPS = [
-  ['1 · Hamd ve Senâ', ['tawhid','aksam','kerb','mulk','bakiyat','tasbih','bihamdihi','subhanallahil_azim','adede_halkihi','melik_kuddus','masaallah','la_havle','rizik_ayet','raditu','ya_latif','ya_sabur','ya_fettah','ya_selam','ya_vedud']],
+  ['1 · Hamd ve Senâ', ['tawhid','aksam','kerb','mulk','bakiyat','tasbih','bihamdihi','subhanallahil_azim','adede_halkihi','melik_kuddus','masaallah','la_havle','raditu']],
   ['2 · Salavat', ['salavat']],
   ['3 · Tevbe ve İstiğfar', ['istighfar','istigfar_tevbe','istigfar_hayy','yunus','adem']],
   ['4 · Dua: Ahiret İçin', ['mukallib','husnu_huluk','rabbena_atina','ecirni','kabir','ibrahim','yusuf','nuh']],
-  ['4 · Dua: Dünya ve Sıkıntı', ['musa_sadr','musa','rizik1','rizik2','maide','aile','zekeriya','suleyman','rahmeteke','hayy','eyyub','gam','sabir','tevekkul','hasbunallah','lokman22','suayb']],
+  ['4 · Dua: Dünya ve Sıkıntı', ['musa_sadr','musa','rizik1','rizik2','maide','rizik_ayet','ya_fettah','aile','zekeriya','suleyman','rahmeteke','hayy','eyyub','gam','sabir','tevekkul','hasbunallah','lokman22','suayb']],
   ['4 · Dua: Korunma', ['afini','bismillahillezi','kelimat','ayetelkursi','felak','nas','yunus81']],
   ['Kendi Zikirlerin', null],
   ['5 · Kapanış', ['kapanis']],
@@ -159,9 +161,11 @@ function sortByDuaOrder(list) {
     .sort((a, b) => a.r - b.r).map(x => x.z);
 }
 
-const DEFAULTS = sortByDuaOrder([...BASE, ...ADDED_V2, ...ADDED_V3, ...ADDED_V5]);
+// v6: kullanıcı isteğiyle kaldırılan Esmâ kartları
+const REMOVED_V6 = new Set(['ya_sabur', 'ya_latif', 'ya_selam', 'ya_vedud']);
+const DEFAULTS = sortByDuaOrder([...BASE, ...ADDED_V2, ...ADDED_V3, ...ADDED_V5].filter(z => !REMOVED_V6.has(z.id)));
 applyPatches(DEFAULTS);
-const CATALOG = 5;
+const CATALOG = 6;
 
 const KEY = 'zikrim-v2';
 const OLD_KEY = 'zikrim-v1';
@@ -210,7 +214,7 @@ function load() {
     if (out.catalog < CATALOG) {
       const have = new Set(out.zikirs.map(z => z.id));
       let added = 0;
-      const add = list => { for (const z of list) if (!have.has(z.id)) { out.zikirs.push({...z}); have.add(z.id); added++; } };
+      const add = list => { for (const z of list) if (!have.has(z.id) && !REMOVED_V6.has(z.id)) { out.zikirs.push({...z}); have.add(z.id); added++; } };
       if (out.catalog < 2) add(ADDED_V2);
       if (out.catalog < 3) add(ADDED_V3);
       applyPatches(out.zikirs, out.catalog);
@@ -225,6 +229,14 @@ function load() {
           save(); renderCards();
         }}), 700);
         added = 0;
+      }
+      if (out.catalog < 6) {
+        // 4 Esmâ kartını kaldır; rızıkla ilgili iki kartı rızık dualarının yanına taşı
+        out.zikirs = out.zikirs.filter(z => !REMOVED_V6.has(z.id));
+        const moving = ['rizik_ayet', 'ya_fettah'].map(id => out.zikirs.find(z => z.id === id)).filter(Boolean);
+        const rest = out.zikirs.filter(z => !moving.includes(z));
+        const anchor = ['maide', 'rizik2', 'rizik1'].map(id => rest.findIndex(z => z.id === id)).find(i => i >= 0);
+        if (moving.length && anchor !== undefined) { rest.splice(anchor + 1, 0, ...moving); out.zikirs = rest; }
       }
       out.catalog = CATALOG;
       persistState(out);
