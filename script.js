@@ -131,9 +131,37 @@ function applyPatches(list, since = 0) {
   }
 }
 
-const DEFAULTS = [...BASE, ...ADDED_V2, ...ADDED_V3];
+// v5: dua kapanışı
+const ADDED_V5 = [
+  {id:'kapanis',name:'Kapanış: Sübhâne Rabbike',category:'Sâffât 37:180-182 · Duayı hamd ile bitirmek',arabic:'سُبْحَانَ رَبِّكَ رَبِّ الْعِزَّةِ عَمَّا يَصِفُونَ وَسَلَامٌ عَلَى الْمُرْسَلِينَ وَالْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ',translit:'Sübhâne Rabbike Rabbi’l-izzeti ammâ yesifûn, ve selâmün ale’l-mürselîn, ve’l-hamdü lillâhi Rabbi’l-âlemîn.',meaning:'Senin Rabbin, kudret sahibi Rab, onların nitelendirmelerinden yücedir. Peygamberlere selam olsun. Hamd, âlemlerin Rabbi Allah’a mahsustur.',target:1}
+];
+
+/* ---------- Dua sırası (Hanbelî: hamd-senâ → salavat → tevbe-istiğfar → istek → kapanış) ---------- */
+const DUA_GROUPS = [
+  ['1 · Hamd ve Senâ', ['tawhid','aksam','kerb','mulk','bakiyat','tasbih','bihamdihi','subhanallahil_azim','adede_halkihi','melik_kuddus','masaallah','la_havle','rizik_ayet','raditu','ya_latif','ya_sabur','ya_fettah','ya_selam','ya_vedud']],
+  ['2 · Salavat', ['salavat']],
+  ['3 · Tevbe ve İstiğfar', ['istighfar','istigfar_tevbe','istigfar_hayy','yunus','adem']],
+  ['4 · Dua: Ahiret İçin', ['mukallib','husnu_huluk','rabbena_atina','ecirni','kabir','ibrahim','yusuf','nuh']],
+  ['4 · Dua: Dünya ve Sıkıntı', ['musa_sadr','musa','rizik1','rizik2','maide','aile','zekeriya','suleyman','rahmeteke','hayy','eyyub','gam','sabir','tevekkul','hasbunallah','lokman22','suayb']],
+  ['4 · Dua: Korunma', ['afini','bismillahillezi','kelimat','ayetelkursi','felak','nas','yunus81']],
+  ['Kendi Zikirlerin', null],
+  ['5 · Kapanış', ['kapanis']],
+  ['Özel Durumlarda', ['uyanis1','uyanis2','sukur','hakaret','kader','musibet','sinanan']]
+];
+const GROUP_OF = {};
+const RANK = {};
+DUA_GROUPS.forEach(([label, ids], gi) => (ids || []).forEach((id, i) => { GROUP_OF[id] = label; RANK[id] = gi * 1000 + i; }));
+const CUSTOM_GROUP = DUA_GROUPS.findIndex(g => g[1] === null);
+const groupOf = z => GROUP_OF[z.id] || (z.custom ? 'Kendi Zikirlerin' : null);
+// Bilinmeyen/kendi zikirler kendi bölümünde, eklendikleri sırayla kalır
+function sortByDuaOrder(list) {
+  return list.map((z, i) => ({z, r: (z.id in RANK ? RANK[z.id] : CUSTOM_GROUP * 1000 + 500) + i / 1000}))
+    .sort((a, b) => a.r - b.r).map(x => x.z);
+}
+
+const DEFAULTS = sortByDuaOrder([...BASE, ...ADDED_V2, ...ADDED_V3, ...ADDED_V5]);
 applyPatches(DEFAULTS);
-const CATALOG = 4;
+const CATALOG = 5;
 
 const KEY = 'zikrim-v2';
 const OLD_KEY = 'zikrim-v1';
@@ -186,6 +214,18 @@ function load() {
       if (out.catalog < 2) add(ADDED_V2);
       if (out.catalog < 3) add(ADDED_V3);
       applyPatches(out.zikirs, out.catalog);
+      if (out.catalog < 5) {
+        add(ADDED_V5);
+        // Bir kereye mahsus: listeyi dua sırasına diz (geri alınabilir)
+        const prevOrder = out.zikirs.map(z => z.id);
+        out.zikirs = sortByDuaOrder(out.zikirs);
+        setTimeout(() => toast('Zikirler dua sırasına göre dizildi', {label: 'Geri al', run: () => {
+          const pos = new Map(prevOrder.map((id, i) => [id, i]));
+          S.zikirs.sort((a, b) => (pos.has(a.id) ? pos.get(a.id) : 1e9) - (pos.has(b.id) ? pos.get(b.id) : 1e9));
+          save(); renderCards();
+        }}), 700);
+        added = 0;
+      }
       out.catalog = CATALOG;
       persistState(out);
       if (added) setTimeout(() => toast(`${added} yeni zikir eklendi ✨`), 600);
@@ -267,10 +307,14 @@ function renderCards() {
   $('#toggleCompact').classList.toggle('active', S.compact);
   $('#toggleCompact').setAttribute('aria-pressed', String(S.compact));
   $('#empty').hidden = S.zikirs.length > 0;
+  let lastGroup = null;
   for (const z of S.zikirs) {
     const box = document.createElement('article');
     box.className = 'zikir';
     box.dataset.id = z.id;
+    const g = groupOf(z);
+    if (g && g !== lastGroup) box.dataset.group = g;
+    lastGroup = g;
     box.innerHTML = `
       <div class="zikir-top">
         <span class="handle" role="button" aria-label="Sırayı değiştirmek için basılı tutup sürükle" title="Sürükleyerek sırala">⋮⋮</span>

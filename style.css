@@ -152,3 +152,13 @@ body[data-theme=night] #toast button{color:#7a5a1e}
 
 @media(max-width:370px){.arabic{font-size:22px}.grand{font-size:60px}}
 .arabic[hidden]~.translit[hidden]~.meaning{margin-top:12px}
+
+/* Dua sırası bölüm başlıkları */
+.zikir[data-group]{margin-top:44px;position:relative}
+.zikir[data-group]::before{content:attr(data-group);position:absolute;top:-30px;left:4px;font-size:12px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--accent)}
+#cards>.zikir[data-group]:first-child{margin-top:34px}
+body.filtering .zikir[data-group],body.reordering .zikir[data-group]{margin-top:12px}
+body.filtering .zikir[data-group]::before,body.reordering .zikir[data-group]::before{display:none}
+body.reordering .zikir[data-group]{margin-top:8px}
+body.compact .zikir[data-group]{margin-top:42px}
+body.compact.filtering .zikir[data-group]{margin-top:9px}
