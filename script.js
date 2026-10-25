@@ -456,9 +456,9 @@ const QUOTES = [
 /* ---------- Kartlar ---------- */
 const cardsEl = $('#cards');
 const MSET = new Set(MORNING), ESET = new Set(EVENING);
-const VIEWS = {main: 'Zikirlerim', sabah: '☀︎ Sabah Zikirleri', aksam: '☾ Akşam Zikirleri', selef: '📜 Selef’ten Sözler'};
+const VIEWS = {main: 'Zikirlerim', sabah: '☀︎ Sabah Zikirleri', aksam: '☾ Akşam Zikirleri', selef: '📜 Selef’ten Sözler', fikih: '⚖️ Hanbelî Fıkhı'};
 let view = 'main';
-const inView = z => view === 'selef' ? false : view === 'sabah' ? MSET.has(z.id) : view === 'aksam' ? ESET.has(z.id) : !MSET.has(z.id) && !ESET.has(z.id);
+const inView = z => (view === 'selef' || view === 'fikih') ? false : view === 'sabah' ? MSET.has(z.id) : view === 'aksam' ? ESET.has(z.id) : !MSET.has(z.id) && !ESET.has(z.id);
 const visible = () => S.zikirs.filter(inView);
 
 function setView(v) {
@@ -480,10 +480,11 @@ function renderCards() {
   $('#backAll').hidden = view === 'main';
   $('#addZikir').hidden = view !== 'main';
   document.querySelectorAll('[data-view]').forEach(b => { const on = b.dataset.view === view; b.classList.toggle('active', on); b.setAttribute('aria-pressed', String(on)); });
-  $('#empty').hidden = list.length > 0 || view === 'selef';
-  document.body.classList.toggle('view-selef', view === 'selef');
-  searchEl.placeholder = view === 'selef' ? 'Söz ara (âlim, anlam, kaynak)…' : 'Zikir ara (ad, anlam, okunuş)…';
+  $('#empty').hidden = list.length > 0 || view === 'selef' || view === 'fikih';
+  document.body.classList.toggle('view-selef', view === 'selef' || view === 'fikih');
+  searchEl.placeholder = view === 'selef' ? 'Söz ara (âlim, anlam, kaynak)…' : view === 'fikih' ? 'Fıkıhta ara (ör. mesh, cuma, zekât)…' : 'Zikir ara (ad, anlam, okunuş)…';
   if (view === 'selef') { renderQuotes(); applyFilter(); update(); return; }
+  if (view === 'fikih') { renderFiqh(); applyFilter(); update(); return; }
   let lastGroup = null;
   for (const z of list) {
     const box = document.createElement('article');
@@ -539,7 +540,66 @@ function renderQuotes() {
   }
 }
 
+function renderFiqh() {
+  const intro = document.createElement('article');
+  intro.className = 'quote fq-note';
+  intro.textContent = FIQH_INTRO;
+  cardsEl.append(intro);
+  for (const c of FIQH) {
+    const d = document.createElement('details');
+    d.className = 'fq-cat';
+    const sum = document.createElement('summary');
+    sum.innerHTML = '<span></span><small></small>';
+    sum.querySelector('span').textContent = c.cat;
+    sum.querySelector('small').textContent = c.topics.length + ' konu';
+    d.append(sum);
+    for (const tp of c.topics) {
+      const a = document.createElement('article');
+      a.className = 'fq-topic';
+      const h = document.createElement('h3');
+      h.textContent = tp.t;
+      const ul = document.createElement('ul');
+      for (const it of tp.items) { const li = document.createElement('li'); li.textContent = it; ul.append(li); }
+      a.append(h, ul);
+      a.dataset.search = [c.cat, tp.t, ...tp.items].join(' ');
+      d.append(a);
+    }
+    cardsEl.append(d);
+  }
+  const books = document.createElement('details');
+  books.className = 'fq-cat fq-books';
+  books.innerHTML = '<summary><span>📚 Mezhebin Temel Eserleri</span><small></small></summary>';
+  books.querySelector('small').textContent = FIQH_BOOKS.length + ' eser';
+  for (const [n, a, d] of FIQH_BOOKS) {
+    const el = document.createElement('article');
+    el.className = 'fq-topic';
+    el.innerHTML = '<h3></h3><p class="q-src"></p><p class="fq-desc"></p>';
+    el.querySelector('h3').textContent = n;
+    el.querySelector('.q-src').textContent = a;
+    el.querySelector('.fq-desc').textContent = d;
+    el.dataset.search = [n, a, d].join(' ');
+    books.append(el);
+  }
+  cardsEl.append(books);
+}
+
 function applyFilter() {
+  if (view === 'fikih') {
+    const q = norm(searchEl.value.trim());
+    document.body.classList.toggle('filtering', !!q);
+    let shown = 0;
+    for (const d of cardsEl.querySelectorAll('details.fq-cat')) {
+      let any = 0;
+      for (const t of d.querySelectorAll('.fq-topic')) { const hit = !q || norm(t.dataset.search).includes(q); t.hidden = !hit; if (hit) any++; }
+      d.hidden = !any;
+      if (q) d.open = any > 0;
+      shown += any;
+    }
+    const note = cardsEl.querySelector('.fq-note');
+    if (note) note.hidden = !!q;
+    $('#noResult').hidden = !q || shown > 0;
+    return;
+  }
   const q = norm(searchEl.value.trim());
   document.body.classList.toggle('filtering', !!q);
   let shown = 0;
@@ -933,6 +993,7 @@ document.addEventListener('visibilitychange', () => {
 window.addEventListener('pageshow', checkDay);
 
 /* ---------- Başlat ---------- */
+$('#cntSelef').textContent = QUOTES.length + ' söz';
 setTheme(S.theme);
 renderCards();
 if ('serviceWorker' in navigator) {

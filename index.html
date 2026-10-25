@@ -47,7 +47,8 @@
     <div class="evrad-controls">
       <button data-view="sabah" aria-pressed="false"><span>☀︎ Sabah Zikirleri</span><small id="cntSabah">0 / 0</small></button>
       <button data-view="aksam" aria-pressed="false"><span>☾ Akşam Zikirleri</span><small id="cntAksam">0 / 0</small></button>
-      <button data-view="selef" class="wide" aria-pressed="false"><span>📜 Selef’ten Sözler</span><small>Mücâhid · Âcurrî · Berbehârî · İbn Batta · Hallâl</small></button>
+      <button data-view="selef" aria-pressed="false"><span>📜 Selef’ten Sözler</span><small id="cntSelef">Âlimlerin sözleri</small></button>
+      <button data-view="fikih" aria-pressed="false"><span>⚖️ Hanbelî Fıkhı</span><small>16 bölüm</small></button>
     </div>
   </section>
 
@@ -144,11 +145,12 @@
     <button type="button" id="restoreDefaults" class="ghost">Varsayılan zikirler</button>
   </div>
   <div class="row"><button type="button" id="closeSettings" class="primary">Tamam</button></div>
-  <p class="note center">Zikrim · sürüm 3.1</p>
+  <p class="note center">Zikrim · sürüm 3.2</p>
 </dialog>
 
 <div id="toast" role="status" aria-live="polite"></div>
 <label id="haptic" class="haptic" aria-hidden="true"><input type="checkbox" switch tabindex="-1"></label>
+<script src="fikih.js"></script>
 <script src="script.js"></script>
 </body>
 </html>

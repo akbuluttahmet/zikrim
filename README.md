@@ -11,6 +11,7 @@ Ana ekrana eklenen, çevrimdışı çalışan kişisel zikir sayacı. Veriler te
 - **Yeni zikirler (2.3):** 30 dua ve zikir eklendi (peygamber duaları, uyanış, rızık, sabır, tevekkül vb.); mevcut listeye bir kez otomatik eklenir.
 - **Yeni zikirler (2.4):** 27 zikir daha (koruyucu dualar, Esmâü’l-Hüsnâ, istiğfar, tesbih, sıkıntı duaları); aynı olanlar mevcut kartlarla birleştirildi.
 - **Sabah ve Akşam Zikirleri (3.0):** Tema seçiminin altındaki iki butonla açılan ayrı bölümler; sahih sabah-akşam zikirleri ayrı sayaçlarla. Butonlarda o günün ilerlemesi görünür.
+- **Hanbelî Fıkhı (3.2):** Zâdü’l-Müstakni‘ ve er-Ravzu’l-Mürbi‘ bab sırasıyla, mezhebin mu‘temed görüşüne göre 16 bölümlük Türkçe özet (tahâretten yargıya), aranabilir; mezhebin temel eserleri rehberi.
 - **Selef’ten Sözler (3.1):** Mücâhid, Âcurrî, Berbehârî, İbn Batta ve Hallâl’in eserlerinden kaynaklarıyla doğrulanmış sözler (Arapça + Türkçe), âlime göre gruplu okuma kartları.
 - **Dua sırası (2.6):** Zikirler Hanbelî dua edebine göre bölümlere ayrıldı: Hamd ve Senâ → Salavat → Tevbe ve İstiğfar → Dua (ahiret, dünya, korunma) → Kapanış; özel durum duaları en sonda.
 - **Arama:** Ad, anlam veya okunuşa göre zikir arama.
