@@ -435,12 +435,30 @@ function toast(message, action) {
   toast.t = setTimeout(() => toastEl.classList.remove('show'), action ? 5000 : 1900);
 }
 
+
+/* ---------- Selef'ten Sözler (okuma kartları; kaynakları çevrimiçi metinlerle karşılaştırıldı) ---------- */
+const QUOTES = [
+  {who:'Mücâhid b. Cebr (ö. 104)', ar:'لَا يَتَعَلَّمُ الْعِلْمَ مُسْتَحْيٍ وَلَا مُسْتَكْبِرٌ', tr:'Utangaç olan da kibirli olan da ilim öğrenemez.', src:'Buhârî, Kitâbü’l-İlm, “İlimde hayâ” babı (ta‘lîkan)'},
+  {who:'Mücâhid b. Cebr (ö. 104)', ar:'مَا أَدْرِي أَيُّ النِّعْمَتَيْنِ عَلَيَّ أَعْظَمُ: أَنْ هَدَانِي لِلْإِسْلَامِ، أَوْ عَافَانِي مِنْ هَذِهِ الْأَهْوَاءِ', tr:'Hangi nimetin benim için daha büyük olduğunu bilemiyorum: Beni İslam’a hidayet etmesi mi, yoksa beni bu bid‘at fırkalarından koruması mı?', src:'Dârimî, Sünen, 317'},
+  {who:'Mücâhid b. Cebr (ö. 104)', ar:'لَا يَكُونُ مِنَ الذَّاكِرِينَ اللَّهَ كَثِيرًا وَالذَّاكِرَاتِ حَتَّى يَذْكُرَ اللَّهَ قَائِمًا وَقَاعِدًا وَمُضْطَجِعًا', tr:'Ayaktayken, otururken ve yatarken Allah’ı anmadıkça kişi “Allah’ı çok zikreden”lerden olmaz.', src:'Nevevî, el-Ezkâr’da naklen'},
+  {who:'el-Âcurrî (ö. 360)', ar:'يَنْبَغِي لَهُ أَنْ يَجْعَلَ الْقُرْآنَ رَبِيعًا لِقَلْبِهِ، يُعَمِّرَ بِهِ مَا خَرِبَ مِنْ قَلْبِهِ', tr:'(Kur’an ehli) Kur’an’ı kalbinin baharı kılmalı, kalbinde harap olanı onunla imar etmelidir.', src:'Ahlâku Hameleti’l-Kur’ân'},
+  {who:'el-Âcurrî (ö. 360)', ar:'إِنْ تَكَلَّمَ تَكَلَّمَ بِعِلْمٍ، إِذَا رَأَى الْكَلَامَ صَوَابًا', tr:'Konuşursa, sözün doğru olduğunu gördüğünde ilimle konuşur.', src:'Ahlâku Hameleti’l-Kur’ân'},
+  {who:'el-Âcurrî (ö. 360)', ar:'لَا يَمْدَحُ نَفْسَهُ بِمَا فِيهِ، فَكَيْفَ بِمَا لَيْسَ فِيهِ', tr:'Kendinde olan bir özellikle bile kendini övmez; ya olmayanla nasıl över!', src:'Ahlâku Hameleti’l-Kur’ân'},
+  {who:'el-Âcurrî (ö. 360)', ar:'يَكْظِمُ غَيْظَهُ لِيُرْضِيَ رَبَّهُ، وَيَغِيظَ عَدُوَّهُ', tr:'Rabbini razı etmek ve düşmanını öfkelendirmek için öfkesini yutar.', src:'Ahlâku Hameleti’l-Kur’ân'},
+  {who:'el-Berbehârî (ö. 329)', ar:'اعْلَمُوا أَنَّ الْإِسْلَامَ هُوَ السُّنَّةُ، وَالسُّنَّةَ هِيَ الْإِسْلَامُ، وَلَا يَقُومُ أَحَدُهُمَا إِلَّا بِالْآخَرِ', tr:'Bilin ki İslam sünnettir, sünnet de İslam’dır. Biri diğeri olmadan ayakta duramaz.', src:'Şerhu’s-Sünne, 1. paragraf'},
+  {who:'el-Berbehârî (ö. 329)', ar:'وَاعْلَمْ رَحِمَكَ اللَّهُ أَنَّ الْعِلْمَ لَيْسَ بِكَثْرَةِ الرِّوَايَةِ وَالْكُتُبِ، وَلَكِنَّ الْعَالِمَ مَنِ اتَّبَعَ الْعِلْمَ وَالسُّنَنَ', tr:'Bil, Allah sana rahmet etsin, ilim çok rivayet ve çok kitapla olmaz. Âlim, ilme ve sünnetlere uyandır.', src:'Şerhu’s-Sünne'},
+  {who:'İbn Batta el-Ukberî (ö. 387)', ar:'اتَّبِعُوا وَلَا تَبْتَدِعُوا، فَقَدْ كُفِيتُمْ', tr:'(İbn Mes‘ûd:) Uyun, bid‘at çıkarmayın; size yetecek olan verildi.', src:'el-İbânetü’l-Kübrâ, 174 · senedi sahih'},
+  {who:'el-Hallâl (ö. 311)', ar:'كَفَّ رَجُلٌ يَدَهُ، وَمَلَكَ لِسَانَهُ، وَعَالَجَ قَلْبَهُ', tr:'Kişi (fitne zamanında) elini çeksin, diline hâkim olsun ve kalbini ıslah etsin.', src:'es-Sünne, 91 · Kûfeli Süleyman’ın sözü; İmam Ahmed beğenmiştir (92)'},
+  {who:'el-Hallâl (ö. 311)', ar:'الصَّبْرُ عَلَى مَا نَحْنُ فِيهِ خَيْرٌ مِنَ الْفِتْنَةِ يُسْفَكُ فِيهَا الدِّمَاءُ', tr:'(İmam Ahmed:) İçinde bulunduğumuz duruma sabretmek, kanların döküldüğü fitneden daha hayırlıdır.', src:'es-Sünne, 89'},
+  {who:'el-Hallâl (ö. 311)', ar:'مَا يُعْجِبُنِي أَنْ يَرْوِيَ الرَّجُلُ حَدِيثًا فِيهِ عَلَى أَصْحَابِ رَسُولِ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ شَيْءٌ', tr:'(İmam Ahmed:) Bir kimsenin, Resûlullah’ın ashabı aleyhine bir şey içeren bir hadisi rivayet etmesini hoş görmem.', src:'es-Sünne, 800 (c. 3, s. 501)'}
+];
+
 /* ---------- Kartlar ---------- */
 const cardsEl = $('#cards');
 const MSET = new Set(MORNING), ESET = new Set(EVENING);
-const VIEWS = {main: 'Zikirlerim', sabah: '☀︎ Sabah Zikirleri', aksam: '☾ Akşam Zikirleri'};
+const VIEWS = {main: 'Zikirlerim', sabah: '☀︎ Sabah Zikirleri', aksam: '☾ Akşam Zikirleri', selef: '📜 Selef’ten Sözler'};
 let view = 'main';
-const inView = z => view === 'sabah' ? MSET.has(z.id) : view === 'aksam' ? ESET.has(z.id) : !MSET.has(z.id) && !ESET.has(z.id);
+const inView = z => view === 'selef' ? false : view === 'sabah' ? MSET.has(z.id) : view === 'aksam' ? ESET.has(z.id) : !MSET.has(z.id) && !ESET.has(z.id);
 const visible = () => S.zikirs.filter(inView);
 
 function setView(v) {
@@ -462,7 +480,10 @@ function renderCards() {
   $('#backAll').hidden = view === 'main';
   $('#addZikir').hidden = view !== 'main';
   document.querySelectorAll('[data-view]').forEach(b => { const on = b.dataset.view === view; b.classList.toggle('active', on); b.setAttribute('aria-pressed', String(on)); });
-  $('#empty').hidden = list.length > 0;
+  $('#empty').hidden = list.length > 0 || view === 'selef';
+  document.body.classList.toggle('view-selef', view === 'selef');
+  searchEl.placeholder = view === 'selef' ? 'Söz ara (âlim, anlam, kaynak)…' : 'Zikir ara (ad, anlam, okunuş)…';
+  if (view === 'selef') { renderQuotes(); applyFilter(); update(); return; }
   let lastGroup = null;
   for (const z of list) {
     const box = document.createElement('article');
@@ -502,13 +523,30 @@ function renderCards() {
 /* ---------- Arama ---------- */
 const searchEl = $('#search');
 const norm = t => String(t).toLocaleLowerCase('tr-TR').normalize('NFD').replace(/[\u0300-\u036f’'`]/g, '').replace(/ı/g, 'i');
+function renderQuotes() {
+  let last = null;
+  for (const q of QUOTES) {
+    const box = document.createElement('article');
+    box.className = 'quote';
+    if (q.who !== last) box.dataset.group = q.who;
+    last = q.who;
+    box.innerHTML = '<p class="arabic" lang="ar" dir="rtl"></p><p class="q-tr"></p><p class="q-src"></p>';
+    box.querySelector('.arabic').textContent = q.ar;
+    box.querySelector('.q-tr').textContent = q.tr;
+    box.querySelector('.q-src').textContent = q.who.replace(/ \(ö\..*\)/, '') + ' · ' + q.src;
+    box.dataset.search = [q.who, q.tr, q.src].join(' ');
+    cardsEl.append(box);
+  }
+}
+
 function applyFilter() {
   const q = norm(searchEl.value.trim());
   document.body.classList.toggle('filtering', !!q);
   let shown = 0;
   for (const box of cardsEl.children) {
-    const z = findZ(box.dataset.id);
-    const hit = !q || norm([z.name, z.category, z.translit, z.meaning].join(' ')).includes(q);
+    const z = box.dataset.id && findZ(box.dataset.id);
+    const text = z ? [z.name, z.category, z.translit, z.meaning].join(' ') : (box.dataset.search || '');
+    const hit = !q || norm(text).includes(q);
     box.hidden = !hit;
     if (hit) shown++;
   }
