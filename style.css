@@ -44,22 +44,22 @@ button:disabled{opacity:.35;cursor:default}
 .list-tools{display:flex;gap:6px}
 .list-tools .chip-button{padding:8px 11px}
 .chip-button.active{background:var(--accent);color:var(--accentText);border-color:var(--accent)}
-body.sorting #toggleCompact,body.sorting #addZikir{display:none}
 .sort-hint{font-size:12px;color:var(--muted);margin:4px 0 0;line-height:1.5}
 
 /* Sade görünüm */
-body.compact .zikir:not(.sort-row) .arabic,body.compact .zikir:not(.sort-row) .translit,body.compact .zikir:not(.sort-row) .meaning,body.compact .zikir:not(.sort-row) .category{display:none}
+body.compact .zikir .arabic,body.compact .zikir .translit,body.compact .zikir .meaning,body.compact .zikir .category,body.reordering .zikir .arabic,body.reordering .zikir .translit,body.reordering .zikir .meaning,body.reordering .zikir .bar,body.reordering .zikir .actions{display:none}
 body.compact .zikir{padding:15px 16px;margin:9px 0}
 body.compact .zikir .bar{margin:11px 0}
 body.compact .tap{padding:12px}
 
-/* Sıralama modu */
-.sort-row{display:flex;align-items:center;gap:10px;padding:12px 12px 12px 6px;margin:8px 0;transform:translateY(var(--dy,0));will-change:transform}
-.sort-row .category{margin-top:3px}
-.handle{width:40px;height:44px;display:grid;place-items:center;font-size:22px;color:var(--muted);touch-action:none;cursor:grab;flex:none;-webkit-user-select:none;user-select:none}
-.arrow{width:40px;height:40px;border-radius:11px;border:1px solid var(--border);background:transparent;color:var(--text);font-size:17px;flex:none;padding:0}
-.sort-row.dragging{position:relative;z-index:5;box-shadow:0 12px 30px rgb(0 0 0 / .3);border-color:var(--accent);transition:none;cursor:grabbing}
-.sort-row.moved{animation:flash .6s ease}
+/* Sıralama (ana ekranda sürükle-bırak) */
+.zikir{transform:translateY(var(--dy,0))}
+.handle{width:28px;height:36px;margin:-6px 0 0 -10px;display:grid;place-items:center;font-size:15px;letter-spacing:-3px;color:var(--muted);touch-action:none;cursor:grab;flex:none;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;opacity:.7}
+body.reordering{-webkit-user-select:none;user-select:none}
+body.reordering .zikir{padding:13px 16px;margin:8px 0}
+.zikir.dragging{position:relative;z-index:5;box-shadow:0 14px 34px rgb(0 0 0 / .32);border-color:var(--accent);transition:none;cursor:grabbing}
+.zikir.dragging .handle{color:var(--accent);opacity:1}
+.zikir.moved{animation:flash .7s ease}
 @keyframes flash{0%{border-color:var(--accent);background:var(--hero)}100%{}}
 .empty{color:var(--muted);font-size:14px;text-align:center;padding:20px}
 .zikir{background:var(--card);border:1px solid var(--border);border-radius:20px;padding:20px;margin:12px 0;transition:border-color .3s}
@@ -110,10 +110,10 @@ footer small{display:block}
 /* Alt sayfalar (dialog) */
 .sheet{border:1px solid var(--border);background:var(--card);color:var(--text);border-radius:24px;padding:22px 20px max(20px,env(safe-area-inset-bottom));width:min(560px,calc(100vw - 20px));max-height:calc(100dvh - 40px);overflow:auto;margin:auto auto max(10px,env(safe-area-inset-bottom))}
 .sheet::backdrop{background:rgb(0 0 0 / .45)}
-.sheet h2{margin:0 0 14px;font-size:20px}
+.sheet h2{margin:0 0 14px;font-size:20px;outline:none}
 .sheet h3{font-size:14px;margin:22px 0 8px}
 .sheet label{display:block;font-size:12px;font-weight:600;color:var(--muted);margin:0 0 12px}
-.sheet input:not([type=checkbox]),.sheet textarea{display:block;width:100%;margin-top:6px;padding:11px 12px;border-radius:12px;border:1px solid var(--border);background:var(--bg);color:var(--text);font:16px/1.4 inherit;font-family:inherit;resize:vertical}
+.sheet input:not([type=checkbox]),.sheet textarea{display:block;width:100%;margin-top:6px;padding:11px 12px;border-radius:12px;border:1px solid var(--border);background:var(--bg);color:var(--text);font-size:16px;line-height:1.4;font-family:inherit;resize:vertical}
 .sheet input[type=file]{display:none!important}
 .sheet textarea[lang=ar]{font-family:var(--arabic);font-size:20px}
 .quick-targets{display:flex;gap:8px;margin:-4px 0 14px}

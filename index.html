@@ -2,7 +2,7 @@
 <html lang="tr">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#0d1526">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
@@ -51,11 +51,10 @@
       <h2>Zikirlerim</h2>
       <div class="list-tools">
         <button id="toggleCompact" class="chip-button" aria-pressed="false" title="Kartlarda yalnızca ad ve sayaç">☰ Sade</button>
-        <button id="toggleSort" class="chip-button">⇅ Sırala</button>
         <button id="addZikir" class="chip-button" aria-label="Yeni zikir">＋ Yeni</button>
       </div>
     </div>
-    <p class="sort-hint" id="sortHint" hidden>≡ tutamacından sürükle ya da okları kullan. Bitince “Bitti”ye dokun.</p>
+    <p class="sort-hint">Sırayı değiştirmek için kartın solundaki ⋮⋮ tutamacını basılı tutup sürükle.</p>
     <div id="cards"></div>
     <p class="empty" id="empty" hidden>Henüz zikir yok. “Yeni zikir” ile ekleyebilir ya da ayarlardan varsayılanları geri yükleyebilirsin.</p>
   </section>
@@ -93,9 +92,9 @@
 </div>
 
 <!-- Zikir ekle / düzenle -->
-<dialog id="editor" class="sheet">
+<dialog id="editor" class="sheet" autofocus>
   <form method="dialog" id="editorForm">
-    <h2 id="editorTitle">Yeni zikir</h2>
+    <h2 id="editorTitle" tabindex="-1">Yeni zikir</h2>
     <label>Ad<input name="name" required maxlength="80" placeholder="ör. Hasbunallah"></label>
     <label>Kısa açıklama<input name="category" maxlength="80" placeholder="ör. Tevekkül"></label>
     <label>Arapça (isteğe bağlı)<textarea name="arabic" rows="2" dir="rtl" lang="ar"></textarea></label>
@@ -122,7 +121,7 @@
 
 <!-- Ayarlar -->
 <dialog id="settings" class="sheet">
-  <h2>Ayarlar</h2>
+  <h2 tabindex="-1" autofocus>Ayarlar</h2>
   <label class="switch-row">Titreşim <input type="checkbox" id="hapticsToggle" switch></label>
   <h3>Son 30 gün</h3>
   <div id="history" class="history"></div>
@@ -137,7 +136,7 @@
     <button type="button" id="restoreDefaults" class="ghost">Varsayılan zikirler</button>
   </div>
   <div class="row"><button type="button" id="closeSettings" class="primary">Tamam</button></div>
-  <p class="note center">Zikrim · sürüm 2.1</p>
+  <p class="note center">Zikrim · sürüm 2.2</p>
 </dialog>
 
 <div id="toast" role="status" aria-live="polite"></div>

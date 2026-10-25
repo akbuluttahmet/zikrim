@@ -122,44 +122,19 @@ function toast(message, action) {
 /* ---------- Kartlar ---------- */
 const cardsEl = $('#cards');
 
-let sorting = false;
-
-function renderSortRows() {
-  S.zikirs.forEach((z, i) => {
-    const row = document.createElement('article');
-    row.className = 'zikir sort-row';
-    row.dataset.id = z.id;
-    row.innerHTML = `
-      <span class="handle" aria-hidden="true">≡</span>
-      <div class="zikir-title"><h3></h3><p class="category"></p></div>
-      <button class="arrow" type="button" data-act="up" aria-label="Yukarı taşı">↑</button>
-      <button class="arrow" type="button" data-act="down" aria-label="Aşağı taşı">↓</button>`;
-    row.querySelector('h3').textContent = z.name;
-    const cat = row.querySelector('.category');
-    cat.textContent = `${fmt(getCount(z.id))} / ${fmt(z.target)}${z.category ? ' · ' + z.category : ''}`;
-    row.querySelector('[data-act=up]').disabled = i === 0;
-    row.querySelector('[data-act=down]').disabled = i === S.zikirs.length - 1;
-    cardsEl.append(row);
-  });
-}
-
 function renderCards() {
   cardsEl.replaceChildren();
-  document.body.classList.toggle('sorting', sorting);
   document.body.classList.toggle('compact', S.compact);
-  $('#toggleSort').textContent = sorting ? '✓ Bitti' : '⇅ Sırala';
-  $('#toggleSort').classList.toggle('active', sorting);
   $('#toggleCompact').classList.toggle('active', S.compact);
   $('#toggleCompact').setAttribute('aria-pressed', String(S.compact));
-  $('#sortHint').hidden = !sorting;
   $('#empty').hidden = S.zikirs.length > 0;
-  if (sorting) { renderSortRows(); update(); return; }
   for (const z of S.zikirs) {
     const box = document.createElement('article');
     box.className = 'zikir';
     box.dataset.id = z.id;
     box.innerHTML = `
       <div class="zikir-top">
+        <span class="handle" role="button" aria-label="Sırayı değiştirmek için basılı tutup sürükle" title="Sürükleyerek sırala">⋮⋮</span>
         <div class="zikir-title"><h3></h3><p class="category"></p></div>
         <span class="count-pill"></span>
         <button class="more" type="button" data-act="edit" aria-label="Düzenle">⋯</button>
@@ -191,7 +166,7 @@ function update() {
     const ok = c >= z.target;
     if (ok) done++;
     const box = cardsEl.querySelector(`[data-id="${CSS.escape(z.id)}"]`);
-    if (!box || box.classList.contains('sort-row')) continue;
+    if (!box) continue;
     box.classList.toggle('done', ok);
     box.querySelector('.count-pill').textContent = `${ok ? '✓ ' : ''}${fmt(c)} / ${fmt(z.target)}`;
     box.querySelector('.bar span').style.width = Math.min(100, c / z.target * 100) + '%';
@@ -256,35 +231,23 @@ cardsEl.addEventListener('click', e => {
   else if (act === 'minus') increment(id, -1);
   else if (act === 'focus') openFocus(id);
   else if (act === 'edit') openEditor(id);
-  else if (act === 'up' || act === 'down') moveById(id, act === 'up' ? -1 : 1);
 });
 
-/* ---------- Sıralama ---------- */
-function moveById(id, dir) {
-  const i = S.zikirs.findIndex(z => z.id === id);
-  const j = i + dir;
-  if (i < 0 || j < 0 || j >= S.zikirs.length) return;
-  [S.zikirs[i], S.zikirs[j]] = [S.zikirs[j], S.zikirs[i]];
-  save();
-  renderCards();
-  const row = cardsEl.querySelector(`[data-id="${CSS.escape(id)}"]`);
-  if (row) { row.classList.add('moved'); row.scrollIntoView({block: 'nearest'}); }
-  haptic(false);
-}
-
-$('#toggleSort').addEventListener('click', () => { sorting = !sorting; renderCards(); });
+/* ---------- Sıralama: ana ekranda tutamaçtan sürükle-bırak ---------- */
 $('#toggleCompact').addEventListener('click', () => { S.compact = !S.compact; save(); renderCards(); });
 
-// Tutamaçtan sürükle-bırak (dokunmatik + fare)
 let drag = null;
 cardsEl.addEventListener('pointerdown', e => {
   const handle = e.target.closest('.handle');
-  if (!handle || !sorting) return;
-  const row = handle.closest('.sort-row');
+  if (!handle) return;
+  const row = handle.closest('.zikir');
   e.preventDefault();
-  handle.setPointerCapture(e.pointerId);
-  const rect = row.getBoundingClientRect();
-  drag = {row, handle, id: row.dataset.id, startY: e.clientY, offset: 0, pointerId: e.pointerId, height: rect.height};
+  try { handle.setPointerCapture(e.pointerId); } catch {}
+  drag = {row, id: row.dataset.id, pointerId: e.pointerId, order: S.zikirs.map(z => z.id).join()};
+  // Sürüklerken tüm kartları kısalt; tutulan kart parmağın altında kalsın
+  document.body.classList.add('reordering');
+  const r = row.getBoundingClientRect();
+  window.scrollBy(0, r.top + r.height / 2 - e.clientY);
   row.classList.add('dragging');
   haptic(false);
 });
@@ -292,10 +255,8 @@ window.addEventListener('pointermove', e => {
   if (!drag || e.pointerId !== drag.pointerId) return;
   e.preventDefault();
   const {row} = drag;
-  // Kenara yaklaşınca sayfayı kaydır
-  if (e.clientY < 90) window.scrollBy(0, -12);
-  else if (e.clientY > window.innerHeight - 90) window.scrollBy(0, 12);
-  // Komşularla yer değiştir
+  if (e.clientY < 90) window.scrollBy(0, -14);
+  else if (e.clientY > window.innerHeight - 90) window.scrollBy(0, 14);
   const prev = row.previousElementSibling, next = row.nextElementSibling;
   if (prev && e.clientY < prev.getBoundingClientRect().top + prev.offsetHeight / 2) {
     cardsEl.insertBefore(prev, row.nextSibling); // satırı değil komşuyu taşı (dokunma takibi kopmasın)
@@ -305,25 +266,26 @@ window.addEventListener('pointermove', e => {
     haptic(false);
   }
   const r = row.getBoundingClientRect();
-  const shift = e.clientY - (r.top - (parseFloat(row.style.getPropertyValue('--dy')) || 0) + r.height / 2);
-  row.style.setProperty('--dy', shift + 'px');
+  const natural = r.top - (parseFloat(row.style.getPropertyValue('--dy')) || 0) + r.height / 2;
+  row.style.setProperty('--dy', (e.clientY - natural) + 'px');
 });
 function endDrag() {
   if (!drag) return;
-  const ids = [...cardsEl.querySelectorAll('.sort-row')].map(r => r.dataset.id);
+  const ids = [...cardsEl.querySelectorAll('.zikir')].map(r => r.dataset.id);
   const byId = new Map(S.zikirs.map(z => [z.id, z]));
-  const changed = ids.join() !== S.zikirs.map(z => z.id).join();
+  const changed = ids.join() !== drag.order;
   S.zikirs = ids.map(id => byId.get(id)).filter(Boolean);
   const id = drag.id;
   drag = null;
+  document.body.classList.remove('reordering');
   if (changed) save();
   renderCards();
   const row = cardsEl.querySelector(`[data-id="${CSS.escape(id)}"]`);
-  if (row && changed) row.classList.add('moved');
+  if (row) { row.scrollIntoView({block: 'center'}); if (changed) row.classList.add('moved'); }
 }
 window.addEventListener('pointerup', endDrag);
 window.addEventListener('pointercancel', endDrag);
-cardsEl.addEventListener('touchmove', e => { if (drag) e.preventDefault(); }, {passive: false});
+document.addEventListener('touchmove', e => { if (drag) e.preventDefault(); }, {passive: false});
 
 /* ---------- Tema ---------- */
 function setTheme(t) {
@@ -405,6 +367,8 @@ function openEditor(id) {
   for (const f of ['name', 'category', 'arabic', 'translit', 'meaning', 'target']) form.elements[f].value = z[f];
   editor.classList.toggle('editing', !!id);
   editor.showModal();
+  editor.scrollTop = 0;
+  $('#editorTitle').focus({preventScroll: true});
 }
 form.querySelector('.quick-targets').addEventListener('click', e => {
   const b = e.target.closest('[data-t]');
