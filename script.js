@@ -107,10 +107,24 @@ const PATCHES_V3 = [
     to:{arabic:'اللَّهُمَّ صَلِّ عَلَىٰ سَيِّدِنَا مُحَمَّدٍ وَعَلَىٰ آلِ سَيِّدِنَا مُحَمَّدٍ', translit:'Allâhümme salli alâ seyyidinâ Muhammedin ve alâ âli seyyidinâ Muhammed.', meaning:'Allah’ım, efendimiz Muhammed’e ve efendimiz Muhammed’in ailesine salât eyle.'}},
   {id:'aile', from:{name:'Huzurlu Bir Aile İçin', category:'Furkân 25:74'}, to:{name:'Huzurlu Aile ve Hayırlı Kısmet İçin', category:'Furkân 25:74'}},
   {id:'bakiyat', from:{category:'Tesbih, hamd, tevhid, tekbir'}, to:{category:'Müslim 2695 · Tesbih, hamd, tevhid, tekbir'}},
-  {id:'musibet', from:{name:'Bir Badire Yaşandığında', category:'Müslim 918'}, to:{name:'İstircâ · Bir Badire Yaşandığında', category:'Bakara 2:156 · Müslim 918'}}
+  {id:'musibet', from:{name:'Bir Badire Yaşandığında', category:'Müslim 918'}, to:{name:'İstircâ · Bir Badire Yaşandığında', category:'Bakara 2:156 · Müslim 918'}},
+  // v4: metin düzeltmeleri ve kaynaklar
+  {v:4, id:'eyyub', from:{arabic:'أَنِّي مَسَّنِيَ الضُّرُّ وَأَنْتَ أَرْحَمُ الرَّاحِمِينَ', translit:'Ennî messeniye’d-durru ve ente erhamü’r-râhimîn.'},
+    to:{arabic:'رَبِّ أَنِّي مَسَّنِيَ الضُّرُّ وَأَنْتَ أَرْحَمُ الرَّاحِمِينَ', translit:'Rabbi ennî messeniye’d-durru ve ente erhamü’r-râhimîn.'}},
+  {v:4, id:'istigfar_hayy', from:{name:'Estağfirullâhe’llezî lâ ilâhe illâ hüve’l-Hayye’l-Kayyûm', arabic:'أَسْتَغْفِرُ اللَّهَ الَّذِي لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ وَأَتُوبُ إِلَيْهِ', translit:'Estağfirullâhellezî lâ ilâhe illâ hüve’l-Hayyü’l-Kayyûmü ve etûbü ileyh.'},
+    to:{name:'Estağfirullâhellezî lâ ilâhe illâ hüve’l-Hayye’l-Kayyûm', arabic:'أَسْتَغْفِرُ اللَّهَ الَّذِي لَا إِلَٰهَ إِلَّا هُوَ الْحَيَّ الْقَيُّومَ وَأَتُوبُ إِلَيْهِ', translit:'Estağfirullâhellezî lâ ilâhe illâ hüve’l-Hayye’l-Kayyûme ve etûbü ileyh.'}},
+  {v:4, id:'maide', from:{arabic:'رَبَّنَا أَنْزِلْ عَلَيْنَا مَائِدَةً مِنَ السَّمَاءِ تَكُونُ لَنَا عِيدًا لِأَوَّلِنَا وَآخِرِنَا وَآيَةً مِنْكَ وَارْزُقْنَا وَأَنْتَ خَيْرُ الرَّازِقِينَ', translit:'Rabbenâ enzil aleynâ mâideten mine’s-semâi tekûnü lenâ îden li-evvelinâ ve âhirinâ ve âyeten minke, verzuknâ ve ente hayru’r-râzikîn.', meaning:'Rabbimiz! Bize gökten bir sofra indir ki hem öncekilerimiz hem sonrakilerimiz için bir bayram ve Senden bir mucize olsun. Bizi rızıklandır; çünkü Sen rızık verenlerin en hayırlısısın.'},
+    to:{arabic:'اللَّهُمَّ رَبَّنَا أَنْزِلْ عَلَيْنَا مَائِدَةً مِنَ السَّمَاءِ تَكُونُ لَنَا عِيدًا لِأَوَّلِنَا وَآخِرِنَا وَآيَةً مِنْكَ وَارْزُقْنَا وَأَنْتَ خَيْرُ الرَّازِقِينَ', translit:'Allâhümme Rabbenâ enzil aleynâ mâideten mine’s-semâi tekûnü lenâ îden li-evvelinâ ve âhirinâ ve âyeten minke, verzuknâ ve ente hayru’r-râzikîn.', meaning:'Allah’ım, ey Rabbimiz! Bize gökten bir sofra indir ki hem öncekilerimiz hem sonrakilerimiz için bir bayram ve Senden bir mucize olsun. Bizi rızıklandır; çünkü Sen rızık verenlerin en hayırlısısın.'}},
+  {v:4, id:'husnu_huluk', from:{category:'Güzel ahlak istemek', arabic:'اللَّهُمَّ آتِنِي حُسْنَ الْخُلُقِ', translit:'Allâhümme âtinî hüsne’l-huluk.', meaning:'Allah’ım! Bana güzel ahlak nasip et.'},
+    to:{category:'Güzel ahlak istemek · Ahmed, Müsned', arabic:'اللَّهُمَّ أَحْسَنْتَ خَلْقِي فَأَحْسِنْ خُلُقِي', translit:'Allâhümme ahsente halkî fe-ahsin hulukî.', meaning:'Allah’ım! Yaratılışımı güzel yaptığın gibi ahlakımı da güzelleştir.'}},
+  {v:4, id:'yunus', from:{category:'Tevbe ve dua'}, to:{category:'Enbiyâ 21:87 · Tevbe ve dua'}},
+  {v:4, id:'masaallah', from:{category:'Allah’ı yüceltmek'}, to:{category:'Kehf 18:39 · Allah’ı yüceltmek'}},
+  {v:4, id:'uyanis2', from:{category:'Uyanış duası'}, to:{category:'Tirmizî 3401'}},
+  {v:4, id:'rizik2', from:{category:'Faydalı ilim, helal rızık'}, to:{category:'İbn Mâce 925 · Faydalı ilim, helal rızık'}}
 ];
-function applyPatches(list) {
+function applyPatches(list, since = 0) {
   for (const p of PATCHES_V3) {
+    if ((p.v || 3) <= since) continue;
     const z = list.find(x => x.id === p.id);
     if (!z) continue;
     for (const k of Object.keys(p.to)) if (z[k] === p.from[k]) z[k] = p.to[k];
@@ -119,7 +133,7 @@ function applyPatches(list) {
 
 const DEFAULTS = [...BASE, ...ADDED_V2, ...ADDED_V3];
 applyPatches(DEFAULTS);
-const CATALOG = 3;
+const CATALOG = 4;
 
 const KEY = 'zikrim-v2';
 const OLD_KEY = 'zikrim-v1';
@@ -170,7 +184,8 @@ function load() {
       let added = 0;
       const add = list => { for (const z of list) if (!have.has(z.id)) { out.zikirs.push({...z}); have.add(z.id); added++; } };
       if (out.catalog < 2) add(ADDED_V2);
-      if (out.catalog < 3) { applyPatches(out.zikirs); add(ADDED_V3); }
+      if (out.catalog < 3) add(ADDED_V3);
+      applyPatches(out.zikirs, out.catalog);
       out.catalog = CATALOG;
       persistState(out);
       if (added) setTimeout(() => toast(`${added} yeni zikir eklendi ✨`), 600);
@@ -336,7 +351,7 @@ function renderWeek() {
     b.setAttribute('aria-label', `${x.d.toLocaleDateString('tr-TR', {day: 'numeric', month: 'long'})}: ${x.t} zikir`);
     b.innerHTML = '<span class="col"><span class="fill"></span></span><span class="lbl"></span>';
     b.querySelector('.fill').style.height = (x.t ? Math.max(8, x.t / max * 100) : 0) + '%';
-    b.querySelector('.lbl').textContent = x.d.toLocaleDateString('tr-TR', {weekday: 'short'}).slice(0, 2);
+    b.querySelector('.lbl').textContent = ['Pz', 'Pt', 'Sa', 'Ça', 'Pe', 'Cu', 'Ct'][x.d.getDay()];
     return b;
   }));
 }
@@ -346,6 +361,7 @@ $('#week').addEventListener('click', e => {
 });
 
 function increment(id, delta) {
+  checkDay(); // gece yarısını geçtiysek bugüne say
   const z = findZ(id);
   if (!z) return;
   const before = getCount(id);
@@ -385,8 +401,9 @@ cardsEl.addEventListener('pointerdown', e => {
   const row = handle.closest('.zikir');
   e.preventDefault();
   try { handle.setPointerCapture(e.pointerId); } catch {}
-  drag = {row, id: row.dataset.id, pointerId: e.pointerId, order: S.zikirs.map(z => z.id).join()};
+  drag = {row, id: row.dataset.id, pointerId: e.pointerId, order: S.zikirs.map(z => z.id).join(), y: e.clientY, startScroll: window.scrollY, moved: false};
   // Sürüklerken tüm kartları kısalt; tutulan kart parmağın altında kalsın
+  drag.y0 = e.clientY;
   document.body.classList.add('reordering');
   const r = row.getBoundingClientRect();
   window.scrollBy(0, r.top + r.height / 2 - e.clientY);
@@ -397,6 +414,8 @@ window.addEventListener('pointermove', e => {
   if (!drag || e.pointerId !== drag.pointerId) return;
   e.preventDefault();
   const {row} = drag;
+  drag.y = e.clientY;
+  if (Math.abs(e.clientY - drag.y0) > 4) drag.moved = true;
   if (e.clientY < 90) window.scrollBy(0, -14);
   else if (e.clientY > window.innerHeight - 90) window.scrollBy(0, 14);
   const prev = row.previousElementSibling, next = row.nextElementSibling;
@@ -417,13 +436,18 @@ function endDrag() {
   const byId = new Map(S.zikirs.map(z => [z.id, z]));
   const changed = ids.join() !== drag.order;
   S.zikirs = ids.map(id => byId.get(id)).filter(Boolean);
-  const id = drag.id;
+  const {id, y, moved, startScroll} = drag;
   drag = null;
   document.body.classList.remove('reordering');
   if (changed) save();
   renderCards();
+  if (!moved && !changed) { window.scrollTo(0, startScroll); return; } // sadece dokunuldu: yerinde kal
   const row = cardsEl.querySelector(`[data-id="${CSS.escape(id)}"]`);
-  if (row) { row.scrollIntoView({block: 'center'}); if (changed) row.classList.add('moved'); }
+  if (row) {
+    // bırakılan kartı parmağın olduğu yerde göster
+    window.scrollBy(0, row.getBoundingClientRect().top - Math.max(80, y - 40));
+    if (changed) row.classList.add('moved');
+  }
 }
 window.addEventListener('pointerup', endDrag);
 window.addEventListener('pointercancel', endDrag);
@@ -554,6 +578,13 @@ $('#deleteOne').addEventListener('click', () => {
   toast(`“${removed.name}” silindi`, {label: 'Geri al', run: () => { S.zikirs.splice(i, 0, removed); save(); renderCards(); }});
 });
 $('#addZikir').addEventListener('click', () => openEditor(null));
+for (const d of document.querySelectorAll('dialog')) {
+  d.addEventListener('click', e => {
+    if (e.target !== d) return;
+    const r = d.getBoundingClientRect();
+    if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) d.close();
+  });
+}
 
 /* ---------- Ayarlar ---------- */
 const settings = $('#settings');
@@ -633,7 +664,7 @@ $('#importData').addEventListener('change', async e => {
     save(); setTheme(S.theme); renderCards();
     settings.close();
     toast('Yedek yüklendi', {label: 'Geri al', run: () => { S = prev; save(); setTheme(S.theme); renderCards(); }});
-  } catch { toast('Bu dosya geçerli bir Zikrim yedeği değil'); }
+  } catch { settings.close(); toast('Bu dosya geçerli bir Zikrim yedeği değil'); }
 });
 
 /* ---------- Gün değişimi ve uyku ---------- */
@@ -650,4 +681,14 @@ window.addEventListener('pageshow', checkDay);
 /* ---------- Başlat ---------- */
 setTheme(S.theme);
 renderCards();
-if ('serviceWorker' in navigator) window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js').catch(() => {}));
+if ('serviceWorker' in navigator) {
+  const hadController = !!navigator.serviceWorker.controller;
+  let reloaded = false;
+  // Yeni sürüm etkinleşince sayfayı bir kez yenile (iki kez kapatıp açmaya gerek kalmasın)
+  navigator.serviceWorker.addEventListener('controllerchange', () => {
+    if (!hadController || reloaded || drag || !focusEl.hidden || editor.open) return;
+    reloaded = true;
+    location.reload();
+  });
+  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js', {updateViaCache: 'none'}).catch(() => {}));
+}
