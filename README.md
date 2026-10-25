@@ -9,6 +9,7 @@ Ana ekrana eklenen, çevrimdışı çalışan kişisel zikir sayacı. Veriler te
 - **−1 geri al:** Yanlış dokunuşları düzeltmek için kullanılır.
 - **Sıralama:** Ana ekranda kartın solundaki ⋮⋮ tutamacını basılı tutup sürükleyerek sıra değiştirilir.
 - **Yeni zikirler (2.3):** 30 dua ve zikir eklendi (peygamber duaları, uyanış, rızık, sabır, tevekkül vb.); mevcut listeye bir kez otomatik eklenir.
+- **Yeni zikirler (2.4):** 27 zikir daha (koruyucu dualar, Esmâü’l-Hüsnâ, istiğfar, tesbih, sıkıntı duaları); aynı olanlar mevcut kartlarla birleştirildi.
 - **Arama:** Ad, anlam veya okunuşa göre zikir arama.
 - **Sade görünüm (☰ Sade):** Kartlarda yalnızca ad, sayaç ve düğmeler gösterilir.
 - **Kendi zikrini ekle / düzenle (⋯):** Ad, Arapça metin, okunuş, anlam ve hedef girilebilir. Sıralama değiştirilebilir, zikir silinebilir (geri alınabilir).

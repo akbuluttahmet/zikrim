@@ -56,8 +56,70 @@ const ADDED_V2 = [
   {id:'rizik2',name:'Rızık (Geçim) İçin Dua 2',category:'Faydalı ilim, helal rızık',arabic:'اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْمًا نَافِعًا، وَرِزْقًا طَيِّبًا، وَعَمَلًا مُتَقَبَّلًا',translit:'Allâhümme innî es’elüke ilmen nâfi’an, ve rızkan tayyiben, ve amelen mütekabbelen.',meaning:'Allah’ım! Senden faydalı ilim, helal ve güzel rızık, makbul amel isterim.',target:7}
 ];
 
-const DEFAULTS = [...BASE, ...ADDED_V2];
-const CATALOG = 2;
+// Sürüm 2.4 ile eklenenler (2. fotoğraf grubu; tekrarlar mevcut kartlarla birleştirildi)
+const ADDED_V3 = [
+  // Sabah-akşam ve koruma
+  {id:'bismillahillezi',name:'Koruyucu Dua (Bismillâhillezî)',category:'Sabah-akşam 3 defa · Ebû Dâvûd, Tirmizî',arabic:'بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ',translit:'Bismillâhillezî lâ yedurru mea’smihî şey’ün fi’l-ardı ve lâ fi’s-semâi ve hüve’s-semî’u’l-alîm.',meaning:'O Allah’ın adıyla ki, O’nun adı anıldığında yerde ve gökte hiçbir şey zarar veremez. O, hakkıyla işiten ve her şeyi bilendir.',target:3},
+  {id:'kelimat',name:'Eûzü bi-kelimâtillâhi’t-tâmmât',category:'Akşam · Müslim, Zikir 2709',arabic:'أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ مِنْ شَرِّ مَا خَلَقَ',translit:'Eûzü bi-kelimâtillâhi’t-tâmmâti min şerri mâ halak.',meaning:'Allah’ın eksiksiz kelimelerine, yarattıklarının şerrinden sığınırım.',target:3},
+  {id:'yunus81',name:'Sihre Karşı (Yûnus 81)',category:'Yûnus 10:81 · Koruyucu',arabic:'مَا جِئْتُمْ بِهِ السِّحْرُ إِنَّ اللَّهَ سَيُبْطِلُهُ إِنَّ اللَّهَ لَا يُصْلِحُ عَمَلَ الْمُفْسِدِينَ',translit:'Mâ ci’tüm bihi’s-sihr, innallâhe se-yübtıluh, innallâhe lâ yuslihu amele’l-müfsidîn.',meaning:'Mûsâ dedi ki: “Sizin getirdiğiniz sihirdir. Şüphesiz Allah onu boşa çıkaracaktır. Çünkü Allah bozguncuların işini düzeltmez.”',target:3},
+  {id:'ayetelkursi',name:'Âyetü’l-Kürsî',category:'Bakara 2:255 · Sabah-akşam koruma',arabic:'',translit:'',meaning:'Sabah ve akşam okunan koruyucu ayet. Metni mushaftan okuyabilirsin.',target:1},
+  {id:'felak',name:'Felak Sûresi',category:'Sabah-akşam 3 defa · Koruma',arabic:'',translit:'',meaning:'Sabahın Rabbine, yarattıklarının şerrinden sığınma sûresi.',target:3},
+  {id:'nas',name:'Nâs Sûresi',category:'Sabah-akşam 3 defa · Koruma',arabic:'',translit:'',meaning:'İnsanların Rabbine, vesvese verenin şerrinden sığınma sûresi.',target:3},
+  {id:'afini',name:'Âfiyet Duası (Allâhümme âfinî)',category:'Sabah-akşam 3 defa · Ebû Dâvûd',arabic:'اللَّهُمَّ عَافِنِي فِي بَدَنِي، اللَّهُمَّ عَافِنِي فِي سَمْعِي، اللَّهُمَّ عَافِنِي فِي بَصَرِي، لَا إِلَٰهَ إِلَّا أَنْتَ، اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْكُفْرِ وَالْفَقْرِ، اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، لَا إِلَٰهَ إِلَّا أَنْتَ',translit:'Allâhümme âfinî fî bedenî, Allâhümme âfinî fî sem’î, Allâhümme âfinî fî basarî, lâ ilâhe illâ ente. Allâhümme innî e’ûzü bike mine’l-küfri ve’l-fakr, Allâhümme innî e’ûzü bike min azâbi’l-kabr, lâ ilâhe illâ ente.',meaning:'Allah’ım! Bedenimi sıhhatli kıl. Allah’ım! İşitmemi sıhhatli kıl. Allah’ım! Gözümü sıhhatli kıl. Senden başka ilah yoktur. Allah’ım! Küfürden ve fakirlikten Sana sığınırım. Allah’ım! Kabir azabından Sana sığınırım. Senden başka ilah yoktur.',target:3},
+  {id:'raditu',name:'Radîtü billâhi Rabben',category:'İman tazeleme · Sabah-akşam 3 defa',arabic:'رَضِيتُ بِاللَّهِ رَبًّا وَبِالْإِسْلَامِ دِينًا وَبِمُحَمَّدٍ نَبِيًّا',translit:'Radîtü billâhi Rabben ve bi’l-İslâmi dînen ve bi-Muhammedin nebiyyen.',meaning:'Allah’tan Rab, İslam’dan din, Muhammed’den peygamber olarak razı oldum.',target:3},
+
+  // Tesbih ve övgü
+  {id:'bihamdihi',name:'Sübhânallâhi ve bihamdihî',category:'Günde 100 defa · Buhârî, Müslim',arabic:'سُبْحَانَ اللَّهِ وَبِحَمْدِهِ',translit:'Sübhânallâhi ve bihamdihî.',meaning:'Allah’ı hamdiyle birlikte tesbih ederim.',target:100},
+  {id:'subhanallahil_azim',name:'Sübhânallâhi ve bihamdihî, Sübhânallâhi’l-Azîm',category:'Mizanda ağır gelen iki kelime · Buhârî',arabic:'سُبْحَانَ اللَّهِ وَبِحَمْدِهِ سُبْحَانَ اللَّهِ الْعَظِيمِ',translit:'Sübhânallâhi ve bihamdihî, sübhânallâhi’l-azîm.',meaning:'Allah’ı hamdiyle tesbih ederim; yüce Allah’ı tesbih ederim.',target:33},
+  {id:'adede_halkihi',name:'Sübhânallâhi ve bihamdihî adede halkıhî',category:'Sabah 3 defa · Müslim',arabic:'سُبْحَانَ اللَّهِ وَبِحَمْدِهِ عَدَدَ خَلْقِهِ وَرِضَا نَفْسِهِ وَزِنَةَ عَرْشِهِ وَمِدَادَ كَلِمَاتِهِ',translit:'Sübhânallâhi ve bihamdihî adede halkıhî ve rıdâ nefsihî ve zinete arşihî ve midâde kelimâtih.',meaning:'Yaratılmışların sayısınca, zatının rızası miktarınca, Arş’ının ağırlığınca ve kelimelerinin mürekkebi kadar Allah’ı hamdiyle tesbih ederim.',target:3},
+  {id:'melik_kuddus',name:'Sübhâne’l-Meliki’l-Kuddûs',category:'Vitirden sonra 3 defa',arabic:'سُبْحَانَ الْمَلِكِ الْقُدُّوسِ',translit:'Sübhâne’l-Meliki’l-Kuddûs.',meaning:'Mülkün sahibi ve her türlü noksandan münezzeh olan Allah’ı tesbih ederim.',target:3},
+  {id:'la_havle',name:'Lâ havle ve lâ kuvvete illâ billâh',category:'Sıkıntı ve çaresizlik anında',arabic:'لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ',translit:'Lâ havle ve lâ kuvvete illâ billâh.',meaning:'Güç ve kuvvet ancak Allah’ın yardımı iledir.',target:33},
+
+  // İstiğfar
+  {id:'istigfar_tevbe',name:'Estağfirullâhe ve etûbü ileyh',category:'İstiğfar · Günde 70-100 defa',arabic:'أَسْتَغْفِرُ اللَّهَ وَأَتُوبُ إِلَيْهِ',translit:'Estağfirullâhe ve etûbü ileyh.',meaning:'Allah’tan bağışlanma diler ve O’na tövbe ederim.',target:100},
+  {id:'istigfar_hayy',name:'Estağfirullâhe’llezî lâ ilâhe illâ hüve’l-Hayye’l-Kayyûm',category:'3 defa · Tirmizî, Daavât 3397',arabic:'أَسْتَغْفِرُ اللَّهَ الَّذِي لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ وَأَتُوبُ إِلَيْهِ',translit:'Estağfirullâhellezî lâ ilâhe illâ hüve’l-Hayyü’l-Kayyûmü ve etûbü ileyh.',meaning:'Kendisinden başka ilah olmayan, diri ve her şeyin varlık sebebi olan Allah’tan bağışlanma diler ve O’na tövbe ederim.',target:3},
+
+  // Sıkıntı ve kalp huzuru
+  {id:'rahmeteke',name:'Kalp Sükûneti (Rahmeteke ercû)',category:'Sıkıntı anında · Ebû Dâvûd, Edeb 100',arabic:'اللَّهُمَّ رَحْمَتَكَ أَرْجُو فَلَا تَكِلْنِي إِلَىٰ نَفْسِي طَرْفَةَ عَيْنٍ وَأَصْلِحْ لِي شَأْنِي كُلَّهُ لَا إِلَٰهَ إِلَّا أَنْتَ',translit:'Allâhümme rahmeteke ercû, felâ tekilnî ilâ nefsî tarfete aynin, ve aslih lî şe’nî küllehû, lâ ilâhe illâ ente.',meaning:'Allah’ım! Rahmetini umuyorum. Beni göz açıp kapayıncaya kadar bile nefsimle baş başa bırakma. İşlerimin tümünü ıslah et. Senden başka ilah yoktur.',target:3},
+  {id:'kerb',name:'Kalbi Ferahlatan Tevhid (Sıkıntı Duası)',category:'Sıkıntı anında · Buhârî, Müslim',arabic:'لَا إِلَٰهَ إِلَّا اللَّهُ الْعَظِيمُ الْحَلِيمُ، لَا إِلَٰهَ إِلَّا اللَّهُ رَبُّ الْعَرْشِ الْعَظِيمِ، لَا إِلَٰهَ إِلَّا اللَّهُ رَبُّ السَّمَاوَاتِ وَرَبُّ الْأَرْضِ وَرَبُّ الْعَرْشِ الْكَرِيمِ',translit:'Lâ ilâhe illallâhu’l-Azîmü’l-Halîm, lâ ilâhe illallâhu Rabbü’l-arşi’l-azîm, lâ ilâhe illallâhu Rabbü’s-semâvâti ve Rabbü’l-ardı ve Rabbü’l-arşi’l-kerîm.',meaning:'Azîm ve Halîm olan Allah’tan başka ilah yoktur. Büyük Arş’ın Rabbi olan Allah’tan başka ilah yoktur. Göklerin, yerin ve kerim Arş’ın Rabbi olan Allah’tan başka ilah yoktur.',target:3},
+  {id:'hasbunallah',name:'Hasbünallâhu ve ni’me’l-vekîl',category:'Âl-i İmrân 3:173 · Tevekkül',arabic:'حَسْبُنَا اللَّهُ وَنِعْمَ الْوَكِيلُ',translit:'Hasbünallâhu ve ni’me’l-vekîl.',meaning:'Allah bize yeter, O ne güzel vekildir.',target:33},
+  {id:'lokman22',name:'Sağlam Kulpa Tutunmak',category:'Lokmân 31:22 · Teslimiyet',arabic:'وَمَنْ يُسْلِمْ وَجْهَهُ إِلَى اللَّهِ وَهُوَ مُحْسِنٌ فَقَدِ اسْتَمْسَكَ بِالْعُرْوَةِ الْوُثْقَىٰ وَإِلَى اللَّهِ عَاقِبَةُ الْأُمُورِ',translit:'Ve men yüslim vechehû ilallâhi ve hüve muhsinün fe-kadi’stemseke bi’l-urveti’l-vüskâ, ve ilallâhi âkıbetü’l-umûr.',meaning:'Kim yüzünü (tam bir teslimiyetle) Allah’a döner, iyi ve güzel davranışlarda bulunursa, o kopmayan sağlam kulpa tutunmuştur. Bütün işlerin sonu Allah’a varır.',target:3},
+  {id:'zekeriya',name:'Hz. Zekeriyyâ’nın Duası',category:'Enbiyâ 21:89',arabic:'رَبِّ لَا تَذَرْنِي فَرْدًا وَأَنْتَ خَيْرُ الْوَارِثِينَ',translit:'Rabbi lâ tezernî ferden ve ente hayru’l-vârisîn.',meaning:'Rabbim! Beni yalnız bırakma. Sen varislerin en hayırlısısın.',target:7},
+
+  // Kalp ve ahlak
+  {id:'mukallib',name:'Yâ Mukallibe’l-Kulûb',category:'Kalp sebatı · Tirmizî',arabic:'يَا مُقَلِّبَ الْقُلُوبِ ثَبِّتْ قَلْبِي عَلَىٰ دِينِكَ',translit:'Yâ Mukallibe’l-kulûb, sebbit kalbî alâ dînik.',meaning:'Ey kalpleri evirip çeviren Allah’ım! Kalbimi dinin üzere sabit kıl.',target:7},
+  {id:'husnu_huluk',name:'Güzel Ahlak Duası',category:'Güzel ahlak istemek',arabic:'اللَّهُمَّ آتِنِي حُسْنَ الْخُلُقِ',translit:'Allâhümme âtinî hüsne’l-huluk.',meaning:'Allah’ım! Bana güzel ahlak nasip et.',target:7},
+
+  // Esmâ-i Hüsnâ
+  {id:'ya_sabur',name:'Yâ Sabûr',category:'Esmâü’l-Hüsnâ · Sabır ve dayanıklılık',arabic:'يَا صَبُورُ',translit:'Yâ Sabûr.',meaning:'Ey sabrı sonsuz olan Allah.',target:33},
+  {id:'ya_latif',name:'Yâ Latîf',category:'Esmâü’l-Hüsnâ · Huzur ve incelik',arabic:'يَا لَطِيفُ',translit:'Yâ Latîf.',meaning:'Ey lütfu sonsuz, her şeyin inceliğini bilen Allah.',target:33},
+  {id:'ya_fettah',name:'Yâ Fettâh',category:'Esmâü’l-Hüsnâ · Kapalı yolları açar',arabic:'يَا فَتَّاحُ',translit:'Yâ Fettâh.',meaning:'Ey her türlü hayır kapısını açan Allah.',target:33},
+  {id:'ya_selam',name:'Yâ Selâm',category:'Esmâü’l-Hüsnâ · Güven ve sükûnet',arabic:'يَا سَلَامُ',translit:'Yâ Selâm.',meaning:'Ey selamet ve esenlik veren Allah.',target:33},
+  {id:'ya_vedud',name:'Yâ Vedûd',category:'Esmâü’l-Hüsnâ · Sevgi ve merhamet',arabic:'يَا وَدُودُ',translit:'Yâ Vedûd.',meaning:'Ey kullarını çok seven ve sevilmeye layık olan Allah.',target:33}
+];
+
+// Mevcut kartlarla birleştirilenler: yalnızca kullanıcı değiştirmediyse güncellenir
+const PATCHES_V3 = [
+  {id:'aksam', from:{name:'Akşam Zikri', category:'Tevhid', target:10}, to:{name:'Tevhid Zikri (Sabah-Akşam)', category:'Sabah-akşam 100 defa · Müsned', target:100}},
+  {id:'hayy', from:{arabic:'يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَغِيثُ', translit:'Yâ Hayyu yâ Kayyûm, bi-rahmetike esteğîs.', meaning:'Ey Hayy ve Kayyûm olan Allah, rahmetinle yardım diliyorum.'},
+    to:{arabic:'يَا حَيُّ يَا قَيُّومُ بِرَحْمَتِكَ أَسْتَغِيثُ، يَا ذَا الْجَلَالِ وَالْإِكْرَامِ', translit:'Yâ Hayyu yâ Kayyûm, bi-rahmetike esteğîs, yâ ze’l-celâli ve’l-ikrâm.', meaning:'Ey diri ve kâinatı ayakta tutan Allah! Rahmetinle yardımını dilerim, ey celâl ve ikram sahibi!'}},
+  {id:'salavat', from:{arabic:'اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ', translit:'Allâhümme salli alâ Muhammed.', meaning:'Allah’ım, Muhammed’e salât eyle.'},
+    to:{arabic:'اللَّهُمَّ صَلِّ عَلَىٰ سَيِّدِنَا مُحَمَّدٍ وَعَلَىٰ آلِ سَيِّدِنَا مُحَمَّدٍ', translit:'Allâhümme salli alâ seyyidinâ Muhammedin ve alâ âli seyyidinâ Muhammed.', meaning:'Allah’ım, efendimiz Muhammed’e ve efendimiz Muhammed’in ailesine salât eyle.'}},
+  {id:'aile', from:{name:'Huzurlu Bir Aile İçin', category:'Furkân 25:74'}, to:{name:'Huzurlu Aile ve Hayırlı Kısmet İçin', category:'Furkân 25:74'}},
+  {id:'bakiyat', from:{category:'Tesbih, hamd, tevhid, tekbir'}, to:{category:'Müslim 2695 · Tesbih, hamd, tevhid, tekbir'}},
+  {id:'musibet', from:{name:'Bir Badire Yaşandığında', category:'Müslim 918'}, to:{name:'İstircâ · Bir Badire Yaşandığında', category:'Bakara 2:156 · Müslim 918'}}
+];
+function applyPatches(list) {
+  for (const p of PATCHES_V3) {
+    const z = list.find(x => x.id === p.id);
+    if (!z) continue;
+    for (const k of Object.keys(p.to)) if (z[k] === p.from[k]) z[k] = p.to[k];
+  }
+}
+
+const DEFAULTS = [...BASE, ...ADDED_V2, ...ADDED_V3];
+applyPatches(DEFAULTS);
+const CATALOG = 3;
 
 const KEY = 'zikrim-v2';
 const OLD_KEY = 'zikrim-v1';
@@ -103,12 +165,15 @@ function load() {
   if (s && typeof s === 'object') {
     const out = sanitize(s);
     // Yeni sürümde eklenen zikirleri mevcut listeye bir kez ekle
-    if (out.catalog < 2) {
+    if (out.catalog < CATALOG) {
       const have = new Set(out.zikirs.map(z => z.id));
-      for (const z of ADDED_V2) if (!have.has(z.id)) out.zikirs.push({...z});
+      let added = 0;
+      const add = list => { for (const z of list) if (!have.has(z.id)) { out.zikirs.push({...z}); have.add(z.id); added++; } };
+      if (out.catalog < 2) add(ADDED_V2);
+      if (out.catalog < 3) { applyPatches(out.zikirs); add(ADDED_V3); }
       out.catalog = CATALOG;
       persistState(out);
-      setTimeout(() => toast(`${ADDED_V2.length} yeni zikir eklendi ✨`), 600);
+      if (added) setTimeout(() => toast(`${added} yeni zikir eklendi ✨`), 600);
     }
     return out;
   }

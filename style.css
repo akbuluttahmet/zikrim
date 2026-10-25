@@ -149,3 +149,4 @@ body[data-theme=night] #toast button{color:#7a5a1e}
 .haptic{position:fixed;left:-50px;top:0;width:1px;height:1px;opacity:0;pointer-events:none;overflow:hidden}
 
 @media(max-width:370px){.arabic{font-size:22px}.grand{font-size:60px}}
+.arabic[hidden]~.translit[hidden]~.meaning{margin-top:12px}
