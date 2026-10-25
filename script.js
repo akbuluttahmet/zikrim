@@ -147,8 +147,8 @@ const ADDED_V7 = [
   {id:'ak_bihamdihi',name:'Sübhânallâhi ve bihamdihî (Akşam)',category:'100 defa · Müslim 2692',arabic:'سُبْحَانَ اللَّهِ وَبِحَمْدِهِ',translit:'Sübhânallâhi ve bihamdihî.',meaning:'Allah’ı hamdiyle birlikte tesbih ederim.',target:100}
 ];
 
-const MORNING = ['ayetelkursi','ihlas','felak','nas','asbahna','bike_asbahna','seyyid','afini','afv','gayb','bismillahillezi','sb_hayy','fitrat','sb_tevhid','adede_halkihi','bihamdihi'];
-const EVENING = ['ak_kursi','ak_ihlas','ak_felak','ak_nas','emseyna','bike_emseyna','ak_seyyid','ak_afini','ak_afv','ak_gayb','ak_bismillah','kelimat','ak_hayy','ak_fitrat','ak_tevhid','ak_bihamdihi'];
+const MORNING = ['sb_kursi','ihlas','sb_felak','sb_nas','asbahna','bike_asbahna','seyyid','sb_afini','afv','gayb','sb_bismillah','sb_hayy','fitrat','sb_tevhid','sb_adede','sb_bihamdihi'];
+const EVENING = ['ak_kursi','ak_ihlas','ak_felak','ak_nas','emseyna','bike_emseyna','ak_seyyid','ak_afini','ak_afv','ak_gayb','ak_bismillah','ak_kelimat','ak_hayy','ak_fitrat','ak_tevhid','ak_bihamdihi'];
 
 // Mevcut kartlarla birleştirilenler: yalnızca kullanıcı değiştirmediyse güncellenir
 const PATCHES_V3 = [
@@ -196,7 +196,15 @@ const PATCHES_V3 = [
   {v:7, id:'bihamdihi', from:{name:'Sübhânallâhi ve bihamdihî', category:'Günde 100 defa · Buhârî, Müslim'}, to:{name:'Sübhânallâhi ve bihamdihî (Sabah)', category:'100 defa · Müslim 2692'}},
   {v:7, id:'adede_halkihi', from:{category:'Sabah 3 defa · Müslim'}, to:{category:'Sabah 3 defa · Müslim 2726'}},
   {v:7, id:'kelimat', from:{name:'Eûzü bi-kelimâtillâhi’t-tâmmât', category:'Akşam · Müslim, Zikir 2709'}, to:{name:'Eûzü bi-kelimâtillâhi’t-tâmmât (Akşam)', category:'Akşam 3 defa · Müslim 2709'}},
-  {v:6, id:'ya_fettah', from:{category:'Esmâü’l-Hüsnâ · Kapalı yolları açar'}, to:{category:'Esmâü’l-Hüsnâ · Rızık ve hayır kapılarını açar'}}
+  {v:6, id:'ya_fettah', from:{category:'Esmâü’l-Hüsnâ · Kapalı yolları açar'}, to:{category:'Esmâü’l-Hüsnâ · Rızık ve hayır kapılarını açar'}},
+  // v9: sabaha taşınan asıl kartlar kendi bölümlerine döndü
+  {v:9, id:'ayetelkursi', from:{name:'Âyetü’l-Kürsî (Sabah)', category:'Bakara 2:255 · Nesâî, Kübrâ', meaning:'Sabah okuyan akşama kadar korunur. Metni mushaftan okuyabilirsin.'}, to:{name:'Âyetü’l-Kürsî', category:'Bakara 2:255 · Koruma', meaning:'Koruyucu ayet; sabah, akşam ve yatarken okunur. Metni mushaftan okuyabilirsin.'}},
+  {v:9, id:'felak', from:{name:'Felak Sûresi (Sabah)', category:'3 defa · Ebû Dâvûd 5082, Tirmizî 3575'}, to:{name:'Felak Sûresi', category:'Koruma · Ebû Dâvûd 5082, Tirmizî 3575'}},
+  {v:9, id:'nas', from:{name:'Nâs Sûresi (Sabah)', category:'3 defa · Ebû Dâvûd 5082, Tirmizî 3575'}, to:{name:'Nâs Sûresi', category:'Koruma · Ebû Dâvûd 5082, Tirmizî 3575'}},
+  {v:9, id:'bismillahillezi', from:{name:'Bismillâhillezî (Sabah)'}, to:{name:'Koruyucu Dua (Bismillâhillezî)'}},
+  {v:9, id:'afini', from:{name:'Âfiyet Duası (Sabah)'}, to:{name:'Âfiyet Duası (Allâhümme âfinî)'}},
+  {v:9, id:'bihamdihi', from:{name:'Sübhânallâhi ve bihamdihî (Sabah)'}, to:{name:'Sübhânallâhi ve bihamdihî'}},
+  {v:9, id:'kelimat', from:{name:'Eûzü bi-kelimâtillâhi’t-tâmmât (Akşam)'}, to:{name:'Eûzü bi-kelimâtillâhi’t-tâmmât'}}
 ];
 function applyPatches(list, since = 0) {
   for (const p of PATCHES_V3) {
@@ -217,12 +225,12 @@ const ADDED_V5 = [
 const DUA_GROUPS = [
   ['☀︎ Sabah Zikirleri', MORNING],
   ['☾ Akşam Zikirleri', EVENING],
-  ['1 · Hamd ve Senâ', ['tawhid','aksam','kerb','mulk','bakiyat','tasbih','subhanallahil_azim','melik_kuddus','masaallah','la_havle','raditu']],
+  ['1 · Hamd ve Senâ', ['tawhid','aksam','kerb','mulk','bakiyat','tasbih','bihamdihi','subhanallahil_azim','adede_halkihi','melik_kuddus','masaallah','la_havle','raditu']],
   ['2 · Salavat', ['salavat']],
   ['3 · Tevbe ve İstiğfar', ['istighfar','istigfar_tevbe','istigfar_hayy','yunus','adem']],
   ['4 · Dua: Ahiret İçin', ['mukallib','husnu_huluk','rabbena_atina','ecirni','kabir','ibrahim','yusuf','nuh']],
   ['4 · Dua: Dünya ve Sıkıntı', ['musa_sadr','musa','rizik1','rizik2','maide','rizik_ayet','ya_fettah','aile','zekeriya','suleyman','rahmeteke','hayy','eyyub','gam','sabir','tevekkul','hasbunallah','lokman22','suayb']],
-  ['4 · Dua: Korunma', ['yunus81']],
+  ['4 · Dua: Korunma', ['ayetelkursi','felak','nas','bismillahillezi','kelimat','afini','yunus81']],
   ['Kendi Zikirlerin', null],
   ['5 · Kapanış', ['kapanis']],
   ['Özel Durumlarda', ['uyanis1','uyanis2','sukur','hakaret','kader','musibet','sinanan']]
@@ -238,11 +246,24 @@ function sortByDuaOrder(list) {
     .sort((a, b) => a.r - b.r).map(x => x.z);
 }
 
+// v9: sabah/akşam bölümleri için ayrı kopyalar (asılları kendi bölümlerinde kalır)
+const _from = id => ({...[...ADDED_V2, ...ADDED_V3].find(z => z.id === id)});
+const ADDED_V9 = [
+  {..._from('ayetelkursi'), id:'sb_kursi', name:'Âyetü’l-Kürsî (Sabah)', category:'Bakara 2:255 · Nesâî, Kübrâ', meaning:'Sabah okuyan akşama kadar korunur. Metni mushaftan okuyabilirsin.'},
+  {..._from('felak'), id:'sb_felak', name:'Felak Sûresi (Sabah)', category:'3 defa · Ebû Dâvûd 5082, Tirmizî 3575'},
+  {..._from('nas'), id:'sb_nas', name:'Nâs Sûresi (Sabah)', category:'3 defa · Ebû Dâvûd 5082, Tirmizî 3575'},
+  {..._from('afini'), id:'sb_afini', name:'Âfiyet Duası (Sabah)', category:'3 defa · Ebû Dâvûd 5090'},
+  {..._from('bismillahillezi'), id:'sb_bismillah', name:'Bismillâhillezî (Sabah)', category:'3 defa · Ebû Dâvûd 5088, Tirmizî 3388'},
+  {..._from('adede_halkihi'), id:'sb_adede', category:'Sabah 3 defa · Müslim 2726'},
+  {..._from('bihamdihi'), id:'sb_bihamdihi', name:'Sübhânallâhi ve bihamdihî (Sabah)', category:'100 defa · Müslim 2692'},
+  {..._from('kelimat'), id:'ak_kelimat', name:'Eûzü bi-kelimâtillâhi’t-tâmmât (Akşam)', category:'Akşam 3 defa · Müslim 2709'}
+];
+
 // v6: kullanıcı isteğiyle kaldırılan Esmâ kartları
 const REMOVED_V6 = new Set(['ya_sabur', 'ya_latif', 'ya_selam', 'ya_vedud']);
-const DEFAULTS = sortByDuaOrder([...BASE, ...ADDED_V2, ...ADDED_V3, ...ADDED_V5, ...ADDED_V7].filter(z => !REMOVED_V6.has(z.id)));
+const DEFAULTS = sortByDuaOrder([...BASE, ...ADDED_V2, ...ADDED_V3, ...ADDED_V5, ...ADDED_V7, ...ADDED_V9].filter(z => !REMOVED_V6.has(z.id)));
 applyPatches(DEFAULTS);
-const CATALOG = 8;
+const CATALOG = 9;
 
 const KEY = 'zikrim-v2';
 const OLD_KEY = 'zikrim-v1';
@@ -323,6 +344,25 @@ function load() {
         setTimeout(() => toast('Sabah ve Akşam zikirleri eklendi ☀️🌙'), 800);
         added = 0;
       }
+      if (out.catalog < 9) {
+        add(ADDED_V9);
+        const L = out.zikirs;
+        const take = ids => ids.map(id => { const i = L.findIndex(z => z.id === id); return i < 0 ? null : L.splice(i, 1)[0]; }).filter(Boolean);
+        const put = (items, afterIds, beforeIds) => {
+          if (!items.length) return;
+          let at = -1;
+          for (const id of beforeIds || []) { const i = L.findIndex(z => z.id === id); if (i >= 0) { at = i; break; } }
+          if (at < 0) for (const id of afterIds || []) { const i = L.findIndex(z => z.id === id); if (i >= 0) { at = i + 1; break; } }
+          if (at < 0) at = L.length;
+          L.splice(at, 0, ...items);
+        };
+        // Asıl kartlar eski bölümlerine
+        put(take(['bihamdihi', 'adede_halkihi']), ['subhanallahil_azim', 'tasbih', 'bakiyat']);
+        put(take(['ayetelkursi', 'felak', 'nas', 'bismillahillezi', 'kelimat', 'afini']), ['ecirni', 'kabir'], ['yunus81']);
+        // Sabah/akşam kartları kendi sırasıyla (ana listede görünmezler)
+        L.push(...take([...MORNING, ...EVENING]));
+        added = 0;
+      }
       out.catalog = CATALOG;
       persistState(out);
       if (added) setTimeout(() => toast(`${added} yeni zikir eklendi ✨`), 600);
@@ -397,19 +437,38 @@ function toast(message, action) {
 
 /* ---------- Kartlar ---------- */
 const cardsEl = $('#cards');
+const MSET = new Set(MORNING), ESET = new Set(EVENING);
+const VIEWS = {main: 'Zikirlerim', sabah: '☀︎ Sabah Zikirleri', aksam: '☾ Akşam Zikirleri'};
+let view = 'main';
+const inView = z => view === 'sabah' ? MSET.has(z.id) : view === 'aksam' ? ESET.has(z.id) : !MSET.has(z.id) && !ESET.has(z.id);
+const visible = () => S.zikirs.filter(inView);
+
+function setView(v) {
+  view = VIEWS[v] ? v : 'main';
+  searchEl.value = '';
+  renderCards();
+  $('.list').scrollIntoView({block: 'start', behavior: 'smooth'});
+}
+document.querySelectorAll('[data-view]').forEach(b => b.addEventListener('click', () => setView(view === b.dataset.view ? 'main' : b.dataset.view)));
+$('#backAll').addEventListener('click', () => setView('main'));
 
 function renderCards() {
   cardsEl.replaceChildren();
   document.body.classList.toggle('compact', S.compact);
   $('#toggleCompact').classList.toggle('active', S.compact);
   $('#toggleCompact').setAttribute('aria-pressed', String(S.compact));
-  $('#empty').hidden = S.zikirs.length > 0;
+  const list = visible();
+  $('#listTitle').textContent = VIEWS[view];
+  $('#backAll').hidden = view === 'main';
+  $('#addZikir').hidden = view !== 'main';
+  document.querySelectorAll('[data-view]').forEach(b => { const on = b.dataset.view === view; b.classList.toggle('active', on); b.setAttribute('aria-pressed', String(on)); });
+  $('#empty').hidden = list.length > 0;
   let lastGroup = null;
-  for (const z of S.zikirs) {
+  for (const z of list) {
     const box = document.createElement('article');
     box.className = 'zikir';
     box.dataset.id = z.id;
-    const g = groupOf(z);
+    const g = view === 'main' ? groupOf(z) : null;
     if (g && g !== lastGroup) box.dataset.group = g;
     lastGroup = g;
     box.innerHTML = `
@@ -469,6 +528,13 @@ function update() {
     box.querySelector('.count-pill').textContent = `${ok ? '✓ ' : ''}${fmt(c)} / ${fmt(z.target)}`;
     box.querySelector('.bar span').style.width = Math.min(100, c / z.target * 100) + '%';
     box.querySelector('.minus').disabled = c === 0;
+  }
+  for (const [id, ids] of [['#cntSabah', MORNING], ['#cntAksam', EVENING]]) {
+    const zs = ids.map(findZ).filter(Boolean);
+    const d = zs.filter(z => getCount(z.id) >= z.target).length;
+    const el = $(id);
+    el.textContent = `${d} / ${zs.length}`;
+    el.parentElement.classList.toggle('complete', zs.length > 0 && d === zs.length);
   }
   $('#grand').textContent = fmt(dayTotal(today));
   $('#progress').textContent = `${done} / ${S.zikirs.length} tamamlandı`;
@@ -542,7 +608,7 @@ cardsEl.addEventListener('pointerdown', e => {
   const row = handle.closest('.zikir');
   e.preventDefault();
   try { handle.setPointerCapture(e.pointerId); } catch {}
-  drag = {row, id: row.dataset.id, pointerId: e.pointerId, order: S.zikirs.map(z => z.id).join(), y: e.clientY, startScroll: window.scrollY, moved: false};
+  drag = {row, id: row.dataset.id, pointerId: e.pointerId, order: visible().map(z => z.id).join(), y: e.clientY, startScroll: window.scrollY, moved: false};
   // Sürüklerken tüm kartları kısalt; tutulan kart parmağın altında kalsın
   drag.y0 = e.clientY;
   document.body.classList.add('reordering');
@@ -576,7 +642,14 @@ function endDrag() {
   const ids = [...cardsEl.querySelectorAll('.zikir')].map(r => r.dataset.id);
   const byId = new Map(S.zikirs.map(z => [z.id, z]));
   const changed = ids.join() !== drag.order;
-  S.zikirs = ids.map(id => byId.get(id)).filter(Boolean);
+  if (changed) {
+    const vis = new Set(ids);
+    const slots = [];
+    S.zikirs.forEach((z, i) => { if (vis.has(z.id)) slots.push(i); });
+    const next = S.zikirs.slice();
+    slots.forEach((slot, k) => { next[slot] = byId.get(ids[k]); });
+    S.zikirs = next.filter(Boolean);
+  }
   const {id, y, moved, startScroll} = drag;
   drag = null;
   document.body.classList.remove('reordering');
@@ -652,9 +725,10 @@ function renderFocus() {
   $('#focusMinus').disabled = c === 0;
 }
 function stepFocus(dir) {
-  const i = S.zikirs.findIndex(z => z.id === focusId);
-  const n = S.zikirs.length;
-  if (n) { focusId = S.zikirs[(i + dir + n) % n].id; renderFocus(); }
+  const list = visible().some(z => z.id === focusId) ? visible() : S.zikirs;
+  const i = list.findIndex(z => z.id === focusId);
+  const n = list.length;
+  if (n) { focusId = list[(i + dir + n) % n].id; renderFocus(); }
 }
 $('#focusTap').addEventListener('click', () => increment(focusId, 1));
 $('#focusMinus').addEventListener('click', () => increment(focusId, -1));
@@ -694,9 +768,10 @@ form.addEventListener('submit', () => {
   toast(editingId ? 'Kaydedildi' : 'Zikir eklendi');
 });
 function move(dir) {
-  const i = S.zikirs.findIndex(z => z.id === editingId);
-  const j = i + dir;
-  if (i < 0 || j < 0 || j >= S.zikirs.length) return;
+  const vis = visible();
+  const a = vis.findIndex(z => z.id === editingId), b = a + dir;
+  if (a < 0 || b < 0 || b >= vis.length) return;
+  const i = S.zikirs.indexOf(vis[a]), j = S.zikirs.indexOf(vis[b]);
   [S.zikirs[i], S.zikirs[j]] = [S.zikirs[j], S.zikirs[i]];
   save();
   renderCards();

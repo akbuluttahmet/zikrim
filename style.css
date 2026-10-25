@@ -162,3 +162,13 @@ body.filtering .zikir[data-group]::before,body.reordering .zikir[data-group]::be
 body.reordering .zikir[data-group]{margin-top:8px}
 body.compact .zikir[data-group]{margin-top:42px}
 body.compact.filtering .zikir[data-group]{margin-top:9px}
+
+/* Sabah / Akşam butonları */
+.evrad-controls{display:flex;gap:9px;margin-top:10px}
+.evrad-controls button{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;background:var(--card);color:var(--text);border:1px solid var(--border);border-radius:13px;padding:12px 6px;font-size:14px;font-weight:600}
+.evrad-controls small{font-size:11px;font-weight:600;color:var(--muted);font-variant-numeric:tabular-nums}
+.evrad-controls button.complete small{color:var(--accent)}
+.evrad-controls button.complete small::after{content:' ✓'}
+.evrad-controls button.active{background:var(--accent);color:var(--accentText);border-color:var(--accent)}
+.evrad-controls button.active small{color:var(--accentText);opacity:.85}
+.chip-button[hidden]{display:none}
