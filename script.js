@@ -1132,7 +1132,7 @@ function update() {
   $('#progress').textContent = `${done} / ${S.zikirs.length} tamamlandı`;
   const st = streak();
   $('#streak').textContent = st ? `🔥 ${st} günlük seri` : '🌱 Seri yok';
-  $('#today').textContent = new Date().toLocaleDateString('tr-TR', {day: 'numeric', month: 'long', weekday: 'long'}).toLocaleUpperCase('tr-TR');
+  $('#today').textContent = new Date().toLocaleDateString('tr-TR', {day: 'numeric', month: 'long', year: 'numeric', weekday: 'long'}).toLocaleUpperCase('tr-TR');
   $('#hijri').textContent = hijriText();
   {
     const zs = S.zikirs.filter(isGenel);
