@@ -753,7 +753,7 @@ function libItem(L, h) {
   const [n, sened, metin, ziyade, info] = h;
   const a = el('article', 'mus-h');
   a.id = 'h' + n;
-  a.append(el('p', 'mus-no', (ziyade ? '*' : '#') + n));
+  a.append(el('p', 'mus-no', (ziyade === 2 ? '•' : ziyade ? '*' : '#') + n));
   if (sened) a.append(el('p', 'mus-sened', sened));
   a.append(el('p', 'mus-tr', metin));
   if (info && ((info.c && info.c.length > 1) || (info.n && info.n.length))) {
