@@ -243,3 +243,10 @@ body.view-selef #toggleCompact,body.view-selef .sort-hint{display:none}
 .usul-list .mus-h:first-child{border-top:0}
 .rah{font-family:inherit}
 .usul-list .mus-no{margin-bottom:6px;line-height:1.4}
+.rv{margin:2px 0 8px;border:1px solid var(--border);border-radius:12px;padding:0 12px}
+.rv>summary{cursor:pointer;padding:8px 0;font-size:13px;font-weight:700;color:var(--accent)}
+.rv-hukm{margin:0 0 6px;font-size:14px;font-weight:600;line-height:1.5}
+.rv-list{margin:0 0 8px;padding-left:18px;font-size:13.5px;line-height:1.55}
+.rv-list li{margin:3px 0}
+.rv-by{margin:0 0 8px;font-size:11.5px;color:var(--muted)}
+.mus-tr{white-space:pre-line}
