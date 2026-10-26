@@ -314,3 +314,11 @@ body.view-selef #toggleCompact,body.view-selef .sort-hint{display:none}
 .wk{width:26px;height:26px;border-radius:8px;background:var(--card);border:1px solid var(--border);display:grid;place-items:center;font-style:normal;font-size:12px;color:var(--muted)}
 .wk.on{background:var(--accent);border-color:var(--accent);color:var(--accentText)}
 .resume[hidden],.daily[hidden]{display:none}
+
+/* Sesli okuma */
+.set-select{display:block;width:100%;margin-top:6px;padding:10px 12px;border-radius:12px;border:1px solid var(--border);background:var(--bg);color:var(--text);font:inherit;font-size:15px;font-weight:400}
+.sheet input[type=range]{padding:0;border:0;background:none;accent-color:var(--accent)}
+.tts-row{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 2px}
+.tts-b{border:1px solid var(--border);background:var(--card);color:var(--text);border-radius:999px;padding:6px 12px;font-size:12.5px;font-weight:600}
+.tts-b.playing{background:var(--accent);border-color:var(--accent);color:var(--accentText)}
+.tts-on{background:color-mix(in srgb,var(--accent) 16%,transparent);border-radius:8px;box-shadow:0 0 0 4px color-mix(in srgb,var(--accent) 16%,transparent);transition:background .2s}

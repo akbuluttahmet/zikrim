@@ -517,6 +517,7 @@ const inView = z => view === 'sabah' ? MSET.has(z.id) : view === 'aksam' ? ESET.
 const visible = () => S.zikirs.filter(inView);
 
 function setView(v) {
+  ttsStop();
   view = VIEWS[v] ? v : 'main';
   searchEl.value = '';
   renderCards();
@@ -597,6 +598,7 @@ function renderQuotes() {
     box.querySelector('.arabic').textContent = q.ar;
     box.querySelector('.q-tr').textContent = q.tr;
     box.querySelector('.q-src').textContent = q.who.replace(/ \(.*\)$/, '') + ' · ' + q.src;
+    box.insertBefore(ttsRow([['ar', '▶ Arapça', () => [{el: box.querySelector('.arabic'), text: prepAr(q.ar)}]], ['tr', '▶ Türkçe', () => [{el: box.querySelector('.q-tr'), text: prepTr(q.tr)}]]]), box.querySelector('.q-src'));
     box.dataset.search = [q.who, q.tr, q.src].join(' ');
     cardsEl.append(box);
   }
@@ -672,8 +674,11 @@ function usulItem(u) {
   a.id = 'u' + n;
   a.dataset.n = n;
   a.append(el('p', 'mus-no', n ? `Madde ${n} · ${t}` : t));
-  if (!n) a.append(el('p', 'mus-sened', USUL_SENED));
-  a.append(el('p', 'mus-tr usul-tr', metin));
+  const sp = !n ? el('p', 'mus-sened', USUL_SENED) : null;
+  if (sp) a.append(sp);
+  const tp = el('p', 'mus-tr usul-tr', metin);
+  a.append(tp);
+  a.append(ttsRow([['tr', '▶ Türkçe', () => [TTS.trSened && sp ? {el: sp, text: prepTr(USUL_SENED)} : null, {el: tp, text: prepTr(metin)}]]]));
   const src = el('p', 'q-src', 'İmam Ahmed (');
   const r = el('bdi', null, RAH); r.lang = 'ar'; r.dir = 'rtl';
   src.append(r, '), Usûlü’s-Sünne' + (n ? `, madde ${n}` : ''));
@@ -786,16 +791,23 @@ function libItem(L, h) {
   a.id = 'h' + n;
   a.dataset.n = n;
   a.append(el('p', 'mus-no', (ziyade === 2 ? '•' : ziyade ? '*' : '#') + n));
-  if (sened) a.append(el('p', 'mus-sened', sened));
-  a.append(el('p', 'mus-tr', metin));
+  const sp = sened ? el('p', 'mus-sened', sened) : null;
+  if (sp) a.append(sp);
+  const tp = el('p', 'mus-tr', metin);
+  a.append(tp);
+  let ap = null;
   if (ar) {
     const d = el('details', 'rv mus-ar');
     d.append(el('summary', null, 'Arapça metin'));
-    const p = el('p', 'mus-ar-t', ar);
-    p.lang = 'ar'; p.dir = 'rtl';
-    d.append(p);
+    ap = el('p', 'mus-ar-t', ar);
+    ap.lang = 'ar'; ap.dir = 'rtl';
+    d.append(ap);
     a.append(d);
   }
+  const tts = [];
+  if (ar) tts.push(['ar', '▶ Arapça', () => [{el: ap, text: prepAr(TTS.arSened ? ar : ar.slice(arSplit(ar)))}]]);
+  tts.push(['tr', '▶ Türkçe', () => [TTS.trSened && sp ? {el: sp, text: prepTr('Sened: ' + sened)} : null, {el: tp, text: prepTr(metin)}]]);
+  a.insertBefore(ttsRow(tts), ap ? ap.parentElement : null);
   if (info && ((info.c && info.c.length > 1) || (info.n && info.n.length))) {
     const d = el('details', 'rv');
     d.append(el('summary', null, 'Râviler ve isnad'));
@@ -914,6 +926,113 @@ function libFilter(L) {
 /* ---------- Kütüphane: okumaya devam et, kaydettiklerim, yazı boyutu ---------- */
 const store = {get(k, d) { try { const v = JSON.parse(localStorage.getItem(k)); return v == null ? d : v; } catch (e) { return d; } }, set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }};
 const RD = {last: store.get('zikrim-last', {}), saved: store.get('zikrim-saved', []), fs: store.get('zikrim-fs', 16)};
+/* ---------- Sesli okuma (telefonun kendi sesleri; Arapça ve Türkçe) ---------- */
+const TTS = Object.assign({ar: '', tr: '', rate: 0.9, arSened: true, trSened: false}, store.get('sekine-tts', {}));
+const ttsSave = () => store.set('sekine-tts', TTS);
+const SYN = window.speechSynthesis || null;
+let VOICES = [];
+const vLang = (v, l) => v.lang.toLowerCase().replace('_', '-').startsWith(l);
+const vRank = v => /premium/i.test(v.voiceURI + v.name) ? 0 : /enhanced|gelişmiş|geliştirilmiş/i.test(v.voiceURI + v.name) ? 1 : 2;
+const vLabel = v => v.name.replace(/\s*\((enhanced|premium|gelişmiş|geliştirilmiş)\)/i, '') + (vRank(v) === 0 ? ' (Premium)' : vRank(v) === 1 ? ' (Gelişmiş)' : '') + ` · ${v.lang}`;
+function ttsVoices(l) { return VOICES.filter(v => vLang(v, l)).sort((a, b) => vRank(a) - vRank(b) || a.name.localeCompare(b.name)); }
+function ttsVoice(l) { const list = ttsVoices(l); return list.find(v => v.voiceURI === TTS[l]) || list[0] || null; }
+function ttsLoadVoices() { VOICES = SYN ? SYN.getVoices() : []; ttsFillSettings(); }
+if (SYN) { ttsLoadVoices(); SYN.addEventListener ? SYN.addEventListener('voiceschanged', ttsLoadVoices) : (SYN.onvoiceschanged = ttsLoadVoices); }
+
+// Arapça metinde senedin bittiği yer: baştaki rivayet zinciri (haddesenâ/an…) ve ardından gelen "kâle/enne"
+const AR_DIA = /[ً-ْٰـ]/;
+function arSplit(ar) {
+  let t = '';
+  const idx = [];
+  for (let i = 0; i < ar.length; i++) if (!AR_DIA.test(ar[i])) { t += ar[i]; idx.push(i); }
+  const ms = [...t.matchAll(/(?:^|[\s،,:])(عن|حدثنا|حدثني|أخبرنا|أخبرني|أنبأنا|سمعت|سمع|ثنا|نا)\s/g)];
+  if (!ms.length || ms[0].index > 40) return 0;
+  const endOf = m => m.index + m[0].length;
+  let last = ms[0];
+  for (const m of ms.slice(1)) {
+    if (m.index - endOf(last) > 70) break;
+    if (m[1] === 'عن' && /(?:قال|قالت|يقول|تقول)\s*:/.test(t.slice(endOf(last), m.index))) break;
+    last = m;
+  }
+  const END = /(?:^|[\s،,])(?:قال|قالت|يقول|تقول|يحدث|يخبر|أنه|أنها|أن)\s*:?\s/g;
+  END.lastIndex = endOf(last);
+  const e = END.exec(t);
+  if (!e || e.index - endOf(last) > 90) return 0;
+  const k = e.index + e[0].length;
+  return k < idx.length ? idx[k] : 0;
+}
+const prepTr = t => String(t).replace(/ﷺ/g, ' sallallâhu aleyhi ve sellem ').replace(/\s*→\s*/g, ', ondan, ').replace(/\bb\.\s/g, 'bin ').replace(/[“”«»"⁨⁩]/g, '').replace(/\\n/g, ' ');
+const prepAr = t => String(t).replace(/\[[^\]]*\]/g, ' ').replace(/[«»"{}()﴿﴾]/g, ' ').replace(/\s+/g, ' ').trim();
+// iOS uzun cümleleri yarıda kesebildiği için metni noktalama yerlerinden parçalara böl
+function chunks(t, max = 220) {
+  const out = [];
+  for (const s of t.replace(/([.!?؟;؛:،,])\s+/g, '$1\u0001').split('\u0001')) {
+    if (out.length && (out[out.length - 1] + ' ' + s).length <= max) out[out.length - 1] += ' ' + s; else out.push(s);
+  }
+  return out.filter(x => x.trim());
+}
+const TTSP = {run: null};
+function ttsStop() {
+  if (SYN) SYN.cancel();
+  if (TTSP.run) TTSP.run.cancelled = true;
+  TTSP.run = null;
+  document.querySelectorAll('.tts-on').forEach(e => e.classList.remove('tts-on'));
+  document.querySelectorAll('.tts-b.playing').forEach(b => { b.classList.remove('playing'); b.textContent = b.dataset.label; });
+}
+function ttsPlay(btn, lang, parts) {
+  const again = btn.classList.contains('playing');
+  ttsStop();
+  if (again) return;
+  if (!SYN) { toast('Bu cihaz sesli okumayı desteklemiyor'); return; }
+  const voice = ttsVoice(lang);
+  if (!voice) { toast(lang === 'ar' ? 'Bu cihazda Arapça ses yok — Ayarlar → Sesli okuma' : 'Bu cihazda Türkçe ses yok'); return; }
+  const queue = [];
+  for (const p of parts) if (p && p.text && p.text.trim()) for (const c of chunks(p.text)) queue.push({el: p.el, c});
+  if (!queue.length) return;
+  const run = {cancelled: false};
+  TTSP.run = run;
+  btn.classList.add('playing'); btn.textContent = '■ Durdur';
+  let i = 0;
+  const next = () => {
+    if (run.cancelled) return;
+    document.querySelectorAll('.tts-on').forEach(e => e.classList.remove('tts-on'));
+    if (i >= queue.length) { ttsStop(); return; }
+    const q = queue[i++];
+    if (q.el) { q.el.classList.add('tts-on'); const d = q.el.closest('details'); if (d && !d.open) d.open = true; }
+    const u = new SpeechSynthesisUtterance(q.c);
+    u.voice = voice; u.lang = voice.lang; u.rate = TTS.rate;
+    u.onend = next;
+    u.onerror = e => { if (!run.cancelled && e.error !== 'interrupted' && e.error !== 'canceled') { ttsStop(); toast('Sesli okuma durdu'); } };
+    SYN.speak(u);
+  };
+  next();
+}
+// Bir okuma kartına "▶ Arapça" / "▶ Türkçe" düğmeleri: parts() o anki ayarlara göre okunacakları verir
+function ttsRow(map) {
+  const row = el('div', 'tts-row');
+  for (const [lang, label, parts] of map) {
+    const b = el('button', 'tts-b', label);
+    b.type = 'button'; b.dataset.label = label;
+    b.addEventListener('click', () => ttsPlay(b, lang, parts()));
+    row.append(b);
+  }
+  return row;
+}
+function ttsFillSettings() {
+  for (const [id, l] of [['#ttsAr', 'ar'], ['#ttsTr', 'tr']]) {
+    const s = $(id);
+    if (!s) continue;
+    const list = ttsVoices(l);
+    s.replaceChildren(...list.map(v => { const o = el('option', null, vLabel(v)); o.value = v.voiceURI; return o; }));
+    if (!list.length) s.append(el('option', null, 'Bu cihazda ses bulunamadı'));
+    const cur = ttsVoice(l);
+    if (cur) s.value = cur.voiceURI;
+  }
+  const r = $('#ttsRate');
+  if (r) { r.value = TTS.rate; $('#ttsRateOut').textContent = Number(TTS.rate).toFixed(2).replace('.', ',') + '×'; }
+  if ($('#ttsArSened')) { $('#ttsArSened').checked = TTS.arSened; $('#ttsTrSened').checked = TTS.trSened; }
+}
+
 const applyFs = () => document.documentElement.style.setProperty('--rd', RD.fs + 'px');
 applyFs();
 function fsBar() {
@@ -1389,11 +1508,19 @@ function renderHistory() {
 }
 $('#openSettings').addEventListener('click', () => {
   $('#hapticsToggle').checked = S.haptics;
+  if (SYN) ttsLoadVoices(); else ttsFillSettings();
   renderHistory();
   settings.showModal();
 });
 $('#closeSettings').addEventListener('click', () => settings.close());
 $('#hapticsToggle').addEventListener('change', e => { S.haptics = e.target.checked; save(); });
+$('#ttsAr').addEventListener('change', e => { TTS.ar = e.target.value; ttsSave(); });
+$('#ttsTr').addEventListener('change', e => { TTS.tr = e.target.value; ttsSave(); });
+$('#ttsRate').addEventListener('input', e => { TTS.rate = Number(e.target.value); $('#ttsRateOut').textContent = TTS.rate.toFixed(2).replace('.', ',') + '×'; ttsSave(); });
+$('#ttsArSened').addEventListener('change', e => { TTS.arSened = e.target.checked; ttsSave(); });
+$('#ttsTrSened').addEventListener('change', e => { TTS.trSened = e.target.checked; ttsSave(); });
+$('#ttsTest').addEventListener('click', e => ttsPlay(e.currentTarget, 'ar', [{text: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ'}, {text: ''}]));
+$('#ttsTestTr').addEventListener('click', e => ttsPlay(e.currentTarget, 'tr', [{text: 'Kalpler ancak Allah’ı anmakla huzur bulur.'}]));
 
 $('#resetToday').addEventListener('click', () => {
   const prev = S.days[today];
