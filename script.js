@@ -940,10 +940,15 @@ const TTS_HIDE = {ar: null, tr: /yelda/i};
 const TTS_WANT = {ar: 'Majed', tr: 'Cem'};
 const vMale = (v, l) => TTS_MALE[l].test(v.name + ' ' + v.voiceURI) ? 0 : 1;
 function ttsVoices(l) { return VOICES.filter(v => vLang(v, l) && !(TTS_HIDE[l] && TTS_HIDE[l].test(v.name + ' ' + v.voiceURI))).sort((a, b) => vRank(a) - vRank(b) || vMale(a, l) - vMale(b, l) || a.name.localeCompare(b.name)); }
+const IS_ANDROID = /android/i.test(navigator.userAgent);
 function ttsInfo(l) {
   const best = ttsVoices(l)[0], lang = l === 'ar' ? 'Arapça' : 'Türkçe', want = TTS_WANT[l];
-  const how = `iPhone Ayarlar → Erişilebilirlik → Seslendirilen İçerik → Sesler → ${lang} → ${want} → “Premium” ya da “Gelişmiş” sürümü indir.`;
   if (!SYN) return 'Bu cihaz sesli okumayı desteklemiyor.';
+  if (IS_ANDROID) {
+    const how = `Android’de: Ayarlar → Erişilebilirlik → Metin okuma (yazıdan konuşmaya) çıkışı → Tercih edilen motor: Google → ⚙ → Ses verilerini yükle → ${lang} → bir erkek ses seç ve indir. (Samsung’da: Ayarlar → Genel yönetim → Metin okuma.) Seçtiğin ses burada otomatik kullanılır.`;
+    return best ? `Kullanılan: ${vLabel(best).split(' · ')[0]}. ${how}` : `Yüklü ${lang} ses yok. ${how}`;
+  }
+  const how = `iPhone Ayarlar → Erişilebilirlik → Seslendirilen İçerik → Sesler → ${lang} → ${want} → “Premium” ya da “Gelişmiş” sürümü indir.`;
   if (!best) return `Yüklü ${lang} erkek ses yok. ${how}`;
   if (vRank(best) < 2 && vMale(best, l) === 0) return `✓ Yüksek kaliteli ses hazır: ${vLabel(best).split(' · ')[0]}`;
   return `Daha doğal ses için: ${how}`;
@@ -991,6 +996,23 @@ function ttsStop() {
   TTSP.run = null;
   document.querySelectorAll('.tts-on').forEach(e => e.classList.remove('tts-on'));
   document.querySelectorAll('.tts-b.playing').forEach(b => { b.classList.remove('playing'); b.textContent = b.dataset.label; });
+  $('#ttsBar').hidden = true;
+  try { TTSP.wake && TTSP.wake.release(); } catch {}
+  TTSP.wake = null;
+}
+// Sıradaki okuma kartı (aynı dilde düğmesi olan); bab bitince sonraki babı açar
+function ttsNext(btn, lang) {
+  const sel = `.tts-b[data-lang="${lang}"]`;
+  const art = btn.closest('article');
+  if (!art) return null;
+  for (let n = art.nextElementSibling; n; n = n.nextElementSibling) { const b = n.querySelector && n.querySelector(sel); if (b) return b; }
+  const d = art.parentElement && art.parentElement.closest('details');
+  for (let nd = d && d.nextElementSibling; nd; nd = nd.nextElementSibling) {
+    if (nd.fill) nd.fill();
+    const b = nd.querySelector && nd.querySelector(sel);
+    if (b) { nd.open = true; return b; }
+  }
+  return null;
 }
 function ttsPlay(btn, lang, parts) {
   const again = btn.classList.contains('playing');
@@ -1005,11 +1027,27 @@ function ttsPlay(btn, lang, parts) {
   const run = {cancelled: false};
   TTSP.run = run;
   btn.classList.add('playing'); btn.textContent = '■ Durdur';
+  const art = btn.closest('article'), no = art && art.querySelector('.mus-no');
+  $('#ttsBarT').textContent = `${lang === 'ar' ? 'Arapça' : 'Türkçe'} okunuyor${no ? ' · ' + no.textContent.split(' · ')[0] : ''} — bitince sıradakine geçer`;
+  $('#ttsBar').hidden = false;
+  if (!TTSP.wake && navigator.wakeLock) navigator.wakeLock.request('screen').then(w => { if (TTSP.run) TTSP.wake = w; else w.release(); }).catch(() => {});
   let i = 0;
   const next = () => {
     if (run.cancelled) return;
     document.querySelectorAll('.tts-on').forEach(e => e.classList.remove('tts-on'));
-    if (i >= queue.length) { ttsStop(); return; }
+    if (i >= queue.length) {
+      // Bu kart bitti: aynı dilde sıradaki rivayete geç (Durdur'a basılana kadar)
+      const nb = ttsNext(btn, lang);
+      if (!nb) { ttsStop(); toast('Sesli okuma bitti'); return; }
+      setTimeout(() => {
+        if (run.cancelled || TTSP.run !== run) return;
+        const w = TTSP.wake; TTSP.wake = null; // ekran kilidi açık kalsın
+        nb.closest('article').scrollIntoView({block: 'center', behavior: 'smooth'});
+        nb.click();
+        if (w) { if (TTSP.run) TTSP.wake = w; else try { w.release(); } catch {} }
+      }, 600);
+      return;
+    }
     const q = queue[i++];
     if (q.el) { q.el.classList.add('tts-on'); const d = q.el.closest('details'); if (d && !d.open) d.open = true; }
     const u = new SpeechSynthesisUtterance(q.c);
@@ -1025,7 +1063,7 @@ function ttsRow(map) {
   const row = el('div', 'tts-row');
   for (const [lang, label, parts] of map) {
     const b = el('button', 'tts-b', label);
-    b.type = 'button'; b.dataset.label = label;
+    b.type = 'button'; b.dataset.label = label; b.dataset.lang = lang;
     b.addEventListener('click', () => ttsPlay(b, lang, parts()));
     row.append(b);
   }
@@ -1533,6 +1571,7 @@ $('#ttsTr').addEventListener('change', e => { TTS.tr = e.target.value; ttsSave()
 $('#ttsRate').addEventListener('input', e => { TTS.rate = Number(e.target.value); $('#ttsRateOut').textContent = TTS.rate.toFixed(2).replace('.', ',') + '×'; ttsSave(); });
 $('#ttsArSened').addEventListener('change', e => { TTS.arSened = e.target.checked; ttsSave(); });
 $('#ttsTrSened').addEventListener('change', e => { TTS.trSened = e.target.checked; ttsSave(); });
+$('#ttsBarStop').addEventListener('click', ttsStop);
 $('#ttsTest').addEventListener('click', e => ttsPlay(e.currentTarget, 'ar', [{text: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ'}, {text: ''}]));
 $('#ttsTestTr').addEventListener('click', e => ttsPlay(e.currentTarget, 'tr', [{text: 'Kalpler ancak Allah’ı anmakla huzur bulur.'}]));
 
