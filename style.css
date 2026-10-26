@@ -298,3 +298,18 @@ body.view-selef #toggleCompact,body.view-selef .sort-hint{display:none}
 .resume-h{font-size:10.5px;letter-spacing:1.8px;font-weight:700;color:var(--muted)}
 .resume-t{font-size:14.5px;font-weight:600}
 .resume small{font-size:12px;color:var(--accent);font-weight:600}
+
+/* Üç halka ve haftalık sabah/akşam kutuları */
+.rings{display:flex;justify-content:space-around;margin:18px 0 4px}
+.hring{display:flex;flex-direction:column;align-items:center;gap:6px;background:none;border:0;padding:0;font-size:12.5px;font-weight:700;color:var(--text)}
+.hring svg{width:84px;height:84px}
+.rg-track,.rg-bar{fill:none;stroke-width:9}
+.rg-track{stroke:var(--track)}
+.rg-bar{stroke:var(--accent);stroke-linecap:round;transition:stroke-dasharray .3s}
+.hring text{font-size:15px;font-weight:700;fill:var(--text);font-variant-numeric:tabular-nums}
+.hring.complete .rg-l::after{content:' ✓';color:var(--accent)}
+.week{height:auto;margin:16px 2px 12px;gap:6px}
+.week .day{gap:5px}
+.wk{width:26px;height:26px;border-radius:8px;background:var(--card);border:1px solid var(--border);display:grid;place-items:center;font-style:normal;font-size:12px;color:var(--muted)}
+.wk.on{background:var(--accent);border-color:var(--accent);color:var(--accentText)}
+.resume[hidden],.daily[hidden]{display:none}

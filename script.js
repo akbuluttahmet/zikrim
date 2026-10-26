@@ -1131,7 +1131,8 @@ function update() {
   $('#grand').textContent = fmt(dayTotal(today));
   $('#progress').textContent = `${done} / ${S.zikirs.length} tamamlandı`;
   const st = streak();
-  $('#streak').textContent = st ? `🔥 ${st} günlük seri` : '🌱 Seri yok';
+  $('#streak').textContent = st ? `${st} günlük seri` : 'Seri yok';
+  renderRings();
   $('#today').textContent = new Date().toLocaleDateString('tr-TR', {day: 'numeric', month: 'long', year: 'numeric', weekday: 'long'}).toLocaleUpperCase('tr-TR');
   $('#hijri').textContent = hijriText();
   {
@@ -1144,26 +1145,55 @@ function update() {
   if (!focusEl.hidden) renderFocus();
 }
 
+/* Üç halka: Sabah · Akşam · Genel (dokununca o liste açılır) */
+const RINGS = [['sabah', '☀︎ Sabah', z => MSET.has(z.id)], ['aksam', '☾ Akşam', z => ESET.has(z.id)], ['genel', '📿 Genel', isGenel]];
+const RING_C = 2 * Math.PI * 34;
+function renderRings() {
+  const box = $('#rings');
+  if (!box.children.length) {
+    for (const [v, label] of RINGS) {
+      const b = el('button', 'hring');
+      b.type = 'button';
+      b.dataset.ring = v;
+      b.innerHTML = `<svg viewBox="0 0 84 84" aria-hidden="true"><circle class="rg-track" cx="42" cy="42" r="34"/><circle class="rg-bar" cx="42" cy="42" r="34" transform="rotate(-90 42 42)"/><text x="42" y="47" text-anchor="middle"></text></svg><span class="rg-l"></span>`;
+      b.querySelector('.rg-l').textContent = label;
+      b.addEventListener('click', () => setView(v));
+      box.append(b);
+    }
+  }
+  RINGS.forEach(([v, label, f], i) => {
+    const zs = S.zikirs.filter(f), d = zs.filter(z => getCount(z.id) >= z.target).length, p = zs.length ? d / zs.length : 0;
+    const b = box.children[i];
+    const bar = b.querySelector('.rg-bar');
+    bar.style.strokeDasharray = `${RING_C * p} ${RING_C}`;
+    bar.style.opacity = d ? 1 : 0;
+    b.querySelector('text').textContent = `${d}/${zs.length}`;
+    b.classList.toggle('complete', zs.length > 0 && d === zs.length);
+    b.setAttribute('aria-label', `${label.slice(2)}: ${d} / ${zs.length} tamamlandı`);
+  });
+}
+/* Son 7 gün: her gün için sabah ve akşam zikirleri tamamlandı mı */
+const groupDone = (ids, k) => { const zs = ids.map(findZ).filter(Boolean); return zs.length > 0 && zs.every(z => getCount(z.id, k) >= z.target); };
 function renderWeek() {
   const week = $('#week');
   const days = [];
-  for (let i = 6; i >= 0; i--) { const d = addDays(new Date(), -i); days.push({d, k: dayKey(d), t: dayTotal(dayKey(d))}); }
-  const max = Math.max(1, ...days.map(x => x.t));
+  for (let i = 6; i >= 0; i--) { const d = addDays(new Date(), -i); const k = dayKey(d); days.push({d, k, m: groupDone(MORNING, k), e: groupDone(EVENING, k)}); }
   week.replaceChildren(...days.map(x => {
     const b = document.createElement('button');
     b.type = 'button';
     b.className = 'day' + (x.k === today ? ' is-today' : '');
     b.dataset.k = x.k;
-    b.setAttribute('aria-label', `${x.d.toLocaleDateString('tr-TR', {day: 'numeric', month: 'long'})}: ${x.t} zikir`);
-    b.innerHTML = '<span class="col"><span class="fill"></span></span><span class="lbl"></span>';
-    b.querySelector('.fill').style.height = (x.t ? Math.max(8, x.t / max * 100) : 0) + '%';
+    b.setAttribute('aria-label', `${x.d.toLocaleDateString('tr-TR', {day: 'numeric', month: 'long'})}: sabah ${x.m ? 'tamam' : 'eksik'}, akşam ${x.e ? 'tamam' : 'eksik'}`);
+    b.innerHTML = `<i class="wk${x.m ? ' on' : ''}">☀︎</i><i class="wk${x.e ? ' on' : ''}">☾</i><span class="lbl"></span>`;
     b.querySelector('.lbl').textContent = ['Pz', 'Pt', 'Sa', 'Ça', 'Pe', 'Cu', 'Ct'][x.d.getDay()];
     return b;
   }));
 }
 $('#week').addEventListener('click', e => {
   const b = e.target.closest('.day');
-  if (b) toast(`${fromKey(b.dataset.k).toLocaleDateString('tr-TR', {day: 'numeric', month: 'long', weekday: 'long'})}: ${fmt(dayTotal(b.dataset.k))} zikir`);
+  if (!b) return;
+  const k = b.dataset.k;
+  toast(`${fromKey(k).toLocaleDateString('tr-TR', {day: 'numeric', month: 'long', weekday: 'long'})}: ${fmt(dayTotal(k))} zikir · Sabah ${groupDone(MORNING, k) ? '✓' : '—'} · Akşam ${groupDone(EVENING, k) ? '✓' : '—'}`);
 });
 
 function increment(id, delta) {
