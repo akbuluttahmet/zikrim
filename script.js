@@ -1429,6 +1429,7 @@ $('#importData').addEventListener('change', async e => {
     if (!data || !Array.isArray(data.zikirs)) throw new Error();
     const prev = S;
     S = sanitize(data);
+    S.ui = UI_V; // yedekteki tema ve sıra korunsun, açılışta tekrar değiştirilmesin
     save(); setTheme(S.theme); renderCards();
     settings.close();
     toast('Yedek yüklendi', {label: 'Geri al', run: () => { S = prev; save(); setTheme(S.theme); renderCards(); }});
