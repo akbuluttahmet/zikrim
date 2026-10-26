@@ -721,7 +721,14 @@ async function renderLib(L) {
 function libRenderBooks(L, wrap) {
   wrap.replaceChildren();
   wrap.append(el('article', 'quote fq-note mus-note', L.note), el('div', 'mus-go'));
+  let lastG = [];
   L.idx.forEach((b, i) => {
+    (b.g || []).forEach((g, d) => {
+      if (lastG[d] === g) return;
+      lastG = lastG.slice(0, d);
+      wrap.append(el('p', 'mus-grp mus-grp' + d, g));
+      lastG[d] = g;
+    });
     const card = el('button', 'mus-book');
     card.type = 'button';
     card.append(el('span', 'mus-book-tr', b.tr),
@@ -839,6 +846,7 @@ function libFilter(L) {
   if (!cardsEl.querySelector('.mus-babs')) {
     let shown = 0;
     for (const c of cardsEl.querySelectorAll('.mus-book')) { const hit = !q || musQ(c.dataset.search).includes(q); c.hidden = !hit; if (hit) shown++; }
+    for (const g of cardsEl.querySelectorAll('.mus-grp')) g.hidden = !!raw;
     const note = cardsEl.querySelector('.mus-note');
     if (note) note.hidden = !!raw;
     $('#noResult').hidden = !q || shown > 0;
