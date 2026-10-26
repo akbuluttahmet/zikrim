@@ -141,8 +141,8 @@
   </div>
   <label class="switch-row">Titreşim <input type="checkbox" id="hapticsToggle" switch></label>
   <h3>Sesli okuma</h3>
-  <label for="ttsAr">Arapça ses<select id="ttsAr" class="set-select"></select></label>
-  <label for="ttsTr">Türkçe ses<select id="ttsTr" class="set-select"></select></label>
+  <label for="ttsAr">Arapça ses<select id="ttsAr" class="set-select"></select><small class="tts-info" id="ttsArInfo"></small></label>
+  <label for="ttsTr">Türkçe ses<select id="ttsTr" class="set-select"></select><small class="tts-info" id="ttsTrInfo"></small></label>
   <label for="ttsRate">Okuma hızı · <output id="ttsRateOut">0,90×</output><input type="range" id="ttsRate" min="0.5" max="1.3" step="0.05" value="0.9"></label>
   <label class="switch-row">Arapçada seneti oku <input type="checkbox" id="ttsArSened" switch></label>
   <label class="switch-row">Türkçede seneti oku <input type="checkbox" id="ttsTrSened" switch></label>
@@ -150,7 +150,7 @@
     <button type="button" id="ttsTest" class="ghost tts-b" data-label="▶ Arapça dene">▶ Arapça dene</button>
     <button type="button" id="ttsTestTr" class="ghost tts-b" data-label="▶ Türkçe dene">▶ Türkçe dene</button>
   </div>
-  <p class="note">Daha doğal bir ses için iPhone’da Ayarlar → Erişilebilirlik → Seslendirilen İçerik → Sesler yolundan Arapça ve Türkçe için “Gelişmiş” ya da “Premium” sesi indir. İndirdiğin ses yukarıdaki listede “(Gelişmiş)” / “(Premium)” diye görünür; onu seç.</p>
+  <p class="note">Sesler iPhone’un kendi sesleridir; uygulama yüklü olanların en kalitelisini (Premium, sonra Gelişmiş) ve erkek sesi kendiliğinden seçer. İndirdiğin ses listede “(Premium)” / “(Gelişmiş)” diye görünür.</p>
   <h3>Son 30 gün</h3>
   <div id="history" class="history"></div>
   <h3>Veriler</h3>

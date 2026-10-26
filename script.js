@@ -934,7 +934,20 @@ let VOICES = [];
 const vLang = (v, l) => v.lang.toLowerCase().replace('_', '-').startsWith(l);
 const vRank = v => /premium/i.test(v.voiceURI + v.name) ? 0 : /enhanced|gelişmiş|geliştirilmiş/i.test(v.voiceURI + v.name) ? 1 : 2;
 const vLabel = v => v.name.replace(/\s*\((enhanced|premium|gelişmiş|geliştirilmiş)\)/i, '') + (vRank(v) === 0 ? ' (Premium)' : vRank(v) === 1 ? ' (Gelişmiş)' : '') + ` · ${v.lang}`;
-function ttsVoices(l) { return VOICES.filter(v => vLang(v, l)).sort((a, b) => vRank(a) - vRank(b) || a.name.localeCompare(b.name)); }
+// Tercih: yüksek kaliteli (Premium > Gelişmiş) erkek sesler; Türkçede Yelda listeden çıkarıldı
+const TTS_MALE = {ar: /maged|majed|tarik|tariq/i, tr: /\bcem\b/i};
+const TTS_HIDE = {ar: null, tr: /yelda/i};
+const TTS_WANT = {ar: 'Majed', tr: 'Cem'};
+const vMale = (v, l) => TTS_MALE[l].test(v.name + ' ' + v.voiceURI) ? 0 : 1;
+function ttsVoices(l) { return VOICES.filter(v => vLang(v, l) && !(TTS_HIDE[l] && TTS_HIDE[l].test(v.name + ' ' + v.voiceURI))).sort((a, b) => vRank(a) - vRank(b) || vMale(a, l) - vMale(b, l) || a.name.localeCompare(b.name)); }
+function ttsInfo(l) {
+  const best = ttsVoices(l)[0], lang = l === 'ar' ? 'Arapça' : 'Türkçe', want = TTS_WANT[l];
+  const how = `iPhone Ayarlar → Erişilebilirlik → Seslendirilen İçerik → Sesler → ${lang} → ${want} → “Premium” ya da “Gelişmiş” sürümü indir.`;
+  if (!SYN) return 'Bu cihaz sesli okumayı desteklemiyor.';
+  if (!best) return `Yüklü ${lang} erkek ses yok. ${how}`;
+  if (vRank(best) < 2 && vMale(best, l) === 0) return `✓ Yüksek kaliteli ses hazır: ${vLabel(best).split(' · ')[0]}`;
+  return `Daha doğal ses için: ${how}`;
+}
 function ttsVoice(l) { const list = ttsVoices(l); return list.find(v => v.voiceURI === TTS[l]) || list[0] || null; }
 function ttsLoadVoices() { VOICES = SYN ? SYN.getVoices() : []; ttsFillSettings(); }
 if (SYN) { ttsLoadVoices(); SYN.addEventListener ? SYN.addEventListener('voiceschanged', ttsLoadVoices) : (SYN.onvoiceschanged = ttsLoadVoices); }
@@ -985,7 +998,7 @@ function ttsPlay(btn, lang, parts) {
   if (again) return;
   if (!SYN) { toast('Bu cihaz sesli okumayı desteklemiyor'); return; }
   const voice = ttsVoice(lang);
-  if (!voice) { toast(lang === 'ar' ? 'Bu cihazda Arapça ses yok — Ayarlar → Sesli okuma' : 'Bu cihazda Türkçe ses yok'); return; }
+  if (!voice) { toast(lang === 'ar' ? 'Arapça ses yüklü değil — Ayarlar → Sesli okuma' : 'Türkçe erkek ses (Cem) yüklü değil — Ayarlar → Sesli okuma'); return; }
   const queue = [];
   for (const p of parts) if (p && p.text && p.text.trim()) for (const c of chunks(p.text)) queue.push({el: p.el, c});
   if (!queue.length) return;
@@ -1024,13 +1037,14 @@ function ttsFillSettings() {
     if (!s) continue;
     const list = ttsVoices(l);
     s.replaceChildren(...list.map(v => { const o = el('option', null, vLabel(v)); o.value = v.voiceURI; return o; }));
-    if (!list.length) s.append(el('option', null, 'Bu cihazda ses bulunamadı'));
+    if (!list.length) s.append(el('option', null, l === 'tr' ? 'Cem yüklü değil' : 'Arapça ses yüklü değil'));
     const cur = ttsVoice(l);
     if (cur) s.value = cur.voiceURI;
   }
   const r = $('#ttsRate');
   if (r) { r.value = TTS.rate; $('#ttsRateOut').textContent = Number(TTS.rate).toFixed(2).replace('.', ',') + '×'; }
   if ($('#ttsArSened')) { $('#ttsArSened').checked = TTS.arSened; $('#ttsTrSened').checked = TTS.trSened; }
+  if ($('#ttsArInfo')) { $('#ttsArInfo').textContent = ttsInfo('ar'); $('#ttsTrInfo').textContent = ttsInfo('tr'); }
 }
 
 const applyFs = () => document.documentElement.style.setProperty('--rd', RD.fs + 'px');
