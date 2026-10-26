@@ -1,4 +1,4 @@
-# Zikrim — iPhone PWA (sürüm 2)
+# Sekîne — iPhone PWA
 
 Ana ekrana eklenen, çevrimdışı çalışan kişisel zikir sayacı. Veriler telefondaki tarayıcı depolamasında (localStorage) tutulur.
 

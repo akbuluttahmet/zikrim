@@ -508,7 +508,7 @@ const QUOTES = [
 /* ---------- Kartlar ---------- */
 const cardsEl = $('#cards');
 const MSET = new Set(MORNING), ESET = new Set(EVENING);
-const VIEWS = {main: 'Zikrim', sabah: '☀︎ Sabah Zikirleri', aksam: '☾ Akşam Zikirleri', genel: '📿 Genel Zikirler', selef: '📜 Sözler', fikih: '⚖️ Hanbelî Fıkhı', musannef: '📚 Musannef', musned: '📗 Müsned', usul: '📘 Usûlü’s-Sünne', kutuphane: '📚 Kütüphane', kaydedilen: '☆ Kaydettiklerim'};
+const VIEWS = {main: 'Sekîne', sabah: '☀︎ Sabah Zikirleri', aksam: '☾ Akşam Zikirleri', genel: '📿 Genel Zikirler', selef: '📜 Sözler', fikih: '⚖️ Hanbelî Fıkhı', musannef: '📚 Musannef', musned: '📗 Müsned', usul: '📘 Usûlü’s-Sünne', kutuphane: '📚 Kütüphane', kaydedilen: '☆ Kaydettiklerim'};
 const LIB_CHILD = new Set(['musannef', 'musned', 'usul', 'kaydedilen']);
 const READ_VIEWS = new Set(['selef', 'fikih', 'musannef', 'musned', 'usul', 'kutuphane', 'kaydedilen']);
 let view = 'main';
@@ -1375,12 +1375,12 @@ $('#restoreDefaults').addEventListener('click', () => {
 });
 
 $('#exportData').addEventListener('click', async () => {
-  const name = `zikrim-yedek-${today}.json`;
+  const name = `sekine-yedek-${today}.json`;
   const blob = new Blob([JSON.stringify(S, null, 2)], {type: 'application/json'});
   try {
     const file = new File([blob], name, {type: 'application/json'});
     if (navigator.canShare && navigator.canShare({files: [file]})) {
-      await navigator.share({files: [file], title: 'Zikrim yedeği'});
+      await navigator.share({files: [file], title: 'Sekîne yedeği'});
       return;
     }
   } catch (err) { if (err && err.name === 'AbortError') return; }
@@ -1402,7 +1402,7 @@ $('#importData').addEventListener('change', async e => {
     save(); setTheme(S.theme); renderCards();
     settings.close();
     toast('Yedek yüklendi', {label: 'Geri al', run: () => { S = prev; save(); setTheme(S.theme); renderCards(); }});
-  } catch { settings.close(); toast('Bu dosya geçerli bir Zikrim yedeği değil'); }
+  } catch { settings.close(); toast('Bu dosya geçerli bir Sekîne yedeği değil'); }
 });
 
 /* ---------- Gün değişimi ve uyku ---------- */
