@@ -491,9 +491,10 @@ const QUOTES = [
 /* ---------- Kartlar ---------- */
 const cardsEl = $('#cards');
 const MSET = new Set(MORNING), ESET = new Set(EVENING);
-const VIEWS = {main: 'Zikirlerim', sabah: '☀︎ Sabah Zikirleri', aksam: '☾ Akşam Zikirleri', selef: '📜 Selef’ten Sözler', fikih: '⚖️ Hanbelî Fıkhı'};
+const VIEWS = {main: 'Zikirlerim', sabah: '☀︎ Sabah Zikirleri', aksam: '☾ Akşam Zikirleri', selef: '📜 Selef’ten Sözler', fikih: '⚖️ Hanbelî Fıkhı', musannef: '📚 Musannef'};
+const READ_VIEWS = new Set(['selef', 'fikih', 'musannef']);
 let view = 'main';
-const inView = z => (view === 'selef' || view === 'fikih') ? false : view === 'sabah' ? MSET.has(z.id) : view === 'aksam' ? ESET.has(z.id) : !MSET.has(z.id) && !ESET.has(z.id);
+const inView = z => READ_VIEWS.has(view) ? false : view === 'sabah' ? MSET.has(z.id) : view === 'aksam' ? ESET.has(z.id) : !MSET.has(z.id) && !ESET.has(z.id);
 const visible = () => S.zikirs.filter(inView);
 
 function setView(v) {
@@ -515,11 +516,12 @@ function renderCards() {
   $('#backAll').hidden = view === 'main';
   $('#addZikir').hidden = view !== 'main';
   document.querySelectorAll('[data-view]').forEach(b => { const on = b.dataset.view === view; b.classList.toggle('active', on); b.setAttribute('aria-pressed', String(on)); });
-  $('#empty').hidden = list.length > 0 || view === 'selef' || view === 'fikih';
-  document.body.classList.toggle('view-selef', view === 'selef' || view === 'fikih');
-  searchEl.placeholder = view === 'selef' ? 'Söz ara (âlim, anlam, kaynak)…' : view === 'fikih' ? 'Fıkıhta ara (ör. mesh, cuma, zekât)…' : 'Zikir ara (ad, anlam, okunuş)…';
+  $('#empty').hidden = list.length > 0 || READ_VIEWS.has(view);
+  document.body.classList.toggle('view-selef', READ_VIEWS.has(view));
+  searchEl.placeholder = view === 'selef' ? 'Söz ara (âlim, anlam, kaynak)…' : view === 'fikih' ? 'Fıkıhta ara (ör. mesh, cuma, zekât)…' : view === 'musannef' ? (MUS.book == null ? 'Kitap ara ya da rivayet no. yaz (ör. 29121)…' : 'Bu kitapta ara ya da rivayet no. yaz…') : 'Zikir ara (ad, anlam, okunuş)…';
   if (view === 'selef') { renderQuotes(); applyFilter(); update(); return; }
   if (view === 'fikih') { renderFiqh(); applyFilter(); update(); return; }
+  if (view === 'musannef') { renderMusannef(); update(); return; }
   let lastGroup = null;
   for (const z of list) {
     const box = document.createElement('article');
@@ -637,7 +639,150 @@ function renderFiqh() {
   cardsEl.append(books);
 }
 
+/* ---------- Musannef (İbn Ebî Şeybe) — yalnızca Türkçe çeviri; kitaplar açılınca yüklenir ---------- */
+const MUS = {idx: null, book: null, data: null, token: 0, target: null, cache: {}};
+try { const b = JSON.parse(localStorage.getItem('zikrim-mus') || 'null'); if (Number.isInteger(b)) MUS.book = b; } catch (e) {}
+const musSaveBook = () => { try { localStorage.setItem('zikrim-mus', JSON.stringify(MUS.book)); } catch (e) {} };
+const musQ = t => norm(t);
+async function musFetch(p) {
+  if (MUS.cache[p]) return MUS.cache[p];
+  const r = await fetch(p);
+  if (!r.ok) throw new Error(p + ' ' + r.status);
+  return (MUS.cache[p] = await r.json());
+}
+const musBookOf = n => MUS.idx ? MUS.idx.findIndex(b => n >= b.from && n <= b.to) : -1;
+const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
+
+async function renderMusannef() {
+  const token = ++MUS.token;
+  const wrap = el('div', 'mus');
+  wrap.append(el('p', 'empty', 'Yükleniyor…'));
+  cardsEl.append(wrap);
+  try {
+    MUS.idx = MUS.idx || await musFetch('musannef/index.json');
+    if (MUS.book != null && !(MUS.idx[MUS.book] && MUS.idx[MUS.book].t)) MUS.book = null;
+    if (MUS.book == null) { if (token === MUS.token) musRenderBooks(wrap); }
+    else {
+      const meta = MUS.idx[MUS.book];
+      const data = await musFetch('musannef/tr/' + meta.f);
+      if (token !== MUS.token || view !== 'musannef') return;
+      MUS.data = data;
+      musRenderBook(wrap, meta);
+    }
+  } catch (e) {
+    if (token !== MUS.token) return;
+    wrap.replaceChildren(el('p', 'empty', 'Musannef yüklenemedi. İnternet bağlantını kontrol edip tekrar dene (bir kez açılan kitaplar sonra çevrimdışı da açılır).'));
+  }
+  if (token === MUS.token && view === 'musannef') applyFilter();
+}
+
+function musRenderBooks(wrap) {
+  wrap.replaceChildren();
+  const note = el('article', 'quote fq-note mus-note');
+  note.textContent = 'Ebû Bekir İbn Ebî Şeybe (ö. 235), el-Musannef — Türkçe çeviri. Çeviri, Kemâl Yûsuf el-Hût neşrindeki (Riyad: Mektebetü’r-Rüşd, 1409) metinden yapılmıştır; rivayet numaraları bu neşre göredir. Çevirisi tamamlanan kitaplar açılabilir, diğerleri sırayla eklenecek.';
+  wrap.append(note, el('div', 'mus-go'));
+  MUS.idx.forEach((b, i) => {
+    const card = el('button', 'mus-book');
+    card.type = 'button';
+    card.append(el('span', 'mus-book-tr', b.tr),
+      el('small', 'mus-book-n', `${b.n.toLocaleString('tr-TR')} rivayet · ${b.b} bab · no. ${b.from}–${b.to}` + (b.t >= b.n ? ' · ✓ Türkçe' : b.t ? ` · ${b.t.toLocaleString('tr-TR')}/${b.n.toLocaleString('tr-TR')} çevrildi` : ' · henüz çevrilmedi')));
+    if (b.t) card.classList.add('mus-done'); else card.disabled = true;
+    card.dataset.search = b.tr;
+    card.addEventListener('click', () => musOpen(i));
+    wrap.append(card);
+  });
+}
+
+function musOpen(i, target = null) {
+  MUS.book = i; MUS.target = target; musSaveBook();
+  searchEl.value = '';
+  renderCards();
+  $('.list').scrollIntoView({block: 'start'});
+}
+
+function musItem([n, sened, metin]) {
+  const a = el('article', 'mus-h');
+  a.id = 'h' + n;
+  a.append(el('p', 'mus-no', '#' + n));
+  if (sened) a.append(el('p', 'mus-sened', sened));
+  a.append(el('p', 'mus-tr', metin), el('p', 'q-src', `İbn Ebî Şeybe, el-Musannef, no. ${n}`));
+  return a;
+}
+
+function musRenderBook(wrap, meta) {
+  wrap.replaceChildren();
+  const head = el('div', 'mus-head');
+  const back = el('button', 'chip-button', '← Kitaplar');
+  back.type = 'button';
+  back.addEventListener('click', () => { MUS.book = null; musSaveBook(); searchEl.value = ''; renderCards(); });
+  head.append(back, el('h3', null, meta.tr), el('small', 'mus-book-n', `${meta.t.toLocaleString('tr-TR')} rivayet · ${MUS.data.babs.length} bab`));
+  wrap.append(head, el('div', 'mus-go'), el('div', 'mus-results'));
+  const list = el('div', 'mus-babs');
+  MUS.data.babs.forEach(b => {
+    const d = el('details', 'fq-cat mus-bab');
+    const sum = el('summary');
+    sum.append(el('span', 'mus-bab-tr', b.t || 'Kitabın başı'), el('small', null, `${b.h.length}`));
+    d.append(sum);
+    d.fill = () => { if (!d.dataset.done) { d.dataset.done = 1; for (const h of b.h) d.append(musItem(h)); } };
+    d.addEventListener('toggle', () => { if (d.open) d.fill(); });
+    list.append(d);
+  });
+  wrap.append(list);
+  if (MUS.target != null) {
+    const n = MUS.target; MUS.target = null;
+    const bi = MUS.data.babs.findIndex(b => b.h.some(x => x[0] === n));
+    if (bi >= 0) {
+      list.children[bi].fill();
+      list.children[bi].open = true;
+      requestAnimationFrame(() => { const it = document.getElementById('h' + n); if (it) { it.scrollIntoView({block: 'center'}); it.classList.add('flash'); setTimeout(() => it.classList.remove('flash'), 1800); } });
+    }
+  }
+}
+
+function musGoHint(box, n) {
+  box.replaceChildren();
+  if (!n) return;
+  const bi = musBookOf(n);
+  if (bi < 0) { box.append(el('p', 'empty', `No. ${n} bulunamadı (1–37943).`)); return; }
+  if (!MUS.idx[bi].t) { box.append(el('p', 'mus-count', `#${n} · ${MUS.idx[bi].tr} — bu kitap henüz çevrilmedi.`)); return; }
+  const b = el('button', 'chip-button mus-go-btn', `#${n} · ${MUS.idx[bi].tr} → Git`);
+  b.type = 'button';
+  b.addEventListener('click', () => musOpen(bi, n));
+  box.append(b);
+}
+
+function musFilter() {
+  const raw = searchEl.value.trim();
+  const num = /^\d+$/.test(raw) ? +raw : 0;
+  const q = num ? '' : musQ(raw);
+  document.body.classList.toggle('filtering', !!raw);
+  const go = cardsEl.querySelector('.mus-go');
+  if (go) musGoHint(go, num);
+  $('#noResult').hidden = true;
+  if (!cardsEl.querySelector('.mus-babs')) {
+    let shown = 0;
+    for (const c of cardsEl.querySelectorAll('.mus-book')) { const hit = !q || musQ(c.dataset.search).includes(q); c.hidden = !hit; if (hit) shown++; }
+    const note = cardsEl.querySelector('.mus-note');
+    if (note) note.hidden = !!raw;
+    $('#noResult').hidden = !q || shown > 0;
+    return;
+  }
+  const babs = cardsEl.querySelector('.mus-babs');
+  const res = cardsEl.querySelector('.mus-results');
+  res.replaceChildren();
+  babs.hidden = !!q;
+  if (!q) return;
+  const hits = [];
+  for (const b of MUS.data.babs) {
+    const bt = musQ(b.t);
+    for (const h of b.h) if (bt.includes(q) || musQ(h[1] + ' ' + h[2]).includes(q)) hits.push(h);
+  }
+  res.append(el('p', 'mus-count', hits.length ? `${hits.length} rivayet bulundu` + (hits.length > 150 ? ' (ilk 150 gösteriliyor)' : '') : 'Bu kitapta sonuç yok.'));
+  for (const h of hits.slice(0, 150)) res.append(musItem(h));
+}
+
 function applyFilter() {
+  if (view === 'musannef') { musFilter(); return; }
   if (view === 'fikih') {
     const q = norm(searchEl.value.trim());
     document.body.classList.toggle('filtering', !!q);
@@ -667,6 +812,7 @@ function applyFilter() {
   $('#noResult').hidden = !q || shown > 0;
 }
 searchEl.addEventListener('input', applyFilter);
+searchEl.addEventListener('keydown', e => { if (e.key !== 'Enter' || view !== 'musannef') return; const v = searchEl.value.trim(); if (/^\d+$/.test(v) && MUS.idx) { const bi = musBookOf(+v); if (bi >= 0) { e.preventDefault(); searchEl.blur(); musOpen(bi, +v); } } });
 
 function update() {
   let done = 0;

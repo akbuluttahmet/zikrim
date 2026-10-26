@@ -209,3 +209,31 @@ body.view-selef #toggleCompact,body.view-selef .sort-hint{display:none}
 .fq-delil p{margin:0 0 8px;font-size:13px;line-height:1.55}
 .fq-delil p:last-child{margin-bottom:0}
 .fq-delil small{display:block;margin-top:2px;font-size:11.5px;color:var(--muted)}
+
+/* ---------- Musannef ---------- */
+.mus-book{display:flex;flex-direction:column;align-items:flex-start;gap:4px;width:100%;text-align:left;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:14px 16px;margin:8px 0;color:var(--text);font:inherit}
+.mus-book[hidden]{display:none}
+.mus-book-tr{font-size:15px;font-weight:700}
+.mus-book-n{font-size:12px;color:var(--muted);font-weight:600}
+.mus-book.mus-done .mus-book-n{color:var(--accent)}
+.mus-book:disabled{opacity:.55}
+.mus-head{display:flex;flex-direction:column;gap:6px;margin:4px 0 10px}
+.mus-head .chip-button{align-self:flex-start}
+.mus-head h3{margin:6px 0 0;font-size:18px}
+.mus-go:empty{display:none}
+.mus-go{margin:8px 0}
+.mus-go-btn{width:100%;text-align:left}
+.mus-bab>summary{align-items:flex-start}
+.mus-bab>summary>span{display:flex;flex-direction:column;gap:3px;min-width:0}
+.mus-bab-tr{font-size:15px}
+.mus-bab>summary small{white-space:nowrap;padding-top:2px}
+.mus-bab[hidden],.mus-babs[hidden]{display:none}
+.mus-h{padding:14px 18px 10px;border-top:1px solid var(--border);transition:background .4s}
+.mus-results .mus-h{background:var(--card);border:1px solid var(--border);border-radius:16px;margin:10px 0}
+.mus-h.flash{background:var(--hero)}
+.mus-no{margin:0;font-size:12px;font-weight:700;color:var(--accent);font-variant-numeric:tabular-nums}
+.mus-sened{margin:0 0 6px;font-size:12.5px;line-height:1.55;color:var(--muted)}
+.mus-tr{margin:0 0 8px;font-size:15px;line-height:1.65}
+.mus-none{margin:0 0 8px;font-size:13px;color:var(--muted);font-style:italic}
+.mus-h .q-src{margin:0}
+.mus-count{font-size:13px;color:var(--muted);margin:6px 2px}
