@@ -237,3 +237,9 @@ body.view-selef #toggleCompact,body.view-selef .sort-hint{display:none}
 .mus-none{margin:0 0 8px;font-size:13px;color:var(--muted);font-style:italic}
 .mus-h .q-src{margin:0}
 .mus-count{font-size:13px;color:var(--muted);margin:6px 2px}
+.usul-tr{white-space:pre-line}
+.usul-list{padding:0;overflow:hidden}
+.usul-list[hidden],.usul-list .mus-h[hidden]{display:none}
+.usul-list .mus-h:first-child{border-top:0}
+.rah{font-family:inherit}
+.usul-list .mus-no{margin-bottom:6px;line-height:1.4}

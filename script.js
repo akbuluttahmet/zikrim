@@ -491,8 +491,8 @@ const QUOTES = [
 /* ---------- Kartlar ---------- */
 const cardsEl = $('#cards');
 const MSET = new Set(MORNING), ESET = new Set(EVENING);
-const VIEWS = {main: 'Zikirlerim', sabah: '☀︎ Sabah Zikirleri', aksam: '☾ Akşam Zikirleri', selef: '📜 Selef’ten Sözler', fikih: '⚖️ Hanbelî Fıkhı', musannef: '📚 Musannef'};
-const READ_VIEWS = new Set(['selef', 'fikih', 'musannef']);
+const VIEWS = {main: 'Zikirlerim', sabah: '☀︎ Sabah Zikirleri', aksam: '☾ Akşam Zikirleri', selef: '📜 Selef’ten Sözler', fikih: '⚖️ Hanbelî Fıkhı', musannef: '📚 Musannef', usul: '📘 Usûlü’s-Sünne'};
+const READ_VIEWS = new Set(['selef', 'fikih', 'musannef', 'usul']);
 let view = 'main';
 const inView = z => READ_VIEWS.has(view) ? false : view === 'sabah' ? MSET.has(z.id) : view === 'aksam' ? ESET.has(z.id) : !MSET.has(z.id) && !ESET.has(z.id);
 const visible = () => S.zikirs.filter(inView);
@@ -518,10 +518,11 @@ function renderCards() {
   document.querySelectorAll('[data-view]').forEach(b => { const on = b.dataset.view === view; b.classList.toggle('active', on); b.setAttribute('aria-pressed', String(on)); });
   $('#empty').hidden = list.length > 0 || READ_VIEWS.has(view);
   document.body.classList.toggle('view-selef', READ_VIEWS.has(view));
-  searchEl.placeholder = view === 'selef' ? 'Söz ara (âlim, anlam, kaynak)…' : view === 'fikih' ? 'Fıkıhta ara (ör. mesh, cuma, zekât)…' : view === 'musannef' ? (MUS.book == null ? 'Kitap ara ya da rivayet no. yaz (ör. 29121)…' : 'Bu kitapta ara ya da rivayet no. yaz…') : 'Zikir ara (ad, anlam, okunuş)…';
+  searchEl.placeholder = view === 'selef' ? 'Söz ara (âlim, anlam, kaynak)…' : view === 'fikih' ? 'Fıkıhta ara (ör. mesh, cuma, zekât)…' : view === 'usul' ? 'Risalede ara (ör. kader, havz, cuma)…' : view === 'musannef' ? (MUS.book == null ? 'Kitap ara ya da rivayet no. yaz (ör. 29121)…' : 'Bu kitapta ara ya da rivayet no. yaz…') : 'Zikir ara (ad, anlam, okunuş)…';
   if (view === 'selef') { renderQuotes(); applyFilter(); update(); return; }
   if (view === 'fikih') { renderFiqh(); applyFilter(); update(); return; }
   if (view === 'musannef') { renderMusannef(); update(); return; }
+  if (view === 'usul') { renderUsul(); applyFilter(); update(); return; }
   let lastGroup = null;
   for (const z of list) {
     const box = document.createElement('article');
@@ -637,6 +638,35 @@ function renderFiqh() {
     books.append(el);
   }
   cardsEl.append(books);
+}
+
+/* ---------- Usûlü's-Sünne (İmam Ahmed) — yalnızca Türkçe çeviri ---------- */
+const RAH = 'رحمه الله';
+function renderUsul() {
+  const wrap = el('div', 'mus');
+  const head = el('div', 'mus-head');
+  const by = el('small', 'mus-book-n', 'İmam Ahmed b. Hanbel (');
+  const ar = el('bdi', 'rah', RAH); ar.lang = 'ar'; ar.dir = 'rtl';
+  by.append(ar, ') · ö. 241 · ' + (USUL.length - 1) + ' madde');
+  head.append(by);
+  const note = el('article', 'quote fq-note mus-note', USUL_NOTE);
+  wrap.append(head, note);
+  const list = el('div', 'fq-cat usul-list');
+  for (const [n, t, metin] of USUL) {
+    const a = el('article', 'mus-h');
+    a.id = 'u' + n;
+    a.append(el('p', 'mus-no', n ? `Madde ${n} · ${t}` : t));
+    if (!n) a.append(el('p', 'mus-sened', USUL_SENED));
+    a.append(el('p', 'mus-tr usul-tr', metin));
+    const src = el('p', 'q-src', 'İmam Ahmed (');
+    const r = el('bdi', null, RAH); r.lang = 'ar'; r.dir = 'rtl';
+    src.append(r, '), Usûlü’s-Sünne' + (n ? `, madde ${n}` : ''));
+    a.append(src);
+    a.dataset.search = [n ? 'madde ' + n : '', t, metin].join(' ');
+    list.append(a);
+  }
+  wrap.append(list);
+  cardsEl.append(wrap);
 }
 
 /* ---------- Musannef (İbn Ebî Şeybe) — yalnızca Türkçe çeviri; kitaplar açılınca yüklenir ---------- */
@@ -783,6 +813,18 @@ function musFilter() {
 
 function applyFilter() {
   if (view === 'musannef') { musFilter(); return; }
+  if (view === 'usul') {
+    const q = norm(searchEl.value.trim());
+    document.body.classList.toggle('filtering', !!q);
+    let shown = 0;
+    for (const a of cardsEl.querySelectorAll('.usul-list .mus-h')) { const hit = !q || norm(a.dataset.search).includes(q); a.hidden = !hit; if (hit) shown++; }
+    const note = cardsEl.querySelector('.mus-note');
+    if (note) note.hidden = !!q;
+    const list = cardsEl.querySelector('.usul-list');
+    if (list) list.hidden = !shown;
+    $('#noResult').hidden = !q || shown > 0;
+    return;
+  }
   if (view === 'fikih') {
     const q = norm(searchEl.value.trim());
     document.body.classList.toggle('filtering', !!q);
