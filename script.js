@@ -528,6 +528,7 @@ $('#backAll').addEventListener('click', () => setView(LIB_CHILD.has(view) ? 'kut
 
 function renderCards() {
   cardsEl.replaceChildren();
+  if (view === 'main') { renderResume(); renderDaily(); }
   document.body.classList.toggle('compact', S.compact);
   $('#toggleCompact').classList.toggle('active', S.compact);
   $('#toggleCompact').setAttribute('aria-pressed', String(S.compact));
@@ -947,6 +948,33 @@ function starBtn(k, make) {
     const c = $('#cntSaved'); if (c) c.textContent = RD.saved.length;
   });
   return b;
+}
+/* ---------- Ana sayfa: günün rivayeti (herkese aynı, tarihe göre) ve kaldığın yer ---------- */
+const fnv = t => { let h = 2166136261; for (let i = 0; i < t.length; i++) { h ^= t.charCodeAt(i); h = Math.imul(h, 16777619); } return h >>> 0; };
+let DAILY = null, dailyDay = null;
+async function renderDaily() {
+  if (dailyDay === today) return;
+  try { if (!DAILY) { const r = await fetch('gunun.json'); if (!r.ok) return; DAILY = await r.json(); } } catch { return; }
+  const [y, m, d] = today.split('-').map(Number);
+  const v = (Date.UTC(y, m - 1, d) / 864e5) % 2 ? 'musannef' : 'musned'; // günler sırayla: Müsned, Musannef
+  const P = DAILY[v];
+  if (!P || !P.h.length) return;
+  let best = null, bh = -1;
+  for (const it of P.h) { const h = fnv(today + ':' + v + ':' + it[1]); if (h > bh) { bh = h; best = it; } }
+  const [b, n, t] = best;
+  $('#dailyT').textContent = t;
+  $('#dailySrc').textContent = LIBS[v].src(n) + ' · ' + P.books[b] + ' ›';
+  $('#dailySrc').onclick = () => goTo(v, b, n);
+  $('#daily').hidden = false;
+  dailyDay = today;
+}
+function renderResume() {
+  const x = Object.values(RD.last).filter(x => x && x.v).sort((a, b) => b.at - a.at)[0];
+  const btn = $('#resume');
+  if (!x) { btn.hidden = true; return; }
+  btn.replaceChildren(el('span', 'resume-h', '📚 KALDIĞIN YER'), el('span', 'resume-t', `${LIB_NAMES[x.v]}${x.v !== 'usul' && x.title ? ' · ' + x.title.replace(/ \(.*\)$/, '') : ''}`), el('small', null, x.label + ' · Devam et ›'));
+  btn.onclick = () => goTo(x.v, x.b, x.n);
+  btn.hidden = false;
 }
 function goTo(v, b, n) {
   if (v === 'usul') { USUL_TARGET = n; view = 'usul'; }
@@ -1380,7 +1408,7 @@ $('#importData').addEventListener('change', async e => {
 /* ---------- Gün değişimi ve uyku ---------- */
 function checkDay() {
   const k = dayKey();
-  if (k !== today) { today = k; update(); }
+  if (k !== today) { today = k; update(); if (view === 'main') renderDaily(); }
 }
 setInterval(checkDay, 30000);
 document.addEventListener('visibilitychange', () => {

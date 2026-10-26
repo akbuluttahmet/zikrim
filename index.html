@@ -19,8 +19,8 @@
 <div class="app">
   <header>
     <div>
-      <span class="eyebrow" id="today">GÜNLÜK HUZUR</span>
       <span class="eyebrow hijri" id="hijri"></span>
+      <span class="eyebrow" id="today">GÜNLÜK HUZUR</span>
       <h1>Zikrim <span class="sparkle">✦</span></h1>
     </div>
     <button id="openSettings" class="icon-button" aria-label="Ayarlar" title="Ayarlar">⚙︎</button>
@@ -35,6 +35,12 @@
     </div>
     <div class="week" id="week" aria-label="Son 7 gün"></div>
     <div class="hero-foot" lang="ar" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+    <div class="daily" id="daily" hidden>
+      <span class="hero-subtitle">GÜNÜN RİVAYETİ</span>
+      <p class="daily-t" id="dailyT"></p>
+      <button type="button" class="daily-src" id="dailySrc"></button>
+    </div>
+    <button type="button" class="resume" id="resume" hidden></button>
   </section>
 
   <nav class="home-nav" aria-label="Bölümler">
