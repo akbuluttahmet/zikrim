@@ -740,7 +740,8 @@ function libOpen(L, i, target = null) {
   $('.list').scrollIntoView({block: 'start'});
 }
 
-/* Râvi/isnad notları yalnızca kitapta (neşrin dipnotlarında) varsa gösterilir: h[4] = {hukm, notes:[...], by} */
+/* Râvi paneli: yalnızca eserin kendi metnindeki bilgiler. h[4] = {c: [isim, sîga, isim, ...], n: [metindeki notlar]} */
+const SIGA = {'haddesenâ': 'bize anlattı', 'haddesenî': 'bana anlattı', 'ahberanâ': 'bize haber verdi', 'ahberanî': 'bana haber verdi', 'semi‘tü': 'işittim', 'semi‘a': 'işitti', 'an': '“-den” (an‘ane)', 'enne': '“ki…” diye', 'kâle': 'dedi'};
 function libItem(L, h) {
   const [n, sened, metin, ziyade, info] = h;
   const a = el('article', 'mus-h');
@@ -748,12 +749,34 @@ function libItem(L, h) {
   a.append(el('p', 'mus-no', (ziyade ? '*' : '#') + n));
   if (sened) a.append(el('p', 'mus-sened', sened));
   a.append(el('p', 'mus-tr', metin));
-  if (info && (info.hukm || (info.notes && info.notes.length))) {
+  if (info && ((info.c && info.c.length > 1) || (info.n && info.n.length))) {
     const d = el('details', 'rv');
     d.append(el('summary', null, 'Râviler ve isnad'));
-    if (info.hukm) d.append(el('p', 'rv-hukm', info.hukm));
-    if (info.notes && info.notes.length) { const ul = el('ul', 'rv-list'); for (const x of info.notes) ul.append(el('li', null, x)); d.append(ul); }
-    if (info.by) d.append(el('p', 'rv-by', info.by));
+    d.fill = () => {
+      if (d.dataset.done) return; d.dataset.done = 1;
+      if (info.c && info.c.length > 1) {
+        d.append(el('p', 'rv-h', 'Rivayet sîgaları — her râvi, bir sonrakinden hangi lafızla aldığını söylüyor:'));
+        const ol = el('ol', 'rv-chain');
+        for (let i = 0; i + 2 < info.c.length + 1 && i + 1 < info.c.length; i += 2) {
+          const from = info.c[i], sig = info.c[i + 1], to = info.c[i + 2];
+          const li = el('li');
+          li.append(el('span', 'rv-n', from), el('span', 'rv-s', sig));
+          const g = SIGA[sig.split(' ')[0]];
+          if (g && !sig.includes('(')) li.append(el('small', 'rv-g', g));
+          if (to && to !== '—') li.append(el('span', 'rv-n', to));
+          ol.append(li);
+        }
+        d.append(ol);
+      }
+      if (info.n && info.n.length) {
+        d.append(el('p', 'rv-h', 'Müsned metnindeki kayıtlar:'));
+        const ul = el('ul', 'rv-list');
+        for (const x of info.n) ul.append(el('li', null, x));
+        d.append(ul);
+      }
+      d.append(el('p', 'rv-by', 'Yalnızca eserin kendi metninden; râviler hakkında dışarıdan hüküm eklenmemiştir.'));
+    };
+    d.addEventListener('toggle', () => { if (d.open) d.fill(); });
     a.append(d);
   }
   a.append(el('p', 'q-src', L.src(n)));
