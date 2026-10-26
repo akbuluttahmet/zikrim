@@ -700,16 +700,16 @@ function renderUsul() {
   if (USUL_TARGET != null) { const n = USUL_TARGET; USUL_TARGET = null; flashTo('u' + n); }
 }
 
-/* ---------- Hadis kitaplığı (Musannef, Müsned) — yalnızca Türkçe çeviri; kitaplar açılınca yüklenir ---------- */
+/* ---------- Hadis kitaplığı (Musannef, Müsned) — Türkçe çeviri ve Arapça metin; kitaplar açılınca yüklenir ---------- */
 const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
 const musQ = t => norm(t);
 const LIBS = {
   musannef: {base: 'musannef/', key: 'zikrim-mus', unit: 'kitap', item: 'rivayet', ex: 29121, err: 'Musannef',
     src: n => `İbn Ebî Şeybe, el-Musannef, no. ${n}`,
-    note: 'Ebû Bekir İbn Ebî Şeybe (ö. 235), el-Musannef — Türkçe çeviri. Çeviri, Kemâl Yûsuf el-Hût neşrindeki (Riyad: Mektebetü’r-Rüşd, 1409) metinden yapılmıştır; rivayet numaraları bu neşre göredir. Çevirisi tamamlanan kitaplar açılabilir, diğerleri sırayla eklenecek.'},
+    note: 'Ebû Bekir İbn Ebî Şeybe (ö. 235), el-Musannef — Türkçe çeviri. Çeviri, Kemâl Yûsuf el-Hût neşrindeki (Riyad: Mektebetü’r-Rüşd, 1409) metinden yapılmıştır; rivayet numaraları bu neşre göredir. Arapça metin, el-Mektebetü’ş-Şâmile’deki aynı neşirden (no. 9944) aynen alınmıştır. Çevirisi tamamlanan kitaplar açılabilir, diğerleri sırayla eklenecek.'},
   musned: {base: 'musned/', key: 'zikrim-musned', unit: 'bölüm', item: 'hadis', ex: 45, err: 'Müsned',
     src: n => `İmam Ahmed (\u2068رحمه الله\u2069), el-Müsned, no. ${n}`,
-    note: 'İmam Ahmed b. Hanbel (ö. 241), el-Müsned — Türkçe çeviri. Çeviri, Şuayb el-Arnaût ve arkadaşlarının tahkikiyle yayımlanan Müessesetü’r-Risâle neşrindeki (Beyrut, 1421/2001) metinden yapılmıştır; hadis numaraları bu neşre göredir. Numaranın önündeki * işareti, neşirde Abdullah b. Ahmed’in ziyâdelerini gösterir. Müsned, sahâbîlere göre bölümlenmiştir; çevrilen bölümler sırayla eklenecek.'}
+    note: 'İmam Ahmed b. Hanbel (ö. 241), el-Müsned — Türkçe çeviri. Çeviri, Şuayb el-Arnaût ve arkadaşlarının tahkikiyle yayımlanan Müessesetü’r-Risâle neşrindeki (Beyrut, 1421/2001) metinden yapılmıştır; hadis numaraları bu neşre göredir. Numaranın önündeki * işareti, neşirde Abdullah b. Ahmed’in ziyâdelerini gösterir. Arapça metin, el-Mektebetü’ş-Şâmile’deki aynı neşirden (no. 25794) aynen alınmıştır; tahkik dipnotları alınmamıştır. Müsned, sahâbîlere göre bölümlenmiştir; çevrilen bölümler sırayla eklenecek.'}
 };
 for (const [k, L] of Object.entries(LIBS)) {
   Object.assign(L, {view: k, idx: null, book: null, data: null, token: 0, target: null, cache: {}});
@@ -781,13 +781,21 @@ function libOpen(L, i, target = null) {
 /* Râvi paneli: yalnızca eserin kendi metnindeki bilgiler. h[4] = {c: [isim, sîga, isim, ...], n: [metindeki notlar]} */
 const SIGA = {'haddesenâ': 'bize anlattı', 'haddesenî': 'bana anlattı', 'ahberanâ': 'bize haber verdi', 'ahberanî': 'bana haber verdi', 'semi‘tü': 'işittim', 'semi‘a': 'işitti', 'an': '“-den” (an‘ane)', 'enne': '“ki…” diye', 'kâle': 'dedi'};
 function libItem(L, h) {
-  const [n, sened, metin, ziyade, info] = h;
+  const [n, sened, metin, ziyade, info, ar] = h;
   const a = el('article', 'mus-h');
   a.id = 'h' + n;
   a.dataset.n = n;
   a.append(el('p', 'mus-no', (ziyade === 2 ? '•' : ziyade ? '*' : '#') + n));
   if (sened) a.append(el('p', 'mus-sened', sened));
   a.append(el('p', 'mus-tr', metin));
+  if (ar) {
+    const d = el('details', 'rv mus-ar');
+    d.append(el('summary', null, 'Arapça metin'));
+    const p = el('p', 'mus-ar-t', ar);
+    p.lang = 'ar'; p.dir = 'rtl';
+    d.append(p);
+    a.append(d);
+  }
   if (info && ((info.c && info.c.length > 1) || (info.n && info.n.length))) {
     const d = el('details', 'rv');
     d.append(el('summary', null, 'Râviler ve isnad'));
