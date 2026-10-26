@@ -11,7 +11,9 @@ body[data-theme=classic]{color-scheme:light;--bg:#faf4ea;--card:#fffdf8;--border
 .eyebrow,.hero-subtitle{font-size:11px;letter-spacing:2.2px;font-weight:700;color:var(--muted)}
 header{display:flex;justify-content:space-between;align-items:start}
 h1{font-size:38px;letter-spacing:-1.7px;margin:8px 0 1px}
-header p{color:var(--muted);font-size:14px;margin:0 0 24px}
+header{margin-bottom:22px}
+#today,.hijri{display:block}
+.hijri{margin-top:4px;letter-spacing:1.6px;opacity:.85}
 .sparkle{font-size:24px;color:var(--accent)}
 button{font:inherit;cursor:pointer;touch-action:manipulation;-webkit-user-select:none;user-select:none;color:inherit}
 button:disabled{opacity:.35;cursor:default}
@@ -31,9 +33,11 @@ button:disabled{opacity:.35;cursor:default}
 .day.is-today .lbl{color:var(--text)}
 .hero-foot{color:var(--muted);font:22px/1.6 var(--arabic)}
 
-.themes{margin:24px 0}
+.home-nav{margin:24px 0}
+.home-nav .section-title{display:block;margin-top:18px}
+.home-nav .section-title:first-child{margin-top:0}
 .section-title{font-size:14px;font-weight:700}
-.theme-controls{display:flex;gap:9px;margin-top:12px}
+.theme-controls{display:flex;gap:9px;margin:0 0 14px}
 .theme-controls button{flex:1;background:var(--card);color:var(--muted);border:1px solid var(--border);border-radius:13px;padding:13px 5px;font-size:13px}
 .theme-controls button.active{background:var(--accent);color:var(--accentText);border-color:var(--accent);font-weight:700}
 

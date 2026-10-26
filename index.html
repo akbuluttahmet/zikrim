@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#0d1526">
+<meta name="theme-color" content="#faf4ea">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Zikrim">
@@ -15,13 +15,13 @@
 <link rel="stylesheet" href="style.css">
 <title>Zikrim — Günlük Zikir</title>
 </head>
-<body data-theme="night">
+<body data-theme="classic">
 <div class="app">
   <header>
     <div>
       <span class="eyebrow" id="today">GÜNLÜK HUZUR</span>
+      <span class="eyebrow hijri" id="hijri"></span>
       <h1>Zikrim <span class="sparkle">✦</span></h1>
-      <p>Her an, gönülden bir hatırlayış.</p>
     </div>
     <button id="openSettings" class="icon-button" aria-label="Ayarlar" title="Ayarlar">⚙︎</button>
   </header>
@@ -37,23 +37,22 @@
     <div class="hero-foot" lang="ar" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
   </section>
 
-  <section class="themes">
-    <span class="section-title">Görünüm</span>
-    <div class="theme-controls" role="group" aria-label="Tema seçimi">
-      <button data-set-theme="night">☾ Gece</button>
-      <button data-set-theme="nature">❀ Doğa</button>
-      <button data-set-theme="classic">✧ Klasik</button>
-    </div>
+  <nav class="home-nav" aria-label="Bölümler">
+    <span class="section-title">Zikirler</span>
     <div class="evrad-controls">
-      <button data-view="sabah" aria-pressed="false"><span>☀︎ Sabah Zikirleri</span><small id="cntSabah">0 / 0</small></button>
-      <button data-view="aksam" aria-pressed="false"><span>☾ Akşam Zikirleri</span><small id="cntAksam">0 / 0</small></button>
-      <button data-view="selef" aria-pressed="false"><span>📜 Selef’ten Sözler</span><small id="cntSelef">Âlimlerin sözleri</small></button>
+      <button data-view="sabah" aria-pressed="false"><span>☀︎ Sabah</span><small id="cntSabah">0 / 0</small></button>
+      <button data-view="aksam" aria-pressed="false"><span>☾ Akşam</span><small id="cntAksam">0 / 0</small></button>
+      <button data-view="genel" aria-pressed="false"><span>📿 Genel</span><small id="cntGenel">0 / 0</small></button>
+    </div>
+    <span class="section-title">Okuma</span>
+    <div class="evrad-controls">
+      <button data-view="selef" aria-pressed="false"><span>📜 Sözler</span><small id="cntSelef">Âlimlerin sözleri</small></button>
       <button data-view="fikih" aria-pressed="false"><span>⚖️ Hanbelî Fıkhı</span><small>16 bölüm</small></button>
       <button data-view="kutuphane" class="wide" aria-pressed="false"><span>📚 Kütüphane</span><small>Musannef · Müsned · Usûlü’s-Sünne · Kaydettiklerim</small></button>
     </div>
-  </section>
+  </nav>
 
-  <section class="list">
+  <section class="list" hidden>
     <div class="list-head">
       <h2 id="listTitle">Zikirlerim</h2>
       <div class="list-tools">
@@ -63,7 +62,6 @@
       </div>
     </div>
     <input id="search" class="search" type="search" placeholder="Zikir ara (ad, anlam, okunuş)…" autocomplete="off" enterkeyhint="search">
-    <p class="sort-hint">Sırayı değiştirmek için kartın solundaki ⋮⋮ tutamacını basılı tutup sürükle.</p>
     <div id="cards"></div>
     <p class="empty" id="noResult" hidden>Aramana uyan zikir yok.</p>
     <p class="empty" id="empty" hidden>Henüz zikir yok. “Yeni zikir” ile ekleyebilir ya da ayarlardan varsayılanları geri yükleyebilirsin.</p>
@@ -114,10 +112,6 @@
     <div class="quick-targets"><button type="button" data-t="33">33</button><button type="button" data-t="99">99</button><button type="button" data-t="100">100</button><button type="button" data-t="1000">1000</button></div>
     <div class="edit-only">
       <div class="row">
-        <button type="button" id="moveUp" class="ghost">↑ Yukarı</button>
-        <button type="button" id="moveDown" class="ghost">↓ Aşağı</button>
-      </div>
-      <div class="row">
         <button type="button" id="resetOne" class="ghost">↻ Bugünü sıfırla</button>
         <button type="button" id="deleteOne" class="ghost danger">Sil</button>
       </div>
@@ -132,6 +126,12 @@
 <!-- Ayarlar -->
 <dialog id="settings" class="sheet">
   <h2 tabindex="-1" autofocus>Ayarlar</h2>
+  <h3>Görünüm</h3>
+  <div class="theme-controls" role="group" aria-label="Tema seçimi">
+    <button type="button" data-set-theme="classic">✧ Klasik</button>
+    <button type="button" data-set-theme="nature">❀ Doğa</button>
+    <button type="button" data-set-theme="night">☾ Gece</button>
+  </div>
   <label class="switch-row">Titreşim <input type="checkbox" id="hapticsToggle" switch></label>
   <h3>Son 30 gün</h3>
   <div id="history" class="history"></div>
@@ -146,7 +146,7 @@
     <button type="button" id="restoreDefaults" class="ghost">Varsayılan zikirler</button>
   </div>
   <div class="row"><button type="button" id="closeSettings" class="primary">Tamam</button></div>
-  <p class="note center">Zikrim · sürüm 3.7</p>
+  <p class="note center">Zikrim · sürüm 3.8</p>
 </dialog>
 
 <div id="toast" role="status" aria-live="polite"></div>

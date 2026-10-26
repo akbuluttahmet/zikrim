@@ -268,6 +268,16 @@ const CATALOG = 9;
 const KEY = 'zikrim-v2';
 const OLD_KEY = 'zikrim-v1';
 const THEMES = {night:'#0d1526', nature:'#f3f6ef', classic:'#faf4ea'};
+const UI_V = 2; // v2: klasik tema varsayılan, sabit sıralama
+const HIJRI_MONTHS = ['Muharrem', 'Safer', 'Rebîülevvel', 'Rebîülâhir', 'Cemâziyelevvel', 'Cemâziyelâhir', 'Receb', 'Şâban', 'Ramazan', 'Şevvâl', 'Zilkade', 'Zilhicce'];
+function hijriText(d = new Date()) {
+  try {
+    const p = Object.fromEntries(new Intl.DateTimeFormat('en-u-ca-islamic-umalqura-nu-latn', {day: 'numeric', month: 'numeric', year: 'numeric'}).formatToParts(d).map(x => [x.type, x.value]));
+    const m = HIJRI_MONTHS[Number(p.month) - 1];
+    if (!m || !p.day || !p.year) return '';
+    return `${Number(p.day)} ${m} ${parseInt(p.year, 10)}`.toLocaleUpperCase('tr-TR');
+  } catch { return ''; }
+}
 const KEEP_DAYS = 400;
 
 const $ = s => document.querySelector(s);
@@ -280,7 +290,7 @@ const clampTarget = v => Math.min(100000, Math.max(1, Math.floor(Number(v)) || 3
 
 /* ---------- Durum ve kayıt ---------- */
 function sanitize(s) {
-  const out = {v: 2, theme: THEMES[s && s.theme] ? s.theme : 'night', haptics: !s || s.haptics !== false, compact: !!(s && s.compact), catalog: Number(s && s.catalog) || 1, zikirs: [], days: {}};
+  const out = {v: 2, ui: Number(s && s.ui) || 0, theme: THEMES[s && s.theme] ? s.theme : 'classic', haptics: !s || s.haptics !== false, compact: !!(s && s.compact), catalog: Number(s && s.catalog) || 1, zikirs: [], days: {}};
   const seen = new Set();
   for (const z of (s && Array.isArray(s.zikirs) ? s.zikirs : [])) {
     if (!z || typeof z.id !== 'string' || !z.id || seen.has(z.id)) continue;
@@ -367,10 +377,17 @@ function load() {
       persistState(out);
       if (added) setTimeout(() => toast(`${added} yeni zikir eklendi ✨`), 600);
     }
+    if (out.ui < UI_V) {
+      // Bir kereye mahsus: klasik temaya geç ve zikirleri sabit (dua) sırasına diz
+      out.theme = 'classic';
+      out.zikirs = sortByDuaOrder(out.zikirs);
+      out.ui = UI_V;
+      persistState(out);
+    }
     return out;
   }
   // İlk açılış: eski sürümün (v1) verisini taşı
-  s = {theme: 'night', catalog: CATALOG, zikirs: DEFAULTS, days: {}};
+  s = {theme: 'classic', ui: UI_V, catalog: CATALOG, zikirs: DEFAULTS, days: {}};
   try {
     const old = JSON.parse(localStorage.getItem(OLD_KEY));
     if (old && typeof old === 'object') {
@@ -491,18 +508,20 @@ const QUOTES = [
 /* ---------- Kartlar ---------- */
 const cardsEl = $('#cards');
 const MSET = new Set(MORNING), ESET = new Set(EVENING);
-const VIEWS = {main: 'Zikirlerim', sabah: '☀︎ Sabah Zikirleri', aksam: '☾ Akşam Zikirleri', selef: '📜 Selef’ten Sözler', fikih: '⚖️ Hanbelî Fıkhı', musannef: '📚 Musannef', musned: '📗 Müsned', usul: '📘 Usûlü’s-Sünne', kutuphane: '📚 Kütüphane', kaydedilen: '☆ Kaydettiklerim'};
+const VIEWS = {main: 'Zikrim', sabah: '☀︎ Sabah Zikirleri', aksam: '☾ Akşam Zikirleri', genel: '📿 Genel Zikirler', selef: '📜 Sözler', fikih: '⚖️ Hanbelî Fıkhı', musannef: '📚 Musannef', musned: '📗 Müsned', usul: '📘 Usûlü’s-Sünne', kutuphane: '📚 Kütüphane', kaydedilen: '☆ Kaydettiklerim'};
 const LIB_CHILD = new Set(['musannef', 'musned', 'usul', 'kaydedilen']);
 const READ_VIEWS = new Set(['selef', 'fikih', 'musannef', 'musned', 'usul', 'kutuphane', 'kaydedilen']);
 let view = 'main';
-const inView = z => READ_VIEWS.has(view) ? false : view === 'sabah' ? MSET.has(z.id) : view === 'aksam' ? ESET.has(z.id) : !MSET.has(z.id) && !ESET.has(z.id);
+const isGenel = z => !MSET.has(z.id) && !ESET.has(z.id);
+const inView = z => view === 'sabah' ? MSET.has(z.id) : view === 'aksam' ? ESET.has(z.id) : view === 'genel' ? isGenel(z) : false;
 const visible = () => S.zikirs.filter(inView);
 
 function setView(v) {
   view = VIEWS[v] ? v : 'main';
   searchEl.value = '';
   renderCards();
-  $('.list').scrollIntoView({block: 'start', behavior: 'smooth'});
+  if (view === 'main') window.scrollTo({top: 0, behavior: 'smooth'});
+  else $('.list').scrollIntoView({block: 'start', behavior: 'smooth'});
 }
 document.querySelectorAll('[data-view]').forEach(b => b.addEventListener('click', () => setView(view === b.dataset.view ? 'main' : b.dataset.view)));
 $('#backAll').addEventListener('click', () => setView(LIB_CHILD.has(view) ? 'kutuphane' : 'main'));
@@ -514,9 +533,10 @@ function renderCards() {
   $('#toggleCompact').setAttribute('aria-pressed', String(S.compact));
   const list = visible();
   $('#listTitle').textContent = VIEWS[view];
+  $('.list').hidden = view === 'main';
   $('#backAll').hidden = view === 'main';
-  $('#backAll').textContent = LIB_CHILD.has(view) ? '← Kütüphane' : '← Tümü';
-  $('#addZikir').hidden = view !== 'main';
+  $('#backAll').textContent = LIB_CHILD.has(view) ? '← Kütüphane' : '← Geri';
+  $('#addZikir').hidden = view !== 'genel';
   document.querySelectorAll('[data-view]').forEach(b => { const on = b.dataset.view === view || (b.dataset.view === 'kutuphane' && LIB_CHILD.has(view)); b.classList.toggle('active', on); b.setAttribute('aria-pressed', String(on)); });
   $('#empty').hidden = list.length > 0 || READ_VIEWS.has(view);
   document.body.classList.toggle('view-selef', READ_VIEWS.has(view));
@@ -532,12 +552,11 @@ function renderCards() {
     const box = document.createElement('article');
     box.className = 'zikir';
     box.dataset.id = z.id;
-    const g = view === 'main' ? groupOf(z) : null;
+    const g = view === 'genel' ? groupOf(z) : null;
     if (g && g !== lastGroup) box.dataset.group = g;
     lastGroup = g;
     box.innerHTML = `
       <div class="zikir-top">
-        <span class="handle" role="button" aria-label="Sırayı değiştirmek için basılı tutup sürükle" title="Sürükleyerek sırala">⋮⋮</span>
         <div class="zikir-title"><h3></h3><p class="category"></p></div>
         <span class="count-pill"></span>
         <button class="more" type="button" data-act="edit" aria-label="Düzenle">⋯</button>
@@ -1086,6 +1105,13 @@ function update() {
   const st = streak();
   $('#streak').textContent = st ? `🔥 ${st} günlük seri` : '🌱 Seri yok';
   $('#today').textContent = new Date().toLocaleDateString('tr-TR', {day: 'numeric', month: 'long', weekday: 'long'}).toLocaleUpperCase('tr-TR');
+  $('#hijri').textContent = hijriText();
+  {
+    const zs = S.zikirs.filter(isGenel);
+    const d = zs.filter(z => getCount(z.id) >= z.target).length;
+    $('#cntGenel').textContent = `${d} / ${zs.length}`;
+    $('#cntGenel').parentElement.classList.toggle('complete', zs.length > 0 && d === zs.length);
+  }
   renderWeek();
   if (!focusEl.hidden) renderFocus();
 }
@@ -1143,78 +1169,12 @@ cardsEl.addEventListener('click', e => {
   else if (act === 'edit') openEditor(id);
 });
 
-/* ---------- Sıralama: ana ekranda tutamaçtan sürükle-bırak ---------- */
+/* ---------- Sade görünüm ---------- */
 $('#toggleCompact').addEventListener('click', () => { S.compact = !S.compact; save(); renderCards(); });
-
-let drag = null;
-cardsEl.addEventListener('pointerdown', e => {
-  const handle = e.target.closest('.handle');
-  if (!handle) return;
-  const row = handle.closest('.zikir');
-  e.preventDefault();
-  try { handle.setPointerCapture(e.pointerId); } catch {}
-  drag = {row, id: row.dataset.id, pointerId: e.pointerId, order: visible().map(z => z.id).join(), y: e.clientY, startScroll: window.scrollY, moved: false};
-  // Sürüklerken tüm kartları kısalt; tutulan kart parmağın altında kalsın
-  drag.y0 = e.clientY;
-  document.body.classList.add('reordering');
-  const r = row.getBoundingClientRect();
-  window.scrollBy(0, r.top + r.height / 2 - e.clientY);
-  row.classList.add('dragging');
-  haptic(false);
-});
-window.addEventListener('pointermove', e => {
-  if (!drag || e.pointerId !== drag.pointerId) return;
-  e.preventDefault();
-  const {row} = drag;
-  drag.y = e.clientY;
-  if (Math.abs(e.clientY - drag.y0) > 4) drag.moved = true;
-  if (e.clientY < 90) window.scrollBy(0, -14);
-  else if (e.clientY > window.innerHeight - 90) window.scrollBy(0, 14);
-  const prev = row.previousElementSibling, next = row.nextElementSibling;
-  if (prev && e.clientY < prev.getBoundingClientRect().top + prev.offsetHeight / 2) {
-    cardsEl.insertBefore(prev, row.nextSibling); // satırı değil komşuyu taşı (dokunma takibi kopmasın)
-    haptic(false);
-  } else if (next && e.clientY > next.getBoundingClientRect().top + next.offsetHeight / 2) {
-    cardsEl.insertBefore(next, row);
-    haptic(false);
-  }
-  const r = row.getBoundingClientRect();
-  const natural = r.top - (parseFloat(row.style.getPropertyValue('--dy')) || 0) + r.height / 2;
-  row.style.setProperty('--dy', (e.clientY - natural) + 'px');
-});
-function endDrag() {
-  if (!drag) return;
-  const ids = [...cardsEl.querySelectorAll('.zikir')].map(r => r.dataset.id);
-  const byId = new Map(S.zikirs.map(z => [z.id, z]));
-  const changed = ids.join() !== drag.order;
-  if (changed) {
-    const vis = new Set(ids);
-    const slots = [];
-    S.zikirs.forEach((z, i) => { if (vis.has(z.id)) slots.push(i); });
-    const next = S.zikirs.slice();
-    slots.forEach((slot, k) => { next[slot] = byId.get(ids[k]); });
-    S.zikirs = next.filter(Boolean);
-  }
-  const {id, y, moved, startScroll} = drag;
-  drag = null;
-  document.body.classList.remove('reordering');
-  if (changed) save();
-  renderCards();
-  if (!moved && !changed) { window.scrollTo(0, startScroll); return; } // sadece dokunuldu: yerinde kal
-  const row = cardsEl.querySelector(`[data-id="${CSS.escape(id)}"]`);
-  if (row) {
-    // bırakılan kartı parmağın olduğu yerde göster
-    window.scrollBy(0, row.getBoundingClientRect().top - Math.max(80, y - 40));
-    if (changed) row.classList.add('moved');
-  }
-}
-window.addEventListener('pointerup', endDrag);
-window.addEventListener('pointercancel', endDrag);
-document.addEventListener('touchmove', e => { if (drag) e.preventDefault(); }, {passive: false});
 
 /* ---------- Tema ---------- */
 function setTheme(t) {
-  S.theme = THEMES[t] ? t : 'night';
+  S.theme = THEMES[t] ? t : 'classic';
   document.body.dataset.theme = S.theme;
   document.querySelectorAll('[data-set-theme]').forEach(b => {
     const on = b.dataset.setTheme === S.theme;
@@ -1312,17 +1272,6 @@ form.addEventListener('submit', () => {
   renderCards();
   toast(editingId ? 'Kaydedildi' : 'Zikir eklendi');
 });
-function move(dir) {
-  const vis = visible();
-  const a = vis.findIndex(z => z.id === editingId), b = a + dir;
-  if (a < 0 || b < 0 || b >= vis.length) return;
-  const i = S.zikirs.indexOf(vis[a]), j = S.zikirs.indexOf(vis[b]);
-  [S.zikirs[i], S.zikirs[j]] = [S.zikirs[j], S.zikirs[i]];
-  save();
-  renderCards();
-}
-$('#moveUp').addEventListener('click', () => move(-1));
-$('#moveDown').addEventListener('click', () => move(1));
 $('#resetOne').addEventListener('click', () => {
   const id = editingId, prev = getCount(id);
   editor.close();
@@ -1448,7 +1397,7 @@ if ('serviceWorker' in navigator) {
   let reloaded = false;
   // Yeni sürüm etkinleşince sayfayı bir kez yenile (iki kez kapatıp açmaya gerek kalmasın)
   navigator.serviceWorker.addEventListener('controllerchange', () => {
-    if (!hadController || reloaded || drag || !focusEl.hidden || editor.open) return;
+    if (!hadController || reloaded || !focusEl.hidden || editor.open) return;
     reloaded = true;
     location.reload();
   });
