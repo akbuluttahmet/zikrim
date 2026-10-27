@@ -1711,7 +1711,13 @@ function homePost(p) {
   const src = feedSrc(p);
   head.append(el('b', null, name), el('span', 'hm-src', L && L.bookKey ? src.replace(name + ', ', '') : src));
   body.append(head, el('p', 'hm-t', p.t));
-  if (p.bab && !src.includes(p.bab)) body.append(el('p', 'hm-bab', 'Bab: ' + p.bab));
+  if (p.bab && !src.includes(p.bab)) {
+    const bab = el('button', 'hm-bab', 'Bab: ' + p.bab + ' ›');
+    bab.type = 'button';
+    bab.setAttribute('aria-label', 'Babı kitapta aç: ' + p.bab);
+    bab.addEventListener('click', () => { ttsStop(); goToBab(p); });
+    body.append(bab);
+  }
   const act = el('div', 'hm-act');
   const star = el('button');
   star.type = 'button';
@@ -1737,6 +1743,17 @@ function homePost(p) {
   body.append(act);
   a.append(av, body);
   return a;
+}
+// Bab başlığına dokununca kitap o babın ilk rivayetinden açılır
+async function goToBab(p) {
+  if (p.v === 'usul') { goTo('usul', p.b, p.n); return; }
+  const L = LIBS[p.v];
+  try {
+    L.idx = L.idx || await libFetch(L, 'index.json');
+    const data = await libFetch(L, 'tr/' + L.idx[p.b].f);
+    const bab = data.babs.find(bb => bb.h.some(x => x[0] === p.n));
+    goTo(p.v, p.b, bab && bab.h.length ? bab.h[0][0] : p.n);
+  } catch (e) { goTo(p.v, p.b, p.n); }
 }
 function homeMore() {
   if (!HOME.pool || HOME.i >= HOME.pool.length) return;
@@ -1939,7 +1956,7 @@ function renderLibrary() {
   sv.addEventListener('click', () => setView('kaydedilen'));
   sv.dataset.search = 'kaydettiklerim kaydedilen yer imi';
   cardsEl.append(sv);
-  const h = el('p', 'lib-h', 'ÂLİMLER · VEFAT SIRASIYLA');
+  const h = el('p', 'lib-h', 'ÂLİMLER');
   h.dataset.search = '';
   cardsEl.append(h);
   for (const al of alimList()) cardsEl.append(alimRow(al));
