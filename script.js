@@ -944,6 +944,12 @@ const IS_ANDROID = /android/i.test(navigator.userAgent);
 function ttsInfo(l) {
   const best = ttsVoices(l)[0], lang = l === 'ar' ? 'Arapça' : 'Türkçe', want = TTS_WANT[l];
   if (!SYN) return 'Bu cihaz sesli okumayı desteklemiyor.';
+  const seen = VOICES.filter(v => vLang(v, l)).map(v => v.name);
+  const seenTxt = ` (Uygulamanın gördüğü ${lang} sesler: ${seen.length ? seen.join(', ') : 'yok'})`;
+  if (ttsVoice(l) === 'system') {
+    return IS_ANDROID ? `Telefonun varsayılan ${lang} sesi kullanılıyor.${seenTxt}`
+      : `Telefonun varsayılan ${lang} sesi kullanılıyor. ${want} sesinin çalması için iPhone Ayarlar → Erişilebilirlik → Seslendirilen İçerik → Sesler → ${lang} bölümünde ${want}’i seç (yanında ✓ olsun).${seenTxt}`;
+  }
   if (IS_ANDROID) {
     const how = `Android’de: Ayarlar → Erişilebilirlik → Metin okuma (yazıdan konuşmaya) çıkışı → Tercih edilen motor: Google → ⚙ → Ses verilerini yükle → ${lang} → bir erkek ses seç ve indir. (Samsung’da: Ayarlar → Genel yönetim → Metin okuma.) Seçtiğin ses burada otomatik kullanılır.`;
     return best ? `Kullanılan: ${vLabel(best).split(' · ')[0]}. ${how}` : `Yüklü ${lang} ses yok. ${how}`;
@@ -953,7 +959,16 @@ function ttsInfo(l) {
   if (vRank(best) < 2 && vMale(best, l) === 0) return `✓ Yüksek kaliteli ses hazır: ${vLabel(best).split(' · ')[0]}`;
   return `Daha doğal ses için: ${how}`;
 }
-function ttsVoice(l) { const list = ttsVoices(l); return list.find(v => v.voiceURI === TTS[l]) || list[0] || null; }
+// 'system': ses adı verilmeden yalnızca dil ile okunur; telefon ayarlarında o dil için seçili ses (ör. Cem) kullanılır
+function ttsVoice(l) {
+  if (SYN) { const v = SYN.getVoices(); if (v.length) VOICES = v; }
+  if (TTS[l] === 'system') return 'system';
+  const list = ttsVoices(l);
+  const chosen = TTS[l] && list.find(v => v.voiceURI === TTS[l]);
+  if (chosen) return chosen;
+  return list.find(v => vMale(v, l) === 0) || (l === 'ar' && list[0]) || 'system';
+}
+const ttsLangCode = l => { const v = VOICES.find(x => vLang(x, l)); return v ? v.lang : (l === 'ar' ? 'ar-SA' : 'tr-TR'); };
 function ttsLoadVoices() { VOICES = SYN ? SYN.getVoices() : []; ttsFillSettings(); }
 if (SYN) { ttsLoadVoices(); SYN.addEventListener ? SYN.addEventListener('voiceschanged', ttsLoadVoices) : (SYN.onvoiceschanged = ttsLoadVoices); }
 
@@ -1020,7 +1035,6 @@ function ttsPlay(btn, lang, parts) {
   if (again) return;
   if (!SYN) { toast('Bu cihaz sesli okumayı desteklemiyor'); return; }
   const voice = ttsVoice(lang);
-  if (!voice) { toast(lang === 'ar' ? 'Arapça ses yüklü değil — Ayarlar → Sesli okuma' : 'Türkçe erkek ses (Cem) yüklü değil — Ayarlar → Sesli okuma'); return; }
   const queue = [];
   for (const p of parts) if (p && p.text && p.text.trim()) for (const c of chunks(p.text)) queue.push({el: p.el, c});
   if (!queue.length) return;
@@ -1051,7 +1065,8 @@ function ttsPlay(btn, lang, parts) {
     const q = queue[i++];
     if (q.el) { q.el.classList.add('tts-on'); const d = q.el.closest('details'); if (d && !d.open) d.open = true; }
     const u = new SpeechSynthesisUtterance(q.c);
-    u.voice = voice; u.lang = voice.lang; u.rate = TTS.rate;
+    if (voice === 'system') u.lang = ttsLangCode(lang); else { u.voice = voice; u.lang = voice.lang; }
+    u.rate = TTS.rate;
     u.onend = next;
     u.onerror = e => { if (!run.cancelled && e.error !== 'interrupted' && e.error !== 'canceled') { ttsStop(); toast('Sesli okuma durdu'); } };
     SYN.speak(u);
@@ -1074,10 +1089,11 @@ function ttsFillSettings() {
     const s = $(id);
     if (!s) continue;
     const list = ttsVoices(l);
-    s.replaceChildren(...list.map(v => { const o = el('option', null, vLabel(v)); o.value = v.voiceURI; return o; }));
-    if (!list.length) s.append(el('option', null, l === 'tr' ? 'Cem yüklü değil' : 'Arapça ses yüklü değil'));
+    const sys = el('option', null, IS_ANDROID ? 'Telefonun varsayılan sesi' : 'iPhone ayarlarında seçili ses');
+    sys.value = 'system';
+    s.replaceChildren(sys, ...list.map(v => { const o = el('option', null, vLabel(v)); o.value = v.voiceURI; return o; }));
     const cur = ttsVoice(l);
-    if (cur) s.value = cur.voiceURI;
+    s.value = cur === 'system' ? 'system' : cur.voiceURI;
   }
   const r = $('#ttsRate');
   if (r) { r.value = TTS.rate; $('#ttsRateOut').textContent = Number(TTS.rate).toFixed(2).replace('.', ',') + '×'; }
