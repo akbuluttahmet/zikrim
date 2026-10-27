@@ -790,6 +790,10 @@ LIBS.ibnebiseybe = {base: 'ibnebiseybe/', key: 'zikrim-ibnebiseybe', unit: 'kita
   label: (n, h) => (h && h[4] && h[4].l) || (n === 0 ? 'Mukaddime' : Number.isInteger(n) ? `No. ${n}` : 'Ara metin'),
   src: (n, m) => `İbn Ebî Şeybe, ${m ? m.tr : ''}${n === 0 ? ', mukaddime' : Number.isInteger(n) ? ', no. ' + n : ''}`,
   note: 'Ebû Bekir İbn Ebî Şeybe (ö. 235) — el-Musannef dışındaki küçük kitapları, Türkçe çeviri ve Arapça metniyle. Çeviri ve Arapça metin el-Mektebetü’ş-Şâmile’deki nüshalardan alınmıştır; numaralar bu nüshalara göredir. Kitâbü’l-Îmân ve Kitâbü’l-Edeb’in içeriği büyük ölçüde Musannef’teki aynı adlı kitaplarla örtüşür. Halku Âdem’in dijital nüshası yer yer bozuktur; bozuk yerler çeviride belirtilmiştir.'};
+LIBS.ibnebiseybe = {base: 'ibnebiseybe/', key: 'zikrim-ibnebiseybe', unit: 'kitap', item: 'rivayet', ex: 5, err: 'İbn Ebî Şeybe', nogo: true, bookKey: true,
+  label: (n, h) => (h && h[4] && h[4].l) || (n === 0 ? 'Mukaddime' : Number.isInteger(n) ? `No. ${n}` : 'Ara metin'),
+  src: (n, m) => `İbn Ebî Şeybe, ${m ? m.tr : ''}${n === 0 ? ', mukaddime' : Number.isInteger(n) ? ', no. ' + n : ''}`,
+  note: 'Ebû Bekir İbn Ebî Şeybe (ö. 235) — el-Musannef dışındaki küçük kitapları, Türkçe çeviri ve Arapça metniyle. Çeviri ve Arapça metin el-Mektebetü’ş-Şâmile’deki nüshalardan alınmıştır; numaralar bu nüshalara göredir. Kitâbü’l-Îmân ve Kitâbü’l-Edeb’in içeriği büyük ölçüde Musannef’teki aynı adlı kitaplarla örtüşür. Halku Âdem’in dijital nüshası yer yer bozuktur; bozuk yerler çeviride belirtilmiştir.'};
 LIBS.berbehari = {base: 'berbehari/', key: 'zikrim-berb', unit: 'kitap', item: 'madde', ex: 25, err: 'Şerhu’s-Sünne', single: true,
   label: n => n ? `Madde ${n}` : 'Mukaddime',
   src: n => `el-Berbehârî, Şerhu’s-Sünne, ${n ? 'madde ' + n : 'mukaddime'}`,
@@ -1348,7 +1352,10 @@ const SHELVES = [
     {v: 'ahmed', b: 2, ar: 'أحكام النساء', t: 'Ahkâmü’n-nisâ', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#7a4f5e', done: true},
     {v: 'ahmed', b: 3, ar: 'الأسامي والكنى', t: 'el-Esâmî ve’l-künâ', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#6a5a3a', done: true},
     {v: 'ahmed', b: 4, ar: 'الرد على الجهمية والزنادقة', t: 'er-Red ale’l-Cehmiyye', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#4f4a6e', done: true},
-    {v: 'ahmed', b: 5, ar: 'الأشربة', t: 'el-Eşribe', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#6e3f4a', done: true}]},
+    {v: 'ahmed', b: 5, ar: 'الأشربة', t: 'el-Eşribe', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#6e3f4a', done: true},
+    {v: 'ahmed', b: 6, ar: 'من كلامه في العلل والرجال — رواية المروذي', t: 'İlel ve ricâl (el-Merrûzî)', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#5a6e3f', done: true},
+    {v: 'ahmed', b: 7, ar: 'من كلامه في العلل والرجال — رواية صالح', t: 'İlel ve ricâl (Sâlih)', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#6e573f', done: true},
+    {v: 'ahmed', b: 8, ar: 'من كلامه في العلل والرجال — رواية الميموني', t: 'İlel ve ricâl (el-Meymûnî)', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#3f5a6e', done: true}]},
   {c: 'III. ASIR', books: [
     {v: 'berbehari', ar: 'شرح السنة', t: 'Şerhu’s-Sünne', who: 'el-Berbehârî', bo: '233?', d: 329, col: '#6b4f7a', done: true},
     {v: 'hallal', b: 0, ar: 'القراءة عند القبور', t: 'el-Kırâe inde’l-kubûr', who: 'el-Hallâl', bo: '234', d: 311, col: '#3d6f6a', done: true},
@@ -1364,7 +1371,8 @@ const SHELVES = [
     {v: 'acurri', b: 6, ar: 'ذم اللواط', t: 'Zemmü’l-livât', who: 'el-Âcurrî', bo: '~280', d: 360, col: '#5a4a6e', done: true},
     {v: 'acurri', b: 7, ar: 'أخبار عمر بن عبد العزيز', t: 'Ahbâru Ömer b. Abdilazîz', who: 'el-Âcurrî', bo: '~280', d: 360, col: '#476b4a', done: true},
     {v: 'acurri', b: 8, ar: 'الغرباء', t: 'el-Gurabâ', who: 'el-Âcurrî', bo: '~280', d: 360, col: '#5e4b3c', done: true},
-    {v: 'acurri', b: 9, ar: 'الفوائد المنتخبة', t: 'el-Fevâidü’l-müntehabe', who: 'el-Âcurrî', bo: '~280', d: 360, col: '#3f5e6e', done: true}]}
+    {v: 'acurri', b: 9, ar: 'الفوائد المنتخبة', t: 'el-Fevâidü’l-müntehabe', who: 'el-Âcurrî', bo: '~280', d: 360, col: '#3f5e6e', done: true},
+    {v: 'acurri', b: 10, ar: 'فرض طلب العلم', t: 'Farzu talebi’l-ilm', who: 'el-Âcurrî', bo: '~280', d: 360, col: '#6e5d3f', done: true}]}
 ];
 function libSub(v, span) {
   const L = LIBS[v];
