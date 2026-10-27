@@ -947,7 +947,8 @@ function libFilter(L) {
 const store = {get(k, d) { try { const v = JSON.parse(localStorage.getItem(k)); return v == null ? d : v; } catch (e) { return d; } }, set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }};
 const RD = {last: store.get('zikrim-last', {}), saved: store.get('zikrim-saved', []), fs: store.get('zikrim-fs', 16)};
 /* ---------- Sesli okuma (telefonun kendi sesleri; Arapça ve Türkçe) ---------- */
-const TTS = Object.assign({ar: '', tr: '', rate: 0.9, arSened: true, trSened: false}, store.get('sekine-tts', {}));
+const TTS = Object.assign({ar: '', tr: '', rate: 0.9, arSened: true, trSened: false, show: true}, store.get('sekine-tts', {}));
+document.body.classList.toggle('no-tts', !TTS.show);
 const ttsSave = () => store.set('sekine-tts', TTS);
 const SYN = window.speechSynthesis || null;
 let VOICES = [];
@@ -1143,6 +1144,7 @@ function ttsFillSettings() {
   }
   const r = $('#ttsRate');
   if (r) { r.value = TTS.rate; $('#ttsRateOut').textContent = Number(TTS.rate).toFixed(2).replace('.', ',') + '×'; }
+  if ($('#ttsShow')) $('#ttsShow').checked = TTS.show;
   if ($('#ttsArSened')) { $('#ttsArSened').checked = TTS.arSened; $('#ttsTrSened').checked = TTS.trSened; }
   if ($('#ttsArInfo')) { $('#ttsArInfo').textContent = ttsInfo('ar'); $('#ttsTrInfo').textContent = ttsInfo('tr'); }
 }
@@ -1229,7 +1231,7 @@ const AUTHORS = [
   {name: 'İbn Ebî Şeybe', meta: 'ö. 235 · Kûfe', books: [{v: 'musannef', t: 'el-Musannef'}]},
   {name: 'Ahmed b. Hanbel', meta: 'ö. 241 · Bağdat', books: [{v: 'musned', t: 'el-Müsned'}, {v: 'usul', t: 'Usûlü’s-Sünne', sub: '✓ 33 madde · akîde risalesi'}]},
   {name: 'el-Berbehârî', meta: 'ö. 329 · Bağdat', books: [{v: 'berbehari', t: 'Şerhu’s-Sünne', sub: '✓ 156 madde · akîde metni · Arapçasıyla'}]},
-  {name: 'el-Âcurrî', meta: 'ö. 360 · Bağdat, Mekke', books: [{v: 'seria', t: 'eş-Şerîa', sub: '1 / 17 bölüm Türkçe (no. 1–154) · akîde · Arapçasıyla'}, {v: 'acurri', b: 0, t: 'Ahlâku Ehli’l-Kur’ân', sub: '✓ 90 rivayet ve mülhak · Kur’ân ehlinin ahlâkı · Arapçasıyla'}, {v: 'acurri', b: 1, t: 'el-Erbaûn (Kırk Hadis)', sub: '✓ 45 hadis ve Âcurrî’nin şerhi · Arapçasıyla'}, {v: 'acurri', b: 1, t: 'el-Erbaûn (Kırk Hadis)', sub: '✓ 45 hadis ve Âcurrî’nin şerhi · Arapçasıyla'}]}
+  {name: 'el-Âcurrî', meta: 'ö. 360 · Bağdat, Mekke', books: [{v: 'seria', t: 'eş-Şerîa', sub: '1 / 17 bölüm Türkçe (no. 1–154) · akîde · Arapçasıyla'}, {v: 'acurri', b: 0, t: 'Ahlâku Ehli’l-Kur’ân', sub: '✓ 90 rivayet ve mülhak · Kur’ân ehlinin ahlâkı · Arapçasıyla'}, {v: 'acurri', b: 1, t: 'el-Erbaûn (Kırk Hadis)', sub: '✓ 45 hadis ve Âcurrî’nin şerhi · Arapçasıyla'}]}
 ];
 function libSub(v, span) {
   const L = LIBS[v];
@@ -1269,7 +1271,7 @@ function renderLibrary() {
     const nm = el('span', 'lib-a-name', a.name + ' (');
     const r = el('bdi', 'rah', RAH); r.lang = 'ar'; r.dir = 'rtl';
     nm.append(r, ')');
-    h.append(el('span', 'lib-a-ini', a.name.split(' ').filter(w => /^[A-ZÂÎÛİÇŞÖÜ]/.test(w)).map(w => w[0]).slice(0, 2).join('')), Object.assign(el('span', 'lib-a-txt'), {}));
+    h.append(el('span', 'lib-a-ini', a.name.replace(/\b(el|eş|es|en|er|et|ed|ez|ibn)-/gi, '').split(' ').filter(w => /^[A-ZÂÎÛİÇŞÖÜ]/.test(w)).map(w => w[0]).slice(0, 2).join('')), Object.assign(el('span', 'lib-a-txt'), {}));
     h.lastChild.append(nm, el('small', null, a.meta));
     sec.append(h);
     for (const bk of a.books) {
@@ -1633,6 +1635,7 @@ $('#hapticsToggle').addEventListener('change', e => { S.haptics = e.target.check
 $('#ttsAr').addEventListener('change', e => { TTS.ar = e.target.value; ttsSave(); });
 $('#ttsTr').addEventListener('change', e => { TTS.tr = e.target.value; ttsSave(); });
 $('#ttsRate').addEventListener('input', e => { TTS.rate = Number(e.target.value); $('#ttsRateOut').textContent = TTS.rate.toFixed(2).replace('.', ',') + '×'; ttsSave(); });
+$('#ttsShow').addEventListener('change', e => { TTS.show = e.target.checked; document.body.classList.toggle('no-tts', !TTS.show); if (!TTS.show) ttsStop(); ttsSave(); });
 $('#ttsArSened').addEventListener('change', e => { TTS.arSened = e.target.checked; ttsSave(); });
 $('#ttsTrSened').addEventListener('change', e => { TTS.trSened = e.target.checked; ttsSave(); });
 $('#ttsBarStop').addEventListener('click', ttsStop);

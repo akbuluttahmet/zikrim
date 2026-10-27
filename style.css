@@ -328,3 +328,5 @@ body.view-selef #toggleCompact,body.view-selef .sort-hint{display:none}
 .tts-bar button{flex:none;border:0;border-radius:10px;padding:8px 12px;font-weight:700;background:var(--accentText);color:var(--accent)}
 .tts-bar[hidden]{display:none}
 body:has(#ttsBar:not([hidden])) .app{padding-bottom:96px}
+
+.no-tts .tts-row { display: none; }
