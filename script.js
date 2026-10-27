@@ -1752,11 +1752,23 @@ homeEl.addEventListener('touchend', () => {
   if (ptrPull >= PTR_AT) {
     haptic(false);
     homePtr.style.cssText = ''; homePtr.classList.add('spin');
-    setTimeout(() => { homeReset(); homePtr.classList.remove('spin'); }, 550);
+    setTimeout(() => { homeNew(); homePtr.classList.remove('spin'); }, 550);
   } else homePtr.style.cssText = '';
   ptrPull = 0;
 }, {passive: true});
-$('#homeRefresh').addEventListener('click', () => { haptic(false); homeReset(); });
+// Yeni rivayetler: havuzdaki sıradaki 10 rivayet listenin en üstüne eklenir (X'teki gibi), görülenler tekrar çıkmaz
+function homeNew() {
+  if (!HOME.pool) return;
+  const end = Math.min(HOME.i + HOME_STEP, HOME.pool.length), n = end - HOME.i;
+  if (!n) { toast('Yeni rivayet kalmadı'); return; }
+  const frag = document.createDocumentFragment();
+  for (; HOME.i < end; HOME.i++) { const a = homePost(HOME.pool[HOME.i]); a.classList.add('hm-new'); frag.append(a); }
+  homeListEl.prepend(frag);
+  homeEl.scrollTo({top: 0});
+  document.body.classList.remove('hm-hide');
+  toast(n + ' yeni rivayet');
+}
+$('#homeRefresh').addEventListener('click', () => { haptic(false); homeNew(); });
 homeListEl.addEventListener('click', e => {
   if (e.target.closest('button')) return;
   const post = e.target.closest('.hm-post');
