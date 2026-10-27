@@ -458,17 +458,17 @@ body.no-scroll #toast{bottom:calc(120px + env(safe-area-inset-bottom))}
 body:not([data-tab=zikir]) .home-nav{display:none}
 
 /* ---------- Akış: rastgele rivayetler, tam ekran kartlar (Reels gibi) ---------- */
-.feed{position:fixed;left:0;right:0;top:0;bottom:var(--tabh);z-index:13;background:var(--bg);overflow-y:auto;scroll-snap-type:y mandatory;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.feed{position:fixed;left:0;right:0;top:calc(env(safe-area-inset-top) + 52px);bottom:var(--tabh);touch-action:manipulation;z-index:13;background:var(--bg);overflow-y:auto;scroll-snap-type:y mandatory;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;scrollbar-width:none}
 .feed::-webkit-scrollbar{display:none}
 .feed[hidden]{display:none}
 body.kb .feed,body.no-scroll .feed{bottom:0}
 body[data-tab=akis] .to-top{display:none}
-.fd-card{position:relative;height:100%;box-sizing:border-box;scroll-snap-align:start;scroll-snap-stop:always;padding:max(16px,calc(env(safe-area-inset-top) + 8px)) max(14px,env(safe-area-inset-right)) 14px max(14px,env(safe-area-inset-left));display:flex}
+.fd-card{position:relative;height:100%;box-sizing:border-box;scroll-snap-align:start;scroll-snap-stop:always;padding:6px max(14px,env(safe-area-inset-right)) 14px max(14px,env(safe-area-inset-left));display:flex}
 .fd-in{flex:1;max-width:560px;height:100%;margin:0 auto;box-sizing:border-box;overflow:hidden;background:var(--card);border:1px solid var(--border);border-radius:24px;padding:24px 70px 22px 22px;display:flex;flex-direction:column;justify-content:center;gap:14px}
 .fd-badge{align-self:flex-start;background:var(--hero);color:var(--accent);border-radius:999px;padding:4px 11px;font-size:12px;font-weight:700;letter-spacing:.1px}
-.fd-t{margin:0;font-size:19px;line-height:1.62;color:var(--text);white-space:pre-line}
-.fd-t.s{font-size:22px;line-height:1.55}
-.fd-t.l{font-size:17px;line-height:1.6}
+.fd-t{margin:0;font-size:17px;line-height:1.6;color:var(--text);white-space:pre-line}
+.fd-t.s{font-size:19px;line-height:1.55}
+.fd-t.l{font-size:16px;line-height:1.58}
 .fd-src{margin:0;font-size:12.5px;line-height:1.45;color:var(--muted)}
 .fd-side{position:absolute;top:50%;right:calc(max(14px,env(safe-area-inset-right)) + 12px);transform:translateY(-50%);display:flex;flex-direction:column;gap:14px}
 .fd-side button{width:44px;height:44px;padding:0;border-radius:50%;border:1px solid var(--border);background:var(--hero);color:var(--accent);font-size:18px;display:grid;place-items:center;float:none;margin:0}
@@ -476,3 +476,24 @@ body[data-tab=akis] .to-top{display:none}
 .fd-hint{display:block;margin-top:4px;text-align:center;font-size:12px;color:var(--muted);pointer-events:none;animation:fdHint 1.6s ease-in-out infinite}
 @keyframes fdHint{0%,100%{transform:translateY(0);opacity:.55}50%{transform:translateY(-6px);opacity:1}}
 .fd-msg{height:100%;display:grid;place-items:center;padding:24px;text-align:center;color:var(--muted)}
+/* Akış üst çubuğu: kitap filtresi */
+.feed-bar{position:fixed;left:0;right:0;top:0;z-index:13;box-sizing:border-box;height:calc(env(safe-area-inset-top) + 52px);background:var(--bg);padding:calc(env(safe-area-inset-top) + 8px) 0 0}
+/* Akış açıkken arkadaki sayfa çizilmez (filtre çubuğunun altından görünmesin) */
+body[data-tab=akis] .app{visibility:hidden}
+.feed-bar[hidden]{display:none}
+.fd-chips{display:flex;gap:7px;overflow-x:auto;padding:0 max(14px,env(safe-area-inset-left)) 2px;scrollbar-width:none;max-width:580px;margin:0 auto}
+.fd-chips::-webkit-scrollbar{display:none}
+.fd-chip{flex:none;white-space:nowrap;border:1px solid var(--border);background:var(--card);color:var(--muted);border-radius:999px;padding:7px 13px;font-size:13px;font-weight:600}
+.fd-chip[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:var(--accentText)}
+/* D şablonu: isnad zinciri */
+.fd-isn-h{font-size:10.5px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;color:var(--muted)}
+.fd-chain{list-style:none;margin:-6px 0 0;padding:0}
+.fd-chain li{position:relative;padding:0 0 6px 20px;font-size:13px;line-height:1.35;color:var(--muted)}
+.fd-chain li::before{content:'';position:absolute;left:2px;top:4px;width:7px;height:7px;border-radius:50%;border:1.5px solid var(--muted);background:var(--card);opacity:.7}
+.fd-chain li:not(:last-child)::after{content:'';position:absolute;left:6px;top:14px;bottom:-2px;width:1.5px;background:var(--border)}
+.fd-chain li.last{color:var(--accent);font-weight:700;padding-bottom:0}
+.fd-chain li.last::before{background:var(--accent);border-color:var(--accent);opacity:1}
+.fd-bab{margin:-8px 0 0;font-size:12.5px;line-height:1.45;color:var(--muted);font-style:italic}
+/* Çift dokunuşta beliren yıldız */
+.fd-burst{position:absolute;z-index:2;font-size:84px;line-height:1;color:var(--accent);pointer-events:none;transform:translate(-50%,-50%) scale(.3);opacity:0;animation:fdBurst .85s ease-out forwards}
+@keyframes fdBurst{15%{opacity:.95;transform:translate(-50%,-50%) scale(1.15)}35%{transform:translate(-50%,-50%) scale(.95)}70%{opacity:.9;transform:translate(-50%,-62%) scale(1)}100%{opacity:0;transform:translate(-50%,-80%) scale(.9)}}

@@ -1343,55 +1343,97 @@ async function toggleSavePick({v, b, n}) {
   const c = $('#cntSaved'); if (c) c.textContent = RD.saved.length;
   return true;
 }
-const pickSrc = ({v, b, n}) => { const L = LIBS[v], book = DAILY[v].books[b]; return L.bookKey ? L.src(n, {tr: book}) : L.single ? L.src(n) : L.src(n) + ' · ' + book; };
-async function loadDaily() {
-  if (!DAILY) { const r = await fetch('gunun.json'); if (!r.ok) throw new Error('gunun.json'); DAILY = await r.json(); }
-  return DAILY;
-}
 
 /* ---------- Akış: bütün kitaplıklardan rastgele rivayetler, tam ekran kartlarla ---------- */
-// Havuz oturum başında bir kez karıştırılır, aynı rivayet tekrar çıkmaz. Kartlar sona yaklaştıkça eklenir.
+// Havuz (seçili kitaplığa göre süzülür) oturum başında bir kez karıştırılır, aynı rivayet tekrar çıkmaz. Kartlar sona yaklaştıkça eklenir.
 // Ekrana sığmayan rivayet, kart çizildikten sonra ölçülerek atlanır (küçük ekran ve büyük yazıda da doğru çalışır).
-const feedEl = $('#feed');
-const FEED = {pool: null, i: 0, y: 0, busy: false};
+const feedEl = $('#feed'), feedBarEl = $('#feedBar');
+// Havuz: akis.json (araclar/akis.py üretir; ana sayfa kartının gunun.json'undan ayrıdır, isnad ve bab başlığı da içerir).
+let AKIS = null;
+const FEED = {all: null, pool: null, i: 0, y: 0, busy: false, filter: store.get('zikrim-akis-filtre', ''), tapCard: null, tapAt: 0};
+// Filtre etiketleri bu sırayla gösterilir (havuzda olmayan kitaplık atlanır)
+const FD_LIBS = [['musned', 'Müsned'], ['musannef', 'Musannef'], ['zuhd', 'Zühd'], ['fezail', 'Fezâil'], ['seria', 'eş-Şerîa'], ['acurri', 'el-Âcurrî'], ['ibnebiseybe', 'İbn Ebî Şeybe'], ['ahmed', 'İmam Ahmed'], ['hallal', 'el-Hallâl'], ['berbehari', 'Berbehârî']];
 function feedShow(on) {
-  if (!on) { if (!feedEl.hidden) { FEED.y = feedEl.scrollTop; feedEl.hidden = true; } return; }
-  feedEl.hidden = false;
-  if (FEED.pool) { feedEl.scrollTop = FEED.y; return; }
+  if (!on) { if (!feedEl.hidden) { FEED.y = feedEl.scrollTop; feedEl.hidden = true; feedBarEl.hidden = true; } return; }
+  feedEl.hidden = false; feedBarEl.hidden = false;
+  if (FEED.all) { feedEl.scrollTop = FEED.y; return; }
   feedEl.replaceChildren(el('div', 'fd-msg', 'Yükleniyor…'));
-  loadDaily().then(D => {
+  fetch('akis.json').then(r => { if (!r.ok) throw new Error('akis.json'); return r.json(); }).then(D => {
+    AKIS = D;
     const all = [];
-    for (const v of Object.keys(D)) if (LIBS[v] && D[v].h) for (const it of D[v].h) all.push({v, b: it[0], n: it[1], t: it[2]});
+    for (const v of Object.keys(D)) if (LIBS[v] && D[v].h) for (const it of D[v].h) all.push({v, b: it[0], n: it[1], t: it[2], s: it[3] || '', bab: D[v].babs[it[4]] || ''});
     for (let i = all.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [all[i], all[j]] = [all[j], all[i]]; }
-    FEED.pool = all; FEED.i = 0;
-    feedEl.replaceChildren();
-    feedMore(6);
+    FEED.all = all;
+    if (FEED.filter && !D[FEED.filter]) FEED.filter = '';
+    feedBar();
+    feedReset();
   }).catch(() => feedEl.replaceChildren(el('div', 'fd-msg', 'Rivayetler yüklenemedi. İnternet bağlantını kontrol edip tekrar dene.')));
 }
+// Üstteki kitap filtresi: Hepsi · Müsned · Musannef · …
+function feedBar() {
+  const row = el('div', 'fd-chips');
+  const chip = (v, label) => {
+    const b = el('button', 'fd-chip', label);
+    b.type = 'button';
+    b.setAttribute('aria-pressed', String(FEED.filter === v));
+    b.addEventListener('click', () => {
+      if (FEED.filter === v) return;
+      FEED.filter = v; store.set('zikrim-akis-filtre', v);
+      row.querySelectorAll('.fd-chip').forEach(c => c.setAttribute('aria-pressed', String(c === b)));
+      b.scrollIntoView({inline: 'center', block: 'nearest', behavior: 'smooth'});
+      feedReset();
+    });
+    return b;
+  };
+  row.append(chip('', 'Hepsi'));
+  for (const [v, label] of FD_LIBS) if (AKIS[v]) row.append(chip(v, label));
+  feedBarEl.replaceChildren(row);
+  const on = row.querySelector('[aria-pressed="true"]'); if (on) requestAnimationFrame(() => on.scrollIntoView({inline: 'center', block: 'nearest'}));
+}
+function feedReset() {
+  FEED.pool = FEED.filter ? FEED.all.filter(p => p.v === FEED.filter) : FEED.all;
+  FEED.i = 0; FEED.y = 0;
+  feedEl.replaceChildren();
+  feedEl.scrollTop = 0;
+  feedMore(6);
+}
+const feedSrc = p => { const L = LIBS[p.v], book = AKIS[p.v].books[p.b]; return L.bookKey ? L.src(p.n, {tr: book}) : L.single ? L.src(p.n) : L.src(p.n) + ' · ' + book; };
+// Kart (D şablonu): üstte isnad zinciri (râviler yukarıdan aşağı, son halka vurgulu), altında metin, en altta kaynak ve bab
 function feedCard(p, first) {
   const a = el('article', 'fd-card');
+  a._p = p;
   const box = el('div', 'fd-in');
+  const names = p.s ? p.s.split(/\s*→\s*/).filter(Boolean) : [];
+  if (names.length) {
+    const ol = el('ol', 'fd-chain');
+    ol.setAttribute('aria-label', 'İsnad');
+    names.forEach((nm, i) => ol.append(el('li', i === names.length - 1 ? 'last' : null, nm)));
+    box.append(el('span', 'fd-isn-h', 'İsnad'), ol);
+  }
   const t = el('p', 'fd-t' + (p.t.length < 140 ? ' s' : p.t.length > 300 ? ' l' : ''), p.t);
-  box.append(el('span', 'fd-badge', LIB_NAMES[p.v] || VIEWS[p.v] || p.v), t, el('p', 'fd-src', pickSrc(p)));
+  const src = feedSrc(p);
+  box.append(t, el('p', 'fd-src', src));
+  if (p.bab && !src.includes(p.bab)) box.append(el('p', 'fd-bab', 'Bab: ' + p.bab)); // Müsned'de bab adı müsnedin adıdır, tekrar yazılmaz
   const side = el('div', 'fd-side');
   const star = el('button', null);
   star.type = 'button';
   const paint = () => { const on = isSaved(pickKey(p)); star.textContent = on ? '★' : '☆'; star.classList.toggle('on', on); star.setAttribute('aria-pressed', String(on)); star.setAttribute('aria-label', on ? 'Kaydettiklerimden çıkar' : 'Kaydet'); };
   paint();
+  a._paint = paint;
   star.addEventListener('click', async () => { await toggleSavePick(p); paint(); });
   const open = el('button', null, '📖');
   open.type = 'button'; open.setAttribute('aria-label', 'Kitapta aç'); open.title = 'Kitapta aç';
   open.addEventListener('click', () => { ttsStop(); goTo(p.v, p.b, p.n); });
   side.append(star, open);
   a.append(box, side);
-  if (first) box.append(el('span', 'fd-hint', '↑ Kaydırarak sıradaki rivayete geç'));
+  if (first) box.append(el('span', 'fd-hint', '↑ Kaydır · çift dokununca kaydet'));
   return a;
 }
 function feedMore(count) {
   if (!FEED.pool || FEED.busy) return;
   FEED.busy = true;
   let added = 0, tries = 0;
-  while (added < count && FEED.i < FEED.pool.length && tries < count * 6) {
+  while (added < count && FEED.i < FEED.pool.length && tries < count * 8) {
     tries++;
     const p = FEED.pool[FEED.i++];
     const card = feedCard(p, !feedEl.children.length);
@@ -1400,9 +1442,27 @@ function feedMore(count) {
     if (box.scrollHeight > box.clientHeight + 2) { card.remove(); continue; } // ekrana sığmıyor: atla
     added++;
   }
-  if (FEED.i >= FEED.pool.length && !feedEl.querySelector('.fd-end')) feedEl.append(el('div', 'fd-card fd-msg fd-end', 'Bütün rivayetleri gördün. Akış yeniden açıldığında yeniden karışır.'));
+  if (FEED.i >= FEED.pool.length && !feedEl.querySelector('.fd-end')) feedEl.append(el('div', 'fd-card fd-msg fd-end', feedEl.querySelector('.fd-card') ? 'Bu seçimdeki bütün rivayetleri gördün. Akış yeniden açıldığında yeniden karışır.' : 'Bu kitapta ekrana sığan rivayet bulunamadı.'));
   FEED.busy = false;
 }
+// Çift dokunuş: kaydeder (zaten kayıtlıysa çıkarmaz), dokunulan yerde yıldız belirir, hafif titreşir
+async function feedLike(card, x, y) {
+  const r = card.getBoundingClientRect();
+  const burst = el('span', 'fd-burst', '★');
+  burst.style.left = (x - r.left) + 'px'; burst.style.top = (y - r.top) + 'px';
+  card.append(burst);
+  setTimeout(() => burst.remove(), 900);
+  haptic(false);
+  if (!isSaved(pickKey(card._p))) { await toggleSavePick(card._p); card._paint(); }
+}
+feedEl.addEventListener('click', e => {
+  if (e.target.closest('button')) return;
+  const card = e.target.closest('.fd-card');
+  if (!card || !card._p) return;
+  const now = performance.now();
+  if (FEED.tapCard === card && now - FEED.tapAt < 350) { FEED.tapAt = 0; feedLike(card, e.clientX, e.clientY); }
+  else { FEED.tapCard = card; FEED.tapAt = now; }
+});
 let feedRaf = 0;
 feedEl.addEventListener('scroll', () => {
   if (feedRaf) return;

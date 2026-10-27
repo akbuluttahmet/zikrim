@@ -6,7 +6,7 @@ Bu repoda çalışan her oturum (Claude Code, başka sohbetler) bu kurallara uya
 
 - **Sekîne**: Zikir sayacı, hadis kütüphanesi (Musannef ve İbn Ebî Şeybe’nin küçük kitapları, Müsned, Usûlü's-Sünne, ez-Zühd, Fezâilü's-sahâbe ve İmam Ahmed'in diğer risaleleri, Şerhu's-Sünne, el-Âcurrî, el-Hallâl), Sözler ve Hanbelî fıkhından oluşan, telefonun ana ekranına eklenen bir PWA. Adres: https://akbuluttahmet.github.io/zikrim/ (GitHub Pages, `main` dalı).
 - Derleme adımı yok, düz HTML/CSS/JS: `index.html`, `script.js`, `style.css`, `fikih.js`, `usul.js`, `sw.js`, `manifest.webmanifest`.
-- Veriler: `musannef/` ve `musned/` (her biri `index.json` + `tr/*.json`), `ibnebiseybe/`, `ahmed/`, `zuhd/`, `fezail/`, `hallal/`, `acurri/`, `seria/`, `berbehari/`, `gunun.json` (ana sayfadaki “Rivayetler” kartının havuzu, bütün kitaplıklardan).
+- Veriler: `musannef/` ve `musned/` (her biri `index.json` + `tr/*.json`), `ibnebiseybe/`, `ahmed/`, `zuhd/`, `fezail/`, `hallal/`, `acurri/`, `seria/`, `berbehari/`, `gunun.json` (ana sayfadaki “Rivayetler” kartının havuzu, bütün kitaplıklardan), `akis.json` (Akış sekmesinin havuzu; isnad ve bab başlığıyla).
 - **Adres ve `localStorage` anahtarları (`zikrim-…`) değiştirilmez.** Değişirse kullanıcının verileri (sayaçlar, seri, kayıtlar) kaybolur. Uygulamanın adı Sekîne olsa da repo/klasör adı `zikrim` kalır.
 - Her yayında `sw.js` içindeki `CACHE = 'zikrim-vNN'` bir artırılır. Bunu `araclar/yayinla.sh "mesaj"` yapar; önce `git pull --rebase` ile başka oturumların değişikliklerini alır.
 - Aynı anda iki oturum çalışıyorsa işi bölün (ör. biri Müsned, biri Musannef). Push reddedilirse `git pull --rebase` yapın; `sw.js` çakışmasında uzak sürümü alıp sürüm numarasını bir artırın.
@@ -70,7 +70,7 @@ Bu repoda çalışan her oturum (Claude Code, başka sohbetler) bu kurallara uya
 
 1. Arapça kaynağı al. Çeviriyi `N | sened | metin` satırları ve `@ Bab başlığı` satırlarıyla yaz; metin içinde satır sonu için `\n` kullan. JSON'a dönüştür (6 alan), `index.json`'da `t`'yi güncelle.
 2. `python3 araclar/kontrol.py`: sayı, tekrar, sıra, `(?)`, boş metin ve alan sayısını denetler.
-3. Yeni kitaptan sonra `python3 araclar/gunun.py` ile “Rivayetler” havuzunu yenile.
+3. Yeni kitaptan sonra `python3 araclar/gunun.py` ile “Rivayetler” havuzunu, `python3 araclar/akis.py` ile Akış havuzunu yenile.
 4. `araclar/yayinla.sh "Musannef: Kitâbü’l-… tamamlandı (N/N)"`
 5. Commit mesajları Türkçe ve kısa olur; ne eklendiği ve kaç rivayet olduğu yazılır.
 
@@ -79,7 +79,7 @@ Bu repoda çalışan her oturum (Claude Code, başka sohbetler) bu kurallara uya
 - Varsayılan tema Klasik; ana sayfa kartı en üstte her açılışta farklı bir zikir (kullanıcının listesinden; “Zikret” sayacı açar, “↻” değiştirir; son gösterilen `zikrim-hz` anahtarında), üç halka (Sabah · Akşam · Genel), “Rivayetler” kartı (açılışta bütün kitaplıklardan önce kitaplık, sonra rivayet rastgele seçilir; “↻ Başka rivayet” ile değiştirilir, ☆ ile kaydedilir) ve kaldığın yerden oluşur.
 - Zikirlerin sırası kullanıcı tarafından değiştirilemez.
 - Alt sekme çubuğu: Zikir (ana sayfa; Sabah · Akşam · Genel) · Akış · Kütüphane (raf, bütün kitaplar, Kaydettiklerim) · Sözler. Görünümün sekmesi `tabOf()` ile bulunur; yeni bir görünüm eklenirse oraya da yazılır. Sekmeler arası geçişte her sekmenin görünümü ve kaydırma yeri hatırlanır, kitaplarda en son okunan rivayete dönülür; açık sekmeye dokununca köke, köktaysa en üste gidilir. Klavye açıkken (`body.kb`) ve odak modunda çubuk gizlenir. Alttaki sabit öğeler (bildirim, sesli okuma çubuğu, başa dön) `--tabb` tabanına göre konumlanır.
-- Akış (`#feed`): `gunun.json` havuzundaki rivayetler oturum başında karıştırılır, tam ekran kartlarla yukarı kaydırılarak (scroll-snap) okunur; aynı rivayet tekrar çıkmaz. Ekrana sığmayan kart çizildikten sonra ölçülüp atlanır. Kartta ☆ kaydet ve 📖 kitapta aç vardır; akışta sesli okuma yoktur. Kartlara yorum, beğeni ya da sayaç eklenmez.
+- Akış (`#feed`): kendi havuzu `akis.json`'dır (`araclar/akis.py` üretir; seçim `gunun.py` ile aynı, ayrıca Türkçe sened ve bab başlığı içerir). **İsnad yalnızca Akış'ta gösterilir; `gunun.json` ve ana sayfa kartı isnadsız kalır.** Rivayetler oturum başında karıştırılır, tam ekran kartlarla yukarı kaydırılarak (scroll-snap) okunur; aynı rivayet tekrar çıkmaz. Kart düzeni (D şablonu): üstte isnad zinciri (râviler yukarıdan aşağı, son halka vurgulu), altında metin, en altta kaynak ve bab. Üstte kitap filtresi (Hepsi · Müsned · Musannef · …; seçim `zikrim-akis-filtre`'de). Çift dokunuş kaydeder (çıkarmaz), yıldız belirir ve hafif titreşir. Ekrana sığmayan kart (isnadıyla birlikte) çizildikten sonra ölçülüp atlanır. Kartta ☆ kaydet ve 📖 kitapta aç vardır; akışta sesli okuma yoktur. Kartlara yorum, beğeni ya da sayaç eklenmez.
 - Kütüphane “raf” düzenindedir: asırlara göre raflar, kitaplar renkli kapak (Arapça adı + ilerleme çubuğu). Yeni kitap `SHELVES` dizisine eklenir.
 - Rivayetlerde Arapça metin önce, kâğıt renkli kutuda Amiri yazı tipiyle gösterilir (sened ince, metin kalın); altında Türkçe sened ve metin. Ses düğmeleri küçük ▶ simgeleridir. Ayarlardan Arapça metin ve ▶ düğmeleri gizlenebilir. Amiri `fonts/` klasöründedir (OFL).
 - Sesli okuma telefonun kendi sesleriyle yapılır (Web Speech API).
