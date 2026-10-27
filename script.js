@@ -727,7 +727,7 @@ LIBS.acurri = {base: 'acurri/', key: 'zikrim-acurri', unit: 'kitap', item: 'riva
 LIBS.seria = {base: 'seria/', key: 'zikrim-seria', unit: 'bölüm', item: 'rivayet', ex: 120, err: 'eş-Şerîa',
   label: (n, h) => n === 0 ? 'Mukaddime' : Number.isInteger(n) ? `No. ${n}` : (h && !h[1] && /^Muhammed b\. el-Hüseyin/.test(h[2]) ? 'Âcurrî’nin sözü' : 'Numarasız kısım'),
   src: n => `el-Âcurrî, eş-Şerîa, ${n === 0 ? 'mukaddime' : Number.isInteger(n) ? 'no. ' + n : 'no. ' + Math.floor(n) + ' sonrası'}`,
-  note: 'Ebû Bekir Muhammed b. el-Hüseyin el-Âcurrî (ö. 360), eş-Şerîa — Türkçe çeviri ve Arapça metin. Çeviri ve Arapça metin el-Mektebetü’ş-Şâmile’deki nüshadan (no. 13035, 5 cilt) alınmıştır; rivayet numaraları bu nüshaya göredir. Dijital nüshada bulunmayan numaralar atlanmıştır. “Âcurrî’nin sözü” diye gösterilen kısımlar rivayetlerin arasındaki yazarın kendi açıklamalarıdır. Bölümler çevrildikçe sırayla eklenecek.'};
+  note: 'Ebû Bekir Muhammed b. el-Hüseyin el-Âcurrî (ö. 360), eş-Şerîa — Türkçe çeviri ve Arapça metin. Çeviri ve Arapça metin el-Mektebetü’ş-Şâmile’deki nüshadan (no. 13035, 5 cilt) alınmıştır; rivayet numaraları bu nüshaya göredir. Dijital nüshada bulunmayan numaralar atlanmıştır. “Âcurrî’nin sözü” diye gösterilen kısımlar rivayetlerin arasındaki yazarın kendi açıklamalarıdır; “Numarasız kısım”lar nüshada numarası olmayan rivayetlerdir. Kitap, konularına göre 17 bölüme ayrılmıştır.'};
 for (const [k, L] of Object.entries(LIBS)) {
   Object.assign(L, {view: k, idx: null, book: null, data: null, token: 0, target: null, cache: {}});
   try { const b = JSON.parse(localStorage.getItem(L.key) || 'null'); if (Number.isInteger(b)) L.book = b; } catch (e) {}
@@ -1253,7 +1253,7 @@ const SHELVES = [
     {v: 'usul', ar: 'أصول السنة', t: 'Usûlü’s-Sünne', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#3f5f7f', done: true}]},
   {c: 'III. ASIR', books: [
     {v: 'berbehari', ar: 'شرح السنة', t: 'Şerhu’s-Sünne', who: 'el-Berbehârî', bo: '233?', d: 329, col: '#6b4f7a', done: true},
-    {v: 'seria', ar: 'الشريعة', t: 'eş-Şerîa', who: 'el-Âcurrî', bo: '~280', d: 360, col: '#2f6b66', total: 2075},
+    {v: 'seria', ar: 'الشريعة', t: 'eş-Şerîa', who: 'el-Âcurrî', bo: '~280', d: 360, col: '#2f6b66', done: true},
     {v: 'acurri', b: 0, ar: 'أخلاق أهل القرآن', t: 'Ahlâku Ehli’l-Kur’ân', who: 'el-Âcurrî', bo: '~280', d: 360, col: '#9a7b34', done: true},
     {v: 'acurri', b: 1, ar: 'الأربعون حديثا', t: 'el-Erbaûn', who: 'el-Âcurrî', bo: '~280', d: 360, col: '#7a4a52', done: true}]}
 ];
