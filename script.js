@@ -1337,6 +1337,7 @@ const SHELVES = [
     {v: 'musannef', ar: 'المصنف', t: 'el-Musannef', who: 'İbn Ebî Şeybe', bo: '159', d: 235, col: '#4d8062'},
     {v: 'ibnebiseybe', b: 0, ar: 'خلق آدم وولادة النبي', t: 'Halku Âdem ve vilâdetü’n-Nebî', who: 'İbn Ebî Şeybe', bo: '159', d: 235, col: '#6e5a3a', done: true},
     {v: 'ibnebiseybe', b: 1, ar: 'كتاب الإيمان', t: 'Kitâbü’l-Îmân', who: 'İbn Ebî Şeybe', bo: '159', d: 235, col: '#3e6a55', done: true},
+    {v: 'ibnebiseybe', b: 2, ar: 'كتاب الأدب', t: 'Kitâbü’l-Edeb', who: 'İbn Ebî Şeybe', bo: '159', d: 235, col: '#7a4f3a', done: true},
     {v: 'musned', ar: 'المسند', t: 'el-Müsned', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#8a5a3c', total: 27647},
     {v: 'usul', ar: 'أصول السنة', t: 'Usûlü’s-Sünne', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#3f5f7f', done: true},
     {v: 'ahmed', b: 0, ar: 'من سؤالات الأثرم', t: 'el-Esrem’in Sorularından', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#5b6e3a', done: true},
@@ -1347,7 +1348,8 @@ const SHELVES = [
     {v: 'ahmed', b: 5, ar: 'الأشربة', t: 'el-Eşribe', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#6e3f4a', done: true},
     {v: 'ahmed', b: 6, ar: 'من كلامه في العلل والرجال — رواية المروذي', t: 'İlel ve ricâl (el-Merrûzî)', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#5a6e3f', done: true},
     {v: 'ahmed', b: 7, ar: 'من كلامه في العلل والرجال — رواية صالح', t: 'İlel ve ricâl (Sâlih)', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#6e573f', done: true},
-    {v: 'ahmed', b: 8, ar: 'من كلامه في العلل والرجال — رواية الميموني', t: 'İlel ve ricâl (el-Meymûnî)', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#3f5a6e', done: true}]},
+    {v: 'ahmed', b: 8, ar: 'من كلامه في العلل والرجال — رواية الميموني', t: 'İlel ve ricâl (el-Meymûnî)', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#3f5a6e', done: true},
+    {v: 'ahmed', b: 9, ar: 'سؤالات أبي داود', t: 'Suâlâtü Ebî Dâvûd', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#6b4a5e', done: true}]},
   {c: 'III. ASIR', books: [
     {v: 'berbehari', ar: 'شرح السنة', t: 'Şerhu’s-Sünne', who: 'el-Berbehârî', bo: '233?', d: 329, col: '#6b4f7a', done: true},
     {v: 'hallal', b: 0, ar: 'القراءة عند القبور', t: 'el-Kırâe inde’l-kubûr', who: 'el-Hallâl', bo: '234', d: 311, col: '#3d6f6a', done: true},
