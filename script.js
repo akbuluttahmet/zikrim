@@ -1225,7 +1225,7 @@ const AUTHORS = [
   {name: 'İbn Ebî Şeybe', meta: 'ö. 235 · Kûfe', books: [{v: 'musannef', t: 'el-Musannef'}]},
   {name: 'Ahmed b. Hanbel', meta: 'ö. 241 · Bağdat', books: [{v: 'musned', t: 'el-Müsned'}, {v: 'usul', t: 'Usûlü’s-Sünne', sub: '✓ 33 madde · akîde risalesi'}]},
   {name: 'el-Berbehârî', meta: 'ö. 329 · Bağdat', books: [{v: 'berbehari', t: 'Şerhu’s-Sünne', sub: '✓ 156 madde · akîde metni · Arapçasıyla'}]},
-  {name: 'el-Âcurrî', meta: 'ö. 360 · Bağdat, Mekke', books: [{v: 'acurri', b: 0, t: 'Ahlâku Ehli’l-Kur’ân', sub: '✓ 90 rivayet ve mülhak · Kur’ân ehlinin ahlâkı · Arapçasıyla'}]}
+  {name: 'el-Âcurrî', meta: 'ö. 360 · Bağdat, Mekke', books: [{v: 'acurri', b: 0, t: 'Ahlâku Ehli’l-Kur’ân', sub: '✓ 90 rivayet ve mülhak · Kur’ân ehlinin ahlâkı · Arapçasıyla'}, {v: 'acurri', b: 1, t: 'el-Erbaûn (Kırk Hadis)', sub: '✓ 45 hadis ve Âcurrî’nin şerhi · Arapçasıyla'}, {v: 'acurri', b: 1, t: 'el-Erbaûn (Kırk Hadis)', sub: '✓ 45 hadis ve Âcurrî’nin şerhi · Arapçasıyla'}]}
 ];
 function libSub(v, span) {
   const L = LIBS[v];
