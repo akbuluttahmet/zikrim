@@ -780,7 +780,7 @@ const LIBS = {
     note: 'Ebû Bekir İbn Ebî Şeybe (ö. 235), el-Musannef — Türkçe çeviri. Çeviri, Kemâl Yûsuf el-Hût neşrindeki (Riyad: Mektebetü’r-Rüşd, 1409) metinden yapılmıştır; rivayet numaraları bu neşre göredir. Arapça metin, el-Mektebetü’ş-Şâmile’deki aynı neşirden (no. 9944) aynen alınmıştır. Çevirisi tamamlanan kitaplar açılabilir, diğerleri sırayla eklenecek.'},
   musned: {base: 'musned/', key: 'zikrim-musned', unit: 'bölüm', item: 'hadis', ex: 45, err: 'Müsned',
     src: n => `İmam Ahmed (\u2068رحمه الله\u2069), el-Müsned, no. ${n}`,
-    note: 'İmam Ahmed b. Hanbel (ö. 241), el-Müsned — Türkçe çeviri. Çeviri, Şuayb el-Arnaût ve arkadaşlarının tahkikiyle yayımlanan Müessesetü’r-Risâle neşrindeki (Beyrut, 1421/2001) metinden yapılmıştır; hadis numaraları bu neşre göredir. Numaranın önündeki * işareti, neşirde Abdullah b. Ahmed’in ziyâdelerini gösterir. Arapça metin, el-Mektebetü’ş-Şâmile’deki aynı neşirden (no. 25794) aynen alınmıştır; tahkik dipnotları alınmamıştır. Müsned, sahâbîlere göre bölümlenmiştir; çevrilen bölümler sırayla eklenecek.'}
+    note: 'İmam Ahmed b. Hanbel (ö. 241), el-Müsned — Türkçe çeviri. Çeviri, Şuayb el-Arnaût ve arkadaşlarının tahkikiyle yayımlanan Müessesetü’r-Risâle neşrindeki (Beyrut, 1421/2001) metinden yapılmıştır; hadis numaraları bu neşre göredir. Numaranın önündeki * ve • işaretleri, neşirde Abdullah b. Ahmed’in ziyâdelerini; ° işareti ise Abdullah’ın babasının kitabında bulduklarını (vicâde) gösterir. Arapça metin, el-Mektebetü’ş-Şâmile’deki aynı neşirden (no. 25794) aynen alınmıştır; tahkik dipnotları alınmamıştır. Müsned, sahâbîlere göre bölümlenmiştir; çevrilen bölümler sırayla eklenecek.'}
 };
 LIBS.berbehari = {base: 'berbehari/', key: 'zikrim-berb', unit: 'kitap', item: 'madde', ex: 25, err: 'Şerhu’s-Sünne', single: true,
   label: n => n ? `Madde ${n}` : 'Mukaddime',
@@ -878,7 +878,7 @@ function libItem(L, h) {
   const a = el('article', 'mus-h');
   a.id = 'h' + n;
   a.dataset.n = n;
-  const lb = L.label ? L.label(n, h) : (ziyade === 2 ? '•' : ziyade ? '*' : '#') + n;
+  const lb = L.label ? L.label(n, h) : (ziyade === 3 ? '°' : ziyade === 2 ? '•' : ziyade ? '*' : '#') + n;
   if (L.label) a.dataset.lb = lb;
   a.append(el('p', 'mus-no', lb));
   let box = null;

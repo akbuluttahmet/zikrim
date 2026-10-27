@@ -55,7 +55,7 @@ Bu repoda çalışan her oturum (Claude Code, başka sohbetler) bu kurallara uya
 - `musannef/index.json`, `musned/index.json`: kitap/bölüm listesi `{f, tr, n, b?, from, to, t, g?}`. `n` toplam, `t` çevrilmiş rivayet sayısıdır; `t` 0 ise kitap kapalı görünür.
 - `tr/kNN.json` / `tr/mNNN.json`: `{"babs":[{"t":"Bab başlığı","h":[ … ]}]}`
 - Her rivayet **6 alanlı** bir dizidir: `[no, "sened (oklu)", "Türkçe metin", ziyade, info, "Arapça metin"]`.
-  - `ziyade`: Müsned'de 1 (Abdullah b. Ahmed ziyâdesi) ya da 2; diğerlerinde 0.
+  - `ziyade`: Müsned'de neşirdeki işarete göre 1 (`*`), 2 (`•`; Abdullah b. Ahmed ziyâdesi) ya da 3 (`°`; Abdullah'ın babasının kitabında bulduğu, vicâde); diğerlerinde 0.
   - `info`: Müsned râvi paneli `{c:[isim, sîga, isim, …], n:[metindeki notlar]}`; Musannef'te `null`.
   - Arapça metin harekelidir, Şâmile'den aynen alınır; sened dahil tam metindir.
   - **Bir kitabı yeniden derlerken Arapça (6.) alan kaybedilmez.** Eski derleme betikleri 3 alan yazıyordu; kullanılırsa Arapça mevcut dosyadan geri eklenmelidir.
