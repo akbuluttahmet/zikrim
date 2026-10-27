@@ -272,7 +272,11 @@ body.view-selef #toggleCompact,body.view-selef .sort-hint{display:none}
 .mus-grp[hidden]{display:none}
 .mus-h{position:relative}
 .mus-h .mus-no{padding-right:44px}
-.star{position:absolute;top:4px;right:6px;width:44px;height:44px;border:0;background:none;color:var(--accent);font-size:22px;line-height:1;padding:0;cursor:pointer}
+.star{position:absolute;top:2px;right:8px;width:44px;height:44px;border:0;border-radius:50%;background:none;color:var(--accent);padding:0;display:grid;place-items:center;cursor:pointer;transition:background .15s,transform .15s}
+.star svg{display:block;fill:none;transition:fill .15s}
+.star.on svg{fill:currentColor}
+.star:active{background:var(--hero);transform:scale(.92)}
+.mus-h .mus-no{min-height:20px;display:flex;align-items:center}
 .rd-tools{display:flex;align-items:center;gap:8px;margin-top:4px}
 .rd-tools .chip-button{min-width:44px;min-height:36px}
 .rd-fs{font-size:12px;color:var(--muted);min-width:42px;text-align:center}

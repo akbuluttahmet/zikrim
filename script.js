@@ -1358,10 +1358,12 @@ function trackRead(root, info) {
   new MutationObserver(watch).observe(root, {childList: true, subtree: true});
 }
 const isSaved = k => RD.saved.some(x => x.k === k);
+// Rivayetlerdeki kaydet yıldızı: çizgi (boş) ya da dolu yıldız simgesi, numara satırıyla aynı hizada yuvarlak düğme
+const STAR_SVG = '<svg viewBox="0 0 24 24" width="21" height="21" aria-hidden="true"><path d="M12 3.6l2.6 5.3 5.8.8-4.2 4.1 1 5.8-5.2-2.7-5.2 2.7 1-5.8-4.2-4.1 5.8-.8z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>';
 function starBtn(k, make) {
   const b = el('button', 'star');
   b.type = 'button';
-  const paint = () => { const on = isSaved(k); b.textContent = on ? '★' : '☆'; b.setAttribute('aria-pressed', String(on)); b.setAttribute('aria-label', on ? 'Kaydettiklerimden çıkar' : 'Kaydet'); };
+  const paint = () => { const on = isSaved(k); b.innerHTML = STAR_SVG; b.classList.toggle('on', on); b.setAttribute('aria-pressed', String(on)); b.setAttribute('aria-label', on ? 'Kaydettiklerimden çıkar' : 'Kaydet'); };
   paint();
   b.addEventListener('click', e => {
     e.stopPropagation();
