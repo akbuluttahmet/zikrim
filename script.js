@@ -508,9 +508,9 @@ const QUOTES = [
 /* ---------- Kartlar ---------- */
 const cardsEl = $('#cards');
 const MSET = new Set(MORNING), ESET = new Set(EVENING);
-const VIEWS = {main: 'Sekîne', sabah: '☀︎ Sabah Zikirleri', aksam: '☾ Akşam Zikirleri', genel: '📿 Genel Zikirler', selef: '📜 Sözler', fikih: '⚖️ Hanbelî Fıkhı', musannef: '📚 Musannef', musned: '📗 Müsned', usul: '📘 Usûlü’s-Sünne', berbehari: '📕 Şerhu’s-Sünne', acurri: '📙 el-Âcurrî', seria: '📙 eş-Şerîa', kutuphane: '📚 Kütüphane', kaydedilen: '☆ Kaydettiklerim'};
-const LIB_CHILD = new Set(['musannef', 'musned', 'usul', 'berbehari', 'acurri', 'seria', 'kaydedilen']);
-const READ_VIEWS = new Set(['selef', 'fikih', 'musannef', 'musned', 'usul', 'berbehari', 'acurri', 'seria', 'kutuphane', 'kaydedilen']);
+const VIEWS = {main: 'Sekîne', sabah: '☀︎ Sabah Zikirleri', aksam: '☾ Akşam Zikirleri', genel: '📿 Genel Zikirler', selef: '📜 Sözler', fikih: '⚖️ Hanbelî Fıkhı', musannef: '📚 Musannef', musned: '📗 Müsned', usul: '📘 Usûlü’s-Sünne', ahmed: '📘 İmam Ahmed', berbehari: '📕 Şerhu’s-Sünne', acurri: '📙 el-Âcurrî', seria: '📙 eş-Şerîa', hallal: '📗 el-Hallâl', kutuphane: '📚 Kütüphane', kaydedilen: '☆ Kaydettiklerim'};
+const LIB_CHILD = new Set(['musannef', 'musned', 'usul', 'ahmed', 'berbehari', 'acurri', 'seria', 'hallal', 'kaydedilen']);
+const READ_VIEWS = new Set(['selef', 'fikih', 'musannef', 'musned', 'usul', 'ahmed', 'berbehari', 'acurri', 'seria', 'hallal', 'kutuphane', 'kaydedilen']);
 let view = 'main';
 const isGenel = z => !MSET.has(z.id) && !ESET.has(z.id);
 const inView = z => view === 'sabah' ? MSET.has(z.id) : view === 'aksam' ? ESET.has(z.id) : view === 'genel' ? isGenel(z) : false;
@@ -728,6 +728,14 @@ LIBS.seria = {base: 'seria/', key: 'zikrim-seria', unit: 'bölüm', item: 'rivay
   label: (n, h) => n === 0 ? 'Mukaddime' : Number.isInteger(n) ? `No. ${n}` : (h && !h[1] && /^Muhammed b\. el-Hüseyin/.test(h[2]) ? 'Âcurrî’nin sözü' : 'Numarasız kısım'),
   src: n => `el-Âcurrî, eş-Şerîa, ${n === 0 ? 'mukaddime' : Number.isInteger(n) ? 'no. ' + n : 'no. ' + Math.floor(n) + ' sonrası'}`,
   note: 'Ebû Bekir Muhammed b. el-Hüseyin el-Âcurrî (ö. 360), eş-Şerîa — Türkçe çeviri ve Arapça metin. Çeviri ve Arapça metin el-Mektebetü’ş-Şâmile’deki nüshadan (no. 13035, 5 cilt) alınmıştır; rivayet numaraları bu nüshaya göredir. Dijital nüshada bulunmayan numaralar atlanmıştır. “Âcurrî’nin sözü” diye gösterilen kısımlar rivayetlerin arasındaki yazarın kendi açıklamalarıdır; “Numarasız kısım”lar nüshada numarası olmayan rivayetlerdir. Kitap, konularına göre 17 bölüme ayrılmıştır.'};
+LIBS.ahmed = {base: 'ahmed/', key: 'zikrim-ahmed', unit: 'kitap', item: 'madde', ex: 12, err: 'İmam Ahmed', nogo: true, bookKey: true,
+  label: (n, h) => (h && h[4] && h[4].l) || (n === 0 ? 'Mukaddime' : Number.isInteger(n) ? `No. ${n}` : 'Ara metin'),
+  src: (n, m) => `İmam Ahmed (\u2068رحمه الله\u2069), ${m ? m.tr : ''}${n === 0 ? ', mukaddime' : Number.isInteger(n) ? ', no. ' + n : ''}`,
+  note: 'İmam Ahmed b. Hanbel (\u2068رحمه الله\u2069) (ö. 241) — risaleleri ve ondan nakledilen mesâil, Türkçe çeviri ve Arapça metniyle. Çeviri ve Arapça metin el-Mektebetü’ş-Şâmile’deki nüshalardan alınmıştır; numaralar bu nüshalara göredir. Nüshasında numara bulunmayan el-Akîde’de maddeler sırayla numaralanmıştır. el-Akîde ile bazı risalelerin İmam Ahmed’e nisbeti bazı araştırmacılarca tartışılmıştır. Müsned ve Usûlü’s-Sünne kütüphanede ayrı kitap olarak yer alır.'};
+LIBS.hallal = {base: 'hallal/', key: 'zikrim-hallal', unit: 'kitap', item: 'rivayet', ex: 5, err: 'el-Hallâl', nogo: true, bookKey: true,
+  label: (n, h) => (h && h[4] && h[4].l) || (n === 0 ? 'Mukaddime' : Number.isInteger(n) ? `No. ${n}` : 'Ara metin'),
+  src: (n, m) => `el-Hallâl, ${m ? m.tr : ''}${n === 0 ? ', mukaddime' : Number.isInteger(n) ? ', no. ' + n : ''}`,
+  note: 'Ebû Bekir Ahmed b. Muhammed el-Hallâl (ö. 311) — kitapları, Türkçe çeviri ve Arapça metniyle. Çeviri ve Arapça metin el-Mektebetü’ş-Şâmile’deki nüshalardan alınmıştır. Nüshasında numara bulunmayan kitaplarda rivayetler sırayla numaralanmıştır. Kitaplar çevrildikçe sırayla eklenecek.'};
 for (const [k, L] of Object.entries(LIBS)) {
   Object.assign(L, {view: k, idx: null, book: null, data: null, token: 0, target: null, cache: {}});
   try { const b = JSON.parse(localStorage.getItem(L.key) || 'null'); if (Number.isInteger(b)) L.book = b; } catch (e) {}
@@ -1245,17 +1253,27 @@ function goTo(v, b, n) {
   renderCards();
   $('.list').scrollIntoView({block: 'start'});
 }
-const LIB_NAMES = {musannef: 'el-Musannef', musned: 'el-Müsned', usul: 'Usûlü’s-Sünne', berbehari: 'Şerhu’s-Sünne', acurri: 'el-Âcurrî', seria: 'eş-Şerîa'};
+const LIB_NAMES = {musannef: 'el-Musannef', musned: 'el-Müsned', usul: 'Usûlü’s-Sünne', ahmed: 'İmam Ahmed', berbehari: 'Şerhu’s-Sünne', acurri: 'el-Âcurrî', seria: 'eş-Şerîa', hallal: 'el-Hallâl'};
 const SHELVES = [
   {c: 'II. ASIR', books: [
     {v: 'musannef', ar: 'المصنف', t: 'el-Musannef', who: 'İbn Ebî Şeybe', bo: '159', d: 235, col: '#4d8062'},
     {v: 'musned', ar: 'المسند', t: 'el-Müsned', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#8a5a3c', total: 27647},
-    {v: 'usul', ar: 'أصول السنة', t: 'Usûlü’s-Sünne', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#3f5f7f', done: true}]},
+    {v: 'usul', ar: 'أصول السنة', t: 'Usûlü’s-Sünne', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#3f5f7f', done: true},
+    {v: 'ahmed', b: 0, ar: 'من سؤالات الأثرم', t: 'el-Esrem’in Sorularından', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#5b6e3a', done: true},
+    {v: 'ahmed', b: 1, ar: 'العقيدة رواية الخلال', t: 'el-Akîde', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#46607a', done: true},
+    {v: 'ahmed', b: 2, ar: 'أحكام النساء', t: 'Ahkâmü’n-nisâ', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#7a4f5e', done: true},
+    {v: 'ahmed', b: 3, ar: 'الأسامي والكنى', t: 'el-Esâmî ve’l-künâ', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#6a5a3a', done: true}]},
   {c: 'III. ASIR', books: [
     {v: 'berbehari', ar: 'شرح السنة', t: 'Şerhu’s-Sünne', who: 'el-Berbehârî', bo: '233?', d: 329, col: '#6b4f7a', done: true},
+    {v: 'hallal', b: 0, ar: 'القراءة عند القبور', t: 'el-Kırâe inde’l-kubûr', who: 'el-Hallâl', bo: '234', d: 311, col: '#3d6f6a', done: true},
     {v: 'seria', ar: 'الشريعة', t: 'eş-Şerîa', who: 'el-Âcurrî', bo: '~280', d: 360, col: '#2f6b66', done: true},
     {v: 'acurri', b: 0, ar: 'أخلاق أهل القرآن', t: 'Ahlâku Ehli’l-Kur’ân', who: 'el-Âcurrî', bo: '~280', d: 360, col: '#9a7b34', done: true},
-    {v: 'acurri', b: 1, ar: 'الأربعون حديثا', t: 'el-Erbaûn', who: 'el-Âcurrî', bo: '~280', d: 360, col: '#7a4a52', done: true}]}
+    {v: 'acurri', b: 1, ar: 'الأربعون حديثا', t: 'el-Erbaûn', who: 'el-Âcurrî', bo: '~280', d: 360, col: '#7a4a52', done: true},
+    {v: 'acurri', b: 2, ar: 'مسألة الطائفين', t: 'Mes’eletü’t-tâifîn', who: 'el-Âcurrî', bo: '~280', d: 360, col: '#4a6b8a', done: true},
+    {v: 'acurri', b: 3, ar: 'أدب النفوس', t: 'Edebü’n-nüfûs', who: 'el-Âcurrî', bo: '~280', d: 360, col: '#7d6a3a', done: true},
+    {v: 'acurri', b: 4, ar: 'فضل قيام الليل والتهجد', t: 'Fazlu kıyâmi’l-leyl', who: 'el-Âcurrî', bo: '~280', d: 360, col: '#33496b', done: true},
+    {v: 'acurri', b: 5, ar: 'تحريم النرد والشطرنج والملاهي', t: 'Tahrîmü’n-nerd ve’ş-şıtranc', who: 'el-Âcurrî', bo: '~280', d: 360, col: '#6b3f3f', done: true},
+    {v: 'acurri', b: 6, ar: 'ذم اللواط', t: 'Zemmü’l-livât', who: 'el-Âcurrî', bo: '~280', d: 360, col: '#5a4a6e', done: true}]}
 ];
 function libSub(v, span) {
   const L = LIBS[v];
