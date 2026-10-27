@@ -1382,7 +1382,7 @@ function feedCard(p, first) {
   const open = el('button', null, '📖');
   open.type = 'button'; open.setAttribute('aria-label', 'Kitapta aç'); open.title = 'Kitapta aç';
   open.addEventListener('click', () => { ttsStop(); goTo(p.v, p.b, p.n); });
-  side.append(star, ttsBtn('tr', '▶', () => [{el: t, text: prepTr(p.t)}], 'tts-i', 'Sesli oku'), open);
+  side.append(star, open);
   a.append(box, side);
   if (first) box.append(el('span', 'fd-hint', '↑ Kaydırarak sıradaki rivayete geç'));
   return a;
