@@ -39,6 +39,7 @@ Bu repoda çalışan her oturum (Claude Code, başka sohbetler) bu kurallara uya
 
 - **Musannef:** İbn Ebî Şeybe, Kemâl Yûsuf el-Hût neşri (Riyad: Mektebetü’r-Rüşd, 1409); Şâmile no. 9944.
 - **Müsned:** İmam Ahmed, Şuayb el-Arnaût tahkiki, Müessesetü’r-Risâle (1421/2001); Şâmile no. 25794. Tahkik dipnotları alınmaz.
+- **Şerhu’s-Sünne (el-Berbehârî):** Şâmile no. 8601, OpenITI kopyası `0329Barbahari.SharhSunna.Shamela0008601-ara1`. Veri `berbehari/` klasöründe; mukaddime (0) ve 156 madde. Köşeli parantez [ ] neşrin eklemeleridir; Türkçede de korunur.
 - Arapça metinler Şâmile'deki aynı neşirden aynen alınır. Toplu metin için OpenITI GitHub kopyaları kullanılabilir (`raw.githubusercontent.com/OpenITI/...`).
 
 ## Veri biçimi
