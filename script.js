@@ -568,14 +568,14 @@ const QUOTES = [
 /* ---------- Kartlar ---------- */
 const cardsEl = $('#cards');
 const MSET = new Set(MORNING), ESET = new Set(EVENING);
-const VIEWS = {main: 'Sekîne', akis: 'Akış', sabah: '☀︎ Sabah Zikirleri', aksam: '☾ Akşam Zikirleri', genel: '📿 Genel Zikirler', selef: '📜 Sözler', fikih: '⚖️ Hanbelî Fıkhı', musannef: '📚 Musannef', ibnebiseybe: '📚 İbn Ebî Şeybe', musned: '📗 Müsned', usul: '📘 Usûlü’s-Sünne', ahmed: '📘 İmam Ahmed', zuhd: '📘 ez-Zühd', fezail: '📘 Fezâilü’s-sahâbe', berbehari: '📕 Şerhu’s-Sünne', acurri: '📙 el-Âcurrî', seria: '📙 eş-Şerîa', hallal: '📗 el-Hallâl', kutuphane: '📚 Kütüphane', kaydedilen: '☆ Kaydettiklerim'};
+const VIEWS = {main: 'Sekîne', anasayfa: 'Anasayfa', akis: 'Akış', sabah: '☀︎ Sabah Zikirleri', aksam: '☾ Akşam Zikirleri', genel: '📿 Genel Zikirler', selef: '📜 Sözler', fikih: '⚖️ Hanbelî Fıkhı', musannef: '📚 Musannef', ibnebiseybe: '📚 İbn Ebî Şeybe', musned: '📗 Müsned', usul: '📘 Usûlü’s-Sünne', ahmed: '📘 İmam Ahmed', zuhd: '📘 ez-Zühd', fezail: '📘 Fezâilü’s-sahâbe', berbehari: '📕 Şerhu’s-Sünne', acurri: '📙 el-Âcurrî', seria: '📙 eş-Şerîa', hallal: '📗 el-Hallâl', kutuphane: '📚 Kütüphane', kaydedilen: '☆ Kaydettiklerim'};
 const LIB_CHILD = new Set(['musannef', 'ibnebiseybe', 'musned', 'usul', 'ahmed', 'zuhd', 'fezail', 'berbehari', 'acurri', 'seria', 'hallal', 'kaydedilen']);
-const READ_VIEWS = new Set(['akis', 'selef', 'fikih', 'musannef', 'ibnebiseybe', 'musned', 'usul', 'ahmed', 'zuhd', 'fezail', 'berbehari', 'acurri', 'seria', 'hallal', 'kutuphane', 'kaydedilen']);
+const READ_VIEWS = new Set(['anasayfa', 'akis', 'selef', 'fikih', 'musannef', 'ibnebiseybe', 'musned', 'usul', 'ahmed', 'zuhd', 'fezail', 'berbehari', 'acurri', 'seria', 'hallal', 'kutuphane', 'kaydedilen']);
 let view = 'main';
 /* Alt sekmeler: her görünüm bir sekmeye aittir. Kökler: Zikir = ana sayfa, Kütüphane = raf, Sözler = sözler listesi. */
-const TAB_ROOT = {zikir: 'main', akis: 'akis', kutuphane: 'kutuphane', selef: 'selef'};
+const TAB_ROOT = {zikir: 'main', anasayfa: 'anasayfa', akis: 'akis', kutuphane: 'kutuphane', selef: 'selef'};
 const TAB_ROOTS = new Set(Object.values(TAB_ROOT));
-const tabOf = v => v === 'akis' ? 'akis' : v === 'selef' ? 'selef' : (v === 'kutuphane' || v === 'fikih' || LIB_CHILD.has(v)) ? 'kutuphane' : 'zikir';
+const tabOf = v => v === 'anasayfa' ? 'anasayfa' : v === 'akis' ? 'akis' : v === 'selef' ? 'selef' : (v === 'kutuphane' || v === 'fikih' || LIB_CHILD.has(v)) ? 'kutuphane' : 'zikir';
 const isGenel = z => !MSET.has(z.id) && !ESET.has(z.id);
 const inView = z => view === 'sabah' ? MSET.has(z.id) : view === 'aksam' ? ESET.has(z.id) : view === 'genel' ? isGenel(z) : false;
 const visible = () => S.zikirs.filter(inView);
@@ -601,8 +601,9 @@ function renderCards() {
   $('#toggleCompact').setAttribute('aria-pressed', String(S.compact));
   const list = visible();
   $('#listTitle').textContent = VIEWS[view];
-  $('.list').hidden = view === 'main' || view === 'akis';
+  $('.list').hidden = view === 'main' || view === 'akis' || view === 'anasayfa';
   feedShow(view === 'akis');
+  homeShow(view === 'anasayfa');
   document.body.classList.toggle('at-main', view === 'main');
   $('#backAll').hidden = TAB_ROOTS.has(view);
   const tab = tabOf(view);
@@ -615,7 +616,7 @@ function renderCards() {
   document.body.classList.toggle('view-selef', READ_VIEWS.has(view));
   searchEl.placeholder = view === 'kutuphane' ? 'Kitap ya da âlim ara…' : view === 'kaydedilen' ? 'Kaydettiklerinde ara…' : view === 'selef' ? 'Söz ara (âlim, anlam, kaynak)…' : view === 'fikih' ? 'Fıkıhta ara (ör. mesh, cuma, zekât)…' : view === 'usul' ? 'Risalede ara (ör. kader, havz, cuma)…' : LIBS[view] ? (LIBS[view].book == null && LIBS[view].nogo ? 'Kitap ara…' : LIBS[view].book == null && !LIBS[view].single ? `${LIBS[view].unit === 'kitap' ? 'Kitap' : 'Bölüm'} ara ya da ${LIBS[view].item} no. yaz (ör. ${LIBS[view].ex})…` : `Bu ${LIBS[view].unit === 'kitap' ? 'kitapta' : 'bölümde'} ara ya da ${LIBS[view].item} no. yaz…`) : 'Zikir ara (ad, anlam, okunuş)…';
   navRecord();
-  if (view === 'akis') { update(); return; }
+  if (view === 'akis' || view === 'anasayfa') { update(); return; }
   if (view === 'selef') { renderQuotes(); applyFilter(); update(); return; }
   if (view === 'fikih') { renderFiqh(); applyFilter(); update(); return; }
   if (LIBS[view]) { renderLib(LIBS[view]); update(); return; }
@@ -1403,7 +1404,15 @@ colSheet.addEventListener('close', () => { colKey = null; if (view === 'kaydedil
 // Ekrana sığmayan rivayet, kart çizildikten sonra ölçülerek atlanır (küçük ekran ve büyük yazıda da doğru çalışır).
 const feedEl = $('#feed'), feedBarEl = $('#feedBar');
 // Havuz: akis.json (araclar/akis.py üretir; ana sayfa kartının gunun.json'undan ayrıdır, isnad ve bab başlığı da içerir).
-let AKIS = null;
+let AKIS = null, akisP = null;
+// akis.json bir kez indirilir; Akış ve Anasayfa aynı havuzu kullanır (her biri kendi karışık sırasıyla).
+const akisLoad = () => akisP || (akisP = fetch('akis.json').then(r => { if (!r.ok) throw new Error('akis.json'); return r.json(); }).then(D => { AKIS = D; return D; }).catch(e => { akisP = null; throw e; }));
+function akisShuffled(D) {
+  const all = [];
+  for (const v of Object.keys(D)) if (LIBS[v] && D[v].h) for (const it of D[v].h) all.push({v, b: it[0], n: it[1], t: it[2], s: it[3] || '', bab: D[v].babs[it[4]] || ''});
+  for (let i = all.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [all[i], all[j]] = [all[j], all[i]]; }
+  return all;
+}
 const FEED = {all: null, pool: null, i: 0, y: 0, busy: false, filter: store.get('zikrim-akis-filtre', ''), tapCard: null, tapAt: 0};
 // Filtre etiketleri bu sırayla gösterilir (havuzda olmayan kitaplık atlanır)
 const FD_LIBS = [['musned', 'Müsned'], ['musannef', 'Musannef'], ['zuhd', 'Zühd'], ['fezail', 'Fezâil'], ['seria', 'eş-Şerîa'], ['acurri', 'el-Âcurrî'], ['ibnebiseybe', 'İbn Ebî Şeybe'], ['ahmed', 'İmam Ahmed'], ['hallal', 'el-Hallâl'], ['berbehari', 'Berbehârî']];
@@ -1412,12 +1421,9 @@ function feedShow(on) {
   feedEl.hidden = false; feedBarEl.hidden = false;
   if (FEED.all) { feedEl.scrollTop = FEED.y; return; }
   feedEl.replaceChildren(el('div', 'fd-msg', 'Yükleniyor…'));
-  fetch('akis.json').then(r => { if (!r.ok) throw new Error('akis.json'); return r.json(); }).then(D => {
-    AKIS = D;
-    const all = [];
-    for (const v of Object.keys(D)) if (LIBS[v] && D[v].h) for (const it of D[v].h) all.push({v, b: it[0], n: it[1], t: it[2], s: it[3] || '', bab: D[v].babs[it[4]] || ''});
-    for (let i = all.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [all[i], all[j]] = [all[j], all[i]]; }
-    FEED.all = all;
+  akisLoad().then(D => {
+    if (FEED.all) return;
+    FEED.all = akisShuffled(D);
     if (FEED.filter && !D[FEED.filter]) FEED.filter = '';
     feedBar();
     feedReset();
@@ -1652,6 +1658,82 @@ feedEl.addEventListener('scroll', () => {
     const h = feedEl.querySelector('.fd-hint'); if (h && feedEl.scrollTop > 40) h.remove();
   });
 }, {passive: true});
+
+/* ---------- Anasayfa: X tarzı zaman tüneli ---------- */
+// Havuz akis.json'dur (Akış'la aynı, ayrı karışık sırayla). Rivayetler alt alta gönderiler hâlinde, sona yaklaştıkça 10'ar 10'ar eklenir; oturumda tekrar çıkmaz.
+// İsnad gösterilmez (yalnızca Akış'ta). Gönderide ☆ kaydet, 📖 kitapta aç, 📸 görüntü; çift dokunuş kaydeder. Yorum, beğeni ya da sayaç yoktur.
+const homeEl = $('#home'), homeBarEl = $('#homeBar'), homeListEl = $('#homeList');
+const HOME = {pool: null, i: 0, y: 0, tapPost: null, tapAt: 0};
+const HOME_STEP = 10;
+const libLabel = v => { const f = FD_LIBS.find(x => x[0] === v); return f ? f[1] : (VIEWS[v] || v).replace(/^\S+\s/, ''); };
+function homeShow(on) {
+  if (!on) { if (!homeEl.hidden) { HOME.y = homeEl.scrollTop; homeEl.hidden = true; homeBarEl.hidden = true; } return; }
+  homeEl.hidden = false; homeBarEl.hidden = false;
+  if (HOME.pool) { homeEl.scrollTop = HOME.y; return; }
+  homeListEl.replaceChildren(el('div', 'hm-msg', 'Yükleniyor…'));
+  akisLoad().then(D => { if (!HOME.pool) homeReset(D); })
+    .catch(() => homeListEl.replaceChildren(el('div', 'hm-msg', 'Rivayetler yüklenemedi. İnternet bağlantını kontrol edip tekrar dene.')));
+}
+function homeReset(D = AKIS) {
+  if (!D) return;
+  HOME.pool = akisShuffled(D); HOME.i = 0; HOME.y = 0;
+  homeListEl.replaceChildren();
+  homeEl.scrollTop = 0;
+  homeMore();
+}
+function homePost(p) {
+  const a = el('article', 'hm-post');
+  a._p = p;
+  const name = libLabel(p.v);
+  const av = el('div', 'hm-av', name.replace(/^(el-|eş-|ez-|İmam )/, '').charAt(0));
+  av.style.background = bookColor(p);
+  av.setAttribute('aria-hidden', 'true');
+  const body = el('div', 'hm-body');
+  const head = el('div', 'hm-head');
+  const src = feedSrc(p);
+  head.append(el('b', null, name), el('span', 'hm-src', src));
+  body.append(head, el('p', 'hm-t', p.t));
+  if (p.bab && !src.includes(p.bab)) body.append(el('p', 'hm-bab', 'Bab: ' + p.bab));
+  const act = el('div', 'hm-act');
+  const star = el('button');
+  star.type = 'button';
+  const paint = () => { const on = isSaved(pickKey(p)); star.textContent = on ? '★ Kaydedildi' : '☆ Kaydet'; star.classList.toggle('on', on); star.setAttribute('aria-pressed', String(on)); star.setAttribute('aria-label', on ? 'Kaydettiklerimden çıkar' : 'Kaydet'); };
+  paint();
+  a._paint = paint;
+  star.addEventListener('click', async () => { await toggleSavePick(p); paint(); });
+  const open = el('button', null, '📖 Kitapta aç');
+  open.type = 'button';
+  open.addEventListener('click', () => { ttsStop(); goTo(p.v, p.b, p.n); });
+  const shot = el('button', null, '📸');
+  shot.type = 'button'; shot.setAttribute('aria-label', 'Görüntü olarak kaydet ya da paylaş');
+  shot.addEventListener('click', () => shotOpen(p));
+  act.append(star, open, shot);
+  body.append(act);
+  a.append(av, body);
+  return a;
+}
+function homeMore() {
+  if (!HOME.pool || HOME.i >= HOME.pool.length) return;
+  const end = Math.min(HOME.i + HOME_STEP, HOME.pool.length), frag = document.createDocumentFragment();
+  for (; HOME.i < end; HOME.i++) frag.append(homePost(HOME.pool[HOME.i]));
+  homeListEl.append(frag);
+  if (HOME.i >= HOME.pool.length) homeListEl.append(el('div', 'hm-msg', 'Bütün rivayetleri gördün. ↻ ile yeniden karıştırabilirsin.'));
+}
+const homeNear = () => homeEl.scrollTop + homeEl.clientHeight * 2.5 > homeEl.scrollHeight;
+let homeRaf = 0;
+homeEl.addEventListener('scroll', () => {
+  if (homeRaf) return;
+  homeRaf = requestAnimationFrame(() => { homeRaf = 0; if (homeNear()) homeMore(); });
+}, {passive: true});
+$('#homeRefresh').addEventListener('click', () => { haptic(false); homeReset(); });
+homeListEl.addEventListener('click', e => {
+  if (e.target.closest('button')) return;
+  const post = e.target.closest('.hm-post');
+  if (!post) return;
+  const now = performance.now();
+  if (HOME.tapPost === post && now - HOME.tapAt < 350) { HOME.tapAt = 0; feedLike(post, e.clientX, e.clientY); }
+  else { HOME.tapPost = post; HOME.tapAt = now; }
+});
 
 async function renderDaily(next = false) {
   try { if (!DAILY) { const r = await fetch('gunun.json'); if (!r.ok) return; DAILY = await r.json(); } } catch { return; }
@@ -2231,6 +2313,7 @@ function goTab(t) {
   const cur = tabOf(view);
   if (t === cur) {
     if (view !== TAB_ROOT[t]) setView(TAB_ROOT[t], true);
+    else if (view === 'anasayfa') homeEl.scrollTo({top: 0, behavior: 'smooth'});
     else window.scrollTo({top: 0, behavior: 'smooth'});
     return;
   }
