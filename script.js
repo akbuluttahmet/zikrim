@@ -572,17 +572,23 @@ const VIEWS = {main: 'Sekîne', sabah: '☀︎ Sabah Zikirleri', aksam: '☾ Ak�
 const LIB_CHILD = new Set(['musannef', 'ibnebiseybe', 'musned', 'usul', 'ahmed', 'zuhd', 'fezail', 'berbehari', 'acurri', 'seria', 'hallal', 'kaydedilen']);
 const READ_VIEWS = new Set(['selef', 'fikih', 'musannef', 'ibnebiseybe', 'musned', 'usul', 'ahmed', 'zuhd', 'fezail', 'berbehari', 'acurri', 'seria', 'hallal', 'kutuphane', 'kaydedilen']);
 let view = 'main';
+/* Alt sekmeler: her görünüm bir sekmeye aittir. Kökler: Zikir = ana sayfa, Kütüphane = raf, Sözler = sözler listesi. */
+const TAB_ROOT = {zikir: 'main', kutuphane: 'kutuphane', selef: 'selef'};
+const TAB_ROOTS = new Set(Object.values(TAB_ROOT));
+const tabOf = v => v === 'selef' ? 'selef' : (v === 'kutuphane' || v === 'fikih' || LIB_CHILD.has(v)) ? 'kutuphane' : 'zikir';
 const isGenel = z => !MSET.has(z.id) && !ESET.has(z.id);
 const inView = z => view === 'sabah' ? MSET.has(z.id) : view === 'aksam' ? ESET.has(z.id) : view === 'genel' ? isGenel(z) : false;
 const visible = () => S.zikirs.filter(inView);
 
-function setView(v) {
+function setView(v, instant = false) {
   ttsStop();
   view = VIEWS[v] ? v : 'main';
   searchEl.value = '';
   renderCards();
-  if (view === 'main') window.scrollTo({top: 0, behavior: 'smooth'});
-  else $('.list').scrollIntoView({block: 'start', behavior: 'smooth'});
+  const behavior = instant ? 'auto' : 'smooth';
+  // Sekme kökleri sayfanın en üstünden açılır; diğer görünümler liste başından.
+  if (TAB_ROOTS.has(view)) window.scrollTo({top: 0, behavior});
+  else $('.list').scrollIntoView({block: 'start', behavior});
 }
 document.querySelectorAll('[data-view]').forEach(b => b.addEventListener('click', () => setView(view === b.dataset.view ? 'main' : b.dataset.view)));
 $('#backAll').addEventListener('click', () => setView(LIB_CHILD.has(view) ? 'kutuphane' : 'main'));
@@ -597,7 +603,10 @@ function renderCards() {
   $('#listTitle').textContent = VIEWS[view];
   $('.list').hidden = view === 'main';
   document.body.classList.toggle('at-main', view === 'main');
-  $('#backAll').hidden = view === 'main';
+  $('#backAll').hidden = TAB_ROOTS.has(view);
+  const tab = tabOf(view);
+  document.body.dataset.tab = tab;
+  document.querySelectorAll('.tab').forEach(b => { if (b.dataset.tab === tab) b.setAttribute('aria-current', 'page'); else b.removeAttribute('aria-current'); });
   $('#backAll').textContent = LIB_CHILD.has(view) ? '← Kütüphane' : '← Geri';
   $('#addZikir').hidden = view !== 'genel';
   document.querySelectorAll('[data-view]').forEach(b => { const on = b.dataset.view === view || (b.dataset.view === 'kutuphane' && LIB_CHILD.has(view)); b.classList.toggle('active', on); b.setAttribute('aria-pressed', String(on)); });
@@ -1262,8 +1271,10 @@ function fsBar() {
   bar.append(mk('A−', -1, 'Yazıyı küçült'), lab, mk('A+', 1, 'Yazıyı büyüt'));
   return bar;
 }
+let flashQuiet = false; // sekmeye geri dönerken okunan yere vurgusuz gidilir
 function flashTo(id) {
-  requestAnimationFrame(() => { const it = document.getElementById(id); if (it) { it.scrollIntoView({block: 'center'}); it.classList.add('flash'); setTimeout(() => it.classList.remove('flash'), 1800); } });
+  const quiet = flashQuiet; flashQuiet = false;
+  requestAnimationFrame(() => { const it = document.getElementById(id); if (it) { it.scrollIntoView({block: 'center'}); if (quiet) return; it.classList.add('flash'); setTimeout(() => it.classList.remove('flash'), 1800); } });
 }
 let readObs = null, readTimer = 0;
 function trackRead(root, info) {
@@ -1826,6 +1837,46 @@ toTopEl.addEventListener('click', () => {
   if (view === 'main') window.scrollTo({top: 0, behavior: 'smooth'});
   else $('.list').scrollIntoView({block: 'start', behavior: 'smooth'});
 });
+// Alt sekmeler: başka sekmeye geçerken bulunulan görünüm ve kaydırma yeri hatırlanır; dönünce aynı yere gelinir
+// (kitaplarda kapanan bablar yeniden açılarak en son okunan rivayete gidilir). Açık sekmeye dokununca köke, köktaysa en üste dönülür.
+const tabMem = {};
+function restoreY(y) {
+  const t0 = performance.now();
+  const step = () => {
+    if (document.documentElement.scrollHeight >= y + innerHeight || performance.now() - t0 > 1500) window.scrollTo(0, y);
+    else requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
+}
+function goTab(t) {
+  const cur = tabOf(view);
+  if (t === cur) {
+    if (view !== TAB_ROOT[t]) setView(TAB_ROOT[t], true);
+    else window.scrollTo({top: 0, behavior: 'smooth'});
+    return;
+  }
+  tabMem[cur] = {view, y: scrollY};
+  const m = tabMem[t];
+  if (!m) { setView(TAB_ROOT[t], true); return; }
+  const last = RD.last[m.view], L = LIBS[m.view];
+  if (last && (m.view === 'usul' || (L && L.book != null && last.b === L.book))) {
+    ttsStop();
+    flashQuiet = true;
+    goTo(last.v, last.b, last.n);
+    setTimeout(() => { flashQuiet = false; }, 2000);
+    return;
+  }
+  ttsStop();
+  view = m.view;
+  searchEl.value = '';
+  renderCards();
+  restoreY(m.y);
+}
+document.querySelectorAll('.tab').forEach(b => b.addEventListener('click', () => goTab(b.dataset.tab)));
+// Klavye açıkken alt çubuk gizlenir (yoksa klavyenin üstüne biner).
+const KB_INPUT = el => el && el.matches && (el.matches('textarea') || (el.matches('input') && /^(text|search|email|number|tel|url|password)$/.test(el.type)));
+document.addEventListener('focusin', e => { if (KB_INPUT(e.target)) document.body.classList.add('kb'); });
+document.addEventListener('focusout', () => setTimeout(() => { if (!KB_INPUT(document.activeElement)) document.body.classList.remove('kb'); }, 60));
 // Yapışık bab başlığına dokunulduğunda bab kapanmaz, babın başına dönülür; zaten baştaysa her zamanki gibi kapanır.
 cardsEl.addEventListener('click', e => {
   const sum = e.target.closest('details.fq-cat > summary');
@@ -1897,7 +1948,7 @@ document.addEventListener('visibilitychange', () => {
 window.addEventListener('pageshow', checkDay);
 
 /* ---------- Başlat ---------- */
-$('#cntSelef').textContent = QUOTES.length + ' söz';
+{ const cs = $('#cntSelef'); if (cs) cs.textContent = QUOTES.length + ' söz'; }
 setTheme(S.theme);
 renderCards();
 if ('serviceWorker' in navigator) {

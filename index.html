@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="style.css">
 <title>Sekîne — Zikir ve İlim</title>
 </head>
-<body data-theme="classic" class="at-main">
+<body data-theme="classic" class="at-main" data-tab="zikir">
 <div class="app">
   <header>
     <div>
@@ -57,11 +57,12 @@
       <button data-view="aksam" aria-pressed="false"><span>☾ Akşam</span><small id="cntAksam">0 / 0</small></button>
       <button data-view="genel" aria-pressed="false"><span>📿 Genel</span><small id="cntGenel">0 / 0</small></button>
     </div>
-    <span class="section-title">Okuma</span>
-    <div class="evrad-controls">
-      <button data-view="selef" class="wide" aria-pressed="false"><span>📜 Sözler</span><small id="cntSelef">Âlimlerin sözleri</small></button>
-      <button data-view="fikih" aria-pressed="false" hidden><span>⚖️ Hanbelî Fıkhı</span><small>16 bölüm</small></button>
-      <button data-view="kutuphane" class="wide" aria-pressed="false"><span>📚 Kütüphane</span><small>Musannef · İbn Ebî Şeybe · Müsned · İmam Ahmed · Şerhu’s-Sünne · el-Âcurrî (eş-Şerîa) · el-Hallâl · Kaydettiklerim</small></button>
+    <!-- Sözler ve Kütüphane alt sekme çubuğuna taşındı; Hanbelî Fıkhı şimdilik gizli -->
+    <div id="okumaNav" hidden>
+      <span class="section-title">Okuma</span>
+      <div class="evrad-controls">
+        <button data-view="fikih" aria-pressed="false"><span>⚖️ Hanbelî Fıkhı</span><small>16 bölüm</small></button>
+      </div>
     </div>
   </nav>
 
@@ -185,6 +186,13 @@
 </dialog>
 
 <div id="ttsBar" class="tts-bar" hidden><span id="ttsBarT"></span><button type="button" id="ttsBarStop">■ Durdur</button></div>
+<nav class="tabbar" id="tabbar" aria-label="Ana bölümler">
+  <div class="tabbar-in">
+    <button type="button" class="tab" data-tab="zikir" aria-current="page"><span class="tab-ic" aria-hidden="true">📿</span>Zikir</button>
+    <button type="button" class="tab" data-tab="kutuphane"><span class="tab-ic" aria-hidden="true">📚</span>Kütüphane</button>
+    <button type="button" class="tab" data-tab="selef"><span class="tab-ic" aria-hidden="true">📜</span>Sözler</button>
+  </div>
+</nav>
 <div id="toast" role="status" aria-live="polite"></div>
 <button type="button" id="toTop" class="to-top" aria-label="Başa dön" title="Başa dön" tabindex="-1">↑</button>
 <label id="haptic" class="haptic" aria-hidden="true"><input type="checkbox" switch tabindex="-1"></label>

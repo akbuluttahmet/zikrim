@@ -430,7 +430,29 @@ body:not(.at-main) .hero{display:none}
 .fq-cat{scroll-margin-top:calc(env(safe-area-inset-top,0px) + 8px)}
 .list{scroll-margin-top:calc(env(safe-area-inset-top,0px) + 8px)}
 /* Başa dön düğmesi */
-.to-top{position:fixed;z-index:15;right:max(16px,env(safe-area-inset-right));bottom:max(18px,calc(env(safe-area-inset-bottom) + 6px));width:46px;height:46px;border-radius:50%;border:1px solid var(--border);background:var(--card);color:var(--accent);font-size:20px;font-weight:700;box-shadow:0 4px 14px rgb(0 0 0 / .14);opacity:0;transform:translateY(10px) scale(.9);pointer-events:none;transition:opacity .2s,transform .2s}
+.to-top{position:fixed;z-index:15;right:max(16px,env(safe-area-inset-right));bottom:calc(var(--tabb) + 14px);width:46px;height:46px;border-radius:50%;border:1px solid var(--border);background:var(--card);color:var(--accent);font-size:20px;font-weight:700;box-shadow:0 4px 14px rgb(0 0 0 / .14);opacity:0;transform:translateY(10px) scale(.9);pointer-events:none;transition:opacity .2s,transform .2s}
 .to-top.show{opacity:1;transform:none;pointer-events:auto}
-.tts-bar:not([hidden])~.to-top{bottom:calc(max(12px,env(safe-area-inset-bottom)) + 64px)}
+.tts-bar:not([hidden])~.to-top{bottom:calc(var(--tabb) + 76px)}
 body.no-scroll .to-top{display:none}
+
+/* ---------- Alt sekme çubuğu: Zikir · Kütüphane · Sözler ---------- */
+/* --tabh: çubuğun yüksekliği (çentik dahil); --tabb: alttaki sabit öğelerin (bildirim, sesli okuma, başa dön) oturacağı taban.
+   Klavye açıkken ve odak modunda çubuk gizlenir, taban yalnızca çentiğe iner. */
+:root{--tabh:calc(60px + env(safe-area-inset-bottom))}
+body{--tabb:var(--tabh)}
+body.kb,body.no-scroll{--tabb:max(12px,env(safe-area-inset-bottom))}
+html{scroll-padding-bottom:var(--tabh)}
+.app{padding-bottom:calc(var(--tabh) + 28px)}
+.tabbar{position:fixed;left:0;right:0;bottom:0;z-index:14;background:var(--card);border-top:1px solid var(--border);padding:5px max(8px,env(safe-area-inset-right)) env(safe-area-inset-bottom) max(8px,env(safe-area-inset-left));display:flex;justify-content:center}
+.tabbar-in{display:flex;width:100%;max-width:580px}
+.tab{flex:1;background:none;border:0;display:flex;flex-direction:column;align-items:center;gap:2px;padding:3px 0 6px;color:var(--muted);font-size:11px;font-weight:600;letter-spacing:.1px}
+.tab-ic{display:grid;place-items:center;width:52px;height:30px;border-radius:15px;font-size:18px;line-height:1;transition:background .15s}
+.tab[aria-current=page]{color:var(--accent)}
+.tab[aria-current=page] .tab-ic{background:var(--hero)}
+.tab:active .tab-ic{transform:scale(.94)}
+body.kb .tabbar,body.no-scroll .tabbar{display:none}
+#toast{bottom:calc(var(--tabb) + 12px)}
+body.no-scroll #toast{bottom:calc(120px + env(safe-area-inset-bottom))}
+.tts-bar{bottom:calc(var(--tabb) + 8px)}
+/* Zikir sekmesi dışında ana sayfa menüsü (Sabah · Akşam · Genel) gösterilmez */
+body:not([data-tab=zikir]) .home-nav{display:none}
