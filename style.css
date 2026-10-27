@@ -416,3 +416,4 @@ body[data-theme=night]{--paper:#1b2840;--paperb:#2f4260;--paperisn:#a9b5c8;--pap
 .tp-night{background:#0d1526}.tp-night i{background:#172339;border:1px solid #2a3a52}.tp-night b{background:#d8bb81}
 .daily{position:relative}
 .daily-star{top:6px;right:-6px}
+.evrad-controls button[hidden]{display:none}
