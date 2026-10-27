@@ -666,7 +666,7 @@ function renderFiqh() {
   cardsEl.append(books);
 }
 
-/* ---------- Usûlü's-Sünne (İmam Ahmed) — yalnızca Türkçe çeviri ---------- */
+/* ---------- Usûlü's-Sünne (İmam Ahmed) — Türkçe çeviri ve Arapça metin ---------- */
 const RAH = 'رحمه الله';
 function usulItem(u) {
   const [n, t, metin] = u;
@@ -674,11 +674,21 @@ function usulItem(u) {
   a.id = 'u' + n;
   a.dataset.n = n;
   a.append(el('p', 'mus-no', n ? `Madde ${n} · ${t}` : t));
+  const ar = typeof USUL_AR !== 'undefined' ? USUL_AR[n] : '';
+  if (ar) {
+    const box = el('div', 'ar-box'); box.lang = 'ar'; box.dir = 'rtl';
+    const k = arSplit(ar);
+    if (k > 0) box.append(el('p', 'ar-isn', ar.slice(0, k).trim()));
+    box.append(el('p', 'ar-mtn', ar.slice(k).trim()));
+    box.append(ttsBtn('ar', '▶', () => [{el: box, text: prepAr(TTS.arSened ? ar : ar.slice(k))}], 'tts-i', 'Arapçasını sesli oku'));
+    a.append(box);
+  }
   const sp = !n ? el('p', 'mus-sened', USUL_SENED) : null;
   if (sp) a.append(sp);
   const tp = el('p', 'mus-tr usul-tr', metin);
-  a.append(tp);
-  a.append(ttsRow([['tr', '▶ Türkçe', () => [TTS.trSened && sp ? {el: sp, text: prepTr(USUL_SENED)} : null, {el: tp, text: prepTr(metin)}]]]));
+  const row = el('div', 'tr-row');
+  row.append(tp, ttsBtn('tr', '▶', () => [TTS.trSened && sp ? {el: sp, text: prepTr(USUL_SENED)} : null, {el: tp, text: prepTr(metin)}], 'tts-i', 'Türkçesini sesli oku'));
+  a.append(row);
   const src = el('p', 'q-src', 'İmam Ahmed (');
   const r = el('bdi', null, RAH); r.lang = 'ar'; r.dir = 'rtl';
   src.append(r, '), Usûlü’s-Sünne' + (n ? `, madde ${n}` : ''));
