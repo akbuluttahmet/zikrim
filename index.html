@@ -185,6 +185,25 @@
   <p class="note center">Sekîne · sürüm 3.9</p>
 </dialog>
 
+<!-- Akış: görüntü (boyut ve zemin seçimi, önizleme) -->
+<dialog id="shotSheet" class="sheet shot-sheet">
+  <h2 tabindex="-1">Görüntü</h2>
+  <div class="shot-prev"><img id="shotImg" alt="Görüntü önizlemesi"></div>
+  <p class="set-cap">BOYUT</p>
+  <div class="seg" id="shotSize" role="group" aria-label="Boyut"><button type="button" data-v="post">Gönderi · 4:5</button><button type="button" data-v="story">Story · 9:16</button></div>
+  <p class="set-cap">ZEMİN</p>
+  <div class="seg" id="shotBg" role="group" aria-label="Zemin"><button type="button" data-v="tema">Tema</button><button type="button" data-v="kagit">Kâğıt</button><button type="button" data-v="lacivert">Lacivert</button><button type="button" data-v="kitap">Kitap rengi</button></div>
+  <div class="row"><button type="button" class="ghost" id="shotCancel">Vazgeç</button><button type="button" class="primary" id="shotGo">Paylaş</button></div>
+</dialog>
+
+<!-- Kaydedilenler: koleksiyona ekle -->
+<dialog id="colSheet" class="sheet col-sheet">
+  <h2 tabindex="-1">Koleksiyona ekle</h2>
+  <div id="colList" class="col-list"></div>
+  <div class="col-new"><input id="colNew" type="text" maxlength="40" placeholder="Yeni koleksiyon (ör. Sabır)" enterkeyhint="done" autocomplete="off"><button type="button" id="colAdd" class="ghost">Ekle</button></div>
+  <div class="row"><button type="button" class="primary" id="colDone">Bitti</button></div>
+</dialog>
+
 <div id="ttsBar" class="tts-bar" hidden><span id="ttsBarT"></span><button type="button" id="ttsBarStop">■ Durdur</button></div>
 <!-- Akış: rastgele rivayetler, tam ekran kartlar, yukarı kaydırarak geçilir -->
 <nav id="feedBar" class="feed-bar" hidden aria-label="Akışta kitap seçimi"></nav>

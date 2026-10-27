@@ -497,3 +497,34 @@ body[data-tab=akis] .app{visibility:hidden}
 /* Çift dokunuşta beliren yıldız */
 .fd-burst{position:absolute;z-index:2;font-size:84px;line-height:1;color:var(--accent);pointer-events:none;transform:translate(-50%,-50%) scale(.3);opacity:0;animation:fdBurst .85s ease-out forwards}
 @keyframes fdBurst{15%{opacity:.95;transform:translate(-50%,-50%) scale(1.15)}35%{transform:translate(-50%,-50%) scale(.95)}70%{opacity:.9;transform:translate(-50%,-62%) scale(1)}100%{opacity:0;transform:translate(-50%,-80%) scale(.9)}}
+/* Akış: isnad zinciri halka halka belirir (kart ekrana oturunca), son halka bir kez parlar */
+.fd-chain li{opacity:0;transform:translateY(-5px)}
+.fd-chain li:not(:last-child)::after{transform:scaleY(0);transform-origin:top}
+.fd-card.in .fd-chain li{animation:fdLink .32s ease-out forwards;animation-delay:calc(var(--i) * 85ms)}
+.fd-card.in .fd-chain li:not(:last-child)::after{animation:fdLine .25s ease-out forwards;animation-delay:calc(var(--i) * 85ms + 150ms)}
+.fd-card.in .fd-chain li.last::before{animation:fdGlow 1.1s ease-out 1;animation-delay:calc(var(--i) * 85ms + 220ms)}
+@keyframes fdLink{to{opacity:1;transform:none}}
+@keyframes fdLine{to{transform:scaleY(1)}}
+@keyframes fdGlow{0%{box-shadow:0 0 0 0 var(--accent)}100%{box-shadow:0 0 0 9px transparent}}
+@media (prefers-reduced-motion:reduce){.fd-chain li,.fd-card.in .fd-chain li{opacity:1;transform:none;animation:none}.fd-chain li:not(:last-child)::after,.fd-card.in .fd-chain li:not(:last-child)::after{transform:none;animation:none}}
+/* Görüntü sayfası */
+.shot-prev{display:grid;place-items:center;background:var(--bg);border:1px solid var(--border);border-radius:16px;padding:10px;margin-bottom:6px}
+.shot-prev img{display:block;height:min(38vh,320px);width:auto;border-radius:8px;box-shadow:0 4px 14px rgb(0 0 0 / .14)}
+.seg{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px}
+.seg button{padding:9px 12px;border-radius:999px;border:1px solid var(--border);background:var(--bg);color:var(--text);font-size:13.5px;font-weight:600;white-space:nowrap}
+.seg button[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:var(--accentText)}
+.shot-sheet .set-cap{margin:14px 0 7px}
+/* Koleksiyonlar */
+.col-list{display:flex;flex-direction:column;gap:6px;max-height:42vh;overflow:auto}
+.sheet label.col-row{display:flex;align-items:center;gap:12px;margin:0;padding:12px 14px;border:1px solid var(--border);border-radius:13px;background:var(--bg);font-size:15px;font-weight:600;color:var(--text);cursor:pointer}
+.col-row input{width:20px;height:20px;accent-color:var(--accent);margin:0}
+.col-row small{margin-left:auto;color:var(--muted);font-weight:600}
+.col-empty{margin:4px 0 10px;color:var(--muted);font-size:14px}
+.col-new{display:flex;gap:8px;margin-top:12px;align-items:stretch}
+.sheet .col-new input{margin:0;flex:1}
+.col-new .ghost{flex:none;padding:0 16px}
+.col-chips{display:flex;gap:7px;overflow-x:auto;padding:2px 0 10px;scrollbar-width:none}
+.col-chips::-webkit-scrollbar{display:none}
+.col-chips .fd-chip small{margin-left:5px;opacity:.75}
+.saved-col{margin-top:8px}
+.col-del{margin:-2px 0 10px;font-size:13px;color:var(--danger);background:none;border:0;padding:4px 0}

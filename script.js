@@ -1045,7 +1045,7 @@ function libFilter(L) {
 
 /* ---------- Kütüphane: okumaya devam et, kaydettiklerim, yazı boyutu ---------- */
 const store = {get(k, d) { try { const v = JSON.parse(localStorage.getItem(k)); return v == null ? d : v; } catch (e) { return d; } }, set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }};
-const RD = {last: store.get('zikrim-last', {}), saved: store.get('zikrim-saved', []), fs: store.get('zikrim-fs', 16)};
+const RD = {last: store.get('zikrim-last', {}), saved: store.get('zikrim-saved', []), fs: store.get('zikrim-fs', 16), cols: store.get('zikrim-koleksiyonlar', []), colFilter: ''};
 // Bir kereye mahsus: el-Akîde (İmam Ahmed kitaplığında 1. sıra) kaldırıldı; sonraki kitapların sıra numarası bir azalır
 if (!store.get('zikrim-ahmed-akide', false)) {
   const sh = b => b === 1 ? null : b > 1 ? b - 1 : b;
@@ -1337,12 +1337,65 @@ async function toggleSavePick({v, b, n}) {
       if (!h) return false;
       RD.saved.unshift({k, at: Date.now(), v, b, h, title: meta.tr});
     } catch (e) { toast('Kaydedilemedi; internet bağlantını kontrol et'); return false; }
-    toast('Kaydettiklerime eklendi');
+    toast('Kaydettiklerime eklendi', {label: 'Koleksiyona ekle', run: () => colOpen(k)});
   }
   store.set('zikrim-saved', RD.saved);
   const c = $('#cntSaved'); if (c) c.textContent = RD.saved.length;
   return true;
 }
+
+/* ---------- Koleksiyonlar: kaydedilenler klasörlere ayrılır (Sabır, Anne-baba…) ----------
+   Adlar `zikrim-koleksiyonlar` anahtarında; bir kaydın koleksiyonları kaydın kendisinde (`c` dizisi). */
+const colSheet = $('#colSheet');
+let colKey = null;
+const colSave = () => { store.set('zikrim-koleksiyonlar', RD.cols); store.set('zikrim-saved', RD.saved); };
+const colCount = name => RD.saved.filter(x => (x.c || []).includes(name)).length;
+function colOpen(k) {
+  const x = RD.saved.find(y => y.k === k);
+  if (!x) return;
+  colKey = k;
+  colPaint();
+  $('#colNew').value = '';
+  colSheet.showModal();
+}
+function colPaint() {
+  const x = RD.saved.find(y => y.k === colKey);
+  const list = $('#colList');
+  list.replaceChildren();
+  if (!RD.cols.length) list.append(el('p', 'col-empty', 'Henüz koleksiyon yok. Aşağıdan bir ad yazıp ekle.'));
+  for (const name of RD.cols) {
+    const row = el('label', 'col-row');
+    const cb = document.createElement('input');
+    cb.type = 'checkbox';
+    cb.checked = !!(x && (x.c || []).includes(name));
+    cb.addEventListener('change', () => {
+      if (!x) return;
+      const set = new Set(x.c || []);
+      if (cb.checked) set.add(name); else set.delete(name);
+      x.c = RD.cols.filter(n => set.has(n));
+      colSave();
+      row.querySelector('small').textContent = colCount(name);
+    });
+    row.append(cb, el('span', null, name), el('small', null, String(colCount(name))));
+    list.append(row);
+  }
+}
+function colAdd() {
+  const inp = $('#colNew');
+  const name = inp.value.trim().replace(/\s+/g, ' ');
+  if (!name) return;
+  if (!RD.cols.some(n => n.toLocaleLowerCase('tr') === name.toLocaleLowerCase('tr'))) RD.cols.push(name);
+  const x = RD.saved.find(y => y.k === colKey);
+  const real = RD.cols.find(n => n.toLocaleLowerCase('tr') === name.toLocaleLowerCase('tr'));
+  if (x) { const set = new Set(x.c || []); set.add(real); x.c = RD.cols.filter(n => set.has(n)); }
+  colSave();
+  inp.value = '';
+  colPaint();
+}
+$('#colAdd').addEventListener('click', colAdd);
+$('#colNew').addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); colAdd(); } });
+$('#colDone').addEventListener('click', () => colSheet.close());
+colSheet.addEventListener('close', () => { colKey = null; if (view === 'kaydedilen') renderCards(); });
 
 /* ---------- Akış: bütün kitaplıklardan rastgele rivayetler, tam ekran kartlarla ---------- */
 // Havuz (seçili kitaplığa göre süzülür) oturum başında bir kez karıştırılır, aynı rivayet tekrar çıkmaz. Kartlar sona yaklaştıkça eklenir.
@@ -1392,7 +1445,7 @@ function feedBar() {
 }
 function feedReset() {
   FEED.pool = FEED.filter ? FEED.all.filter(p => p.v === FEED.filter) : FEED.all;
-  FEED.i = 0; FEED.y = 0;
+  FEED.i = 0; FEED.y = 0; FEED.cur = null;
   feedEl.replaceChildren();
   feedEl.scrollTop = 0;
   feedMore(6);
@@ -1407,7 +1460,7 @@ function feedCard(p, first) {
   if (names.length) {
     const ol = el('ol', 'fd-chain');
     ol.setAttribute('aria-label', 'İsnad');
-    names.forEach((nm, i) => ol.append(el('li', i === names.length - 1 ? 'last' : null, nm)));
+    names.forEach((nm, i) => { const li = el('li', i === names.length - 1 ? 'last' : null, nm); li.style.setProperty('--i', i); ol.append(li); });
     box.append(el('span', 'fd-isn-h', 'İsnad'), ol);
   }
   const t = el('p', 'fd-t' + (p.t.length < 140 ? ' s' : p.t.length > 300 ? ' l' : ''), p.t);
@@ -1426,7 +1479,7 @@ function feedCard(p, first) {
   open.addEventListener('click', () => { ttsStop(); goTo(p.v, p.b, p.n); });
   const shot = el('button', null, '📸');
   shot.type = 'button'; shot.setAttribute('aria-label', 'Görüntü olarak kaydet ya da paylaş'); shot.title = 'Görüntü olarak kaydet';
-  shot.addEventListener('click', () => feedShot(p));
+  shot.addEventListener('click', () => shotOpen(p));
   side.append(star, open, shot);
   a.append(box, side);
   if (first) box.append(el('span', 'fd-hint', '↑ Kaydır · çift dokununca kaydet'));
@@ -1443,20 +1496,31 @@ function feedMore(count) {
     feedEl.append(card);
     const box = card.firstChild;
     if (box.scrollHeight > box.clientHeight + 2) { card.remove(); continue; } // ekrana sığmıyor: atla
+    if (FEED.obs) FEED.obs.observe(card); else card.classList.add('in');
     added++;
   }
   if (FEED.i >= FEED.pool.length && !feedEl.querySelector('.fd-end')) feedEl.append(el('div', 'fd-card fd-msg fd-end', feedEl.querySelector('.fd-card') ? 'Bu seçimdeki bütün rivayetleri gördün. Akış yeniden açıldığında yeniden karışır.' : 'Bu kitapta ekrana sığan rivayet bulunamadı.'));
   FEED.busy = false;
 }
-// Ekran görüntüsü: kart, o anki temanın renkleriyle 1080 px genişliğinde bir görsele çizilir (isnad zinciri, metin, kaynak, bab
-// ve altta “Sekîne”). Paylaşım menüsü aynı dokunuşun içinde açılsın diye görsel eşzamanlı üretilir (toDataURL).
-function feedShot(p) {
+// Görüntü: kart 1080 px genişliğinde bir görsele çizilir (isnad zinciri, metin, kaynak, bab, altta “Sekîne”).
+// Boyut: Gönderi 4:5 (en az 1350 px) ya da Story 9:16 (en az 1920 px). Zemin: o anki tema, Kâğıt, Lacivert ya da kitabın raftaki kapak rengi.
+const SHOT_PAL = {
+  kagit: {bg: '#faf4ea', card: '#fffdf8', border: '#e9dbc8', text: '#4a3526', muted: '#94795b', accent: '#a97743'},
+  lacivert: {bg: '#0d1526', card: '#172339', border: '#2a3a52', text: '#f3f5fc', muted: '#a8b5c9', accent: '#d8bb81'}
+};
+const bookColor = p => { for (const sh of SHELVES) for (const bk of sh.books) if (bk.v === p.v && (bk.b == null || bk.b === p.b)) return bk.col; return '#4d8062'; };
+function shotPalette(p, bg) {
+  if (SHOT_PAL[bg]) return SHOT_PAL[bg];
+  if (bg === 'kitap') return {bg: bookColor(p), card: 'rgba(255,255,255,0.09)', border: 'rgba(255,255,255,0.24)', text: '#ffffff', muted: 'rgba(255,255,255,0.74)', accent: '#ffffff'};
   const css = getComputedStyle(document.body), col = n => css.getPropertyValue(n).trim() || '#000';
-  const C = {bg: col('--bg'), card: col('--card'), border: col('--border'), text: col('--text'), muted: col('--muted'), accent: col('--accent')};
+  return {bg: col('--bg'), card: col('--card'), border: col('--border'), text: col('--text'), muted: col('--muted'), accent: col('--accent')};
+}
+function shotCanvas(p, size = 'post', bg = 'tema') {
+  const C = shotPalette(p, bg);
   const FAM = getComputedStyle(document.documentElement).fontFamily || 'sans-serif';
-  const W = 1080, PAD = 64, IN = 72, TX = PAD + IN, TW = W - 2 * TX;
+  const W = 1080, PAD = 64, IN = 72, TX = PAD + IN, TW = W - 2 * TX, FOOT = 130;
   const cv = document.createElement('canvas'), ctx = cv.getContext('2d');
-  const font = (w, size, style = '') => `${style} ${w} ${size}px ${FAM}`.trim();
+  const font = (w, sz, style = '') => `${style} ${w} ${sz}px ${FAM}`.trim();
   const wrap = (txt, f, maxW) => {
     ctx.font = f;
     const lines = [];
@@ -1470,35 +1534,38 @@ function feedShot(p) {
     }
     return lines;
   };
-  // Önce yerleşimi hesapla, sonra yüksekliğe göre çiz
+  // Önce yerleşim, sonra çizim
   const names = p.s ? p.s.split(/\s*→\s*/).filter(Boolean) : [];
-  const NAME = font(400, 32), NAME_B = font(700, 32), TXT = font(400, p.t.length < 140 ? 48 : p.t.length > 300 ? 40 : 44), SRC = font(400, 28), BAB = font(400, 28, 'italic');
-  const txtLH = p.t.length < 140 ? 72 : p.t.length > 300 ? 62 : 67;
+  const NAME = font(400, 32), NAME_B = font(700, 32), SRC = font(400, 28), BAB = font(400, 28, 'italic');
+  const big = size === 'story' ? 4 : 0;
+  const TXT = font(400, (p.t.length < 140 ? 48 : p.t.length > 300 ? 40 : 44) + big);
+  const txtLH = (p.t.length < 140 ? 72 : p.t.length > 300 ? 62 : 67) + big * 1.5;
   const chain = names.map((nm, i) => wrap(nm, i === names.length - 1 ? NAME_B : NAME, TW - 44));
   const body = wrap(p.t, TXT, TW);
   const srcTxt = feedSrc(p), src = wrap(srcTxt, SRC, TW);
   const bab = p.bab && !srcTxt.includes(p.bab) ? wrap('Bab: ' + p.bab, BAB, TW) : [];
-  let h = IN + (names.length ? 40 + chain.reduce((s, l) => s + l.length * 42 + 10, 0) + 34 : 0) + body.length * txtLH + 34 + src.length * 40 + (bab.length ? 12 + bab.length * 40 : 0) + IN;
-  const cardH = h, H = Math.max(1350, PAD + cardH + 130);
+  const cardH = IN + (names.length ? 40 + chain.reduce((t, l) => t + l.length * 42 + 10, 0) + 34 : 0) + body.length * txtLH + 34 + src.length * 40 + (bab.length ? 12 + bab.length * 40 : 0) + IN;
+  const H = Math.max(size === 'story' ? 1920 : 1350, PAD + cardH + FOOT);
   cv.width = W; cv.height = H;
   ctx.fillStyle = C.bg; ctx.fillRect(0, 0, W, H);
-  const top = Math.round((H - 130 - cardH) / 2);
-  ctx.beginPath(); if (ctx.roundRect) ctx.roundRect(PAD, top, W - 2 * PAD, cardH, 48); else ctx.rect(PAD, top, W - 2 * PAD, cardH); // roundRect: iOS 16+ ctx.fillStyle = C.card; ctx.fill();
+  const top = Math.round((H - FOOT - cardH) / 2 + (size === 'story' ? 10 : 0));
+  ctx.beginPath(); if (ctx.roundRect) ctx.roundRect(PAD, top, W - 2 * PAD, cardH, 48); else ctx.rect(PAD, top, W - 2 * PAD, cardH); // roundRect: iOS 16+
+  ctx.fillStyle = C.card; ctx.fill();
   ctx.lineWidth = 2; ctx.strokeStyle = C.border; ctx.stroke();
   ctx.textBaseline = 'alphabetic';
   let y = top + IN;
   if (names.length) {
-    ctx.font = font(700, 22); ctx.fillStyle = C.muted; ctx.fillText('İ S N A D', TX, y + 22); y += 40 + 12;
+    ctx.font = font(700, 22); ctx.fillStyle = C.muted; ctx.fillText('İ S N A D', TX, y + 22); y += 52;
     chain.forEach((lines, i) => {
       const last = i === names.length - 1, dotY = y + 12;
       if (!last) { ctx.fillStyle = C.border; ctx.fillRect(TX + 10, dotY + 12, 3, lines.length * 42 + 10 - 12); }
       ctx.beginPath(); ctx.arc(TX + 11.5, dotY, 9, 0, Math.PI * 2);
-      if (last) { ctx.fillStyle = C.accent; ctx.fill(); } else { ctx.fillStyle = C.card; ctx.fill(); ctx.lineWidth = 3; ctx.strokeStyle = C.muted; ctx.stroke(); }
+      if (last) { ctx.fillStyle = C.accent; ctx.fill(); } else { ctx.fillStyle = C.bg; ctx.fill(); ctx.lineWidth = 3; ctx.strokeStyle = C.muted; ctx.stroke(); }
       ctx.font = last ? NAME_B : NAME; ctx.fillStyle = last ? C.accent : C.muted;
       lines.forEach((ln, k) => ctx.fillText(ln, TX + 44, y + 24 + k * 42));
       y += lines.length * 42 + 10;
     });
-    y += 34 - 12;
+    y += 22;
   }
   ctx.font = TXT; ctx.fillStyle = C.text;
   body.forEach((ln, k) => ctx.fillText(ln, TX, y + txtLH * 0.75 + k * txtLH));
@@ -1509,13 +1576,14 @@ function feedShot(p) {
   if (bab.length) { ctx.font = BAB; y += 12; bab.forEach((ln, k) => ctx.fillText(ln, TX, y + 28 + k * 40)); }
   ctx.textAlign = 'center';
   ctx.font = font(700, 36); ctx.fillStyle = C.accent; ctx.fillText('Sekîne ✦', W / 2, H - 70);
-  // Paylaş (iOS: Görüntüyü Kaydet); paylaşım yoksa dosyayı indir
+  return cv;
+}
+// Paylaşım menüsü aynı dokunuşun içinde açılsın diye görsel eşzamanlı dosyaya çevrilir (toDataURL)
+function shareCanvas(cv, name) {
   const url = cv.toDataURL('image/png');
   const bin = atob(url.split(',')[1]), buf = new Uint8Array(bin.length);
   for (let i = 0; i < bin.length; i++) buf[i] = bin.charCodeAt(i);
-  const name = `sekine-${p.v}-${String(p.n).replace('.', '_')}.png`;
   const file = new File([buf], name, {type: 'image/png'});
-  haptic(false);
   if (navigator.canShare && navigator.canShare({files: [file]})) {
     navigator.share({files: [file]}).catch(e => { if (e && e.name !== 'AbortError') toast('Paylaşılamadı'); });
   } else {
@@ -1523,6 +1591,39 @@ function feedShot(p) {
     toast('Görüntü indirildi');
   }
 }
+// 📸 sayfası: boyut ve zemin seçilir, önizleme anında güncellenir; seçim `zikrim-akis-gorsel`'de hatırlanır
+const shotSheet = $('#shotSheet');
+const SHOT = Object.assign({size: 'post', bg: 'tema'}, store.get('zikrim-akis-gorsel', {}), {p: null, cv: null});
+function shotPaint() {
+  for (const [id, key] of [['#shotSize', 'size'], ['#shotBg', 'bg']]) $(id).querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.v === SHOT[key])));
+  SHOT.cv = shotCanvas(SHOT.p, SHOT.size, SHOT.bg);
+  $('#shotImg').src = SHOT.cv.toDataURL('image/jpeg', 0.7);
+}
+function shotOpen(p) { SHOT.p = p; shotPaint(); shotSheet.showModal(); }
+for (const [id, key] of [['#shotSize', 'size'], ['#shotBg', 'bg']]) $(id).addEventListener('click', e => {
+  const b = e.target.closest('button[data-v]'); if (!b) return;
+  SHOT[key] = b.dataset.v; store.set('zikrim-akis-gorsel', {size: SHOT.size, bg: SHOT.bg}); shotPaint();
+});
+$('#shotGo').addEventListener('click', () => {
+  if (!SHOT.cv) return;
+  haptic(false);
+  shareCanvas(SHOT.cv, `sekine-${SHOT.p.v}-${String(SHOT.p.n).replace('.', '_')}-${SHOT.size}.png`);
+  shotSheet.close();
+});
+$('#shotCancel').addEventListener('click', () => shotSheet.close());
+// Kart ekrana oturunca: zincir halka halka belirir ve (kullanıcı kaydırdıysa) hafif titreşim
+if ('IntersectionObserver' in window) {
+  FEED.obs = new IntersectionObserver(es => {
+    for (const e of es) {
+      if (!e.isIntersecting || e.intersectionRatio < 0.6 || !e.target._p) continue;
+      e.target.classList.add('in');
+      if (FEED.cur && FEED.cur !== e.target && performance.now() - FEED.touchAt < 1500) haptic(false);
+      FEED.cur = e.target;
+    }
+  }, {root: feedEl, threshold: [0.6]});
+}
+FEED.touchAt = 0;
+for (const ev of ['touchend', 'pointerup', 'wheel']) feedEl.addEventListener(ev, () => { FEED.touchAt = performance.now(); }, {passive: true});
 // Çift dokunuş: kaydeder (zaten kayıtlıysa çıkarmaz), dokunulan yerde yıldız belirir, hafif titreşir
 async function feedLike(card, x, y) {
   const r = card.getBoundingClientRect();
@@ -1694,10 +1795,39 @@ function coverProgress(bk, fill, pct) {
 }
 function renderSaved() {
   const head = el('div', 'mus-head');
-  head.append(el('small', 'mus-book-n', RD.saved.length ? `${RD.saved.length} kayıt · yıldıza dokununca listeden çıkar` : 'Henüz kayıt yok. Bir hadisin köşesindeki ☆ işaretine dokunarak buraya ekleyebilirsin.'), fsBar());
+  if (RD.colFilter && !RD.cols.includes(RD.colFilter)) RD.colFilter = '';
+  const items = RD.colFilter ? RD.saved.filter(x => (x.c || []).includes(RD.colFilter)) : RD.saved;
+  if (RD.cols.length) {
+    const chips = el('div', 'col-chips');
+    const chip = (name, label, n) => {
+      const b = el('button', 'fd-chip', label);
+      b.type = 'button';
+      b.append(el('small', null, String(n)));
+      b.setAttribute('aria-pressed', String(RD.colFilter === name));
+      b.addEventListener('click', () => { RD.colFilter = name; renderCards(); });
+      return b;
+    };
+    chips.append(chip('', 'Tümü', RD.saved.length));
+    for (const name of RD.cols) chips.append(chip(name, '📁 ' + name, colCount(name)));
+    head.append(chips);
+    if (RD.colFilter) {
+      const del = el('button', 'col-del', `“${RD.colFilter}” koleksiyonunu sil`);
+      del.type = 'button';
+      del.addEventListener('click', () => {
+        const name = RD.colFilter;
+        if (!confirm(`“${name}” koleksiyonu silinsin mi? Kayıtlar Kaydettiklerim'de kalır.`)) return;
+        RD.cols = RD.cols.filter(n => n !== name);
+        for (const x of RD.saved) if (x.c) x.c = x.c.filter(n => n !== name);
+        RD.colFilter = '';
+        colSave(); renderCards();
+      });
+      head.append(del);
+    }
+  }
+  head.append(el('small', 'mus-book-n', RD.saved.length ? (RD.colFilter ? `${items.length} kayıt · “${RD.colFilter}”` : `${RD.saved.length} kayıt · yıldıza dokununca listeden çıkar · 📁 ile koleksiyona ekle`) : 'Henüz kayıt yok. Bir hadisin köşesindeki ☆ işaretine dokunarak buraya ekleyebilirsin.'), fsBar());
   head.dataset.search = '';
   cardsEl.append(head);
-  for (const x of RD.saved) {
+  for (const x of items) {
     let a;
     if (x.v === 'usul') a = usulItem(x.u);
     else { const L = LIBS[x.v]; const keep = L.book; L.book = x.b; a = libItem(L, x.h); L.book = keep; }
@@ -1707,8 +1837,11 @@ function renderSaved() {
     go.type = 'button';
     const n = x.v === 'usul' ? x.u[0] : x.h[0];
     go.addEventListener('click', () => goTo(x.v, x.b, n));
-    a.append(go);
-    a.dataset.search = [LIB_NAMES[x.v], x.title, ...(x.h || x.u).filter(v => typeof v === 'string')].join(' ');
+    const cb = el('button', 'chip-button saved-col', x.c && x.c.length ? '📁 ' + x.c.join(' · ') : '📁 Koleksiyona ekle');
+    cb.type = 'button';
+    cb.addEventListener('click', () => colOpen(x.k));
+    a.append(go, cb);
+    a.dataset.search = [LIB_NAMES[x.v], x.title, ...(x.c || []), ...(x.h || x.u).filter(v => typeof v === 'string')].join(' ');
     cardsEl.append(a);
   }
 }
