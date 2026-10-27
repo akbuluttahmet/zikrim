@@ -3,17 +3,17 @@
 import json, re, collections, os
 R = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..') + '/'
 bad = 0
-for v in ['musannef', 'musned']:
+for v in ['musannef', 'musned', 'berbehari', 'acurri']:
     idx = json.load(open(f'{R}{v}/index.json'))
     for b in idx:
         if not b.get('t'): continue
         d = json.load(open(f'{R}{v}/tr/' + b['f']))
         nums = [h[0] for bb in d['babs'] for h in bb['h']]
         p = []
-        if len(nums) != b['t']: p.append(f"index t={b['t']} ama dosyada {len(nums)}")
+        if v in ('musannef', 'musned') and len(nums) != b['t']: p.append(f"index t={b['t']} ama dosyada {len(nums)}")
         dup = [n for n, c in collections.Counter(nums).items() if c > 1]
         if dup: p.append(f'tekrar no: {dup[:5]}')
-        out = [n for n in nums if not b['from'] <= n <= b['to']]
+        out = [n for n in nums if not b['from'] <= n < b['to'] + 1]
         if out: p.append(f'aralık dışı: {out[:5]}')
         if nums != sorted(nums): p.append('sıra bozuk')
         for bb in d['babs']:

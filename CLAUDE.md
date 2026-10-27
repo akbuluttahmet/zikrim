@@ -4,7 +4,7 @@ Bu repoda çalışan her oturum (Claude Code, başka sohbetler) bu kurallara uya
 
 ## Uygulama
 
-- **Sekîne**: Zikir sayacı, hadis kütüphanesi (Musannef, Müsned, Usûlü's-Sünne), Sözler ve Hanbelî fıkhından oluşan, telefonun ana ekranına eklenen bir PWA. Adres: https://akbuluttahmet.github.io/zikrim/ (GitHub Pages, `main` dalı).
+- **Sekîne**: Zikir sayacı, hadis kütüphanesi (Musannef, Müsned, Usûlü's-Sünne, Şerhu's-Sünne, el-Âcurrî), Sözler ve Hanbelî fıkhından oluşan, telefonun ana ekranına eklenen bir PWA. Adres: https://akbuluttahmet.github.io/zikrim/ (GitHub Pages, `main` dalı).
 - Derleme adımı yok, düz HTML/CSS/JS: `index.html`, `script.js`, `style.css`, `fikih.js`, `usul.js`, `sw.js`, `manifest.webmanifest`.
 - Veriler: `musannef/` ve `musned/` (her biri `index.json` + `tr/*.json`), `gunun.json` (günün rivayeti havuzu).
 - **Adres ve `localStorage` anahtarları (`zikrim-…`) değiştirilmez.** Değişirse kullanıcının verileri (sayaçlar, seri, kayıtlar) kaybolur. Uygulamanın adı Sekîne olsa da repo/klasör adı `zikrim` kalır.
@@ -40,6 +40,9 @@ Bu repoda çalışan her oturum (Claude Code, başka sohbetler) bu kurallara uya
 - **Musannef:** İbn Ebî Şeybe, Kemâl Yûsuf el-Hût neşri (Riyad: Mektebetü’r-Rüşd, 1409); Şâmile no. 9944.
 - **Müsned:** İmam Ahmed, Şuayb el-Arnaût tahkiki, Müessesetü’r-Risâle (1421/2001); Şâmile no. 25794. Tahkik dipnotları alınmaz.
 - **Şerhu’s-Sünne (el-Berbehârî):** Şâmile no. 8601, OpenITI kopyası `0329Barbahari.SharhSunna.Shamela0008601-ara1`. Veri `berbehari/` klasöründe; mukaddime (0) ve 156 madde. Köşeli parantez [ ] neşrin eklemeleridir; Türkçede de korunur.
+- **el-Âcurrî kitapları:** Veri `acurri/` klasöründe (`index.json` + `tr/aNN.json`), OpenITI `0360Ajurri.*` kopyalarından.
+  - a01 Ahlâku Ehli’l-Kur’ân: Şâmile no. 10531 (Dârü’l-Kütübi’l-İlmiyye neşri). Sonundaki “mülhak” kısmı ayrı bab olarak 90.01–90.11 anahtarlarıyla eklidir.
+  - Kesirli numaralar (ör. 21.1) rivayetler arasındaki Âcurrî’nin kendi sözleridir; uygulamada “Ara metin” diye görünür. 0 = mukaddime.
 - Arapça metinler Şâmile'deki aynı neşirden aynen alınır. Toplu metin için OpenITI GitHub kopyaları kullanılabilir (`raw.githubusercontent.com/OpenITI/...`).
 
 ## Veri biçimi

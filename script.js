@@ -508,9 +508,9 @@ const QUOTES = [
 /* ---------- Kartlar ---------- */
 const cardsEl = $('#cards');
 const MSET = new Set(MORNING), ESET = new Set(EVENING);
-const VIEWS = {main: 'Sekîne', sabah: '☀︎ Sabah Zikirleri', aksam: '☾ Akşam Zikirleri', genel: '📿 Genel Zikirler', selef: '📜 Sözler', fikih: '⚖️ Hanbelî Fıkhı', musannef: '📚 Musannef', musned: '📗 Müsned', usul: '📘 Usûlü’s-Sünne', berbehari: '📕 Şerhu’s-Sünne', kutuphane: '📚 Kütüphane', kaydedilen: '☆ Kaydettiklerim'};
-const LIB_CHILD = new Set(['musannef', 'musned', 'usul', 'berbehari', 'kaydedilen']);
-const READ_VIEWS = new Set(['selef', 'fikih', 'musannef', 'musned', 'usul', 'berbehari', 'kutuphane', 'kaydedilen']);
+const VIEWS = {main: 'Sekîne', sabah: '☀︎ Sabah Zikirleri', aksam: '☾ Akşam Zikirleri', genel: '📿 Genel Zikirler', selef: '📜 Sözler', fikih: '⚖️ Hanbelî Fıkhı', musannef: '📚 Musannef', musned: '📗 Müsned', usul: '📘 Usûlü’s-Sünne', berbehari: '📕 Şerhu’s-Sünne', acurri: '📙 el-Âcurrî', kutuphane: '📚 Kütüphane', kaydedilen: '☆ Kaydettiklerim'};
+const LIB_CHILD = new Set(['musannef', 'musned', 'usul', 'berbehari', 'acurri', 'kaydedilen']);
+const READ_VIEWS = new Set(['selef', 'fikih', 'musannef', 'musned', 'usul', 'berbehari', 'acurri', 'kutuphane', 'kaydedilen']);
 let view = 'main';
 const isGenel = z => !MSET.has(z.id) && !ESET.has(z.id);
 const inView = z => view === 'sabah' ? MSET.has(z.id) : view === 'aksam' ? ESET.has(z.id) : view === 'genel' ? isGenel(z) : false;
@@ -542,7 +542,7 @@ function renderCards() {
   document.querySelectorAll('[data-view]').forEach(b => { const on = b.dataset.view === view || (b.dataset.view === 'kutuphane' && LIB_CHILD.has(view)); b.classList.toggle('active', on); b.setAttribute('aria-pressed', String(on)); });
   $('#empty').hidden = list.length > 0 || READ_VIEWS.has(view);
   document.body.classList.toggle('view-selef', READ_VIEWS.has(view));
-  searchEl.placeholder = view === 'kutuphane' ? 'Kitap ya da âlim ara…' : view === 'kaydedilen' ? 'Kaydettiklerinde ara…' : view === 'selef' ? 'Söz ara (âlim, anlam, kaynak)…' : view === 'fikih' ? 'Fıkıhta ara (ör. mesh, cuma, zekât)…' : view === 'usul' ? 'Risalede ara (ör. kader, havz, cuma)…' : LIBS[view] ? (LIBS[view].book == null && !LIBS[view].single ? `${LIBS[view].unit === 'kitap' ? 'Kitap' : 'Bölüm'} ara ya da ${LIBS[view].item} no. yaz (ör. ${LIBS[view].ex})…` : `Bu ${LIBS[view].unit === 'kitap' ? 'kitapta' : 'bölümde'} ara ya da ${LIBS[view].item} no. yaz…`) : 'Zikir ara (ad, anlam, okunuş)…';
+  searchEl.placeholder = view === 'kutuphane' ? 'Kitap ya da âlim ara…' : view === 'kaydedilen' ? 'Kaydettiklerinde ara…' : view === 'selef' ? 'Söz ara (âlim, anlam, kaynak)…' : view === 'fikih' ? 'Fıkıhta ara (ör. mesh, cuma, zekât)…' : view === 'usul' ? 'Risalede ara (ör. kader, havz, cuma)…' : LIBS[view] ? (LIBS[view].book == null && LIBS[view].nogo ? 'Kitap ara…' : LIBS[view].book == null && !LIBS[view].single ? `${LIBS[view].unit === 'kitap' ? 'Kitap' : 'Bölüm'} ara ya da ${LIBS[view].item} no. yaz (ör. ${LIBS[view].ex})…` : `Bu ${LIBS[view].unit === 'kitap' ? 'kitapta' : 'bölümde'} ara ya da ${LIBS[view].item} no. yaz…`) : 'Zikir ara (ad, anlam, okunuş)…';
   if (view === 'selef') { renderQuotes(); applyFilter(); update(); return; }
   if (view === 'fikih') { renderFiqh(); applyFilter(); update(); return; }
   if (LIBS[view]) { renderLib(LIBS[view]); update(); return; }
@@ -720,6 +720,10 @@ LIBS.berbehari = {base: 'berbehari/', key: 'zikrim-berb', unit: 'kitap', item: '
   label: n => n ? `Madde ${n}` : 'Mukaddime',
   src: n => `el-Berbehârî, Şerhu’s-Sünne, ${n ? 'madde ' + n : 'mukaddime'}`,
   note: 'Ebû Muhammed el-Hasan b. Ali b. Halef el-Berbehârî (ö. 329), Şerhu’s-Sünne — Türkçe çeviri. Çeviri ve Arapça metin, el-Mektebetü’ş-Şâmile’deki nüshadan (no. 8601) alınmıştır; madde numaraları bu nüshaya göredir. Köşeli parantez [ ] içindeki kısımlar neşirde eklenen yerlerdir. Kitabın Berbehârî’ye nisbeti bazı araştırmacılarca tartışılmıştır.'};
+LIBS.acurri = {base: 'acurri/', key: 'zikrim-acurri', unit: 'kitap', item: 'rivayet', ex: 12, err: 'Âcurrî', nogo: true, bookKey: true,
+  label: (n, h) => (h && h[4] && h[4].l) || (n === 0 ? 'Mukaddime' : Number.isInteger(n) ? `No. ${n}` : 'Ara metin'),
+  src: (n, m) => `el-Âcurrî, ${m ? m.tr : ''}${n === 0 ? ', mukaddime' : Number.isInteger(n) ? ', no. ' + n : ''}`,
+  note: 'Ebû Bekir Muhammed b. el-Hüseyin el-Âcurrî (ö. 360) — kitapları, Türkçe çeviri ve Arapça metniyle. Çeviri ve Arapça metin el-Mektebetü’ş-Şâmile’deki nüshalardan alınmıştır; numaralar bu nüshalara göredir. “Ara metin” diye gösterilen kısımlar, rivayetlerin arasındaki Âcurrî’nin kendi sözleridir. Kitaplar çevrildikçe sırayla eklenecek.'};
 for (const [k, L] of Object.entries(LIBS)) {
   Object.assign(L, {view: k, idx: null, book: null, data: null, token: 0, target: null, cache: {}});
   try { const b = JSON.parse(localStorage.getItem(L.key) || 'null'); if (Number.isInteger(b)) L.book = b; } catch (e) {}
@@ -733,6 +737,7 @@ async function libFetch(L, p) {
   if (!r.ok) throw new Error(p + ' ' + r.status);
   return (L.cache[p] = await r.json());
 }
+const libPick = (L, n) => { const c = L.idx && L.book != null && L.idx[L.book]; return c && n >= c.from && n <= c.to ? L.book : L.nogo ? -1 : libBookOf(L, n); };
 const libBookOf = (L, n) => L.idx ? L.idx.findIndex(b => n >= b.from && n <= b.to) : -1;
 
 async function renderLib(L) {
@@ -795,7 +800,9 @@ function libItem(L, h) {
   const a = el('article', 'mus-h');
   a.id = 'h' + n;
   a.dataset.n = n;
-  a.append(el('p', 'mus-no', L.label ? L.label(n) : (ziyade === 2 ? '•' : ziyade ? '*' : '#') + n));
+  const lb = L.label ? L.label(n, h) : (ziyade === 2 ? '•' : ziyade ? '*' : '#') + n;
+  if (L.label) a.dataset.lb = lb;
+  a.append(el('p', 'mus-no', lb));
   const sp = sened ? el('p', 'mus-sened', sened) : null;
   if (sp) a.append(sp);
   const tp = el('p', 'mus-tr', metin);
@@ -843,9 +850,9 @@ function libItem(L, h) {
     d.addEventListener('toggle', () => { if (d.open) d.fill(); });
     a.append(d);
   }
-  a.append(el('p', 'q-src', L.src(n)));
   const meta = L.idx && L.book != null ? L.idx[L.book] : null;
-  a.append(starBtn(L.view + ':' + n, () => ({v: L.view, b: L.book, h, title: meta ? meta.tr : ''})));
+  a.append(el('p', 'q-src', L.src(n, meta)));
+  a.append(starBtn(L.view + ':' + (L.bookKey ? L.book + ':' : '') + n, () => ({v: L.view, b: L.book, h, title: meta ? meta.tr : ''})));
   return a;
 }
 
@@ -875,7 +882,7 @@ function libRenderBook(L, wrap, meta) {
   });
   wrap.append(list);
   const book = L.book;
-  trackRead(list, a => ({v: L.view, b: book, n: +a.dataset.n, title: meta.tr, label: 'no. ' + a.dataset.n}));
+  trackRead(list, a => ({v: L.view, b: book, n: +a.dataset.n, title: meta.tr, label: a.dataset.lb || 'no. ' + a.dataset.n}));
   if (L.target != null) {
     const n = L.target; L.target = null;
     const bi = L.data.babs.findIndex(b => b.h.some(x => x[0] === n));
@@ -890,7 +897,8 @@ function libRenderBook(L, wrap, meta) {
 function libGoHint(L, box, n) {
   box.replaceChildren();
   if (!n) return;
-  const bi = libBookOf(L, n);
+  const bi = libPick(L, n);
+  if (bi < 0 && L.nogo) return;
   if (bi < 0) { box.append(el('p', 'empty', `No. ${n} henüz eklenmedi.`)); return; }
   if (!L.idx[bi].t) { box.append(el('p', 'mus-count', `#${n} · ${L.idx[bi].tr} — bu bölüm henüz çevrilmedi.`)); return; }
   const b = el('button', 'chip-button mus-go-btn', `#${n} · ${L.idx[bi].tr} → Git`);
@@ -1212,11 +1220,12 @@ function goTo(v, b, n) {
   renderCards();
   $('.list').scrollIntoView({block: 'start'});
 }
-const LIB_NAMES = {musannef: 'el-Musannef', musned: 'el-Müsned', usul: 'Usûlü’s-Sünne', berbehari: 'Şerhu’s-Sünne'};
+const LIB_NAMES = {musannef: 'el-Musannef', musned: 'el-Müsned', usul: 'Usûlü’s-Sünne', berbehari: 'Şerhu’s-Sünne', acurri: 'el-Âcurrî'};
 const AUTHORS = [
   {name: 'İbn Ebî Şeybe', meta: 'ö. 235 · Kûfe', books: [{v: 'musannef', t: 'el-Musannef'}]},
   {name: 'Ahmed b. Hanbel', meta: 'ö. 241 · Bağdat', books: [{v: 'musned', t: 'el-Müsned'}, {v: 'usul', t: 'Usûlü’s-Sünne', sub: '✓ 33 madde · akîde risalesi'}]},
-  {name: 'el-Berbehârî', meta: 'ö. 329 · Bağdat', books: [{v: 'berbehari', t: 'Şerhu’s-Sünne', sub: '✓ 156 madde · akîde metni · Arapçasıyla'}]}
+  {name: 'el-Berbehârî', meta: 'ö. 329 · Bağdat', books: [{v: 'berbehari', t: 'Şerhu’s-Sünne', sub: '✓ 156 madde · akîde metni · Arapçasıyla'}]},
+  {name: 'el-Âcurrî', meta: 'ö. 360 · Bağdat, Mekke', books: [{v: 'acurri', b: 0, t: 'Ahlâku Ehli’l-Kur’ân', sub: '✓ 90 rivayet ve mülhak · Kur’ân ehlinin ahlâkı · Arapçasıyla'}]}
 ];
 function libSub(v, span) {
   const L = LIBS[v];
@@ -1265,7 +1274,7 @@ function renderLibrary() {
       const sub = el('small', null, bk.sub || '…');
       b.append(el('span', 'lib-book-t', bk.t), sub);
       if (!bk.sub) libSub(bk.v, sub);
-      b.addEventListener('click', () => openLib(bk.v));
+      b.addEventListener('click', () => { if (bk.b == null) openLib(bk.v); else { const L = LIBS[bk.v]; L.book = bk.b; libSave(L); setView(bk.v); } });
       sec.append(b);
     }
     sec.dataset.search = [a.name, a.meta, ...a.books.map(b => b.t)].join(' ');
@@ -1336,7 +1345,7 @@ function applyFilter() {
   $('#noResult').hidden = !q || shown > 0;
 }
 searchEl.addEventListener('input', applyFilter);
-searchEl.addEventListener('keydown', e => { const L = LIBS[view]; if (e.key !== 'Enter' || !L) return; const v = searchEl.value.trim(); if (/^\d+$/.test(v) && L.idx) { const bi = libBookOf(L, +v); if (bi >= 0 && L.idx[bi].t) { e.preventDefault(); searchEl.blur(); libOpen(L, bi, +v); } } });
+searchEl.addEventListener('keydown', e => { const L = LIBS[view]; if (e.key !== 'Enter' || !L) return; const v = searchEl.value.trim(); if (/^\d+$/.test(v) && L.idx) { const bi = libPick(L, +v); if (bi >= 0 && L.idx[bi].t) { e.preventDefault(); searchEl.blur(); libOpen(L, bi, +v); } } });
 
 function update() {
   let done = 0;
