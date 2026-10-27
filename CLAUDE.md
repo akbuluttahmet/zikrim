@@ -6,7 +6,7 @@ Bu repoda çalışan her oturum (Claude Code, başka sohbetler) bu kurallara uya
 
 - **Sekîne**: Zikir sayacı, hadis kütüphanesi (Musannef, Müsned, Usûlü's-Sünne ve İmam Ahmed'in diğer risaleleri, Şerhu's-Sünne, el-Âcurrî, el-Hallâl), Sözler ve Hanbelî fıkhından oluşan, telefonun ana ekranına eklenen bir PWA. Adres: https://akbuluttahmet.github.io/zikrim/ (GitHub Pages, `main` dalı).
 - Derleme adımı yok, düz HTML/CSS/JS: `index.html`, `script.js`, `style.css`, `fikih.js`, `usul.js`, `sw.js`, `manifest.webmanifest`.
-- Veriler: `musannef/` ve `musned/` (her biri `index.json` + `tr/*.json`), `ahmed/`, `hallal/`, `acurri/`, `seria/`, `berbehari/`, `gunun.json` (günün rivayeti havuzu).
+- Veriler: `musannef/` ve `musned/` (her biri `index.json` + `tr/*.json`), `ahmed/`, `hallal/`, `acurri/`, `seria/`, `berbehari/`, `gunun.json` (ana sayfadaki “Rivayetler” kartının havuzu, bütün kitaplıklardan).
 - **Adres ve `localStorage` anahtarları (`zikrim-…`) değiştirilmez.** Değişirse kullanıcının verileri (sayaçlar, seri, kayıtlar) kaybolur. Uygulamanın adı Sekîne olsa da repo/klasör adı `zikrim` kalır.
 - Her yayında `sw.js` içindeki `CACHE = 'zikrim-vNN'` bir artırılır. Bunu `araclar/yayinla.sh "mesaj"` yapar; önce `git pull --rebase` ile başka oturumların değişikliklerini alır.
 - Aynı anda iki oturum çalışıyorsa işi bölün (ör. biri Müsned, biri Musannef). Push reddedilirse `git pull --rebase` yapın; `sw.js` çakışmasında uzak sürümü alıp sürüm numarasını bir artırın.
@@ -65,13 +65,13 @@ Bu repoda çalışan her oturum (Claude Code, başka sohbetler) bu kurallara uya
 
 1. Arapça kaynağı al. Çeviriyi `N | sened | metin` satırları ve `@ Bab başlığı` satırlarıyla yaz; metin içinde satır sonu için `\n` kullan. JSON'a dönüştür (6 alan), `index.json`'da `t`'yi güncelle.
 2. `python3 araclar/kontrol.py`: sayı, tekrar, sıra, `(?)`, boş metin ve alan sayısını denetler.
-3. Yeni kitaptan sonra `python3 araclar/gunun.py` ile günün rivayeti havuzunu yenile.
+3. Yeni kitaptan sonra `python3 araclar/gunun.py` ile “Rivayetler” havuzunu yenile.
 4. `araclar/yayinla.sh "Musannef: Kitâbü’l-… tamamlandı (N/N)"`
 5. Commit mesajları Türkçe ve kısa olur; ne eklendiği ve kaç rivayet olduğu yazılır.
 
 ## Arayüz notları
 
-- Varsayılan tema Klasik; ana sayfa kartı üç halka (Sabah · Akşam · Genel), günün rivayeti (uygulama her açılışta Müsned/Musannef havuzundan rastgele seçer, ☆ ile kaydedilir) ve kaldığın yerden oluşur.
+- Varsayılan tema Klasik; ana sayfa kartı üç halka (Sabah · Akşam · Genel), “Rivayetler” kartı (açılışta bütün kitaplıklardan önce kitaplık, sonra rivayet rastgele seçilir; “↻ Başka rivayet” ile değiştirilir, ☆ ile kaydedilir) ve kaldığın yerden oluşur.
 - Zikirlerin sırası kullanıcı tarafından değiştirilemez.
 - Kütüphane “raf” düzenindedir: asırlara göre raflar, kitaplar renkli kapak (Arapça adı + ilerleme çubuğu). Yeni kitap `SHELVES` dizisine eklenir.
 - Rivayetlerde Arapça metin önce, kâğıt renkli kutuda Amiri yazı tipiyle gösterilir (sened ince, metin kalın); altında Türkçe sened ve metin. Ses düğmeleri küçük ▶ simgeleridir. Ayarlardan Arapça metin ve ▶ düğmeleri gizlenebilir. Amiri `fonts/` klasöründedir (OFL).

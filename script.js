@@ -1238,24 +1238,32 @@ function starBtn(k, make) {
   });
   return b;
 }
-/* ---------- Ana sayfa: günün rivayeti (herkese aynı, tarihe göre) ve kaldığın yer ---------- */
+/* ---------- Ana sayfa: rivayetler (bütün kitaplardan rastgele) ve kaldığın yer ---------- */
 const fnv = t => { let h = 2166136261; for (let i = 0; i < t.length; i++) { h ^= t.charCodeAt(i); h = Math.imul(h, 16777619); } return h >>> 0; };
 let DAILY = null, dailyPick = null;
-// Ana sayfadaki rivayet: uygulama her açıldığında (sayfa her yüklendiğinde) rastgele seçilir; ☆ ile kaydedilebilir
-async function renderDaily() {
-  try { if (!DAILY) { const r = await fetch('gunun.json'); if (!r.ok) return; DAILY = await r.json(); } } catch { return; }
-  if (!dailyPick) {
-    const all = [];
-    for (const v of ['musned', 'musannef']) if (DAILY[v]) for (const it of DAILY[v].h) all.push([v, it]);
-    if (!all.length) return;
-    const [v, it] = all[Math.floor(Math.random() * all.length)];
-    dailyPick = {v, b: it[0], n: it[1], t: it[2]};
+// Ana sayfadaki rivayet: önce kitaplık, sonra rivayet rastgele seçilir (büyük kitaplar küçükleri gölgelemesin); ↻ ile değiştirilir, ☆ ile kaydedilir
+function dailyRandom() {
+  const libs = Object.keys(DAILY).filter(v => LIBS[v] && DAILY[v].h && DAILY[v].h.length);
+  if (!libs.length) return null;
+  for (let i = 0; i < 6; i++) {
+    const v = libs[Math.floor(Math.random() * libs.length)];
+    const it = DAILY[v].h[Math.floor(Math.random() * DAILY[v].h.length)];
+    const p = {v, b: it[0], n: it[1], t: it[2]};
+    if (!dailyPick || p.v !== dailyPick.v || p.b !== dailyPick.b || p.n !== dailyPick.n) return p;
   }
+  return null;
+}
+async function renderDaily(next = false) {
+  try { if (!DAILY) { const r = await fetch('gunun.json'); if (!r.ok) return; DAILY = await r.json(); } } catch { return; }
+  if (!dailyPick || next) { const p = dailyRandom(); if (p) dailyPick = p; }
+  if (!dailyPick) return;
   const {v, b, n, t} = dailyPick;
+  const L = LIBS[v], book = DAILY[v].books[b];
   $('#dailyT').textContent = t;
-  $('#dailySrc').textContent = LIBS[v].src(n) + ' · ' + DAILY[v].books[b] + ' ›';
+  $('#dailySrc').textContent = (L.bookKey ? L.src(n, {tr: book}) : L.single ? L.src(n) : L.src(n) + ' · ' + book) + ' ›';
   $('#dailySrc').onclick = () => goTo(v, b, n);
-  const k = v + ':' + n, st = $('#dailyStar');
+  const nx = $('#dailyNext'); if (nx) nx.onclick = () => renderDaily(true);
+  const k = v + ':' + (L.bookKey ? b + ':' : '') + n, st = $('#dailyStar');
   const paint = () => { const on = isSaved(k); st.textContent = on ? '★' : '☆'; st.setAttribute('aria-pressed', String(on)); st.setAttribute('aria-label', on ? 'Kaydettiklerimden çıkar' : 'Kaydet'); };
   paint();
   st.onclick = async () => {
