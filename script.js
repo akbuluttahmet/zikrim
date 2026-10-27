@@ -807,23 +807,21 @@ function libItem(L, h) {
   const lb = L.label ? L.label(n, h) : (ziyade === 2 ? '•' : ziyade ? '*' : '#') + n;
   if (L.label) a.dataset.lb = lb;
   a.append(el('p', 'mus-no', lb));
+  let box = null;
+  if (ar) {
+    box = el('div', 'ar-box'); box.lang = 'ar'; box.dir = 'rtl';
+    const k = arSplit(ar);
+    if (k > 0) box.append(el('p', 'ar-isn', ar.slice(0, k).trim()));
+    box.append(el('p', 'ar-mtn', ar.slice(k).trim()));
+    box.append(ttsBtn('ar', '▶', () => [{el: box, text: prepAr(TTS.arSened ? ar : ar.slice(k))}], 'tts-i', 'Arapçasını sesli oku'));
+    a.append(box);
+  }
   const sp = sened ? el('p', 'mus-sened', sened) : null;
   if (sp) a.append(sp);
   const tp = el('p', 'mus-tr', metin);
-  a.append(tp);
-  let ap = null;
-  if (ar) {
-    const d = el('details', 'rv mus-ar');
-    d.append(el('summary', null, 'Arapça metin'));
-    ap = el('p', 'mus-ar-t', ar);
-    ap.lang = 'ar'; ap.dir = 'rtl';
-    d.append(ap);
-    a.append(d);
-  }
-  const tts = [];
-  if (ar) tts.push(['ar', '▶ Arapça', () => [{el: ap, text: prepAr(TTS.arSened ? ar : ar.slice(arSplit(ar)))}]]);
-  tts.push(['tr', '▶ Türkçe', () => [TTS.trSened && sp ? {el: sp, text: prepTr('Sened: ' + sened)} : null, {el: tp, text: prepTr(metin)}]]);
-  a.insertBefore(ttsRow(tts), ap ? ap.parentElement : null);
+  const row = el('div', 'tr-row');
+  row.append(tp, ttsBtn('tr', '▶', () => [TTS.trSened && sp ? {el: sp, text: prepTr('Sened: ' + sened)} : null, {el: tp, text: prepTr(metin)}], 'tts-i', 'Türkçesini sesli oku'));
+  a.append(row);
   if (info && ((info.c && info.c.length > 1) || (info.n && info.n.length))) {
     const d = el('details', 'rv');
     d.append(el('summary', null, 'Râviler ve isnad'));
@@ -949,6 +947,8 @@ const RD = {last: store.get('zikrim-last', {}), saved: store.get('zikrim-saved',
 /* ---------- Sesli okuma (telefonun kendi sesleri; Arapça ve Türkçe) ---------- */
 const TTS = Object.assign({ar: '', tr: '', rate: 0.9, arSened: true, trSened: false, show: true}, store.get('sekine-tts', {}));
 document.body.classList.toggle('no-tts', !TTS.show);
+let AR_SHOW = store.get('sekine-ar-show', true);
+document.body.classList.toggle('no-ar', !AR_SHOW);
 const ttsSave = () => store.set('sekine-tts', TTS);
 const SYN = window.speechSynthesis || null;
 let VOICES = [];
@@ -1070,7 +1070,7 @@ function ttsPlay(btn, lang, parts) {
   if (!queue.length) return;
   const run = {cancelled: false, sys: !!(TTSP.forceSys && TTSP.forceSys[lang])};
   TTSP.run = run;
-  btn.classList.add('playing'); btn.textContent = '■ Durdur';
+  btn.classList.add('playing'); btn.textContent = btn.classList.contains('tts-i') ? '■' : '■ Durdur';
   const art = btn.closest('article'), no = art && art.querySelector('.mus-no');
   $('#ttsBarT').textContent = `${lang === 'ar' ? 'Arapça' : 'Türkçe'} okunuyor${no ? ' · ' + no.textContent.split(' · ')[0] : ''} — bitince sıradakine geçer`;
   $('#ttsBar').hidden = false;
@@ -1121,14 +1121,16 @@ function ttsPlay(btn, lang, parts) {
   setTimeout(() => { if (!run.cancelled) next(); }, wait);
 }
 // Bir okuma kartına "▶ Arapça" / "▶ Türkçe" düğmeleri: parts() o anki ayarlara göre okunacakları verir
+function ttsBtn(lang, label, parts, cls, aria) {
+  const b = el('button', 'tts-b' + (cls ? ' ' + cls : ''), label);
+  b.type = 'button'; b.dataset.label = label; b.dataset.lang = lang;
+  if (aria) b.setAttribute('aria-label', aria);
+  b.addEventListener('click', () => ttsPlay(b, lang, parts()));
+  return b;
+}
 function ttsRow(map) {
   const row = el('div', 'tts-row');
-  for (const [lang, label, parts] of map) {
-    const b = el('button', 'tts-b', label);
-    b.type = 'button'; b.dataset.label = label; b.dataset.lang = lang;
-    b.addEventListener('click', () => ttsPlay(b, lang, parts()));
-    row.append(b);
-  }
+  for (const [lang, label, parts] of map) row.append(ttsBtn(lang, label, parts));
   return row;
 }
 function ttsFillSettings() {
@@ -1227,11 +1229,16 @@ function goTo(v, b, n) {
   $('.list').scrollIntoView({block: 'start'});
 }
 const LIB_NAMES = {musannef: 'el-Musannef', musned: 'el-Müsned', usul: 'Usûlü’s-Sünne', berbehari: 'Şerhu’s-Sünne', acurri: 'el-Âcurrî', seria: 'eş-Şerîa'};
-const AUTHORS = [
-  {name: 'İbn Ebî Şeybe', meta: 'ö. 235 · Kûfe', books: [{v: 'musannef', t: 'el-Musannef'}]},
-  {name: 'Ahmed b. Hanbel', meta: 'ö. 241 · Bağdat', books: [{v: 'musned', t: 'el-Müsned'}, {v: 'usul', t: 'Usûlü’s-Sünne', sub: '✓ 33 madde · akîde risalesi'}]},
-  {name: 'el-Berbehârî', meta: 'ö. 329 · Bağdat', books: [{v: 'berbehari', t: 'Şerhu’s-Sünne', sub: '✓ 156 madde · akîde metni · Arapçasıyla'}]},
-  {name: 'el-Âcurrî', meta: 'ö. 360 · Bağdat, Mekke', books: [{v: 'seria', t: 'eş-Şerîa', sub: '1 / 17 bölüm Türkçe (no. 1–154) · akîde · Arapçasıyla'}, {v: 'acurri', b: 0, t: 'Ahlâku Ehli’l-Kur’ân', sub: '✓ 90 rivayet ve mülhak · Kur’ân ehlinin ahlâkı · Arapçasıyla'}, {v: 'acurri', b: 1, t: 'el-Erbaûn (Kırk Hadis)', sub: '✓ 45 hadis ve Âcurrî’nin şerhi · Arapçasıyla'}]}
+const SHELVES = [
+  {c: 'III. ASIR', books: [
+    {v: 'musannef', ar: 'المصنف', t: 'el-Musannef', who: 'İbn Ebî Şeybe', d: 235, col: '#4d8062'},
+    {v: 'musned', ar: 'المسند', t: 'el-Müsned', who: 'Ahmed b. Hanbel', d: 241, col: '#8a5a3c', total: 27647},
+    {v: 'usul', ar: 'أصول السنة', t: 'Usûlü’s-Sünne', who: 'Ahmed b. Hanbel', d: 241, col: '#3f5f7f', done: true}]},
+  {c: 'IV. ASIR', books: [
+    {v: 'berbehari', ar: 'شرح السنة', t: 'Şerhu’s-Sünne', who: 'el-Berbehârî', d: 329, col: '#6b4f7a', done: true},
+    {v: 'seria', ar: 'الشريعة', t: 'eş-Şerîa', who: 'el-Âcurrî', d: 360, col: '#2f6b66', total: 2075},
+    {v: 'acurri', b: 0, ar: 'أخلاق أهل القرآن', t: 'Ahlâku Ehli’l-Kur’ân', who: 'el-Âcurrî', d: 360, col: '#9a7b34', done: true},
+    {v: 'acurri', b: 1, ar: 'الأربعون حديثا', t: 'el-Erbaûn', who: 'el-Âcurrî', d: 360, col: '#7a4a52', done: true}]}
 ];
 function libSub(v, span) {
   const L = LIBS[v];
@@ -1265,27 +1272,44 @@ function renderLibrary() {
   sv.addEventListener('click', () => setView('kaydedilen'));
   sv.dataset.search = 'kaydettiklerim kaydedilen yer imi';
   cardsEl.append(sv);
-  for (const a of AUTHORS) {
-    const sec = el('section', 'lib-author');
-    const h = el('div', 'lib-a-head');
-    const nm = el('span', 'lib-a-name', a.name + ' (');
-    const r = el('bdi', 'rah', RAH); r.lang = 'ar'; r.dir = 'rtl';
-    nm.append(r, ')');
-    h.append(el('span', 'lib-a-ini', a.name.replace(/\b(el|eş|es|en|er|et|ed|ez|ibn)-/gi, '').split(' ').filter(w => /^[A-ZÂÎÛİÇŞÖÜ]/.test(w)).map(w => w[0]).slice(0, 2).join('')), Object.assign(el('span', 'lib-a-txt'), {}));
-    h.lastChild.append(nm, el('small', null, a.meta));
-    sec.append(h);
-    for (const bk of a.books) {
-      const b = el('button', 'lib-book');
+  for (const sh of SHELVES) {
+    const sec = el('section', 'lib-shelf');
+    const hd = el('div', 'shelf-h');
+    hd.append(el('span', null, sh.c), el('small', null, sh.books.length + ' kitap'));
+    const row = el('div', 'shelf-row');
+    for (const bk of sh.books) {
+      const b = el('button', 'cover');
       b.type = 'button';
-      const sub = el('small', null, bk.sub || '…');
-      b.append(el('span', 'lib-book-t', bk.t), sub);
-      if (!bk.sub) libSub(bk.v, sub);
+      b.style.setProperty('--cv', bk.col);
+      const ar = el('span', 'cover-ar', bk.ar); ar.lang = 'ar'; ar.dir = 'rtl';
+      const who = el('small', 'cover-who', bk.who + ' ');
+      const r = el('bdi', 'rah', RAH); r.lang = 'ar'; r.dir = 'rtl';
+      const rw = el('span', 'nowrap', '('); rw.append(r, ')');
+      who.append(rw, el('span', 'cover-d', bk.d ? 'ö. ' + bk.d : ''));
+      const bar = el('span', 'cover-bar'), fill = el('i'); bar.append(fill);
+      const pct = el('small', 'cover-pct', bk.done ? '✓ tamam' : '…');
+      if (bk.done) fill.style.width = '100%'; else coverProgress(bk, fill, pct);
+      const foot = el('span', 'cover-foot');
+      foot.append(el('b', null, bk.t), who, bar, pct);
+      b.append(ar, foot);
       b.addEventListener('click', () => { if (bk.b == null) openLib(bk.v); else { const L = LIBS[bk.v]; L.book = bk.b; libSave(L); setView(bk.v); } });
-      sec.append(b);
+      row.append(b);
     }
-    sec.dataset.search = [a.name, a.meta, ...a.books.map(b => b.t)].join(' ');
+    sec.append(hd, row);
+    sec.dataset.search = [sh.c, ...sh.books.map(b => [b.t, b.who, b.ar].join(' '))].join(' ');
     cardsEl.append(sec);
   }
+}
+function coverProgress(bk, fill, pct) {
+  const L = LIBS[bk.v];
+  const go = idx => {
+    const list = bk.b != null ? [idx[bk.b]].filter(Boolean) : idx;
+    const t = list.reduce((s, x) => s + (x.t || 0), 0), n = bk.total || list.reduce((s, x) => s + (x.n || 0), 0);
+    const f = n ? Math.min(1, t / n) : 0;
+    fill.style.width = Math.max(2, Math.round(f * 100)) + '%';
+    pct.textContent = f >= 1 ? '✓ tamam' : bk.v === 'musannef' ? `${list.filter(x => x.t).length} / ${list.length} kitap` : bk.v === 'seria' ? `${list.length} / 17 bölüm` : `%${Math.max(1, Math.round(f * 100))}`;
+  };
+  if (L.idx) go(L.idx); else libFetch(L, 'index.json').then(x => { L.idx = x; go(x); }).catch(() => { pct.textContent = ''; });
 }
 function renderSaved() {
   const head = el('div', 'mus-head');
@@ -1635,6 +1659,8 @@ $('#hapticsToggle').addEventListener('change', e => { S.haptics = e.target.check
 $('#ttsAr').addEventListener('change', e => { TTS.ar = e.target.value; ttsSave(); });
 $('#ttsTr').addEventListener('change', e => { TTS.tr = e.target.value; ttsSave(); });
 $('#ttsRate').addEventListener('input', e => { TTS.rate = Number(e.target.value); $('#ttsRateOut').textContent = TTS.rate.toFixed(2).replace('.', ',') + '×'; ttsSave(); });
+$('#arShow').checked = AR_SHOW;
+$('#arShow').addEventListener('change', e => { AR_SHOW = e.target.checked; store.set('sekine-ar-show', AR_SHOW); document.body.classList.toggle('no-ar', !AR_SHOW); });
 $('#ttsShow').addEventListener('change', e => { TTS.show = e.target.checked; document.body.classList.toggle('no-tts', !TTS.show); if (!TTS.show) ttsStop(); ttsSave(); });
 $('#ttsArSened').addEventListener('change', e => { TTS.arSened = e.target.checked; ttsSave(); });
 $('#ttsTrSened').addEventListener('change', e => { TTS.trSened = e.target.checked; ttsSave(); });
