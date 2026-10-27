@@ -44,6 +44,7 @@ Bu repoda çalışan her oturum (Claude Code, başka sohbetler) bu kurallara uya
   - a01 Ahlâku Ehli’l-Kur’ân: Şâmile no. 10531 (Dârü’l-Kütübi’l-İlmiyye neşri). Sonundaki “mülhak” kısmı ayrı bab olarak 90.01–90.11 anahtarlarıyla eklidir.
   - a02 el-Erbaûn: Şâmile no. 8204. Mukaddime (0) ve 45 hadis; her hadisin ardındaki şerh, hadisle aynı maddededir.
   - Kesirli numaralar (ör. 21.1) rivayetler arasındaki Âcurrî’nin kendi sözleridir; uygulamada “Ara metin” diye görünür. 0 = mukaddime.
+- **eş-Şerîa (el-Âcurrî):** Şâmile no. 13035 (5 cilt), OpenITI `0360Ajurri.Sharica.Shamela0013035`. Veri `seria/` klasöründe, konu bölümlerine ayrılmış (`s01.json`…). Numaralar dijital nüshadaki “N -” işaretlerine göredir; nüshada numarasız birleşmiş rivayetler eksik numaralara bölünmüş, bulunmayan numaralar atlanmıştır. Kesirli anahtarlar (ör. 35.1) bab başındaki Âcurrî’nin sözleri ya da numarasız kısımlardır. Derleme betiği oturum dosyalarındadır (pre_sh.py → sh2.json, build_sh.py).
 - Arapça metinler Şâmile'deki aynı neşirden aynen alınır. Toplu metin için OpenITI GitHub kopyaları kullanılabilir (`raw.githubusercontent.com/OpenITI/...`).
 
 ## Veri biçimi

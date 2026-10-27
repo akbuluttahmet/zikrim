@@ -508,9 +508,9 @@ const QUOTES = [
 /* ---------- Kartlar ---------- */
 const cardsEl = $('#cards');
 const MSET = new Set(MORNING), ESET = new Set(EVENING);
-const VIEWS = {main: 'Sekîne', sabah: '☀︎ Sabah Zikirleri', aksam: '☾ Akşam Zikirleri', genel: '📿 Genel Zikirler', selef: '📜 Sözler', fikih: '⚖️ Hanbelî Fıkhı', musannef: '📚 Musannef', musned: '📗 Müsned', usul: '📘 Usûlü’s-Sünne', berbehari: '📕 Şerhu’s-Sünne', acurri: '📙 el-Âcurrî', kutuphane: '📚 Kütüphane', kaydedilen: '☆ Kaydettiklerim'};
-const LIB_CHILD = new Set(['musannef', 'musned', 'usul', 'berbehari', 'acurri', 'kaydedilen']);
-const READ_VIEWS = new Set(['selef', 'fikih', 'musannef', 'musned', 'usul', 'berbehari', 'acurri', 'kutuphane', 'kaydedilen']);
+const VIEWS = {main: 'Sekîne', sabah: '☀︎ Sabah Zikirleri', aksam: '☾ Akşam Zikirleri', genel: '📿 Genel Zikirler', selef: '📜 Sözler', fikih: '⚖️ Hanbelî Fıkhı', musannef: '📚 Musannef', musned: '📗 Müsned', usul: '📘 Usûlü’s-Sünne', berbehari: '📕 Şerhu’s-Sünne', acurri: '📙 el-Âcurrî', seria: '📙 eş-Şerîa', kutuphane: '📚 Kütüphane', kaydedilen: '☆ Kaydettiklerim'};
+const LIB_CHILD = new Set(['musannef', 'musned', 'usul', 'berbehari', 'acurri', 'seria', 'kaydedilen']);
+const READ_VIEWS = new Set(['selef', 'fikih', 'musannef', 'musned', 'usul', 'berbehari', 'acurri', 'seria', 'kutuphane', 'kaydedilen']);
 let view = 'main';
 const isGenel = z => !MSET.has(z.id) && !ESET.has(z.id);
 const inView = z => view === 'sabah' ? MSET.has(z.id) : view === 'aksam' ? ESET.has(z.id) : view === 'genel' ? isGenel(z) : false;
@@ -724,6 +724,10 @@ LIBS.acurri = {base: 'acurri/', key: 'zikrim-acurri', unit: 'kitap', item: 'riva
   label: (n, h) => (h && h[4] && h[4].l) || (n === 0 ? 'Mukaddime' : Number.isInteger(n) ? `No. ${n}` : 'Ara metin'),
   src: (n, m) => `el-Âcurrî, ${m ? m.tr : ''}${n === 0 ? ', mukaddime' : Number.isInteger(n) ? ', no. ' + n : ''}`,
   note: 'Ebû Bekir Muhammed b. el-Hüseyin el-Âcurrî (ö. 360) — kitapları, Türkçe çeviri ve Arapça metniyle. Çeviri ve Arapça metin el-Mektebetü’ş-Şâmile’deki nüshalardan alınmıştır; numaralar bu nüshalara göredir. “Ara metin” diye gösterilen kısımlar, rivayetlerin arasındaki Âcurrî’nin kendi sözleridir. Kitaplar çevrildikçe sırayla eklenecek.'};
+LIBS.seria = {base: 'seria/', key: 'zikrim-seria', unit: 'bölüm', item: 'rivayet', ex: 120, err: 'eş-Şerîa',
+  label: (n, h) => n === 0 ? 'Mukaddime' : Number.isInteger(n) ? `No. ${n}` : (h && !h[1] && /^Muhammed b\. el-Hüseyin/.test(h[2]) ? 'Âcurrî’nin sözü' : 'Numarasız kısım'),
+  src: n => `el-Âcurrî, eş-Şerîa, ${n === 0 ? 'mukaddime' : Number.isInteger(n) ? 'no. ' + n : 'no. ' + Math.floor(n) + ' sonrası'}`,
+  note: 'Ebû Bekir Muhammed b. el-Hüseyin el-Âcurrî (ö. 360), eş-Şerîa — Türkçe çeviri ve Arapça metin. Çeviri ve Arapça metin el-Mektebetü’ş-Şâmile’deki nüshadan (no. 13035, 5 cilt) alınmıştır; rivayet numaraları bu nüshaya göredir. Dijital nüshada bulunmayan numaralar atlanmıştır. “Âcurrî’nin sözü” diye gösterilen kısımlar rivayetlerin arasındaki yazarın kendi açıklamalarıdır. Bölümler çevrildikçe sırayla eklenecek.'};
 for (const [k, L] of Object.entries(LIBS)) {
   Object.assign(L, {view: k, idx: null, book: null, data: null, token: 0, target: null, cache: {}});
   try { const b = JSON.parse(localStorage.getItem(L.key) || 'null'); if (Number.isInteger(b)) L.book = b; } catch (e) {}
@@ -859,7 +863,7 @@ function libItem(L, h) {
 function libRenderBook(L, wrap, meta) {
   wrap.replaceChildren();
   const head = el('div', 'mus-head');
-  const back = el('button', 'chip-button', L.view === 'musned' ? '← Bölümler' : '← Kitaplar');
+  const back = el('button', 'chip-button', L.unit === 'bölüm' ? '← Bölümler' : '← Kitaplar');
   back.type = 'button';
   if (L.single) back.hidden = true;
   back.addEventListener('click', () => { L.book = null; libSave(L); searchEl.value = ''; renderCards(); });
@@ -1220,12 +1224,12 @@ function goTo(v, b, n) {
   renderCards();
   $('.list').scrollIntoView({block: 'start'});
 }
-const LIB_NAMES = {musannef: 'el-Musannef', musned: 'el-Müsned', usul: 'Usûlü’s-Sünne', berbehari: 'Şerhu’s-Sünne', acurri: 'el-Âcurrî'};
+const LIB_NAMES = {musannef: 'el-Musannef', musned: 'el-Müsned', usul: 'Usûlü’s-Sünne', berbehari: 'Şerhu’s-Sünne', acurri: 'el-Âcurrî', seria: 'eş-Şerîa'};
 const AUTHORS = [
   {name: 'İbn Ebî Şeybe', meta: 'ö. 235 · Kûfe', books: [{v: 'musannef', t: 'el-Musannef'}]},
   {name: 'Ahmed b. Hanbel', meta: 'ö. 241 · Bağdat', books: [{v: 'musned', t: 'el-Müsned'}, {v: 'usul', t: 'Usûlü’s-Sünne', sub: '✓ 33 madde · akîde risalesi'}]},
   {name: 'el-Berbehârî', meta: 'ö. 329 · Bağdat', books: [{v: 'berbehari', t: 'Şerhu’s-Sünne', sub: '✓ 156 madde · akîde metni · Arapçasıyla'}]},
-  {name: 'el-Âcurrî', meta: 'ö. 360 · Bağdat, Mekke', books: [{v: 'acurri', b: 0, t: 'Ahlâku Ehli’l-Kur’ân', sub: '✓ 90 rivayet ve mülhak · Kur’ân ehlinin ahlâkı · Arapçasıyla'}, {v: 'acurri', b: 1, t: 'el-Erbaûn (Kırk Hadis)', sub: '✓ 45 hadis ve Âcurrî’nin şerhi · Arapçasıyla'}, {v: 'acurri', b: 1, t: 'el-Erbaûn (Kırk Hadis)', sub: '✓ 45 hadis ve Âcurrî’nin şerhi · Arapçasıyla'}]}
+  {name: 'el-Âcurrî', meta: 'ö. 360 · Bağdat, Mekke', books: [{v: 'seria', t: 'eş-Şerîa', sub: '1 / 17 bölüm Türkçe (no. 1–154) · akîde · Arapçasıyla'}, {v: 'acurri', b: 0, t: 'Ahlâku Ehli’l-Kur’ân', sub: '✓ 90 rivayet ve mülhak · Kur’ân ehlinin ahlâkı · Arapçasıyla'}, {v: 'acurri', b: 1, t: 'el-Erbaûn (Kırk Hadis)', sub: '✓ 45 hadis ve Âcurrî’nin şerhi · Arapçasıyla'}, {v: 'acurri', b: 1, t: 'el-Erbaûn (Kırk Hadis)', sub: '✓ 45 hadis ve Âcurrî’nin şerhi · Arapçasıyla'}]}
 ];
 function libSub(v, span) {
   const L = LIBS[v];
