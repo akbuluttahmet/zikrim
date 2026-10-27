@@ -568,9 +568,9 @@ const QUOTES = [
 /* ---------- Kartlar ---------- */
 const cardsEl = $('#cards');
 const MSET = new Set(MORNING), ESET = new Set(EVENING);
-const VIEWS = {main: 'Sekîne', anasayfa: 'Anasayfa', akis: 'Akış', sabah: '☀︎ Sabah Zikirleri', aksam: '☾ Akşam Zikirleri', genel: '📿 Genel Zikirler', selef: '📜 Sözler', fikih: '⚖️ Hanbelî Fıkhı', musannef: '📚 Musannef', ibnebiseybe: '📚 İbn Ebî Şeybe', musned: '📗 Müsned', usul: '📘 Usûlü’s-Sünne', ahmed: '📘 İmam Ahmed', zuhd: '📘 ez-Zühd', fezail: '📘 Fezâilü’s-sahâbe', berbehari: '📕 Şerhu’s-Sünne', acurri: '📙 el-Âcurrî', seria: '📙 eş-Şerîa', hallal: '📗 el-Hallâl', kutuphane: '📚 Kütüphane', kaydedilen: '☆ Kaydettiklerim'};
-const LIB_CHILD = new Set(['musannef', 'ibnebiseybe', 'musned', 'usul', 'ahmed', 'zuhd', 'fezail', 'berbehari', 'acurri', 'seria', 'hallal', 'kaydedilen']);
-const READ_VIEWS = new Set(['anasayfa', 'akis', 'selef', 'fikih', 'musannef', 'ibnebiseybe', 'musned', 'usul', 'ahmed', 'zuhd', 'fezail', 'berbehari', 'acurri', 'seria', 'hallal', 'kutuphane', 'kaydedilen']);
+const VIEWS = {main: 'Sekîne', anasayfa: 'Anasayfa', akis: 'Akış', sabah: '☀︎ Sabah Zikirleri', aksam: '☾ Akşam Zikirleri', genel: '📿 Genel Zikirler', selef: '📜 Sözler', fikih: '⚖️ Hanbelî Fıkhı', musannef: '📚 Musannef', ibnebiseybe: '📚 İbn Ebî Şeybe', musned: '📗 Müsned', usul: '📘 Usûlü’s-Sünne', ahmed: '📘 İmam Ahmed', zuhd: '📘 ez-Zühd', fezail: '📘 Fezâilü’s-sahâbe', berbehari: '📕 Şerhu’s-Sünne', acurri: '📙 el-Âcurrî', seria: '📙 eş-Şerîa', hallal: '📗 el-Hallâl', kutuphane: '📚 Kütüphane', alim: '📚 Âlim', kaydedilen: '☆ Kaydettiklerim'};
+const LIB_CHILD = new Set(['musannef', 'ibnebiseybe', 'musned', 'usul', 'ahmed', 'zuhd', 'fezail', 'berbehari', 'acurri', 'seria', 'hallal', 'kaydedilen', 'alim']);
+const READ_VIEWS = new Set(['anasayfa', 'akis', 'selef', 'fikih', 'musannef', 'ibnebiseybe', 'musned', 'usul', 'ahmed', 'zuhd', 'fezail', 'berbehari', 'acurri', 'seria', 'hallal', 'kutuphane', 'kaydedilen', 'alim']);
 let view = 'main';
 /* Alt sekmeler: her görünüm bir sekmeye aittir. Kökler: Zikir = ana sayfa, Kütüphane = raf, Sözler = sözler listesi. */
 const TAB_ROOT = {zikir: 'main', anasayfa: 'anasayfa', akis: 'akis', kutuphane: 'kutuphane', selef: 'selef'};
@@ -591,7 +591,7 @@ function setView(v, instant = false) {
   else $('.list').scrollIntoView({block: 'start', behavior});
 }
 document.querySelectorAll('[data-view]').forEach(b => b.addEventListener('click', () => setView(view === b.dataset.view ? 'main' : b.dataset.view)));
-$('#backAll').addEventListener('click', () => setView(LIB_CHILD.has(view) ? 'kutuphane' : 'main'));
+$('#backAll').addEventListener('click', () => setView(alimBack() ? 'alim' : LIB_CHILD.has(view) ? 'kutuphane' : 'main'));
 
 function renderCards() {
   cardsEl.replaceChildren();
@@ -609,12 +609,12 @@ function renderCards() {
   const tab = tabOf(view);
   document.body.dataset.tab = tab;
   document.querySelectorAll('.tab').forEach(b => { if (b.dataset.tab === tab) b.setAttribute('aria-current', 'page'); else b.removeAttribute('aria-current'); });
-  $('#backAll').textContent = LIB_CHILD.has(view) ? '← Kütüphane' : '← Geri';
+  $('#backAll').textContent = alimBack() ? '← ' + alimCur : LIB_CHILD.has(view) ? '← Kütüphane' : '← Geri';
   $('#addZikir').hidden = view !== 'genel';
   document.querySelectorAll('[data-view]').forEach(b => { const on = b.dataset.view === view || (b.dataset.view === 'kutuphane' && LIB_CHILD.has(view)); b.classList.toggle('active', on); b.setAttribute('aria-pressed', String(on)); });
   $('#empty').hidden = list.length > 0 || READ_VIEWS.has(view);
   document.body.classList.toggle('view-selef', READ_VIEWS.has(view));
-  searchEl.placeholder = view === 'kutuphane' ? 'Kitap ya da âlim ara…' : view === 'kaydedilen' ? 'Kaydettiklerinde ara…' : view === 'selef' ? 'Söz ara (âlim, anlam, kaynak)…' : view === 'fikih' ? 'Fıkıhta ara (ör. mesh, cuma, zekât)…' : view === 'usul' ? 'Risalede ara (ör. kader, havz, cuma)…' : LIBS[view] ? (LIBS[view].book == null && LIBS[view].nogo ? 'Kitap ara…' : LIBS[view].book == null && !LIBS[view].single ? `${LIBS[view].unit === 'kitap' ? 'Kitap' : 'Bölüm'} ara ya da ${LIBS[view].item} no. yaz (ör. ${LIBS[view].ex})…` : `Bu ${LIBS[view].unit === 'kitap' ? 'kitapta' : 'bölümde'} ara ya da ${LIBS[view].item} no. yaz…`) : 'Zikir ara (ad, anlam, okunuş)…';
+  searchEl.placeholder = view === 'kutuphane' ? 'Âlim ya da kitap ara…' : view === 'alim' ? 'Kitaplarında ara…' : view === 'kaydedilen' ? 'Kaydettiklerinde ara…' : view === 'selef' ? 'Söz ara (âlim, anlam, kaynak)…' : view === 'fikih' ? 'Fıkıhta ara (ör. mesh, cuma, zekât)…' : view === 'usul' ? 'Risalede ara (ör. kader, havz, cuma)…' : LIBS[view] ? (LIBS[view].book == null && LIBS[view].nogo ? 'Kitap ara…' : LIBS[view].book == null && !LIBS[view].single ? `${LIBS[view].unit === 'kitap' ? 'Kitap' : 'Bölüm'} ara ya da ${LIBS[view].item} no. yaz (ör. ${LIBS[view].ex})…` : `Bu ${LIBS[view].unit === 'kitap' ? 'kitapta' : 'bölümde'} ara ya da ${LIBS[view].item} no. yaz…`) : 'Zikir ara (ad, anlam, okunuş)…';
   navRecord();
   if (view === 'akis' || view === 'anasayfa') { update(); return; }
   if (view === 'selef') { renderQuotes(); applyFilter(); update(); return; }
@@ -622,6 +622,7 @@ function renderCards() {
   if (LIBS[view]) { renderLib(LIBS[view]); update(); return; }
   if (view === 'usul') { renderUsul(); applyFilter(); update(); return; }
   if (view === 'kutuphane') { renderLibrary(); applyFilter(); update(); return; }
+  if (view === 'alim') { renderAlim(); applyFilter(); update(); return; }
   if (view === 'kaydedilen') { renderSaved(); applyFilter(); update(); return; }
   let lastGroup = null;
   for (const z of list) {
@@ -1938,33 +1939,93 @@ function renderLibrary() {
   sv.addEventListener('click', () => setView('kaydedilen'));
   sv.dataset.search = 'kaydettiklerim kaydedilen yer imi';
   cardsEl.append(sv);
-  for (const sh of SHELVES) {
-    const sec = el('section', 'lib-shelf');
-    const hd = el('div', 'shelf-h');
-    hd.append(el('span', null, sh.c), el('small', null, 'doğum asrı (hicrî) · ' + sh.books.length + ' kitap'));
-    const row = el('div', 'shelf-row');
-    for (const bk of sh.books) {
-      const b = el('button', 'cover');
-      b.type = 'button';
-      b.style.setProperty('--cv', bk.col);
-      const ar = el('span', 'cover-ar', bk.ar); ar.lang = 'ar'; ar.dir = 'rtl';
-      const who = el('small', 'cover-who', bk.who + ' ');
-      const r = el('bdi', 'rah', RAH); r.lang = 'ar'; r.dir = 'rtl';
-      const rw = el('span', 'nowrap', '('); rw.append(r, ')');
-      who.append(rw, el('span', 'cover-d', (bk.bo ? 'd. ' + bk.bo + ' · ' : '') + (bk.d ? 'ö. ' + bk.d : '')));
-      const bar = el('span', 'cover-bar'), fill = el('i'); bar.append(fill);
-      const pct = el('small', 'cover-pct', bk.done ? '✓ tamam' : '…');
-      if (bk.done) fill.style.width = '100%'; else coverProgress(bk, fill, pct);
-      const foot = el('span', 'cover-foot');
-      foot.append(el('b', null, bk.t), who, bar, pct);
-      b.append(ar, foot);
-      b.addEventListener('click', () => { if (bk.b == null) openLib(bk.v); else { const L = LIBS[bk.v]; L.book = bk.b; libSave(L); setView(bk.v); } });
-      row.append(b);
-    }
-    sec.append(hd, row);
-    sec.dataset.search = [sh.c, ...sh.books.map(b => [b.t, b.who, b.ar].join(' '))].join(' ');
-    cardsEl.append(sec);
+  const h = el('p', 'lib-h', 'ÂLİMLER · VEFAT SIRASIYLA');
+  h.dataset.search = '';
+  cardsEl.append(h);
+  for (const al of alimList()) cardsEl.append(alimRow(al));
+}
+// Kitap kapağı (raf rengi, Arapça ad, Türkçe ad, ilerleme); dokununca kitap açılır
+function coverBtn(bk) {
+  const b = el('button', 'cover');
+  b.type = 'button';
+  b.style.setProperty('--cv', bk.col);
+  const ar = el('span', 'cover-ar', bk.ar); ar.lang = 'ar'; ar.dir = 'rtl';
+  const who = el('small', 'cover-who', bk.who + ' ');
+  const r = el('bdi', 'rah', RAH); r.lang = 'ar'; r.dir = 'rtl';
+  const rw = el('span', 'nowrap', '('); rw.append(r, ')');
+  who.append(rw, el('span', 'cover-d', (bk.bo ? 'd. ' + bk.bo + ' · ' : '') + (bk.d ? 'ö. ' + bk.d : '')));
+  const bar = el('span', 'cover-bar'), fill = el('i'); bar.append(fill);
+  const pct = el('small', 'cover-pct', bk.done ? '✓ tamam' : '…');
+  if (bk.done) fill.style.width = '100%'; else coverProgress(bk, fill, pct);
+  const foot = el('span', 'cover-foot');
+  foot.append(el('b', null, bk.t), who, bar, pct);
+  b.append(ar, foot);
+  b.addEventListener('click', () => { if (bk.b == null) openLib(bk.v); else { const L = LIBS[bk.v]; L.book = bk.b; libSave(L); setView(bk.v); } });
+  b.dataset.search = [bk.t, bk.ar].join(' ');
+  return b;
+}
+/* ---------- Âlimler: Kütüphane'nin kökü âlim listesidir (vefat sırasıyla); âlime dokununca âlim sayfası ve kitapları açılır ----------
+   Âlimler ve kitapları SHELVES'ten derlenir; yeni kitap SHELVES'e eklenince kendiliğinden görünür. Yeni âlim gelirse ALIM_AR ve ALIM_INI'ye de yazılır.
+   Son açılan âlim `zikrim-alim`'de; o âlimin kitabından geri dönülünce âlim sayfasına gelinir. */
+const ALIM_AR = {'İbn Ebî Şeybe': 'ابن أبي شيبة', 'Ahmed b. Hanbel': 'أحمد بن حنبل', 'el-Hallâl': 'الخلال', 'el-Berbehârî': 'البربهاري', 'el-Âcurrî': 'الآجري'};
+const ALIM_INI = {'İbn Ebî Şeybe': 'ش', 'Ahmed b. Hanbel': 'أحمد', 'el-Hallâl': 'خ', 'el-Berbehârî': 'ب', 'el-Âcurrî': 'آ'};
+let alimCur = store.get('zikrim-alim', '');
+let ALIMS = null;
+function alimList() {
+  if (ALIMS) return ALIMS;
+  const m = new Map();
+  for (const sh of SHELVES) for (const bk of sh.books) {
+    if (!m.has(bk.who)) m.set(bk.who, {who: bk.who, ar: ALIM_AR[bk.who] || '', ini: ALIM_INI[bk.who] || bk.who.replace(/^(el|eş|ez)-/, '').charAt(0), bo: bk.bo, d: bk.d, c: sh.c.replace('ASIR', 'asır'), col: bk.col, books: []});
+    m.get(bk.who).books.push(bk);
   }
+  return (ALIMS = [...m.values()].sort((a, b) => a.d - b.d));
+}
+const alimOwns = (who, v) => { const al = alimList().find(x => x.who === who); return !!al && al.books.some(bk => bk.v === v); };
+const alimBack = () => view !== 'alim' && view !== 'kaydedilen' && LIB_CHILD.has(view) && !!alimCur && alimOwns(alimCur, view);
+const alimDates = al => (al.bo ? 'd. ' + al.bo + ' – ' : '') + 'ö. ' + al.d;
+function alimAv(al, cls) { const s = el('span', cls, al.ini); s.style.setProperty('--cv', al.col); s.lang = 'ar'; s.setAttribute('aria-hidden', 'true'); return s; }
+function alimName(al) {
+  const b = el('b', null, al.who + ' ');
+  const r = el('bdi', 'rah', RAH); r.lang = 'ar'; r.dir = 'rtl';
+  const rw = el('span', 'nowrap rah-s', '('); rw.append(r, ')');
+  b.append(rw);
+  return b;
+}
+function alimRow(al) {
+  const b = el('button', 'alim-row');
+  b.type = 'button';
+  const txt = el('span', 'alim-txt');
+  txt.append(alimName(al), el('small', null, `${alimDates(al)} · ${al.books.length} kitap`));
+  const ar = el('span', 'alim-ar', al.ar); ar.lang = 'ar'; ar.dir = 'rtl';
+  b.append(alimAv(al, 'alim-av'), txt, ar, el('span', 'alim-chev', '›'));
+  b.addEventListener('click', () => { alimCur = al.who; store.set('zikrim-alim', al.who); setView('alim'); });
+  b.dataset.search = [al.who, al.ar, ...al.books.map(bk => bk.t + ' ' + bk.ar)].join(' ');
+  return b;
+}
+function renderAlim() {
+  const list = alimList();
+  const al = list.find(x => x.who === alimCur) || list[0];
+  alimCur = al.who;
+  $('#listTitle').textContent = al.who;
+  const head = el('section', 'alim-head');
+  const ar = el('span', 'alim-head-ar', al.ar); ar.lang = 'ar'; ar.dir = 'rtl';
+  head.append(alimAv(al, 'alim-av'), ar, alimName(al), el('small', null, `${alimDates(al)} · ${al.c} · ${al.books.length} kitap`));
+  // Okumaya devam et: bu âlimin kitaplarında en son okunan yer
+  const owns = x => al.books.some(bk => bk.v === x.v && (bk.b == null || bk.b === x.b));
+  const last = Object.values(RD.last).filter(x => x && x.v && owns(x)).sort((a, b) => b.at - a.at)[0];
+  if (last) {
+    const go = el('button', 'alim-go');
+    go.type = 'button';
+    go.append(el('span', null, 'Okumaya devam et'), el('small', null, `${last.v !== 'usul' && last.title ? last.title.replace(/ \(.*\)$/, '') + ' · ' : ''}${last.label}`));
+    go.addEventListener('click', () => goTo(last.v, last.b, last.n));
+    head.append(go);
+  }
+  head.dataset.search = '';
+  const h = el('p', 'lib-h', 'KİTAPLARI');
+  h.dataset.search = '';
+  const grid = el('div', 'alim-grid');
+  for (const bk of al.books) grid.append(coverBtn(bk));
+  cardsEl.append(head, h, grid);
 }
 function coverProgress(bk, fill, pct) {
   const L = LIBS[bk.v];
@@ -2031,6 +2092,14 @@ function renderSaved() {
 }
 
 function applyFilter() {
+  if (view === 'alim') {
+    const q = norm(searchEl.value.trim());
+    document.body.classList.toggle('filtering', !!q);
+    let shown = 0;
+    for (const c of cardsEl.querySelectorAll('.alim-grid .cover')) { const hit = !q || norm(c.dataset.search).includes(q); c.hidden = !hit; if (hit) shown++; }
+    $('#noResult').hidden = !q || shown > 0;
+    return;
+  }
   if (LIBS[view]) { libFilter(LIBS[view]); return; }
   if (view === 'usul') {
     const q = norm(searchEl.value.trim());

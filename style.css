@@ -535,7 +535,9 @@ body[data-tab=akis] .app{visibility:hidden}
 
 /* Anasayfa: X tarzı zaman tüneli (#home kendi kaydırma kutusudur; Akış gibi üstte sabit başlık) */
 .home-bar{position:fixed;left:0;right:0;top:0;z-index:14;transition:transform .28s ease;box-sizing:border-box;height:calc(env(safe-area-inset-top) + 96px);padding-top:env(safe-area-inset-top);background:var(--bg);border-bottom:1px solid var(--border);display:flex;flex-direction:column}
-.hm-top{position:relative;height:48px;flex:none;display:flex;align-items:center;justify-content:center}
+/* genel `header` kuralı (sola yaslı, alt boşluklu) bu başlığa uymaz */
+.home-bar{align-items:stretch;justify-content:flex-start;margin:0}
+.hm-top{position:relative;height:48px;flex:none;width:100%;display:flex;align-items:center;justify-content:center}
 .hm-top button[hidden]{display:none}
 .hm-tabs{display:flex;height:48px;flex:none;max-width:600px;width:100%;margin:0 auto}
 .hm-tabs button{flex:1;position:relative;margin:0;padding:0;float:none;border:0;background:none;color:var(--muted);font-size:15px;font-weight:600}
@@ -573,3 +575,28 @@ body[data-tab=anasayfa] .to-top{display:none}
 .hm-act button:active{background:var(--hero)}
 .hm-act .on{color:var(--accent)}
 .hm-msg{padding:32px 24px;text-align:center;color:var(--muted);font-size:14px}
+
+/* Âlimler (Kütüphane kökü) ve âlim sayfası */
+.alim-row{display:flex;align-items:center;gap:13px;width:100%;text-align:left;font:inherit;color:var(--text);background:var(--card);border:1px solid var(--border);border-radius:18px;padding:12px 12px 12px 14px;margin:8px 0;cursor:pointer}
+.alim-row[hidden]{display:none}
+.alim-row:active{background:var(--hero)}
+.alim-av{width:52px;height:52px;flex:none;border-radius:50%;background:var(--cv);color:#fff;display:grid;place-items:center;font:700 19px/1 "Amiri",var(--arabic);box-shadow:inset 0 -3px 0 rgb(0 0 0 / .12)}
+.alim-txt{flex:1;min-width:0;display:flex;flex-direction:column;gap:3px}
+.alim-txt b,.alim-head b{font-size:16.5px;line-height:1.3}
+.alim-txt small{font-size:12.5px;color:var(--muted)}
+.rah-s{font-weight:400;font-size:13px;color:var(--muted)}
+.alim-ar{font:400 18px/1.3 "Amiri",var(--arabic);color:var(--muted);max-width:30%;text-align:right}
+.alim-chev{color:var(--muted);font-size:24px;line-height:1;margin-left:-2px}
+.alim-head{display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px;padding:12px 0 6px}
+.alim-head .alim-av{width:84px;height:84px;font-size:30px}
+.alim-head-ar{font:400 28px/1.35 "Amiri",var(--arabic);color:var(--text);margin-top:4px}
+.alim-head b{font-size:20px}
+.alim-head .rah-s{font-size:14px}
+.alim-head small{font-size:13.5px;color:var(--muted)}
+.alim-go{display:flex;flex-direction:column;align-items:center;gap:2px;margin-top:10px;min-height:44px;padding:9px 22px;border:0;border-radius:24px;background:var(--accent);color:var(--accentText);font:inherit;font-weight:700;font-size:15px;cursor:pointer}
+.alim-go small{font-size:12px;font-weight:600;opacity:.9;color:inherit}
+.alim-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(102px,1fr));gap:12px;margin:2px 0 18px}
+.alim-grid .cover{width:auto;min-height:170px;padding:11px 9px 10px}
+.alim-grid .cover[hidden]{display:none}
+.alim-grid .cover-ar{font-size:20px;margin:6px 0 8px}
+.alim-grid .cover-who{display:none}
