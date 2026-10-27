@@ -4,9 +4,9 @@ Bu repoda çalışan her oturum (Claude Code, başka sohbetler) bu kurallara uya
 
 ## Uygulama
 
-- **Sekîne**: Zikir sayacı, hadis kütüphanesi (Musannef, Müsned, Usûlü's-Sünne ve İmam Ahmed'in diğer risaleleri, Şerhu's-Sünne, el-Âcurrî, el-Hallâl), Sözler ve Hanbelî fıkhından oluşan, telefonun ana ekranına eklenen bir PWA. Adres: https://akbuluttahmet.github.io/zikrim/ (GitHub Pages, `main` dalı).
+- **Sekîne**: Zikir sayacı, hadis kütüphanesi (Musannef ve İbn Ebî Şeybe’nin küçük kitapları, Müsned, Usûlü's-Sünne ve İmam Ahmed'in diğer risaleleri, Şerhu's-Sünne, el-Âcurrî, el-Hallâl), Sözler ve Hanbelî fıkhından oluşan, telefonun ana ekranına eklenen bir PWA. Adres: https://akbuluttahmet.github.io/zikrim/ (GitHub Pages, `main` dalı).
 - Derleme adımı yok, düz HTML/CSS/JS: `index.html`, `script.js`, `style.css`, `fikih.js`, `usul.js`, `sw.js`, `manifest.webmanifest`.
-- Veriler: `musannef/` ve `musned/` (her biri `index.json` + `tr/*.json`), `ahmed/`, `hallal/`, `acurri/`, `seria/`, `berbehari/`, `gunun.json` (ana sayfadaki “Rivayetler” kartının havuzu, bütün kitaplıklardan).
+- Veriler: `musannef/` ve `musned/` (her biri `index.json` + `tr/*.json`), `ibnebiseybe/`, `ahmed/`, `hallal/`, `acurri/`, `seria/`, `berbehari/`, `gunun.json` (ana sayfadaki “Rivayetler” kartının havuzu, bütün kitaplıklardan).
 - **Adres ve `localStorage` anahtarları (`zikrim-…`) değiştirilmez.** Değişirse kullanıcının verileri (sayaçlar, seri, kayıtlar) kaybolur. Uygulamanın adı Sekîne olsa da repo/klasör adı `zikrim` kalır.
 - Her yayında `sw.js` içindeki `CACHE = 'zikrim-vNN'` bir artırılır. Bunu `araclar/yayinla.sh "mesaj"` yapar; önce `git pull --rebase` ile başka oturumların değişikliklerini alır.
 - Aynı anda iki oturum çalışıyorsa işi bölün (ör. biri Müsned, biri Musannef). Push reddedilirse `git pull --rebase` yapın; `sw.js` çakışmasında uzak sürümü alıp sürüm numarasını bir artırın.
@@ -38,16 +38,18 @@ Bu repoda çalışan her oturum (Claude Code, başka sohbetler) bu kurallara uya
 ## Kaynaklar
 
 - **Musannef:** İbn Ebî Şeybe, Kemâl Yûsuf el-Hût neşri (Riyad: Mektebetü’r-Rüşd, 1409); Şâmile no. 9944.
+- **İbn Ebî Şeybe’nin küçük kitapları:** Veri `ibnebiseybe/` klasöründe (`index.json` + `tr/eNN.json`), OpenITI `0235IbnAbiShayba.*` kopyalarından. e01 Halku Âdem ve vilâdetü’n-Nebî ﷺ (OpenITI ShamAY0032908; dijital nüsha yer yer bozuk, 1 numaranın başı eksik), e02 Kitâbü’l-Îmân (Şâmile 7767; 0 = nüsha senedi; numarasız devam satırları önceki maddeye eklendi). İçerikleri büyük ölçüde Musannef’teki aynı adlı kitaplarla örtüşür; yine de ayrı eser olarak eklenir.
 - **Müsned:** İmam Ahmed, Şuayb el-Arnaût tahkiki, Müessesetü’r-Risâle (1421/2001); Şâmile no. 25794. Tahkik dipnotları alınmaz.
 - **Şerhu’s-Sünne (el-Berbehârî):** Şâmile no. 8601, OpenITI kopyası `0329Barbahari.SharhSunna.Shamela0008601-ara1`. Veri `berbehari/` klasöründe; mukaddime (0) ve 156 madde. Köşeli parantez [ ] neşrin eklemeleridir; Türkçede de korunur.
 - **el-Âcurrî kitapları:** Veri `acurri/` klasöründe (`index.json` + `tr/aNN.json`), OpenITI `0360Ajurri.*` kopyalarından.
   - a01 Ahlâku Ehli’l-Kur’ân: Şâmile no. 10531 (Dârü’l-Kütübi’l-İlmiyye neşri). Sonundaki “mülhak” kısmı ayrı bab olarak 90.01–90.11 anahtarlarıyla eklidir.
   - a02 el-Erbaûn: Şâmile no. 8204. Mukaddime (0) ve 45 hadis; her hadisin ardındaki şerh, hadisle aynı maddededir.
-  - a03 Mes’eletü’t-tâifîn (Şâmile 6233), a04 Edebü’n-nüfûs (8245), a05 Fazlu kıyâmi’l-leyl ve’t-teheccüd (12746), a06 Tahrîmü’n-nerd ve’ş-şıtranc ve’l-melâhî (8222), a07 Zemmü’l-livât (9512). Numaralar nüshadaki “N -” işaretlerine göredir; 0 = nüsha senedi ve giriş.
+  - a03 Mes’eletü’t-tâifîn (Şâmile 6233), a04 Edebü’n-nüfûs (8245), a05 Fazlu kıyâmi’l-leyl ve’t-teheccüd (12746), a06 Tahrîmü’n-nerd ve’ş-şıtranc ve’l-melâhî (8222), a07 Zemmü’l-livât (9512), a08 Ahbâru Ömer b. Abdilazîz (6650; numara yok, her rivayet sırayla numaralandı), a09 el-Gurabâ (13045; nüshada düşmüş 1 ve 2 numaraları verildi, 63’ün ortasındaki sahte “1 -” işareti kaldırıldı). Numaralar nüshadaki “N -” işaretlerine göredir; 0 = nüsha senedi ve giriş.
+  - `info` alanında `{l: "…"}` varsa uygulama numara yerine bu etiketi gösterir (ör. “Numarasız rivayet”, Suâlât’taki alt numaralar “No. 29a”).
   - Kesirli numaralar (ör. 21.1) rivayetler arasındaki Âcurrî’nin kendi sözleridir; uygulamada “Ara metin” diye görünür. 0 = mukaddime.
 - **eş-Şerîa (el-Âcurrî):** Şâmile no. 13035 (5 cilt), OpenITI `0360AbuBakrAjurri.Sharica.Shamela0013035-ara1`. Veri `seria/` klasöründe, 17 konu bölümüne ayrılmış (`s01.json`…`s17.json`); kitap tamamlandı. Numaralar dijital nüshadaki “N -” işaretlerine göredir; nüshada numarasız birleşmiş rivayetler eksik numaralara bölünmüş, bulunmayan numaralar atlanmıştır. Kesirli anahtarlar (ör. 35.1) bab başındaki Âcurrî’nin sözleri ya da numarasız kısımlardır; aynı numaradan sonra 9’dan fazla kesirli madde varsa iki hane kullanılır (ör. 2033.01–2033.29). Maddesi olmayan kitap başlıkları bir sonraki babın başlığına “—” ile eklenmiştir. s01'in derleme betiği oturum dosyalarındadır (pre_sh.py → sh2.json, build_sh.py); s02–s17 Node betikleriyle (pre.js → items.json, chunk.js, build.js) derlenmiştir.
 - **İmam Ahmed’in risaleleri ve mesâili:** Veri `ahmed/` klasöründe (`index.json` + `tr/mNN.json`), OpenITI `0241IbnHanbal.*` kopyalarından. m01 el-Esrem’in Sorularından (Şâmile 25873; nüshadaki “889” sıra hatası 88 yapıldı), m02 el-Akîde, Hallâl rivayeti (6498; nüshada numara yok, her başlık altı bir madde, 0 = nüsha senedi), m03 Ahkâmü’n-nisâ (95563), m04 el-Esâmî ve’l-künâ, Sâlih rivayeti (5780; 156 numara nüshada yok). Kaynak satırında `İmam Ahmed (رحمه الله)`.
-- **el-Hallâl:** Veri `hallal/` klasöründe. h01 el-Kırâe inde’l-kubûr (Şâmile 8271); nüshada numara yok, rivayetler sırayla numaralandı.
+- **el-Hallâl:** Veri `hallal/` klasöründe. h01 el-Kırâe inde’l-kubûr (Şâmile 8271); nüshada numara yok, rivayetler sırayla numaralandı. h02 el-Hass ale’t-ticâre ve’s-sınâa ve’l-amel (8213; numaralar nüshaya göre).
 - Arapça metinler Şâmile'deki aynı neşirden aynen alınır. Toplu metin için OpenITI GitHub kopyaları kullanılabilir (`raw.githubusercontent.com/OpenITI/...`).
 
 ## Veri biçimi

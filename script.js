@@ -564,9 +564,9 @@ const QUOTES = [
 /* ---------- Kartlar ---------- */
 const cardsEl = $('#cards');
 const MSET = new Set(MORNING), ESET = new Set(EVENING);
-const VIEWS = {main: 'Sekîne', sabah: '☀︎ Sabah Zikirleri', aksam: '☾ Akşam Zikirleri', genel: '📿 Genel Zikirler', selef: '📜 Sözler', fikih: '⚖️ Hanbelî Fıkhı', musannef: '📚 Musannef', musned: '📗 Müsned', usul: '📘 Usûlü’s-Sünne', ahmed: '📘 İmam Ahmed', berbehari: '📕 Şerhu’s-Sünne', acurri: '📙 el-Âcurrî', seria: '📙 eş-Şerîa', hallal: '📗 el-Hallâl', kutuphane: '📚 Kütüphane', kaydedilen: '☆ Kaydettiklerim'};
-const LIB_CHILD = new Set(['musannef', 'musned', 'usul', 'ahmed', 'berbehari', 'acurri', 'seria', 'hallal', 'kaydedilen']);
-const READ_VIEWS = new Set(['selef', 'fikih', 'musannef', 'musned', 'usul', 'ahmed', 'berbehari', 'acurri', 'seria', 'hallal', 'kutuphane', 'kaydedilen']);
+const VIEWS = {main: 'Sekîne', sabah: '☀︎ Sabah Zikirleri', aksam: '☾ Akşam Zikirleri', genel: '📿 Genel Zikirler', selef: '📜 Sözler', fikih: '⚖️ Hanbelî Fıkhı', musannef: '📚 Musannef', ibnebiseybe: '📚 İbn Ebî Şeybe', musned: '📗 Müsned', usul: '📘 Usûlü’s-Sünne', ahmed: '📘 İmam Ahmed', berbehari: '📕 Şerhu’s-Sünne', acurri: '📙 el-Âcurrî', seria: '📙 eş-Şerîa', hallal: '📗 el-Hallâl', kutuphane: '📚 Kütüphane', kaydedilen: '☆ Kaydettiklerim'};
+const LIB_CHILD = new Set(['musannef', 'ibnebiseybe', 'musned', 'usul', 'ahmed', 'berbehari', 'acurri', 'seria', 'hallal', 'kaydedilen']);
+const READ_VIEWS = new Set(['selef', 'fikih', 'musannef', 'ibnebiseybe', 'musned', 'usul', 'ahmed', 'berbehari', 'acurri', 'seria', 'hallal', 'kutuphane', 'kaydedilen']);
 let view = 'main';
 const isGenel = z => !MSET.has(z.id) && !ESET.has(z.id);
 const inView = z => view === 'sabah' ? MSET.has(z.id) : view === 'aksam' ? ESET.has(z.id) : view === 'genel' ? isGenel(z) : false;
@@ -782,6 +782,10 @@ const LIBS = {
     src: n => `İmam Ahmed (\u2068رحمه الله\u2069), el-Müsned, no. ${n}`,
     note: 'İmam Ahmed b. Hanbel (ö. 241), el-Müsned — Türkçe çeviri. Çeviri, Şuayb el-Arnaût ve arkadaşlarının tahkikiyle yayımlanan Müessesetü’r-Risâle neşrindeki (Beyrut, 1421/2001) metinden yapılmıştır; hadis numaraları bu neşre göredir. Numaranın önündeki * ve • işaretleri, neşirde Abdullah b. Ahmed’in ziyâdelerini; ° işareti ise Abdullah’ın babasının kitabında bulduklarını (vicâde) gösterir. Arapça metin, el-Mektebetü’ş-Şâmile’deki aynı neşirden (no. 25794) aynen alınmıştır; tahkik dipnotları alınmamıştır. Müsned, sahâbîlere göre bölümlenmiştir; çevrilen bölümler sırayla eklenecek.'}
 };
+LIBS.ibnebiseybe = {base: 'ibnebiseybe/', key: 'zikrim-ibnebiseybe', unit: 'kitap', item: 'rivayet', ex: 5, err: 'İbn Ebî Şeybe', nogo: true, bookKey: true,
+  label: (n, h) => (h && h[4] && h[4].l) || (n === 0 ? 'Mukaddime' : Number.isInteger(n) ? `No. ${n}` : 'Ara metin'),
+  src: (n, m) => `İbn Ebî Şeybe, ${m ? m.tr : ''}${n === 0 ? ', mukaddime' : Number.isInteger(n) ? ', no. ' + n : ''}`,
+  note: 'Ebû Bekir İbn Ebî Şeybe (ö. 235) — el-Musannef dışındaki küçük kitapları, Türkçe çeviri ve Arapça metniyle. Çeviri ve Arapça metin el-Mektebetü’ş-Şâmile’deki nüshalardan alınmıştır; numaralar bu nüshalara göredir. Kitâbü’l-Îmân ve Kitâbü’l-Edeb’in içeriği büyük ölçüde Musannef’teki aynı adlı kitaplarla örtüşür. Halku Âdem’in dijital nüshası yer yer bozuktur; bozuk yerler çeviride belirtilmiştir.'};
 LIBS.berbehari = {base: 'berbehari/', key: 'zikrim-berb', unit: 'kitap', item: 'madde', ex: 25, err: 'Şerhu’s-Sünne', single: true,
   label: n => n ? `Madde ${n}` : 'Mukaddime',
   src: n => `el-Berbehârî, Şerhu’s-Sünne, ${n ? 'madde ' + n : 'mukaddime'}`,
@@ -1327,10 +1331,12 @@ function goTo(v, b, n) {
   renderCards();
   $('.list').scrollIntoView({block: 'start'});
 }
-const LIB_NAMES = {musannef: 'el-Musannef', musned: 'el-Müsned', usul: 'Usûlü’s-Sünne', ahmed: 'İmam Ahmed', berbehari: 'Şerhu’s-Sünne', acurri: 'el-Âcurrî', seria: 'eş-Şerîa', hallal: 'el-Hallâl'};
+const LIB_NAMES = {musannef: 'el-Musannef', ibnebiseybe: 'İbn Ebî Şeybe', musned: 'el-Müsned', usul: 'Usûlü’s-Sünne', ahmed: 'İmam Ahmed', berbehari: 'Şerhu’s-Sünne', acurri: 'el-Âcurrî', seria: 'eş-Şerîa', hallal: 'el-Hallâl'};
 const SHELVES = [
   {c: 'II. ASIR', books: [
     {v: 'musannef', ar: 'المصنف', t: 'el-Musannef', who: 'İbn Ebî Şeybe', bo: '159', d: 235, col: '#4d8062'},
+    {v: 'ibnebiseybe', b: 0, ar: 'خلق آدم وولادة النبي', t: 'Halku Âdem ve vilâdetü’n-Nebî', who: 'İbn Ebî Şeybe', bo: '159', d: 235, col: '#6e5a3a', done: true},
+    {v: 'ibnebiseybe', b: 1, ar: 'كتاب الإيمان', t: 'Kitâbü’l-Îmân', who: 'İbn Ebî Şeybe', bo: '159', d: 235, col: '#3e6a55', done: true},
     {v: 'musned', ar: 'المسند', t: 'el-Müsned', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#8a5a3c', total: 27647},
     {v: 'usul', ar: 'أصول السنة', t: 'Usûlü’s-Sünne', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#3f5f7f', done: true},
     {v: 'ahmed', b: 0, ar: 'من سؤالات الأثرم', t: 'el-Esrem’in Sorularından', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#5b6e3a', done: true},
@@ -1340,6 +1346,7 @@ const SHELVES = [
   {c: 'III. ASIR', books: [
     {v: 'berbehari', ar: 'شرح السنة', t: 'Şerhu’s-Sünne', who: 'el-Berbehârî', bo: '233?', d: 329, col: '#6b4f7a', done: true},
     {v: 'hallal', b: 0, ar: 'القراءة عند القبور', t: 'el-Kırâe inde’l-kubûr', who: 'el-Hallâl', bo: '234', d: 311, col: '#3d6f6a', done: true},
+    {v: 'hallal', b: 1, ar: 'الحث على التجارة والصناعة والعمل', t: 'el-Hass ale’t-ticâre', who: 'el-Hallâl', bo: '234', d: 311, col: '#7a6236', done: true},
     {v: 'seria', ar: 'الشريعة', t: 'eş-Şerîa', who: 'el-Âcurrî', bo: '~280', d: 360, col: '#2f6b66', done: true},
     {v: 'acurri', b: 0, ar: 'أخلاق أهل القرآن', t: 'Ahlâku Ehli’l-Kur’ân', who: 'el-Âcurrî', bo: '~280', d: 360, col: '#9a7b34', done: true},
     {v: 'acurri', b: 1, ar: 'الأربعون حديثا', t: 'el-Erbaûn', who: 'el-Âcurrî', bo: '~280', d: 360, col: '#7a4a52', done: true},
@@ -1347,7 +1354,9 @@ const SHELVES = [
     {v: 'acurri', b: 3, ar: 'أدب النفوس', t: 'Edebü’n-nüfûs', who: 'el-Âcurrî', bo: '~280', d: 360, col: '#7d6a3a', done: true},
     {v: 'acurri', b: 4, ar: 'فضل قيام الليل والتهجد', t: 'Fazlu kıyâmi’l-leyl', who: 'el-Âcurrî', bo: '~280', d: 360, col: '#33496b', done: true},
     {v: 'acurri', b: 5, ar: 'تحريم النرد والشطرنج والملاهي', t: 'Tahrîmü’n-nerd ve’ş-şıtranc', who: 'el-Âcurrî', bo: '~280', d: 360, col: '#6b3f3f', done: true},
-    {v: 'acurri', b: 6, ar: 'ذم اللواط', t: 'Zemmü’l-livât', who: 'el-Âcurrî', bo: '~280', d: 360, col: '#5a4a6e', done: true}]}
+    {v: 'acurri', b: 6, ar: 'ذم اللواط', t: 'Zemmü’l-livât', who: 'el-Âcurrî', bo: '~280', d: 360, col: '#5a4a6e', done: true},
+    {v: 'acurri', b: 7, ar: 'أخبار عمر بن عبد العزيز', t: 'Ahbâru Ömer b. Abdilazîz', who: 'el-Âcurrî', bo: '~280', d: 360, col: '#476b4a', done: true},
+    {v: 'acurri', b: 8, ar: 'الغرباء', t: 'el-Gurabâ', who: 'el-Âcurrî', bo: '~280', d: 360, col: '#5e4b3c', done: true}]}
 ];
 function libSub(v, span) {
   const L = LIBS[v];
