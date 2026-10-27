@@ -38,6 +38,7 @@
     <div class="hero-foot" lang="ar" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
     <div class="daily" id="daily" hidden>
       <span class="hero-subtitle">GÜNÜN RİVAYETİ</span>
+      <button type="button" class="star daily-star" id="dailyStar" aria-label="Kaydet">☆</button>
       <p class="daily-t" id="dailyT"></p>
       <button type="button" class="daily-src" id="dailySrc"></button>
     </div>
@@ -131,42 +132,50 @@
 </dialog>
 
 <!-- Ayarlar -->
-<dialog id="settings" class="sheet">
-  <h2 tabindex="-1" autofocus>Ayarlar</h2>
-  <h3>Görünüm</h3>
-  <div class="theme-controls" role="group" aria-label="Tema seçimi">
-    <button type="button" data-set-theme="classic">✧ Klasik</button>
-    <button type="button" data-set-theme="nature">❀ Doğa</button>
-    <button type="button" data-set-theme="night">☾ Gece</button>
+<dialog id="settings" class="sheet settings">
+  <div class="set-head"><h2 tabindex="-1" autofocus>Ayarlar</h2><button type="button" id="closeSettings" class="set-done">Bitti</button></div>
+
+  <p class="set-cap">GÖRÜNÜM</p>
+  <div class="set-group">
+    <div class="theme-controls theme-pick" role="group" aria-label="Tema seçimi">
+      <button type="button" data-set-theme="classic"><span class="tp-prev tp-classic"><i></i><b></b></span>Klasik</button>
+      <button type="button" data-set-theme="nature"><span class="tp-prev tp-nature"><i></i><b></b></span>Doğa</button>
+      <button type="button" data-set-theme="night"><span class="tp-prev tp-night"><i></i><b></b></span>Gece</button>
+    </div>
+    <label class="set-row"><span class="set-ic" style="--ic:#7a6a4f">≋</span><span class="set-t">Titreşim<small>Her sayışta hafif titreşim</small></span><input type="checkbox" id="hapticsToggle" switch></label>
   </div>
-  <label class="switch-row">Titreşim <input type="checkbox" id="hapticsToggle" switch></label>
-  <h3>Okuma</h3>
-  <label class="switch-row">Rivayetlerde Arapça metni göster <input type="checkbox" id="arShow" switch></label>
-  <h3>Sesli okuma</h3>
-  <label class="switch-row">Sesli okuma düğmelerini (▶) göster <input type="checkbox" id="ttsShow" switch></label>
-  <label for="ttsAr">Arapça ses<select id="ttsAr" class="set-select"></select><small class="tts-info" id="ttsArInfo"></small></label>
-  <label for="ttsTr">Türkçe ses<select id="ttsTr" class="set-select"></select><small class="tts-info" id="ttsTrInfo"></small></label>
-  <label for="ttsRate">Okuma hızı · <output id="ttsRateOut">0,90×</output><input type="range" id="ttsRate" min="0.5" max="1.3" step="0.05" value="0.9"></label>
-  <label class="switch-row">Arapçada seneti oku <input type="checkbox" id="ttsArSened" switch></label>
-  <label class="switch-row">Türkçede seneti oku <input type="checkbox" id="ttsTrSened" switch></label>
-  <div class="row">
-    <button type="button" id="ttsTest" class="ghost tts-b" data-label="▶ Arapça dene">▶ Arapça dene</button>
-    <button type="button" id="ttsTestTr" class="ghost tts-b" data-label="▶ Türkçe dene">▶ Türkçe dene</button>
+
+  <p class="set-cap">OKUMA</p>
+  <div class="set-group">
+    <label class="set-row"><span class="set-ic ar" style="--ic:#4d8062">ع</span><span class="set-t">Arapça metin<small>Rivayetlerde önce Arapçası gösterilir</small></span><input type="checkbox" id="arShow" switch></label>
+    <label class="set-row"><span class="set-ic" style="--ic:#3f6f9f">▶</span><span class="set-t">Sesli okuma düğmeleri<small>Rivayetlerin yanındaki ▶ simgeleri</small></span><input type="checkbox" id="ttsShow" switch></label>
   </div>
-  <p class="note">Sesler iPhone’un kendi sesleridir; uygulama yüklü olanların en kalitelisini (Premium, sonra Gelişmiş) ve erkek sesi kendiliğinden seçer. İndirdiğin ses listede “(Premium)” / “(Gelişmiş)” diye görünür.</p>
-  <h3>Son 30 gün</h3>
-  <div id="history" class="history"></div>
-  <h3>Veriler</h3>
-  <p class="note">Veriler yalnızca bu telefonda tutulur. Uygulamayı silmeden ya da adresini değiştirmeden önce yedek al.</p>
-  <div class="row">
-    <button type="button" id="exportData" class="ghost">⇪ Yedeği kaydet</button>
-    <label class="ghost file-button">⇩ Yedekten yükle<input type="file" id="importData" accept="application/json,.json" hidden></label>
+
+  <p class="set-cap">SESLİ OKUMA</p>
+  <div class="set-group">
+    <label class="set-row col" for="ttsAr"><span class="set-line"><span class="set-ic ar" style="--ic:#4d8062">ع</span><span class="set-t">Arapça ses</span><select id="ttsAr" class="set-pick"></select></span><small class="tts-info" id="ttsArInfo"></small></label>
+    <label class="set-row col" for="ttsTr"><span class="set-line"><span class="set-ic" style="--ic:#b0413e">T</span><span class="set-t">Türkçe ses</span><select id="ttsTr" class="set-pick"></select></span><small class="tts-info" id="ttsTrInfo"></small></label>
+    <label class="set-row col" for="ttsRate"><span class="set-line"><span class="set-ic" style="--ic:#a97743">◷</span><span class="set-t">Okuma hızı</span><output id="ttsRateOut" class="set-val">0,90×</output></span><span class="set-range"><small>Yavaş</small><input type="range" id="ttsRate" min="0.5" max="1.3" step="0.05" value="0.9"><small>Hızlı</small></span></label>
+    <label class="set-row"><span class="set-ic" style="--ic:#6b4f7a">→</span><span class="set-t">Arapçada seneti oku<small>Kapalıysa yalnız metin okunur</small></span><input type="checkbox" id="ttsArSened" switch></label>
+    <label class="set-row"><span class="set-ic" style="--ic:#6b4f7a">→</span><span class="set-t">Türkçede seneti oku</span><input type="checkbox" id="ttsTrSened" switch></label>
+    <div class="set-row set-btns">
+      <button type="button" id="ttsTest" class="tts-b set-try" data-label="▶ Arapça dene">▶ Arapça dene</button>
+      <button type="button" id="ttsTestTr" class="tts-b set-try" data-label="▶ Türkçe dene">▶ Türkçe dene</button>
+    </div>
   </div>
-  <div class="row">
-    <button type="button" id="resetToday" class="ghost">↻ Bugünü sıfırla</button>
-    <button type="button" id="restoreDefaults" class="ghost">Varsayılan zikirler</button>
+  <p class="set-foot">Sesler telefonun kendi sesleridir; uygulama yüklü olanların en kalitelisini (Premium, sonra Gelişmiş) ve erkek sesi kendiliğinden seçer.</p>
+
+  <p class="set-cap">SON 30 GÜN</p>
+  <div class="set-group set-pad"><div id="history" class="history"></div></div>
+
+  <p class="set-cap">VERİLER</p>
+  <div class="set-group">
+    <button type="button" id="exportData" class="set-row set-act"><span class="set-ic" style="--ic:#3f6f9f">⇪</span><span class="set-t">Yedeği kaydet</span><span class="set-chev">›</span></button>
+    <label class="set-row set-act"><span class="set-ic" style="--ic:#3f6f9f">⇩</span><span class="set-t">Yedekten yükle</span><span class="set-chev">›</span><input type="file" id="importData" accept="application/json,.json" hidden></label>
+    <button type="button" id="resetToday" class="set-row set-act danger"><span class="set-ic" style="--ic:#b0413e">↻</span><span class="set-t">Bugünü sıfırla</span></button>
+    <button type="button" id="restoreDefaults" class="set-row set-act danger"><span class="set-ic" style="--ic:#b0413e">⟲</span><span class="set-t">Varsayılan zikirler</span></button>
   </div>
-  <div class="row"><button type="button" id="closeSettings" class="primary">Tamam</button></div>
+  <p class="set-foot">Veriler yalnızca bu telefonda tutulur. Uygulamayı silmeden ya da adresini değiştirmeden önce yedek al.</p>
   <p class="note center">Sekîne · sürüm 3.9</p>
 </dialog>
 

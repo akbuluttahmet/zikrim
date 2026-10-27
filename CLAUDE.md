@@ -68,7 +68,7 @@ Bu repoda çalışan her oturum (Claude Code, başka sohbetler) bu kurallara uya
 
 ## Arayüz notları
 
-- Varsayılan tema Klasik; ana sayfa kartı üç halka (Sabah · Akşam · Genel), günün rivayeti ve kaldığın yerden oluşur.
+- Varsayılan tema Klasik; ana sayfa kartı üç halka (Sabah · Akşam · Genel), günün rivayeti (uygulama her açılışta Müsned/Musannef havuzundan rastgele seçer, ☆ ile kaydedilir) ve kaldığın yerden oluşur.
 - Zikirlerin sırası kullanıcı tarafından değiştirilemez.
 - Kütüphane “raf” düzenindedir: asırlara göre raflar, kitaplar renkli kapak (Arapça adı + ilerleme çubuğu). Yeni kitap `SHELVES` dizisine eklenir.
 - Rivayetlerde Arapça metin önce, kâğıt renkli kutuda Amiri yazı tipiyle gösterilir (sened ince, metin kalın); altında Türkçe sened ve metin. Ses düğmeleri küçük ▶ simgeleridir. Ayarlardan Arapça metin ve ▶ düğmeleri gizlenebilir. Amiri `fonts/` klasöründedir (OFL).

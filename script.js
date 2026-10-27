@@ -1196,22 +1196,39 @@ function starBtn(k, make) {
 }
 /* ---------- Ana sayfa: günün rivayeti (herkese aynı, tarihe göre) ve kaldığın yer ---------- */
 const fnv = t => { let h = 2166136261; for (let i = 0; i < t.length; i++) { h ^= t.charCodeAt(i); h = Math.imul(h, 16777619); } return h >>> 0; };
-let DAILY = null, dailyDay = null;
+let DAILY = null, dailyPick = null;
+// Ana sayfadaki rivayet: uygulama her açıldığında (sayfa her yüklendiğinde) rastgele seçilir; ☆ ile kaydedilebilir
 async function renderDaily() {
-  if (dailyDay === today) return;
   try { if (!DAILY) { const r = await fetch('gunun.json'); if (!r.ok) return; DAILY = await r.json(); } } catch { return; }
-  const [y, m, d] = today.split('-').map(Number);
-  const v = (Date.UTC(y, m - 1, d) / 864e5) % 2 ? 'musannef' : 'musned'; // günler sırayla: Müsned, Musannef
-  const P = DAILY[v];
-  if (!P || !P.h.length) return;
-  let best = null, bh = -1;
-  for (const it of P.h) { const h = fnv(today + ':' + v + ':' + it[1]); if (h > bh) { bh = h; best = it; } }
-  const [b, n, t] = best;
+  if (!dailyPick) {
+    const all = [];
+    for (const v of ['musned', 'musannef']) if (DAILY[v]) for (const it of DAILY[v].h) all.push([v, it]);
+    if (!all.length) return;
+    const [v, it] = all[Math.floor(Math.random() * all.length)];
+    dailyPick = {v, b: it[0], n: it[1], t: it[2]};
+  }
+  const {v, b, n, t} = dailyPick;
   $('#dailyT').textContent = t;
-  $('#dailySrc').textContent = LIBS[v].src(n) + ' · ' + P.books[b] + ' ›';
+  $('#dailySrc').textContent = LIBS[v].src(n) + ' · ' + DAILY[v].books[b] + ' ›';
   $('#dailySrc').onclick = () => goTo(v, b, n);
+  const k = v + ':' + n, st = $('#dailyStar');
+  const paint = () => { const on = isSaved(k); st.textContent = on ? '★' : '☆'; st.setAttribute('aria-pressed', String(on)); st.setAttribute('aria-label', on ? 'Kaydettiklerimden çıkar' : 'Kaydet'); };
+  paint();
+  st.onclick = async () => {
+    if (isSaved(k)) RD.saved = RD.saved.filter(x => x.k !== k);
+    else {
+      try {
+        const L = LIBS[v]; L.idx = L.idx || await libFetch(L, 'index.json');
+        const meta = L.idx[b]; const data = await libFetch(L, 'tr/' + meta.f);
+        let h = null; for (const bb of data.babs) { h = bb.h.find(x => x[0] === n); if (h) break; }
+        if (!h) return;
+        RD.saved.unshift({k, at: Date.now(), v, b, h, title: meta.tr});
+      } catch (e) { toast('Kaydedilemedi; internet bağlantını kontrol et'); return; }
+      toast('Kaydettiklerime eklendi');
+    }
+    store.set('zikrim-saved', RD.saved); paint();
+  };
   $('#daily').hidden = false;
-  dailyDay = today;
 }
 function renderResume() {
   const x = Object.values(RD.last).filter(x => x && x.v).sort((a, b) => b.at - a.at)[0];
@@ -1720,7 +1737,7 @@ $('#importData').addEventListener('change', async e => {
 /* ---------- Gün değişimi ve uyku ---------- */
 function checkDay() {
   const k = dayKey();
-  if (k !== today) { today = k; update(); if (view === 'main') renderDaily(); }
+  if (k !== today) { today = k; update(); }
 }
 setInterval(checkDay, 30000);
 document.addEventListener('visibilitychange', () => {

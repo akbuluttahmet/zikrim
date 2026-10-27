@@ -1,5 +1,5 @@
 // Güncelleme yaptığında bu sürüm adını artır
-const CACHE = 'zikrim-v104';
+const CACHE = 'zikrim-v105';
 const ASSETS = ['./', './index.html', './style.css', './fikih.js', './usul.js', './script.js', './manifest.webmanifest', './icon.svg', './apple-touch-icon.png', './icon-192.png', './icon-512.png', './gunun.json', './fonts/amiri-400.woff2', './fonts/amiri-700.woff2'];
 
 self.addEventListener('install', event => {
