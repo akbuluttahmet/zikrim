@@ -776,11 +776,27 @@ let USUL_TARGET = null;
 function renderUsul() {
   const wrap = el('div', 'mus');
   const head = el('div', 'mus-head');
-  const by = el('small', 'mus-book-n', 'İmam Ahmed b. Hanbel (');
+  // Diğer kitaplarla aynı başlık: kapak, ad, âlim, madde sayısı, Okumaya devam et; nüsha notu katlanır
+  const bk = SHELVES.flatMap(s => s.books).find(x => x.v === 'usul');
+  const card = el('section', 'bk-head');
+  const cv = el('span', 'bk-cover', bk.ar); cv.style.setProperty('--cv', bk.col); cv.lang = 'ar'; cv.dir = 'rtl'; cv.setAttribute('aria-hidden', 'true');
+  const txt = el('div', 'bk-txt');
+  const who = el('span', 'bk-who', 'Ahmed b. Hanbel ');
   const ar = el('bdi', 'rah', RAH); ar.lang = 'ar'; ar.dir = 'rtl';
-  by.append(ar, ') · ö. 241 · ' + (USUL.length - 1) + ' madde');
-  head.append(by, fsBar());
-  const note = el('article', 'quote fq-note mus-note', USUL_NOTE);
+  const rw = el('span', 'nowrap', '('); rw.append(ar, ')'); who.append(rw);
+  txt.append(el('b', null, bk.t), who, el('small', 'bk-meta', (USUL.length - 1) + ' madde'));
+  card.append(cv, txt);
+  const last = RD.last.usul;
+  if (last) {
+    const go = el('button', 'alim-go bk-go');
+    go.type = 'button';
+    go.append(el('span', null, 'Okumaya devam et'), el('small', null, last.label));
+    go.addEventListener('click', () => goTo('usul', null, last.n));
+    card.append(go);
+  }
+  head.append(card, fsBar());
+  const note = el('details', 'mus-note-d');
+  note.append(el('summary', null, 'Nüsha ve numaralar hakkında'), el('article', 'quote fq-note mus-note', USUL_NOTE));
   wrap.append(head, note);
   const list = el('div', 'fq-cat usul-list');
   for (const u of USUL) list.append(usulItem(u));
@@ -874,25 +890,26 @@ async function renderLib(L) {
 }
 
 // Kitabın (ya da kitaplığın) başlığı: raf renginde küçük kapak (ya da âlim simgesi), ad, âlim, bölüm ve rivayet sayısı, Okumaya devam et
-function libHead(L) {
+// Kitap sayfasında (book verilince) o kitabın kapağı, adı, “N madde · N bab” sayısı ve o kitapta kaldığın yer gösterilir.
+function libHead(L, book = null) {
   const shelf = SHELVES.flatMap(s => s.books);
-  const bk = shelf.find(x => x.v === L.view && x.b == null), al = alimList().find(a => a.books.some(x => x.v === L.view));
+  const bk = shelf.find(x => x.v === L.view && (x.b == null || (book && x.b === book.i))), al = alimList().find(a => a.books.some(x => x.v === L.view));
   const head = el('section', 'bk-head');
   if (bk) {
     const cv = el('span', 'bk-cover', bk.ar); cv.style.setProperty('--cv', bk.col); cv.lang = 'ar'; cv.dir = 'rtl'; cv.setAttribute('aria-hidden', 'true');
     head.append(cv);
   } else if (al) head.append(alimAv(al, 'alim-av'));
   const txt = el('div', 'bk-txt');
-  txt.append(el('b', null, bk ? bk.t : LIB_NAMES[L.view] || L.err));
+  txt.append(el('b', null, book ? book.meta.tr : bk ? bk.t : LIB_NAMES[L.view] || L.err));
   if (al) { const w = el('span', 'bk-who', al.who + ' '); const r = el('bdi', 'rah', RAH); r.lang = 'ar'; r.dir = 'rtl'; const rw = el('span', 'nowrap', '('); rw.append(r, ')'); w.append(rw); txt.append(w); }
   const t = L.idx.reduce((s, b) => s + (b.t || 0), 0);
-  txt.append(el('small', 'bk-meta', `${L.idx.length} ${L.unit} · ${t.toLocaleString('tr-TR')} ${L.item}`));
+  txt.append(el('small', 'bk-meta', book ? `${book.cnt.toLocaleString('tr-TR')} ${L.item}` + (book.babs > 1 ? ` · ${book.babs} bab` : '') : `${L.idx.length} ${L.unit} · ${t.toLocaleString('tr-TR')} ${L.item}`));
   head.append(txt);
   const last = RD.last[L.view];
-  if (last && L.idx[last.b] && L.idx[last.b].t) {
+  if (last && L.idx[last.b] && L.idx[last.b].t && (!book || last.b === book.i)) {
     const go = el('button', 'alim-go bk-go');
     go.type = 'button';
-    go.append(el('span', null, 'Okumaya devam et'), el('small', null, `${L.idx.length > 1 && last.title ? last.title.replace(/ \(.*\)$/, '') + ' · ' : ''}${last.label}`));
+    go.append(el('span', null, 'Okumaya devam et'), el('small', null, `${!book && L.idx.length > 1 && last.title ? last.title.replace(/ \(.*\)$/, '') + ' · ' : ''}${last.label}`));
     go.addEventListener('click', () => goTo(last.v, last.b, last.n));
     head.append(go);
   }
@@ -1006,16 +1023,25 @@ function libRenderBook(L, wrap, meta) {
   if (L.single) back.hidden = true;
   back.addEventListener('click', () => { L.book = null; libSave(L); searchEl.value = ''; renderCards(); });
   const cnt = L.data.babs.reduce((s, b) => s + b.h.length, 0);
-  head.append(back, el('h3', null, meta.tr), el('small', 'mus-book-n', `${cnt.toLocaleString('tr-TR')} ${L.item}` + (L.data.babs.length > 1 ? ` · ${L.data.babs.length} bab` : '')), fsBar());
+  // Kitap dizinindeki gibi: kapaklı başlık + Okumaya devam et, katlanan nüsha notu, numaralı bab kartları
+  head.append(back, libHead(L, {meta, i: L.book, cnt, babs: L.data.babs.length}), fsBar());
   wrap.append(head);
-  if (L.single && L.note) wrap.append(el('article', 'quote fq-note mus-note', L.note));
+  if (L.single && L.note) {
+    const note = el('details', 'mus-note-d');
+    note.append(el('summary', null, 'Nüsha ve numaralar hakkında'), el('article', 'quote fq-note mus-note', L.note));
+    wrap.append(note);
+  }
+  const lastR = RD.last[L.view] && RD.last[L.view].b === L.book ? RD.last[L.view] : null;
   wrap.append(el('div', 'mus-go'), el('div', 'mus-results'));
   const list = el('div', 'mus-babs');
   const single = L.data.babs.length === 1;
-  L.data.babs.forEach(b => {
+  L.data.babs.forEach((b, i) => {
     const d = el('details', 'fq-cat mus-bab');
     const sum = el('summary');
-    sum.append(el('span', 'mus-bab-tr', b.t || 'Kitabın başı'), el('small', null, `${b.h.length}`));
+    const txt = el('span', 'mus-bab-txt');
+    txt.append(el('span', 'mus-bab-tr', b.t || 'Kitabın başı'), el('small', 'mus-bab-n', `${b.h.length} ${L.item}`));
+    if (lastR && b.h.some(x => x[0] === lastR.n)) { txt.append(el('small', 'mus-book-here', '▸ Kaldığın yer: ' + lastR.label)); d.classList.add('mus-here'); }
+    sum.append(el('span', 'mus-book-i', String(i + 1)), txt);
     d.append(sum);
     d.fill = () => { if (!d.dataset.done) { d.dataset.done = 1; for (const h of b.h) d.append(libItem(L, h)); } };
     d.addEventListener('toggle', () => { if (d.open) d.fill(); });

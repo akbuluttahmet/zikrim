@@ -627,3 +627,14 @@ body[data-tab=anasayfa] .to-top{display:none}
 .mus-book.mus-here .mus-book-i{background:var(--accent);color:var(--accentText)}
 .alim-go{max-width:100%;box-sizing:border-box}
 .alim-go small{display:block;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* Kitap sayfası: başlık kartı ve numaralı bab kartları (kitap dizinindeki bölüm kartlarıyla aynı dil) */
+.mus-head .bk-head{margin:4px 0 2px}
+.mus-bab>summary{align-items:center;justify-content:flex-start;gap:14px}
+.mus-bab>summary>.mus-book-i{flex:none}
+.mus-bab>summary::after{margin-left:auto}
+.mus-bab-txt{flex:1;min-width:0;display:flex;flex-direction:column;gap:4px}
+.mus-bab>summary .mus-bab-n{margin-left:0;padding-top:0;white-space:normal;font-size:12px;font-weight:600;color:var(--accent)}
+.mus-bab>summary .mus-book-here{margin-left:0;padding-top:0;color:var(--accent);font-weight:700}
+.mus-bab.mus-here{border-color:var(--accent);box-shadow:inset 3px 0 0 var(--accent)}
+.mus-bab.mus-here .mus-book-i{background:var(--accent);color:var(--accentText)}
