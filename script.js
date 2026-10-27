@@ -1235,10 +1235,10 @@ const SHELVES = [
     {v: 'musned', ar: 'المسند', t: 'el-Müsned', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#8a5a3c', total: 27647},
     {v: 'usul', ar: 'أصول السنة', t: 'Usûlü’s-Sünne', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#3f5f7f', done: true}]},
   {c: 'III. ASIR', books: [
-    {v: 'berbehari', ar: 'شرح السنة', t: 'Şerhu’s-Sünne', who: 'el-Berbehârî', bo: '233 (ya da 252)', d: 329, col: '#6b4f7a', done: true},
-    {v: 'seria', ar: 'الشريعة', t: 'eş-Şerîa', who: 'el-Âcurrî', bo: 'y. 280', d: 360, col: '#2f6b66', total: 2075},
-    {v: 'acurri', b: 0, ar: 'أخلاق أهل القرآن', t: 'Ahlâku Ehli’l-Kur’ân', who: 'el-Âcurrî', bo: 'y. 280', d: 360, col: '#9a7b34', done: true},
-    {v: 'acurri', b: 1, ar: 'الأربعون حديثا', t: 'el-Erbaûn', who: 'el-Âcurrî', bo: 'y. 280', d: 360, col: '#7a4a52', done: true}]}
+    {v: 'berbehari', ar: 'شرح السنة', t: 'Şerhu’s-Sünne', who: 'el-Berbehârî', bo: '233?', d: 329, col: '#6b4f7a', done: true},
+    {v: 'seria', ar: 'الشريعة', t: 'eş-Şerîa', who: 'el-Âcurrî', bo: '~280', d: 360, col: '#2f6b66', total: 2075},
+    {v: 'acurri', b: 0, ar: 'أخلاق أهل القرآن', t: 'Ahlâku Ehli’l-Kur’ân', who: 'el-Âcurrî', bo: '~280', d: 360, col: '#9a7b34', done: true},
+    {v: 'acurri', b: 1, ar: 'الأربعون حديثا', t: 'el-Erbaûn', who: 'el-Âcurrî', bo: '~280', d: 360, col: '#7a4a52', done: true}]}
 ];
 function libSub(v, span) {
   const L = LIBS[v];
