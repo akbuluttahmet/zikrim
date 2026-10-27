@@ -1981,7 +1981,8 @@ const SHELVES = [
     {v: 'ahmed', b: 8, ar: 'سؤالات أبي داود', t: 'Suâlâtü Ebî Dâvûd', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#6b4a5e', done: true},
     {v: 'zuhd', ar: 'الزهد', t: 'ez-Zühd', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#4f6a3c', done: true},
     {v: 'fezail', ar: 'فضائل الصحابة', t: 'Fezâilü’s-sahâbe', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#7a5530', done: true},
-    {v: 'buhari', b: 0, ar: 'رفع اليدين في الصلاة', t: 'Ref‘u’l-yedeyn', who: 'el-Buhârî', bo: '194', d: 256, col: '#3f6b5e', done: true}]},
+    {v: 'buhari', b: 0, ar: 'رفع اليدين في الصلاة', t: 'Ref‘u’l-yedeyn', who: 'el-Buhârî', bo: '194', d: 256, col: '#3f6b5e', done: true},
+    {v: 'buhari', b: 1, ar: 'القراءة خلف الإمام', t: 'el-Kırâe halfe’l-imâm', who: 'el-Buhârî', bo: '194', d: 256, col: '#6b5a3a', done: true}]},
   {c: 'III. ASIR', books: [
     {v: 'ebudavud', b: 0, ar: 'رسالة أبي داود إلى أهل مكة', t: 'Risâle ilâ ehli Mekke', who: 'Ebû Dâvûd', bo: '202', d: 275, col: '#5a6b7a', done: true},
     {v: 'berbehari', ar: 'شرح السنة', t: 'Şerhu’s-Sünne', who: 'el-Berbehârî', bo: '233?', d: 329, col: '#6b4f7a', done: true},
