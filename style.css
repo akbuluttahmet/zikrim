@@ -635,7 +635,9 @@ body[data-tab=anasayfa] .to-top{display:none}
 /* Kitap sayfası: başlık kartı ve numaralı bab kartları (kitap dizinindeki bölüm kartlarıyla aynı dil) */
 .mus-head .bk-head{margin:4px 0 2px}
 .mus-bab>summary{align-items:center;justify-content:flex-start;gap:14px}
-.mus-bab>summary>.mus-book-i{flex:none}
+/* `.mus-bab>summary>span` kuralı numarayı sütun düzenine çeviriyordu; numara dairenin tam ortasında */
+.mus-bab>summary>.mus-book-i{flex:none;display:grid;place-items:center;gap:0}
+.mus-book-i{line-height:1;font-variant-numeric:tabular-nums}
 .mus-bab>summary::after{margin-left:auto}
 .mus-bab-txt{flex:1;min-width:0;display:flex;flex-direction:column;gap:4px}
 .mus-bab>summary .mus-bab-n{margin-left:0;padding-top:0;white-space:normal;font-size:12px;font-weight:600;color:var(--accent)}
