@@ -1424,7 +1424,10 @@ function feedCard(p, first) {
   const open = el('button', null, '📖');
   open.type = 'button'; open.setAttribute('aria-label', 'Kitapta aç'); open.title = 'Kitapta aç';
   open.addEventListener('click', () => { ttsStop(); goTo(p.v, p.b, p.n); });
-  side.append(star, open);
+  const shot = el('button', null, '📸');
+  shot.type = 'button'; shot.setAttribute('aria-label', 'Görüntü olarak kaydet ya da paylaş'); shot.title = 'Görüntü olarak kaydet';
+  shot.addEventListener('click', () => feedShot(p));
+  side.append(star, open, shot);
   a.append(box, side);
   if (first) box.append(el('span', 'fd-hint', '↑ Kaydır · çift dokununca kaydet'));
   return a;
@@ -1444,6 +1447,81 @@ function feedMore(count) {
   }
   if (FEED.i >= FEED.pool.length && !feedEl.querySelector('.fd-end')) feedEl.append(el('div', 'fd-card fd-msg fd-end', feedEl.querySelector('.fd-card') ? 'Bu seçimdeki bütün rivayetleri gördün. Akış yeniden açıldığında yeniden karışır.' : 'Bu kitapta ekrana sığan rivayet bulunamadı.'));
   FEED.busy = false;
+}
+// Ekran görüntüsü: kart, o anki temanın renkleriyle 1080 px genişliğinde bir görsele çizilir (isnad zinciri, metin, kaynak, bab
+// ve altta “Sekîne”). Paylaşım menüsü aynı dokunuşun içinde açılsın diye görsel eşzamanlı üretilir (toDataURL).
+function feedShot(p) {
+  const css = getComputedStyle(document.body), col = n => css.getPropertyValue(n).trim() || '#000';
+  const C = {bg: col('--bg'), card: col('--card'), border: col('--border'), text: col('--text'), muted: col('--muted'), accent: col('--accent')};
+  const FAM = getComputedStyle(document.documentElement).fontFamily || 'sans-serif';
+  const W = 1080, PAD = 64, IN = 72, TX = PAD + IN, TW = W - 2 * TX;
+  const cv = document.createElement('canvas'), ctx = cv.getContext('2d');
+  const font = (w, size, style = '') => `${style} ${w} ${size}px ${FAM}`.trim();
+  const wrap = (txt, f, maxW) => {
+    ctx.font = f;
+    const lines = [];
+    for (const para of String(txt).split('\n')) {
+      let line = '';
+      for (const word of para.split(/\s+/).filter(Boolean)) {
+        const t = line ? line + ' ' + word : word;
+        if (ctx.measureText(t).width <= maxW || !line) line = t; else { lines.push(line); line = word; }
+      }
+      lines.push(line);
+    }
+    return lines;
+  };
+  // Önce yerleşimi hesapla, sonra yüksekliğe göre çiz
+  const names = p.s ? p.s.split(/\s*→\s*/).filter(Boolean) : [];
+  const NAME = font(400, 32), NAME_B = font(700, 32), TXT = font(400, p.t.length < 140 ? 48 : p.t.length > 300 ? 40 : 44), SRC = font(400, 28), BAB = font(400, 28, 'italic');
+  const txtLH = p.t.length < 140 ? 72 : p.t.length > 300 ? 62 : 67;
+  const chain = names.map((nm, i) => wrap(nm, i === names.length - 1 ? NAME_B : NAME, TW - 44));
+  const body = wrap(p.t, TXT, TW);
+  const srcTxt = feedSrc(p), src = wrap(srcTxt, SRC, TW);
+  const bab = p.bab && !srcTxt.includes(p.bab) ? wrap('Bab: ' + p.bab, BAB, TW) : [];
+  let h = IN + (names.length ? 40 + chain.reduce((s, l) => s + l.length * 42 + 10, 0) + 34 : 0) + body.length * txtLH + 34 + src.length * 40 + (bab.length ? 12 + bab.length * 40 : 0) + IN;
+  const cardH = h, H = Math.max(1350, PAD + cardH + 130);
+  cv.width = W; cv.height = H;
+  ctx.fillStyle = C.bg; ctx.fillRect(0, 0, W, H);
+  const top = Math.round((H - 130 - cardH) / 2);
+  ctx.beginPath(); if (ctx.roundRect) ctx.roundRect(PAD, top, W - 2 * PAD, cardH, 48); else ctx.rect(PAD, top, W - 2 * PAD, cardH); // roundRect: iOS 16+ ctx.fillStyle = C.card; ctx.fill();
+  ctx.lineWidth = 2; ctx.strokeStyle = C.border; ctx.stroke();
+  ctx.textBaseline = 'alphabetic';
+  let y = top + IN;
+  if (names.length) {
+    ctx.font = font(700, 22); ctx.fillStyle = C.muted; ctx.fillText('İ S N A D', TX, y + 22); y += 40 + 12;
+    chain.forEach((lines, i) => {
+      const last = i === names.length - 1, dotY = y + 12;
+      if (!last) { ctx.fillStyle = C.border; ctx.fillRect(TX + 10, dotY + 12, 3, lines.length * 42 + 10 - 12); }
+      ctx.beginPath(); ctx.arc(TX + 11.5, dotY, 9, 0, Math.PI * 2);
+      if (last) { ctx.fillStyle = C.accent; ctx.fill(); } else { ctx.fillStyle = C.card; ctx.fill(); ctx.lineWidth = 3; ctx.strokeStyle = C.muted; ctx.stroke(); }
+      ctx.font = last ? NAME_B : NAME; ctx.fillStyle = last ? C.accent : C.muted;
+      lines.forEach((ln, k) => ctx.fillText(ln, TX + 44, y + 24 + k * 42));
+      y += lines.length * 42 + 10;
+    });
+    y += 34 - 12;
+  }
+  ctx.font = TXT; ctx.fillStyle = C.text;
+  body.forEach((ln, k) => ctx.fillText(ln, TX, y + txtLH * 0.75 + k * txtLH));
+  y += body.length * txtLH + 34;
+  ctx.font = SRC; ctx.fillStyle = C.muted;
+  src.forEach((ln, k) => ctx.fillText(ln, TX, y + 28 + k * 40));
+  y += src.length * 40;
+  if (bab.length) { ctx.font = BAB; y += 12; bab.forEach((ln, k) => ctx.fillText(ln, TX, y + 28 + k * 40)); }
+  ctx.textAlign = 'center';
+  ctx.font = font(700, 36); ctx.fillStyle = C.accent; ctx.fillText('Sekîne ✦', W / 2, H - 70);
+  // Paylaş (iOS: Görüntüyü Kaydet); paylaşım yoksa dosyayı indir
+  const url = cv.toDataURL('image/png');
+  const bin = atob(url.split(',')[1]), buf = new Uint8Array(bin.length);
+  for (let i = 0; i < bin.length; i++) buf[i] = bin.charCodeAt(i);
+  const name = `sekine-${p.v}-${String(p.n).replace('.', '_')}.png`;
+  const file = new File([buf], name, {type: 'image/png'});
+  haptic(false);
+  if (navigator.canShare && navigator.canShare({files: [file]})) {
+    navigator.share({files: [file]}).catch(e => { if (e && e.name !== 'AbortError') toast('Paylaşılamadı'); });
+  } else {
+    const a = document.createElement('a'); a.href = url; a.download = name; document.body.append(a); a.click(); a.remove();
+    toast('Görüntü indirildi');
+  }
 }
 // Çift dokunuş: kaydeder (zaten kayıtlıysa çıkarmaz), dokunulan yerde yıldız belirir, hafif titreşir
 async function feedLike(card, x, y) {
