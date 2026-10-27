@@ -230,7 +230,11 @@ const PATCHES_V3 = [
   {v:10, id:'ak_felak', from:{arabic:'', translit:'', meaning:'Sabahın Rabbine, yarattıklarının şerrinden sığınma sûresi.'}, to:{arabic:_FELAK_AR, translit:_FELAK_TR, meaning:_FELAK_ME}},
   {v:10, id:'nas', from:{arabic:'', translit:'', meaning:'İnsanların Rabbine, vesvese verenin şerrinden sığınma sûresi.'}, to:{arabic:_NAS_AR, translit:_NAS_TR, meaning:_NAS_ME}},
   {v:10, id:'sb_nas', from:{arabic:'', translit:'', meaning:'İnsanların Rabbine, vesvese verenin şerrinden sığınma sûresi.'}, to:{arabic:_NAS_AR, translit:_NAS_TR, meaning:_NAS_ME}},
-  {v:10, id:'ak_nas', from:{arabic:'', translit:'', meaning:'İnsanların Rabbine, vesvese verenin şerrinden sığınma sûresi.'}, to:{arabic:_NAS_AR, translit:_NAS_TR, meaning:_NAS_ME}}
+  {v:10, id:'ak_nas', from:{arabic:'', translit:'', meaning:'İnsanların Rabbine, vesvese verenin şerrinden sığınma sûresi.'}, to:{arabic:_NAS_AR, translit:_NAS_TR, meaning:_NAS_ME}},
+  // v12: salavattan “seyyidinâ” ve Radîtü kartından “İman tazeleme” kaldırıldı
+  {v:12, id:'salavat', from:{arabic:'اللَّهُمَّ صَلِّ عَلَىٰ سَيِّدِنَا مُحَمَّدٍ وَعَلَىٰ آلِ سَيِّدِنَا مُحَمَّدٍ', translit:'Allâhümme salli alâ seyyidinâ Muhammedin ve alâ âli seyyidinâ Muhammed.', meaning:'Allah’ım, efendimiz Muhammed’e ve efendimiz Muhammed’in ailesine salât eyle.'},
+    to:{arabic:'اللَّهُمَّ صَلِّ عَلَىٰ مُحَمَّدٍ وَعَلَىٰ آلِ مُحَمَّدٍ', translit:'Allâhümme salli alâ Muhammedin ve alâ âli Muhammed.', meaning:'Allah’ım, Muhammed’e ve Muhammed’in ailesine salât eyle.'}},
+  {v:12, id:'raditu', from:{category:'İman tazeleme · Ebû Dâvûd 5072 (rivayeti tartışmalı)'}, to:{category:'Ebû Dâvûd 5072 (rivayeti tartışmalı)'}}
 ];
 function applyPatches(list, since = 0) {
   for (const p of PATCHES_V3) {
@@ -301,7 +305,7 @@ for (const id of BESMELE_IDS) {
   PATCHES_V3.push({v: 11, id, from, to});
   Object.assign(z, to);
 }
-const CATALOG = 11;
+const CATALOG = 12;
 
 const KEY = 'zikrim-v2';
 const OLD_KEY = 'zikrim-v1';
@@ -859,7 +863,6 @@ function libRenderBooks(L, wrap) {
   wrap.append(el('article', 'quote fq-note mus-note', L.note), el('div', 'mus-go'));
   let lastG = [];
   L.idx.forEach((b, i) => {
-    if (b.gizli) return;
     (b.g || []).forEach((g, d) => {
       if (lastG[d] === g) return;
       lastG = lastG.slice(0, d);
@@ -1031,6 +1034,17 @@ function libFilter(L) {
 /* ---------- Kütüphane: okumaya devam et, kaydettiklerim, yazı boyutu ---------- */
 const store = {get(k, d) { try { const v = JSON.parse(localStorage.getItem(k)); return v == null ? d : v; } catch (e) { return d; } }, set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }};
 const RD = {last: store.get('zikrim-last', {}), saved: store.get('zikrim-saved', []), fs: store.get('zikrim-fs', 16)};
+// Bir kereye mahsus: el-Akîde (İmam Ahmed kitaplığında 1. sıra) kaldırıldı; sonraki kitapların sıra numarası bir azalır
+if (!store.get('zikrim-ahmed-akide', false)) {
+  const sh = b => b === 1 ? null : b > 1 ? b - 1 : b;
+  if (RD.last.ahmed && Number.isInteger(RD.last.ahmed.b)) { const b = sh(RD.last.ahmed.b); if (b == null) delete RD.last.ahmed; else RD.last.ahmed.b = b; }
+  RD.saved = RD.saved.filter(x => !(x && x.v === 'ahmed' && x.b === 1)).map(x => {
+    if (!x || x.v !== 'ahmed' || !(x.b > 1)) return x;
+    const b = x.b - 1; return {...x, b, k: `ahmed:${b}:${x.h ? x.h[0] : x.k.split(':').pop()}`};
+  });
+  if (Number.isInteger(LIBS.ahmed.book)) { LIBS.ahmed.book = sh(LIBS.ahmed.book); libSave(LIBS.ahmed); }
+  store.set('zikrim-last', RD.last); store.set('zikrim-saved', RD.saved); store.set('zikrim-ahmed-akide', true);
+}
 /* ---------- Sesli okuma (telefonun kendi sesleri; Arapça ve Türkçe) ---------- */
 const TTS = Object.assign({ar: '', tr: '', rate: 0.9, arSened: true, trSened: false, show: true}, store.get('sekine-tts', {}));
 document.body.classList.toggle('no-tts', !TTS.show);
@@ -1350,14 +1364,14 @@ const SHELVES = [
     {v: 'musned', ar: 'المسند', t: 'el-Müsned', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#8a5a3c', total: 27647},
     {v: 'usul', ar: 'أصول السنة', t: 'Usûlü’s-Sünne', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#3f5f7f', done: true},
     {v: 'ahmed', b: 0, ar: 'من سؤالات الأثرم', t: 'el-Esrem’in Sorularından', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#5b6e3a', done: true},
-    {v: 'ahmed', b: 2, ar: 'أحكام النساء', t: 'Ahkâmü’n-nisâ', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#7a4f5e', done: true},
-    {v: 'ahmed', b: 3, ar: 'الأسامي والكنى', t: 'el-Esâmî ve’l-künâ', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#6a5a3a', done: true},
-    {v: 'ahmed', b: 4, ar: 'الرد على الجهمية والزنادقة', t: 'er-Red ale’l-Cehmiyye', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#4f4a6e', done: true},
-    {v: 'ahmed', b: 5, ar: 'الأشربة', t: 'el-Eşribe', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#6e3f4a', done: true},
-    {v: 'ahmed', b: 6, ar: 'من كلامه في العلل والرجال — رواية المروذي', t: 'İlel ve ricâl (el-Merrûzî)', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#5a6e3f', done: true},
-    {v: 'ahmed', b: 7, ar: 'من كلامه في العلل والرجال — رواية صالح', t: 'İlel ve ricâl (Sâlih)', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#6e573f', done: true},
-    {v: 'ahmed', b: 8, ar: 'من كلامه في العلل والرجال — رواية الميموني', t: 'İlel ve ricâl (el-Meymûnî)', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#3f5a6e', done: true},
-    {v: 'ahmed', b: 9, ar: 'سؤالات أبي داود', t: 'Suâlâtü Ebî Dâvûd', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#6b4a5e', done: true},
+    {v: 'ahmed', b: 1, ar: 'أحكام النساء', t: 'Ahkâmü’n-nisâ', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#7a4f5e', done: true},
+    {v: 'ahmed', b: 2, ar: 'الأسامي والكنى', t: 'el-Esâmî ve’l-künâ', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#6a5a3a', done: true},
+    {v: 'ahmed', b: 3, ar: 'الرد على الجهمية والزنادقة', t: 'er-Red ale’l-Cehmiyye', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#4f4a6e', done: true},
+    {v: 'ahmed', b: 4, ar: 'الأشربة', t: 'el-Eşribe', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#6e3f4a', done: true},
+    {v: 'ahmed', b: 5, ar: 'من كلامه في العلل والرجال — رواية المروذي', t: 'İlel ve ricâl (el-Merrûzî)', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#5a6e3f', done: true},
+    {v: 'ahmed', b: 6, ar: 'من كلامه في العلل والرجال — رواية صالح', t: 'İlel ve ricâl (Sâlih)', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#6e573f', done: true},
+    {v: 'ahmed', b: 7, ar: 'من كلامه في العلل والرجال — رواية الميموني', t: 'İlel ve ricâl (el-Meymûnî)', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#3f5a6e', done: true},
+    {v: 'ahmed', b: 8, ar: 'سؤالات أبي داود', t: 'Suâlâtü Ebî Dâvûd', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#6b4a5e', done: true},
     {v: 'zuhd', ar: 'الزهد', t: 'ez-Zühd', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#4f6a3c', done: true},
     {v: 'fezail', ar: 'فضائل الصحابة', t: 'Fezâilü’s-sahâbe', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#7a5530', done: true}]},
   {c: 'III. ASIR', books: [
