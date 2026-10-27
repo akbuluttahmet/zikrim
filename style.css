@@ -199,7 +199,7 @@ body.view-selef #toggleCompact,body.view-selef .sort-hint{display:none}
 
 /* Hanbelî fıkhı */
 .fq-note{font-size:13px;line-height:1.6;color:var(--muted)}
-.fq-cat{background:var(--card);border:1px solid var(--border);border-radius:18px;margin:10px 0;overflow:hidden}
+.fq-cat{background:var(--card);border:1px solid var(--border);border-radius:18px;margin:10px 0;overflow:hidden;overflow:clip}
 .fq-cat>summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:10px;padding:16px 18px;font-weight:700;font-size:16px}
 .fq-cat>summary::-webkit-details-marker{display:none}
 .fq-cat>summary::after{content:'›';font-size:22px;color:var(--muted);transition:transform .2s}
@@ -417,3 +417,20 @@ body[data-theme=night]{--paper:#1b2840;--paperb:#2f4260;--paperisn:#a9b5c8;--pap
 .daily{position:relative}
 .daily-star{top:6px;right:-6px}
 .evrad-controls button[hidden]{display:none}
+
+/* Okuma görünümlerinde ana sayfa kartı gizlenir; liste sayfanın başına yakın açılır */
+body:not(.at-main) .hero{display:none}
+/* Liste başlığı: düğmeler tek satırda kalır, uzun başlık kendi içinde sarılır */
+.list-head{gap:8px}
+.list-head h2{min-width:0}
+.list-tools{flex-shrink:0}
+.list-tools .chip-button{white-space:nowrap}
+/* Açık babın başlığı yukarıda yapışık kalır: nerede olduğunu gösterir, dokununca babın başına döner */
+.fq-cat[open]>summary{position:sticky;top:env(safe-area-inset-top,0);z-index:3;background:var(--card);border-radius:18px 18px 0 0}
+.fq-cat{scroll-margin-top:calc(env(safe-area-inset-top,0px) + 8px)}
+.list{scroll-margin-top:calc(env(safe-area-inset-top,0px) + 8px)}
+/* Başa dön düğmesi */
+.to-top{position:fixed;z-index:15;right:max(16px,env(safe-area-inset-right));bottom:max(18px,calc(env(safe-area-inset-bottom) + 6px));width:46px;height:46px;border-radius:50%;border:1px solid var(--border);background:var(--card);color:var(--accent);font-size:20px;font-weight:700;box-shadow:0 4px 14px rgb(0 0 0 / .14);opacity:0;transform:translateY(10px) scale(.9);pointer-events:none;transition:opacity .2s,transform .2s}
+.to-top.show{opacity:1;transform:none;pointer-events:auto}
+.tts-bar:not([hidden])~.to-top{bottom:calc(max(12px,env(safe-area-inset-bottom)) + 64px)}
+body.no-scroll .to-top{display:none}

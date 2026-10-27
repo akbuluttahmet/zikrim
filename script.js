@@ -596,6 +596,7 @@ function renderCards() {
   const list = visible();
   $('#listTitle').textContent = VIEWS[view];
   $('.list').hidden = view === 'main';
+  document.body.classList.toggle('at-main', view === 'main');
   $('#backAll').hidden = view === 'main';
   $('#backAll').textContent = LIB_CHILD.has(view) ? '← Kütüphane' : '← Geri';
   $('#addZikir').hidden = view !== 'genel';
@@ -1812,6 +1813,26 @@ $('#ttsShow').addEventListener('change', e => { TTS.show = e.target.checked; doc
 $('#ttsArSened').addEventListener('change', e => { TTS.arSened = e.target.checked; ttsSave(); });
 $('#ttsTrSened').addEventListener('change', e => { TTS.trSened = e.target.checked; ttsSave(); });
 $('#ttsBarStop').addEventListener('click', ttsStop);
+
+/* ---------- Uzun sayfalarda gezinme ---------- */
+// Başa dön: bir buçuk ekrandan fazla aşağı inilince görünür; ana sayfada en üste, diğer görünümlerde liste başına (arama ve Geri) döner.
+const toTopEl = $('#toTop');
+let toTopRaf = 0;
+addEventListener('scroll', () => {
+  if (toTopRaf) return;
+  toTopRaf = requestAnimationFrame(() => { toTopRaf = 0; toTopEl.classList.toggle('show', scrollY > innerHeight * 1.5); });
+}, {passive: true});
+toTopEl.addEventListener('click', () => {
+  if (view === 'main') window.scrollTo({top: 0, behavior: 'smooth'});
+  else $('.list').scrollIntoView({block: 'start', behavior: 'smooth'});
+});
+// Yapışık bab başlığına dokunulduğunda bab kapanmaz, babın başına dönülür; zaten baştaysa her zamanki gibi kapanır.
+cardsEl.addEventListener('click', e => {
+  const sum = e.target.closest('details.fq-cat > summary');
+  if (!sum) return;
+  const d = sum.parentElement;
+  if (d.open && d.getBoundingClientRect().top < -4) { e.preventDefault(); d.scrollIntoView({block: 'start', behavior: 'smooth'}); }
+});
 $('#ttsTest').addEventListener('click', e => ttsPlay(e.currentTarget, 'ar', [{text: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ'}, {text: ''}]));
 $('#ttsTestTr').addEventListener('click', e => ttsPlay(e.currentTarget, 'tr', [{text: 'Kalpler ancak Allah’ı anmakla huzur bulur.'}]));
 
