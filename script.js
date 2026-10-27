@@ -1457,7 +1457,7 @@ function feedReset() {
   feedEl.scrollTop = 0;
   feedMore(6);
 }
-const feedSrc = p => { const L = LIBS[p.v], book = AKIS[p.v].books[p.b]; return L.bookKey ? L.src(p.n, {tr: book}) : L.single ? L.src(p.n) : L.src(p.n) + ' · ' + book; };
+const feedSrc = p => { if (p.src) return p.src; const L = LIBS[p.v], book = AKIS[p.v].books[p.b]; return L.bookKey ? L.src(p.n, {tr: book}) : L.single ? L.src(p.n) : L.src(p.n) + ' · ' + book; };
 // Kart (D şablonu): üstte isnad zinciri (râviler yukarıdan aşağı, son halka vurgulu), altında metin, en altta kaynak ve bab
 function feedCard(p, first) {
   const a = el('article', 'fd-card');
@@ -1660,52 +1660,77 @@ feedEl.addEventListener('scroll', () => {
 }, {passive: true});
 
 /* ---------- Anasayfa: X tarzı zaman tüneli ---------- */
-// Havuz akis.json'dur (Akış'la aynı, ayrı karışık sırayla). Rivayetler alt alta gönderiler hâlinde, sona yaklaştıkça 10'ar 10'ar eklenir; oturumda tekrar çıkmaz.
-// İsnad gösterilmez (yalnızca Akış'ta). Gönderide ☆ kaydet, 📖 kitapta aç, 📸 görüntü; çift dokunuş kaydeder. Yorum, beğeni ya da sayaç yoktur.
-const homeEl = $('#home'), homeBarEl = $('#homeBar'), homeListEl = $('#homeList');
-const HOME = {pool: null, i: 0, y: 0, tapPost: null, tapAt: 0};
+// Üstte iki sekme: Rivayetler · Kaydedilenler. Rivayetler'in havuzu akis.json'dur (Akış'la aynı, ayrı karışık sırayla); alt alta gönderiler, sona yaklaştıkça 10'ar 10'ar eklenir, oturumda tekrar çıkmaz.
+// Kaydedilenler, Kaydettiklerim'deki kayıtları (`zikrim-saved`) aynı gönderi biçiminde gösterir; koleksiyon etiketleriyle süzülür.
+// İsnad gösterilmez (yalnızca Akış'ta). Gönderide ☆ kaydet, 📖 kitapta aç, 📸 paylaş; çift dokunuş kaydeder. Yorum, beğeni ya da sayaç yoktur.
+const homeEl = $('#home'), homeBarEl = $('#homeBar'), homeListEl = $('#homeList'), homeSavedEl = $('#homeSaved');
+const HOME = {pool: null, i: 0, tab: 'rivayet', ys: {rivayet: 0, kayit: 0}, sv: [], si: 0, col: '', tapPost: null, tapAt: 0};
 const HOME_STEP = 10;
 function homeShow(on) {
-  if (!on) { if (!homeEl.hidden) { HOME.y = homeEl.scrollTop; homeEl.hidden = true; homeBarEl.hidden = true; } document.body.classList.remove('hm-hide'); return; }
+  if (!on) { if (!homeEl.hidden) { HOME.ys[HOME.tab] = homeEl.scrollTop; homeEl.hidden = true; homeBarEl.hidden = true; } document.body.classList.remove('hm-hide'); return; }
   homeEl.hidden = false; homeBarEl.hidden = false;
-  if (HOME.pool) { homeEl.scrollTop = HOME.y; return; }
+  if (HOME.tab === 'kayit') { homeSavedRender(); homeEl.scrollTop = HOME.ys.kayit; }
+  if (HOME.pool) { if (HOME.tab === 'rivayet') homeEl.scrollTop = HOME.ys.rivayet; return; }
   homeListEl.replaceChildren(el('div', 'hm-msg', 'Yükleniyor…'));
   akisLoad().then(D => { if (!HOME.pool) homeReset(D); })
     .catch(() => homeListEl.replaceChildren(el('div', 'hm-msg', 'Rivayetler yüklenemedi. İnternet bağlantını kontrol edip tekrar dene.')));
 }
 function homeReset(D = AKIS) {
   if (!D) return;
-  HOME.pool = akisShuffled(D); HOME.i = 0; HOME.y = 0;
+  HOME.pool = akisShuffled(D); HOME.i = 0; HOME.ys.rivayet = 0;
   homeListEl.replaceChildren();
-  homeEl.scrollTop = 0;
+  if (HOME.tab === 'rivayet') homeEl.scrollTop = 0;
   homeMore();
 }
+// Üstteki sekmeler: açık sekmeye dokununca en üste gider; her sekmenin kaydırma yeri ayrı hatırlanır
+function homeSetTab(t) {
+  if (t === HOME.tab) { homeEl.scrollTo({top: 0, behavior: 'smooth'}); return; }
+  HOME.ys[HOME.tab] = homeEl.scrollTop;
+  HOME.tab = t;
+  homeBarEl.querySelectorAll('[data-ht]').forEach(b => b.setAttribute('aria-selected', String(b.dataset.ht === t)));
+  homeListEl.hidden = t !== 'rivayet';
+  homeSavedEl.hidden = t !== 'kayit';
+  $('#homeRefresh').hidden = t !== 'rivayet';
+  if (t === 'kayit') homeSavedRender();
+  homeEl.scrollTop = HOME.ys[t];
+  document.body.classList.remove('hm-hide');
+}
+homeBarEl.querySelectorAll('[data-ht]').forEach(b => b.addEventListener('click', () => homeSetTab(b.dataset.ht)));
+// Gönderi. p: {v, b, n, t, bab}; kayıttan gelen gönderide ayrıca name, src ve rec (kaydın kendisi) bulunur.
 function homePost(p) {
   const a = el('article', 'hm-post');
   a._p = p;
   // Ad: birden çok eserli kitaplıklarda (İmam Ahmed, el-Hallâl, el-Âcurrî, İbn Ebî Şeybe) eserin adı, diğerlerinde kitabın adı
-  const L = LIBS[p.v], name = L.bookKey ? AKIS[p.v].books[p.b] : L.err;
-  const av = el('div', 'hm-av', name.replace(/^(el|eş|ez|es|et|er|en|ed|ed)[-‑]/i, '').charAt(0).toLocaleUpperCase('tr'));
+  const L = LIBS[p.v], name = p.name || (L.bookKey ? AKIS[p.v].books[p.b] : L.err);
+  const av = el('div', 'hm-av', name.replace(/^(el|eş|ez|es|et|er|en|ed)[-‑]/i, '').charAt(0).toLocaleUpperCase('tr'));
   av.style.background = bookColor(p);
   av.setAttribute('aria-hidden', 'true');
   const body = el('div', 'hm-body');
   const head = el('div', 'hm-head');
   const src = feedSrc(p);
-  head.append(el('b', null, name), el('span', 'hm-src', L.bookKey ? src.replace(name + ', ', '') : src));
+  head.append(el('b', null, name), el('span', 'hm-src', L && L.bookKey ? src.replace(name + ', ', '') : src));
   body.append(head, el('p', 'hm-t', p.t));
   if (p.bab && !src.includes(p.bab)) body.append(el('p', 'hm-bab', 'Bab: ' + p.bab));
   const act = el('div', 'hm-act');
   const star = el('button');
   star.type = 'button';
-  const paint = () => { const on = isSaved(pickKey(p)); star.textContent = on ? '★ Kaydedildi' : '☆ Kaydet'; star.classList.toggle('on', on); star.setAttribute('aria-pressed', String(on)); star.setAttribute('aria-label', on ? 'Kaydettiklerimden çıkar' : 'Kaydet'); };
+  const key = p.rec ? p.rec.k : pickKey(p);
+  const paint = () => { const on = isSaved(key); star.textContent = on ? '★ Kaydedildi' : '☆ Kaydet'; star.classList.toggle('on', on); star.setAttribute('aria-pressed', String(on)); star.setAttribute('aria-label', on ? 'Kaydettiklerimden çıkar' : 'Kaydet'); };
   paint();
   a._paint = paint;
-  star.addEventListener('click', async () => { await toggleSavePick(p); paint(); });
+  star.addEventListener('click', async () => {
+    if (p.rec) { // Kaydedilenler'de: kayıt çıkarılır, gönderi yerinde kalır; tekrar dokununca aynı kayıt (koleksiyonlarıyla) geri gelir
+      if (isSaved(key)) RD.saved = RD.saved.filter(x => x.k !== key); else RD.saved.unshift(p.rec);
+      store.set('zikrim-saved', RD.saved);
+      const c = $('#cntSaved'); if (c) c.textContent = RD.saved.length;
+    } else await toggleSavePick(p);
+    paint();
+  });
   const open = el('button', null, '📖 Kitapta aç');
   open.type = 'button';
   open.addEventListener('click', () => { ttsStop(); goTo(p.v, p.b, p.n); });
-  const shot = el('button', null, '📸');
-  shot.type = 'button'; shot.setAttribute('aria-label', 'Görüntü olarak kaydet ya da paylaş');
+  const shot = el('button', null, '📸 Paylaş');
+  shot.type = 'button'; shot.setAttribute('aria-label', 'Görüntü olarak paylaş ya da kaydet');
   shot.addEventListener('click', () => shotOpen(p));
   act.append(star, open, shot);
   body.append(act);
@@ -1717,7 +1742,40 @@ function homeMore() {
   const end = Math.min(HOME.i + HOME_STEP, HOME.pool.length), frag = document.createDocumentFragment();
   for (; HOME.i < end; HOME.i++) frag.append(homePost(HOME.pool[HOME.i]));
   homeListEl.append(frag);
-  if (HOME.i >= HOME.pool.length) homeListEl.append(el('div', 'hm-msg', 'Bütün rivayetleri gördün. ↻ ile yeniden karıştırabilirsin.'));
+  if (HOME.i >= HOME.pool.length) homeListEl.append(el('div', 'hm-msg', 'Bütün rivayetleri gördün.'));
+}
+// Kaydedilenler: kayıt gönderiye çevrilir (Usûlü’s-Sünne kayıtları `u` alanındadır)
+function savedPost(x) {
+  if (x.v === 'usul') { const [n, t, metin] = x.u; return {v: 'usul', b: x.b, n, t: metin, bab: t, name: 'Usûlü’s-Sünne', src: `İmam Ahmed (⁨رحمه الله⁩), Usûlü’s-Sünne, ${n ? 'madde ' + n : 'giriş'}`, rec: x}; }
+  const L = LIBS[x.v], n = x.h[0];
+  return {v: x.v, b: x.b, n, t: x.h[2], bab: '', name: L.bookKey ? x.title : L.err, src: L.bookKey ? L.src(n, {tr: x.title}) : L.single ? L.src(n) : L.src(n) + ' · ' + x.title, rec: x};
+}
+function homeSavedRender() {
+  if (HOME.col && !RD.cols.includes(HOME.col)) HOME.col = '';
+  HOME.sv = (HOME.col ? RD.saved.filter(x => (x.c || []).includes(HOME.col)) : RD.saved).filter(x => x.v === 'usul' ? x.u : LIBS[x.v] && x.h);
+  HOME.si = 0;
+  homeSavedEl.replaceChildren();
+  if (RD.cols.length) {
+    const row = el('div', 'fd-chips hm-cols');
+    const chip = (name, label) => {
+      const b = el('button', 'fd-chip', label);
+      b.type = 'button';
+      b.setAttribute('aria-pressed', String(HOME.col === name));
+      b.addEventListener('click', () => { if (HOME.col === name) return; HOME.col = name; homeSavedRender(); homeEl.scrollTop = 0; });
+      return b;
+    };
+    row.append(chip('', 'Tümü'));
+    for (const name of RD.cols) row.append(chip(name, '📁 ' + name));
+    homeSavedEl.append(row);
+  }
+  if (!HOME.sv.length) { homeSavedEl.append(el('div', 'hm-msg', HOME.col ? 'Bu koleksiyonda kayıt yok.' : 'Henüz kayıt yok. Bir rivayetin altındaki ☆ Kaydet ile buraya ekleyebilirsin.')); return; }
+  savedMore();
+}
+function savedMore() {
+  if (HOME.si >= HOME.sv.length) return;
+  const end = Math.min(HOME.si + HOME_STEP, HOME.sv.length), frag = document.createDocumentFragment();
+  for (; HOME.si < end; HOME.si++) frag.append(homePost(savedPost(HOME.sv[HOME.si])));
+  homeSavedEl.append(frag);
 }
 const homeNear = () => homeEl.scrollTop + homeEl.clientHeight * 2.5 > homeEl.scrollHeight;
 // X gibi kaydırma: aşağı inerken başlık gizlenir ve alt çubuk saydamlaşır, yukarı çıkınca geri gelir (en üstte hep görünür)
@@ -1731,10 +1789,10 @@ homeEl.addEventListener('scroll', () => {
     else if (dy > 6) document.body.classList.add('hm-hide');
     else if (dy < -6) document.body.classList.remove('hm-hide');
     if (Math.abs(dy) > 6 || y < 60) homeLastY = y;
-    if (homeNear()) homeMore();
+    if (homeNear()) { if (HOME.tab === 'kayit') savedMore(); else homeMore(); }
   });
 }, {passive: true});
-// Çekip yenile: en üstteyken aşağı çekilip bırakılınca akış yeniden karışır
+// Çekip yenile: en üstteyken aşağı çekilip bırakılınca Rivayetler'e 10 yeni rivayet eklenir, Kaydedilenler yenilenir
 const homePtr = $('#homePtr'), PTR_AT = 70;
 let ptrY0 = null, ptrPull = 0;
 homeEl.addEventListener('touchstart', e => { ptrY0 = homeEl.scrollTop <= 0 && e.touches.length === 1 ? e.touches[0].clientY : null; ptrPull = 0; }, {passive: true});
@@ -1752,7 +1810,7 @@ homeEl.addEventListener('touchend', () => {
   if (ptrPull >= PTR_AT) {
     haptic(false);
     homePtr.style.cssText = ''; homePtr.classList.add('spin');
-    setTimeout(() => { homeNew(); homePtr.classList.remove('spin'); }, 550);
+    setTimeout(() => { if (HOME.tab === 'kayit') homeSavedRender(); else homeNew(); homePtr.classList.remove('spin'); }, 550);
   } else homePtr.style.cssText = '';
   ptrPull = 0;
 }, {passive: true});

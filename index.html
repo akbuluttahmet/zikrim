@@ -206,18 +206,21 @@
 
 <div id="ttsBar" class="tts-bar" hidden><span id="ttsBarT"></span><button type="button" id="ttsBarStop">■ Durdur</button></div>
 <!-- Anasayfa: X tarzı zaman tüneli, kaydırdıkça 10'ar rivayet -->
-<header id="homeBar" class="home-bar" hidden><h2>Anasayfa</h2><button type="button" id="homeRefresh" aria-label="Yeni rivayetler" title="Yeni rivayetler">↻</button></header>
+<header id="homeBar" class="home-bar" hidden>
+  <div class="hm-top"><h2>Anasayfa</h2><button type="button" id="homeRefresh" aria-label="Yeni rivayetler" title="Yeni rivayetler">↻</button></div>
+  <div class="hm-tabs" role="tablist" aria-label="Anasayfa bölümleri"><button type="button" role="tab" data-ht="rivayet" aria-selected="true">Rivayetler</button><button type="button" role="tab" data-ht="kayit" aria-selected="false">Kaydedilenler</button></div>
+</header>
 <div id="homePtr" class="hm-ptr" aria-hidden="true">↻</div>
-<section id="home" class="home" hidden aria-label="Anasayfa"><div id="homeList" class="hm-list"></div></section>
+<section id="home" class="home" hidden aria-label="Anasayfa"><div id="homeList" class="hm-list"></div><div id="homeSaved" class="hm-list" hidden></div></section>
 <!-- Akış: rastgele rivayetler, tam ekran kartlar, yukarı kaydırarak geçilir -->
 <nav id="feedBar" class="feed-bar" hidden aria-label="Akışta kitap seçimi"></nav>
 <section id="feed" class="feed" hidden aria-label="Rivayet akışı"></section>
 <nav class="tabbar" id="tabbar" aria-label="Ana bölümler">
   <div class="tabbar-in">
-    <button type="button" class="tab" data-tab="anasayfa"><span class="tab-ic" aria-hidden="true">🏠</span>Anasayfa</button>
-    <button type="button" class="tab" data-tab="akis"><span class="tab-ic" aria-hidden="true">🕯️</span>Akış</button>
+    <button type="button" class="tab" data-tab="anasayfa"><span class="tab-ic" aria-hidden="true">🕌</span>Anasayfa</button>
+    <button type="button" class="tab" data-tab="akis"><span class="tab-ic" aria-hidden="true">✨</span>Akış</button>
     <button type="button" class="tab" data-tab="kutuphane"><span class="tab-ic" aria-hidden="true">📚</span>Kütüphane</button>
-    <button type="button" class="tab" data-tab="zikir" aria-current="page"><span class="tab-ic" aria-hidden="true">📿</span>Zikir</button>
+    <button type="button" class="tab" data-tab="zikir" aria-current="page"><span class="tab-ic" aria-hidden="true">🤲</span>Zikir</button>
     <button type="button" class="tab" data-tab="selef"><span class="tab-ic" aria-hidden="true">📜</span>Sözler</button>
   </div>
 </nav>
