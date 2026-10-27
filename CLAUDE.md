@@ -4,9 +4,9 @@ Bu repoda çalışan her oturum (Claude Code, başka sohbetler) bu kurallara uya
 
 ## Uygulama
 
-- **Sekîne**: Zikir sayacı, hadis kütüphanesi (Musannef ve İbn Ebî Şeybe’nin küçük kitapları, Müsned, Usûlü's-Sünne, ez-Zühd, Fezâilü's-sahâbe ve İmam Ahmed'in diğer risaleleri, Şerhu's-Sünne, el-Âcurrî, el-Hallâl), Sözler ve Hanbelî fıkhından oluşan, telefonun ana ekranına eklenen bir PWA. Adres: https://akbuluttahmet.github.io/zikrim/ (GitHub Pages, `main` dalı).
+- **Sekîne**: Zikir sayacı, hadis kütüphanesi (Musannef ve İbn Ebî Şeybe’nin küçük kitapları, Müsned, Usûlü's-Sünne, ez-Zühd, Fezâilü's-sahâbe ve İmam Ahmed'in diğer risaleleri, Şerhu's-Sünne, el-Âcurrî, el-Hallâl, eş-Şâfiî, el-Buhârî, Ebû Dâvûd), Sözler ve Hanbelî fıkhından oluşan, telefonun ana ekranına eklenen bir PWA. Adres: https://akbuluttahmet.github.io/zikrim/ (GitHub Pages, `main` dalı).
 - Derleme adımı yok, düz HTML/CSS/JS: `index.html`, `script.js`, `style.css`, `fikih.js`, `usul.js`, `sw.js`, `manifest.webmanifest`.
-- Veriler: `musannef/` ve `musned/` (her biri `index.json` + `tr/*.json`), `ibnebiseybe/`, `ahmed/`, `zuhd/`, `fezail/`, `hallal/`, `acurri/`, `seria/`, `berbehari/`, `gunun.json` (ana sayfadaki “Rivayetler” kartının havuzu, bütün kitaplıklardan), `akis.json` (Akış sekmesinin havuzu; isnad ve bab başlığıyla).
+- Veriler: `musannef/` ve `musned/` (her biri `index.json` + `tr/*.json`), `ibnebiseybe/`, `ahmed/`, `zuhd/`, `fezail/`, `hallal/`, `acurri/`, `seria/`, `berbehari/`, `safii/`, `buhari/`, `ebudavud/`, `gunun.json` (ana sayfadaki “Rivayetler” kartının havuzu, bütün kitaplıklardan), `akis.json` (Akış sekmesinin havuzu; isnad ve bab başlığıyla).
 - **Yedek:** Ayarlar → Yedeği kaydet; zikir durumu (`zikrim-v2`) en üst düzeyde, adı `zikrim-` ya da `sekine-` ile başlayan diğer bütün anahtarlar `_ek` içinde. Yeni bir anahtar bu öneklerden biriyle adlandırılırsa kendiliğinden yedeğe girer. Yüklemede veriler tamamen değiştirilir, sayfa yenilenir, bildirimdeki “Geri al” önceki hâli geri getirir.
 - **Adres ve `localStorage` anahtarları (`zikrim-…`) değiştirilmez.** Değişirse kullanıcının verileri (sayaçlar, seri, kayıtlar) kaybolur. Uygulamanın adı Sekîne olsa da repo/klasör adı `zikrim` kalır.
 - Her yayında `sw.js` içindeki `CACHE = 'zikrim-vNN'` bir artırılır. Bunu `araclar/yayinla.sh "mesaj"` yapar; önce `git pull --rebase` ile başka oturumların değişikliklerini alır.
@@ -54,6 +54,10 @@ Bu repoda çalışan her oturum (Claude Code, başka sohbetler) bu kurallara uya
 - **Fezâilü’s-sahâbe (İmam Ahmed):** Şâmile no. 13136 (Vasiyyullah Abbas tahkiki, Müessesetü’r-Risâle), OpenITI `0241IbnHanbal.FadailSahaba.Shamela0013136-ara1`. Veri `fezail/` klasöründe, bablarına göre 9 bölüme ayrılmış (`f01.json`…`f09.json`). 0 = nüsha senedi; numaralar nüshaya göredir (1–1962). 128’in yanındaki “bu hadisler Ebû Bekir b. Mâlik’in…” notu 128’in metnindedir; numarasız rivayetler (372.1, 1279.1) kesirli anahtarla. Başlıktaki “فضائل 0 أهل اليمن” sıfırı silindi.
 - Bu iki kitabın derleme betikleri oturum dosyalarındadır (pre33.js → z/f.items.json, chunk33.js, build33.js; bölümler sec.json’da).
 - **el-Hallâl:** Veri `hallal/` klasöründe. h01 el-Kırâe inde’l-kubûr (Şâmile 8271); nüshada numara yok, rivayetler sırayla numaralandı. h02 el-Hass ale’t-ticâre ve’s-sınâa ve’l-amel (8213; numaralar nüshaya göre). h02 el-Hass ale’t-ticâre ve’s-sınâa ve’l-amel (8213; numaralar nüshaya göre), h03 el-Emr bi’l-ma‘rûf ve’n-nehy ani’l-münker (8248; nüshada numara yok, rivayetler sırayla numaralandı).
+- **Ebû Dâvûd:** Veri `ebudavud/` klasöründe (`index.json` + `tr/dNN.json`), OpenITI `0275AbuDawudSijistani.*` kopyalarından. d01 Risâle ilâ ehli Mekke (Şâmile 6013; nüshada numara yok, paragraflar sırayla numaralandı; 0 = nüsha senedi ve giriş; neşrin eklediği ara başlıklar alınmadı). (el-Ba‘s ve’n-nüşûr Ebû Dâvûd’un değil, oğlu İbn Ebî Dâvûd’undur; bu kitaplığa girmez.)
+- **el-Buhârî:** Veri `buhari/` klasöründe (`index.json` + `tr/bNN.json`), OpenITI `0256Bukhari.*` kopyalarından.
+- **eş-Şâfiî:** Veri `safii/` klasöründe (`index.json` + `tr/sNN.json`), OpenITI `0204Shafici.*` kopyalarından.
+- Bu üç kitaplığın derleme araçları oturum dosyalarındadır: `clean.py` (OpenITI → düz satır), `seg.py` / kitaba özel ayırıcı (→ `items.json`: [no, Arapça]), `build.py` (çeviri `N | sened | metin` + items.json → `tr/*.json`).
 - Arapça metinler Şâmile'deki aynı neşirden aynen alınır. Toplu metin için OpenITI GitHub kopyaları kullanılabilir (`raw.githubusercontent.com/OpenITI/...`).
 
 ## Veri biçimi
