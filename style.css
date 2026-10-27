@@ -644,3 +644,6 @@ body[data-tab=anasayfa] .to-top{display:none}
 .mus-bab>summary .mus-book-here{margin-left:0;padding-top:0;color:var(--accent);font-weight:700}
 .mus-bab.mus-here{border-color:var(--accent);box-shadow:inset 3px 0 0 var(--accent)}
 .mus-bab.mus-here .mus-book-i{background:var(--accent);color:var(--accentText)}
+/* Daire içindeki numara ve harfler: flex/grid'e bağlı kalmadan, satır yüksekliğiyle tam ortalanır (Safari'de ve üst kurallardan bağımsız) */
+.mus-book .mus-book-i,.mus-bab>summary>.mus-book-i,.mus-book-i{display:block;box-sizing:border-box;width:30px;height:30px;min-width:30px;padding:0;line-height:30px;text-align:center;flex:none}
+.hm-av{display:block;line-height:42px;text-align:center}
