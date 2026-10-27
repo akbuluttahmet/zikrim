@@ -614,6 +614,7 @@ function renderCards() {
   $('#empty').hidden = list.length > 0 || READ_VIEWS.has(view);
   document.body.classList.toggle('view-selef', READ_VIEWS.has(view));
   searchEl.placeholder = view === 'kutuphane' ? 'Kitap ya da âlim ara…' : view === 'kaydedilen' ? 'Kaydettiklerinde ara…' : view === 'selef' ? 'Söz ara (âlim, anlam, kaynak)…' : view === 'fikih' ? 'Fıkıhta ara (ör. mesh, cuma, zekât)…' : view === 'usul' ? 'Risalede ara (ör. kader, havz, cuma)…' : LIBS[view] ? (LIBS[view].book == null && LIBS[view].nogo ? 'Kitap ara…' : LIBS[view].book == null && !LIBS[view].single ? `${LIBS[view].unit === 'kitap' ? 'Kitap' : 'Bölüm'} ara ya da ${LIBS[view].item} no. yaz (ör. ${LIBS[view].ex})…` : `Bu ${LIBS[view].unit === 'kitap' ? 'kitapta' : 'bölümde'} ara ya da ${LIBS[view].item} no. yaz…`) : 'Zikir ara (ad, anlam, okunuş)…';
+  navRecord();
   if (view === 'akis') { update(); return; }
   if (view === 'selef') { renderQuotes(); applyFilter(); update(); return; }
   if (view === 'fikih') { renderFiqh(); applyFilter(); update(); return; }
@@ -2034,6 +2035,7 @@ function unlockScreen() { try { wakeLock && wakeLock.release(); } catch {} wakeL
 
 function openFocus(id) {
   focusId = id;
+  if (focusEl.hidden) try { history.pushState(Object.assign({}, history.state, {focus: 1}), ''); } catch {} // geri tuşu odak modunu kapatsın
   focusEl.hidden = false;
   document.body.classList.add('no-scroll');
   renderFocus();
@@ -2072,7 +2074,7 @@ function stepFocus(dir) {
 }
 $('#focusTap').addEventListener('click', () => increment(focusId, 1));
 $('#focusMinus').addEventListener('click', () => increment(focusId, -1));
-$('#focusClose').addEventListener('click', closeFocus);
+$('#focusClose').addEventListener('click', () => { if (history.state && history.state.focus) history.back(); else closeFocus(); }); // geri tuşuyla aynı yoldan kapanır
 $('#focusPrev').addEventListener('click', () => stepFocus(-1));
 $('#focusNext').addEventListener('click', () => stepFocus(1));
 
@@ -2186,6 +2188,34 @@ toTopEl.addEventListener('click', () => {
   if (view === 'main') window.scrollTo({top: 0, behavior: 'smooth'});
   else $('.list').scrollIntoView({block: 'start', behavior: 'smooth'});
 });
+/* ---------- Geri tuşu (Android) ve tarayıcı geri hareketi ----------
+   Her görünüm değişimi (sekme, Sabah/Akşam/Genel, kitap listesi, açık kitap) tarayıcı geçmişine yazılır; geri tuşu bir önceki
+   görünüme döner, ana sayfadaysa uygulamadan çıkar. Odak modu da geri tuşuyla kapanır. Açık pencereler (ayarlar vb.) Android'de
+   tarayıcının kendisince kapatılır. */
+let navKey = null, navSkip = false;
+function navRecord() {
+  if (navSkip) return;
+  const st = {v: view, b: LIBS[view] ? LIBS[view].book : null}, key = st.v + '|' + st.b;
+  if (key === navKey) return;
+  try { if (navKey === null) history.replaceState(st, ''); else history.pushState(st, ''); } catch {}
+  navKey = key;
+}
+addEventListener('popstate', e => {
+  if (!focusEl.hidden) { closeFocus(); return; }
+  const st = e.state;
+  if (!st || !st.v || st.focus) return;
+  const key = st.v + '|' + st.b;
+  if (key === navKey) return;
+  ttsStop();
+  if (LIBS[st.v]) { LIBS[st.v].book = st.b; libSave(LIBS[st.v]); }
+  view = VIEWS[st.v] ? st.v : 'main';
+  searchEl.value = '';
+  navSkip = true;
+  try { renderCards(); } finally { navSkip = false; }
+  navKey = key;
+  if (TAB_ROOTS.has(view)) window.scrollTo(0, 0); else $('.list').scrollIntoView({block: 'start'});
+});
+
 // Alt sekmeler: başka sekmeye geçerken bulunulan görünüm ve kaydırma yeri hatırlanır; dönünce aynı yere gelinir
 // (kitaplarda kapanan bablar yeniden açılarak en son okunan rivayete gidilir). Açık sekmeye dokununca köke, köktaysa en üste dönülür.
 const tabMem = {};
@@ -2226,6 +2256,15 @@ document.querySelectorAll('.tab').forEach(b => b.addEventListener('click', () =>
 const KB_INPUT = el => el && el.matches && (el.matches('textarea') || (el.matches('input') && /^(text|search|email|number|tel|url|password)$/.test(el.type)));
 document.addEventListener('focusin', e => { if (KB_INPUT(e.target)) document.body.classList.add('kb'); });
 document.addEventListener('focusout', () => setTimeout(() => { if (!KB_INPUT(document.activeElement)) document.body.classList.remove('kb'); }, 60));
+// Android'de klavye geri tuşuyla kapatılınca kutu odakta kalır: görünür alan yüksekliği klavyesiz yüksekliğe dönünce çubuk geri gelir
+if (window.visualViewport) {
+  let kbBase = visualViewport.height;
+  visualViewport.addEventListener('resize', () => {
+    if (!KB_INPUT(document.activeElement)) { kbBase = visualViewport.height; return; }
+    if (visualViewport.height > kbBase) kbBase = visualViewport.height;
+    document.body.classList.toggle('kb', visualViewport.height < kbBase * 0.8);
+  });
+}
 // Yapışık bab başlığına dokunulduğunda bab kapanmaz, babın başına dönülür; zaten baştaysa her zamanki gibi kapanır.
 cardsEl.addEventListener('click', e => {
   const sum = e.target.closest('details.fq-cat > summary');
@@ -2330,6 +2369,7 @@ window.addEventListener('pageshow', checkDay);
 
 /* ---------- Başlat ---------- */
 { const cs = $('#cntSelef'); if (cs) cs.textContent = QUOTES.length + ' söz'; }
+if (!('switch' in HTMLInputElement.prototype)) document.documentElement.classList.add('no-switch'); // iOS 17.4+ dışında anahtar görünümü CSS'ten
 setTheme(S.theme);
 renderCards();
 if ('serviceWorker' in navigator) {
