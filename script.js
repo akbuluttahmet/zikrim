@@ -1963,6 +1963,7 @@ function goTo(v, b, n) {
 const LIB_NAMES = {musannef: 'el-Musannef', ibnebiseybe: 'İbn Ebî Şeybe', musned: 'el-Müsned', usul: 'Usûlü’s-Sünne', ahmed: 'İmam Ahmed', zuhd: 'ez-Zühd', fezail: 'Fezâilü’s-sahâbe', berbehari: 'Şerhu’s-Sünne', acurri: 'el-Âcurrî', seria: 'eş-Şerîa', hallal: 'el-Hallâl', safii: 'eş-Şâfiî', buhari: 'el-Buhârî', ebudavud: 'Ebû Dâvûd'};
 const SHELVES = [
   {c: 'II. ASIR', books: [
+    {v: 'safii', b: 0, ar: 'جماع العلم', t: 'Cimâu’l-ilm', who: 'eş-Şâfiî', bo: '150', d: 204, col: '#5e4a6b', done: true},
     {v: 'musannef', ar: 'المصنف', t: 'el-Musannef', who: 'İbn Ebî Şeybe', bo: '159', d: 235, col: '#4d8062'},
     {v: 'ibnebiseybe', b: 0, ar: 'خلق آدم وولادة النبي', t: 'Halku Âdem ve vilâdetü’n-Nebî', who: 'İbn Ebî Şeybe', bo: '159', d: 235, col: '#6e5a3a', done: true},
     {v: 'ibnebiseybe', b: 1, ar: 'كتاب الإيمان', t: 'Kitâbü’l-Îmân', who: 'İbn Ebî Şeybe', bo: '159', d: 235, col: '#3e6a55', done: true},
