@@ -2253,9 +2253,22 @@ $('#restoreDefaults').addEventListener('click', () => {
   toast(`${missing.length} zikir geri eklendi`);
 });
 
+/* ---------- Yedek ----------
+   Zikir durumu (S) eskisi gibi en üst düzeyde durur (eski sürümler bu yedeği yine okuyabilsin); `_ek` içinde telefonda tutulan diğer
+   her şey vardır: adı zikrim- ya da sekine- ile başlayan bütün anahtarlar (Kaydettiklerim, koleksiyonlar, kaldığın yerler, açık kitaplar,
+   Akış filtresi ve görüntü seçimi, yazı boyutu, sesli okuma ayarları…). Yeni bir anahtar eklenirse kendiliğinden yedeğe girer. */
+const BACKUP_SKIP = new Set([KEY, OLD_KEY]);
+function backupExtras() {
+  const ek = {};
+  for (let i = 0; i < localStorage.length; i++) {
+    const k = localStorage.key(i);
+    if (/^(zikrim|sekine)-/.test(k) && !BACKUP_SKIP.has(k)) ek[k] = localStorage.getItem(k);
+  }
+  return ek;
+}
 $('#exportData').addEventListener('click', async () => {
   const name = `sekine-yedek-${today}.json`;
-  const blob = new Blob([JSON.stringify(S, null, 2)], {type: 'application/json'});
+  const blob = new Blob([JSON.stringify(Object.assign({}, S, {_yedek: 2, _tarih: new Date().toISOString(), _ek: backupExtras()}), null, 2)], {type: 'application/json'});
   try {
     const file = new File([blob], name, {type: 'application/json'});
     if (navigator.canShare && navigator.canShare({files: [file]})) {
@@ -2273,17 +2286,36 @@ $('#importData').addEventListener('change', async e => {
   const file = e.target.files[0];
   e.target.value = '';
   if (!file) return;
+  let data;
+  try { data = JSON.parse(await file.text()); if (!data || !Array.isArray(data.zikirs)) throw new Error(); }
+  catch { settings.close(); toast('Bu dosya geçerli bir Sekîne yedeği değil'); return; }
+  const ek = data._ek && typeof data._ek === 'object' ? Object.entries(data._ek).filter(([k, v]) => /^(zikrim|sekine)-/.test(k) && !BACKUP_SKIP.has(k) && typeof v === 'string') : [];
+  // Geri alabilmek için şimdiki hâl saklanır; sayfa yenilendikten sonra bildirimdeki “Geri al” bunu geri yükler
+  try { sessionStorage.setItem('sekine-geri', JSON.stringify({s: localStorage.getItem(KEY), ek: backupExtras()})); } catch {}
+  const s = sanitize(data);
+  s.ui = UI_V; // yedekteki tema ve sıra korunsun, açılışta tekrar değiştirilmesin
   try {
-    const data = JSON.parse(await file.text());
-    if (!data || !Array.isArray(data.zikirs)) throw new Error();
-    const prev = S;
-    S = sanitize(data);
-    S.ui = UI_V; // yedekteki tema ve sıra korunsun, açılışta tekrar değiştirilmesin
-    save(); setTheme(S.theme); renderCards();
-    settings.close();
-    toast('Yedek yüklendi', {label: 'Geri al', run: () => { S = prev; save(); setTheme(S.theme); renderCards(); }});
-  } catch { settings.close(); toast('Bu dosya geçerli bir Sekîne yedeği değil'); }
+    if (ek.length) for (const k of Object.keys(backupExtras())) localStorage.removeItem(k); // yedek tam geri yüklenir: yedekte olmayan kayıtlar kalmaz
+    for (const [k, v] of ek) localStorage.setItem(k, v);
+    localStorage.setItem(KEY, JSON.stringify(s));
+  } catch { settings.close(); toast('Yedek yüklenemedi (depolama dolu olabilir)'); return; }
+  try { sessionStorage.setItem('sekine-yuklendi', ek.length ? 'tam' : 'eski'); } catch {}
+  location.reload(); // Kaydettiklerim, koleksiyonlar, kitaplar ve ayarlar en temiz biçimde yeniden okunsun
 });
+// Yedek yüklendikten sonraki açılış: bildirim ve “Geri al”
+{
+  let how = null; try { how = sessionStorage.getItem('sekine-yuklendi'); sessionStorage.removeItem('sekine-yuklendi'); } catch {}
+  if (how) setTimeout(() => toast(how === 'tam' ? 'Yedek yüklendi' : 'Yedek yüklendi (eski yedek: yalnızca zikirler)', {label: 'Geri al', run: () => {
+    try {
+      const g = JSON.parse(sessionStorage.getItem('sekine-geri'));
+      for (const k of Object.keys(backupExtras())) localStorage.removeItem(k);
+      for (const [k, v] of Object.entries(g.ek || {})) localStorage.setItem(k, v);
+      if (g.s != null) localStorage.setItem(KEY, g.s);
+      sessionStorage.removeItem('sekine-geri');
+      location.reload();
+    } catch { toast('Geri alınamadı'); }
+  }}), 400);
+}
 
 /* ---------- Gün değişimi ve uyku ---------- */
 function checkDay() {
