@@ -17,7 +17,7 @@ header{margin-bottom:22px}
 .sparkle{font-size:24px;color:var(--accent)}
 button{font:inherit;cursor:pointer;touch-action:manipulation;-webkit-user-select:none;user-select:none;color:inherit}
 button:disabled{opacity:.35;cursor:default}
-.icon-button{background:var(--card);color:var(--accent);border:1px solid var(--border);width:42px;height:42px;border-radius:50%;font-size:21px;display:grid;place-items:center;padding:0;flex:none}
+.icon-button{background:var(--card);color:var(--accent);border:1px solid var(--border);width:44px;height:44px;box-shadow:0 1px 3px rgb(0 0 0 / .06);border-radius:50%;font-size:21px;display:grid;place-items:center;padding:0;flex:none}
 
 /* Üst kart */
 .hero{background:var(--hero);text-align:center;border:1px solid var(--border);border-radius:26px;padding:26px 18px 20px}
