@@ -786,14 +786,6 @@ LIBS.ibnebiseybe = {base: 'ibnebiseybe/', key: 'zikrim-ibnebiseybe', unit: 'kita
   label: (n, h) => (h && h[4] && h[4].l) || (n === 0 ? 'Mukaddime' : Number.isInteger(n) ? `No. ${n}` : 'Ara metin'),
   src: (n, m) => `İbn Ebî Şeybe, ${m ? m.tr : ''}${n === 0 ? ', mukaddime' : Number.isInteger(n) ? ', no. ' + n : ''}`,
   note: 'Ebû Bekir İbn Ebî Şeybe (ö. 235) — el-Musannef dışındaki küçük kitapları, Türkçe çeviri ve Arapça metniyle. Çeviri ve Arapça metin el-Mektebetü’ş-Şâmile’deki nüshalardan alınmıştır; numaralar bu nüshalara göredir. Kitâbü’l-Îmân ve Kitâbü’l-Edeb’in içeriği büyük ölçüde Musannef’teki aynı adlı kitaplarla örtüşür. Halku Âdem’in dijital nüshası yer yer bozuktur; bozuk yerler çeviride belirtilmiştir.'};
-LIBS.ibnebiseybe = {base: 'ibnebiseybe/', key: 'zikrim-ibnebiseybe', unit: 'kitap', item: 'rivayet', ex: 5, err: 'İbn Ebî Şeybe', nogo: true, bookKey: true,
-  label: (n, h) => (h && h[4] && h[4].l) || (n === 0 ? 'Mukaddime' : Number.isInteger(n) ? `No. ${n}` : 'Ara metin'),
-  src: (n, m) => `İbn Ebî Şeybe, ${m ? m.tr : ''}${n === 0 ? ', mukaddime' : Number.isInteger(n) ? ', no. ' + n : ''}`,
-  note: 'Ebû Bekir İbn Ebî Şeybe (ö. 235) — el-Musannef dışındaki küçük kitapları, Türkçe çeviri ve Arapça metniyle. Çeviri ve Arapça metin el-Mektebetü’ş-Şâmile’deki nüshalardan alınmıştır; numaralar bu nüshalara göredir. Kitâbü’l-Îmân ve Kitâbü’l-Edeb’in içeriği büyük ölçüde Musannef’teki aynı adlı kitaplarla örtüşür. Halku Âdem’in dijital nüshası yer yer bozuktur; bozuk yerler çeviride belirtilmiştir.'};
-LIBS.ibnebiseybe = {base: 'ibnebiseybe/', key: 'zikrim-ibnebiseybe', unit: 'kitap', item: 'rivayet', ex: 5, err: 'İbn Ebî Şeybe', nogo: true, bookKey: true,
-  label: (n, h) => (h && h[4] && h[4].l) || (n === 0 ? 'Mukaddime' : Number.isInteger(n) ? `No. ${n}` : 'Ara metin'),
-  src: (n, m) => `İbn Ebî Şeybe, ${m ? m.tr : ''}${n === 0 ? ', mukaddime' : Number.isInteger(n) ? ', no. ' + n : ''}`,
-  note: 'Ebû Bekir İbn Ebî Şeybe (ö. 235) — el-Musannef dışındaki küçük kitapları, Türkçe çeviri ve Arapça metniyle. Çeviri ve Arapça metin el-Mektebetü’ş-Şâmile’deki nüshalardan alınmıştır; numaralar bu nüshalara göredir. Kitâbü’l-Îmân ve Kitâbü’l-Edeb’in içeriği büyük ölçüde Musannef’teki aynı adlı kitaplarla örtüşür. Halku Âdem’in dijital nüshası yer yer bozuktur; bozuk yerler çeviride belirtilmiştir.'};
 LIBS.berbehari = {base: 'berbehari/', key: 'zikrim-berb', unit: 'kitap', item: 'madde', ex: 25, err: 'Şerhu’s-Sünne', single: true,
   label: n => n ? `Madde ${n}` : 'Mukaddime',
   src: n => `el-Berbehârî, Şerhu’s-Sünne, ${n ? 'madde ' + n : 'mukaddime'}`,
@@ -1372,7 +1364,8 @@ const SHELVES = [
     {v: 'acurri', b: 7, ar: 'أخبار عمر بن عبد العزيز', t: 'Ahbâru Ömer b. Abdilazîz', who: 'el-Âcurrî', bo: '~280', d: 360, col: '#476b4a', done: true},
     {v: 'acurri', b: 8, ar: 'الغرباء', t: 'el-Gurabâ', who: 'el-Âcurrî', bo: '~280', d: 360, col: '#5e4b3c', done: true},
     {v: 'acurri', b: 9, ar: 'الفوائد المنتخبة', t: 'el-Fevâidü’l-müntehabe', who: 'el-Âcurrî', bo: '~280', d: 360, col: '#3f5e6e', done: true},
-    {v: 'acurri', b: 10, ar: 'فرض طلب العلم', t: 'Farzu talebi’l-ilm', who: 'el-Âcurrî', bo: '~280', d: 360, col: '#6e5d3f', done: true}]}
+    {v: 'acurri', b: 10, ar: 'فرض طلب العلم', t: 'Farzu talebi’l-ilm', who: 'el-Âcurrî', bo: '~280', d: 360, col: '#6e5d3f', done: true},
+    {v: 'acurri', b: 11, ar: 'أخلاق العلماء', t: 'Ahlâku’l-ulemâ', who: 'el-Âcurrî', bo: '~280', d: 360, col: '#2f5a6b', done: true}]}
 ];
 function libSub(v, span) {
   const L = LIBS[v];
