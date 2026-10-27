@@ -564,9 +564,9 @@ const QUOTES = [
 /* ---------- Kartlar ---------- */
 const cardsEl = $('#cards');
 const MSET = new Set(MORNING), ESET = new Set(EVENING);
-const VIEWS = {main: 'Sekîne', sabah: '☀︎ Sabah Zikirleri', aksam: '☾ Akşam Zikirleri', genel: '📿 Genel Zikirler', selef: '📜 Sözler', fikih: '⚖️ Hanbelî Fıkhı', musannef: '📚 Musannef', ibnebiseybe: '📚 İbn Ebî Şeybe', musned: '📗 Müsned', usul: '📘 Usûlü’s-Sünne', ahmed: '📘 İmam Ahmed', berbehari: '📕 Şerhu’s-Sünne', acurri: '📙 el-Âcurrî', seria: '📙 eş-Şerîa', hallal: '📗 el-Hallâl', kutuphane: '📚 Kütüphane', kaydedilen: '☆ Kaydettiklerim'};
-const LIB_CHILD = new Set(['musannef', 'ibnebiseybe', 'musned', 'usul', 'ahmed', 'berbehari', 'acurri', 'seria', 'hallal', 'kaydedilen']);
-const READ_VIEWS = new Set(['selef', 'fikih', 'musannef', 'ibnebiseybe', 'musned', 'usul', 'ahmed', 'berbehari', 'acurri', 'seria', 'hallal', 'kutuphane', 'kaydedilen']);
+const VIEWS = {main: 'Sekîne', sabah: '☀︎ Sabah Zikirleri', aksam: '☾ Akşam Zikirleri', genel: '📿 Genel Zikirler', selef: '📜 Sözler', fikih: '⚖️ Hanbelî Fıkhı', musannef: '📚 Musannef', ibnebiseybe: '📚 İbn Ebî Şeybe', musned: '📗 Müsned', usul: '📘 Usûlü’s-Sünne', ahmed: '📘 İmam Ahmed', zuhd: '📘 ez-Zühd', fezail: '📘 Fezâilü’s-sahâbe', berbehari: '📕 Şerhu’s-Sünne', acurri: '📙 el-Âcurrî', seria: '📙 eş-Şerîa', hallal: '📗 el-Hallâl', kutuphane: '📚 Kütüphane', kaydedilen: '☆ Kaydettiklerim'};
+const LIB_CHILD = new Set(['musannef', 'ibnebiseybe', 'musned', 'usul', 'ahmed', 'zuhd', 'fezail', 'berbehari', 'acurri', 'seria', 'hallal', 'kaydedilen']);
+const READ_VIEWS = new Set(['selef', 'fikih', 'musannef', 'ibnebiseybe', 'musned', 'usul', 'ahmed', 'zuhd', 'fezail', 'berbehari', 'acurri', 'seria', 'hallal', 'kutuphane', 'kaydedilen']);
 let view = 'main';
 const isGenel = z => !MSET.has(z.id) && !ESET.has(z.id);
 const inView = z => view === 'sabah' ? MSET.has(z.id) : view === 'aksam' ? ESET.has(z.id) : view === 'genel' ? isGenel(z) : false;
@@ -801,7 +801,15 @@ LIBS.seria = {base: 'seria/', key: 'zikrim-seria', unit: 'bölüm', item: 'rivay
 LIBS.ahmed = {base: 'ahmed/', key: 'zikrim-ahmed', unit: 'kitap', item: 'madde', ex: 12, err: 'İmam Ahmed', nogo: true, bookKey: true,
   label: (n, h) => (h && h[4] && h[4].l) || (n === 0 ? 'Mukaddime' : Number.isInteger(n) ? `No. ${n}` : 'Ara metin'),
   src: (n, m) => `İmam Ahmed (\u2068رحمه الله\u2069), ${m ? m.tr : ''}${n === 0 ? ', mukaddime' : Number.isInteger(n) ? ', no. ' + n : ''}`,
-  note: 'İmam Ahmed b. Hanbel (\u2068رحمه الله\u2069) (ö. 241) — risaleleri ve ondan nakledilen mesâil, Türkçe çeviri ve Arapça metniyle. Çeviri ve Arapça metin el-Mektebetü’ş-Şâmile’deki nüshalardan alınmıştır; numaralar bu nüshalara göredir. Nüshasında numara bulunmayan el-Akîde’de maddeler sırayla numaralanmıştır. el-Akîde ile bazı risalelerin İmam Ahmed’e nisbeti bazı araştırmacılarca tartışılmıştır. Müsned ve Usûlü’s-Sünne kütüphanede ayrı kitap olarak yer alır.'};
+  note: 'İmam Ahmed b. Hanbel (\u2068رحمه الله\u2069) (ö. 241) — risaleleri ve ondan nakledilen mesâil, Türkçe çeviri ve Arapça metniyle. Çeviri ve Arapça metin el-Mektebetü’ş-Şâmile’deki nüshalardan alınmıştır; numaralar bu nüshalara göredir. Bazı risalelerin İmam Ahmed’e nisbeti bazı araştırmacılarca tartışılmıştır. Müsned ve Usûlü’s-Sünne kütüphanede ayrı kitap olarak yer alır.'};
+LIBS.zuhd = {base: 'zuhd/', key: 'zikrim-zuhd', unit: 'bölüm', item: 'rivayet', ex: 1200, err: 'ez-Zühd',
+  label: (n, h) => (h && h[4] && h[4].l) || (Number.isInteger(n) ? `No. ${n}` : 'Numarasız rivayet'),
+  src: n => `İmam Ahmed (\u2068رحمه الله\u2069), ez-Zühd, ${Number.isInteger(n) ? 'no. ' + n : 'no. ' + Math.floor(n) + ' sonrası'}`,
+  note: 'İmam Ahmed b. Hanbel (\u2068رحمه الله\u2069) (ö. 241), ez-Zühd — Türkçe çeviri ve Arapça metin. Çeviri ve Arapça metin el-Mektebetü’ş-Şâmile’deki nüshadan (no. 8494, Dârü’l-Kütübi’l-İlmiyye neşri) alınmıştır; rivayet numaraları bu nüshaya göredir. 1 numara, kitabın nüsha senedidir. “Numarasız rivayet” diye gösterilenler nüshada numarası olmayan rivayetlerdir. Kitap, bablarına göre 8 bölüme ayrılmıştır.'};
+LIBS.fezail = {base: 'fezail/', key: 'zikrim-fezail', unit: 'bölüm', item: 'rivayet', ex: 1000, err: 'Fezâilü’s-sahâbe',
+  label: (n, h) => (h && h[4] && h[4].l) || (n === 0 ? 'Mukaddime' : Number.isInteger(n) ? `No. ${n}` : 'Numarasız rivayet'),
+  src: n => `İmam Ahmed (\u2068رحمه الله\u2069), Fezâilü’s-sahâbe, ${n === 0 ? 'mukaddime' : Number.isInteger(n) ? 'no. ' + n : 'no. ' + Math.floor(n) + ' sonrası'}`,
+  note: 'İmam Ahmed b. Hanbel (\u2068رحمه الله\u2069) (ö. 241), Fezâilü’s-sahâbe — Türkçe çeviri ve Arapça metin. Çeviri ve Arapça metin el-Mektebetü’ş-Şâmile’deki nüshadan (no. 13136, Vasiyyullah Abbas tahkiki, Müessesetü’r-Risâle) alınmıştır; rivayet numaraları bu nüshaya göredir. Mukaddime, kitabın nüsha senedidir. “Numarasız rivayet” diye gösterilenler nüshada numarası olmayan rivayetlerdir. Kitap, bablarına göre 9 bölüme ayrılmıştır.'};
 LIBS.hallal = {base: 'hallal/', key: 'zikrim-hallal', unit: 'kitap', item: 'rivayet', ex: 5, err: 'el-Hallâl', nogo: true, bookKey: true,
   label: (n, h) => (h && h[4] && h[4].l) || (n === 0 ? 'Mukaddime' : Number.isInteger(n) ? `No. ${n}` : 'Ara metin'),
   src: (n, m) => `el-Hallâl, ${m ? m.tr : ''}${n === 0 ? ', mukaddime' : Number.isInteger(n) ? ', no. ' + n : ''}`,
@@ -851,6 +859,7 @@ function libRenderBooks(L, wrap) {
   wrap.append(el('article', 'quote fq-note mus-note', L.note), el('div', 'mus-go'));
   let lastG = [];
   L.idx.forEach((b, i) => {
+    if (b.gizli) return;
     (b.g || []).forEach((g, d) => {
       if (lastG[d] === g) return;
       lastG = lastG.slice(0, d);
@@ -1331,7 +1340,7 @@ function goTo(v, b, n) {
   renderCards();
   $('.list').scrollIntoView({block: 'start'});
 }
-const LIB_NAMES = {musannef: 'el-Musannef', ibnebiseybe: 'İbn Ebî Şeybe', musned: 'el-Müsned', usul: 'Usûlü’s-Sünne', ahmed: 'İmam Ahmed', berbehari: 'Şerhu’s-Sünne', acurri: 'el-Âcurrî', seria: 'eş-Şerîa', hallal: 'el-Hallâl'};
+const LIB_NAMES = {musannef: 'el-Musannef', ibnebiseybe: 'İbn Ebî Şeybe', musned: 'el-Müsned', usul: 'Usûlü’s-Sünne', ahmed: 'İmam Ahmed', zuhd: 'ez-Zühd', fezail: 'Fezâilü’s-sahâbe', berbehari: 'Şerhu’s-Sünne', acurri: 'el-Âcurrî', seria: 'eş-Şerîa', hallal: 'el-Hallâl'};
 const SHELVES = [
   {c: 'II. ASIR', books: [
     {v: 'musannef', ar: 'المصنف', t: 'el-Musannef', who: 'İbn Ebî Şeybe', bo: '159', d: 235, col: '#4d8062'},
@@ -1341,7 +1350,6 @@ const SHELVES = [
     {v: 'musned', ar: 'المسند', t: 'el-Müsned', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#8a5a3c', total: 27647},
     {v: 'usul', ar: 'أصول السنة', t: 'Usûlü’s-Sünne', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#3f5f7f', done: true},
     {v: 'ahmed', b: 0, ar: 'من سؤالات الأثرم', t: 'el-Esrem’in Sorularından', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#5b6e3a', done: true},
-    {v: 'ahmed', b: 1, ar: 'العقيدة رواية الخلال', t: 'el-Akîde', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#46607a', done: true},
     {v: 'ahmed', b: 2, ar: 'أحكام النساء', t: 'Ahkâmü’n-nisâ', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#7a4f5e', done: true},
     {v: 'ahmed', b: 3, ar: 'الأسامي والكنى', t: 'el-Esâmî ve’l-künâ', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#6a5a3a', done: true},
     {v: 'ahmed', b: 4, ar: 'الرد على الجهمية والزنادقة', t: 'er-Red ale’l-Cehmiyye', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#4f4a6e', done: true},
@@ -1349,7 +1357,9 @@ const SHELVES = [
     {v: 'ahmed', b: 6, ar: 'من كلامه في العلل والرجال — رواية المروذي', t: 'İlel ve ricâl (el-Merrûzî)', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#5a6e3f', done: true},
     {v: 'ahmed', b: 7, ar: 'من كلامه في العلل والرجال — رواية صالح', t: 'İlel ve ricâl (Sâlih)', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#6e573f', done: true},
     {v: 'ahmed', b: 8, ar: 'من كلامه في العلل والرجال — رواية الميموني', t: 'İlel ve ricâl (el-Meymûnî)', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#3f5a6e', done: true},
-    {v: 'ahmed', b: 9, ar: 'سؤالات أبي داود', t: 'Suâlâtü Ebî Dâvûd', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#6b4a5e', done: true}]},
+    {v: 'ahmed', b: 9, ar: 'سؤالات أبي داود', t: 'Suâlâtü Ebî Dâvûd', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#6b4a5e', done: true},
+    {v: 'zuhd', ar: 'الزهد', t: 'ez-Zühd', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#4f6a3c', done: true},
+    {v: 'fezail', ar: 'فضائل الصحابة', t: 'Fezâilü’s-sahâbe', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#7a5530', done: true}]},
   {c: 'III. ASIR', books: [
     {v: 'berbehari', ar: 'شرح السنة', t: 'Şerhu’s-Sünne', who: 'el-Berbehârî', bo: '233?', d: 329, col: '#6b4f7a', done: true},
     {v: 'hallal', b: 0, ar: 'القراءة عند القبور', t: 'el-Kırâe inde’l-kubûr', who: 'el-Hallâl', bo: '234', d: 311, col: '#3d6f6a', done: true},
