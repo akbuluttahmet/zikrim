@@ -534,11 +534,20 @@ body[data-tab=akis] .app{visibility:hidden}
 .no-switch input[type=checkbox][switch]:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 
 /* Anasayfa: X tarzı zaman tüneli (#home kendi kaydırma kutusudur; Akış gibi üstte sabit başlık) */
-.home-bar{position:fixed;left:0;right:0;top:0;z-index:13;box-sizing:border-box;height:calc(env(safe-area-inset-top) + 52px);padding-top:env(safe-area-inset-top);background:var(--bg);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:center}
+.home-bar{position:fixed;left:0;right:0;top:0;z-index:14;transition:transform .28s ease;box-sizing:border-box;height:calc(env(safe-area-inset-top) + 52px);padding-top:env(safe-area-inset-top);background:var(--bg);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:center}
 .home-bar h2{margin:0;font-size:18px;font-weight:700;color:var(--text)}
 .home-bar button{position:absolute;right:max(8px,env(safe-area-inset-right));bottom:4px;width:44px;height:44px;margin:0;padding:0;float:none;border:0;background:none;color:var(--accent);font-size:21px}
-.home{position:fixed;left:0;right:0;top:calc(env(safe-area-inset-top) + 52px);bottom:var(--tabh);z-index:13;background:var(--bg);overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+.home{position:fixed;left:0;right:0;top:0;padding-top:calc(env(safe-area-inset-top) + 52px);box-sizing:border-box;bottom:var(--tabh);z-index:13;background:var(--bg);overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
 .home[hidden],.home-bar[hidden]{display:none}
+/* X gibi: aşağı kaydırınca başlık yukarı kayar (durum çubuğu alanı kalır), alt çubuk saydamlaşır; yukarı kaydırınca ikisi de döner */
+body.hm-hide .home-bar{transform:translateY(calc(-100% + env(safe-area-inset-top)))}
+body[data-tab=anasayfa] .tabbar{transition:opacity .28s ease}
+body[data-tab=anasayfa].hm-hide .tabbar{opacity:.45}
+/* Çekip yenile */
+.hm-ptr{position:fixed;left:50%;top:calc(env(safe-area-inset-top) + 60px);z-index:13;width:36px;height:36px;margin-left:-18px;border-radius:50%;background:var(--card);border:1px solid var(--border);box-shadow:0 2px 8px rgb(0 0 0 / .1);color:var(--accent);font-size:18px;display:grid;place-items:center;opacity:0;transform:translateY(-20px) rotate(0deg);pointer-events:none}
+.hm-ptr.spin{opacity:1;animation:hmSpin .7s linear infinite}
+@keyframes hmSpin{from{transform:rotate(0)}to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.home-bar,body[data-tab=anasayfa] .tabbar{transition:none}.hm-ptr.spin{animation:none}}
 body[data-tab=anasayfa] .app{visibility:hidden}
 body[data-tab=anasayfa] .to-top{display:none}
 .hm-list{max-width:600px;margin:0 auto}

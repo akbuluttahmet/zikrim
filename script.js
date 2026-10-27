@@ -1666,7 +1666,7 @@ const homeEl = $('#home'), homeBarEl = $('#homeBar'), homeListEl = $('#homeList'
 const HOME = {pool: null, i: 0, y: 0, tapPost: null, tapAt: 0};
 const HOME_STEP = 10;
 function homeShow(on) {
-  if (!on) { if (!homeEl.hidden) { HOME.y = homeEl.scrollTop; homeEl.hidden = true; homeBarEl.hidden = true; } return; }
+  if (!on) { if (!homeEl.hidden) { HOME.y = homeEl.scrollTop; homeEl.hidden = true; homeBarEl.hidden = true; } document.body.classList.remove('hm-hide'); return; }
   homeEl.hidden = false; homeBarEl.hidden = false;
   if (HOME.pool) { homeEl.scrollTop = HOME.y; return; }
   homeListEl.replaceChildren(el('div', 'hm-msg', 'Yükleniyor…'));
@@ -1720,10 +1720,41 @@ function homeMore() {
   if (HOME.i >= HOME.pool.length) homeListEl.append(el('div', 'hm-msg', 'Bütün rivayetleri gördün. ↻ ile yeniden karıştırabilirsin.'));
 }
 const homeNear = () => homeEl.scrollTop + homeEl.clientHeight * 2.5 > homeEl.scrollHeight;
-let homeRaf = 0;
+// X gibi kaydırma: aşağı inerken başlık gizlenir ve alt çubuk saydamlaşır, yukarı çıkınca geri gelir (en üstte hep görünür)
+let homeRaf = 0, homeLastY = 0;
 homeEl.addEventListener('scroll', () => {
   if (homeRaf) return;
-  homeRaf = requestAnimationFrame(() => { homeRaf = 0; if (homeNear()) homeMore(); });
+  homeRaf = requestAnimationFrame(() => {
+    homeRaf = 0;
+    const y = homeEl.scrollTop, dy = y - homeLastY;
+    if (y < 60) document.body.classList.remove('hm-hide');
+    else if (dy > 6) document.body.classList.add('hm-hide');
+    else if (dy < -6) document.body.classList.remove('hm-hide');
+    if (Math.abs(dy) > 6 || y < 60) homeLastY = y;
+    if (homeNear()) homeMore();
+  });
+}, {passive: true});
+// Çekip yenile: en üstteyken aşağı çekilip bırakılınca akış yeniden karışır
+const homePtr = $('#homePtr'), PTR_AT = 70;
+let ptrY0 = null, ptrPull = 0;
+homeEl.addEventListener('touchstart', e => { ptrY0 = homeEl.scrollTop <= 0 && e.touches.length === 1 ? e.touches[0].clientY : null; ptrPull = 0; }, {passive: true});
+homeEl.addEventListener('touchmove', e => {
+  if (ptrY0 == null || homePtr.classList.contains('spin')) return;
+  if (homeEl.scrollTop > 0) { ptrY0 = null; ptrPull = 0; homePtr.style.cssText = ''; return; }
+  ptrPull = Math.max(0, (e.touches[0].clientY - ptrY0) * 0.5);
+  const k = Math.min(1, ptrPull / PTR_AT);
+  homePtr.style.opacity = k;
+  homePtr.style.transform = `translateY(${Math.min(ptrPull, PTR_AT) - 20}px) rotate(${k * 270}deg)`;
+}, {passive: true});
+homeEl.addEventListener('touchend', () => {
+  if (ptrY0 == null) return;
+  ptrY0 = null;
+  if (ptrPull >= PTR_AT) {
+    haptic(false);
+    homePtr.style.cssText = ''; homePtr.classList.add('spin');
+    setTimeout(() => { homeReset(); homePtr.classList.remove('spin'); }, 550);
+  } else homePtr.style.cssText = '';
+  ptrPull = 0;
 }, {passive: true});
 $('#homeRefresh').addEventListener('click', () => { haptic(false); homeReset(); });
 homeListEl.addEventListener('click', e => {
