@@ -289,7 +289,19 @@ const ADDED_V9 = [
 const REMOVED_V6 = new Set(['ya_sabur', 'ya_latif', 'ya_selam', 'ya_vedud']);
 const DEFAULTS = sortByDuaOrder([...BASE, ...ADDED_V2, ...ADDED_V3, ...ADDED_V5, ...ADDED_V7, ...ADDED_V9].filter(z => !REMOVED_V6.has(z.id)));
 applyPatches(DEFAULTS);
-const CATALOG = 10;
+// v11: Kur’ân’dan alınan bütün zikir ve duaların başına besmele (sûrelerde zaten var). Yama, önceki son değerlerden üretilir;
+// kullanıcının kendi değiştirdiği alanlara dokunulmaz.
+const BESMELE_AR = _IHLAS_AR.slice(0, _IHLAS_AR.indexOf(' قُلْ')), BESMELE_TR = 'Bismillâhirrahmânirrahîm.', BESMELE_ME = 'Rahmân ve Rahîm olan Allah’ın adıyla.';
+const BESMELE_IDS = ['ayetelkursi', 'sb_kursi', 'ak_kursi', 'mulk', 'masaallah', 'yunus', 'adem', 'rabbena_atina', 'ibrahim', 'yusuf', 'nuh', 'musa_sadr', 'musa', 'maide', 'rizik_ayet', 'aile', 'zekeriya', 'suleyman', 'eyyub', 'sabir', 'tevekkul', 'hasbunallah', 'lokman22', 'suayb', 'yunus81', 'kapanis', 'hakaret', 'musibet'];
+for (const id of BESMELE_IDS) {
+  const z = DEFAULTS.find(x => x.id === id);
+  if (!z || !z.arabic || z.arabic.startsWith(BESMELE_AR)) continue;
+  const from = {arabic: z.arabic, translit: z.translit, meaning: z.meaning};
+  const to = {arabic: BESMELE_AR + ' ' + z.arabic, translit: z.translit ? BESMELE_TR + ' ' + z.translit : '', meaning: z.meaning ? BESMELE_ME + ' ' + z.meaning : ''};
+  PATCHES_V3.push({v: 11, id, from, to});
+  Object.assign(z, to);
+}
+const CATALOG = 11;
 
 const KEY = 'zikrim-v2';
 const OLD_KEY = 'zikrim-v1';
