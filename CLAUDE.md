@@ -1,0 +1,69 @@
+# Sekîne — çalışma notu
+
+Bu repoda çalışan her oturum (Claude Code, başka sohbetler) bu kurallara uyar. Kurallar Ahmet'indir; değiştirmeden önce ona sor.
+
+## Uygulama
+
+- **Sekîne**: Zikir sayacı, hadis kütüphanesi (Musannef, Müsned, Usûlü's-Sünne), Sözler ve Hanbelî fıkhından oluşan, telefonun ana ekranına eklenen bir PWA. Adres: https://akbuluttahmet.github.io/zikrim/ (GitHub Pages, `main` dalı).
+- Derleme adımı yok, düz HTML/CSS/JS: `index.html`, `script.js`, `style.css`, `fikih.js`, `usul.js`, `sw.js`, `manifest.webmanifest`.
+- Veriler: `musannef/` ve `musned/` (her biri `index.json` + `tr/*.json`), `gunun.json` (günün rivayeti havuzu).
+- **Adres ve `localStorage` anahtarları (`zikrim-…`) değiştirilmez.** Değişirse kullanıcının verileri (sayaçlar, seri, kayıtlar) kaybolur. Uygulamanın adı Sekîne olsa da repo/klasör adı `zikrim` kalır.
+- Her yayında `sw.js` içindeki `CACHE = 'zikrim-vNN'` bir artırılır. Bunu `araclar/yayinla.sh "mesaj"` yapar; önce `git pull --rebase` ile başka oturumların değişikliklerini alır.
+- Aynı anda iki oturum çalışıyorsa işi bölün (ör. biri Müsned, biri Musannef). Push reddedilirse `git pull --rebase` yapın; `sw.js` çakışmasında uzak sürümü alıp sürüm numarasını bir artırın.
+
+## Çeviri kuralları (en önemli kısım)
+
+1. **Tam ve aslına sadık çeviri.** Özetleme, kısaltma ya da atlama yok. Uzun rivayetler de baştan sona çevrilir.
+2. **Asla yorum eklenmez.** Açıklama, şerh, değerlendirme, hüküm, "yani şu demek" türü eklemeler yok. Sadece eserin kendisinde olan çevrilir; başka eserlerden bilgi getirilmez.
+3. **İzin verilen tek not, bozuk ya da eksik metin notudur.** Kalıpları:
+   - `(metinde böyle)`: okunabiliyor ama anlamı bozuk ya da şüpheli.
+   - `(metin bu kelimede bozuktur)`
+   - `(metin bu kısımda bozuktur)` / `(metin burada bozuktur)`
+   - Bozuk yer okunabildiği kadar çevrilir; okunamayan kısım `…` ile gösterilip not düşülür.
+4. **`(?)` işareti asla kalmaz.** Şüpheli yer ya Arapçasına bakılarak düzgün çevrilir ya da yukarıdaki notlardan biri yazılır. `python3 araclar/kontrol.py` bunu yakalar.
+5. Anlamı tamamlamak için eklenen kelimeler parantez içinde yazılır: `(Allah’a) sığındı`. Bu yorum sayılmaz; sadece cümlenin Türkçede eksik kalan öğesidir.
+6. Saygı ifadeleri:
+   - Nebî / Resûlullah'tan sonra `ﷺ`.
+   - Diğer peygamberler için `(aleyhisselâm)`.
+   - İmam Ahmed'in adı geçtiği kaynak ve başlıklarda `(رحمه الله)`.
+   - Müsned bölüm başlıklarında sahâbîye `(radıyallâhu anh)`, nüshadaki "رضي الله عنه"a uygun olarak.
+7. Âyetler tırnak içinde çevrilir ve sonuna yeri yazılır: `(Hac 22/39)`.
+8. Yazım:
+   - Özel adlarda ‘ayn için `‘`, hemze için `’`, uzatmalar `â î û`: Ebû, Ebü’l-, b. (bin), Abdullah, Süfyân, İbn Abbâs.
+   - Tırnaklar `“ ”`, iç tırnak `‘ ’`.
+   - Kalıp ifade: وذكر أن أبا حنيفة قال → `Ebû Hanîfe’nin ise: «…» dediği zikredildi`.
+9. **Sened** Türkçe ve oklarla yazılır: `Vekî‘ → A‘meş → Ebû Vâil → Abdullah`. Kitap başındaki nüsha zinciri (Bakī b. Mahled / Ebû Abdurrahmân …) senedde korunur. Metin, sözü söyleyenle başlar: `Abdullah dedi ki: …`.
+10. Numaralar neşre göredir. Dijital nüshadaki açık sıra hataları (ör. 33771 ile 33774 arasında 32772) sıraya göre düzeltilir.
+
+## Kaynaklar
+
+- **Musannef:** İbn Ebî Şeybe, Kemâl Yûsuf el-Hût neşri (Riyad: Mektebetü’r-Rüşd, 1409); Şâmile no. 9944.
+- **Müsned:** İmam Ahmed, Şuayb el-Arnaût tahkiki, Müessesetü’r-Risâle (1421/2001); Şâmile no. 25794. Tahkik dipnotları alınmaz.
+- Arapça metinler Şâmile'deki aynı neşirden aynen alınır. Toplu metin için OpenITI GitHub kopyaları kullanılabilir (`raw.githubusercontent.com/OpenITI/...`).
+
+## Veri biçimi
+
+- `musannef/index.json`, `musned/index.json`: kitap/bölüm listesi `{f, tr, n, b?, from, to, t, g?}`. `n` toplam, `t` çevrilmiş rivayet sayısıdır; `t` 0 ise kitap kapalı görünür.
+- `tr/kNN.json` / `tr/mNNN.json`: `{"babs":[{"t":"Bab başlığı","h":[ … ]}]}`
+- Her rivayet **6 alanlı** bir dizidir: `[no, "sened (oklu)", "Türkçe metin", ziyade, info, "Arapça metin"]`.
+  - `ziyade`: Müsned'de 1 (Abdullah b. Ahmed ziyâdesi) ya da 2; diğerlerinde 0.
+  - `info`: Müsned râvi paneli `{c:[isim, sîga, isim, …], n:[metindeki notlar]}`; Musannef'te `null`.
+  - Arapça metin harekelidir, Şâmile'den aynen alınır; sened dahil tam metindir.
+  - **Bir kitabı yeniden derlerken Arapça (6.) alan kaybedilmez.** Eski derleme betikleri 3 alan yazıyordu; kullanılırsa Arapça mevcut dosyadan geri eklenmelidir.
+- Bab başlığı boşsa uygulama "Kitabın başı" yazar.
+
+## İş akışı
+
+1. Arapça kaynağı al. Çeviriyi `N | sened | metin` satırları ve `@ Bab başlığı` satırlarıyla yaz; metin içinde satır sonu için `\n` kullan. JSON'a dönüştür (6 alan), `index.json`'da `t`'yi güncelle.
+2. `python3 araclar/kontrol.py`: sayı, tekrar, sıra, `(?)`, boş metin ve alan sayısını denetler.
+3. Yeni kitaptan sonra `python3 araclar/gunun.py` ile günün rivayeti havuzunu yenile.
+4. `araclar/yayinla.sh "Musannef: Kitâbü’l-… tamamlandı (N/N)"`
+5. Commit mesajları Türkçe ve kısa olur; ne eklendiği ve kaç rivayet olduğu yazılır.
+
+## Arayüz notları
+
+- Varsayılan tema Klasik; ana sayfa kartı üç halka (Sabah · Akşam · Genel), günün rivayeti ve kaldığın yerden oluşur.
+- Zikirlerin sırası kullanıcı tarafından değiştirilemez.
+- Sesli okuma telefonun kendi sesleriyle yapılır (Web Speech API).
+  - Erkek ve yüksek kaliteli sesler önceliklidir: Arapça Majed, Türkçe Cem. Yelda listede gösterilmez.
+  - Telefonun gösterdiği ses listesinde ses yoksa, okuma telefonun ayarlarında o dil için seçili sesle yapılır.
