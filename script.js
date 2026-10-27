@@ -1230,15 +1230,15 @@ function goTo(v, b, n) {
 }
 const LIB_NAMES = {musannef: 'el-Musannef', musned: 'el-Müsned', usul: 'Usûlü’s-Sünne', berbehari: 'Şerhu’s-Sünne', acurri: 'el-Âcurrî', seria: 'eş-Şerîa'};
 const SHELVES = [
+  {c: 'II. ASIR', books: [
+    {v: 'musannef', ar: 'المصنف', t: 'el-Musannef', who: 'İbn Ebî Şeybe', bo: '159', d: 235, col: '#4d8062'},
+    {v: 'musned', ar: 'المسند', t: 'el-Müsned', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#8a5a3c', total: 27647},
+    {v: 'usul', ar: 'أصول السنة', t: 'Usûlü’s-Sünne', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#3f5f7f', done: true}]},
   {c: 'III. ASIR', books: [
-    {v: 'musannef', ar: 'المصنف', t: 'el-Musannef', who: 'İbn Ebî Şeybe', d: 235, col: '#4d8062'},
-    {v: 'musned', ar: 'المسند', t: 'el-Müsned', who: 'Ahmed b. Hanbel', d: 241, col: '#8a5a3c', total: 27647},
-    {v: 'usul', ar: 'أصول السنة', t: 'Usûlü’s-Sünne', who: 'Ahmed b. Hanbel', d: 241, col: '#3f5f7f', done: true}]},
-  {c: 'IV. ASIR', books: [
-    {v: 'berbehari', ar: 'شرح السنة', t: 'Şerhu’s-Sünne', who: 'el-Berbehârî', d: 329, col: '#6b4f7a', done: true},
-    {v: 'seria', ar: 'الشريعة', t: 'eş-Şerîa', who: 'el-Âcurrî', d: 360, col: '#2f6b66', total: 2075},
-    {v: 'acurri', b: 0, ar: 'أخلاق أهل القرآن', t: 'Ahlâku Ehli’l-Kur’ân', who: 'el-Âcurrî', d: 360, col: '#9a7b34', done: true},
-    {v: 'acurri', b: 1, ar: 'الأربعون حديثا', t: 'el-Erbaûn', who: 'el-Âcurrî', d: 360, col: '#7a4a52', done: true}]}
+    {v: 'berbehari', ar: 'شرح السنة', t: 'Şerhu’s-Sünne', who: 'el-Berbehârî', bo: '233 (ya da 252)', d: 329, col: '#6b4f7a', done: true},
+    {v: 'seria', ar: 'الشريعة', t: 'eş-Şerîa', who: 'el-Âcurrî', bo: 'y. 280', d: 360, col: '#2f6b66', total: 2075},
+    {v: 'acurri', b: 0, ar: 'أخلاق أهل القرآن', t: 'Ahlâku Ehli’l-Kur’ân', who: 'el-Âcurrî', bo: 'y. 280', d: 360, col: '#9a7b34', done: true},
+    {v: 'acurri', b: 1, ar: 'الأربعون حديثا', t: 'el-Erbaûn', who: 'el-Âcurrî', bo: 'y. 280', d: 360, col: '#7a4a52', done: true}]}
 ];
 function libSub(v, span) {
   const L = LIBS[v];
@@ -1275,7 +1275,7 @@ function renderLibrary() {
   for (const sh of SHELVES) {
     const sec = el('section', 'lib-shelf');
     const hd = el('div', 'shelf-h');
-    hd.append(el('span', null, sh.c), el('small', null, sh.books.length + ' kitap'));
+    hd.append(el('span', null, sh.c), el('small', null, 'doğum asrı (hicrî) · ' + sh.books.length + ' kitap'));
     const row = el('div', 'shelf-row');
     for (const bk of sh.books) {
       const b = el('button', 'cover');
@@ -1285,7 +1285,7 @@ function renderLibrary() {
       const who = el('small', 'cover-who', bk.who + ' ');
       const r = el('bdi', 'rah', RAH); r.lang = 'ar'; r.dir = 'rtl';
       const rw = el('span', 'nowrap', '('); rw.append(r, ')');
-      who.append(rw, el('span', 'cover-d', bk.d ? 'ö. ' + bk.d : ''));
+      who.append(rw, el('span', 'cover-d', (bk.bo ? 'd. ' + bk.bo + ' · ' : '') + (bk.d ? 'ö. ' + bk.d : '')));
       const bar = el('span', 'cover-bar'), fill = el('i'); bar.append(fill);
       const pct = el('small', 'cover-pct', bk.done ? '✓ tamam' : '…');
       if (bk.done) fill.style.width = '100%'; else coverProgress(bk, fill, pct);
