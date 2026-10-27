@@ -57,6 +57,20 @@ const ADDED_V2 = [
 ];
 
 // Sürüm 2.4 ile eklenenler (2. fotoğraf grubu; tekrarlar mevcut kartlarla birleştirildi)
+// v10: Âyetü’l-Kürsî, İhlâs, Felak ve Nâs kartlarına Kur’ân metni (Tanzil, quran-simple; vakıf işaretleri olmadan)
+const _KURSI_AR = 'اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ وَلَا يَئُودُهُ حِفْظُهُمَا وَهُوَ الْعَلِيُّ الْعَظِيمُ';
+const _KURSI_TR = 'Allâhü lâ ilâhe illâ hüve’l-Hayyü’l-Kayyûm, lâ te’huzühû sinetün ve lâ nevm, lehû mâ fi’s-semâvâti ve mâ fi’l-ard, men ze’llezî yeşfeu indehû illâ bi-iznih, ya’lemü mâ beyne eydîhim ve mâ halfehüm, ve lâ yuhîtûne bi-şey’in min ilmihî illâ bimâ şâ’, vesia kürsiyyühü’s-semâvâti ve’l-ard, ve lâ yeûdühû hıfzuhümâ, ve hüve’l-Aliyyü’l-Azîm.';
+const _KURSI_ME = 'Allah, O’ndan başka ilah yoktur; O diridir, kayyûmdur. O’nu ne uyuklama tutar ne uyku. Göklerde ve yerde ne varsa O’nundur. O’nun izni olmadan katında kim şefaat edebilir? Onların önlerindekini ve arkalarındakini bilir. O’nun ilminden, dilediği kadarı dışında hiçbir şeyi kavrayamazlar. Kürsîsi gökleri ve yeri kaplamıştır; onları korumak O’na ağır gelmez. O yücedir, büyüktür.';
+const _IHLAS_AR = 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ قُلْ هُوَ اللَّهُ أَحَدٌ اللَّهُ الصَّمَدُ لَمْ يَلِدْ وَلَمْ يُولَدْ وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ';
+const _IHLAS_TR = 'Bismillâhirrahmânirrahîm. Kul hüvallâhü ehad. Allâhü’s-samed. Lem yelid ve lem yûled. Ve lem yekün lehû küfüven ehad.';
+const _IHLAS_ME = 'Rahmân ve Rahîm olan Allah’ın adıyla. De ki: O Allah’tır, birdir. Allah Samed’dir. Doğurmamış ve doğurulmamıştır. Hiçbir şey O’na denk değildir.';
+const _FELAK_AR = 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ مِنْ شَرِّ مَا خَلَقَ وَمِنْ شَرِّ غَاسِقٍ إِذَا وَقَبَ وَمِنْ شَرِّ النَّفَّاثَاتِ فِي الْعُقَدِ وَمِنْ شَرِّ حَاسِدٍ إِذَا حَسَدَ';
+const _FELAK_TR = 'Bismillâhirrahmânirrahîm. Kul e’ûzü bi-rabbi’l-felak. Min şerri mâ halak. Ve min şerri ğâsikın izâ vekab. Ve min şerri’n-neffâsâti fi’l-ukad. Ve min şerri hâsidin izâ hased.';
+const _FELAK_ME = 'Rahmân ve Rahîm olan Allah’ın adıyla. De ki: Sabahın Rabbine sığınırım; yarattığı şeylerin şerrinden, karanlığı çöktüğünde gecenin şerrinden, düğümlere üfleyenlerin şerrinden ve haset ettiğinde hasetçinin şerrinden.';
+const _NAS_AR = 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ النَّاسِ مَلِكِ النَّاسِ إِلَٰهِ النَّاسِ مِنْ شَرِّ الْوَسْوَاسِ الْخَنَّاسِ الَّذِي يُوَسْوِسُ فِي صُدُورِ النَّاسِ مِنَ الْجِنَّةِ وَالنَّاسِ';
+const _NAS_TR = 'Bismillâhirrahmânirrahîm. Kul e’ûzü bi-rabbi’n-nâs. Meliki’n-nâs. İlâhi’n-nâs. Min şerri’l-vesvâsi’l-hannâs. Ellezî yüvesvisü fî sudûri’n-nâs. Mine’l-cinneti ve’n-nâs.';
+const _NAS_ME = 'Rahmân ve Rahîm olan Allah’ın adıyla. De ki: İnsanların Rabbine, insanların Melik’ine, insanların İlâh’ına sığınırım; sinsi vesvesecinin şerrinden; o ki insanların göğüslerine vesvese verir; cinlerden ve insanlardan.';
+
 const ADDED_V3 = [
   // Sabah-akşam ve koruma
   {id:'bismillahillezi',name:'Koruyucu Dua (Bismillâhillezî)',category:'Sabah-akşam 3 defa · Ebû Dâvûd, Tirmizî',arabic:'بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ',translit:'Bismillâhillezî lâ yedurru mea’smihî şey’ün fi’l-ardı ve lâ fi’s-semâi ve hüve’s-semî’u’l-alîm.',meaning:'O Allah’ın adıyla ki, O’nun adı anıldığında yerde ve gökte hiçbir şey zarar veremez. O, hakkıyla işiten ve her şeyi bilendir.',target:3},
@@ -204,7 +218,19 @@ const PATCHES_V3 = [
   {v:9, id:'bismillahillezi', from:{name:'Bismillâhillezî (Sabah)'}, to:{name:'Koruyucu Dua (Bismillâhillezî)'}},
   {v:9, id:'afini', from:{name:'Âfiyet Duası (Sabah)'}, to:{name:'Âfiyet Duası (Allâhümme âfinî)'}},
   {v:9, id:'bihamdihi', from:{name:'Sübhânallâhi ve bihamdihî (Sabah)'}, to:{name:'Sübhânallâhi ve bihamdihî'}},
-  {v:9, id:'kelimat', from:{name:'Eûzü bi-kelimâtillâhi’t-tâmmât (Akşam)'}, to:{name:'Eûzü bi-kelimâtillâhi’t-tâmmât'}}
+  {v:9, id:'kelimat', from:{name:'Eûzü bi-kelimâtillâhi’t-tâmmât (Akşam)'}, to:{name:'Eûzü bi-kelimâtillâhi’t-tâmmât'}},
+  // v10: Kur’ân metni, okunuşu ve meali eklendi (kullanıcının değiştirdiği alanlara dokunulmaz)
+  {v:10, id:'ayetelkursi', from:{arabic:'', translit:'', meaning:'Koruyucu ayet; sabah, akşam ve yatarken okunur. Metni mushaftan okuyabilirsin.'}, to:{arabic:_KURSI_AR, translit:_KURSI_TR, meaning:_KURSI_ME + ' — Sabah, akşam ve yatarken okunur.'}},
+  {v:10, id:'sb_kursi', from:{arabic:'', translit:'', meaning:'Sabah okuyan akşama kadar korunur. Metni mushaftan okuyabilirsin.'}, to:{arabic:_KURSI_AR, translit:_KURSI_TR, meaning:_KURSI_ME + ' — Sabah okuyan akşama kadar korunur.'}},
+  {v:10, id:'ak_kursi', from:{arabic:'', translit:'', meaning:'Akşam okuyan sabaha kadar korunur. Metni mushaftan okuyabilirsin.'}, to:{arabic:_KURSI_AR, translit:_KURSI_TR, meaning:_KURSI_ME + ' — Akşam okuyan sabaha kadar korunur.'}},
+  {v:10, id:'ihlas', from:{arabic:'', translit:'', meaning:'Allah’ın birliğini anlatan sûre. Felak ve Nâs ile birlikte sabah-akşam üçer kez okuyana “her şeye karşı yeter” buyrulmuştur.'}, to:{arabic:_IHLAS_AR, translit:_IHLAS_TR, meaning:_IHLAS_ME + ' — Felak ve Nâs ile birlikte sabah-akşam üçer kez okuyana “her şeye karşı yeter” buyrulmuştur.'}},
+  {v:10, id:'ak_ihlas', from:{arabic:'', translit:'', meaning:'Allah’ın birliğini anlatan sûre.'}, to:{arabic:_IHLAS_AR, translit:_IHLAS_TR, meaning:_IHLAS_ME}},
+  {v:10, id:'felak', from:{arabic:'', translit:'', meaning:'Sabahın Rabbine, yarattıklarının şerrinden sığınma sûresi.'}, to:{arabic:_FELAK_AR, translit:_FELAK_TR, meaning:_FELAK_ME}},
+  {v:10, id:'sb_felak', from:{arabic:'', translit:'', meaning:'Sabahın Rabbine, yarattıklarının şerrinden sığınma sûresi.'}, to:{arabic:_FELAK_AR, translit:_FELAK_TR, meaning:_FELAK_ME}},
+  {v:10, id:'ak_felak', from:{arabic:'', translit:'', meaning:'Sabahın Rabbine, yarattıklarının şerrinden sığınma sûresi.'}, to:{arabic:_FELAK_AR, translit:_FELAK_TR, meaning:_FELAK_ME}},
+  {v:10, id:'nas', from:{arabic:'', translit:'', meaning:'İnsanların Rabbine, vesvese verenin şerrinden sığınma sûresi.'}, to:{arabic:_NAS_AR, translit:_NAS_TR, meaning:_NAS_ME}},
+  {v:10, id:'sb_nas', from:{arabic:'', translit:'', meaning:'İnsanların Rabbine, vesvese verenin şerrinden sığınma sûresi.'}, to:{arabic:_NAS_AR, translit:_NAS_TR, meaning:_NAS_ME}},
+  {v:10, id:'ak_nas', from:{arabic:'', translit:'', meaning:'İnsanların Rabbine, vesvese verenin şerrinden sığınma sûresi.'}, to:{arabic:_NAS_AR, translit:_NAS_TR, meaning:_NAS_ME}}
 ];
 function applyPatches(list, since = 0) {
   for (const p of PATCHES_V3) {
@@ -263,7 +289,7 @@ const ADDED_V9 = [
 const REMOVED_V6 = new Set(['ya_sabur', 'ya_latif', 'ya_selam', 'ya_vedud']);
 const DEFAULTS = sortByDuaOrder([...BASE, ...ADDED_V2, ...ADDED_V3, ...ADDED_V5, ...ADDED_V7, ...ADDED_V9].filter(z => !REMOVED_V6.has(z.id)));
 applyPatches(DEFAULTS);
-const CATALOG = 9;
+const CATALOG = 10;
 
 const KEY = 'zikrim-v2';
 const OLD_KEY = 'zikrim-v1';
