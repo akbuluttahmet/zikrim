@@ -997,16 +997,25 @@ function arSplit(ar) {
 const prepTr = t => String(t).replace(/ﷺ/g, ' sallallâhu aleyhi ve sellem ').replace(/\s*→\s*/g, ', ondan, ').replace(/\bb\.\s/g, 'bin ').replace(/[“”«»"⁨⁩]/g, '').replace(/\\n/g, ' ');
 const prepAr = t => String(t).replace(/\[[^\]]*\]/g, ' ').replace(/[«»"{}()﴿﴾]/g, ' ').replace(/\s+/g, ' ').trim();
 // iOS uzun cümleleri yarıda kesebildiği için metni noktalama yerlerinden parçalara böl
-function chunks(t, max = 220) {
+function chunks(t, max = 180) {
   const out = [];
+  const pieces = [];
   for (const s of t.replace(/([.!?؟;؛:،,])\s+/g, '$1\u0001').split('\u0001')) {
+    if (s.length <= max) { pieces.push(s); continue; }
+    let cur = '';
+    for (const w of s.split(/\s+/)) { if (cur && (cur + ' ' + w).length > max) { pieces.push(cur); cur = w; } else cur = cur ? cur + ' ' + w : w; }
+    if (cur) pieces.push(cur);
+  }
+  for (const s of pieces) {
     if (out.length && (out[out.length - 1] + ' ' + s).length <= max) out[out.length - 1] += ' ' + s; else out.push(s);
   }
   return out.filter(x => x.trim());
 }
+// Bir parçanın en az ne kadar sürmesi gerektiği (hareke sayılmadan); bundan çok önce biten okuma "okunamadı" sayılır
+const minSpeakMs = (c, rate) => { const n = c.replace(/[\u064B-\u0652\u0670\u0640\s]/g, '').length; return n < 8 ? 0 : n * 30 / rate; };
 const TTSP = {run: null};
 function ttsStop() {
-  if (SYN) SYN.cancel();
+  if (SYN && (SYN.speaking || SYN.pending)) { SYN.cancel(); TTSP.cancelledAt = Date.now(); }
   if (TTSP.run) TTSP.run.cancelled = true;
   TTSP.run = null;
   document.querySelectorAll('.tts-on').forEach(e => e.classList.remove('tts-on'));
@@ -1038,7 +1047,7 @@ function ttsPlay(btn, lang, parts) {
   const queue = [];
   for (const p of parts) if (p && p.text && p.text.trim()) for (const c of chunks(p.text)) queue.push({el: p.el, c});
   if (!queue.length) return;
-  const run = {cancelled: false};
+  const run = {cancelled: false, sys: !!(TTSP.forceSys && TTSP.forceSys[lang])};
   TTSP.run = run;
   btn.classList.add('playing'); btn.textContent = '■ Durdur';
   const art = btn.closest('article'), no = art && art.querySelector('.mus-no');
@@ -1064,14 +1073,31 @@ function ttsPlay(btn, lang, parts) {
     }
     const q = queue[i++];
     if (q.el) { q.el.classList.add('tts-on'); const d = q.el.closest('details'); if (d && !d.open) d.open = true; }
+    say(q, 0);
+  };
+  // Bir parçayı oku; ses parçayı okumadan hemen bitirirse önce telefonun varsayılan sesiyle bir kez daha dene, olmazsa dur
+  const say = (q, tries) => {
     const u = new SpeechSynthesisUtterance(q.c);
-    if (voice === 'system') u.lang = ttsLangCode(lang); else { u.voice = voice; u.lang = voice.lang; }
+    if (run.sys || voice === 'system') u.lang = ttsLangCode(lang); else { u.voice = voice; u.lang = voice.lang; }
     u.rate = TTS.rate;
-    u.onend = next;
-    u.onerror = e => { if (!run.cancelled && e.error !== 'interrupted' && e.error !== 'canceled') { ttsStop(); toast('Sesli okuma durdu'); } };
+    const t0 = Date.now();
+    u.onend = () => {
+      if (run.cancelled) return;
+      if (Date.now() - t0 < minSpeakMs(q.c, TTS.rate)) {
+        if (tries === 0 && !run.sys && voice !== 'system') { run.sys = true; TTSP.forceSys = Object.assign(TTSP.forceSys || {}, {[lang]: true}); say(q, 1); return; }
+        if (tries < 2) { setTimeout(() => !run.cancelled && say(q, tries + 1), 300); return; }
+        ttsStop();
+        toast(`${lang === 'ar' ? 'Arapça' : 'Türkçe'} ses bu metni okuyamadı — Ayarlar → Sesli okuma'dan başka bir ses seç`);
+        return;
+      }
+      next();
+    };
+    u.onerror = e => { if (!run.cancelled && e.error !== 'interrupted' && e.error !== 'canceled') { ttsStop(); toast('Sesli okuma durdu: ' + e.error); } };
     SYN.speak(u);
   };
-  next();
+  // iOS: cancel() hemen ardından speak() yeni okumayı da kesebiliyor; kısa bir ara ver
+  const wait = TTSP.cancelledAt && Date.now() - TTSP.cancelledAt < 250 ? 250 : 0;
+  setTimeout(() => { if (!run.cancelled) next(); }, wait);
 }
 // Bir okuma kartına "▶ Arapça" / "▶ Türkçe" düğmeleri: parts() o anki ayarlara göre okunacakları verir
 function ttsRow(map) {
