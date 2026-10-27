@@ -4,7 +4,7 @@ Ana ekrana eklenen, çevrimdışı çalışan kişisel zikir sayacı. Veriler te
 
 ## Sürüm 2'deki yenilikler
 - **Gün bazlı sayaçlar:** Her gece yarısı sayaçlar kendiliğinden yeni güne geçer, eski günler geçmişte saklanır (~400 gün).
-- **Seri ve haftalık grafik:** Üst kartta art arda zikir çekilen gün sayısı ve son 7 günün grafiği yer alır. Çubuğa dokununca o günün toplamı görünür.
+- **Üst kart:** Her açılışta zikir listesinden farklı bir zikir (Arapçası, adı ve anlamı) gösterilir; “Zikret” sayacı açar, “↻” başka zikir getirir. Altında Sabah · Akşam · Genel halkaları ve son 7 günün sabah/akşam çizelgesi yer alır.
 - **Odak modu (⤢):** Tam ekran sayaç açılır. Ekranın herhangi bir yerine dokunarak sayılır. Ekran kapanmaz, zikirler arasında ‹ › ile geçilir.
 - **−1 geri al:** Yanlış dokunuşları düzeltmek için kullanılır.
 - **Sıralama:** Ana ekranda kartın solundaki ⋮⋮ tutamacını basılı tutup sürükleyerek sıra değiştirilir.

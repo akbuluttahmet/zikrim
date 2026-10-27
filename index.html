@@ -27,11 +27,15 @@
   </header>
 
   <section class="hero">
-    <span class="hero-subtitle">BUGÜNKÜ TOPLAM ZİKİR</span>
-    <div class="grand" id="grand">0</div>
-    <div class="stats">
-      <span class="stat" id="streak">Seri yok</span>
-      <span class="stat" id="progress">0 / 7 tamamlandı</span>
+    <div class="hz" id="hz" hidden>
+      <span class="hero-subtitle">ZİKİR</span>
+      <p class="hz-ar" id="hzAr" lang="ar" dir="rtl"></p>
+      <p class="hz-name" id="hzName"></p>
+      <p class="hz-me" id="hzMe"></p>
+      <div class="hz-act">
+        <button type="button" class="chip-button" id="hzGo">📿 Zikret</button>
+        <button type="button" class="chip-button" id="hzNext" aria-label="Başka bir zikir göster">↻ Başka zikir</button>
+      </div>
     </div>
     <div class="rings" id="rings"></div>
     <div class="week" id="week" aria-label="Son 7 gün: sabah ve akşam zikirleri"></div>

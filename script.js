@@ -456,12 +456,30 @@ function setCount(id, n, d = today) {
 const dayTotal = d => Object.values(S.days[d] || {}).reduce((a, b) => a + b, 0);
 const findZ = id => S.zikirs.find(z => z.id === id);
 
-function streak() {
-  let d = new Date();
-  if (!dayTotal(dayKey(d))) d = addDays(d, -1); // bugün henüz başlamadıysa seri dünden devam eder
-  let n = 0;
-  while (dayTotal(dayKey(d)) > 0) { n++; d = addDays(d, -1); }
-  return n;
+/* ---------- Ana sayfa: üstte her açılışta farklı bir zikir ---------- */
+let hzPick = null;
+// Sabah/akşam kopyaları aynı metni tekrarlamasın diye Arapçaya göre tekilleştirilir; çok uzun metinler (Âyetü’l-Kürsî gibi) kartı taşırmasın diye alınmaz.
+function hzPool() {
+  const seen = new Set();
+  return S.zikirs.filter(z => z.arabic && z.arabic.length <= 220 && !seen.has(z.arabic) && seen.add(z.arabic));
+}
+function renderHeroZikr(next = false) {
+  const pool = hzPool();
+  if (!pool.length) { $('#hz').hidden = true; return; }
+  if (!hzPick || next || !findZ(hzPick)) {
+    const last = next ? hzPick : store.get('zikrim-hz', null);
+    const rest = pool.length > 1 ? pool.filter(z => z.id !== last) : pool;
+    hzPick = rest[Math.floor(Math.random() * rest.length)].id;
+    store.set('zikrim-hz', hzPick);
+  }
+  const z = findZ(hzPick);
+  $('#hzAr').textContent = z.arabic;
+  $('#hzName').textContent = z.name;
+  $('#hzMe').textContent = z.meaning;
+  $('#hzMe').hidden = !z.meaning;
+  $('#hzGo').onclick = () => openFocus(z.id);
+  $('#hzNext').onclick = () => renderHeroZikr(true);
+  $('#hz').hidden = false;
 }
 
 /* ---------- Titreşim (iOS 18+ için switch hilesi) ---------- */
@@ -567,7 +585,7 @@ $('#backAll').addEventListener('click', () => setView(LIB_CHILD.has(view) ? 'kut
 
 function renderCards() {
   cardsEl.replaceChildren();
-  if (view === 'main') { renderResume(); renderDaily(); }
+  if (view === 'main') { renderHeroZikr(); renderResume(); renderDaily(); }
   document.body.classList.toggle('compact', S.compact);
   $('#toggleCompact').classList.toggle('active', S.compact);
   $('#toggleCompact').setAttribute('aria-pressed', String(S.compact));
@@ -1469,11 +1487,9 @@ searchEl.addEventListener('input', applyFilter);
 searchEl.addEventListener('keydown', e => { const L = LIBS[view]; if (e.key !== 'Enter' || !L) return; const v = searchEl.value.trim(); if (/^\d+$/.test(v) && L.idx) { const bi = libPick(L, +v); if (bi >= 0 && L.idx[bi].t) { e.preventDefault(); searchEl.blur(); libOpen(L, bi, +v); } } });
 
 function update() {
-  let done = 0;
   for (const z of S.zikirs) {
     const c = getCount(z.id);
     const ok = c >= z.target;
-    if (ok) done++;
     const box = cardsEl.querySelector(`[data-id="${CSS.escape(z.id)}"]`);
     if (!box) continue;
     box.classList.toggle('done', ok);
@@ -1488,10 +1504,6 @@ function update() {
     el.textContent = `${d} / ${zs.length}`;
     el.parentElement.classList.toggle('complete', zs.length > 0 && d === zs.length);
   }
-  $('#grand').textContent = fmt(dayTotal(today));
-  $('#progress').textContent = `${done} / ${S.zikirs.length} tamamlandı`;
-  const st = streak();
-  $('#streak').textContent = st ? `${st} günlük seri` : 'Seri yok';
   renderRings();
   $('#today').textContent = new Date().toLocaleDateString('tr-TR', {day: 'numeric', month: 'long', year: 'numeric', weekday: 'long'}).toLocaleUpperCase('tr-TR');
   $('#hijri').textContent = hijriText();

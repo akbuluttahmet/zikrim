@@ -21,8 +21,14 @@ button:disabled{opacity:.35;cursor:default}
 
 /* Üst kart */
 .hero{background:var(--hero);text-align:center;border:1px solid var(--border);border-radius:26px;padding:26px 18px 20px}
-.grand{font-size:72px;font-weight:700;letter-spacing:-3px;margin:6px 0 10px;font-variant-numeric:tabular-nums;line-height:1.05}
-.stats{display:flex;justify-content:center;gap:8px;flex-wrap:wrap}
+.hz{padding-bottom:14px;border-bottom:1px solid var(--border)}
+.hz[hidden]{display:none}
+.hz .hero-subtitle{display:block;margin-bottom:8px}
+.hz-ar{margin:0 0 8px;font:700 27px/1.9 "Amiri",var(--arabic);color:var(--text)}
+.hz-name{margin:0;font-size:14px;font-weight:700;color:var(--accent)}
+.hz-me{margin:6px auto 0;max-width:34em;font-size:13.5px;line-height:1.6;color:var(--text)}
+.hz-act{display:flex;justify-content:center;gap:8px;margin-top:12px}
+.hz-act .chip-button{padding:6px 14px;font-size:12.5px}
 .stat{background:var(--card);border:1px solid var(--border);border-radius:999px;padding:6px 12px;font-size:12px;font-weight:600}
 .week{display:grid;grid-template-columns:repeat(7,1fr);gap:8px;margin:20px 4px 14px;height:78px}
 .day{display:flex;flex-direction:column;align-items:center;gap:6px;background:none;border:0;padding:0}
@@ -154,7 +160,7 @@ body.no-scroll #toast{bottom:calc(120px + env(safe-area-inset-bottom))}
 body[data-theme=night] #toast button{color:#7a5a1e}
 .haptic{position:fixed;left:-50px;top:0;width:1px;height:1px;opacity:0;pointer-events:none;overflow:hidden}
 
-@media(max-width:370px){.arabic{font-size:22px}.grand{font-size:60px}}
+@media(max-width:370px){.arabic{font-size:22px}.hz-ar{font-size:24px}}
 .arabic[hidden]~.translit[hidden]~.meaning{margin-top:12px}
 
 /* Dua sırası bölüm başlıkları */
