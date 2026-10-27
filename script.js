@@ -568,14 +568,14 @@ const QUOTES = [
 /* ---------- Kartlar ---------- */
 const cardsEl = $('#cards');
 const MSET = new Set(MORNING), ESET = new Set(EVENING);
-const VIEWS = {main: 'Sekîne', sabah: '☀︎ Sabah Zikirleri', aksam: '☾ Akşam Zikirleri', genel: '📿 Genel Zikirler', selef: '📜 Sözler', fikih: '⚖️ Hanbelî Fıkhı', musannef: '📚 Musannef', ibnebiseybe: '📚 İbn Ebî Şeybe', musned: '📗 Müsned', usul: '📘 Usûlü’s-Sünne', ahmed: '📘 İmam Ahmed', zuhd: '📘 ez-Zühd', fezail: '📘 Fezâilü’s-sahâbe', berbehari: '📕 Şerhu’s-Sünne', acurri: '📙 el-Âcurrî', seria: '📙 eş-Şerîa', hallal: '📗 el-Hallâl', kutuphane: '📚 Kütüphane', kaydedilen: '☆ Kaydettiklerim'};
+const VIEWS = {main: 'Sekîne', akis: 'Akış', sabah: '☀︎ Sabah Zikirleri', aksam: '☾ Akşam Zikirleri', genel: '📿 Genel Zikirler', selef: '📜 Sözler', fikih: '⚖️ Hanbelî Fıkhı', musannef: '📚 Musannef', ibnebiseybe: '📚 İbn Ebî Şeybe', musned: '📗 Müsned', usul: '📘 Usûlü’s-Sünne', ahmed: '📘 İmam Ahmed', zuhd: '📘 ez-Zühd', fezail: '📘 Fezâilü’s-sahâbe', berbehari: '📕 Şerhu’s-Sünne', acurri: '📙 el-Âcurrî', seria: '📙 eş-Şerîa', hallal: '📗 el-Hallâl', kutuphane: '📚 Kütüphane', kaydedilen: '☆ Kaydettiklerim'};
 const LIB_CHILD = new Set(['musannef', 'ibnebiseybe', 'musned', 'usul', 'ahmed', 'zuhd', 'fezail', 'berbehari', 'acurri', 'seria', 'hallal', 'kaydedilen']);
-const READ_VIEWS = new Set(['selef', 'fikih', 'musannef', 'ibnebiseybe', 'musned', 'usul', 'ahmed', 'zuhd', 'fezail', 'berbehari', 'acurri', 'seria', 'hallal', 'kutuphane', 'kaydedilen']);
+const READ_VIEWS = new Set(['akis', 'selef', 'fikih', 'musannef', 'ibnebiseybe', 'musned', 'usul', 'ahmed', 'zuhd', 'fezail', 'berbehari', 'acurri', 'seria', 'hallal', 'kutuphane', 'kaydedilen']);
 let view = 'main';
 /* Alt sekmeler: her görünüm bir sekmeye aittir. Kökler: Zikir = ana sayfa, Kütüphane = raf, Sözler = sözler listesi. */
-const TAB_ROOT = {zikir: 'main', kutuphane: 'kutuphane', selef: 'selef'};
+const TAB_ROOT = {zikir: 'main', akis: 'akis', kutuphane: 'kutuphane', selef: 'selef'};
 const TAB_ROOTS = new Set(Object.values(TAB_ROOT));
-const tabOf = v => v === 'selef' ? 'selef' : (v === 'kutuphane' || v === 'fikih' || LIB_CHILD.has(v)) ? 'kutuphane' : 'zikir';
+const tabOf = v => v === 'akis' ? 'akis' : v === 'selef' ? 'selef' : (v === 'kutuphane' || v === 'fikih' || LIB_CHILD.has(v)) ? 'kutuphane' : 'zikir';
 const isGenel = z => !MSET.has(z.id) && !ESET.has(z.id);
 const inView = z => view === 'sabah' ? MSET.has(z.id) : view === 'aksam' ? ESET.has(z.id) : view === 'genel' ? isGenel(z) : false;
 const visible = () => S.zikirs.filter(inView);
@@ -601,7 +601,8 @@ function renderCards() {
   $('#toggleCompact').setAttribute('aria-pressed', String(S.compact));
   const list = visible();
   $('#listTitle').textContent = VIEWS[view];
-  $('.list').hidden = view === 'main';
+  $('.list').hidden = view === 'main' || view === 'akis';
+  feedShow(view === 'akis');
   document.body.classList.toggle('at-main', view === 'main');
   $('#backAll').hidden = TAB_ROOTS.has(view);
   const tab = tabOf(view);
@@ -613,6 +614,7 @@ function renderCards() {
   $('#empty').hidden = list.length > 0 || READ_VIEWS.has(view);
   document.body.classList.toggle('view-selef', READ_VIEWS.has(view));
   searchEl.placeholder = view === 'kutuphane' ? 'Kitap ya da âlim ara…' : view === 'kaydedilen' ? 'Kaydettiklerinde ara…' : view === 'selef' ? 'Söz ara (âlim, anlam, kaynak)…' : view === 'fikih' ? 'Fıkıhta ara (ör. mesh, cuma, zekât)…' : view === 'usul' ? 'Risalede ara (ör. kader, havz, cuma)…' : LIBS[view] ? (LIBS[view].book == null && LIBS[view].nogo ? 'Kitap ara…' : LIBS[view].book == null && !LIBS[view].single ? `${LIBS[view].unit === 'kitap' ? 'Kitap' : 'Bölüm'} ara ya da ${LIBS[view].item} no. yaz (ör. ${LIBS[view].ex})…` : `Bu ${LIBS[view].unit === 'kitap' ? 'kitapta' : 'bölümde'} ara ya da ${LIBS[view].item} no. yaz…`) : 'Zikir ara (ad, anlam, okunuş)…';
+  if (view === 'akis') { update(); return; }
   if (view === 'selef') { renderQuotes(); applyFilter(); update(); return; }
   if (view === 'fikih') { renderFiqh(); applyFilter(); update(); return; }
   if (LIBS[view]) { renderLib(LIBS[view]); update(); return; }
@@ -1322,6 +1324,95 @@ function dailyRandom() {
   }
   return null;
 }
+// Havuzdaki bir rivayetin kayıt anahtarı ve kaydet/çıkar işlemi (ana sayfa kartı ve akış ortak kullanır)
+const pickKey = ({v, b, n}) => v + ':' + (LIBS[v].bookKey ? b + ':' : '') + n;
+async function toggleSavePick({v, b, n}) {
+  const k = pickKey({v, b, n});
+  if (isSaved(k)) RD.saved = RD.saved.filter(x => x.k !== k);
+  else {
+    try {
+      const L = LIBS[v]; L.idx = L.idx || await libFetch(L, 'index.json');
+      const meta = L.idx[b]; const data = await libFetch(L, 'tr/' + meta.f);
+      let h = null; for (const bb of data.babs) { h = bb.h.find(x => x[0] === n); if (h) break; }
+      if (!h) return false;
+      RD.saved.unshift({k, at: Date.now(), v, b, h, title: meta.tr});
+    } catch (e) { toast('Kaydedilemedi; internet bağlantını kontrol et'); return false; }
+    toast('Kaydettiklerime eklendi');
+  }
+  store.set('zikrim-saved', RD.saved);
+  const c = $('#cntSaved'); if (c) c.textContent = RD.saved.length;
+  return true;
+}
+const pickSrc = ({v, b, n}) => { const L = LIBS[v], book = DAILY[v].books[b]; return L.bookKey ? L.src(n, {tr: book}) : L.single ? L.src(n) : L.src(n) + ' · ' + book; };
+async function loadDaily() {
+  if (!DAILY) { const r = await fetch('gunun.json'); if (!r.ok) throw new Error('gunun.json'); DAILY = await r.json(); }
+  return DAILY;
+}
+
+/* ---------- Akış: bütün kitaplıklardan rastgele rivayetler, tam ekran kartlarla ---------- */
+// Havuz oturum başında bir kez karıştırılır, aynı rivayet tekrar çıkmaz. Kartlar sona yaklaştıkça eklenir.
+// Ekrana sığmayan rivayet, kart çizildikten sonra ölçülerek atlanır (küçük ekran ve büyük yazıda da doğru çalışır).
+const feedEl = $('#feed');
+const FEED = {pool: null, i: 0, y: 0, busy: false};
+function feedShow(on) {
+  if (!on) { if (!feedEl.hidden) { FEED.y = feedEl.scrollTop; feedEl.hidden = true; } return; }
+  feedEl.hidden = false;
+  if (FEED.pool) { feedEl.scrollTop = FEED.y; return; }
+  feedEl.replaceChildren(el('div', 'fd-msg', 'Yükleniyor…'));
+  loadDaily().then(D => {
+    const all = [];
+    for (const v of Object.keys(D)) if (LIBS[v] && D[v].h) for (const it of D[v].h) all.push({v, b: it[0], n: it[1], t: it[2]});
+    for (let i = all.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [all[i], all[j]] = [all[j], all[i]]; }
+    FEED.pool = all; FEED.i = 0;
+    feedEl.replaceChildren();
+    feedMore(6);
+  }).catch(() => feedEl.replaceChildren(el('div', 'fd-msg', 'Rivayetler yüklenemedi. İnternet bağlantını kontrol edip tekrar dene.')));
+}
+function feedCard(p, first) {
+  const a = el('article', 'fd-card');
+  const box = el('div', 'fd-in');
+  const t = el('p', 'fd-t' + (p.t.length < 140 ? ' s' : p.t.length > 300 ? ' l' : ''), p.t);
+  box.append(el('span', 'fd-badge', LIB_NAMES[p.v] || VIEWS[p.v] || p.v), t, el('p', 'fd-src', pickSrc(p)));
+  const side = el('div', 'fd-side');
+  const star = el('button', null);
+  star.type = 'button';
+  const paint = () => { const on = isSaved(pickKey(p)); star.textContent = on ? '★' : '☆'; star.classList.toggle('on', on); star.setAttribute('aria-pressed', String(on)); star.setAttribute('aria-label', on ? 'Kaydettiklerimden çıkar' : 'Kaydet'); };
+  paint();
+  star.addEventListener('click', async () => { await toggleSavePick(p); paint(); });
+  const open = el('button', null, '📖');
+  open.type = 'button'; open.setAttribute('aria-label', 'Kitapta aç'); open.title = 'Kitapta aç';
+  open.addEventListener('click', () => { ttsStop(); goTo(p.v, p.b, p.n); });
+  side.append(star, ttsBtn('tr', '▶', () => [{el: t, text: prepTr(p.t)}], 'tts-i', 'Sesli oku'), open);
+  a.append(box, side);
+  if (first) box.append(el('span', 'fd-hint', '↑ Kaydırarak sıradaki rivayete geç'));
+  return a;
+}
+function feedMore(count) {
+  if (!FEED.pool || FEED.busy) return;
+  FEED.busy = true;
+  let added = 0, tries = 0;
+  while (added < count && FEED.i < FEED.pool.length && tries < count * 6) {
+    tries++;
+    const p = FEED.pool[FEED.i++];
+    const card = feedCard(p, !feedEl.children.length);
+    feedEl.append(card);
+    const box = card.firstChild;
+    if (box.scrollHeight > box.clientHeight + 2) { card.remove(); continue; } // ekrana sığmıyor: atla
+    added++;
+  }
+  if (FEED.i >= FEED.pool.length && !feedEl.querySelector('.fd-end')) feedEl.append(el('div', 'fd-card fd-msg fd-end', 'Bütün rivayetleri gördün. Akış yeniden açıldığında yeniden karışır.'));
+  FEED.busy = false;
+}
+let feedRaf = 0;
+feedEl.addEventListener('scroll', () => {
+  if (feedRaf) return;
+  feedRaf = requestAnimationFrame(() => {
+    feedRaf = 0;
+    if (feedEl.scrollTop + feedEl.clientHeight * 4 > feedEl.scrollHeight) feedMore(5);
+    const h = feedEl.querySelector('.fd-hint'); if (h && feedEl.scrollTop > 40) h.remove();
+  });
+}, {passive: true});
+
 async function renderDaily(next = false) {
   try { if (!DAILY) { const r = await fetch('gunun.json'); if (!r.ok) return; DAILY = await r.json(); } } catch { return; }
   if (!dailyPick || next) { const p = dailyRandom(); if (p) dailyPick = p; }
@@ -1335,20 +1426,7 @@ async function renderDaily(next = false) {
   const k = v + ':' + (L.bookKey ? b + ':' : '') + n, st = $('#dailyStar');
   const paint = () => { const on = isSaved(k); st.textContent = on ? '★' : '☆'; st.setAttribute('aria-pressed', String(on)); st.setAttribute('aria-label', on ? 'Kaydettiklerimden çıkar' : 'Kaydet'); };
   paint();
-  st.onclick = async () => {
-    if (isSaved(k)) RD.saved = RD.saved.filter(x => x.k !== k);
-    else {
-      try {
-        const L = LIBS[v]; L.idx = L.idx || await libFetch(L, 'index.json');
-        const meta = L.idx[b]; const data = await libFetch(L, 'tr/' + meta.f);
-        let h = null; for (const bb of data.babs) { h = bb.h.find(x => x[0] === n); if (h) break; }
-        if (!h) return;
-        RD.saved.unshift({k, at: Date.now(), v, b, h, title: meta.tr});
-      } catch (e) { toast('Kaydedilemedi; internet bağlantını kontrol et'); return; }
-      toast('Kaydettiklerime eklendi');
-    }
-    store.set('zikrim-saved', RD.saved); paint();
-  };
+  st.onclick = async () => { await toggleSavePick(dailyPick); paint(); };
   $('#daily').hidden = false;
 }
 function renderResume() {

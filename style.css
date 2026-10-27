@@ -456,3 +456,24 @@ body.no-scroll #toast{bottom:calc(120px + env(safe-area-inset-bottom))}
 .tts-bar{bottom:calc(var(--tabb) + 8px)}
 /* Zikir sekmesi dışında ana sayfa menüsü (Sabah · Akşam · Genel) gösterilmez */
 body:not([data-tab=zikir]) .home-nav{display:none}
+
+/* ---------- Akış: rastgele rivayetler, tam ekran kartlar (Reels gibi) ---------- */
+.feed{position:fixed;left:0;right:0;top:0;bottom:var(--tabh);z-index:13;background:var(--bg);overflow-y:auto;scroll-snap-type:y mandatory;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.feed::-webkit-scrollbar{display:none}
+.feed[hidden]{display:none}
+body.kb .feed,body.no-scroll .feed{bottom:0}
+body[data-tab=akis] .to-top{display:none}
+.fd-card{position:relative;height:100%;box-sizing:border-box;scroll-snap-align:start;scroll-snap-stop:always;padding:max(16px,calc(env(safe-area-inset-top) + 8px)) max(14px,env(safe-area-inset-right)) 14px max(14px,env(safe-area-inset-left));display:flex}
+.fd-in{flex:1;max-width:560px;height:100%;margin:0 auto;box-sizing:border-box;overflow:hidden;background:var(--card);border:1px solid var(--border);border-radius:24px;padding:24px 70px 22px 22px;display:flex;flex-direction:column;justify-content:center;gap:14px}
+.fd-badge{align-self:flex-start;background:var(--hero);color:var(--accent);border-radius:999px;padding:4px 11px;font-size:12px;font-weight:700;letter-spacing:.1px}
+.fd-t{margin:0;font-size:19px;line-height:1.62;color:var(--text);white-space:pre-line}
+.fd-t.s{font-size:22px;line-height:1.55}
+.fd-t.l{font-size:17px;line-height:1.6}
+.fd-src{margin:0;font-size:12.5px;line-height:1.45;color:var(--muted)}
+.fd-side{position:absolute;top:50%;right:calc(max(14px,env(safe-area-inset-right)) + 12px);transform:translateY(-50%);display:flex;flex-direction:column;gap:14px}
+.fd-side button,.fd-side .tts-b{width:44px;height:44px;padding:0;border-radius:50%;border:1px solid var(--border);background:var(--hero);color:var(--accent);font-size:18px;display:grid;place-items:center;float:none;margin:0}
+.fd-side .tts-b.playing{background:var(--accent);color:var(--accentText)}
+.fd-side .on{background:var(--accent);color:var(--accentText)}
+.fd-hint{display:block;margin-top:4px;text-align:center;font-size:12px;color:var(--muted);pointer-events:none;animation:fdHint 1.6s ease-in-out infinite}
+@keyframes fdHint{0%,100%{transform:translateY(0);opacity:.55}50%{transform:translateY(-6px);opacity:1}}
+.fd-msg{height:100%;display:grid;place-items:center;padding:24px;text-align:center;color:var(--muted)}
