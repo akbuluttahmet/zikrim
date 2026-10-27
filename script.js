@@ -1665,7 +1665,6 @@ feedEl.addEventListener('scroll', () => {
 const homeEl = $('#home'), homeBarEl = $('#homeBar'), homeListEl = $('#homeList');
 const HOME = {pool: null, i: 0, y: 0, tapPost: null, tapAt: 0};
 const HOME_STEP = 10;
-const libLabel = v => { const f = FD_LIBS.find(x => x[0] === v); return f ? f[1] : (VIEWS[v] || v).replace(/^\S+\s/, ''); };
 function homeShow(on) {
   if (!on) { if (!homeEl.hidden) { HOME.y = homeEl.scrollTop; homeEl.hidden = true; homeBarEl.hidden = true; } return; }
   homeEl.hidden = false; homeBarEl.hidden = false;
@@ -1684,14 +1683,15 @@ function homeReset(D = AKIS) {
 function homePost(p) {
   const a = el('article', 'hm-post');
   a._p = p;
-  const name = libLabel(p.v);
-  const av = el('div', 'hm-av', name.replace(/^(el-|eş-|ez-|İmam )/, '').charAt(0));
+  // Ad: birden çok eserli kitaplıklarda (İmam Ahmed, el-Hallâl, el-Âcurrî, İbn Ebî Şeybe) eserin adı, diğerlerinde kitabın adı
+  const L = LIBS[p.v], name = L.bookKey ? AKIS[p.v].books[p.b] : L.err;
+  const av = el('div', 'hm-av', name.replace(/^(el|eş|ez|es|et|er|en|ed|ed)[-‑]/i, '').charAt(0).toLocaleUpperCase('tr'));
   av.style.background = bookColor(p);
   av.setAttribute('aria-hidden', 'true');
   const body = el('div', 'hm-body');
   const head = el('div', 'hm-head');
   const src = feedSrc(p);
-  head.append(el('b', null, name), el('span', 'hm-src', src));
+  head.append(el('b', null, name), el('span', 'hm-src', L.bookKey ? src.replace(name + ', ', '') : src));
   body.append(head, el('p', 'hm-t', p.t));
   if (p.bab && !src.includes(p.bab)) body.append(el('p', 'hm-bab', 'Bab: ' + p.bab));
   const act = el('div', 'hm-act');
