@@ -600,7 +600,7 @@ function renderCards() {
   $('#toggleCompact').classList.toggle('active', S.compact);
   $('#toggleCompact').setAttribute('aria-pressed', String(S.compact));
   const list = visible();
-  $('#listTitle').textContent = VIEWS[view];
+  $('#listTitle').textContent = LIBS[view] || view === 'usul' ? VIEWS[view].replace(/^\S+\s/, '') : VIEWS[view]; // kitaplarda başlık emojisiz
   $('.list').hidden = view === 'main' || view === 'akis' || view === 'anasayfa';
   feedShow(view === 'akis');
   homeShow(view === 'anasayfa');
@@ -873,9 +873,39 @@ async function renderLib(L) {
   if (token === L.token && view === L.view) applyFilter();
 }
 
+// Kitabın (ya da kitaplığın) başlığı: raf renginde küçük kapak (ya da âlim simgesi), ad, âlim, bölüm ve rivayet sayısı, Okumaya devam et
+function libHead(L) {
+  const shelf = SHELVES.flatMap(s => s.books);
+  const bk = shelf.find(x => x.v === L.view && x.b == null), al = alimList().find(a => a.books.some(x => x.v === L.view));
+  const head = el('section', 'bk-head');
+  if (bk) {
+    const cv = el('span', 'bk-cover', bk.ar); cv.style.setProperty('--cv', bk.col); cv.lang = 'ar'; cv.dir = 'rtl'; cv.setAttribute('aria-hidden', 'true');
+    head.append(cv);
+  } else if (al) head.append(alimAv(al, 'alim-av'));
+  const txt = el('div', 'bk-txt');
+  txt.append(el('b', null, bk ? bk.t : LIB_NAMES[L.view] || L.err));
+  if (al) { const w = el('span', 'bk-who', al.who + ' '); const r = el('bdi', 'rah', RAH); r.lang = 'ar'; r.dir = 'rtl'; const rw = el('span', 'nowrap', '('); rw.append(r, ')'); w.append(rw); txt.append(w); }
+  const t = L.idx.reduce((s, b) => s + (b.t || 0), 0);
+  txt.append(el('small', 'bk-meta', `${L.idx.length} ${L.unit} · ${t.toLocaleString('tr-TR')} ${L.item}`));
+  head.append(txt);
+  const last = RD.last[L.view];
+  if (last && L.idx[last.b] && L.idx[last.b].t) {
+    const go = el('button', 'alim-go bk-go');
+    go.type = 'button';
+    go.append(el('span', null, 'Okumaya devam et'), el('small', null, `${L.idx.length > 1 && last.title ? last.title.replace(/ \(.*\)$/, '') + ' · ' : ''}${last.label}`));
+    go.addEventListener('click', () => goTo(last.v, last.b, last.n));
+    head.append(go);
+  }
+  head.dataset.search = '';
+  return head;
+}
 function libRenderBooks(L, wrap) {
   wrap.replaceChildren();
-  wrap.append(el('article', 'quote fq-note mus-note', L.note), el('div', 'mus-go'));
+  // Nüsha notu katlanır: tek satır görünür, dokununca açılır
+  const note = el('details', 'mus-note-d');
+  note.append(el('summary', null, 'Nüsha ve numaralar hakkında'), el('article', 'quote fq-note mus-note', L.note));
+  wrap.append(libHead(L), note, el('div', 'mus-go'));
+  const last = RD.last[L.view];
   let lastG = [];
   L.idx.forEach((b, i) => {
     (b.g || []).forEach((g, d) => {
@@ -886,8 +916,13 @@ function libRenderBooks(L, wrap) {
     });
     const card = el('button', 'mus-book');
     card.type = 'button';
-    card.append(el('span', 'mus-book-tr', b.tr),
-      el('small', 'mus-book-n', `${b.n.toLocaleString('tr-TR')} ${L.item}` + (b.b ? ` · ${b.b} bab` : '') + ` · no. ${b.from}–${b.to}` + (b.t >= b.n ? ' · ✓ Türkçe' : b.t ? ` · ${b.t.toLocaleString('tr-TR')}/${b.n.toLocaleString('tr-TR')} çevrildi` : ' · henüz çevrilmedi')));
+    // Sıra numarası, ad, “N rivayet · N bab” (no. aralığı soluk); tamamlanmış bölümde “✓ Türkçe” yazılmaz; okunan bölümde kaldığın yer
+    const txt = el('span', 'mus-book-txt');
+    const meta = el('small', 'mus-book-n', `${b.n.toLocaleString('tr-TR')} ${L.item}` + (b.b ? ` · ${b.b} bab` : '') + (b.t >= b.n ? '' : b.t ? ` · ${b.t.toLocaleString('tr-TR')}/${b.n.toLocaleString('tr-TR')} çevrildi` : ' · henüz çevrilmedi'));
+    meta.append(el('span', 'mus-book-no', ` · no. ${b.from}–${b.to}`));
+    txt.append(el('span', 'mus-book-tr', b.tr), meta);
+    if (last && last.b === i) { txt.append(el('small', 'mus-book-here', '▸ Kaldığın yer: ' + last.label)); card.classList.add('mus-here'); }
+    card.append(el('span', 'mus-book-i', String(i + 1)), txt);
     if (b.t) card.classList.add('mus-done'); else card.disabled = true;
     card.dataset.search = b.tr;
     card.addEventListener('click', () => libOpen(L, i));
