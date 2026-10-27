@@ -1,5 +1,5 @@
 // Güncelleme yaptığında bu sürüm adını artır
-const CACHE = 'zikrim-v100';
+const CACHE = 'zikrim-v101';
 const ASSETS = ['./', './index.html', './style.css', './fikih.js', './usul.js', './script.js', './manifest.webmanifest', './icon.svg', './apple-touch-icon.png', './icon-192.png', './icon-512.png', './gunun.json'];
 
 self.addEventListener('install', event => {
@@ -20,6 +20,12 @@ self.addEventListener('activate', event => {
 self.addEventListener('fetch', event => {
   const req = event.request;
   if (req.method !== 'GET' || new URL(req.url).origin !== self.location.origin) return;
+  // Kitap listeleri (index.json) ve günün rivayeti: önce ağ, çevrimdışıysa önbellek — yeni eklenen kitaplar hemen görünsün
+  if (/\/(index|gunun)\.json$/.test(new URL(req.url).pathname)) {
+    event.respondWith(caches.open(CACHE).then(cache => fetch(req).then(res => { if (res && res.ok) cache.put(req, res.clone()); return res; })
+      .catch(() => cache.match(req, {ignoreSearch: true}))));
+    return;
+  }
   event.respondWith(caches.open(CACHE).then(async cache => {
     const cached = await cache.match(req, {ignoreSearch: true});
     const network = fetch(req).then(res => {
