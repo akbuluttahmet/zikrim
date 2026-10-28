@@ -1572,6 +1572,9 @@ function flashTo(id) {
 /* Okunan rivayetler (`sekine-okunan`: {kitaplık: ["kitap:no", …]}): ekranın okuma bandında (kaldığın yer bandı) 1,5 sn duran madde
    okunmuş sayılır; hızlı kaydırırken geçilenler sayılmaz. Sayım bu özellik eklendiğinden (v167) beri tutulur. */
 const OKU = store.get('sekine-okunan', {}), OKU_SET = {}, OKU_DIRTY = new Set();
+// Günlük okuma: `sekine-okuma-gun` {gün: yeni okunan rivayet sayısı}; günlük hedef `sekine-okuma-hedef` (varsayılan 10, 0 = kapalı)
+const OKU_GUN = store.get('sekine-okuma-gun', {});
+const okuGoal = () => { const g = Number(store.get('sekine-okuma-hedef', 10)); return g >= 0 ? g : 10; };
 let okuTimer = 0;
 const okuSet = v => OKU_SET[v] || (OKU_SET[v] = new Set(Array.isArray(OKU[v]) ? OKU[v] : []));
 const okuKey = (b, n) => (b == null ? '' : b) + ':' + n;
@@ -1579,8 +1582,11 @@ function okuMark(x) {
   const s = okuSet(x.v), k = okuKey(x.b, x.n);
   if (s.has(k)) return;
   s.add(k); OKU_DIRTY.add(x.v);
+  const d = dayKey(), g = okuGoal();
+  OKU_GUN[d] = (OKU_GUN[d] || 0) + 1;
+  if (g && OKU_GUN[d] === g) toast('Bugünkü okuma hedefi tamamlandı 📖');
   clearTimeout(okuTimer);
-  okuTimer = setTimeout(() => { for (const v of OKU_DIRTY) OKU[v] = [...okuSet(v)]; OKU_DIRTY.clear(); store.set('sekine-okunan', OKU); }, 800);
+  okuTimer = setTimeout(() => { for (const v of OKU_DIRTY) OKU[v] = [...okuSet(v)]; OKU_DIRTY.clear(); store.set('sekine-okunan', OKU); store.set('sekine-okuma-gun', OKU_GUN); }, 800);
 }
 const okuCount = () => Object.keys(OKU).reduce((a, v) => a + okuSet(v).size, 0);
 const okuBook = (v, b) => { const p = (b == null ? '' : b) + ':'; let c = 0; for (const k of okuSet(v)) if (k.startsWith(p)) c++; return c; };
@@ -2758,7 +2764,31 @@ function pfSec(title, extra) {
   if (extra) h.append(extra);
   return h;
 }
+/* Okuma ilerlemesi: SHELVES'teki bir kitapta okunan madde / çevrilmiş madde (index.json'daki t). Kitaplığın index.json'ı inmemişse null. */
+const shelfOf = (v, b) => { for (const sh of SHELVES) for (const bk of sh.books) if (bk.v === v && (bk.b == null || bk.b === b)) return bk; return null; };
+function bookProg(bk) {
+  if (bk.v === 'usul') { const t = USUL.length; return {r: Math.min(t, okuSet('usul').size), t}; }
+  const L = LIBS[bk.v]; if (!L || !L.idx) return null;
+  const list = bk.b != null ? [L.idx[bk.b]].filter(Boolean) : L.idx;
+  const t = list.reduce((a, x) => a + (x.t || 0), 0);
+  if (!t) return null;
+  return {r: Math.min(t, bk.b != null ? okuBook(bk.v, bk.b) : okuSet(bk.v).size), t};
+}
+const pctOf = p => p.r >= p.t ? 100 : Math.min(99, Math.floor(p.r / p.t * 100));
+// Profilde gereken kitaplık dizinleri (okunan ya da devam edilen kitaplıklar) bir kez indirilir, sonra profil yeniden çizilir
+let pfIdxWait = false;
+function pfNeedIdx() {
+  const need = [...new Set([...Object.keys(OKU), ...Object.values(RD.last).map(x => x && x.v)])].filter(v => v && LIBS[v] && !LIBS[v].idx);
+  if (!need.length || pfIdxWait) return;
+  pfIdxWait = true;
+  Promise.all(need.map(v => libFetch(LIBS[v], 'index.json').then(x => { LIBS[v].idx = x; }).catch(() => {}))).then(() => {
+    pfIdxWait = false;
+    if (view === 'profil' && need.some(v => LIBS[v].idx)) { const y = scrollY; renderCards(); scrollTo(0, y); }
+  });
+}
+function openShelfBook(bk) { if (bk.b == null) openLib(bk.v); else { const L = LIBS[bk.v]; L.book = bk.b; libSave(L); setView(bk.v); } }
 function renderProfile() {
+  pfNeedIdx();
   const name = pfName();
   const box = el('section', 'pf');
   // Başlık: baş harf, ad (yazılabilir), ilk zikir tarihi
@@ -2775,6 +2805,26 @@ function renderProfile() {
   id.append(inp, el('small', null, ok ? `${fmt(ok)} rivayet okudun` : 'Okuduğun rivayetler burada sayılır'));
   head.append(av, id);
   box.append(head);
+  // Bugünkü okuma: halka ve günlük hedef
+  {
+    const n = OKU_GUN[dayKey()] || 0, g = okuGoal(), p = g ? Math.min(1, n / g) : 0;
+    const c = el('div', 'pf-day' + (g && n >= g ? ' done' : ''));
+    const ring = el('div', 'pf-ring');
+    const C = 2 * Math.PI * 34;
+    ring.innerHTML = `<svg viewBox="0 0 84 84" aria-hidden="true"><circle class="rg-track" cx="42" cy="42" r="34"/><circle class="rg-bar" cx="42" cy="42" r="34" transform="rotate(-90 42 42)" style="stroke-dasharray:${C * p} ${C};opacity:${n && g ? 1 : 0}"/><text x="42" y="47" text-anchor="middle"></text></svg>`;
+    ring.querySelector('text').textContent = g ? `${n}/${g}` : String(n);
+    const tx = el('div', 'pf-day-t');
+    tx.append(el('b', null, g ? (n >= g ? 'Bugünkü okuma hedefi tamam ✓' : `Bugün ${n} rivayet okudun`) : `Bugün ${n} rivayet okudun`));
+    const lab = el('label', 'pf-goal-sel');
+    const sel = el('select');
+    for (const v of [0, 5, 10, 20, 30, 50, 100]) { const o = el('option', null, v ? v + ' rivayet' : 'Kapalı'); o.value = v; if (v === g) o.selected = true; sel.append(o); }
+    sel.setAttribute('aria-label', 'Günlük okuma hedefi');
+    sel.addEventListener('change', () => { store.set('sekine-okuma-hedef', Number(sel.value)); const y = scrollY; renderCards(); scrollTo(0, y); });
+    lab.append(el('span', null, 'Günlük hedef'), sel);
+    tx.append(lab);
+    c.append(ring, tx);
+    box.append(c);
+  }
   // Hedef zikirlerim
   const goals = pfGoals();
   const ed = el('button', 'chip-button pf-edit', PF.pick ? 'Bitti' : goals.length ? 'Düzenle' : '＋ Seç');
@@ -2805,9 +2855,12 @@ function renderProfile() {
     const r = el('div', 'pf-read');
     if (i >= 3 && !PF.more) r.hidden = true;
     const b = el('button', 'lib-resume'); b.type = 'button';
-    const nb = okuBook(x.v, x.v === 'usul' ? null : x.b);
     b.append(el('span', 'lib-resume-t', `${LIB_NAMES[x.v]}${x.v !== 'usul' && x.title ? ' · ' + x.title.replace(/ \(.*\)$/, '') : ''}`), el('small', null, `Kaldığın yer: ${x.label} · ${pfAgo(x.at)}`));
-    if (nb) b.append(el('small', 'pf-rd-n', `${fmt(nb)} rivayet okundu`));
+    const bk = shelfOf(x.v, x.b), pr = bk && bookProg(bk);
+    if (pr) {
+      const bar = el('span', 'pf-pbar'), f = el('i'); f.style.width = Math.max(pr.r ? 2 : 0, pctOf(pr)) + '%'; bar.append(f);
+      b.append(bar, el('small', 'pf-rd-n', `%${pctOf(pr)} okundu · ${fmt(pr.r)} / ${fmt(pr.t)} rivayet`));
+    }
     b.addEventListener('click', () => goTo(x.v, x.b, x.n));
     const del = el('button', 'pf-x', '×'); del.type = 'button'; del.setAttribute('aria-label', 'Listeden çıkar');
     del.addEventListener('click', () => {
@@ -2822,6 +2875,22 @@ function renderProfile() {
     const mo = el('button', 'chip-button pf-more', PF.more ? 'Daha az göster' : `Daha fazla göster (${last.length - 3})`); mo.type = 'button';
     mo.addEventListener('click', () => { PF.more = !PF.more; const y = scrollY; renderCards(); scrollTo(0, y); });
     box.append(mo);
+  }
+  // Okuduğun kitaplar: bütün (çevrilmiş) rivayetleri okunan kitaplar
+  const fin = [];
+  for (const sh of SHELVES) for (const bk of sh.books) { const pr = bookProg(bk); if (pr && pr.r >= pr.t) fin.push(bk); }
+  box.append(pfSec('OKUDUĞUN KİTAPLAR', fin.length ? el('small', 'pf-n', String(fin.length)) : null));
+  if (!fin.length) box.append(el('p', 'pf-empty', 'Bir kitabın bütün rivayetlerini okuyunca kitap bu rafa gelir.'));
+  else {
+    const shelf = el('div', 'pf-shelf');
+    for (const bk of fin) {
+      const c = el('button', 'pf-bk'); c.type = 'button'; c.style.setProperty('--cv', bk.col);
+      const ar = el('span', 'pf-bk-ar', bk.ar); ar.lang = 'ar'; ar.dir = 'rtl';
+      c.append(ar, el('small', null, bk.t), el('span', 'pf-bk-ok', '✓'));
+      c.addEventListener('click', () => openShelfBook(bk));
+      shelf.append(c);
+    }
+    box.append(shelf);
   }
   // Kaydettiklerim ve koleksiyonlar
   box.append(pfSec('KAYDETTİKLERİM'));
@@ -2839,9 +2908,16 @@ function renderProfile() {
     box.append(cs);
   }
   // Son 30 gün
-  box.append(pfSec('SON 30 GÜN'));
+  const mode = store.get('sekine-pf-grafik', 'okuma') === 'zikir' ? 'zikir' : 'okuma';
+  const seg = el('div', 'seg pf-seg');
+  for (const [v, t] of [['okuma', 'Okuma'], ['zikir', 'Zikir']]) {
+    const b = el('button', null, t); b.type = 'button'; b.setAttribute('aria-pressed', String(v === mode));
+    b.addEventListener('click', () => { store.set('sekine-pf-grafik', v); const y = scrollY; renderCards(); scrollTo(0, y); });
+    seg.append(b);
+  }
+  box.append(pfSec('SON 30 GÜN', seg));
   const ch = el('div', 'pf-chart');
-  const days = []; for (let i = 29; i >= 0; i--) { const d = addDays(new Date(), -i); days.push({d, t: dayTotal(dayKey(d))}); }
+  const days = []; for (let i = 29; i >= 0; i--) { const d = addDays(new Date(), -i), k = dayKey(d); days.push({d, t: mode === 'okuma' ? (OKU_GUN[k] || 0) : dayTotal(k)}); }
   const max = Math.max(1, ...days.map(x => x.t));
   for (const x of days) {
     const c = el('span', 'pf-col' + (x.t ? '' : ' z'));
@@ -2851,7 +2927,7 @@ function renderProfile() {
   }
   box.append(ch);
   const m = days.reduce((a, x) => a + x.t, 0), ad = days.filter(x => x.t).length;
-  box.append(el('p', 'pf-cap', `${fmt(m)} zikir · ${ad} aktif gün`));
+  box.append(el('p', 'pf-cap', `${fmt(m)} ${mode === 'okuma' ? 'rivayet okundu' : 'zikir'} · ${ad} aktif gün`));
   // Ayarlar ve yedek
   box.append(pfSec('UYGULAMA'));
   const yd = store.get('sekine-son-yedek', '');
