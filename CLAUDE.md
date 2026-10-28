@@ -62,6 +62,13 @@ Bu repoda çalışan her oturum (Claude Code, başka sohbetler) bu kurallara uya
 - Bu üç kitaplığın derleme araçları oturum dosyalarındadır: `clean.py` (OpenITI → düz satır), `seg.py` / kitaba özel ayırıcı (→ `items.json`: [no, Arapça]), `build.py` (çeviri `N | sened | metin` + items.json → `tr/*.json`).
 - Arapça metinler Şâmile'deki aynı neşirden aynen alınır. Toplu metin için OpenITI GitHub kopyaları kullanılabilir (`raw.githubusercontent.com/OpenITI/...`).
 
+### Sünen-i Ebî Dâvûd
+
+- Şâmile 1726: Muhammed Muhyiddin Abdülhamîd tahkiki, el-Mektebetü’l-Asriyye, Sayda–Beyrut, 4 cilt. OpenITI `0275AbuDawudSijistani.Sunan.Shamela0001726-ara1`.
+- Veri `sunan/index.json` ve `sunan/tr/sNN.json` içindedir; Ebû Dâvûd’un Risâle ilâ ehli Mekke’sinden ayrı kitap olarak görünür. Neşrin 40 ana bölümü ve 1–5274 numaraları korunur; çevrilmeyen bölümlerde `t: 0` olur.
+- Şimdilik İlim bölümünün tamamı (s24, 3641–3668; 28 hadis, 13 bab) çevrilmiştir. Ebû Dâvûd’un metindeki sözleri, rivayet farkları ve alternatif senedler korunur. OpenITI’nin sayfa devamlarında tekrarladığı numaralar aynı hadiste birleştirilir; `ms…` ve sayfa işaretleri metne alınmaz.
+- `python3 araclar/sunan.py KAYNAK --ceviri CEVIRI` kaynağı mevcut çevirilerle derler. Çeviri dosyası `N | sened | metin` satırlarıdır. Kaynağın tam 40 bölüm ve sıralı 5274 hadis içermesi denetlenir; mevcut çeviriler korunur. Yeni babların Türkçe başlıkları betikteki `BABS` tablosuna eklenir. Sonra normal kontrol ve havuz yenileme iş akışı uygulanır.
+
 ## Veri biçimi
 
 - `musannef/index.json`, `musned/index.json`: kitap/bölüm listesi `{f, tr, n, b?, from, to, t, g?}`. `n` toplam, `t` çevrilmiş rivayet sayısıdır; `t` 0 ise kitap kapalı görünür.

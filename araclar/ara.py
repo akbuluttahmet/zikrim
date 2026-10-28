@@ -5,7 +5,7 @@
 #   python3 araclar/ara.py
 import json, os, re, subprocess
 R = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..') + '/'
-LIBS = ['musned', 'musannef', 'ibnebiseybe', 'ahmed', 'zuhd', 'fezail', 'usul', 'berbehari', 'seria', 'acurri', 'hallal', 'safii', 'buhari', 'ebudavud', 'harb', 'ibane']
+LIBS = ['musned', 'musannef', 'ibnebiseybe', 'ahmed', 'zuhd', 'fezail', 'usul', 'berbehari', 'seria', 'acurri', 'hallal', 'safii', 'buhari', 'ebudavud', 'harb', 'ibane', 'sunan']
 
 def ar_norm(a):
     a = re.sub(r'[ً-ٰٟـ]', '', a or '')

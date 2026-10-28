@@ -653,9 +653,9 @@ const QUOTES = [
 /* ---------- Kartlar ---------- */
 const cardsEl = $('#cards');
 const MSET = new Set(MORNING), ESET = new Set(EVENING);
-const VIEWS = {main: 'Sekîne', anasayfa: 'Anasayfa', akis: 'Akış', sabah: '☀︎ Sabah Zikirleri', aksam: '☾ Akşam Zikirleri', genel: '📿 Genel Zikirler', selef: '📜 Sözler', profil: 'Profilim', fikih: '⚖️ Hanbelî Fıkhı', musannef: '📚 Musannef', ibnebiseybe: '📚 İbn Ebî Şeybe', musned: '📗 Müsned', usul: '📘 Usûlü’s-Sünne', ahmed: '📘 İmam Ahmed', zuhd: '📘 ez-Zühd', fezail: '📘 Fezâilü’s-sahâbe', berbehari: '📕 Şerhu’s-Sünne', acurri: '📙 el-Âcurrî', seria: '📙 eş-Şerîa', hallal: '📗 el-Hallâl', safii: '📘 eş-Şâfiî', buhari: '📗 el-Buhârî', ebudavud: '📙 Ebû Dâvûd', harb: '📕 Harb el-Kirmânî', ibane: '📕 el-İbâne', kutuphane: '📚 Kütüphane', alim: '📚 Âlim', kaydedilen: '☆ Kaydettiklerim'};
-const LIB_CHILD = new Set(['musannef', 'ibnebiseybe', 'musned', 'usul', 'ahmed', 'zuhd', 'fezail', 'berbehari', 'acurri', 'seria', 'hallal', 'safii', 'buhari', 'ebudavud', 'harb', 'ibane', 'kaydedilen', 'alim', 'selef']);
-const READ_VIEWS = new Set(['anasayfa', 'akis', 'selef', 'profil', 'fikih', 'musannef', 'ibnebiseybe', 'musned', 'usul', 'ahmed', 'zuhd', 'fezail', 'berbehari', 'acurri', 'seria', 'hallal', 'safii', 'buhari', 'ebudavud', 'harb', 'ibane', 'kutuphane', 'kaydedilen', 'alim']);
+const VIEWS = {main: 'Sekîne', anasayfa: 'Anasayfa', akis: 'Akış', sabah: '☀︎ Sabah Zikirleri', aksam: '☾ Akşam Zikirleri', genel: '📿 Genel Zikirler', selef: '📜 Sözler', profil: 'Profilim', fikih: '⚖️ Hanbelî Fıkhı', musannef: '📚 Musannef', ibnebiseybe: '📚 İbn Ebî Şeybe', musned: '📗 Müsned', usul: '📘 Usûlü’s-Sünne', ahmed: '📘 İmam Ahmed', zuhd: '📘 ez-Zühd', fezail: '📘 Fezâilü’s-sahâbe', berbehari: '📕 Şerhu’s-Sünne', acurri: '📙 el-Âcurrî', seria: '📙 eş-Şerîa', hallal: '📗 el-Hallâl', safii: '📘 eş-Şâfiî', buhari: '📗 el-Buhârî', ebudavud: '📙 Ebû Dâvûd', harb: '📕 Harb el-Kirmânî', ibane: '📕 el-İbâne', sunan: '📗 Sünen-i Ebî Dâvûd', kutuphane: '📚 Kütüphane', alim: '📚 Âlim', kaydedilen: '☆ Kaydettiklerim'};
+const LIB_CHILD = new Set(['musannef', 'ibnebiseybe', 'musned', 'usul', 'ahmed', 'zuhd', 'fezail', 'berbehari', 'acurri', 'seria', 'hallal', 'safii', 'buhari', 'ebudavud', 'harb', 'ibane', 'sunan', 'kaydedilen', 'alim', 'selef']);
+const READ_VIEWS = new Set(['anasayfa', 'akis', 'selef', 'profil', 'fikih', 'musannef', 'ibnebiseybe', 'musned', 'usul', 'ahmed', 'zuhd', 'fezail', 'berbehari', 'acurri', 'seria', 'hallal', 'safii', 'buhari', 'ebudavud', 'harb', 'ibane', 'sunan', 'kutuphane', 'kaydedilen', 'alim']);
 let view = 'main';
 /* Alt sekmeler: her görünüm bir sekmeye aittir. Kökler: Zikir = ana sayfa, Kütüphane = âlimler (Sözler de Kütüphane'nin altındadır), Profilim = profil. */
 const TAB_ROOT = {zikir: 'main', anasayfa: 'anasayfa', akis: 'akis', kutuphane: 'kutuphane', profil: 'profil'};
@@ -1073,6 +1073,9 @@ LIBS.harb = {base: 'harb/', key: 'zikrim-harb', unit: 'kitap', item: 'madde', ex
   label: (n, h) => (h && h[4] && h[4].l) || (n === 0 ? 'Mukaddime' : Number.isInteger(n) ? `No. ${n}` : 'Ara metin'),
   src: (n, m) => `Harb el-Kirmânî, ${m ? m.tr : ''}${n === 0 ? ', mukaddime' : Number.isInteger(n) ? ', no. ' + n : ''}`,
   note: 'Ebû Muhammed Harb b. İsmâîl el-Kirmânî (ö. 280) — İmam Ahmed’in ashâbından; kitapları, Türkçe çeviri ve Arapça metniyle. Çeviri ve Arapça metin el-Mektebetü’ş-Şâmile’deki nüshalardan alınmıştır. İcmâu’s-selef fi’l-i‘tikâd, Mesâilü Harb’in (Fâyiz b. Ahmed Hâbis neşri) “Bâbu’l-kavl bi’l-mezheb” kısmıdır; nüshada numara yoktur, paragraflar sırayla numaralanmıştır.'};
+LIBS.sunan = {base: 'sunan/', key: 'zikrim-sunan', unit: 'bölüm', item: 'hadis', ex: 3641, err: 'Sünen-i Ebî Dâvûd',
+  src: n => `Ebû Dâvûd, es-Sünen, no. ${n}`,
+  note: 'Ebû Dâvûd Süleymân b. el-Eş‘as es-Sicistânî (ö. 275), es-Sünen — Türkçe çeviri ve Arapça metin. Kaynak, Muhammed Muhyiddin Abdülhamîd tahkikiyle el-Mektebetü’l-Asriyye (Sayda–Beyrut) tarafından yayımlanan dört ciltlik neşrin el-Mektebetü’ş-Şâmile’deki nüshasıdır (no. 1726). Hadis numaraları bu neşre göredir; eserdeki Ebû Dâvûd’un sözleri ve rivayet farkları korunmuştur. Kitap 40 bölümdür. Çevirisi tamamlanan kısımlar açılabilir.'};
 LIBS.ibane = {base: 'ibane/', key: 'zikrim-ibane', unit: 'bölüm', item: 'rivayet', ex: 120, err: 'el-İbâne',
   label: (n, h) => (h && h[4] && h[4].l) || (n === 0 ? 'Mukaddime' : Number.isInteger(n) ? `No. ${n}` : 'Ara metin'),
   src: n => `İbn Batta, el-İbânetü’l-kübrâ, ${n === 0 ? 'mukaddime' : Number.isInteger(n) ? 'no. ' + n : 'no. ' + Math.floor(n) + ' sonrası'}`,
@@ -1737,7 +1740,7 @@ function akisShuffled(D) {
 }
 const FEED = {all: null, pool: null, i: 0, y: 0, busy: false, filter: store.get('zikrim-akis-filtre', ''), tapCard: null, tapAt: 0};
 // Filtre etiketleri bu sırayla gösterilir (havuzda olmayan kitaplık atlanır)
-const FD_LIBS = [['musned', 'Müsned'], ['musannef', 'Musannef'], ['zuhd', 'Zühd'], ['fezail', 'Fezâil'], ['seria', 'eş-Şerîa'], ['acurri', 'el-Âcurrî'], ['ibnebiseybe', 'İbn Ebî Şeybe'], ['ahmed', 'İmam Ahmed'], ['hallal', 'el-Hallâl'], ['berbehari', 'Berbehârî'], ['safii', 'eş-Şâfiî'], ['buhari', 'el-Buhârî'], ['ebudavud', 'Ebû Dâvûd'], ['harb', 'Harb'], ['ibane', 'el-İbâne']];
+const FD_LIBS = [['musned', 'Müsned'], ['musannef', 'Musannef'], ['zuhd', 'Zühd'], ['fezail', 'Fezâil'], ['seria', 'eş-Şerîa'], ['acurri', 'el-Âcurrî'], ['ibnebiseybe', 'İbn Ebî Şeybe'], ['ahmed', 'İmam Ahmed'], ['hallal', 'el-Hallâl'], ['berbehari', 'Berbehârî'], ['safii', 'eş-Şâfiî'], ['buhari', 'el-Buhârî'], ['ebudavud', 'Ebû Dâvûd'], ['harb', 'Harb'], ['ibane', 'el-İbâne'], ['sunan', 'Sünen-i Ebî Dâvûd']];
 function feedShow(on) {
   if (!on) { if (!feedEl.hidden) { FEED.y = feedEl.scrollTop; feedEl.hidden = true; feedBarEl.hidden = true; } return; }
   feedEl.hidden = false; feedBarEl.hidden = false;
@@ -2215,7 +2218,7 @@ function goTo(v, b, n, ext = false) {
   renderCards();
   $('.list').scrollIntoView({block: 'start'});
 }
-const LIB_NAMES = {musannef: 'el-Musannef', ibnebiseybe: 'İbn Ebî Şeybe', musned: 'el-Müsned', usul: 'Usûlü’s-Sünne', ahmed: 'İmam Ahmed', zuhd: 'ez-Zühd', fezail: 'Fezâilü’s-sahâbe', berbehari: 'Şerhu’s-Sünne', acurri: 'el-Âcurrî', seria: 'eş-Şerîa', hallal: 'el-Hallâl', safii: 'eş-Şâfiî', buhari: 'el-Buhârî', ebudavud: 'Ebû Dâvûd', harb: 'Harb el-Kirmânî', ibane: 'el-İbâne'};
+const LIB_NAMES = {musannef: 'el-Musannef', ibnebiseybe: 'İbn Ebî Şeybe', musned: 'el-Müsned', usul: 'Usûlü’s-Sünne', ahmed: 'İmam Ahmed', zuhd: 'ez-Zühd', fezail: 'Fezâilü’s-sahâbe', berbehari: 'Şerhu’s-Sünne', acurri: 'el-Âcurrî', seria: 'eş-Şerîa', hallal: 'el-Hallâl', safii: 'eş-Şâfiî', buhari: 'el-Buhârî', ebudavud: 'Ebû Dâvûd', harb: 'Harb el-Kirmânî', ibane: 'el-İbâne', sunan: 'Sünen-i Ebî Dâvûd'};
 const SHELVES = [
   {c: 'II. ASIR', books: [
     {v: 'safii', b: 0, ar: 'جماع العلم', t: 'Cimâu’l-ilm', who: 'eş-Şâfiî', bo: '150', d: 204, col: '#5e4a6b', done: true},
@@ -2239,6 +2242,7 @@ const SHELVES = [
     {v: 'buhari', b: 0, ar: 'رفع اليدين في الصلاة', t: 'Ref‘u’l-yedeyn', who: 'el-Buhârî', bo: '194', d: 256, col: '#3f6b5e', done: true},
     {v: 'buhari', b: 1, ar: 'القراءة خلف الإمام', t: 'el-Kırâe halfe’l-imâm', who: 'el-Buhârî', bo: '194', d: 256, col: '#6b5a3a', done: true}]},
   {c: 'III. ASIR', books: [
+    {v: 'sunan', ar: 'سنن أبي داود', t: 'Sünen-i Ebî Dâvûd', who: 'Ebû Dâvûd', bo: '202', d: 275, col: '#39645b'},
     {v: 'harb', b: 0, ar: 'إجماع السلف في الاعتقاد', t: 'İcmâu’s-selef fi’l-i‘tikâd', who: 'Harb el-Kirmânî', d: 280, col: '#5e3f3a', done: true},
     {v: 'ebudavud', b: 0, ar: 'رسالة أبي داود إلى أهل مكة', t: 'Risâle ilâ ehli Mekke', who: 'Ebû Dâvûd', bo: '202', d: 275, col: '#5a6b7a', done: true},
     {v: 'berbehari', ar: 'شرح السنة', t: 'Şerhu’s-Sünne', who: 'el-Berbehârî', bo: '233?', d: 329, col: '#6b4f7a', done: true},
