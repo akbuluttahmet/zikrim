@@ -1941,7 +1941,11 @@ $('#shotCancel').addEventListener('click', () => shotSheet.close());
 if ('IntersectionObserver' in window) {
   FEED.obs = new IntersectionObserver(es => {
     for (const e of es) {
-      if (!e.isIntersecting || e.intersectionRatio < 0.6 || !e.target._p) continue;
+      const t = e.target;
+      // Okunan rivayet sayısına katılır: kart 2 sn ekranda kalırsa (kütüphanedeki gibi; hızlı geçilenler sayılmaz)
+      if (!e.isIntersecting || e.intersectionRatio < 0.6) { if (t._rd) { clearTimeout(t._rd); t._rd = 0; } continue; }
+      if (!t._p) continue;
+      if (!t._rd && !t._okundu) t._rd = setTimeout(() => { t._rd = 0; t._okundu = 1; if (t.isConnected && !feedEl.hidden) okuMark({v: t._p.v, b: t._p.v === 'usul' ? null : t._p.b, n: t._p.n}); }, 2000);
       e.target.classList.add('in');
       if (FEED.cur && FEED.cur !== e.target && performance.now() - FEED.touchAt < 1500) haptic(false);
       FEED.cur = e.target;
