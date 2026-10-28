@@ -1569,15 +1569,37 @@ function flashTo(id) {
   const quiet = flashQuiet; flashQuiet = false;
   requestAnimationFrame(() => { const it = document.getElementById(id); if (it) { it.scrollIntoView({block: 'center'}); if (quiet) return; it.classList.add('flash'); setTimeout(() => it.classList.remove('flash'), 1800); } });
 }
+/* Okunan rivayetler (`sekine-okunan`: {kitaplık: ["kitap:no", …]}): ekranın okuma bandında (kaldığın yer bandı) 1,5 sn duran madde
+   okunmuş sayılır; hızlı kaydırırken geçilenler sayılmaz. Sayım bu özellik eklendiğinden (v167) beri tutulur. */
+const OKU = store.get('sekine-okunan', {}), OKU_SET = {}, OKU_DIRTY = new Set();
+let okuTimer = 0;
+const okuSet = v => OKU_SET[v] || (OKU_SET[v] = new Set(Array.isArray(OKU[v]) ? OKU[v] : []));
+const okuKey = (b, n) => (b == null ? '' : b) + ':' + n;
+function okuMark(x) {
+  const s = okuSet(x.v), k = okuKey(x.b, x.n);
+  if (s.has(k)) return;
+  s.add(k); OKU_DIRTY.add(x.v);
+  clearTimeout(okuTimer);
+  okuTimer = setTimeout(() => { for (const v of OKU_DIRTY) OKU[v] = [...okuSet(v)]; OKU_DIRTY.clear(); store.set('sekine-okunan', OKU); }, 800);
+}
+const okuCount = () => Object.keys(OKU).reduce((a, v) => a + okuSet(v).size, 0);
+const okuBook = (v, b) => { const p = (b == null ? '' : b) + ':'; let c = 0; for (const k of okuSet(v)) if (k.startsWith(p)) c++; return c; };
 let readObs = null, readTimer = 0;
+const readDwell = new Map();
 function trackRead(root, info) {
   if (readObs) readObs.disconnect();
+  for (const t of readDwell.values()) clearTimeout(t);
+  readDwell.clear();
   if (!('IntersectionObserver' in window)) return;
   readObs = new IntersectionObserver(es => {
-    for (const e of es) if (e.isIntersecting && e.target.dataset.n != null) {
-      const x = info(e.target); x.at = Date.now();
-      RD.last[x.v] = x;
-      clearTimeout(readTimer); readTimer = setTimeout(() => store.set('zikrim-last', RD.last), 600);
+    for (const e of es) {
+      const t = e.target;
+      if (e.isIntersecting && t.dataset.n != null) {
+        const x = info(t); x.at = Date.now();
+        RD.last[x.v] = x;
+        clearTimeout(readTimer); readTimer = setTimeout(() => store.set('zikrim-last', RD.last), 600);
+        if (!readDwell.has(t)) readDwell.set(t, setTimeout(() => { readDwell.delete(t); if (t.isConnected) okuMark(info(t)); }, 1500));
+      } else if (readDwell.has(t)) { clearTimeout(readDwell.get(t)); readDwell.delete(t); }
     }
   }, {rootMargin: '-35% 0px -55% 0px'});
   const watch = () => root.querySelectorAll('.mus-h').forEach(a => { if (!a.dataset.obs) { a.dataset.obs = 1; readObs.observe(a); } });
@@ -2231,21 +2253,8 @@ function libSub(v, span) {
   if (L.idx) fill(); else libFetch(L, 'index.json').then(x => { L.idx = x; fill(); }).catch(() => {});
 }
 function openLib(v) { if (LIBS[v]) LIBS[v].book = null; setView(v); }
+// Okumaya devam ettiklerim Profilim'dedir; Kütüphane kökü Kaydettiklerim, Sözler ve âlimlerden oluşur
 function renderLibrary() {
-  const last = Object.values(RD.last).filter(x => x && x.v).sort((a, b) => b.at - a.at).slice(0, 3);
-  if (last.length) {
-    const sec = el('section', 'lib-cont');
-    sec.append(el('p', 'lib-h', 'OKUMAYA DEVAM ET'));
-    for (const x of last) {
-      const b = el('button', 'lib-resume');
-      b.type = 'button';
-      b.append(el('span', 'lib-resume-t', `${LIB_NAMES[x.v]}${x.v !== 'usul' && x.title ? ' · ' + x.title.replace(/ \(.*\)$/, '') : ''}`), el('small', null, 'Kaldığın yer: ' + x.label));
-      b.addEventListener('click', () => goTo(x.v, x.b, x.n));
-      sec.append(b);
-    }
-    sec.dataset.search = '';
-    cardsEl.append(sec);
-  }
   const sv = el('button', 'lib-saved');
   sv.type = 'button';
   const c = el('small', null); c.id = 'cntSaved'; c.textContent = RD.saved.length;
@@ -2734,7 +2743,7 @@ for (const d of document.querySelectorAll('dialog')) {
 /* ---------- Profilim (alt çubuğun beşinci sekmesi) ----------
    Ad `sekine-ad`, hedef zikirler `sekine-hedefler` (zikir kimlikleri, seçim sırasıyla), son yedek tarihi `sekine-son-yedek`; hepsi yedeğe girer.
    İstatistikler zikir durumundan (S.days) hesaplanır; ayrıca bir sayaç tutulmaz. */
-const PF = {pick: false};
+const PF = {pick: false, more: false};
 const pfName = () => String(store.get('sekine-ad', '') || '').trim();
 const pfGoals = () => store.get('sekine-hedefler', []).filter(id => findZ(id));
 const pfIni = n => n ? n.charAt(0).toLocaleUpperCase('tr-TR') : '☾';
@@ -2743,17 +2752,6 @@ function pfAgo(t) {
   const d = Math.round((fromKey(dayKey()) - fromKey(dayKey(new Date(t)))) / 864e5);
   return d <= 0 ? 'bugün' : d === 1 ? 'dün' : d < 30 ? d + ' gün önce' : new Date(t).toLocaleDateString('tr-TR', {day: 'numeric', month: 'long'});
 }
-// Seri: zikir çekilen ardışık günler (bugün henüz çekilmediyse dünden geriye sayılır); en uzun seri bütün günlerden
-function pfStats() {
-  const keys = Object.keys(S.days).filter(k => dayTotal(k) > 0).sort();
-  let cur = 0, d = new Date();
-  if (!dayTotal(dayKey(d))) d = addDays(d, -1);
-  while (dayTotal(dayKey(d)) > 0) { cur++; d = addDays(d, -1); }
-  let best = 0, run = 0, prev = null;
-  for (const k of keys) { run = prev && dayKey(addDays(fromKey(prev), 1)) === k ? run + 1 : 1; best = Math.max(best, run); prev = k; }
-  const total = keys.reduce((a, k) => a + dayTotal(k), 0);
-  return {cur, best, total, active: keys.length, first: keys[0] || null, today: dayTotal(today)};
-}
 function pfSec(title, extra) {
   const h = el('div', 'pf-h');
   h.append(el('p', 'lib-h', title));
@@ -2761,7 +2759,7 @@ function pfSec(title, extra) {
   return h;
 }
 function renderProfile() {
-  const st = pfStats(), name = pfName();
+  const name = pfName();
   const box = el('section', 'pf');
   // Başlık: baş harf, ad (yazılabilir), ilk zikir tarihi
   const head = el('div', 'pf-head');
@@ -2773,15 +2771,10 @@ function renderProfile() {
   inp.addEventListener('input', () => { store.set('sekine-ad', inp.value.trim()); av.textContent = pfIni(inp.value.trim()); });
   inp.addEventListener('keydown', e => { if (e.key === 'Enter') inp.blur(); });
   inp.addEventListener('change', () => { if (inp.value.trim()) toast('Ad kaydedildi'); });
-  id.append(inp, el('small', null, st.first ? `İlk zikir: ${pfDate(st.first)}` : 'Henüz zikir kaydı yok'));
+  const ok = okuCount();
+  id.append(inp, el('small', null, ok ? `${fmt(ok)} rivayet okudun` : 'Okuduğun rivayetler burada sayılır'));
   head.append(av, id);
   box.append(head);
-  // İstatistikler
-  const tiles = el('div', 'pf-stats');
-  for (const [v, l] of [[fmt(st.today), 'Bugün'], [st.cur + ' gün', 'Seri'], [st.best + ' gün', 'En uzun seri'], [fmt(st.total), 'Toplam zikir'], [fmt(st.active), 'Aktif gün'], [fmt(RD.saved.length), 'Kayıt']]) {
-    const t = el('div', 'pf-tile'); t.append(el('b', null, v), el('small', null, l)); tiles.append(t);
-  }
-  box.append(tiles);
   // Hedef zikirlerim
   const goals = pfGoals();
   const ed = el('button', 'chip-button pf-edit', PF.pick ? 'Bitti' : goals.length ? 'Düzenle' : '＋ Seç');
@@ -2808,10 +2801,13 @@ function renderProfile() {
   const last = Object.values(RD.last).filter(x => x && x.v && LIB_NAMES[x.v]).sort((a, b) => b.at - a.at);
   box.append(pfSec('OKUMAYA DEVAM ETTİKLERİM', last.length ? el('small', 'pf-n', String(last.length)) : null));
   if (!last.length) box.append(el('p', 'pf-empty', 'Kütüphanede okuduğun kitaplar, kaldığın yerle birlikte burada sıralanır.'));
-  for (const x of last) {
+  last.forEach((x, i) => {
     const r = el('div', 'pf-read');
+    if (i >= 3 && !PF.more) r.hidden = true;
     const b = el('button', 'lib-resume'); b.type = 'button';
+    const nb = okuBook(x.v, x.v === 'usul' ? null : x.b);
     b.append(el('span', 'lib-resume-t', `${LIB_NAMES[x.v]}${x.v !== 'usul' && x.title ? ' · ' + x.title.replace(/ \(.*\)$/, '') : ''}`), el('small', null, `Kaldığın yer: ${x.label} · ${pfAgo(x.at)}`));
+    if (nb) b.append(el('small', 'pf-rd-n', `${fmt(nb)} rivayet okundu`));
     b.addEventListener('click', () => goTo(x.v, x.b, x.n));
     const del = el('button', 'pf-x', '×'); del.type = 'button'; del.setAttribute('aria-label', 'Listeden çıkar');
     del.addEventListener('click', () => {
@@ -2821,6 +2817,11 @@ function renderProfile() {
     });
     r.append(b, del);
     box.append(r);
+  });
+  if (last.length > 3) {
+    const mo = el('button', 'chip-button pf-more', PF.more ? 'Daha az göster' : `Daha fazla göster (${last.length - 3})`); mo.type = 'button';
+    mo.addEventListener('click', () => { PF.more = !PF.more; const y = scrollY; renderCards(); scrollTo(0, y); });
+    box.append(mo);
   }
   // Kaydettiklerim ve koleksiyonlar
   box.append(pfSec('KAYDETTİKLERİM'));
@@ -2894,7 +2895,6 @@ function profPaint() {
     r.querySelector('.pf-goal-c').textContent = `${ok ? '✓ ' : ''}${fmt(c)} / ${fmt(z.target)}`;
     r.querySelector('.bar span').style.width = Math.min(100, c / z.target * 100) + '%';
   }
-  const t = cardsEl.querySelector('.pf-tile b'); if (t) t.textContent = fmt(dayTotal(today));
 }
 
 /* ---------- Ayarlar ---------- */
