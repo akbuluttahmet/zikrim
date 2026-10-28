@@ -255,15 +255,15 @@ const ADDED_V5 = [
 const DUA_GROUPS = [
   ['☀︎ Sabah Zikirleri', MORNING],
   ['☾ Akşam Zikirleri', EVENING],
-  ['1 · Hamd ve Senâ', ['tawhid','aksam','kerb','mulk','bakiyat','tasbih','bihamdihi','subhanallahil_azim','adede_halkihi','melik_kuddus','masaallah','la_havle','raditu']],
-  ['2 · Salavat', ['salavat']],
-  ['3 · Tevbe ve İstiğfar', ['istighfar','istigfar_tevbe','istigfar_hayy','yunus','adem']],
-  ['4 · Dua: Ahiret İçin', ['mukallib','husnu_huluk','rabbena_atina','ecirni','kabir','ibrahim','yusuf','nuh']],
-  ['4 · Dua: Dünya ve Sıkıntı', ['musa_sadr','musa','rizik1','rizik2','maide','rizik_ayet','ya_fettah','aile','zekeriya','suleyman','rahmeteke','hayy','eyyub','gam','sabir','tevekkul','hasbunallah','lokman22','suayb']],
-  ['4 · Dua: Korunma', ['ayetelkursi','felak','nas','bismillahillezi','kelimat','afini','yunus81']],
+  ['Hamd ve Senâ', ['tawhid','aksam','kerb','mulk','bakiyat','tasbih','bihamdihi','subhanallahil_azim','adede_halkihi','melik_kuddus','masaallah','la_havle','raditu']],
+  ['Salavat', ['salavat']],
+  ['Tevbe ve İstiğfar', ['istighfar','istigfar_tevbe','istigfar_hayy','yunus','adem']],
+  ['Ahiret İçin Dualar', ['mukallib','husnu_huluk','rabbena_atina','ecirni','kabir','ibrahim','yusuf','nuh']],
+  ['Dünya ve Sıkıntı İçin Dualar', ['musa_sadr','musa','rizik1','rizik2','maide','rizik_ayet','ya_fettah','aile','zekeriya','suleyman','rahmeteke','hayy','eyyub','gam','sabir','tevekkul','hasbunallah','lokman22','suayb']],
+  ['Korunma Duaları', ['ayetelkursi','felak','nas','bismillahillezi','kelimat','afini','yunus81']],
   ['Kendi Zikirlerin', null],
-  ['5 · Kapanış', ['kapanis']],
-  ['Özel Durumlarda', ['uyanis1','uyanis2','sukur','hakaret','kader','musibet','sinanan']]
+  ['Kapanış', ['kapanis']],
+  ['Özel Durumlarda Okunanlar', ['uyanis1','uyanis2','sukur','hakaret','kader','musibet','sinanan']]
 ];
 const GROUP_OF = {};
 const RANK = {};
@@ -605,20 +605,35 @@ const TAB_ROOT = {zikir: 'main', anasayfa: 'anasayfa', akis: 'akis', kutuphane: 
 const TAB_ROOTS = new Set(Object.values(TAB_ROOT));
 const tabOf = v => v === 'anasayfa' ? 'anasayfa' : v === 'akis' ? 'akis' : v === 'selef' ? 'selef' : (v === 'kutuphane' || v === 'fikih' || LIB_CHILD.has(v)) ? 'kutuphane' : 'zikir';
 const isGenel = z => !MSET.has(z.id) && !ESET.has(z.id);
-const inView = z => view === 'sabah' ? MSET.has(z.id) : view === 'aksam' ? ESET.has(z.id) : view === 'genel' ? isGenel(z) : false;
-const visible = () => S.zikirs.filter(inView);
+/* Zikir sayfası (main) üç bölümü kendi içinde gösterir: Genel · Sabah · Akşam. Açılışta Genel açıktır.
+   Eski 'sabah' / 'aksam' / 'genel' görünüm adları (halkalar, bildirim bağlantısı, geçmiş) bu bölümlere yönlendirilir. */
+const ZSEC = new Set(['genel', 'sabah', 'aksam']);
+let zsec = 'genel';
+const curSec = () => view === 'main' ? zsec : ZSEC.has(view) ? view : null;
+const inView = z => { const s = curSec(); return s === 'sabah' ? MSET.has(z.id) : s === 'aksam' ? ESET.has(z.id) : s === 'genel' ? isGenel(z) : false; };
+const visible = () => { const l = S.zikirs.filter(inView); return curSec() === 'genel' ? sortByDuaOrder(l) : l; }; // odak modunda ileri/geri de ekrandaki sırayla
 
 function setView(v, instant = false) {
   ttsStop();
+  const toSec = ZSEC.has(v);
+  if (toSec) { zsec = v; v = 'main'; }
   view = VIEWS[v] ? v : 'main';
   searchEl.value = '';
   renderCards();
   const behavior = instant ? 'auto' : 'smooth';
-  // Sekme kökleri sayfanın en üstünden açılır; diğer görünümler liste başından.
-  if (TAB_ROOTS.has(view)) window.scrollTo({top: 0, behavior});
+  // Sekme kökleri sayfanın en üstünden açılır; bir zikir bölümüne gidilirse bölüm düğmelerine; diğer görünümler liste başından.
+  if (toSec) $('.home-nav').scrollIntoView({block: 'start', behavior});
+  else if (TAB_ROOTS.has(view)) window.scrollTo({top: 0, behavior});
   else $('.list').scrollIntoView({block: 'start', behavior});
 }
-document.querySelectorAll('[data-view]').forEach(b => b.addEventListener('click', () => setView(view === b.dataset.view ? 'main' : b.dataset.view)));
+document.querySelectorAll('[data-view]').forEach(b => b.addEventListener('click', () => {
+  const v = b.dataset.view;
+  if (!ZSEC.has(v)) { setView(view === v ? 'main' : v); return; }
+  // Bölüm düğmeleri: sayfa yerinde kalır, altındaki liste değişir
+  if (view !== 'main') { setView(v, true); return; }
+  if (zsec === v) return;
+  ttsStop(); zsec = v; searchEl.value = ''; renderCards();
+}));
 $('#backAll').addEventListener('click', () => setView(alimBack() ? 'alim' : LIB_CHILD.has(view) ? 'kutuphane' : 'main'));
 
 function renderCards() {
@@ -629,7 +644,7 @@ function renderCards() {
   $('#toggleCompact').setAttribute('aria-pressed', String(S.compact));
   const list = visible();
   $('#listTitle').textContent = LIBS[view] || view === 'usul' ? VIEWS[view].replace(/^\S+\s/, '') : VIEWS[view]; // kitaplarda başlık emojisiz
-  $('.list').hidden = view === 'main' || view === 'akis' || view === 'anasayfa';
+  $('.list').hidden = view === 'akis' || view === 'anasayfa';
   feedShow(view === 'akis');
   homeShow(view === 'anasayfa');
   document.body.classList.toggle('at-main', view === 'main');
@@ -638,8 +653,9 @@ function renderCards() {
   document.body.dataset.tab = tab;
   document.querySelectorAll('.tab').forEach(b => { if (b.dataset.tab === tab) b.setAttribute('aria-current', 'page'); else b.removeAttribute('aria-current'); });
   $('#backAll').textContent = alimBack() ? '← ' + alimCur : LIB_CHILD.has(view) ? '← Kütüphane' : '← Geri';
-  $('#addZikir').hidden = view !== 'genel';
-  document.querySelectorAll('[data-view]').forEach(b => { const on = b.dataset.view === view || (b.dataset.view === 'kutuphane' && LIB_CHILD.has(view)); b.classList.toggle('active', on); b.setAttribute('aria-pressed', String(on)); });
+  $('#addZikir').hidden = curSec() !== 'genel';
+  if (view === 'main') $('#listTitle').textContent = VIEWS[zsec];
+  document.querySelectorAll('[data-view]').forEach(b => { const on = (view === 'main' ? b.dataset.view === zsec : b.dataset.view === view) || (b.dataset.view === 'kutuphane' && LIB_CHILD.has(view)); b.classList.toggle('active', on); b.setAttribute('aria-pressed', String(on)); });
   $('#empty').hidden = list.length > 0 || READ_VIEWS.has(view);
   document.body.classList.toggle('view-selef', READ_VIEWS.has(view));
   searchEl.placeholder = view === 'kutuphane' ? 'Âlim ya da kitap ara…' : view === 'alim' ? 'Kitaplarında ara…' : view === 'kaydedilen' ? 'Kaydettiklerinde ara…' : view === 'selef' ? 'Söz ara (âlim, anlam, kaynak)…' : view === 'fikih' ? 'Fıkıhta ara (ör. mesh, cuma, zekât)…' : view === 'usul' ? 'Risalede ara (ör. kader, havz, cuma)…' : LIBS[view] ? (LIBS[view].book == null && LIBS[view].nogo ? 'Kitap ara…' : LIBS[view].book == null && !LIBS[view].single ? `${LIBS[view].unit === 'kitap' ? 'Kitap' : 'Bölüm'} ara ya da ${LIBS[view].item} no. yaz (ör. ${LIBS[view].ex})…` : `Bu ${LIBS[view].unit === 'kitap' ? 'kitapta' : 'bölümde'} ara ya da ${LIBS[view].item} no. yaz…`) : 'Zikir ara (ad, anlam, okunuş)…';
@@ -652,14 +668,24 @@ function renderCards() {
   if (view === 'kutuphane') { renderLibrary(); applyFilter(); update(); return; }
   if (view === 'alim') { renderAlim(); applyFilter(); update(); return; }
   if (view === 'kaydedilen') { renderSaved(); applyFilter(); update(); return; }
-  let lastGroup = null;
-  for (const z of list) {
+  // Genel bölümü dua sırasına göre gruplanır; her grubun açılıp kapanan bir başlığı vardır (numaralar sırayla verilir)
+  const grouped = curSec() === 'genel';
+  const items = list;
+  let lastGroup = null, gNo = 0;
+  for (const z of items) {
     const box = document.createElement('article');
     box.className = 'zikir';
     box.dataset.id = z.id;
-    const g = view === 'genel' ? groupOf(z) : null;
-    if (g && g !== lastGroup) box.dataset.group = g;
+    const g = grouped ? (groupOf(z) || 'Kendi Zikirlerin') : null;
+    if (g && g !== lastGroup) {
+      const h = el('button', 'zg-head');
+      h.type = 'button';
+      h.dataset.zg = g;
+      h.append(el('span', 'zg-no', String(++gNo)), el('span', 'zg-t', g), el('span', 'zg-c'), el('span', 'zg-ch'));
+      cardsEl.append(h);
+    }
     lastGroup = g;
+    if (g) { box.dataset.zg = g; if (!zgOpen(g)) box.classList.add('zg-off'); }
     box.innerHTML = `
       <div class="zikir-top">
         <div class="zikir-title"><h3></h3><p class="category"></p></div>
@@ -2305,6 +2331,7 @@ function update() {
     el.parentElement.classList.toggle('complete', zs.length > 0 && d === zs.length);
   }
   renderRings();
+  zgPaint();
   $('#today').textContent = new Date().toLocaleDateString('tr-TR', {day: 'numeric', month: 'long', year: 'numeric', weekday: 'long'}).toLocaleUpperCase('tr-TR');
   $('#hijri').textContent = hijriText();
   {
@@ -2318,7 +2345,7 @@ function update() {
 }
 
 /* Üç halka: Sabah · Akşam · Genel (dokununca o liste açılır) */
-const RINGS = [['sabah', '☀︎ Sabah', z => MSET.has(z.id)], ['aksam', '☾ Akşam', z => ESET.has(z.id)], ['genel', '📿 Genel', isGenel]];
+const RINGS = [['genel', '📿 Genel', isGenel], ['sabah', '☀︎ Sabah', z => MSET.has(z.id)], ['aksam', '☾ Akşam', z => ESET.has(z.id)]];
 const RING_C = 2 * Math.PI * 34;
 function renderRings() {
   const box = $('#rings');
@@ -2388,6 +2415,30 @@ function increment(id, delta) {
   }
 }
 
+/* Genel bölümündeki grupların açık/kapalı hâli (açık olanların adları) */
+const ZG_KEY = 'zikrim-gruplar-acik';
+let ZG_OPEN = new Set(store.get(ZG_KEY, []));
+const zgOpen = g => ZG_OPEN.has(g);
+function zgPaint() {
+  for (const h of cardsEl.querySelectorAll('.zg-head')) {
+    const g = h.dataset.zg, open = zgOpen(g);
+    h.setAttribute('aria-expanded', String(open));
+    const zs = [...cardsEl.querySelectorAll('.zikir')].filter(b => b.dataset.zg === g).map(b => findZ(b.dataset.id)).filter(Boolean);
+    const d = zs.filter(z => getCount(z.id) >= z.target).length;
+    h.querySelector('.zg-c').textContent = `${d} / ${zs.length}`;
+    h.classList.toggle('complete', zs.length > 0 && d === zs.length);
+  }
+}
+cardsEl.addEventListener('click', e => {
+  const h = e.target.closest('.zg-head');
+  if (!h) return;
+  const g = h.dataset.zg, open = !zgOpen(g);
+  if (open) ZG_OPEN.add(g); else ZG_OPEN.delete(g);
+  store.set(ZG_KEY, [...ZG_OPEN]);
+  for (const b of cardsEl.querySelectorAll('.zikir')) if (b.dataset.zg === g) b.classList.toggle('zg-off', !open);
+  zgPaint();
+  if (!open && h.getBoundingClientRect().top < 0) h.scrollIntoView({block: 'start'});
+});
 cardsEl.addEventListener('click', e => {
   const btn = e.target.closest('button[data-act]');
   if (!btn) return;

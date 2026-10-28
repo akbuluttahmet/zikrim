@@ -673,3 +673,17 @@ body[data-tab=anasayfa] .to-top{display:none}
 /* Yazılar köşebentlerin ve çerçevenin içinde kalsın */
 .cover{padding:14px 15px 22px 23px}
 .alim-grid .cover{padding:13px 14px 22px 22px}
+/* Genel bölümü: açılıp kapanan dua grupları */
+.zg-head{display:flex;align-items:center;gap:10px;width:100%;margin:10px 0 0;padding:13px 14px;background:var(--card);color:var(--text);border:1px solid var(--border);border-radius:14px;font:inherit;font-size:15px;font-weight:600;text-align:left;cursor:pointer}
+#cards>.zg-head:first-child{margin-top:4px}
+.zg-head .zg-no{flex:none;width:24px;height:24px;border-radius:50%;display:grid;place-items:center;background:var(--hero);color:var(--accent);font-size:12px;font-weight:700;font-variant-numeric:tabular-nums}
+.zg-head .zg-t{flex:1;min-width:0}
+.zg-head .zg-c{font-size:12px;font-weight:600;color:var(--muted);font-variant-numeric:tabular-nums}
+.zg-head.complete .zg-c{color:var(--accent)}
+.zg-head.complete .zg-c::after{content:' ✓'}
+.zg-head .zg-ch{width:8px;height:8px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:rotate(45deg);margin:-4px 4px 0 2px;transition:transform .2s}
+.zg-head[aria-expanded=true] .zg-ch{transform:rotate(-135deg);margin-top:4px}
+.zg-head[aria-expanded=true]{border-bottom-left-radius:14px;border-bottom-right-radius:14px}
+.zg-head+.zikir:not(.zg-off){margin-top:10px}
+body:not(.filtering) .zikir.zg-off{display:none}
+body.filtering .zg-head{display:none}
