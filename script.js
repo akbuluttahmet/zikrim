@@ -1074,7 +1074,8 @@ LIBS.harb = {base: 'harb/', key: 'zikrim-harb', unit: 'kitap', item: 'madde', ex
   src: (n, m) => `Harb el-Kirmânî, ${m ? m.tr : ''}${n === 0 ? ', mukaddime' : Number.isInteger(n) ? ', no. ' + n : ''}`,
   note: 'Ebû Muhammed Harb b. İsmâîl el-Kirmânî (ö. 280) — İmam Ahmed’in ashâbından; kitapları, Türkçe çeviri ve Arapça metniyle. Çeviri ve Arapça metin el-Mektebetü’ş-Şâmile’deki nüshalardan alınmıştır. İcmâu’s-selef fi’l-i‘tikâd, Mesâilü Harb’in (Fâyiz b. Ahmed Hâbis neşri) “Bâbu’l-kavl bi’l-mezheb” kısmıdır; nüshada numara yoktur, paragraflar sırayla numaralanmıştır.'};
 LIBS.sunan = {base: 'sunan/', key: 'zikrim-sunan', unit: 'bölüm', item: 'hadis', ex: 3641, err: 'Sünen-i Ebî Dâvûd',
-  src: n => `Ebû Dâvûd, es-Sünen, no. ${n}`,
+  label: n => Number.isInteger(n) ? `No. ${n}` : 'Numarasız müellif metni',
+  src: n => `Ebû Dâvûd, es-Sünen, ${Number.isInteger(n) ? 'no. ' + n : 'no. ' + Math.floor(n) + ' sonrası'}`,
   note: 'Ebû Dâvûd Süleymân b. el-Eş‘as es-Sicistânî (ö. 275), es-Sünen — Türkçe çeviri ve Arapça metin. Kaynak, Muhammed Muhyiddin Abdülhamîd tahkikiyle el-Mektebetü’l-Asriyye (Sayda–Beyrut) tarafından yayımlanan dört ciltlik neşrin el-Mektebetü’ş-Şâmile’deki nüshasıdır (no. 1726). Hadis numaraları bu neşre göredir; eserdeki Ebû Dâvûd’un sözleri ve rivayet farkları korunmuştur. Kitap 40 bölümdür. Çevirisi tamamlanan kısımlar açılabilir.'};
 LIBS.ibane = {base: 'ibane/', key: 'zikrim-ibane', unit: 'bölüm', item: 'rivayet', ex: 120, err: 'el-İbâne',
   label: (n, h) => (h && h[4] && h[4].l) || (n === 0 ? 'Mukaddime' : Number.isInteger(n) ? `No. ${n}` : 'Ara metin'),
