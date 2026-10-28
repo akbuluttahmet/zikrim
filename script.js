@@ -715,7 +715,8 @@ function renderCards() {
   document.querySelectorAll('[data-view]').forEach(b => { const on = (view === 'main' ? b.dataset.view === zsec : b.dataset.view === view) || (b.dataset.view === 'kutuphane' && LIB_CHILD.has(view)); b.classList.toggle('active', on); b.setAttribute('aria-pressed', String(on)); });
   $('#empty').hidden = list.length > 0 || READ_VIEWS.has(view);
   document.body.classList.toggle('view-selef', READ_VIEWS.has(view));
-  searchEl.placeholder = view === 'kutuphane' ? 'Âlim ya da kitap ara…' : view === 'alim' ? 'Kitaplarında ara…' : view === 'kaydedilen' ? 'Kaydettiklerinde ara…' : view === 'selef' ? 'Söz ara (âlim, anlam, kaynak)…' : view === 'fikih' ? 'Fıkıhta ara (ör. mesh, cuma, zekât)…' : view === 'usul' ? 'Risalede ara (ör. kader, havz, cuma)…' : LIBS[view] ? (LIBS[view].book == null && LIBS[view].nogo ? 'Kitap ara…' : LIBS[view].book == null && !LIBS[view].single ? `${LIBS[view].unit === 'kitap' ? 'Kitap' : 'Bölüm'} ara ya da ${LIBS[view].item} no. yaz (ör. ${LIBS[view].ex})…` : `Bu ${LIBS[view].unit === 'kitap' ? 'kitapta' : 'bölümde'} ara ya da ${LIBS[view].item} no. yaz…`) : 'Zikir ara (ad, anlam, okunuş)…';
+  $('#araAll').hidden = true;
+  searchEl.placeholder = view === 'kutuphane' ? 'Bütün kütüphanede ara…' : view === 'alim' ? 'Kitaplarında ara…' : view === 'kaydedilen' ? 'Kaydettiklerinde ara…' : view === 'selef' ? 'Söz ara (âlim, anlam, kaynak)…' : view === 'fikih' ? 'Fıkıhta ara (ör. mesh, cuma, zekât)…' : view === 'usul' ? 'Risalede ara (ör. kader, havz, cuma)…' : LIBS[view] ? (LIBS[view].book == null && LIBS[view].nogo ? 'Kitap ara…' : LIBS[view].book == null && !LIBS[view].single ? `${LIBS[view].unit === 'kitap' ? 'Kitap' : 'Bölüm'} ara ya da ${LIBS[view].item} no. yaz (ör. ${LIBS[view].ex})…` : `Bu ${LIBS[view].unit === 'kitap' ? 'kitapta' : 'bölümde'} ara ya da ${LIBS[view].item} no. yaz…`) : 'Zikir ara (ad, anlam, okunuş)…';
   navRecord();
   if (view === 'akis' || view === 'anasayfa') { update(); return; }
   if (view === 'selef') { renderQuotes(); applyFilter(); update(); return; }
@@ -2844,6 +2845,146 @@ toTopEl.addEventListener('click', () => {
    görünüme döner, ana sayfadaysa uygulamadan çıkar. Odak modu da geri tuşuyla kapanır. Açık pencereler (ayarlar vb.) Android'de
    tarayıcının kendisince kapatılır. */
 let navKey = null, navSkip = false;
+/* ---------- Bütün kütüphanede arama (tam ekran sayfa) ----------
+   Arama ara-worker.js'te yapılır (veriler ara.json / ara-ar.json, araclar/ara.py üretir). Sayfa geçmişe bir adım olarak eklenir;
+   geri hareketi sayfayı kapatır. Sonuca dokununca sayfa kapanır ve kitapta o madde açılır. Son aramalar `zikrim-son-aramalar`'da. */
+const ARA = {el: $('#araPage'), q: $('#araQ'), res: $('#araRes'), info: $('#araInfo'), libs: $('#araLibs'), open: false, pushed: false, after: null,
+  w: null, seq: 0, wait: new Map(), run: 0, timer: 0, loaded: false, scope: 'hepsi', lib: '', last: null};
+function araAsk(msg) {
+  if (!ARA.w) {
+    ARA.w = new Worker('ara-worker.js');
+    ARA.w.onmessage = e => { const p = ARA.wait.get(e.data.id); if (!p) return; ARA.wait.delete(e.data.id); if (e.data.ok) p.res(e.data.res); else p.rej(new Error(e.data.err)); };
+    ARA.w.onerror = () => { for (const p of ARA.wait.values()) p.rej(new Error('worker')); ARA.wait.clear(); ARA.w = null; };
+  }
+  const id = ++ARA.seq;
+  return new Promise((res, rej) => { ARA.wait.set(id, {res, rej}); ARA.w.postMessage({...msg, id}); });
+}
+const araRecent = () => store.get('zikrim-son-aramalar', []);
+function araRemember(q) { q = q.trim(); if (q.length < 2) return; store.set('zikrim-son-aramalar', [q, ...araRecent().filter(x => x !== q)].slice(0, 8)); }
+function araOpen(text = '') {
+  if (ARA.open) return;
+  ttsStop();
+  ARA.open = true;
+  ARA.scope = store.get('zikrim-ara-kapsam', 'hepsi'); ARA.lib = '';
+  ARA.el.hidden = false;
+  document.body.classList.add('ara-open');
+  try { history.pushState(Object.assign({}, history.state, {ara: 1}), ''); ARA.pushed = true; } catch { ARA.pushed = false; }
+  ARA.q.value = text;
+  ARA.q.focus();
+  if (text.trim()) araRun(); else araIdle();
+  araAsk({type: 'load'}).then(() => { ARA.loaded = true; }).catch(() => {});
+}
+function araHide(after) {
+  ARA.open = false;
+  ARA.el.hidden = true;
+  document.body.classList.remove('ara-open');
+  ARA.q.blur();
+  if (after) setTimeout(after, 0);
+}
+function araClose(after) {
+  if (!ARA.open) return;
+  if (ARA.pushed) { ARA.after = after || null; history.back(); } else araHide(after);
+}
+function araScopePaint() {
+  const ar = /[؀-ۿ]/.test(ARA.q.value);
+  document.querySelectorAll('#araScope button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.v === ARA.scope)));
+  $('#araScope').classList.toggle('off', ar);
+}
+function araIdle() {
+  ARA.run++;
+  araScopePaint();
+  ARA.libs.replaceChildren();
+  ARA.res.replaceChildren();
+  ARA.info.innerHTML = 'Türkçe ya da Arapça yazabilirsin. Kelimenin başını yazman yeter (“sabr” → sabır, sabrı, sabredin); harf işaretleri (â, ‘, ş) fark etmez. Birden çok kelime yazarsan hepsinin geçtiği maddeler gelir; tırnak içindeki ifade (“sünnete sarıl”) aynen aranır. <b>Sened</b> seçilirse râvi adlarında aranır (ör. A‘meş Ebû Vâil).' + (ARA.loaded ? '' : '<br>İlk aramada arama dosyası iner (≈3 MB; Arapça için ≈2,5 MB daha).');
+  const rec = araRecent();
+  if (rec.length) {
+    const box = el('div', 'ara-rec');
+    for (const q of rec) { const b = el('button', null, q); b.type = 'button'; b.addEventListener('click', () => { ARA.q.value = q; araRun(); }); box.append(b); }
+    ARA.res.append(el('p', 'ara-info', 'Son aramalar'), box);
+  }
+}
+const araLabel = (v, book) => { const name = v === 'usul' ? 'Usûlü’s-Sünne' : LIB_NAMES[v] || v; return book && book !== name ? name + ' · ' + book : name; };
+async function araRun() {
+  const q = ARA.q.value.trim();
+  araScopePaint();
+  if (q.replace(/["“”«»]/g, '').trim().length < 2) { araIdle(); return; }
+  const my = ++ARA.run;
+  ARA.info.textContent = ARA.loaded && !/[؀-ۿ]/.test(q) ? 'Aranıyor…' : 'Arama dosyası hazırlanıyor…';
+  let r;
+  try { r = await araAsk({type: 'q', q, scope: ARA.scope, lib: ARA.lib}); }
+  catch (e) { if (my === ARA.run) ARA.info.textContent = 'Arama yapılamadı; internet bağlantını kontrol et.'; return; }
+  if (my !== ARA.run) return;
+  ARA.loaded = true; ARA.last = r;
+  // Kitaplık düğmeleri
+  ARA.libs.replaceChildren();
+  if (r.total) {
+    const chip = (v, label, cnt) => {
+      const b = el('button', 'fd-chip', label); b.append(el('small', null, ' ' + cnt)); b.type = 'button';
+      b.setAttribute('aria-pressed', String(ARA.lib === v));
+      b.addEventListener('click', () => { if (ARA.lib === v) return; ARA.lib = v; araRun(); });
+      return b;
+    };
+    ARA.libs.append(chip('', 'Hepsi', r.total));
+    for (const [v, c] of r.libs) ARA.libs.append(chip(v, v === 'usul' ? 'Usûlü’s-Sünne' : LIB_NAMES[v] || v, c));
+  }
+  const shown = r.groups.reduce((a, g) => a + g.count, 0);
+  ARA.info.innerHTML = r.total ? `<b>${fmt(shown)}</b> sonuç` + (ARA.lib ? '' : ` · ${fmt(r.groups.length)} kitapta`) + (r.ar ? ' · Arapça metinde' : ARA.scope === 'metin' ? ' · yalnız metinde' : ARA.scope === 'sened' ? ' · yalnız senedde' : '')
+    : 'Sonuç yok.' + (!r.ar && ARA.scope !== 'hepsi' ? ' “Hepsi”yi seçip yeniden dene.' : '') + ' Kelimeyi kısaltmayı ya da yazımını değiştirmeyi deneyebilirsin.';
+  // Gruplar: her kitaptan ilk 3 madde, “Daha fazla” ile 20'şer
+  ARA.res.replaceChildren();
+  const first = [];
+  const boxes = r.groups.map(g => {
+    const box = el('section', 'ara-g');
+    const gh = el('div', 'ara-gh', araLabel(g.v, g.book)); gh.append(el('small', null, fmt(g.count)));
+    const list = el('div');
+    box.append(gh, list);
+    box._g = g; box._list = list; box._at = 0;
+    ARA.res.append(box);
+    first.push(...g.items.slice(0, 3));
+    return box;
+  });
+  const rows = await araAsk({type: 'rows', ids: first, ts: r.ts, ar: r.ar}).catch(() => []);
+  if (my !== ARA.run) return;
+  const byId = new Map(rows.map(x => [x.i, x]));
+  for (const box of boxes) araFill(box, box._g.items.slice(0, 3).map(i => byId.get(i)).filter(Boolean), r);
+}
+function araFill(box, rows, r) {
+  const g = box._g, L = LIBS[g.v];
+  box.querySelector('.ara-more')?.remove();
+  for (const x of rows) {
+    const b = el('button', 'ara-r'); b.type = 'button';
+    const n = el('span', 'ar-n', (g.v === 'usul' ? 'Madde ' : 'No. ') + x.n);
+    if (x.field === 's') n.append(' · ', el('i', null, 'senedde'));
+    const t = el('span', 'ar-t' + (x.field === 'a' ? ' rtl' : '')); t.innerHTML = x.html;
+    if (x.field === 'a') t.lang = 'ar';
+    b.append(n, t);
+    b.addEventListener('click', () => { araRemember(ARA.q.value); araClose(() => goTo(g.v, g.v === 'usul' ? null : g.b, x.n)); });
+    box._list.append(b);
+  }
+  box._at += rows.length;
+  const left = g.items.length - box._at;
+  if (left > 0) {
+    const m = el('button', 'ara-more', `Daha fazla göster (${fmt(left)})`); m.type = 'button';
+    m.addEventListener('click', async () => {
+      m.disabled = true;
+      const more = await araAsk({type: 'rows', ids: g.items.slice(box._at, box._at + 20), ts: r.ts, ar: r.ar}).catch(() => []);
+      araFill(box, more, r);
+    });
+    box.append(m);
+  }
+}
+ARA.q.addEventListener('input', () => { araScopePaint(); clearTimeout(ARA.timer); ARA.timer = setTimeout(araRun, 280); });
+ARA.q.addEventListener('keydown', e => { if (e.key === 'Enter') { clearTimeout(ARA.timer); araRemember(ARA.q.value); araRun(); ARA.q.blur(); } });
+$('#araBack').addEventListener('click', () => araClose());
+document.querySelectorAll('#araScope button').forEach(b => b.addEventListener('click', () => { ARA.scope = b.dataset.v; store.set('zikrim-ara-kapsam', ARA.scope); araRun(); }));
+$('#openSearch').addEventListener('click', () => araOpen());
+$('#homeSearch').addEventListener('click', () => araOpen());
+$('#araAll').addEventListener('click', () => araOpen(searchEl.value.trim()));
+// Kütüphane ana sayfasındaki kutu bütün kütüphanede arar; bir kitabın içinde arayıp bulamayan için “Bütün kütüphanede ara ›”
+searchEl.addEventListener('pointerdown', e => { if (view === 'kutuphane') { e.preventDefault(); araOpen(searchEl.value.trim()); } });
+searchEl.addEventListener('focus', () => { if (view === 'kutuphane') { searchEl.blur(); araOpen(searchEl.value.trim()); } });
+searchEl.addEventListener('input', () => { $('#araAll').hidden = !(searchEl.value.trim().length > 1 && !/^\d+$/.test(searchEl.value.trim()) && (LIBS[view] || view === 'usul' || view === 'alim' || view === 'kaydedilen')); });
+
 function navRecord() {
   if (navSkip) return;
   const st = {v: view, b: LIBS[view] ? LIBS[view].book : null}, key = st.v + '|' + st.b;
@@ -2852,6 +2993,7 @@ function navRecord() {
   navKey = key;
 }
 addEventListener('popstate', e => {
+  if (ARA.open) { const f = ARA.after; ARA.after = null; araHide(f); return; }
   if (!focusEl.hidden) { closeFocus(); return; }
   const st = e.state;
   if (!st || !st.v || st.focus) return;

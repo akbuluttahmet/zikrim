@@ -702,3 +702,36 @@ body:not(.filtering) .quote.zg-off{display:none}
 .quote .q-star{position:absolute;top:6px;left:6px;right:auto;width:40px;height:40px}
 .quote .arabic{padding-left:30px}
 .q-day .q-day-h{padding-left:34px;line-height:26px;margin-top:-2px}
+
+/* Bütün kütüphanede arama sayfası */
+.hd-btns{display:flex;gap:8px}
+.hm-top #homeSearch{right:calc(max(8px,env(safe-area-inset-right)) + 40px)}
+.ara{position:fixed;inset:0;z-index:40;background:var(--bg);overflow-y:auto;-webkit-overflow-scrolling:touch;padding:calc(env(safe-area-inset-top) + 8px) 16px calc(env(safe-area-inset-bottom) + 24px)}
+.ara[hidden]{display:none}
+body.ara-open{overflow:hidden}
+body.ara-open .tabbar,body.ara-open .to-top{display:none}
+.ara>*{max-width:620px;margin-left:auto;margin-right:auto}
+.ara-top{display:flex;align-items:center;gap:8px;position:sticky;top:calc(-1 * env(safe-area-inset-top) - 8px);background:var(--bg);padding:6px 0 8px;z-index:2}
+.ara-back{flex:none;width:40px;height:44px;border:0;background:none;color:var(--accent);font-size:34px;line-height:1;padding:0 0 4px}
+.ara-q{flex:1;margin:0}
+.ara-scope{margin:2px 0 10px}
+.ara-libs{margin:0 -16px 4px;padding:0 16px 2px}
+.ara-libs small{font-weight:600;opacity:.7}
+.ara-info{font-size:13px;color:var(--muted);margin:10px 4px;line-height:1.5}
+.ara-info b{color:var(--text)}
+.ara-rec{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 0}
+.ara-rec button{border:1px solid var(--border);background:var(--card);color:var(--text);border-radius:999px;padding:7px 12px;font:inherit;font-size:13px}
+.ara-g{margin:14px 0 4px}
+.ara-gh{display:flex;align-items:baseline;gap:8px;font-size:12px;font-weight:700;letter-spacing:.6px;color:var(--accent);margin:0 4px 6px;text-transform:uppercase}
+.ara-gh small{font-weight:600;color:var(--muted);letter-spacing:0;text-transform:none}
+.ara-r{display:block;width:100%;text-align:left;background:var(--card);border:1px solid var(--border);border-radius:14px;padding:11px 13px;margin:0 0 7px;font:inherit;color:var(--text);cursor:pointer}
+.ara-r .ar-n{display:block;font-size:11.5px;font-weight:600;color:var(--muted);margin:0 0 3px}
+.ara-r .ar-n i{font-style:normal;color:var(--accent)}
+.ara-r .ar-t{display:block;font-size:14px;line-height:1.55}
+.ara-r .ar-t.rtl{direction:rtl;text-align:right;font-family:var(--arabic);font-size:19px;line-height:1.8}
+.ara-r mark{background:color-mix(in srgb,var(--accent) 26%,transparent);color:inherit;border-radius:3px;padding:0 1px}
+.ara-more{display:block;margin:2px auto 8px;border:1px solid var(--border);background:none;color:var(--accent);border-radius:999px;padding:7px 14px;font:inherit;font-size:13px;font-weight:600}
+.ara-all{display:block;margin:6px auto 14px;border:1px solid var(--border);background:var(--card);color:var(--accent);border-radius:999px;padding:9px 16px;font:inherit;font-size:14px;font-weight:600}
+.ara-all[hidden]{display:none}
+.ara-scope{grid-template-columns:repeat(3,minmax(0,1fr))}
+.ara-scope.off{opacity:.45;pointer-events:none}

@@ -23,7 +23,8 @@
       <span class="eyebrow" id="today">GÜNLÜK HUZUR</span>
       <h1>Sekîne <span class="sparkle">✦</span></h1>
     </div>
-    <button id="openSettings" class="icon-button" aria-label="Ayarlar" title="Ayarlar"><svg class="ic-gear" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg></button>
+    <div class="hd-btns"><button id="openSearch" class="icon-button" aria-label="Bütün kütüphanede ara" title="Ara"><svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="M20 20l-4.2-4.2"></path></svg></button>
+    <button id="openSettings" class="icon-button" aria-label="Ayarlar" title="Ayarlar"><svg class="ic-gear" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg></button></div>
   </header>
 
   <section class="hero">
@@ -78,6 +79,7 @@
     <input id="search" class="search" type="search" placeholder="Zikir ara (ad, anlam, okunuş)…" autocomplete="off" enterkeyhint="search">
     <div id="cards"></div>
     <p class="empty" id="noResult" hidden>Aramana uyan zikir yok.</p>
+    <button type="button" class="ara-all" id="araAll" hidden>Bütün kütüphanede ara ›</button>
     <p class="empty" id="empty" hidden>Henüz zikir yok. “Yeni zikir” ile ekleyebilir ya da ayarlardan varsayılanları geri yükleyebilirsin.</p>
   </section>
 
@@ -216,7 +218,7 @@
 <div id="ttsBar" class="tts-bar" hidden><span id="ttsBarT"></span><button type="button" id="ttsBarStop">■ Durdur</button></div>
 <!-- Anasayfa: X tarzı zaman tüneli, kaydırdıkça 10'ar rivayet -->
 <header id="homeBar" class="home-bar" hidden>
-  <div class="hm-top"><h2>Anasayfa</h2><button type="button" id="homeRefresh" aria-label="Yeni rivayetler" title="Yeni rivayetler">↻</button></div>
+  <div class="hm-top"><h2>Anasayfa</h2><button type="button" id="homeSearch" aria-label="Bütün kütüphanede ara" title="Ara"><svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="M20 20l-4.2-4.2"></path></svg></button><button type="button" id="homeRefresh" aria-label="Yeni rivayetler" title="Yeni rivayetler">↻</button></div>
   <div class="hm-tabs" role="tablist" aria-label="Anasayfa bölümleri"><button type="button" role="tab" data-ht="rivayet" aria-selected="true">Rivayetler</button><button type="button" role="tab" data-ht="kayit" aria-selected="false">Kaydedilenler</button></div>
 </header>
 <div id="homePtr" class="hm-ptr" aria-hidden="true">↻</div>
@@ -233,6 +235,17 @@
     <button type="button" class="tab" data-tab="selef"><span class="tab-ic" aria-hidden="true">📜</span>Sözler</button>
   </div>
 </nav>
+<!-- Bütün kütüphanede arama (ara-worker.js; veriler ara.json, ara-ar.json) -->
+<section id="araPage" class="ara" hidden aria-label="Bütün kütüphanede ara">
+  <div class="ara-top">
+    <button type="button" id="araBack" class="ara-back" aria-label="Geri">‹</button>
+    <input id="araQ" class="search ara-q" type="search" placeholder="Bütün kütüphanede ara…" autocomplete="off" autocorrect="off" spellcheck="false" enterkeyhint="search">
+  </div>
+  <div class="seg ara-scope" id="araScope" role="group" aria-label="Nerede aransın"><button type="button" data-v="hepsi">Hepsi</button><button type="button" data-v="metin">Metin</button><button type="button" data-v="sened">Sened</button></div>
+  <div class="fd-chips ara-libs" id="araLibs"></div>
+  <p class="ara-info" id="araInfo"></p>
+  <div id="araRes" class="ara-res"></div>
+</section>
 <div id="toast" role="status" aria-live="polite"></div>
 <button type="button" id="toTop" class="to-top" aria-label="Başa dön" title="Başa dön" tabindex="-1">↑</button>
 <label id="haptic" class="haptic" aria-hidden="true"><input type="checkbox" switch tabindex="-1"></label>
