@@ -653,14 +653,14 @@ const QUOTES = [
 /* ---------- Kartlar ---------- */
 const cardsEl = $('#cards');
 const MSET = new Set(MORNING), ESET = new Set(EVENING);
-const VIEWS = {main: 'Sekîne', anasayfa: 'Anasayfa', akis: 'Akış', sabah: '☀︎ Sabah Zikirleri', aksam: '☾ Akşam Zikirleri', genel: '📿 Genel Zikirler', selef: '📜 Sözler', fikih: '⚖️ Hanbelî Fıkhı', musannef: '📚 Musannef', ibnebiseybe: '📚 İbn Ebî Şeybe', musned: '📗 Müsned', usul: '📘 Usûlü’s-Sünne', ahmed: '📘 İmam Ahmed', zuhd: '📘 ez-Zühd', fezail: '📘 Fezâilü’s-sahâbe', berbehari: '📕 Şerhu’s-Sünne', acurri: '📙 el-Âcurrî', seria: '📙 eş-Şerîa', hallal: '📗 el-Hallâl', safii: '📘 eş-Şâfiî', buhari: '📗 el-Buhârî', ebudavud: '📙 Ebû Dâvûd', harb: '📕 Harb el-Kirmânî', ibane: '📕 el-İbâne', kutuphane: '📚 Kütüphane', alim: '📚 Âlim', kaydedilen: '☆ Kaydettiklerim'};
-const LIB_CHILD = new Set(['musannef', 'ibnebiseybe', 'musned', 'usul', 'ahmed', 'zuhd', 'fezail', 'berbehari', 'acurri', 'seria', 'hallal', 'safii', 'buhari', 'ebudavud', 'harb', 'ibane', 'kaydedilen', 'alim']);
-const READ_VIEWS = new Set(['anasayfa', 'akis', 'selef', 'fikih', 'musannef', 'ibnebiseybe', 'musned', 'usul', 'ahmed', 'zuhd', 'fezail', 'berbehari', 'acurri', 'seria', 'hallal', 'safii', 'buhari', 'ebudavud', 'harb', 'ibane', 'kutuphane', 'kaydedilen', 'alim']);
+const VIEWS = {main: 'Sekîne', anasayfa: 'Anasayfa', akis: 'Akış', sabah: '☀︎ Sabah Zikirleri', aksam: '☾ Akşam Zikirleri', genel: '📿 Genel Zikirler', selef: '📜 Sözler', profil: 'Profilim', fikih: '⚖️ Hanbelî Fıkhı', musannef: '📚 Musannef', ibnebiseybe: '📚 İbn Ebî Şeybe', musned: '📗 Müsned', usul: '📘 Usûlü’s-Sünne', ahmed: '📘 İmam Ahmed', zuhd: '📘 ez-Zühd', fezail: '📘 Fezâilü’s-sahâbe', berbehari: '📕 Şerhu’s-Sünne', acurri: '📙 el-Âcurrî', seria: '📙 eş-Şerîa', hallal: '📗 el-Hallâl', safii: '📘 eş-Şâfiî', buhari: '📗 el-Buhârî', ebudavud: '📙 Ebû Dâvûd', harb: '📕 Harb el-Kirmânî', ibane: '📕 el-İbâne', kutuphane: '📚 Kütüphane', alim: '📚 Âlim', kaydedilen: '☆ Kaydettiklerim'};
+const LIB_CHILD = new Set(['musannef', 'ibnebiseybe', 'musned', 'usul', 'ahmed', 'zuhd', 'fezail', 'berbehari', 'acurri', 'seria', 'hallal', 'safii', 'buhari', 'ebudavud', 'harb', 'ibane', 'kaydedilen', 'alim', 'selef']);
+const READ_VIEWS = new Set(['anasayfa', 'akis', 'selef', 'profil', 'fikih', 'musannef', 'ibnebiseybe', 'musned', 'usul', 'ahmed', 'zuhd', 'fezail', 'berbehari', 'acurri', 'seria', 'hallal', 'safii', 'buhari', 'ebudavud', 'harb', 'ibane', 'kutuphane', 'kaydedilen', 'alim']);
 let view = 'main';
-/* Alt sekmeler: her görünüm bir sekmeye aittir. Kökler: Zikir = ana sayfa, Kütüphane = raf, Sözler = sözler listesi. */
-const TAB_ROOT = {zikir: 'main', anasayfa: 'anasayfa', akis: 'akis', kutuphane: 'kutuphane', selef: 'selef'};
+/* Alt sekmeler: her görünüm bir sekmeye aittir. Kökler: Zikir = ana sayfa, Kütüphane = âlimler (Sözler de Kütüphane'nin altındadır), Profilim = profil. */
+const TAB_ROOT = {zikir: 'main', anasayfa: 'anasayfa', akis: 'akis', kutuphane: 'kutuphane', profil: 'profil'};
 const TAB_ROOTS = new Set(Object.values(TAB_ROOT));
-const tabOf = v => v === 'anasayfa' ? 'anasayfa' : v === 'akis' ? 'akis' : v === 'selef' ? 'selef' : (v === 'kutuphane' || v === 'fikih' || LIB_CHILD.has(v)) ? 'kutuphane' : 'zikir';
+const tabOf = v => v === 'anasayfa' ? 'anasayfa' : v === 'akis' ? 'akis' : v === 'profil' ? 'profil' : (v === 'kutuphane' || v === 'fikih' || LIB_CHILD.has(v)) ? 'kutuphane' : 'zikir';
 const isGenel = z => !MSET.has(z.id) && !ESET.has(z.id);
 /* Zikir sayfası (main) üç bölümü kendi içinde gösterir: Genel · Sabah · Akşam. Açılışta Genel açıktır.
    Eski 'sabah' / 'aksam' / 'genel' görünüm adları (halkalar, bildirim bağlantısı, geçmiş) bu bölümlere yönlendirilir. */
@@ -715,11 +715,13 @@ function renderCards() {
   document.querySelectorAll('[data-view]').forEach(b => { const on = (view === 'main' ? b.dataset.view === zsec : b.dataset.view === view) || (b.dataset.view === 'kutuphane' && LIB_CHILD.has(view)); b.classList.toggle('active', on); b.setAttribute('aria-pressed', String(on)); });
   $('#empty').hidden = list.length > 0 || READ_VIEWS.has(view);
   document.body.classList.toggle('view-selef', READ_VIEWS.has(view));
+  document.body.classList.toggle('view-profil', view === 'profil');
   $('#araAll').hidden = true;
   searchEl.placeholder = view === 'kutuphane' ? 'Bütün kütüphanede ara…' : view === 'alim' ? 'Kitaplarında ara…' : view === 'kaydedilen' ? 'Kaydettiklerinde ara…' : view === 'selef' ? 'Söz ara (âlim, anlam, kaynak)…' : view === 'fikih' ? 'Fıkıhta ara (ör. mesh, cuma, zekât)…' : view === 'usul' ? 'Risalede ara (ör. kader, havz, cuma)…' : LIBS[view] ? (LIBS[view].book == null && LIBS[view].nogo ? 'Kitap ara…' : LIBS[view].book == null && !LIBS[view].single ? `${LIBS[view].unit === 'kitap' ? 'Kitap' : 'Bölüm'} ara ya da ${LIBS[view].item} no. yaz (ör. ${LIBS[view].ex})…` : `Bu ${LIBS[view].unit === 'kitap' ? 'kitapta' : 'bölümde'} ara ya da ${LIBS[view].item} no. yaz…`) : 'Zikir ara (ad, anlam, okunuş)…';
   navRecord();
   if (view === 'akis' || view === 'anasayfa') { update(); return; }
   if (view === 'selef') { renderQuotes(); applyFilter(); update(); return; }
+  if (view === 'profil') { renderProfile(); update(); return; }
   if (view === 'fikih') { renderFiqh(); applyFilter(); update(); return; }
   if (LIBS[view]) { renderLib(LIBS[view]); update(); return; }
   if (view === 'usul') { renderUsul(); applyFilter(); update(); return; }
@@ -2251,6 +2253,12 @@ function renderLibrary() {
   sv.addEventListener('click', () => setView('kaydedilen'));
   sv.dataset.search = 'kaydettiklerim kaydedilen yer imi';
   cardsEl.append(sv);
+  const sz = el('button', 'lib-saved');
+  sz.type = 'button';
+  sz.append(el('span', null, '📜 Sözler'), el('small', null, QUOTES.length + ' söz'));
+  sz.addEventListener('click', () => setView('selef'));
+  sz.dataset.search = 'sözler söz âlimler selef';
+  cardsEl.append(sz);
   const h = el('p', 'lib-h', 'ÂLİMLER');
   h.dataset.search = '';
   cardsEl.append(h);
@@ -2485,6 +2493,7 @@ function update() {
     $('#cntGenel').parentElement.classList.toggle('complete', zs.length > 0 && d === zs.length);
   }
   renderWeek();
+  if (view === 'profil') profPaint();
   if (!focusEl.hidden) renderFocus();
 }
 
@@ -2722,6 +2731,172 @@ for (const d of document.querySelectorAll('dialog')) {
   });
 }
 
+/* ---------- Profilim (alt çubuğun beşinci sekmesi) ----------
+   Ad `sekine-ad`, hedef zikirler `sekine-hedefler` (zikir kimlikleri, seçim sırasıyla), son yedek tarihi `sekine-son-yedek`; hepsi yedeğe girer.
+   İstatistikler zikir durumundan (S.days) hesaplanır; ayrıca bir sayaç tutulmaz. */
+const PF = {pick: false};
+const pfName = () => String(store.get('sekine-ad', '') || '').trim();
+const pfGoals = () => store.get('sekine-hedefler', []).filter(id => findZ(id));
+const pfIni = n => n ? n.charAt(0).toLocaleUpperCase('tr-TR') : '☾';
+const pfDate = k => fromKey(k).toLocaleDateString('tr-TR', {day: 'numeric', month: 'long', year: 'numeric'});
+function pfAgo(t) {
+  const d = Math.round((fromKey(dayKey()) - fromKey(dayKey(new Date(t)))) / 864e5);
+  return d <= 0 ? 'bugün' : d === 1 ? 'dün' : d < 30 ? d + ' gün önce' : new Date(t).toLocaleDateString('tr-TR', {day: 'numeric', month: 'long'});
+}
+// Seri: zikir çekilen ardışık günler (bugün henüz çekilmediyse dünden geriye sayılır); en uzun seri bütün günlerden
+function pfStats() {
+  const keys = Object.keys(S.days).filter(k => dayTotal(k) > 0).sort();
+  let cur = 0, d = new Date();
+  if (!dayTotal(dayKey(d))) d = addDays(d, -1);
+  while (dayTotal(dayKey(d)) > 0) { cur++; d = addDays(d, -1); }
+  let best = 0, run = 0, prev = null;
+  for (const k of keys) { run = prev && dayKey(addDays(fromKey(prev), 1)) === k ? run + 1 : 1; best = Math.max(best, run); prev = k; }
+  const total = keys.reduce((a, k) => a + dayTotal(k), 0);
+  return {cur, best, total, active: keys.length, first: keys[0] || null, today: dayTotal(today)};
+}
+function pfSec(title, extra) {
+  const h = el('div', 'pf-h');
+  h.append(el('p', 'lib-h', title));
+  if (extra) h.append(extra);
+  return h;
+}
+function renderProfile() {
+  const st = pfStats(), name = pfName();
+  const box = el('section', 'pf');
+  // Başlık: baş harf, ad (yazılabilir), ilk zikir tarihi
+  const head = el('div', 'pf-head');
+  const av = el('span', 'pf-av', pfIni(name));
+  const id = el('div', 'pf-id');
+  const inp = el('input', 'pf-name');
+  inp.type = 'text'; inp.maxLength = 40; inp.placeholder = 'Adını yaz'; inp.value = name; inp.autocomplete = 'off'; inp.enterKeyHint = 'done';
+  inp.setAttribute('aria-label', 'Kullanıcı adı');
+  inp.addEventListener('input', () => { store.set('sekine-ad', inp.value.trim()); av.textContent = pfIni(inp.value.trim()); });
+  inp.addEventListener('keydown', e => { if (e.key === 'Enter') inp.blur(); });
+  inp.addEventListener('change', () => { if (inp.value.trim()) toast('Ad kaydedildi'); });
+  id.append(inp, el('small', null, st.first ? `İlk zikir: ${pfDate(st.first)}` : 'Henüz zikir kaydı yok'));
+  head.append(av, id);
+  box.append(head);
+  // İstatistikler
+  const tiles = el('div', 'pf-stats');
+  for (const [v, l] of [[fmt(st.today), 'Bugün'], [st.cur + ' gün', 'Seri'], [st.best + ' gün', 'En uzun seri'], [fmt(st.total), 'Toplam zikir'], [fmt(st.active), 'Aktif gün'], [fmt(RD.saved.length), 'Kayıt']]) {
+    const t = el('div', 'pf-tile'); t.append(el('b', null, v), el('small', null, l)); tiles.append(t);
+  }
+  box.append(tiles);
+  // Hedef zikirlerim
+  const goals = pfGoals();
+  const ed = el('button', 'chip-button pf-edit', PF.pick ? 'Bitti' : goals.length ? 'Düzenle' : '＋ Seç');
+  ed.type = 'button';
+  ed.addEventListener('click', () => { PF.pick = !PF.pick; renderCards(); });
+  box.append(pfSec('HEDEF ZİKİRLERİM', ed));
+  const gl = el('div', 'pf-goals'); gl.id = 'pfGoals';
+  if (!goals.length && !PF.pick) gl.append(el('p', 'pf-empty', 'Her gün takip etmek istediğin zikirleri seç; bugünkü sayıları burada görünür, buradan da sayabilirsin.'));
+  for (const zid of goals) {
+    const z = findZ(zid);
+    const r = el('div', 'pf-goal'); r.dataset.goal = zid;
+    const t = el('button', 'pf-goal-t'); t.type = 'button';
+    t.append(el('span', null, z.name), el('small', 'pf-goal-c'), el('span', 'bar', null));
+    t.querySelector('.bar').append(el('span'));
+    t.addEventListener('click', () => openFocus(zid));
+    const p = el('button', 'pf-plus', '+1'); p.type = 'button'; p.setAttribute('aria-label', z.name + ': bir artır');
+    p.addEventListener('click', () => increment(zid, 1));
+    r.append(t, p);
+    gl.append(r);
+  }
+  box.append(gl);
+  if (PF.pick) box.append(pfPicker());
+  // Okumaya devam ettiklerim
+  const last = Object.values(RD.last).filter(x => x && x.v && LIB_NAMES[x.v]).sort((a, b) => b.at - a.at);
+  box.append(pfSec('OKUMAYA DEVAM ETTİKLERİM', last.length ? el('small', 'pf-n', String(last.length)) : null));
+  if (!last.length) box.append(el('p', 'pf-empty', 'Kütüphanede okuduğun kitaplar, kaldığın yerle birlikte burada sıralanır.'));
+  for (const x of last) {
+    const r = el('div', 'pf-read');
+    const b = el('button', 'lib-resume'); b.type = 'button';
+    b.append(el('span', 'lib-resume-t', `${LIB_NAMES[x.v]}${x.v !== 'usul' && x.title ? ' · ' + x.title.replace(/ \(.*\)$/, '') : ''}`), el('small', null, `Kaldığın yer: ${x.label} · ${pfAgo(x.at)}`));
+    b.addEventListener('click', () => goTo(x.v, x.b, x.n));
+    const del = el('button', 'pf-x', '×'); del.type = 'button'; del.setAttribute('aria-label', 'Listeden çıkar');
+    del.addEventListener('click', () => {
+      const prev = RD.last[x.v];
+      delete RD.last[x.v]; store.set('zikrim-last', RD.last); renderCards();
+      toast('Listeden çıkarıldı', {label: 'Geri al', run: () => { RD.last[x.v] = prev; store.set('zikrim-last', RD.last); renderCards(); }});
+    });
+    r.append(b, del);
+    box.append(r);
+  }
+  // Kaydettiklerim ve koleksiyonlar
+  box.append(pfSec('KAYDETTİKLERİM'));
+  const sv = el('button', 'lib-saved'); sv.type = 'button';
+  sv.append(el('span', null, '☆ Kaydettiklerim'), el('small', null, fmt(RD.saved.length)));
+  sv.addEventListener('click', () => { RD.colFilter = ''; setView('kaydedilen'); });
+  box.append(sv);
+  if (RD.cols.length) {
+    const cs = el('div', 'fd-chips pf-cols');
+    for (const c of RD.cols) {
+      const b = el('button', 'fd-chip', `📁 ${c} · ${RD.saved.filter(x => (x.c || []).includes(c)).length}`); b.type = 'button';
+      b.addEventListener('click', () => { RD.colFilter = c; setView('kaydedilen'); });
+      cs.append(b);
+    }
+    box.append(cs);
+  }
+  // Son 30 gün
+  box.append(pfSec('SON 30 GÜN'));
+  const ch = el('div', 'pf-chart');
+  const days = []; for (let i = 29; i >= 0; i--) { const d = addDays(new Date(), -i); days.push({d, t: dayTotal(dayKey(d))}); }
+  const max = Math.max(1, ...days.map(x => x.t));
+  for (const x of days) {
+    const c = el('span', 'pf-col' + (x.t ? '' : ' z'));
+    c.style.setProperty('--h', Math.max(4, Math.round(x.t / max * 100)) + '%');
+    c.title = `${x.d.toLocaleDateString('tr-TR', {day: 'numeric', month: 'short'})}: ${fmt(x.t)}`;
+    ch.append(c);
+  }
+  box.append(ch);
+  const m = days.reduce((a, x) => a + x.t, 0), ad = days.filter(x => x.t).length;
+  box.append(el('p', 'pf-cap', `${fmt(m)} zikir · ${ad} aktif gün`));
+  // Ayarlar ve yedek
+  box.append(pfSec('UYGULAMA'));
+  const yd = store.get('sekine-son-yedek', '');
+  const rows = el('div', 'pf-rows');
+  const row = (ic, t, sub, fn) => { const b = el('button', 'pf-row'); b.type = 'button'; const tx = el('span', 'pf-row-t', t); if (sub) tx.append(el('small', null, sub)); b.append(el('span', 'pf-row-ic', ic), tx, el('span', 'set-chev', '›')); b.addEventListener('click', fn); return b; };
+  rows.append(
+    row('⇪', 'Yedeği kaydet', yd ? 'Son yedek: ' + pfDate(yd) : 'Henüz yedek alınmadı', () => $('#exportData').click()),
+    row('⚙', 'Ayarlar', 'Tema, yazı, sesli okuma, bildirimler', () => $('#openSettings').click()));
+  box.append(rows);
+  cardsEl.append(box);
+  profPaint();
+}
+// Hedef seçimi: bütün zikirler bölümlerine göre; işaretlenen seçim sırasıyla eklenir
+function pfPicker() {
+  const sel = new Set(pfGoals());
+  const box = el('div', 'pf-pick');
+  for (const [title, f] of [['Genel', isGenel], ['Sabah', z => MSET.has(z.id)], ['Akşam', z => ESET.has(z.id)]]) {
+    let zs = S.zikirs.filter(f); if (f === isGenel) zs = sortByDuaOrder(zs);
+    if (!zs.length) continue;
+    box.append(el('p', 'pf-pick-h', title));
+    for (const z of zs) {
+      const l = el('label', 'pf-pick-r');
+      const c = el('input'); c.type = 'checkbox'; c.checked = sel.has(z.id);
+      c.addEventListener('change', () => {
+        const g = pfGoals().filter(x => x !== z.id);
+        if (c.checked) g.push(z.id);
+        store.set('sekine-hedefler', g);
+        const gl = $('#pfGoals'); if (gl) { const y = scrollY; PF.pick = true; renderCards(); scrollTo(0, y); }
+      });
+      l.append(c, el('span', null, z.name), el('small', null, fmt(z.target)));
+      box.append(l);
+    }
+  }
+  return box;
+}
+function profPaint() {
+  for (const r of cardsEl.querySelectorAll('.pf-goal')) {
+    const z = findZ(r.dataset.goal); if (!z) continue;
+    const c = getCount(z.id), ok = c >= z.target;
+    r.classList.toggle('done', ok);
+    r.querySelector('.pf-goal-c').textContent = `${ok ? '✓ ' : ''}${fmt(c)} / ${fmt(z.target)}`;
+    r.querySelector('.bar span').style.width = Math.min(100, c / z.target * 100) + '%';
+  }
+  const t = cardsEl.querySelector('.pf-tile b'); if (t) t.textContent = fmt(dayTotal(today));
+}
+
 /* ---------- Ayarlar ---------- */
 const settings = $('#settings');
 function renderHistory() {
@@ -2895,7 +3070,7 @@ function araIdle() {
   araScopePaint();
   ARA.libs.replaceChildren();
   ARA.res.replaceChildren();
-  ARA.info.innerHTML = 'Türkçe ya da Arapça yazabilirsin. Kelimenin başını yazman yeter (“sabr” → sabır, sabrı, sabredin); harf işaretleri (â, ‘, ş) fark etmez. Birden çok kelime yazarsan hepsinin geçtiği maddeler gelir; tırnak içindeki ifade (“sünnete sarıl”) aynen aranır. <b>Sened</b> seçilirse râvi adlarında aranır (ör. A‘meş Ebû Vâil).' + (ARA.loaded ? '' : '<br>İlk aramada arama dosyası iner (≈3 MB; Arapça için ≈2,5 MB daha).');
+  ARA.info.innerHTML = 'Türkçe ya da Arapça yazabilirsin. Kelimenin başını yazman yeter (“sabr” → sabır, sabrı, sabredin); harf işaretleri (â, ‘, ş) fark etmez. Birden çok kelime yazarsan hepsinin geçtiği maddeler gelir; tırnak içindeki ifade (“sünnete sarıl”) aynen aranır. <b>Sened</b> seçilirse râvi adlarında aranır (ör. A‘meş Ebû Vâil).';
   const rec = araRecent();
   if (rec.length) {
     const box = el('div', 'ara-rec');
@@ -3106,6 +3281,7 @@ $('#exportData').addEventListener('click', async () => {
     const file = new File([blob], name, {type: 'application/json'});
     if (navigator.canShare && navigator.canShare({files: [file]})) {
       await navigator.share({files: [file], title: 'Sekîne yedeği'});
+      store.set('sekine-son-yedek', today); if (view === 'profil') renderCards();
       return;
     }
   } catch (err) { if (err && err.name === 'AbortError') return; }
@@ -3114,6 +3290,7 @@ $('#exportData').addEventListener('click', async () => {
   a.download = name;
   document.body.append(a); a.click(); a.remove();
   setTimeout(() => URL.revokeObjectURL(a.href), 4000);
+  store.set('sekine-son-yedek', today); if (view === 'profil') renderCards();
 });
 $('#importData').addEventListener('change', async e => {
   const file = e.target.files[0];
