@@ -672,6 +672,7 @@ const visible = () => { const l = S.zikirs.filter(inView); return curSec() === '
 
 function setView(v, instant = false) {
   ttsStop();
+  readExt = false;
   const toSec = ZSEC.has(v);
   if (toSec) { zsec = v; v = 'main'; }
   view = VIEWS[v] ? v : 'main';
@@ -817,7 +818,7 @@ function quoteCard(q, cls) {
     // Kaynak kütüphanede: dokununca kitapta o madde açılır; ☆ o rivayeti Kaydettiklerim'e ekler
     const b = el('button', 'q-go', 'Kitapta aç ›');
     b.type = 'button';
-    b.addEventListener('click', () => goTo(q.go[0], q.go[1], q.go[2]));
+    b.addEventListener('click', () => goTo(q.go[0], q.go[1], q.go[2], true));
     src.append(' ', b);
     box.append(quoteStar(q));
   }
@@ -1175,7 +1176,7 @@ function libRenderBooks(L, wrap) {
 }
 
 function libOpen(L, i, target = null) {
-  L.book = i; L.target = target; libSave(L);
+  L.book = i; L.target = target; libSave(L); readExt = false;
   searchEl.value = '';
   renderCards();
   $('.list').scrollIntoView({block: 'start'});
@@ -1248,7 +1249,7 @@ function libRenderBook(L, wrap, meta) {
   const back = el('button', 'chip-button', L.unit === 'bölüm' ? '← Bölümler' : '← Kitaplar');
   back.type = 'button';
   if (L.single) back.hidden = true;
-  back.addEventListener('click', () => { L.book = null; libSave(L); searchEl.value = ''; renderCards(); });
+  back.addEventListener('click', () => { L.book = null; libSave(L); readExt = false; searchEl.value = ''; renderCards(); });
   const cnt = L.data.babs.reduce((s, b) => s + b.h.length, 0);
   // Kitap dizinindeki gibi: kapaklı başlık + Okumaya devam et, katlanan nüsha notu, numaralı bab kartları
   head.append(back, libHead(L, {meta, i: L.book, cnt, babs: L.data.babs.length}), fsBar());
@@ -1601,9 +1602,11 @@ function trackRead(root, info) {
     for (const e of es) {
       const t = e.target;
       if (e.isIntersecting && t.dataset.n != null) {
-        const x = info(t); x.at = Date.now();
-        RD.last[x.v] = x;
-        clearTimeout(readTimer); readTimer = setTimeout(() => store.set('zikrim-last', RD.last), 600);
+        if (!readExt) {
+          const x = info(t); x.at = Date.now();
+          RD.last[x.v] = x;
+          clearTimeout(readTimer); readTimer = setTimeout(() => store.set('zikrim-last', RD.last), 600);
+        }
         if (!readDwell.has(t)) readDwell.set(t, setTimeout(() => { readDwell.delete(t); if (t.isConnected) okuMark(info(t)); }, 1500));
       } else if (readDwell.has(t)) { clearTimeout(readDwell.get(t)); readDwell.delete(t); }
     }
@@ -1802,7 +1805,7 @@ function feedCard(p, first) {
   star.addEventListener('click', async () => { await toggleSavePick(p); paint(); });
   const open = el('button', null, '📖');
   open.type = 'button'; open.setAttribute('aria-label', 'Kitapta aç'); open.title = 'Kitapta aç';
-  open.addEventListener('click', () => { ttsStop(); goTo(p.v, p.b, p.n); });
+  open.addEventListener('click', () => { ttsStop(); goTo(p.v, p.b, p.n, true); });
   const shot = el('button', null, '📸');
   shot.type = 'button'; shot.setAttribute('aria-label', 'Görüntü olarak kaydet ya da paylaş'); shot.title = 'Görüntü olarak kaydet';
   shot.addEventListener('click', () => shotOpen(p));
@@ -2057,7 +2060,7 @@ function homePost(p) {
   });
   const open = el('button', null, '📖 Kitapta aç');
   open.type = 'button';
-  open.addEventListener('click', () => { ttsStop(); goTo(p.v, p.b, p.n); });
+  open.addEventListener('click', () => { ttsStop(); goTo(p.v, p.b, p.n, true); });
   const shot = el('button', null, '📸 Paylaş');
   shot.type = 'button'; shot.setAttribute('aria-label', 'Görüntü olarak paylaş ya da kaydet');
   shot.addEventListener('click', () => shotOpen(p));
@@ -2068,14 +2071,14 @@ function homePost(p) {
 }
 // Bab başlığına dokununca kitap o babın ilk rivayetinden açılır
 async function goToBab(p) {
-  if (p.v === 'usul') { goTo('usul', p.b, p.n); return; }
+  if (p.v === 'usul') { goTo('usul', p.b, p.n, true); return; }
   const L = LIBS[p.v];
   try {
     L.idx = L.idx || await libFetch(L, 'index.json');
     const data = await libFetch(L, 'tr/' + L.idx[p.b].f);
     const bab = data.babs.find(bb => bb.h.some(x => x[0] === p.n));
-    goTo(p.v, p.b, bab && bab.h.length ? bab.h[0][0] : p.n);
-  } catch (e) { goTo(p.v, p.b, p.n); }
+    goTo(p.v, p.b, bab && bab.h.length ? bab.h[0][0] : p.n, true);
+  } catch (e) { goTo(p.v, p.b, p.n, true); }
 }
 function homeMore() {
   if (!HOME.pool || HOME.i >= HOME.pool.length) return;
@@ -2184,7 +2187,7 @@ async function renderDaily(next = false) {
   const L = LIBS[v], book = DAILY[v].books[b];
   $('#dailyT').textContent = t;
   $('#dailySrc').textContent = (L.bookKey ? L.src(n, {tr: book}) : L.single ? L.src(n) : L.src(n) + ' · ' + book) + ' ›';
-  $('#dailySrc').onclick = () => goTo(v, b, n);
+  $('#dailySrc').onclick = () => goTo(v, b, n, true);
   const nx = $('#dailyNext'); if (nx) nx.onclick = () => renderDaily(true);
   const k = v + ':' + (L.bookKey ? b + ':' : '') + n, st = $('#dailyStar');
   const paint = () => { const on = isSaved(k); st.textContent = on ? '★' : '☆'; st.setAttribute('aria-pressed', String(on)); st.setAttribute('aria-label', on ? 'Kaydettiklerimden çıkar' : 'Kaydet'); };
@@ -2200,7 +2203,12 @@ function renderResume() {
   btn.onclick = () => goTo(x.v, x.b, x.n);
   btn.hidden = false;
 }
-function goTo(v, b, n) {
+/* Kitaba kütüphanenin dışından (Akış, Anasayfa, Rivayetler kartı, arama, Sözler, Kaydettiklerim) gidilince readExt açılır:
+   o okumada kaldığın yer (RD.last) yazılmaz, kitap Okumaya devam ettiklerim'e girmez ve eski kaldığın yer bozulmaz; okunan rivayet sayısı yine tutulur.
+   Kütüphanede gezinince (setView, kitap/bab seçimi, kitap listesine dönüş) kapanır. */
+let readExt = false;
+function goTo(v, b, n, ext = false) {
+  readExt = ext;
   if (v === 'usul') { USUL_TARGET = n; view = 'usul'; }
   else { const L = LIBS[v]; L.book = b; L.target = n; libSave(L); view = v; }
   searchEl.value = '';
@@ -2420,7 +2428,7 @@ function renderSaved() {
     const go = el('button', 'chip-button saved-go', `${LIB_NAMES[x.v]}${x.title && x.v !== 'usul' ? ' · ' + x.title.replace(/ \(.*\)$/, '') : ''} → Bağlamında aç`);
     go.type = 'button';
     const n = x.v === 'usul' ? x.u[0] : x.h[0];
-    go.addEventListener('click', () => goTo(x.v, x.b, n));
+    go.addEventListener('click', () => goTo(x.v, x.b, n, true));
     const cb = el('button', 'chip-button saved-col', x.c && x.c.length ? '📁 ' + x.c.join(' · ') : '📁 Koleksiyona ekle');
     cb.type = 'button';
     cb.addEventListener('click', () => colOpen(x.k));
@@ -3213,7 +3221,7 @@ function araFill(box, rows, r) {
     const t = el('span', 'ar-t' + (x.field === 'a' ? ' rtl' : '')); t.innerHTML = x.html;
     if (x.field === 'a') t.lang = 'ar';
     b.append(n, t);
-    b.addEventListener('click', () => { araRemember(ARA.q.value); araClose(() => goTo(g.v, g.v === 'usul' ? null : g.b, x.n)); });
+    b.addEventListener('click', () => { araRemember(ARA.q.value); araClose(() => goTo(g.v, g.v === 'usul' ? null : g.b, x.n, true)); });
     box._list.append(b);
   }
   box._at += rows.length;
@@ -3283,11 +3291,11 @@ function goTab(t) {
     else window.scrollTo({top: 0, behavior: 'smooth'});
     return;
   }
-  tabMem[cur] = {view, y: scrollY};
+  tabMem[cur] = {view, y: scrollY, ext: readExt};
   const m = tabMem[t];
   if (!m) { setView(TAB_ROOT[t], true); return; }
   const last = RD.last[m.view], L = LIBS[m.view];
-  if (last && (m.view === 'usul' || (L && L.book != null && last.b === L.book))) {
+  if (!m.ext && last && (m.view === 'usul' || (L && L.book != null && last.b === L.book))) {
     ttsStop();
     flashQuiet = true;
     goTo(last.v, last.b, last.n);
@@ -3295,6 +3303,7 @@ function goTab(t) {
     return;
   }
   ttsStop();
+  readExt = !!m.ext;
   view = m.view;
   searchEl.value = '';
   renderCards();
