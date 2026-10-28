@@ -339,8 +339,11 @@ const OLD_KEY = 'zikrim-v1';
 const THEMES = {night:'#0d1526', nature:'#f3f6ef', classic:'#faf4ea'};
 const UI_V = 2; // v2: klasik tema varsayılan, sabit sıralama
 const HIJRI_MONTHS = ['Muharrem', 'Safer', 'Rebîülevvel', 'Rebîülâhir', 'Cemâziyelevvel', 'Cemâziyelâhir', 'Receb', 'Şâban', 'Ramazan', 'Şevvâl', 'Zilkade', 'Zilhicce'];
+// Hicrî tarih düzeltmesi: Ayarlar'dan −2 … +2 gün (ay başlangıcı ülkeye göre farklı olabildiği için). Anahtar `sekine-hicri-fark`.
+const hijriOffset = () => { try { const v = Math.round(Number(JSON.parse(localStorage.getItem('sekine-hicri-fark')))); return v >= -2 && v <= 2 ? v : 0; } catch { return 0; } };
 function hijriText(d = new Date()) {
   try {
+    d = new Date(d.getTime() + hijriOffset() * 86400000);
     const p = Object.fromEntries(new Intl.DateTimeFormat('en-u-ca-islamic-umalqura-nu-latn', {day: 'numeric', month: 'numeric', year: 'numeric'}).formatToParts(d).map(x => [x.type, x.value]));
     const m = HIJRI_MONTHS[Number(p.month) - 1];
     if (!m || !p.day || !p.year) return '';
@@ -2761,6 +2764,15 @@ $('#ttsShow').addEventListener('change', e => { TTS.show = e.target.checked; doc
 $('#ttsArSened').addEventListener('change', e => { TTS.arSened = e.target.checked; ttsSave(); });
 $('#ttsTrSened').addEventListener('change', e => { TTS.trSened = e.target.checked; ttsSave(); });
 $('#ttsBarStop').addEventListener('click', ttsStop);
+
+/* Hicrî takvim düzeltmesi (−2 … +2 gün) */
+{
+  const sel = $('#hijriFix'), out = $('#hijriFixOut');
+  const paint = () => { sel.value = String(hijriOffset()); out.textContent = 'Bugün: ' + hijriText().toLocaleLowerCase('tr-TR').replace(/(^|\s)\S/g, c => c.toLocaleUpperCase('tr-TR')); };
+  sel.addEventListener('change', () => { store.set('sekine-hicri-fark', Number(sel.value)); paint(); $('#hijri').textContent = hijriText(); });
+  $('#openSettings').addEventListener('click', paint);
+  paint();
+}
 
 /* ---------- Bildirimler (web push) ----------
    Gönderen GitHub Actions'taki zamanlanmış iştir (.github/workflows/bildirim.yml → push/gonder.mjs).
