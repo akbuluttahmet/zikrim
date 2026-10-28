@@ -764,9 +764,13 @@ body.view-profil #search,body.view-profil #toggleCompact{display:none}
 .pf-pick-r input{flex:none;width:20px;height:20px;accent-color:var(--accent)}
 .pf-pick-r span{flex:1}
 .pf-pick-r small{color:var(--muted)}
-.pf-read{display:flex;gap:8px;align-items:stretch}
-.pf-read .lib-resume{flex:1;min-width:0}
-.pf-x{flex:none;width:40px;margin-bottom:8px;font:inherit;font-size:20px;color:var(--muted);background:transparent;border:1px solid var(--border);border-radius:14px}
+.pf-read{position:relative;display:flex}
+.pf-read .lib-resume{flex:1;min-width:0;padding-right:54px}
+.pf-x{position:absolute;top:12px;right:4px;display:grid;place-items:center;width:44px;height:44px;padding:0;margin:0;color:var(--muted);background:transparent;border:0;border-radius:50%;cursor:pointer;touch-action:manipulation}
+.pf-x svg{width:16px;height:16px;pointer-events:none}
+@media(hover:hover){.pf-x:hover{background:var(--card);color:var(--text)}}
+.pf-x:active{background:var(--card);color:var(--text)}
+.pf-x:focus-visible{outline:2px solid var(--accent);outline-offset:-4px}
 .pf-read+.pf-h,.pf-empty+.pf-h{margin-top:12px}
 .pf-cols{margin:-2px 0 14px}
 .pf-chart{display:flex;align-items:flex-end;gap:3px;height:84px;padding:10px 12px;background:var(--card);border:1px solid var(--border);border-radius:16px}

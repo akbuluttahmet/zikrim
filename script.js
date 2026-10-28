@@ -2874,7 +2874,10 @@ function renderProfile() {
       b.append(bar, el('small', 'pf-rd-n', `%${pctOf(pr)} okundu · ${fmt(pr.r)} / ${fmt(pr.t)} rivayet`));
     }
     b.addEventListener('click', () => goTo(x.v, x.b, x.n));
-    const del = el('button', 'pf-x', '×'); del.type = 'button'; del.setAttribute('aria-label', 'Listeden çıkar');
+    const del = el('button', 'pf-x'); del.type = 'button';
+    del.setAttribute('aria-label', `${LIB_NAMES[x.v]}${x.title ? ' · ' + x.title : ''}: listeden çıkar`);
+    del.title = 'Listeden çıkar';
+    del.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="m7 7 10 10M17 7 7 17"/></svg>';
     del.addEventListener('click', () => {
       const prev = RD.last[x.v];
       delete RD.last[x.v]; store.set('zikrim-last', RD.last); renderCards();
