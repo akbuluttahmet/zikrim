@@ -687,3 +687,5 @@ body[data-tab=anasayfa] .to-top{display:none}
 .zg-head+.zikir:not(.zg-off){margin-top:10px}
 body:not(.filtering) .zikir.zg-off{display:none}
 body.filtering .zg-head{display:none}
+
+.q-go{background:none;border:0;padding:0;margin:0;font:inherit;font-size:inherit;font-weight:600;color:var(--accent);cursor:pointer;white-space:nowrap}
