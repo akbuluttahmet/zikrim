@@ -1,6 +1,6 @@
 // Güncelleme yaptığında bu sürüm adını artır
-const CACHE = 'zikrim-v157';
-const ASSETS = ['./', './index.html', './style.css', './fikih.js', './usul.js', './script.js', './manifest.webmanifest', './icon.svg', './apple-touch-icon.png', './icon-192.png', './icon-512.png', './gunun.json', './fonts/amiri-400.woff2', './fonts/amiri-700.woff2'];
+const CACHE = 'zikrim-v158';
+const ASSETS = ['./', './index.html', './style.css', './fikih.js', './usul.js', './hadis.js', './script.js', './manifest.webmanifest', './icon.svg', './apple-touch-icon.png', './icon-192.png', './icon-512.png', './gunun.json', './fonts/amiri-400.woff2', './fonts/amiri-700.woff2'];
 
 self.addEventListener('install', event => {
   // cache:'reload' → tarayıcı önbelleğindeki eski dosyalar yerine her zaman sunucudaki yeni sürümü al

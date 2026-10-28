@@ -61,7 +61,7 @@ body.filtering .handle,body.filtering .sort-hint{display:none}
 .sort-hint{font-size:12px;color:var(--muted);margin:4px 0 0;line-height:1.5}
 
 /* Sade görünüm */
-body.compact .zikir .arabic,body.compact .zikir .translit,body.compact .zikir .meaning,body.compact .zikir .category,body.reordering .zikir .arabic,body.reordering .zikir .translit,body.reordering .zikir .meaning,body.reordering .zikir .bar,body.reordering .zikir .actions{display:none}
+body.compact .zikir .arabic,body.compact .zikir .translit,body.compact .zikir .meaning,body.compact .zikir .category,body.compact .zikir .z-hadis,body.reordering .zikir .arabic,body.reordering .zikir .translit,body.reordering .zikir .meaning,body.reordering .zikir .bar,body.reordering .zikir .actions{display:none}
 body.compact .zikir{padding:15px 16px;margin:9px 0}
 body.compact .zikir .bar{margin:11px 0}
 body.compact .tap{padding:12px}
@@ -82,6 +82,10 @@ body.reordering .zikir{padding:13px 16px;margin:8px 0}
 .zikir-title{flex:1;min-width:0}
 .zikir h3{font-size:16px;margin:0}
 .zikir .category{font-size:12px;color:var(--muted);margin:5px 0 0}
+.zikir .z-hadis{margin:10px 0 4px;padding-top:9px;border-top:1px dashed var(--border);font-size:12px;line-height:1.55;color:var(--muted)}
+.z-hadis .zh-t{display:block}
+.z-hadis .zh-s{display:block;margin-top:4px;font-size:11px;font-weight:600;letter-spacing:.2px}
+.z-hadis .zh-t+.zh-s::before{content:"— "}
 .more{background:none;border:0;color:var(--muted);font-size:20px;width:32px;height:32px;margin:-4px -8px 0 0;border-radius:50%;padding:0;line-height:1}
 .arabic{font:normal 25px/1.9 var(--arabic);direction:rtl;text-align:right;margin:16px 0 8px}
 .translit{font-size:13px;color:var(--muted);line-height:1.7;margin:0 0 9px}

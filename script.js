@@ -305,7 +305,34 @@ for (const id of BESMELE_IDS) {
   PATCHES_V3.push({v: 11, id, from, to});
   Object.assign(z, to);
 }
-const CATALOG = 12;
+// v13: Başlıklar zikrin kendi lafzı oldu (“Kalbi Ferahlatan…”, “… İçin” gibi nitelemeler kalktı); başlığın altındaki
+// açıklama satırı kaldırıldı, yerine kartın altında zikrin geldiği hadis ve kaynağı gösterilir (hadis.js). Yâ Fettâh çıkarıldı.
+// Yama önceki son değerlerden üretilir; kullanıcının kendi değiştirdiği başlık ve açıklamalara dokunulmaz.
+const NAMES_V13 = {
+  tawhid: 'Lâ ilâhe illallâh', aksam: 'Lâ ilâhe illallâhu vahdehû (Günde 100)', kerb: 'Lâ ilâhe illallâhu’l-Azîmü’l-Halîm',
+  mulk: 'Allâhümme Mâlike’l-mülk', bakiyat: 'Sübhânallâh, velhamdü lillâh, ve lâ ilâhe illallâh, vallâhu ekber',
+  tasbih: 'Sübhânallâh · Elhamdülillâh · Allâhu ekber', rabbena_atina: 'Rabbenâ âtinâ fi’d-dünyâ haseneten',
+  ecirni: 'Allâhümme ecirnî mine’n-nâr', kabir: 'Allâhümme innî e’ûzü bike min azâbi’l-kabr',
+  husnu_huluk: 'Allâhümme ahsente halkî', rizik1: 'Allâhümmağfir lî verhamnî', rizik2: 'Allâhümme innî es’elüke ilmen nâfi‘an',
+  maide: 'Hz. Îsâ’nın Duası', rizik_ayet: 'Allâhu latîfun bi-ibâdih', aile: 'Rabbenâ heb lenâ min ezvâcinâ',
+  rahmeteke: 'Allâhümme rahmeteke ercû', gam: 'Allâhümme innî e’ûzü bike mine’l-hemmi ve’l-hazen',
+  sabir: 'Rabbenâ efriğ aleynâ sabran', tevekkul: 'Hasbiyallâhu lâ ilâhe illâ hû', lokman22: 'Ve men yüslim vechehû ilallâh',
+  bismillahillezi: 'Bismillâhillezî lâ yedurru', afini: 'Allâhümme âfinî fî bedenî', yunus81: 'Mâ ci’tüm bihi’s-sihr',
+  kapanis: 'Sübhâne Rabbike Rabbi’l-izzeti', uyanis1: 'Elhamdü lillâhillezî ahyânâ', uyanis2: 'Elhamdü lillâhillezî âfânî fî cesedî',
+  sukur: 'Lâ ilâhe illallâhu vahdehû … Rabbiğfir lî', hakaret: 'Rabbi’hkum bi’l-hakk', kader: 'Kaderullâhi ve mâ şâe fe‘al',
+  musibet: 'İnnâ lillâhi ve innâ ileyhi râci‘ûn', sinanan: 'Elhamdü lillâhillezî âfânî mimmebtelâke bih',
+  sb_afini: 'Allâhümme âfinî fî bedenî (Sabah)', ak_afini: 'Allâhümme âfinî fî bedenî (Akşam)',
+  afv: 'Allâhümme innî es’elüke’l-afve ve’l-âfiye (Sabah)', ak_afv: 'Allâhümme innî es’elüke’l-afve ve’l-âfiye (Akşam)',
+};
+for (const z of DEFAULTS) {
+  const from = {}, to = {};
+  if (NAMES_V13[z.id] && z.name !== NAMES_V13[z.id]) { from.name = z.name; to.name = NAMES_V13[z.id]; }
+  if (z.category) { from.category = z.category; to.category = ''; }
+  if (Object.keys(to).length) { PATCHES_V3.push({v: 13, id: z.id, from, to}); Object.assign(z, to); }
+}
+const REMOVED_V13 = new Set(['ya_fettah']);
+for (let i = DEFAULTS.length - 1; i >= 0; i--) if (REMOVED_V13.has(DEFAULTS[i].id)) DEFAULTS.splice(i, 1);
+const CATALOG = 13;
 
 const KEY = 'zikrim-v2';
 const OLD_KEY = 'zikrim-v1';
@@ -364,7 +391,7 @@ function load() {
     if (out.catalog < CATALOG) {
       const have = new Set(out.zikirs.map(z => z.id));
       let added = 0;
-      const add = list => { for (const z of list) if (!have.has(z.id) && !REMOVED_V6.has(z.id)) { out.zikirs.push({...z}); have.add(z.id); added++; } };
+      const add = list => { for (const z of list) if (!have.has(z.id) && !REMOVED_V6.has(z.id) && !REMOVED_V13.has(z.id)) { out.zikirs.push({...z}); have.add(z.id); added++; } };
       if (out.catalog < 2) add(ADDED_V2);
       if (out.catalog < 3) add(ADDED_V3);
       applyPatches(out.zikirs, out.catalog);
@@ -415,6 +442,7 @@ function load() {
         L.push(...take([...MORNING, ...EVENING]));
         added = 0;
       }
+      if (out.catalog < 13) out.zikirs = out.zikirs.filter(z => !REMOVED_V13.has(z.id) || z.custom);
       out.catalog = CATALOG;
       persistState(out);
       if (added) setTimeout(() => toast(`${added} yeni zikir eklendi ✨`), 600);
@@ -641,6 +669,7 @@ function renderCards() {
       <p class="arabic" lang="ar" dir="rtl"></p>
       <p class="translit"></p>
       <p class="meaning"></p>
+      <p class="z-hadis"></p>
       <div class="bar"><span></span></div>
       <div class="actions">
         <button class="minus" type="button" data-act="minus" aria-label="Bir geri al">−</button>
@@ -653,6 +682,12 @@ function renderCards() {
       el.textContent = z[f];
       el.hidden = !z[f];
     }
+    // Zikrin geldiği hadis ve kaynağı (hadis.js); kendi eklenen zikirlerde yok
+    const hd = z.custom ? null : zikirHadis(z.id), he = box.querySelector('.z-hadis');
+    if (hd) {
+      if (hd[0]) he.append(el('span', 'zh-t', hd[0]));
+      he.append(el('span', 'zh-s', hd[1]));
+    } else he.hidden = true;
     cardsEl.append(box);
   }
   applyFilter();
