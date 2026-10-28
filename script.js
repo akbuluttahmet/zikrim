@@ -777,29 +777,108 @@ function renderCards() {
 /* ---------- Arama ---------- */
 const searchEl = $('#search');
 const norm = t => String(t).toLocaleLowerCase('tr-TR').normalize('NFD').replace(/[\u0300-\u036f’'`]/g, '').replace(/ı/g, 'i');
+/* Sözler sayfası: üstte günün sözü ve âlim düğmeleri; “Hepsi”nde her âlim açılıp kapanan bir grup (açıklar `zikrim-soz-acik`'ta),
+   bir âlim seçilince yalnız onun sözleri açık görünür (seçim `zikrim-soz-alim`'de). Aramada bütün eşleşenler görünür. */
+const QW_SHORT = w => w.replace(/ \(.*\)$/, '');
+let QSEL = null, QOPEN = null; // ilk çizimde yüklenir (store aşağıda tanımlı)
+function quoteStar(q) {
+  const [v, b, n] = q.go, k = v === 'usul' ? 'usul:' + n : pickKey({v, b, n});
+  const s = el('button', 'star q-star');
+  s.type = 'button';
+  const paint = () => { const on = isSaved(k); s.innerHTML = STAR_SVG; s.classList.toggle('on', on); s.setAttribute('aria-pressed', String(on)); s.setAttribute('aria-label', on ? 'Kaydettiklerimden çıkar' : 'Kaydet'); };
+  paint();
+  s.addEventListener('click', async e => {
+    e.stopPropagation();
+    if (v === 'usul') {
+      if (isSaved(k)) RD.saved = RD.saved.filter(x => x.k !== k);
+      else { const u = USUL.find(x => x[0] === n); if (u) RD.saved.unshift({k, at: Date.now(), v: 'usul', u, title: 'Usûlü’s-Sünne'}); }
+      store.set('zikrim-saved', RD.saved);
+    } else await toggleSavePick({v, b, n});
+    cardsEl.querySelectorAll('.q-star').forEach(x => x.dispatchEvent(new Event('repaint')));
+  });
+  s.addEventListener('repaint', paint);
+  return s;
+}
+function quoteCard(q, cls) {
+  const box = document.createElement('article');
+  box.className = 'quote' + (cls ? ' ' + cls : '');
+  box.innerHTML = '<p class="arabic" lang="ar" dir="rtl"></p><p class="q-tr"></p><p class="q-src"></p>';
+  box.querySelector('.arabic').textContent = q.ar;
+  box.querySelector('.q-tr').textContent = q.tr;
+  const src = box.querySelector('.q-src');
+  src.textContent = QW_SHORT(q.who) + ' · ' + q.src;
+  if (q.go) {
+    // Kaynak kütüphanede: dokununca kitapta o madde açılır; ☆ o rivayeti Kaydettiklerim'e ekler
+    const b = el('button', 'q-go', 'Kitapta aç ›');
+    b.type = 'button';
+    b.addEventListener('click', () => goTo(q.go[0], q.go[1], q.go[2]));
+    src.append(' ', b);
+    box.append(quoteStar(q));
+  }
+  box.insertBefore(ttsRow([['ar', '▶ Arapça', () => [{el: box.querySelector('.arabic'), text: prepAr(q.ar)}]], ['tr', '▶ Türkçe', () => [{el: box.querySelector('.q-tr'), text: prepTr(q.tr)}]]]), box.querySelector('.q-src'));
+  box.dataset.search = [q.who, q.tr, q.src].join(' ');
+  return box;
+}
 function renderQuotes() {
-  let last = null;
-  for (const q of QUOTES) {
-    const box = document.createElement('article');
-    box.className = 'quote';
-    if (q.who !== last) box.dataset.group = q.who;
-    last = q.who;
-    box.innerHTML = '<p class="arabic" lang="ar" dir="rtl"></p><p class="q-tr"></p><p class="q-src"></p>';
-    box.querySelector('.arabic').textContent = q.ar;
-    box.querySelector('.q-tr').textContent = q.tr;
-    box.querySelector('.q-src').textContent = q.who.replace(/ \(.*\)$/, '') + ' · ' + q.src;
-    // Kütüphanede bulunan sözler: kaynağa dokununca kitapta o madde açılır
-    if (q.go) {
-      const src = box.querySelector('.q-src'), b = el('button', 'q-go', 'Kitapta aç ›');
-      b.type = 'button';
-      b.addEventListener('click', () => goTo(q.go[0], q.go[1], q.go[2]));
-      src.append(' ', b);
+  if (QSEL === null) { QSEL = store.get('zikrim-soz-alim', ''); QOPEN = new Set(store.get('zikrim-soz-acik', [])); }
+  const whos = [...new Set(QUOTES.map(q => q.who))];
+  if (QSEL && !whos.includes(QSEL)) QSEL = '';
+  // Günün sözü: her gün sırayla bir söz (bütün kullanıcılarda aynı gün aynı söz)
+  const day = Math.floor((Date.now() - new Date().getTimezoneOffset() * 60000) / 86400000);
+  const today = QUOTES[day % QUOTES.length];
+  const head = el('div', 'q-day-h', 'GÜNÜN SÖZÜ');
+  const tq = quoteCard(today, 'q-day');
+  tq.prepend(head);
+  tq.dataset.search = '';
+  cardsEl.append(tq);
+  // Âlim düğmeleri
+  const row = el('div', 'fd-chips q-chips');
+  const chip = (w, label, cnt) => {
+    const b = el('button', 'fd-chip', label);
+    if (cnt) b.append(el('small', null, ' ' + cnt));
+    b.type = 'button';
+    b.setAttribute('aria-pressed', String(QSEL === w));
+    b.addEventListener('click', () => {
+      if (QSEL === w) return;
+      QSEL = w; store.set('zikrim-soz-alim', w);
+      searchEl.value = '';
+      const y = scrollY; cardsEl.replaceChildren(); renderQuotes(); applyFilter(); window.scrollTo(0, y);
+    });
+    return b;
+  };
+  row.append(chip('', 'Hepsi', QUOTES.length));
+  for (const w of whos) row.append(chip(w, QW_SHORT(w), QUOTES.filter(q => q.who === w).length));
+  row.dataset.search = '';
+  cardsEl.append(row);
+  requestAnimationFrame(() => { const on = row.querySelector('[aria-pressed="true"]'); if (on) row.scrollLeft = on.offsetLeft - (row.clientWidth - on.offsetWidth) / 2; });
+  for (const w of whos) {
+    const qs = QUOTES.filter(q => q.who === w);
+    if (QSEL && QSEL !== w) { for (const q of qs) { const c = quoteCard(q, 'qa-off'); cardsEl.append(c); } continue; }
+    const open = QSEL === w || QOPEN.has(w);
+    if (!QSEL) {
+      const h = el('button', 'zg-head qg-head');
+      h.type = 'button';
+      h.dataset.qg = w;
+      h.setAttribute('aria-expanded', String(open));
+      const t = el('span', 'zg-t', QW_SHORT(w));
+      const d = (w.match(/\((.*)\)$/) || [])[1];
+      if (d) t.append(el('small', 'qg-d', ' ' + d));
+      h.append(el('span', 'zg-no', String(qs.length)), t, el('span', 'zg-ch'));
+      cardsEl.append(h);
     }
-    box.insertBefore(ttsRow([['ar', '▶ Arapça', () => [{el: box.querySelector('.arabic'), text: prepAr(q.ar)}]], ['tr', '▶ Türkçe', () => [{el: box.querySelector('.q-tr'), text: prepTr(q.tr)}]]]), box.querySelector('.q-src'));
-    box.dataset.search = [q.who, q.tr, q.src].join(' ');
-    cardsEl.append(box);
+    for (const q of qs) { const c = quoteCard(q, open ? '' : 'zg-off'); c.dataset.qg = w; cardsEl.append(c); }
   }
 }
+cardsEl.addEventListener('click', e => {
+  const h = e.target.closest('.qg-head');
+  if (!h) return;
+  const w = h.dataset.qg, open = !QOPEN.has(w);
+  if (open) QOPEN.add(w); else QOPEN.delete(w);
+  store.set('zikrim-soz-acik', [...QOPEN]);
+  h.setAttribute('aria-expanded', String(open));
+  for (const c of cardsEl.querySelectorAll('.quote')) if (c.dataset.qg === w) c.classList.toggle('zg-off', !open);
+  if (!open && h.getBoundingClientRect().top < 0) h.scrollIntoView({block: 'start'});
+});
 
 function renderFiqh() {
   const intro = document.createElement('article');
@@ -2481,7 +2560,7 @@ const ZG_KEY = 'zikrim-gruplar-acik';
 let ZG_OPEN = new Set(store.get(ZG_KEY, []));
 const zgOpen = g => ZG_OPEN.has(g);
 function zgPaint() {
-  for (const h of cardsEl.querySelectorAll('.zg-head')) {
+  for (const h of cardsEl.querySelectorAll('.zg-head:not(.qg-head)')) {
     const g = h.dataset.zg, open = zgOpen(g);
     h.setAttribute('aria-expanded', String(open));
     const zs = [...cardsEl.querySelectorAll('.zikir')].filter(b => b.dataset.zg === g).map(b => findZ(b.dataset.id)).filter(Boolean);
@@ -2492,7 +2571,7 @@ function zgPaint() {
 }
 cardsEl.addEventListener('click', e => {
   const h = e.target.closest('.zg-head');
-  if (!h) return;
+  if (!h || h.classList.contains('qg-head')) return;
   const g = h.dataset.zg, open = !zgOpen(g);
   if (open) ZG_OPEN.add(g); else ZG_OPEN.delete(g);
   store.set(ZG_KEY, [...ZG_OPEN]);
