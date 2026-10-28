@@ -96,3 +96,4 @@ Bu repoda çalışan her oturum (Claude Code, başka sohbetler) bu kurallara uya
 - Sesli okuma telefonun kendi sesleriyle yapılır (Web Speech API).
   - Erkek ve yüksek kaliteli sesler önceliklidir: Arapça Majed, Türkçe Cem. Yelda listede gösterilmez.
   - Telefonun gösterdiği ses listesinde ses yoksa, okuma telefonun ayarlarında o dil için seçili sesle yapılır.
+- Bildirimler (web push): Ayarlar → Bildirimler. Sunucu yok; `.github/workflows/bildirim.yml` her gün 06:47 ve 17:47 (İstanbul) `push/gonder.mjs`'i çalıştırır, sabah/akşam zikri hatırlatmasını `gunun.json`'dan kısa bir rivayetle gönderir. GitHub gizli değişkenleri: `VAPID_PRIVATE`, `PUSH_SUBS` (uygulamadaki “Abonelik kodunu kopyala” çıktısı; birden çok cihaz alt alta). `script.js`'teki `PUSH_KEY` ile `gonder.mjs`'teki `VAPID_PUBLIC` aynı kalmalı; değişirse bütün abonelikler geçersiz olur. Bildirime dokununca `?v=sabah|aksam` ile ilgili görünüm açılır.

@@ -1,5 +1,5 @@
 // Güncelleme yaptığında bu sürüm adını artır
-const CACHE = 'zikrim-v156';
+const CACHE = 'zikrim-v157';
 const ASSETS = ['./', './index.html', './style.css', './fikih.js', './usul.js', './script.js', './manifest.webmanifest', './icon.svg', './apple-touch-icon.png', './icon-192.png', './icon-512.png', './gunun.json', './fonts/amiri-400.woff2', './fonts/amiri-700.woff2'];
 
 self.addEventListener('install', event => {
@@ -40,5 +40,31 @@ self.addEventListener('fetch', event => {
     }).catch(() => cached);
     event.waitUntil(network.catch(() => {}));
     return cached || network;
+  }));
+});
+
+// Bildirimler (web push): GitHub Actions'taki zamanlanmış iş gönderir (.github/workflows/bildirim.yml, push/gonder.mjs).
+// iOS her push'ta mutlaka bir bildirim gösterilmesini ister; gösterilmezse abonelik iptal edilir.
+self.addEventListener('push', event => {
+  let d = {};
+  try { d = event.data ? event.data.json() : {}; } catch (e) { d = {body: event.data ? event.data.text() : ''}; }
+  event.waitUntil(self.registration.showNotification(d.title || 'Sekîne', {
+    body: d.body || '',
+    icon: './icon-192.png',
+    badge: './icon-192.png',
+    tag: d.tag || 'sekine',
+    lang: 'tr',
+    data: {v: d.v || 'main'},
+  }));
+});
+
+// Bildirime dokununca: uygulama açıksa öne getir ve ilgili zikir görünümünü aç; kapalıysa o görünümle başlat.
+self.addEventListener('notificationclick', event => {
+  event.notification.close();
+  const v = (event.notification.data && event.notification.data.v) || 'main';
+  event.waitUntil(self.clients.matchAll({type: 'window', includeUncontrolled: true}).then(list => {
+    const c = list[0];
+    if (c) { c.postMessage({type: 'open', v}); return c.focus(); }
+    return self.clients.openWindow('./index.html' + (v !== 'main' ? '?v=' + v : ''));
   }));
 });

@@ -1,0 +1,50 @@
+# Sekîne: sabah ve akşam zikri hatırlatma bildirimleri (web push).
+# Saatler UTC'dir; İstanbul = UTC+3 (yaz/kış değişmez).
+# GitHub zamanlanmış işleri çoğu zaman 5–20 dakika geç başlatır; bu yüzden tam saatin biraz öncesine kuruldu.
+name: Bildirim
+
+on:
+  schedule:
+    - cron: '47 3 * * *'    # 06:47 İstanbul → sabah
+    - cron: '47 14 * * *'   # 17:47 İstanbul → akşam
+  workflow_dispatch:
+    inputs:
+      tur:
+        description: 'Bildirim türü'
+        type: choice
+        options: [deneme, sabah, aksam]
+        default: deneme
+
+concurrency:
+  group: bildirim
+  cancel-in-progress: false
+
+jobs:
+  gonder:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            push
+            gunun.json
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: push/package-lock.json
+      - run: npm ci --omit=dev --no-audit --no-fund
+        working-directory: push
+      - name: Gönder
+        env:
+          VAPID_PRIVATE: ${{ secrets.VAPID_PRIVATE }}
+          PUSH_SUBS: ${{ secrets.PUSH_SUBS }}
+        run: |
+          case "${{ github.event.schedule }}" in
+            '47 3 * * *')  TUR=sabah ;;
+            '47 14 * * *') TUR=aksam ;;
+            *)             TUR="${{ inputs.tur || 'deneme' }}" ;;
+          esac
+          node push/gonder.mjs "$TUR"

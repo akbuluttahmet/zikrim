@@ -2521,6 +2521,7 @@ $('#openSettings').addEventListener('click', () => {
   $('#hapticsToggle').checked = S.haptics;
   if (SYN) ttsLoadVoices(); else ttsFillSettings();
   renderHistory();
+  pushRefresh();
   settings.showModal();
 });
 $('#closeSettings').addEventListener('click', () => settings.close());
@@ -2534,6 +2535,59 @@ $('#ttsShow').addEventListener('change', e => { TTS.show = e.target.checked; doc
 $('#ttsArSened').addEventListener('change', e => { TTS.arSened = e.target.checked; ttsSave(); });
 $('#ttsTrSened').addEventListener('change', e => { TTS.trSened = e.target.checked; ttsSave(); });
 $('#ttsBarStop').addEventListener('click', ttsStop);
+
+/* ---------- Bildirimler (web push) ----------
+   Gönderen GitHub Actions'taki zamanlanmış iştir (.github/workflows/bildirim.yml → push/gonder.mjs).
+   Sunucu olmadığı için abonelik kodu elle GitHub'daki PUSH_SUBS gizli değişkenine yapıştırılır.
+   PUSH_KEY, push/gonder.mjs'teki VAPID_PUBLIC ile aynı olmalı. */
+const PUSH_KEY = 'BCI_ZYBMHdxFXymdN47D4ySZVGe6bzQWolbVRHCjHkNoa_4fWe32Mvh97pdcfWrthr58-aYyx_um8G22OB6S-S4';
+const PUSH_OK = 'serviceWorker' in navigator && 'PushManager' in window && 'Notification' in window;
+const STANDALONE = matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
+let pushCode = '';
+const b64u = s => { const b = atob((s + '='.repeat((4 - s.length % 4) % 4)).replace(/-/g, '+').replace(/_/g, '/')); return Uint8Array.from(b, c => c.charCodeAt(0)); };
+async function pushSub() {
+  if (!PUSH_OK) return null;
+  const r = await navigator.serviceWorker.getRegistration();
+  return r ? r.pushManager.getSubscription() : null;
+}
+async function pushRefresh() {
+  const t = $('#pushToggle'), info = $('#pushInfo');
+  const sub = await pushSub().catch(() => null);
+  const on = !!sub && Notification.permission === 'granted';
+  pushCode = on ? JSON.stringify(sub) : '';
+  t.checked = on;
+  t.disabled = !PUSH_OK;
+  $('#pushCopy').hidden = $('#pushTest').hidden = !on;
+  info.textContent = !PUSH_OK ? (STANDALONE ? 'Bu telefon web bildirimlerini desteklemiyor (iOS 16.4 ya da sonrası gerekir).' : 'Bildirimler için uygulamayı ana ekrandaki simgesinden aç.')
+    : Notification.permission === 'denied' ? 'Bildirim izni kapalı. Telefonun Ayarlar → Bildirimler → Sekîne bölümünden açabilirsin.'
+    : on ? 'Açık. Abonelik kodu GitHub’daki PUSH_SUBS’a yapıştırılmadıysa bildirim gelmez. Kapatıp açarsan kod değişir, yenisini yapıştırman gerekir.'
+    : 'Bildirimler uygulama ana ekrandan açıldığında çalışır.';
+}
+$('#pushToggle').addEventListener('change', async e => {
+  try {
+    if (e.target.checked) {
+      // iOS izni yalnızca bir dokunuşla isteyebilir: ilk await bu olmalı
+      if (await Notification.requestPermission() !== 'granted') throw new Error('izin');
+      const r = await navigator.serviceWorker.ready;
+      if (!(await r.pushManager.getSubscription())) await r.pushManager.subscribe({userVisibleOnly: true, applicationServerKey: b64u(PUSH_KEY)});
+      toast('Bildirimler açıldı. Şimdi abonelik kodunu kopyala.');
+    } else {
+      const sub = await pushSub();
+      if (sub) await sub.unsubscribe();
+      toast('Bildirimler kapatıldı');
+    }
+  } catch (err) { toast(err.message === 'izin' ? 'Bildirim izni verilmedi' : 'Bildirimler açılamadı'); }
+  pushRefresh();
+});
+$('#pushCopy').addEventListener('click', () => {
+  if (!pushCode) { pushRefresh(); return; }
+  // Panoya yazma dokunuşun içinde hemen yapılmalı (iOS); kod önceden hazırlandı
+  navigator.clipboard.writeText(pushCode).then(() => toast('Abonelik kodu kopyalandı'), () => prompt('Abonelik kodu (tamamını kopyala):', pushCode));
+});
+$('#pushTest').addEventListener('click', async () => {
+  try { const r = await navigator.serviceWorker.ready; await r.showNotification('Sekîne', {body: 'Bildirimler bu telefonda görünüyor.', icon: './icon-192.png', tag: 'sekine-deneme', lang: 'tr', data: {v: 'main'}}); }
+  catch { toast('Bildirim gösterilemedi'); }
+});
 
 /* ---------- Uzun sayfalarda gezinme ---------- */
 // Başa dön: bir buçuk ekrandan fazla aşağı inilince görünür; ana sayfada en üste, diğer görünümlerde liste başına (arama ve Geri) döner.
@@ -2732,7 +2786,19 @@ window.addEventListener('pageshow', checkDay);
 if (!('switch' in HTMLInputElement.prototype)) document.documentElement.classList.add('no-switch'); // iOS 17.4+ dışında anahtar görünümü CSS'ten
 setTheme(S.theme);
 renderCards();
+// Bildirimden açılış: ?v=sabah / ?v=aksam ilgili zikir görünümünü açar
+{
+  const q = new URLSearchParams(location.search).get('v');
+  if (q) { try { history.replaceState(history.state, '', location.pathname); } catch {} if (VIEWS[q] && q !== 'main') setView(q, true); }
+}
 if ('serviceWorker' in navigator) {
+  // Uygulama açıkken bildirime dokunulursa service worker buraya haber verir
+  navigator.serviceWorker.addEventListener('message', e => {
+    const d = e.data;
+    if (!d || d.type !== 'open' || !VIEWS[d.v] || !focusEl.hidden || editor.open) return;
+    if (settings.open) settings.close();
+    setView(d.v, true);
+  });
   const hadController = !!navigator.serviceWorker.controller;
   let reloaded = false;
   // Yeni sürüm etkinleşince sayfayı bir kez yenile (iki kez kapatıp açmaya gerek kalmasın)

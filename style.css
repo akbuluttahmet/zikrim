@@ -389,6 +389,7 @@ body[data-theme=night]{--paper:#1b2840;--paperb:#2f4260;--paperisn:#a9b5c8;--pap
 .set-group{background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden}
 .set-group.set-pad{padding:4px 14px 8px}
 .sheet .set-row{display:flex;align-items:center;gap:12px;width:100%;margin:0;padding:11px 14px;font:inherit;font-size:15px;font-weight:400;color:var(--text);background:none;border:0;border-top:1px solid var(--border);text-align:left;cursor:pointer}
+.sheet .set-row[hidden]{display:none}
 .set-group>.set-row:first-child,.set-group>.theme-pick+.set-row{border-top:0}
 .set-group>.theme-pick+.set-row{border-top:1px solid var(--border)}
 .set-ic{flex:none;width:30px;height:30px;border-radius:8px;background:var(--ic);color:#fff;display:grid;place-items:center;font-size:14px;font-weight:700;line-height:1}

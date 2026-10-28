@@ -1,0 +1,9 @@
+{
+  "name": "sekine-bildirim",
+  "private": true,
+  "type": "module",
+  "description": "Sekîne için zamanlı web push bildirimleri (GitHub Actions'tan gönderilir)",
+  "dependencies": {
+    "web-push": "^3.6.7"
+  }
+}
