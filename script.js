@@ -373,7 +373,7 @@ const clampTarget = v => Math.min(100000, Math.max(1, Math.floor(Number(v)) || 3
 
 /* ---------- Durum ve kayıt ---------- */
 function sanitize(s) {
-  const out = {v: 2, ui: Number(s && s.ui) || 0, theme: THEMES[s && s.theme] ? s.theme : 'classic', haptics: !s || s.haptics !== false, compact: !!(s && s.compact), catalog: Number(s && s.catalog) || 1, zikirs: [], days: {}};
+  const out = {v: 2, ui: Number(s && s.ui) || 0, theme: THEMES[s && s.theme] ? s.theme : 'classic', haptics: !s || s.haptics !== false, compact: !!(s && s.compact), catalog: Number(s && s.catalog) || 1, zikirs: [], days: {}, done: {}};
   const seen = new Set();
   for (const z of (s && Array.isArray(s.zikirs) ? s.zikirs : [])) {
     if (!z || typeof z.id !== 'string' || !z.id || seen.has(z.id)) continue;
@@ -391,6 +391,21 @@ function sanitize(s) {
       const t = {};
       for (const [k, v] of Object.entries(c)) { const n = Math.max(0, Math.floor(Number(v)) || 0); if (n) t[k] = n; }
       if (Object.keys(t).length) out.days[d] = t;
+    }
+  }
+  // Tamamlananlar kullanıcının işaretidir: {gün: [zikir kimlikleri]}. Bu alan yoksa (eski kayıt ya da yedek)
+  // geçmiş günler bir kereye mahsus eski kurala göre (sayı ≥ hedef) türetilir; haftalık görünüm boş kalmaz.
+  if (s && s.done && typeof s.done === 'object') {
+    for (const [d, ids] of Object.entries(s.done)) {
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(d) || d < oldest || !Array.isArray(ids)) continue;
+      const t = [...new Set(ids.filter(x => typeof x === 'string' && x))];
+      if (t.length) out.done[d] = t;
+    }
+  } else {
+    const tgt = new Map(out.zikirs.map(z => [z.id, z.target]));
+    for (const [d, c] of Object.entries(out.days)) {
+      const t = Object.keys(c).filter(id => tgt.has(id) && c[id] >= tgt.get(id));
+      if (t.length) out.done[d] = t;
     }
   }
   return out;
@@ -500,6 +515,13 @@ function setCount(id, n, d = today) {
   if (!Object.keys(S.days[d]).length) delete S.days[d];
 }
 const dayTotal = d => Object.values(S.days[d] || {}).reduce((a, b) => a + b, 0);
+// Hedef sayısı yoktur; zikir, kullanıcı “Tamamladım” deyince o gün için tamamlanmış sayılır
+const isDone = (id, d = today) => !!(S.done[d] && S.done[d].includes(id));
+function setDone(id, on, d = today) {
+  const t = new Set(S.done[d] || []);
+  if (on) t.add(id); else t.delete(id);
+  if (t.size) S.done[d] = [...t]; else delete S.done[d];
+}
 const findZ = id => S.zikirs.find(z => z.id === id);
 
 /* ---------- Ana sayfa: üstte her açılışta farklı bir zikir ---------- */
@@ -761,14 +783,14 @@ function renderCards() {
     box.innerHTML = `
       <div class="zikir-top">
         <div class="zikir-title"><h3></h3><p class="category"></p></div>
-        <span class="count-pill"></span>
+        <button class="count-pill" type="button" data-act="done" aria-pressed="false"></button>
         <button class="more" type="button" data-act="edit" aria-label="Düzenle">⋯</button>
       </div>
       <p class="arabic" lang="ar" dir="rtl"></p>
       <p class="translit"></p>
       <p class="meaning"></p>
       <p class="z-hadis"></p>
-      <div class="bar"><span></span></div>
+      <p class="z-say"></p>
       <div class="actions">
         <button class="minus" type="button" data-act="minus" aria-label="Bir geri al">−</button>
         <button class="tap" type="button" data-act="plus">+1 Zikir</button>
@@ -2510,20 +2532,21 @@ searchEl.addEventListener('keydown', e => { const L = LIBS[view]; if (e.key !== 
 function update() {
   for (const z of S.zikirs) {
     const c = getCount(z.id);
-    const ok = c >= z.target;
+    const ok = isDone(z.id);
     const box = cardsEl.querySelector(`[data-id="${CSS.escape(z.id)}"]`);
     if (!box) continue;
     box.classList.toggle('done', ok);
-    // Kartta sayı yazılmaz; ilerleme çubuktan görünür, tamamlanınca “Tamamladım” çıkar
+    // Hedef sayısı yazılmaz: yalnız bugün kaç kez çekildiği; “Tamamladım” kullanıcının işaretidir
     const pill = box.querySelector('.count-pill');
-    pill.textContent = ok ? '✓ Tamamladım' : '';
-    pill.hidden = !ok;
-    box.querySelector('.bar span').style.width = Math.min(100, c / z.target * 100) + '%';
+    pill.textContent = ok ? '✓ Tamamladım' : '○ Tamamladım';
+    pill.setAttribute('aria-pressed', String(ok));
+    pill.setAttribute('aria-label', ok ? `${z.name}: tamamlandı, geri almak için dokun` : `${z.name}: tamamladım olarak işaretle`);
+    box.querySelector('.z-say').textContent = c ? `Bugün ${fmt(c)} kez` : '';
     box.querySelector('.minus').disabled = c === 0;
   }
   for (const [id, ids] of [['#cntSabah', MORNING], ['#cntAksam', EVENING]]) {
     const zs = ids.map(findZ).filter(Boolean);
-    const d = zs.filter(z => getCount(z.id) >= z.target).length;
+    const d = zs.filter(z => isDone(z.id)).length;
     const el = $(id);
     el.textContent = `${d} / ${zs.length}`;
     el.parentElement.classList.toggle('complete', zs.length > 0 && d === zs.length);
@@ -2534,7 +2557,7 @@ function update() {
   $('#hijri').textContent = hijriText();
   {
     const zs = S.zikirs.filter(isGenel);
-    const d = zs.filter(z => getCount(z.id) >= z.target).length;
+    const d = zs.filter(z => isDone(z.id)).length;
     $('#cntGenel').textContent = `${d} / ${zs.length}`;
     $('#cntGenel').parentElement.classList.toggle('complete', zs.length > 0 && d === zs.length);
   }
@@ -2560,7 +2583,7 @@ function renderRings() {
     }
   }
   RINGS.forEach(([v, label, f], i) => {
-    const zs = S.zikirs.filter(f), d = zs.filter(z => getCount(z.id) >= z.target).length, p = zs.length ? d / zs.length : 0;
+    const zs = S.zikirs.filter(f), d = zs.filter(z => isDone(z.id)).length, p = zs.length ? d / zs.length : 0;
     const b = box.children[i];
     const bar = b.querySelector('.rg-bar');
     bar.style.strokeDasharray = `${RING_C * p} ${RING_C}`;
@@ -2571,7 +2594,7 @@ function renderRings() {
   });
 }
 /* Son 7 gün: her gün için sabah ve akşam zikirleri tamamlandı mı */
-const groupDone = (ids, k) => { const zs = ids.map(findZ).filter(Boolean); return zs.length > 0 && zs.every(z => getCount(z.id, k) >= z.target); };
+const groupDone = (ids, k) => { const zs = ids.map(findZ).filter(Boolean); return zs.length > 0 && zs.every(z => isDone(z.id, k)); };
 function renderWeek() {
   const week = $('#week');
   const days = [];
@@ -2604,14 +2627,19 @@ function increment(id, delta) {
   setCount(id, after);
   save();
   update();
-  if (delta > 0) {
-    const reached = before < z.target && after >= z.target;
-    haptic(reached);
-    if (reached) {
-      const allDone = S.zikirs.every(x => getCount(x.id) >= x.target);
-      toast(allDone ? 'Bugünkü tüm hedefler tamamlandı 🌙' : `“${z.name}” tamamlandı ✨`);
-    }
-  }
+  if (delta > 0) haptic(false);
+}
+function toggleDone(id) {
+  checkDay();
+  const z = findZ(id);
+  if (!z) return;
+  const on = !isDone(id);
+  setDone(id, on);
+  save();
+  update();
+  haptic(on);
+  if (on) toast(S.zikirs.every(x => isDone(x.id)) ? 'Bugünkü bütün zikirler tamamlandı 🌙' : `“${z.name}” tamamlandı ✨`,
+    {label: 'Geri al', run: () => { setDone(id, false); save(); update(); }});
 }
 
 /* Genel bölümündeki grupların açık/kapalı hâli (açık olanların adları) */
@@ -2623,7 +2651,7 @@ function zgPaint() {
     const g = h.dataset.zg, open = zgOpen(g);
     h.setAttribute('aria-expanded', String(open));
     const zs = [...cardsEl.querySelectorAll('.zikir')].filter(b => b.dataset.zg === g).map(b => findZ(b.dataset.id)).filter(Boolean);
-    const d = zs.filter(z => getCount(z.id) >= z.target).length;
+    const d = zs.filter(z => isDone(z.id)).length;
     h.querySelector('.zg-c').textContent = `${d} / ${zs.length}`;
     h.classList.toggle('complete', zs.length > 0 && d === zs.length);
   }
@@ -2647,6 +2675,7 @@ cardsEl.addEventListener('click', e => {
   else if (act === 'minus') increment(id, -1);
   else if (act === 'focus') openFocus(id);
   else if (act === 'edit') openEditor(id);
+  else if (act === 'done') toggleDone(id);
 });
 
 /* ---------- Sade görünüm ---------- */
@@ -2700,15 +2729,17 @@ function renderFocus() {
   $('#fArabic').textContent = z.arabic;
   $('#fArabic').hidden = !z.arabic;
   $('#fCount').textContent = fmt(c);
-  // Hedef sayısı yazılmaz; yalnız çekilen sayı görünür (halka ilerlemeyi gösterir)
+  // Hedef sayısı yoktur: ortada yalnız çekilen sayı; halka “Tamamladım” işaretlenince dolar
   $('#fTarget').hidden = true;
-  const rounds = Math.floor(c / z.target);
-  $('#fDone').textContent = rounds >= 2 ? `✓ ${rounds}. tur tamam` : rounds === 1 ? '✓ Tamamladım' : '';
-  const frac = c === 0 ? 0 : (c % z.target === 0 ? 1 : (c % z.target) / z.target);
+  const ok = isDone(z.id);
+  $('#fDone').textContent = ok ? '✓ Tamamladım' : '';
   const ring = $('#fRing');
   ring.style.strokeDasharray = RING;
-  ring.style.strokeDashoffset = RING * (1 - frac);
-  focusEl.classList.toggle('done', c >= z.target);
+  ring.style.strokeDashoffset = ok ? 0 : RING;
+  focusEl.classList.toggle('done', ok);
+  const fb = $('#focusDone');
+  fb.setAttribute('aria-pressed', String(ok));
+  fb.setAttribute('aria-label', ok ? 'Tamamlandı — geri almak için dokun' : 'Tamamladım olarak işaretle');
   $('#focusMinus').disabled = c === 0;
 }
 function stepFocus(dir) {
@@ -2718,6 +2749,7 @@ function stepFocus(dir) {
   if (n) { focusId = list[(i + dir + n) % n].id; renderFocus(); }
 }
 $('#focusTap').addEventListener('click', () => increment(focusId, 1));
+$('#focusDone').addEventListener('click', () => toggleDone(focusId));
 $('#focusMinus').addEventListener('click', () => increment(focusId, -1));
 $('#focusClose').addEventListener('click', () => { if (history.state && history.state.focus) history.back(); else closeFocus(); }); // geri tuşuyla aynı yoldan kapanır
 $('#focusPrev').addEventListener('click', () => stepFocus(-1));
@@ -2730,26 +2762,21 @@ let editingId = null;
 
 function openEditor(id) {
   editingId = id || null;
-  const z = id ? findZ(id) : {name: '', category: '', arabic: '', translit: '', meaning: '', target: 33};
+  const z = id ? findZ(id) : {name: '', category: '', arabic: '', translit: '', meaning: ''};
   $('#editorTitle').textContent = id ? 'Zikri düzenle' : 'Yeni zikir';
-  for (const f of ['name', 'category', 'arabic', 'translit', 'meaning', 'target']) form.elements[f].value = z[f];
+  for (const f of ['name', 'category', 'arabic', 'translit', 'meaning']) form.elements[f].value = z[f];
   editor.classList.toggle('editing', !!id);
   editor.showModal();
   editor.scrollTop = 0;
   $('#editorTitle').focus({preventScroll: true});
 }
-form.querySelector('.quick-targets').addEventListener('click', e => {
-  const b = e.target.closest('[data-t]');
-  if (b) form.elements.target.value = b.dataset.t;
-});
 $('#editorCancel').addEventListener('click', () => editor.close());
 form.addEventListener('submit', () => {
   const data = {};
   for (const f of ['name', 'category', 'arabic', 'translit', 'meaning']) data[f] = form.elements[f].value.trim();
-  data.target = clampTarget(form.elements.target.value);
   if (!data.name) return;
   if (editingId) Object.assign(findZ(editingId), data);
-  else S.zikirs.push({id: 'z' + Date.now().toString(36), custom: true, ...data});
+  else S.zikirs.push({id: 'z' + Date.now().toString(36), custom: true, target: 33, ...data}); // target eski kayıt biçimi için; gösterilmez
   save();
   renderCards();
   toast(editingId ? 'Kaydedildi' : 'Zikir eklendi');
@@ -2757,9 +2784,10 @@ form.addEventListener('submit', () => {
 $('#resetOne').addEventListener('click', () => {
   const id = editingId, prev = getCount(id);
   editor.close();
-  if (!prev) return;
-  setCount(id, 0); save(); update();
-  toast('Sayaç sıfırlandı', {label: 'Geri al', run: () => { setCount(id, prev); save(); update(); }});
+  const wasDone = isDone(id);
+  if (!prev && !wasDone) return;
+  setCount(id, 0); setDone(id, false); save(); update();
+  toast('Bugünkü sayaç sıfırlandı', {label: 'Geri al', run: () => { setCount(id, prev); setDone(id, wasDone); save(); update(); }});
 });
 $('#deleteOne').addEventListener('click', () => {
   const i = S.zikirs.findIndex(z => z.id === editingId);
@@ -2869,8 +2897,7 @@ function renderProfile() {
     const z = findZ(zid);
     const r = el('div', 'pf-goal'); r.dataset.goal = zid;
     const t = el('button', 'pf-goal-t'); t.type = 'button';
-    t.append(el('span', null, z.name), el('small', 'pf-goal-c'), el('span', 'bar', null));
-    t.querySelector('.bar').append(el('span'));
+    t.append(el('span', null, z.name), el('small', 'pf-goal-c'));
     t.addEventListener('click', () => openFocus(zid));
     const p = el('button', 'pf-plus', '+1'); p.type = 'button'; p.setAttribute('aria-label', z.name + ': bir artır');
     p.addEventListener('click', () => increment(zid, 1));
@@ -2992,7 +3019,7 @@ function pfPicker() {
         store.set('sekine-hedefler', g);
         const gl = $('#pfGoals'); if (gl) { const y = scrollY; PF.pick = true; renderCards(); scrollTo(0, y); }
       });
-      l.append(c, el('span', null, z.name), el('small', null, fmt(z.target)));
+      l.append(c, el('span', null, z.name));
       box.append(l);
     }
   }
@@ -3001,10 +3028,9 @@ function pfPicker() {
 function profPaint() {
   for (const r of cardsEl.querySelectorAll('.pf-goal')) {
     const z = findZ(r.dataset.goal); if (!z) continue;
-    const c = getCount(z.id), ok = c >= z.target;
+    const c = getCount(z.id), ok = isDone(z.id);
     r.classList.toggle('done', ok);
-    r.querySelector('.pf-goal-c').textContent = `${ok ? '✓ ' : ''}${fmt(c)} / ${fmt(z.target)}`;
-    r.querySelector('.bar span').style.width = Math.min(100, c / z.target * 100) + '%';
+    r.querySelector('.pf-goal-c').textContent = `${ok ? '✓ Tamamladım · ' : ''}Bugün ${fmt(c)}`;
   }
 }
 
@@ -3357,11 +3383,11 @@ $('#ttsTest').addEventListener('click', e => ttsPlay(e.currentTarget, 'ar', [{te
 $('#ttsTestTr').addEventListener('click', e => ttsPlay(e.currentTarget, 'tr', [{text: 'Kalpler ancak Allah’ı anmakla huzur bulur.'}]));
 
 $('#resetToday').addEventListener('click', () => {
-  const prev = S.days[today];
+  const prev = S.days[today], prevDone = S.done[today];
   settings.close();
-  if (!prev) return;
-  delete S.days[today]; save(); update();
-  toast('Bugünkü sayaçlar sıfırlandı', {label: 'Geri al', run: () => { S.days[today] = prev; save(); update(); }});
+  if (!prev && !prevDone) return;
+  delete S.days[today]; delete S.done[today]; save(); update();
+  toast('Bugünkü sayaçlar sıfırlandı', {label: 'Geri al', run: () => { if (prev) S.days[today] = prev; if (prevDone) S.done[today] = prevDone; save(); update(); }});
 });
 $('#restoreDefaults').addEventListener('click', () => {
   const ids = new Set(S.zikirs.map(z => z.id));

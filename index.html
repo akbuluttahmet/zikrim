@@ -94,7 +94,7 @@
       <h2 id="fName"></h2>
       <p id="fArabic" class="f-arabic" lang="ar" dir="rtl"></p>
     </div>
-    <span class="focus-spacer"></span>
+    <button id="focusDone" class="icon-button focus-done-btn" type="button" aria-pressed="false" aria-label="Tamamladım olarak işaretle">✓</button>
   </div>
   <button id="focusTap" class="focus-tap" aria-label="Bir zikir say">
     <svg class="ring" viewBox="0 0 220 220" aria-hidden="true">
@@ -124,8 +124,6 @@
     <label>Arapça (isteğe bağlı)<textarea name="arabic" rows="2" dir="rtl" lang="ar"></textarea></label>
     <label>Okunuşu (isteğe bağlı)<textarea name="translit" rows="2"></textarea></label>
     <label>Anlamı (isteğe bağlı)<textarea name="meaning" rows="2"></textarea></label>
-    <label>Günlük hedef<input name="target" type="number" inputmode="numeric" min="1" max="100000" required value="33"></label>
-    <div class="quick-targets"><button type="button" data-t="33">33</button><button type="button" data-t="99">99</button><button type="button" data-t="100">100</button><button type="button" data-t="1000">1000</button></div>
     <div class="edit-only">
       <div class="row">
         <button type="button" id="resetOne" class="ghost">↻ Bugünü sıfırla</button>

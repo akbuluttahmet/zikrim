@@ -92,6 +92,13 @@ body.reordering .zikir{padding:13px 16px;margin:8px 0}
 .meaning{font-size:13px;line-height:1.6;margin:0 0 4px}
 .count-pill{background:var(--hero);border:1px solid var(--border);border-radius:10px;padding:6px 10px;min-width:64px;text-align:center;font-size:13px;font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap}
 .zikir.done .count-pill{background:var(--accent);color:var(--accentText);border-color:var(--accent)}
+/* “Tamamladım” düğmesi (hedef sayısı yok; kullanıcı işaretler) ve bugünkü sayı */
+button.count-pill{color:var(--muted);font-weight:600;line-height:1.2}
+button.count-pill[aria-pressed=true]{color:var(--accentText)}
+.z-say{margin:12px 0 10px;min-height:1.2em;font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+body.compact .zikir .z-say{margin:8px 0 0}
+.focus-done-btn{flex:none;color:var(--muted)}
+.focus-done-btn[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:var(--accentText)}
 .bar{height:5px;background:var(--track);border-radius:9px;margin:14px 0;overflow:hidden}
 .bar span{display:block;height:100%;width:0;background:var(--accent);border-radius:9px;transition:width .25s}
 .actions{display:flex;gap:9px}
