@@ -46,7 +46,7 @@ MUELLIF_NOT = {'sunan': (r'قال أبو داود', r'Ebû Dâvûd (?:dedi|der|�
                'musned': (r'قال عبد الله', r'Abdullah (?:dedi|der|şöyle)')}
 
 SIGALAR = {'haddesenâ', 'haddesenî', 'ahberanâ', 'ahberanî', 'enbe’enâ', 'semi‘tü', 'semi‘a', 'an', 'enne', 'kâle',
-           'haddesehû', 'haddesehüm', 'ahberahû', 'ahberahüm', 'kara’tü', 'kurie', 'unbi’tü'}
+           'haddesehû', 'haddesehüm', 'ahberahû', 'ahberahüm', 'kara’tü', 'kurie', 'unbi’tü', 'ketebe ileyye'}
 HAREKE = re.compile(r'[ً-ْٰـ]')
 SALAVAT = re.compile(r'صلى الله عليه وسلم|صلى الله عليه وآله وسلم|صلى عليه وسلم')
 ARAPCA = re.compile(r'[؀-ۿ]{3,}')
@@ -100,6 +100,7 @@ SIGA_AR = {
     'ahberanâ': r'(?<![ء-ي])(?:و?أخبرنا|و?أنا|و?أنبأنا)(?![ء-ي])',
     'ahberanî': r'(?<![ء-ي])و?أخبرت?ني(?![ء-ي])',
     'semi‘tü': r'(?<![ء-ي])سمعت(?![ء-ي])',
+    'ketebe ileyye': r'(?<![ء-ي])و?كتب\s+إلي(?![ء-ي])',
 }
 
 

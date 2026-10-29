@@ -44,6 +44,7 @@ Kısaca: **tam, aslına sadık, yorumsuz** çeviri; **temiz sened** (yalnız adl
 | حدثه / حدثهم / حدثتها | haddesehû / haddesehüm | أخبره / أخبرهم | ahberahû / ahberahüm |
 | قرأت على | kara’tü | قرئ على / قرأ على | kurie |
 | أُنبئت / حُدِّثت / بلغني | unbi’tü | kayıt yok (و ile bağlı ikinci hoca) | önceki halkayla aynı |
+| كتب إليّ | ketebe ileyye | | |
 
   `قالا: حدثنا` → haddesenâ; `حدثنا … قال: سمعت` → semi‘tü. Sahâbîden `أن النبي ﷺ` biçiminde gelen son halkanın sîgası, tâbiînin sahâbîden aldığı lafızdır. Hocalar farklı lafızla aldıysa sîgaya ilkini yaz, farkı `n`'ye.
 - `n`: senedin içindeki râvi notları ve lafız kayıtları, Türkçe ve aynen: `Lafız Müsedded’indir.` · `Rivayetleri mana bakımından aynıdır.` · `İbn Hanbel, Atâ hakkında: “Onu iyi anlayamadım” dedi.` Yorum ve dışarıdan bilgi yok. Râvi farkı metnin içindeyse (`قال عثمان: … وقال مسدد: …`) metinde çevrilir.
