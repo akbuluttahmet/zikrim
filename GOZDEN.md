@@ -70,3 +70,5 @@ Toplu düzeltme (2026-10-29): bütün kitaplıklarda `Resûlullah ﷺ’e` biçi
 - [ ] **ibane i17 335** — Hârice b. Mus‘ab’ın “İstivâ, oturmaktan başka bir şey olur mu?” sözü nüshadaki gibi, notsuz çevrildi. (2026-10-29)
 - [ ] **ibane i17 405** — Hammâd b. Ebî Süleymân’ın Ebû Hanîfe hakkındaki ağır sözü nüshadaki gibi, notsuz çevrildi (“yorum eklenmez”). (2026-10-29)
 - [ ] **ibane i17 425** — İbn Batta’nın Cehmiyye’nin müteşâbih tevillerine reddiyesi (≈60 000 harf) tek madde olarak geliyordu; 425 (et-Tevvezî hikâyesi) + 425.01–425.12 “Ara metin” parçalarına bölündü (yeni `msplit` kuralı). (2026-10-29)
+- [ ] **ibane i18 474–475, 500–501** — Şâmile’de yalnız isnad olan 474 ve 500, metni taşıyan 475 ve 501 ile birleştirildi (iki yollu tek madde, “; ayrıca”); 475 ve 501 numaraları ayrı satır olarak yok. 426 (Kinânî–Bişr münazarası) 426 + 426.01–426.02 olarak bölündü. (2026-10-29)
+- [ ] **ibane i18 460, 466, 477** — bozuk ibareler: 460 “وخير العبد” (“cebr: kul” anlamıyla), 466 şiirde eksik mısra (“……”), 477 “في أجلى جلاوة، وسمعتوه قط”; notla işaretlendi. (2026-10-29)
