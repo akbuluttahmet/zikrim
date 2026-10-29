@@ -95,8 +95,8 @@
 ^ قال: «المتمتع إذا
 
 12996 | Gunder → Şu‘be → Abdullah b. Îsâ → Zührî → Urve → Âişe; ayrıca Gunder → Şu‘be → Abdullah b. Îsâ → Zührî → Sâlim → İbn Ömer | Âişe ve İbn Ömer dediler ki: “Teşrik günlerinde oruç tutulmasına, kurbanlık bulamayan dışında (kimseye) ruhsat verilmedi.”
-& haddesenâ, an, semi‘tü, an, an; haddesenâ, an, semi‘tü, an, an
-% Şu‘be: “Onu (Abdullah b. Îsâ’yı) Zührî’den rivayet ederken işittim” dedi.
+& haddesenâ, an, semi‘tü, an, an, an; haddesenâ, an, semi‘tü, an, an, an
+% (Şu‘be) dedi ki: Onu (Abdullah b. Îsâ’yı) Zührî’den rivayet ederken işittim.
 ^ قالا: «لم يرخص
 
 @ Yedi (günü) kaza ederken ayrı ayrı mı yoksa ardı ardına mı tutacağı hakkında
@@ -136,7 +136,7 @@
 ^ مثله في الرجل
 
 13005 |  | Ebû Bekir dedi ki: “Kim hac aylarında umre yapar sonra (memleketine) dönerse temettu yapan değildir; o (temettu yapan), kalan ve dönmeyendir.”
-% Arapçada sened yoktur: “أبو بكر قال: «…»” (metinde böyle).
+% Bu maddede sened yoktur; İbn Ebî Şeybe’nin sözü olarak gelmiştir (metinde böyle).
 
 13006 | Vekî‘ → Umerî → Nâfi‘ → İbn Ömer → Ömer | İbn Ömer dedi ki: Ömer dedi ki: “Hac aylarında umre yapar sonra kalırsa, temettu yapandır; dönerse temettu yapan değildir.”
 & haddesenâ, an, an, an, kâle

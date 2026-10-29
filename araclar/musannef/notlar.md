@@ -70,3 +70,15 @@
 - 11932 ikinci rivayet birleşik. Başlıksız bablar: 11944, 11952, 12124.
 - Sened (Arapçadaki gibi, notlu): 11909, 11915, 11983, 12006, 12083 (Süfyân iki kez).
 - Bozuk/şüpheli (notlu): 11867, 11913, 11973, 11982 (“الخيب”; 12132'de “النحيب”), 11992, 12013, 12023, 12051, 12056, 12061, 12075, 12078, 12094, 12110, 12128.
+
+## k08 Hac (p101–p108, 13650–14160 civarı)
+- İkinci rivayet birleşik: 13775, 13826, 13987, 14032, 14168 (yanlarındaki 13776, 13827, 13988, 14033, 14169 numaralarının ayrı maddesi yok). Başlıksız bablar: 13776, 13988, 14033 (bab satırında yalnız numara).
+- Yersiz âyet işaretleri: 13766 “[البقرة: 196]”, 14150 “[الحج: 32]”. 14059 senedde “989” rakamı. 13955 okunamayan yer (…).
+- Sened (Arapçadaki gibi): 13835, 13846, 13906, 13913 (Mis‘ar ayrı yol), 14036, 14040 (zincir “babası”nda bitiyor), 14081, 14099 (“أبو بكر قال: إسحاق الأزرق: عن”), 14134, 14139 (dört yol), 14149. 13977 nüsha senedi notta.
+- Bozuk/şüpheli (notlu): 13680, 13732, 13797, 13915, 13938, 13951, 13962, 13965, 13992, 14005, 14093, 14105, 14107, 14118, 14136, 14150.
+
+## k06 Cenâiz (p070–p077, 11420–11859 civarı)
+- Numaraları birleşik: 11432 (11433 içinde), 11623 (11624), 11671 (11672; üç rivayet, 11673 yok). 11434 ikinci rivayet birleşik. Başlıksız bablar: 11592, 11654.
+- 11739 Arapçası neşrin dipnot kalıntısıyla başlıyor (“بالمطبوع: … والصواب ما أثبتناه”) — Arapçadan çıkarılmalı mı, bakılmalı.
+- Sened: 11511 üç hoca, 11535 “عن سعيد، عن مسروق”, 11771 “حدثنا أبو بكر عن أبي حصين” (hoca düşmüş), 11438 “ابن عباد”. 11720 nüsha senedi notta.
+- Şüpheli (notlu): 11676, 11702, 11776, 11777, 11795, 11807, 11808; 11355 “فقال بعض”.
