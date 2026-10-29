@@ -259,7 +259,7 @@ const DUA_GROUPS = [
   ['Salavat', ['salavat']],
   ['Tevbe ve İstiğfar', ['istighfar','istigfar_tevbe','istigfar_hayy','yunus','adem']],
   ['Ahiret İçin Dualar', ['mukallib','husnu_huluk','rabbena_atina','ecirni','kabir','ibrahim','yusuf','nuh']],
-  ['Dünya ve Sıkıntı İçin Dualar', ['musa_sadr','musa','rizik1','rizik2','maide','rizik_ayet','ya_fettah','aile','zekeriya','suleyman','rahmeteke','hayy','eyyub','gam','sabir','tevekkul','hasbunallah','lokman22','suayb']],
+  ['Dünya ve Sıkıntı İçin Dualar', ['musa_sadr','musa','rizik1','rizik2','maide','rizik_ayet','aile','zekeriya','suleyman','rahmeteke','hayy','eyyub','gam','sabir','tevekkul','hasbunallah','lokman22','suayb']],
   ['Korunma Duaları', ['ayetelkursi','felak','nas','bismillahillezi','kelimat','afini','yunus81']],
   ['Kendi Zikirlerin', null],
   ['Kapanış', ['kapanis']],
@@ -343,7 +343,13 @@ for (const id of BESMELE_IDS) {
   PATCHES_V3.push({v: 14, id, from, to});
   Object.assign(z, to);
 }
-const CATALOG = 14;
+// v15: Başlıkta hedef sayısı yazılmaz (uygulama yalnız sayar, kullanıcı “Tamamladım”ı işaretler): “(Günde 100)” kaldırıldı.
+{
+  const z = DEFAULTS.find(x => x.id === 'aksam');
+  const ek = ' (Günde 100)';
+  if (z && z.name.endsWith(ek)) { const to = {name: z.name.slice(0, -ek.length)}; PATCHES_V3.push({v: 15, id: 'aksam', from: {name: z.name}, to}); Object.assign(z, to); }
+}
+const CATALOG = 15;
 
 const KEY = 'zikrim-v2';
 const OLD_KEY = 'zikrim-v1';
@@ -472,6 +478,8 @@ function load() {
         added = 0;
       }
       if (out.catalog < 13) out.zikirs = out.zikirs.filter(z => !REMOVED_V13.has(z.id) || z.custom);
+      // Sonradan eklenen kartlar (ADDED_V5/V7/V9) ham hâliyle girdiği için yamalar bir kez daha uygulanır (yamalar tekrarda zararsızdır)
+      applyPatches(out.zikirs, out.catalog);
       out.catalog = CATALOG;
       persistState(out);
       if (added) setTimeout(() => toast(`${added} yeni zikir eklendi ✨`), 600);
@@ -1119,8 +1127,6 @@ for (const [k, L] of Object.entries(LIBS)) {
   Object.assign(L, {view: k, idx: null, book: null, data: null, token: 0, target: null, cache: {}});
   try { const b = JSON.parse(localStorage.getItem(L.key) || 'null'); if (Number.isInteger(b)) L.book = b; } catch (e) {}
 }
-const MUS = LIBS.musannef;
-const libOf = () => LIBS[view];
 const libSave = L => { try { localStorage.setItem(L.key, JSON.stringify(L.book)); } catch (e) {} };
 async function libFetch(L, p) {
   if (L.cache[p]) return L.cache[p];
@@ -1441,6 +1447,16 @@ function libFilter(L) {
 /* ---------- Kütüphane: okumaya devam et, kaydettiklerim, yazı boyutu ---------- */
 const store = {get(k, d) { try { const v = JSON.parse(localStorage.getItem(k)); return v == null ? d : v; } catch (e) { return d; } }, set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }};
 const RD = {last: store.get('zikrim-last', {}), saved: store.get('zikrim-saved', []), fs: store.get('zikrim-fs', 16), cols: store.get('zikrim-koleksiyonlar', []), colFilter: ''};
+// Yedekten gelebilecek bozuk kayıtlara karşı: bilinmeyen kitaplık, eksik alan, yanlış tür (çizim yerlerinde TypeError olmasın)
+{
+  const okV = v => v === 'usul' || !!LIBS[v];
+  if (!RD.last || typeof RD.last !== 'object' || Array.isArray(RD.last)) RD.last = {};
+  for (const k of Object.keys(RD.last)) { const x = RD.last[k]; if (!x || typeof x !== 'object' || !okV(x.v)) delete RD.last[k]; }
+  if (!Array.isArray(RD.saved)) RD.saved = [];
+  RD.saved = RD.saved.filter(x => x && typeof x === 'object' && typeof x.k === 'string' && okV(x.v) && (x.v === 'usul' ? x.u != null : !!x.h));
+  if (!Array.isArray(RD.cols)) RD.cols = []; RD.cols = RD.cols.filter(c => typeof c === 'string' && c);
+  RD.fs = Number(RD.fs); if (!(RD.fs >= 13 && RD.fs <= 26)) RD.fs = 16;
+}
 // Bir kereye mahsus: el-Akîde (İmam Ahmed kitaplığında 1. sıra) kaldırıldı; sonraki kitapların sıra numarası bir azalır
 if (!store.get('zikrim-ahmed-akide', false)) {
   const sh = b => b === 1 ? null : b > 1 ? b - 1 : b;
@@ -1694,10 +1710,11 @@ function okuMark(x) {
 }
 const okuCount = () => Object.keys(OKU).reduce((a, v) => a + okuSet(v).size, 0);
 const okuBook = (v, b) => { const p = (b == null ? '' : b) + ':'; let c = 0; for (const k of okuSet(v)) if (k.startsWith(p)) c++; return c; };
-let readObs = null, readTimer = 0;
+let readObs = null, readMut = null, readTimer = 0;
 const readDwell = new Map();
 function trackRead(root, info) {
   if (readObs) readObs.disconnect();
+  if (readMut) readMut.disconnect();
   for (const t of readDwell.values()) clearTimeout(t);
   readDwell.clear();
   if (!('IntersectionObserver' in window)) return;
@@ -1716,7 +1733,7 @@ function trackRead(root, info) {
   }, {rootMargin: '-35% 0px -55% 0px'});
   const watch = () => root.querySelectorAll('.mus-h').forEach(a => { if (!a.dataset.obs) { a.dataset.obs = 1; readObs.observe(a); } });
   watch();
-  new MutationObserver(watch).observe(root, {childList: true, subtree: true});
+  readMut = new MutationObserver(watch); readMut.observe(root, {childList: true, subtree: true});
 }
 const isSaved = k => RD.saved.some(x => x.k === k);
 // Rivayetlerdeki kaydet yıldızı: çizgi (boş) ya da dolu yıldız simgesi, numara satırıyla aynı hizada yuvarlak düğme
@@ -1737,7 +1754,6 @@ function starBtn(k, make) {
   return b;
 }
 /* ---------- Ana sayfa: rivayetler (bütün kitaplardan rastgele) ve kaldığın yer ---------- */
-const fnv = t => { let h = 2166136261; for (let i = 0; i < t.length; i++) { h ^= t.charCodeAt(i); h = Math.imul(h, 16777619); } return h >>> 0; };
 let DAILY = null, dailyPick = null;
 // Ana sayfadaki rivayet: önce kitaplık, sonra rivayet rastgele seçilir (büyük kitaplar küçükleri gölgelemesin); ↻ ile değiştirilir, ☆ ile kaydedilir
 function dailyRandom() {
@@ -2380,15 +2396,6 @@ const SHELVES = [
   {c: 'IV. ASIR', books: [
     {v: 'ibane', ar: 'الإبانة الكبرى', t: 'el-İbânetü’l-kübrâ', who: 'İbn Batta', bo: '304', d: 387, col: '#4a5e7a'}]}
 ];
-function libSub(v, span) {
-  const L = LIBS[v];
-  const fill = () => {
-    const done = L.idx.filter(b => b.t);
-    const t = L.idx.reduce((s, b) => s + (b.t || 0), 0);
-    span.textContent = `${t.toLocaleString('tr-TR')} ${L.item} Türkçe · ` + (v === 'musannef' ? `${done.length} / ${L.idx.length} kitap` : done.map(b => b.tr.replace(/ Müsnedi$/, '').replace(/ (b\.|es-).*$/, '') + (b.t >= b.n ? ' ✓' : '')).join(' · '));
-  };
-  if (L.idx) fill(); else libFetch(L, 'index.json').then(x => { L.idx = x; fill(); }).catch(() => {});
-}
 function openLib(v) { if (LIBS[v]) LIBS[v].book = null; setView(v); }
 // Okumaya devam ettiklerim Profilim'dedir; Kütüphane kökü Kaydettiklerim, Sözler ve âlimlerden oluşur
 function renderLibrary() {
@@ -3726,7 +3733,6 @@ document.addEventListener('visibilitychange', () => {
 window.addEventListener('pageshow', checkDay);
 
 /* ---------- Başlat ---------- */
-{ const cs = $('#cntSelef'); if (cs) cs.textContent = QUOTES.length + ' söz'; }
 if (!('switch' in HTMLInputElement.prototype)) document.documentElement.classList.add('no-switch'); // iOS 17.4+ dışında anahtar görünümü CSS'ten
 setTheme(S.theme);
 renderCards();

@@ -37,6 +37,10 @@ Toplu düzeltme (2026-10-29): bütün kitaplıklarda `Resûlullah ﷺ’e` biçi
 
 ## 4. Karar verilmiş, hatırlatma
 
+- Zikir sayfasındaki “3 / 12” sayaçları (Genel · Sabah · Akşam düğmeleri, halka metni, grup başlıkları) tamamlanan/toplam **zikir sayısı**dır, tekrar hedefi değil; “/ 100” görünümünü andırdığı için istenirse “3 tamamlandı” biçimine çevrilebilir. (2026-10-29)
+- Zikir başlıkları: `Salavat`, `Hz. Yûnus’un Duası`, `Hz. Îsâ’nın Duası`, `İhlâs Sûresi (Sabah)` gibi başlıklar CLAUDE.md'deki “başlık zikrin kendi lafzıdır” kuralının dışında; Kur'ân duaları için bilinçliyse kurala istisna yazılmalı. (2026-10-29)
+- Hanbelî Fıkhı görünümü gizli (`#okumaNav hidden`); açılacak mı, kaldırılacak mı? (2026-10-29)
+
 - `index.json` `t` ve `n` artık dosyadaki **bütün** maddeleri sayar (kesirli "Numarasız rivayet / ara metin" dâhil); 6 kitaplıkta 23 kayıt buna göre düzeltildi. Neşrin hadis sayısı farklıysa (`musned` `total` gibi) `SHELVES`'e yazılır. (2026-10-29)
 - Müellif adı: veri `c[0]`, `dogrula.py`/`ravi_kur.py` `MUELLIF`, `script.js` `RAVI_MUELLIF` aynı olmalı. eş-Şerîa için `el-Âcurrî` seçildi. Müsned'e başlamadan `c[0]` kararı (`PROGRESS.md`). (2026-10-29)
 - `maximum-scale=1` bilinçli bırakıldı (odak modunda kazara yakınlaştırma). (2026-10-29)

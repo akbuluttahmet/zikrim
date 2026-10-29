@@ -1,3 +1,4 @@
+'use strict';
 /* İmam Ahmed b. Hanbel (رحمه الله), Usûlü's-Sünne — Türkçe çeviri ve Arapça metin (USUL_AR, dosyanın sonunda).
    Kaynak metin: Shamela 6418 (Dâru'l-Menâr, el-Harc 1411; Elbânî'nin Zâhiriyye nüshasından istinsahı) = OpenITI 0241IbnHanbal.UsulSunna.Shamela0006418-ara1.
    Biçim: [madde no, başlık, metin]. 0 = giriş. */
