@@ -3391,7 +3391,7 @@ searchEl.addEventListener('input', () => { $('#araAll').hidden = !(searchEl.valu
    râviler hakkında dışarıdan bilgi yoktur. Arama sayfası gibi tam ekran açılır, geri tuşuyla kapanır. */
 const RAVI = {el: $('#raviPage'), title: $('#raviTitle'), body: $('#raviBody'), open: false, pushed: false, data: null, p: null, skip: new Set(), after: null, stack: []};
 const RAVI_AKRABA = /^(babası|dedesi|annesi|amcası|kardeşi|ninesi|dayısı|halası|teyzesi)(\b|$)/;
-const RAVI_MUELLIF = new Set(['Ebû Dâvûd', 'Ahmed b. Hanbel', 'Abdullah b. Ahmed', 'el-Âcurrî']);
+const RAVI_MUELLIF = new Set(['Ebû Dâvûd', 'Ahmed b. Hanbel', 'Abdullah b. Ahmed', 'el-Âcurrî', 'Âcurrî', 'İbn Ebî Şeybe', 'el-Hallâl', 'Hallâl', 'eş-Şâfiî', 'Şâfiî', 'el-Buhârî', 'Buhârî', 'Harb b. İsmâîl', 'Harb el-Kirmânî', 'İbn Batta']);
 const raviLoad = () => RAVI.p || (RAVI.p = fetch('ravi.json').then(r => { if (!r.ok) throw new Error('ravi.json'); return r.json(); }).then(D => { RAVI.data = D; RAVI.skip = new Set(D.x || []); return D; }).catch(e => { RAVI.p = null; throw e; }));
 raviLoad().catch(() => {});
 function raviOpen(name) {
@@ -3425,7 +3425,7 @@ const raviChip = (name, v) => {
   const top = el('span', 'ravi-chip-n', name);
   if (n) top.append(el('small', null, ' ' + n));
   b.append(top);
-  if (RAVI.skip.has(name) || RAVI_AKRABA.test(name) || RAVI_MUELLIF.has(name)) { b.classList.add('plain'); b.disabled = true; }
+  if (RAVI.skip.has(name) || RAVI_AKRABA.test(name) || RAVI_MUELLIF.has(name) || (RAVI.data && !RAVI.data.r[name])) { b.classList.add('plain'); b.disabled = true; }
   else b.addEventListener('click', () => raviOpen(name));
   return b;
 };
@@ -3441,7 +3441,7 @@ function raviRows(obj) {
     const t = el('span', 'ravi-row-t'); t.append(el('b', null, name));
     if (Array.isArray(v) && v[1] && Object.keys(v[1]).length) t.append(el('small', null, Object.entries(v[1]).map(([sg, k]) => k > 1 ? `${sg} ×${k}` : sg).join(' · ')));
     b.append(t, el('span', 'ravi-row-n', fmt(n || 0)));
-    if (RAVI.skip.has(name) || RAVI_AKRABA.test(name) || RAVI_MUELLIF.has(name)) { b.classList.add('plain'); b.disabled = true; }
+    if (RAVI.skip.has(name) || RAVI_AKRABA.test(name) || RAVI_MUELLIF.has(name) || (RAVI.data && !RAVI.data.r[name])) { b.classList.add('plain'); b.disabled = true; }
     else b.addEventListener('click', () => raviOpen(name));
     return b;
   };
@@ -3542,7 +3542,7 @@ async function raviRender(name) {
     pane.replaceChildren(panes[k]);
   }
   tab(RAVI.tab && TABS.some(([k, , n]) => k === RAVI.tab && n) ? RAVI.tab : (TABS.find(([, , n]) => n) || TABS[2])[0]);
-  RAVI.body.append(el('p', 'ravi-by', 'Yalnızca kütüphanedeki eserlerin kendi senedlerinden; râvi hakkında dışarıdan bilgi ya da hüküm eklenmemiştir. Aynı ad farklı kişilere ait olabilir; sîga dökümü yalnız isnad standardına getirilmiş kitaplarda (şimdilik Sünen-i Ebî Dâvûd) vardır.'));
+  RAVI.body.append(el('p', 'ravi-by', 'Yalnızca kütüphanedeki eserlerin kendi senedlerinden; râvi hakkında dışarıdan bilgi ya da hüküm eklenmemiştir. Aynı ad farklı kişilere ait olabilir; sîga dökümü râvi paneli bulunan kitapların (Musannef hariç) zincirlerinden gelir.'));
 }
 
 function navRecord() {

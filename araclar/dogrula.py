@@ -19,7 +19,22 @@ R = Path(__file__).resolve().parents[1]
 RAVI = R / 'araclar' / 'ravi' / 'ravi.json'
 
 # Zincirin başındaki müellif (c[0]). Yeni kitaplık eklenince buraya yazılır.
-MUELLIF = {'sunan': 'Ebû Dâvûd', 'musned': 'Ahmed b. Hanbel', 'seria': 'el-Âcurrî'}
+MUELLIF = {
+    'sunan': 'Ebû Dâvûd',
+    'musned': ('Ahmed b. Hanbel', 'Abdullah b. Ahmed'),
+    'seria': 'el-Âcurrî',
+    'ibnebiseybe': 'İbn Ebî Şeybe',
+    'ahmed': ('Ahmed b. Hanbel', 'Abdullah b. Ahmed'),
+    'zuhd': ('Ahmed b. Hanbel', 'Abdullah b. Ahmed'),
+    'fezail': ('Ahmed b. Hanbel', 'Abdullah b. Ahmed'),
+    'acurri': 'el-Âcurrî',
+    'hallal': 'el-Hallâl',
+    'safii': 'eş-Şâfiî',
+    'buhari': 'el-Buhârî',
+    'ebudavud': 'Ebû Dâvûd',
+    'harb': 'Harb b. İsmâîl',
+    'ibane': 'İbn Batta',
+}
 # Müellifin metin içi notlarının Arapça ve Türkçe kalıbı (sayıları eşleşmeli)
 MUELLIF_NOT = {'sunan': (r'قال أبو داود', r'Ebû Dâvûd (?:dedi|der|şöyle)'),
                'seria': (r'قال محمد بن الحسين', r'(?:Âcurrî|Muhammed b\. el-Hüseyn) (?:dedi|der|şöyle)'),
@@ -92,7 +107,7 @@ def madde_denetle(rp, lib, dosya, h, ravi, bab_i):
         rp.h('(?) kalmış', yer)
     if '|' in metin or '|' in sened:
         rp.h('| karakteri', yer)
-    if re.search(r'ﷺ[’\']', metin + sened):
+    if re.search(r'ﷺ[’\'][A-Za-zÂÎÛÇŞĞİÖÜâîûçşğiöü]', metin + sened):
         rp.h('ﷺ’den sonra ek', yer)
     if YASAK.search(metin):
         rp.h('yasak kalıp', yer)
@@ -101,6 +116,7 @@ def madde_denetle(rp, lib, dosya, h, ravi, bab_i):
     if ziyade not in (0, 1, 2, 3):
         rp.h('ziyade alanı', yer, repr(ziyade))
     muellif = MUELLIF.get(lib)
+    muellifler = (muellif,) if isinstance(muellif, str) else tuple(muellif or ())
 
     # --- sened satırı ---
     if sened:
@@ -119,7 +135,7 @@ def madde_denetle(rp, lib, dosya, h, ravi, bab_i):
             rp.h('zincir Nebî ile bitiyor', yer, sened[:80])
         if '(aynı sened)' in sened or 'aynı sened' in sened:
             rp.h('senedde sahte halka', yer, sened[:80])
-        if muellif and yollar and yollar[0] and yollar[0][0] == muellif:
+        if muellifler and yollar and yollar[0] and yollar[0][0] in muellifler:
             rp.h('müellif sened satırında', yer)
     # --- info / râvi paneli ---
     zs = info_zincirleri(info)
@@ -146,7 +162,7 @@ def madde_denetle(rp, lib, dosya, h, ravi, bab_i):
             if len(z) < 3 or len(z) % 2 == 0:
                 rp.h('panel zinciri biçimi', yer, f'{i + 1}. yol {len(z)} öğe')
                 continue
-            if muellif and z[0] != muellif:
+            if muellifler and z[0] not in muellifler:
                 rp.h('panel müellifle başlamıyor', yer, z[0])
             kotu = [s for s in z[1::2] if s not in SIGALAR]
             if kotu:

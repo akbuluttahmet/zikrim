@@ -8,13 +8,23 @@ Her oturum: önce `SPEC.md`, sonra bu dosya. Bitince burayı güncelle (kitap, s
 |---|---|---|---|
 | Sünen-i Ebî Dâvûd (`sunan/`) | isnad standardı (SPEC) | **tamamlandı** — 40/40 bölüm, 5275 madde (2026-10-29) | `dogrula.py`: 0 hata, 106 uyarı (aşağıda) |
 | eş-Şerîa (`seria/`) | isnad standardı (SPEC) | **tamamlandı** — 17/17 bölüm, 2169 madde (2026-10-29) | `dogrula.py`: 0 hata, 423 uyarı (sened temizliği 2026-10-29) |
+| ez-Zühd (`zuhd/`) | isnad standardı (SPEC) | **tamamlandı** — 8/8 bölüm, 2375 madde (2026-10-29) | `dogrula.py`: 0 hata |
+| Fezâilü’s-sahâbe (`fezail/`) | isnad standardı (SPEC) | **tamamlandı** — 9/9 bölüm, 1965 madde (2026-10-29) | `dogrula.py`: 0 hata |
+| İmam Ahmed (`ahmed/`) | isnad standardı (SPEC) | **tamamlandı** — 9/9 kitap, 2117 madde (2026-10-29) | `dogrula.py`: 0 hata |
+| el-Âcurrî (`acurri/`) | isnad standardı (SPEC) | **tamamlandı** — 12/12 kitap, 825 madde (2026-10-29) | `dogrula.py`: 0 hata |
+| İbn Ebî Şeybe (`ibnebiseybe/`) | isnad standardı (SPEC) | **tamamlandı** — 2/2 kitap, 642 madde (2026-10-29) | `dogrula.py`: 0 hata |
+| el-Hallâl (`hallal/`) | isnad standardı (SPEC) | **tamamlandı** — 7/7 kitap, 372 madde (2026-10-29) | `dogrula.py`: 0 hata |
+| eş-Şâfiî (`safii/`) | isnad standardı (SPEC) | **tamamlandı** — 1/1 kitap, 547 madde (2026-10-29) | `dogrula.py`: 0 hata |
+| el-Buhârî (`buhari/`) | isnad standardı (SPEC) | **tamamlandı** — 2/2 kitap, 307 madde (2026-10-29) | `dogrula.py`: 0 hata |
+| el-İbâne (`ibane/`) | isnad standardı (SPEC) | **tamamlandı** — 1/4 kitap, 146 madde (2026-10-29) | `dogrula.py`: 0 hata |
+| Ebû Dâvûd (`ebudavud/`), Harb (`harb/`), el-Berbehârî (`berbehari/`) | isnad standardı (SPEC) | **tamamlandı** — 243 madde (2026-10-29) | `dogrula.py`: 0 hata |
 | Müsned (`musned/`) | eski biçim (4 bölüm, 561/1380 çevrili) | **baştan yapılacak**, Sünen standardıyla | Şuayb el-Arnaût neşri, Şâmile 25794; ziyade işaretleri (1/2/3) korunur; `c[0]` müellif kararı aşağıda |
-| Diğer kitaplıklar | eski biçim (`info` yok ya da kısmi) | daha sonra standarda getirilecek | `CLAUDE.md` “Kaynaklar” |
+| el-Musannef (`musannef/`) | eski biçim (17/40 kitap, 16 352 madde; sened var, panel yok) | daha sonra standarda getirilecek | `CLAUDE.md` “Kaynaklar” |
 
 ## Araçlar (hazır)
 
 - `SPEC.md` — şartname (format, sîga sözlüğü, şema, 5 örnek, oturum akışı).
-- `araclar/ravi/ravi_kur.py` → `araclar/ravi/ravi.json` + `ravi.json` — bütün kitaplıklardan 16 260 râvi kaydı (Sünen sîgalı, ötekiler sened satırından sîgasız; 2026-10-29). Her derlemeden sonra `python3 araclar/ravi/ravi_kur.py` ile yenilenir.
+- `araclar/ravi/ravi_kur.py` → `araclar/ravi/ravi.json` + `ravi.json` — bütün kitaplıklardan 16 151 râvi kaydı, 37 496 hoca-öğrenci kenarı (Musannef dışındaki tüm kitaplıklar panelli ve sîgalı; 2026-10-29). Her derlemeden sonra `python3 araclar/ravi/ravi_kur.py` ile yenilenir.
 - `araclar/dogrula.py <kitaplık> [--ravi] [--hepsi] [--json rapor.json]` — yayımlanmış verinin şartname denetimi. Hata = yayımlanmaz; uyarı = göz listesi. Sened satırında `(yine)`, `(metinde böyle)`, yer/zaman notu, ad sonunda `—`, `; ayrıca` dışı `;`, `rahimehullah` ve zincir sonunda Nebî/Resûlullah da hatadır (2026-10-29).
 - `araclar/sunan/` — çalışma dosyası araçları (`denetle.py`, `derle.py`), kılavuz, sözlük.
 
@@ -39,6 +49,7 @@ Râvi sayfası ve `dogrula.py` yalnız `info.c` zinciri olan kitapları görür;
 
 ## Günlük
 
+- 2026-10-29 — Musannef ve Müsned dışındaki tüm kitaplıklar (`ibnebiseybe`, `ahmed`, `zuhd`, `fezail`, `acurri`, `hallal`, `safii`, `buhari`, `ebudavud`, `harb`, `ibane`, `berbehari` — `sunan` ve `seria` ile birlikte 14 kitaplık, 16 983 madde) `SPEC.md` isnad ve râvi paneli standardına getirildi (`dogrula.py --ravi`: 0 hata); `ravi.json` ve râvi sayfası güncellendi (16 151 râvi, 37 496 sîgalı kenar).
 - 2026-10-29 — Genel denetim: sw.js çevrimdışı hatası ve ayrı veri önbelleği, bildirimde Sünen adı, Âcurrî ad birliği, `index.json` `t/n` kesirli maddeleri sayar (6 kitaplık), `dogrula.py` yeni sened denetimleri + eş-Şerîa sened temizliği, 427 “ﷺ’e” ek düzeltmesi (Musannef), README yeniden yazıldı, ölü CSS silindi, manifest kısayolları.
 
 - 2026-10-29 — Geri dönüş çubuğu: kitaba dışarıdan gelince üstte “‹ geldiği yer” çubuğu.
