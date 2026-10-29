@@ -3419,29 +3419,38 @@ function raviClose(after) {
   if (RAVI.pushed) { RAVI.after = after || null; history.back(); } else raviHide(after);
 }
 $('#raviBack').addEventListener('click', () => { if (RAVI.stack.length) { RAVI.cur = RAVI.stack.pop(); RAVI.el.scrollTop = 0; raviRender(RAVI.cur); } else raviClose(); });
-// Çip: ad · sayı; v = [n, {sîga: n}] ise altında sîga dökümü (hangi lafızla kaç kez)
+// Çip: ad · sayı (yalnız aynı adın kısa/tam yazımlarında)
 const raviChip = (name, v) => {
   const b = el('button', 'ravi-chip'); b.type = 'button';
   const n = Array.isArray(v) ? v[0] : v;
   const top = el('span', 'ravi-chip-n', name);
   if (n) top.append(el('small', null, ' ' + n));
   b.append(top);
-  if (Array.isArray(v) && v[1] && Object.keys(v[1]).length) b.append(el('span', 'ravi-chip-s', Object.entries(v[1]).map(([sg, k]) => k > 1 ? `${sg} ×${k}` : sg).join(' · ')));
   if (RAVI.skip.has(name) || RAVI_AKRABA.test(name) || RAVI_MUELLIF.has(name)) { b.classList.add('plain'); b.disabled = true; }
   else b.addEventListener('click', () => raviOpen(name));
   return b;
 };
-function raviChips(title, obj) {
+// Satır listesi: ad, altında sîga dökümü (hangi lafızla kaç kez), sağda sayı; zincirdeki komşuluk (hoca/öğrenci hükmü değil)
+function raviRows(obj) {
   const keys = Object.keys(obj || {});
-  if (!keys.length) return null;
-  const sec = el('section', 'ravi-sec');
-  const h = el('h3', 'ravi-h', `${title} `); h.append(el('small', null, String(keys.length))); sec.append(h);
-  const box = el('div', 'ravi-chips');
-  const show = k => { for (const nm of keys.slice(box._n || 0, k)) box.append(raviChip(nm, obj[nm])); box._n = k; };
-  show(24);
-  sec.append(box);
-  if (keys.length > 24) { const m = el('button', 'chip-button ravi-more', `Hepsini göster (${keys.length})`); m.type = 'button'; m.addEventListener('click', () => { show(keys.length); m.remove(); }); sec.append(m); }
-  return sec;
+  const wrap = el('div');
+  if (!keys.length) { wrap.append(el('p', 'empty', 'Senedlerde kayıt yok.')); return wrap; }
+  const box = el('div', 'ravi-rows');
+  const row = (name, v) => {
+    const n = Array.isArray(v) ? v[0] : v;
+    const b = el('button', 'ravi-row'); b.type = 'button';
+    const t = el('span', 'ravi-row-t'); t.append(el('b', null, name));
+    if (Array.isArray(v) && v[1] && Object.keys(v[1]).length) t.append(el('small', null, Object.entries(v[1]).map(([sg, k]) => k > 1 ? `${sg} ×${k}` : sg).join(' · ')));
+    b.append(t, el('span', 'ravi-row-n', fmt(n || 0)));
+    if (RAVI.skip.has(name) || RAVI_AKRABA.test(name) || RAVI_MUELLIF.has(name)) { b.classList.add('plain'); b.disabled = true; }
+    else b.addEventListener('click', () => raviOpen(name));
+    return b;
+  };
+  const show = k => { for (const nm of keys.slice(box._n || 0, k)) box.append(row(nm, obj[nm])); box._n = k; };
+  show(30);
+  wrap.append(box);
+  if (keys.length > 30) { const m = el('button', 'chip-button ravi-more', `Hepsini göster (${keys.length})`); m.type = 'button'; m.addEventListener('click', () => { show(keys.length); m.remove(); }); wrap.append(m); }
+  return wrap;
 }
 async function raviRender(name) {
   RAVI.title.textContent = name;
@@ -3452,26 +3461,16 @@ async function raviRender(name) {
   const r = D.r[name];
   RAVI.body.replaceChildren();
   if (!r) { RAVI.body.append(el('p', 'empty', 'Bu ad için zincir kaydı yok.')); return; }
-  const [ar, sayi, hocalar, ogrenciler, hadisler, rol] = r;
-  const libs = Object.keys(hadisler);
+  const [ar, sayi, aldigi, verdigi, hadisler, rol] = r;
+  const libs = Object.keys(hadisler).filter(v => LIBS[v]);
   const libCount = v => hadisler[v].reduce((t, [, nos]) => t + nos.length, 0);
-  // Başlık: Arapça ad, özet sayılar, kitaplara dağılım
-  const head = el('div', 'ravi-head');
+  // Profil kartı: Arapça ad, sayılar, kitap pilleri, senedde yeri, aynı adın yazımları
+  const head = el('div', 'ravi-card');
   if (ar && ar.length) { const p = el('p', 'ravi-ar', ar.join(' · ')); p.lang = 'ar'; p.dir = 'rtl'; head.append(p); }
   const stats = el('div', 'ravi-stats');
   const stat = (n, l) => { const d = el('div', 'ravi-stat'); d.append(el('b', null, fmt(n)), el('span', null, l)); return d; };
-  stats.append(stat(sayi, 'rivayet'), stat(libs.length, libs.length === 1 ? 'kitap' : 'kitap'), stat(Object.keys(hocalar).length, 'rivayet aldığı kişi'), stat(Object.keys(ogrenciler).length, 'rivayet verdiği kişi'));
+  stats.append(stat(sayi, 'rivayet'), stat(libs.length, 'kitap'), stat(Object.keys(aldigi).length + Object.keys(verdigi).length, 'komşu râvi'));
   head.append(stats);
-  if (libs.length) {
-    const row = el('div', 'ravi-libs');
-    for (const v of libs) {
-      const c = el('button', 'ravi-lib'); c.type = 'button';
-      c.append(el('span', null, LIB_NAMES[v] || v), el('small', null, String(libCount(v))));
-      c.addEventListener('click', () => { const t = RAVI.body.querySelector(`[data-lib="${v}"]`); if (t) { t.open = true; t.scrollIntoView({block: 'start', behavior: 'smooth'}); } });
-      row.append(c);
-    }
-    head.append(row);
-  }
   if (rol) {
     const parts = [];
     if (rol.hoca) parts.push(`${fmt(rol.hoca)} senedde müellifin doğrudan rivayet aldığı kişi`);
@@ -3479,20 +3478,32 @@ async function raviRender(name) {
     if (rol.son) parts.push(`${fmt(rol.son)} senedde son halka`);
     if (parts.length) head.append(el('p', 'ravi-n', parts.join(' · ')));
   }
+  if (libs.length) {
+    const row = el('div', 'ravi-libs');
+    for (const v of libs) {
+      const c = el('button', 'ravi-lib'); c.type = 'button';
+      c.append(el('span', null, LIB_NAMES[v] || v), el('small', null, String(libCount(v))));
+      c.addEventListener('click', () => { tab('riv'); const t = RAVI.body.querySelector(`[data-lib="${v}"]`); if (t) { t.open = true; t.scrollIntoView({block: 'start', behavior: 'smooth'}); } });
+      row.append(c);
+    }
+    head.append(row);
+  }
   const fam = (D.t[name] || []).filter(x => x !== name && D.r[x]);
   if (fam.length) { const p = el('div', 'ravi-fam'); p.append(el('span', 'ravi-fam-h', 'Bu adın kısa ya da tam yazımları (aynı kişi olmayabilir): ')); for (const x of fam) p.append(raviChip(x, D.r[x][1])); head.append(p); }
   RAVI.body.append(head);
-  // Senedlerde kimden aldı, kime verdi: zincirdeki komşuluk (hoca/öğrenci hükmü değil); sayı ve sîga dökümüyle
-  const h1 = raviChips('Rivayet aldıkları', hocalar), h2 = raviChips('Rivayet verdikleri', ogrenciler);
-  if (h1) RAVI.body.append(h1);
-  if (h2) RAVI.body.append(h2);
-  // Rivayetleri: kitaplığa göre katlanır bölümler; içinde kitap adı ve numara düğmeleri
-  if (libs.length) {
-    const sec = el('section', 'ravi-sec');
-    const hh = el('h3', 'ravi-h', 'Rivayetleri '); hh.append(el('small', null, fmt(sayi))); sec.append(hh);
-    RAVI.body.append(sec);
+  // Sekmeler: Aldıkları · Verdikleri · Rivayetleri (seçim râviler arasında gezerken korunur)
+  const TABS = [['al', 'Aldıkları', Object.keys(aldigi).length], ['ver', 'Verdikleri', Object.keys(verdigi).length], ['riv', 'Rivayetleri', sayi]];
+  const seg = el('div', 'ravi-seg'), pane = el('div', 'ravi-pane');
+  const btns = {};
+  for (const [k, l, n] of TABS) { const b = el('button', null, l + ' '); b.type = 'button'; b.append(el('small', null, fmt(n))); b.addEventListener('click', () => tab(k)); btns[k] = b; seg.append(b); }
+  RAVI.body.append(seg, pane);
+  const panes = {};
+  const build = k => {
+    if (k === 'al') { const w = el('div'); w.append(el('p', 'ravi-hint', 'Senedlerde bu râvinin rivayet aldığı kişiler (zincirde ondan sonraki halka).'), raviRows(aldigi)); return w; }
+    if (k === 'ver') { const w = el('div'); w.append(el('p', 'ravi-hint', 'Senedlerde bu râviden rivayet eden kişiler (zincirde ondan önceki halka).'), raviRows(verdigi)); return w; }
+    const sec = el('div');
     for (const [i, v] of libs.entries()) {
-      const L = LIBS[v]; if (!L) continue;
+      const L = LIBS[v];
       const d = el('details', 'ravi-lib-d'); d.dataset.lib = v;
       const sum = el('summary'); sum.append(el('span', 'ravi-lib-t', LIB_NAMES[v] || v), el('small', null, `${libCount(v)} rivayet`));
       d.append(sum); sec.append(d);
@@ -3517,13 +3528,21 @@ async function raviRender(name) {
       d.addEventListener('toggle', () => { if (d.open) fill(); });
       if (d.open) fill();
     }
+    const temelAd = name.replace(/\s*\(.*?\)/g, '').trim();
+    if (!RAVI.skip.has(name)) {
+      const sb = el('button', 'chip-button ravi-ara', `🔍 Bütün kütüphanede senedde ara: ${temelAd}`); sb.type = 'button';
+      sb.addEventListener('click', () => { ARA.scope = 'sened'; store.set('zikrim-ara-kapsam', 'sened'); raviClose(() => araOpen(temelAd)); });
+      sec.append(sb);
+    }
+    return sec;
+  };
+  function tab(k) {
+    RAVI.tab = k;
+    for (const [kk] of TABS) btns[kk].classList.toggle('on', kk === k);
+    if (!panes[k]) panes[k] = build(k);
+    pane.replaceChildren(panes[k]);
   }
-  const temelAd = name.replace(/\s*\(.*?\)/g, '').trim();
-  if (!RAVI.skip.has(name)) {
-    const sb = el('button', 'chip-button ravi-ara', `🔍 Bütün kütüphanede senedde ara: ${temelAd}`); sb.type = 'button';
-    sb.addEventListener('click', () => { ARA.scope = 'sened'; store.set('zikrim-ara-kapsam', 'sened'); raviClose(() => araOpen(temelAd)); });
-    RAVI.body.append(sb);
-  }
+  tab(RAVI.tab && TABS.some(([k, , n]) => k === RAVI.tab && n) ? RAVI.tab : (TABS.find(([, , n]) => n) || TABS[2])[0]);
   RAVI.body.append(el('p', 'ravi-by', 'Yalnızca kütüphanedeki eserlerin kendi senedlerinden; râvi hakkında dışarıdan bilgi ya da hüküm eklenmemiştir. Aynı ad farklı kişilere ait olabilir; sîga dökümü yalnız isnad standardına getirilmiş kitaplarda (şimdilik Sünen-i Ebî Dâvûd) vardır.'));
 }
 
