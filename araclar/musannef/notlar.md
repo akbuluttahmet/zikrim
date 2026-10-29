@@ -60,3 +60,8 @@
 - 10492 üç rivayet birleşik (düzyazıyla). Başlıksız bablar: 10466, 10556. 10611, 10617 maddenin başında âyet yeri kalmış (notlu).
 - Sened (Arapçadaki gibi): 10372 “حدثنا أبو بكر عن عمر”, 10381 “وروي عن أبي إسحاق”, 10689 sened ortasında “حدثنا أبو بكر قال:”, 10504 “أبا أسامة”, 10594 “مغفل” (başka yerde “معقل”), 10599 “أبو دواد”, 10623 “ابن مهدي، عن سفيان، وغندر، وشعبة”, 10782 “عمر بن الوليد المثنى”.
 - Bozuk/şüpheli (notlu): 10626, 10656, 10718, 10726, 10766, 10771, 10783, 10788.
+
+## k05 Zekât (p046–p053, 9802–10301)
+- Metne karışan “حدثنا أبو بكر قال:”: 9803. Belirsiz anlatı: 9817. 9818 son halka “Resûlullah'ı işiten biri”. 10132 sorulan kişinin adı yok.
+- Sened (Arapçadaki gibi): 9970 ilk râvi düşmüş (“حدثنا عن ليث”, `…`), 10003, 10016, 10179, 10184, 10198, 10221, 10231, 10253, 10268, 10321; 9964, 10313 “حدثنا أبو بكر عن …”.
+- Bozuk/şüpheli (notlu): 9985, 10044, 10094, 10146, 10253, 10279, 10310. Başlıksız bablar: 9880, 10090.
