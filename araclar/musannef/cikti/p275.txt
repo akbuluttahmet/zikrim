@@ -1,8 +1,8 @@
 @ Cinayet işleyen kadın
 
-27409 | Abdullah b. el-Mübârek → Ma‘mer → Zührî | Zührî dedi ki: Mugîre b. Şu‘be dedi ki: Resûlullah ﷺ buyurdu: “Kadının diyetini asabesi öder, ona da oğulları mirasçı olur.”
-& haddesenâ, an, an
-^ قال: قال المغيرة
+27409 | Abdullah b. el-Mübârek → Ma‘mer → Zührî → Mugîre b. Şu‘be | Mugîre b. Şu‘be dedi ki: Resûlullah ﷺ buyurdu: “Kadının diyetini asabesi öder, ona da oğulları mirasçı olur.”
+& haddesenâ, an, an, kâle
+^ قال رسول الله
 
 27410 | Hüşeym → İsmâîl b. Sâlim → Şa‘bî | Şa‘bî’den; (İsmâîl) dedi ki: Onu şöyle derken işittim: “Kadının erkek çocuğu, onun azatlılarının mirasına asabesinden daha lâyıktır; bir cinayet olursa onun diyetini asabesi öder.”
 & haddesenâ, an, an
@@ -160,9 +160,9 @@
 & haddesenâ, an, an, an, an
 ^ قال: كان يقول
 
-27445 | Vekî‘ → Süfyân → Ali b. Ebî Talha → Kâsım b. Abdurrahmân → Abdullah | Kâsım b. Abdurrahmân dedi ki: Abdullah dedi ki: “Kimin ahdi ya da zimmeti varsa onun diyeti hür Müslümanın diyetidir.”
+27445 | Vekî‘ → Süfyân → Ali b. Ebî Talha → Kâsım b. Abdurrahmân → Abdullah | Abdullah dedi ki: “Kimin ahdi ya da zimmeti varsa onun diyeti hür Müslümanın diyetidir.”
 & haddesenâ, haddesenâ, an, an, kâle
-^ قال: قال عبد الله
+^ «من كان له عهد
 
 27446 | Ebû Üsâme → Ebü’l-Umeys → Hammâd → İbrâhîm → Alkame | Alkame dedi ki: “Muâhedin diyeti Müslümanın diyeti gibidir.”
 & haddesenâ, an, an, an, an

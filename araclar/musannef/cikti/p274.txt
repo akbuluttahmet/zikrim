@@ -219,9 +219,9 @@
 
 @ Salıverilmiş ya da kaçmış hayvanın bir insana isabet etmesi
 
-27389 | Hafs → Haccâc → Kâsım b. Nâfi‘ | Kâsım b. Nâfi‘ dedi ki: Ömer dedi ki: “Kaçmış (hayvanın) isabet ettiğinden dolayı sahibine tazmin yoktur; kaçmış (hayvana) isabet eden ise tazmin eder.”
-& haddesenâ, an, an
-^ قال: قال عمر
+27389 | Hafs → Haccâc → Kâsım b. Nâfi‘ → Ömer | Ömer dedi ki: “Kaçmış (hayvanın) isabet ettiğinden dolayı sahibine tazmin yoktur; kaçmış (hayvana) isabet eden ise tazmin eder.”
+& haddesenâ, an, an, kâle
+^ «ما أصاب المنفلت
 
 27390 | Abdüsselâm → Amr → Hasan ve İbn Sîrîn | Hasan ve İbn Sîrîn, (bir şeye) isabet eden salıverilmiş hayvan hakkında dediler ki: “Ona tazmin yoktur.”
 & haddesenâ, an, an
@@ -282,9 +282,9 @@
 
 @ Efendisinin izni olmadan köleden yardım isteyen adam
 
-27403 | Hafs → Haccâc → Hakem | Hakem dedi ki: Ali dedi ki: “Kim bir kavmin küçük ya da büyük kölesini çalıştırırsa tazmin eder.”
-& haddesenâ, an, an
-^ قال: قال علي
+27403 | Hafs → Haccâc → Hakem → Ali | Ali dedi ki: “Kim bir kavmin küçük ya da büyük kölesini çalıştırırsa tazmin eder.”
+& haddesenâ, an, an, kâle
+^ «من استعمل
 
 27404 | Şerîk → Câbir → Âmir → Ali | Ali dedi ki: “Kim hür ya da köle bir küçükten yardım ister de (küçük) zarar görürse tazmin eder; kim büyükten yardım isterse tazmin etmez.”
 & haddesenâ, an, an, an

@@ -25,9 +25,9 @@
 & haddesenâ, an, an
 ^ قال: «لا يقتل الرجل
 
-27477 | Vekî‘ → İsrâîl → Câbir → Âmir | Âmir dedi ki: Ali dedi ki: “Müslümanın kâfir, hürün de köle karşılığında öldürülmemesi sünnettendir.”
-& haddesenâ, an, an, an
-^ قال: قال علي
+27477 | Vekî‘ → İsrâîl → Câbir → Âmir → Ali | Ali dedi ki: “Müslümanın kâfir, hürün de köle karşılığında öldürülmemesi sünnettendir.”
+& haddesenâ, an, an, an, kâle
+^ «من السنة
 
 @ Kadını kasten öldüren adam hakkında
 
