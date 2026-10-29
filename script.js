@@ -2700,9 +2700,10 @@ function renderFocus() {
   $('#fArabic').textContent = z.arabic;
   $('#fArabic').hidden = !z.arabic;
   $('#fCount').textContent = fmt(c);
-  $('#fTarget').textContent = '/ ' + fmt(z.target);
+  // Hedef sayısı yazılmaz; yalnız çekilen sayı görünür (halka ilerlemeyi gösterir)
+  $('#fTarget').hidden = true;
   const rounds = Math.floor(c / z.target);
-  $('#fDone').textContent = rounds >= 2 ? `✓ ${rounds}. tur tamam` : rounds === 1 ? '✓ Tamamlandı' : '';
+  $('#fDone').textContent = rounds >= 2 ? `✓ ${rounds}. tur tamam` : rounds === 1 ? '✓ Tamamladım' : '';
   const frac = c === 0 ? 0 : (c % z.target === 0 ? 1 : (c % z.target) / z.target);
   const ring = $('#fRing');
   ring.style.strokeDasharray = RING;
