@@ -19,7 +19,7 @@ Her oturum: önce `SPEC.md`, sonra bu dosya. Bitince burayı güncelle (kitap, s
 | el-İbâne (`ibane/`) | isnad standardı (SPEC) | **tamam** — 22/22 bölüm (i01–i22), 3134 madde (2026-10-29) | `dogrula.py`: 0 hata, 163 uyarı |
 | Ebû Dâvûd (`ebudavud/`), Harb (`harb/`), el-Berbehârî (`berbehari/`) | isnad standardı (SPEC) | **tamamlandı** — 243 madde (2026-10-29) | `dogrula.py`: 0 hata, 1 uyarı (berbehari ﷺ) |
 | Müsned (`musned/`) | isnad standardı (SPEC) | **sürüyor** — m001 tamamlandı (1–81, 81/81), m002 p006–p012 (82–207) çevrildi; toplam 207/1380 madde (2026-10-29) | `dogrula.py` (1–207): 0 hata, 0 kısa, 0 sîga; m002–m003 bölüm bitene kadar korundu |
-| el-Musannef (`musannef/`) | eski biçim (17/40 kitap, 16 352 madde; sened var, panel yok) | daha sonra standarda getirilecek | `CLAUDE.md` “Kaynaklar” |
+| el-Musannef (`musannef/`) | isnad standardı (SPEC) | **standarda geçti** — 24/38 kitap, 16 352 madde paneli (2026-10-29); 14 kitap (≈21 600 madde) çeviri sürüyor (`araclar/musannef/`) | `dogrula.py`: 0 hata; 1365 metin başı (çoğu `babası`/`Benzeri`), 133 sîga, 104 k, 5 kısa uyarısı |
 | Leys b. Sa‘d (`leys/`) | isnad standardı (SPEC) | **tamamlandı** — 1/1 kitap (Fevâidü'l-Leys), 8 madde (2026-10-29) | `dogrula.py --ravi`: 0 hata, 0 uyarı; paneller elle |
 | ez-Zührî (`zuhri/`) | isnad standardı (SPEC) | **tamamlandı** — 2/2 kitap (en-Nâsih ve'l-mensûh 49, Tenzîlü'l-Kur’ân 118 madde) (2026-10-29) | `dogrula.py --ravi`: 0 hata, 0 uyarı; paneller elle |
 | Hemmâm b. Münebbih (`hemmam/`) | isnad standardı (SPEC) | **tamamlandı** — 1/1 kitap (es-Sahîfe), 140 madde (2026-10-29) | `dogrula.py --ravi`: 0 hata, 0 uyarı; `k = 0` (Arapçada isnad yok) |
@@ -69,6 +69,8 @@ Hepsi: `python3 araclar/dogrula.py <kitaplık> --hepsi`. Sayılar yukarıdaki ta
 - Sîga eşlemesinin kendi raporu: `araclar/siga_hizala_rapor.md` (195 lafzı bulunamayan halka, 83 belirsiz hizalama).
 
 ## Günlük
+
+- 2026-10-29 — Musannef râvi paneli standardına geçirildi: `standarda_getir.py musannef` (nüsha senedi → `n`), `siga_hizala.py musannef` (10 380 panel; 1 035 halka lafızsız, rapor oturum dosyasında), 9 sened hatası elle düzeltildi; `c[0] = İbn Ebî Şeybe` (`dogrula.py`, `ravi_kur.py` MUELLIF; ONEK `حدثنا أبو بكر قال:`). Kalan 14 kitabın kaynağı `araclar/musannef/kaynak.json` (OpenITI 9944, harekesiz).
 
 - 2026-10-29 — Müsned (`musned/`): `araclar/musned/` kuruldu; Ebû Bekir Müsnedi (`m001.json`, 1–81) tamamen derlendi ve Ömer Müsnedi (`m002`, `p006–p012`, 82–207) çevrilerek toplam 207 madde `dogrula.py` (0 hata) ile doğrulandı.
 - 2026-10-29 — `dogrula.py` “çeviri kısa olabilir” oranı harekesiz ve nüsha/müellif öneği düşülmüş Arapçaya göre (eşik 0,75 aynı; sadık çevirilerde medyan ≈1,3). Müsned 143 → 1, 12 kitaplık 17 → 6 uyarı.

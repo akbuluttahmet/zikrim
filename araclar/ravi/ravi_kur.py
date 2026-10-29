@@ -37,6 +37,7 @@ MUELLIF = {
     'leys': 'Leys b. Sa‘d',
     'zuhri': 'ez-Zührî',
     'hemmam': 'Hemmâm b. Münebbih',
+    'musannef': 'İbn Ebî Şeybe',
     'ibnvehb': 'İbn Vehb',
 }
 

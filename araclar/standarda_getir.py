@@ -35,6 +35,7 @@ MUELLIF = {
     'ebudavud': 'Ebû Dâvûd',
     'harb': 'Harb b. İsmâîl',
     'ibane': 'İbn Batta',
+    'musannef': 'İbn Ebî Şeybe',
 }
 
 AR_DIA = re.compile(r'[\u064B-\u0652\u0670\u0640]')
@@ -506,6 +507,13 @@ def process_item(lib, fname, h):
                 c0, strip_n = 'Ahmed b. Hanbel', 1
             elif len(p) >= 2 and p[0] in ('Abdullah', 'Abdullah b. Ahmed', 'Abdullah b. Ahmed b. Hanbel'):
                 c0, strip_n = 'Abdullah b. Ahmed', 1
+        elif lib == 'musannef':
+            # Nüsha senedi (Abdullah b. Yûnus → Bakî b. Mahled →) Ebû Bekir İbn Ebî Şeybe: halka değil, nota
+            NUSHA = re.compile(r'Bak[iīî]\b|Bakī|Abdullah b\. Yûnus|Ebî Şeybe|^Ebû Bekir$|^Ebû Bekir \(İbn Ebî Şeybe\)')
+            while strip_n < len(p) - 1 and NUSHA.search(p[strip_n]):
+                strip_n += 1
+            if strip_n:
+                all_notes.insert(0, 'Nüsha senedi: ' + ' → '.join(p[:strip_n]) + '.')
         else:
             if len(p) >= 2 and p[0] == muellif:
                 c0, strip_n = muellif, 1

@@ -39,6 +39,7 @@ MUELLIF = {
     'zuhri': ('ez-Zührî', 'İbrâhîm b. el-Hüseyin el-Hemedânî'),
     'hemmam': 'Hemmâm b. Münebbih',
     'ibnvehb': 'İbn Vehb',
+    'musannef': 'İbn Ebî Şeybe',
 }
 # Müellifin metin içi notlarının Arapça ve Türkçe kalıbı (sayıları eşleşmeli)
 MUELLIF_NOT = {'sunan': (r'قال أبو داود', r'Ebû Dâvûd (?:dedi|der|şöyle)'),
@@ -72,6 +73,8 @@ _AHMED = [
     (re.compile(r'^\s*(?:قال\s*[:،,]?\s*)?' + _LAFIZ + _ABD + _AY), 'Abdullah b. Ahmed'),
 ]
 ONEK = {
+    # Musannef: nüsha râvisinin (… Bakî b. Mahled →) “حدثنا أبو بكر قال:” kaydı; c[0] = İbn Ebî Şeybe
+    'musannef': [(re.compile(r'^\s*(?:(?:و?(?:حدثنا|أخبرنا|ثنا|نا)\s+)?[^:؛]{0,90}?بقي\s+بن\s+مخلد[^:؛]{0,30}?(?:قال)?\s*[:،,]?\s*)?(?:و?(?:حدثنا|ثنا|نا|أخبرنا)\s+)?(?:قال\s+)?أبو\s+بكر(?:\s+عبد\s+الله)?(?:\s+بن\s+محمد)?(?:\s+بن\s+أبي\s+شيبة)?(?:\s+العبسي)?(?:\s+رحمه\s+الله)?' + _AY + r'(?=(?:و?(?:حدثنا|ثنا|نا|أخبرنا|حدثني|أخبرني|سمعت|عن|بلغني)(?![ء-ي])))'), None)],
     'zuhd': _AHMED, 'fezail': _AHMED, 'ahmed': _AHMED,
     'buhari': [(re.compile(r'^\s*(?:و?(?:حدثنا|ثنا|أخبرنا)\s+)محمود(?:\s+بن\s+إسحاق)?' + _AY + r'(?:و?(?:حدثنا|ثنا|أخبرنا|حدثني)\s+)?(?:أبو عبد الله\s+)?(?:محمد\s+بن\s+إسماعيل\s+)?البخاري' + _AY), None)],
     'safii': [(re.compile(r'^\s*(?:و?(?:حدثنا|ثنا|أخبرنا)\s+)الربيع(?:\s+بن\s+سليمان)?' + _AY + r'(?:و?(?:حدثنا|ثنا|أخبرنا)\s+)الشافعي' + _AY), None)],
