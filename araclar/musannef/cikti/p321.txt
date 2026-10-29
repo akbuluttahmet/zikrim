@@ -100,9 +100,8 @@
 & haddesenâ, haddesenî, an
 ^ أنه قال: «من
 
-31791 | Vekî‘ → Şu‘be → Âsım b. Ubeydullah → Abdullah b. Âmir b. Rebîa → babası | Abdullah b. Âmir b. Rebîa’nın babası dedi ki: Resûlullah ﷺ buyurdu: “Kim bana salavat getirirse, o bana salavat getirdiği sürece melekler ona salat etmeye (dua etmeye) devam ederler. Artık kul bundan az yapsın ya da çok yapsın.”
+31791 | Vekî‘ → Şu‘be → Âsım b. Abdullah → Abdullah b. Âmir b. Rebîa → babası | Abdullah b. Âmir b. Rebîa’nın babası dedi ki: Resûlullah ﷺ buyurdu: “Kim bana salavat getirirse, o bana salavat getirdiği sürece melekler ona salat etmeye (dua etmeye) devam ederler. Artık kul bundan az yapsın ya da çok yapsın.”
 & haddesenâ, an, an, an, an
-% Arapçada ad böyle yazılıdır: “عاصم بن عبد الله” (metinde böyle).
 ^ قال: قال رسول
 
 31792 | Hüşeym → Husayn → Yezîd er-Rekāşî | Yezîd er-Rekāşî dedi ki: “Nebî’ye ﷺ salavat getiren kimseye, ondan Nebî’ye ﷺ ‘Ümmetinden falanca sana salavat getirdi’ diye ulaştırmakla görevlendirilmiş bir melek vardır.”
@@ -153,6 +152,6 @@
 & haddesenâ, an, an, an
 ^ {ولقد رآه نزلة
 
-31804 | Muhammed b. Bişr → Abdülazîz b. Ömer → Benî Selâmân b. Sa‘d’dan bir adam → annesi → Habîb b. Ebî Füdeyk | (Benî Selâmân’dan adamın) annesinden: Dayısı Habîb b. Ebî Füdeyk ona şunu anlattı: Babası onu, iki gözü beyazlaşmış, onlarla hiçbir şey görmez hâldeyken Resûlullah’a ﷺ götürdü. (Nebî) ona: “Ona ne isabet etti?” diye sordu. (Babası) dedi ki: “Bir devemi alıştırıyordum; ayağım bir yılan yumurtasına bastı, gözü (görme gücü) gitti.” Resûlullah ﷺ onun gözlerine üfledi, o da görmeye başladı. (Râvi) dedi ki: “Onu seksen yaşındayken iğneye iplik geçirirken gördüm; iki gözü de beyazdı.”
+31804 | Muhammed b. Bişr → Abdülazîz b. Ömer → Benî Selâmân b. Sa‘d’dan bir adam → annesi → Habîb b. Ebî Füdeyk | Habîb b. Ebî Füdeyk’ten: Babası onu, iki gözü beyazlaşmış, onlarla hiçbir şey görmez hâldeyken Resûlullah’a ﷺ götürdü. (Nebî) ona: “Ona ne isabet etti?” diye sordu. (Babası) dedi ki: “Bir devemi alıştırıyordum; ayağım bir yılan yumurtasına bastı, gözü (görme gücü) gitti.” Resûlullah ﷺ onun gözlerine üfledi, o da görmeye başladı. (Râvi) dedi ki: “Onu seksen yaşındayken iğneye iplik geçirirken gördüm; iki gözü de beyazdı.”
 & haddesenâ, haddesenâ, haddesenî, an, enne
-^ أن خالها حبيب
+^ أن أباه خرج
