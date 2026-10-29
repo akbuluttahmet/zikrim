@@ -1220,7 +1220,7 @@ function libOpen(L, i, target = null) {
 }
 
 /* Râvi paneli: yalnızca eserin kendi metnindeki bilgiler. h[4] = {c: [isim, sîga, isim, ...], n: [metindeki notlar]} */
-const SIGA = {'haddesenâ': 'bize anlattı', 'haddesenî': 'bana anlattı', 'ahberanâ': 'bize haber verdi', 'ahberanî': 'bana haber verdi', 'enbe’enâ': 'bize bildirdi', 'semi‘tü': 'işittim', 'semi‘a': 'işitti', 'an': '“-den” (an‘ane)', 'enne': '“ki…” diye', 'kâle': 'dedi', 'haddesehû': 'ona anlattı', 'haddesehüm': 'onlara anlattı', 'ahberahû': 'ona haber verdi', 'ahberahüm': 'onlara haber verdi'};
+const SIGA = {'haddesenâ': 'bize anlattı', 'haddesenî': 'bana anlattı', 'ahberanâ': 'bize haber verdi', 'ahberanî': 'bana haber verdi', 'enbe’enâ': 'bize bildirdi', 'semi‘tü': 'işittim', 'semi‘a': 'işitti', 'an': '“-den” (an‘ane)', 'enne': '“ki…” diye', 'kâle': 'dedi', 'haddesehû': 'ona anlattı', 'haddesehüm': 'onlara anlattı', 'ahberahû': 'ona haber verdi', 'ahberahüm': 'onlara haber verdi', 'kara’tü': 'ona okudum (kıraat)', 'kurie': 'ona okundu (kıraat)', 'unbi’tü': 'bana bildirildi'};
 /* İsnad zinciri: info.c tek zincir [isim, sîga, isim, …] ya da tahvîlde zincirler dizisi [[…], […]].
    Dikey çizilir: râvi, altında bir sonrakinden aldığı sîga, sonra o râvi. Tahvîlde her yol ayrı,
    bütün yollarda ortak olan son kısım “Yollar burada birleşir” başlığıyla bir kez gösterilir. */
