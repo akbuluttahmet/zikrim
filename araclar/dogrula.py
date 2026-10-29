@@ -35,6 +35,8 @@ MUELLIF = {
     'harb': 'Harb b. İsmâîl',
     'ibane': 'İbn Batta',
     'leys': 'Leys b. Sa‘d',
+    # Zührî kitaplığı: cüzü rivayet eden İbrâhîm el-Hemedânî'nin kitap başındaki rivayetleri onun adıyla; Zührî'nin metni senedsiz
+    'zuhri': ('ez-Zührî', 'İbrâhîm b. el-Hüseyin el-Hemedânî'),
 }
 # Müellifin metin içi notlarının Arapça ve Türkçe kalıbı (sayıları eşleşmeli)
 MUELLIF_NOT = {'sunan': (r'قال أبو داود', r'Ebû Dâvûd (?:dedi|der|şöyle)'),
@@ -73,6 +75,7 @@ ONEK = {
     'safii': [(re.compile(r'^\s*(?:و?(?:حدثنا|ثنا|أخبرنا)\s+)الربيع(?:\s+بن\s+سليمان)?' + _AY + r'(?:و?(?:حدثنا|ثنا|أخبرنا)\s+)الشافعي' + _AY), None)],
     # Fevâidü'l-Leys: kitabı rivayet eden nüsha zinciri (… → İbn Bükeyr / Îsâ b. Hammâd → الليث) düşülür, c[0] = Leys b. Sa‘d
     'leys': [(re.compile(r'^.*?(?:حدثني|حدثنا|ثنا|أخبرنا)\s+الليث(?:\s+بن\s+سعد)?' + _AY), None)],
+    'zuhri': [(re.compile(r'^\s*وبه\s*[،,]?\s*'), None)],
     'acurri': [(re.compile(r'^\s*(?:و?(?:حدثنا|ثنا|أخبرنا|أنا)\s+)(?:أبو بكر|محمد(?:\s+بن\s+الحسين)?)(?:\s+(?:بن\s+الحسين\s+)?الآجري)?' + _AY + r'(?=(?:و?(?:حدثنا|ثنا|أخبرنا|أنا|حدثني|أخبرني|قال)' + r'(?![ء-ي])))'), None)],
 }
 
