@@ -82,3 +82,9 @@
 - 11739 Arapçası neşrin dipnot kalıntısıyla başlıyor (“بالمطبوع: … والصواب ما أثبتناه”) — Arapçadan çıkarılmalı mı, bakılmalı.
 - Sened: 11511 üç hoca, 11535 “عن سعيد، عن مسروق”, 11771 “حدثنا أبو بكر عن أبي حصين” (hoca düşmüş), 11438 “ابن عباد”. 11720 nüsha senedi notta.
 - Şüpheli (notlu): 11676, 11702, 11776, 11777, 11795, 11807, 11808; 11355 “فقال بعض”.
+
+## k08 Hac (p093–p100, 13182–13649 civarı)
+- 13182 ve 13623 nüsha senedi notta. 13271 ikinci rivayet birleşik; ardındaki “B: 13272 -” başlıksız bab, 13272 maddesi yok.
+- Sonraki babın âyet yeri maddeye kaymış: 13224, 13359, 13640 (notlu).
+- Sened (Arapçadaki gibi): 13258 “سعيد بن إبراهيم”, 13261 “جرير، عن عبد الحميد”, 13495, 13597 (mürsel; “قال بعض أصحابنا: هو عن ابن عباس” notta), 13619 “حدثنا أسامة”, 13622 metinde “قال خصيف” ama senedde yok. 13576 sonunda Yezîd'in farklı senedi metinde.
+- Bozuk (notlu): 13183, 13185, 13208, 13276, 13304, 13328, 13360, 13444 (Hasan'ın sözü yok); tek kelime şüpheli: 13319, 13320, 13350, 13423, 13447, 13481, 13493, 13527, 13534, 13599, 13640.
