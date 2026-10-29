@@ -38,6 +38,7 @@ Râvi sayfası ve `dogrula.py` yalnız `info.c` zinciri olan kitapları görür;
 
 ## Günlük
 
+- 2026-10-29 — Geri dönüş çubuğu: kitaba dışarıdan gelince üstte “‹ geldiği yer” çubuğu.
 - 2026-10-29 — Râvi sayfası bütün kitaplıkları kapsıyor; yeni düzen (özet kutuları, kitap pilleri, katlanır listeler).
 - 2026-10-29 — Râvi sayfası: “Rivayet aldıkları/verdikleri”, sîga dökümü, rol satırı, kütüphane senedde arama; ad eşleştirme sıkılaştırıldı.
 - 2026-10-29 — Râvi sayfası eklendi (`ravi.json`, panelde ada dokununca); arama → kitap hayalet tıklaması düzeltildi.

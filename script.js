@@ -705,7 +705,7 @@ const visible = () => { const l = S.zikirs.filter(inView); return curSec() === '
 
 function setView(v, instant = false) {
   ttsStop();
-  readExt = false;
+  readExt = false; RET = null;
   const toSec = ZSEC.has(v);
   if (toSec) { zsec = v; v = 'main'; }
   view = VIEWS[v] ? v : 'main';
@@ -753,6 +753,7 @@ function renderCards() {
   $('#araAll').hidden = true;
   searchEl.placeholder = view === 'kutuphane' ? 'Bütün kütüphanede ara…' : view === 'alim' ? 'Kitaplarında ara…' : view === 'kaydedilen' ? 'Kaydettiklerinde ara…' : view === 'selef' ? 'Söz ara (âlim, anlam, kaynak)…' : view === 'fikih' ? 'Fıkıhta ara (ör. mesh, cuma, zekât)…' : view === 'usul' ? 'Risalede ara (ör. kader, havz, cuma)…' : LIBS[view] ? (LIBS[view].book == null && LIBS[view].nogo ? 'Kitap ara…' : LIBS[view].book == null && !LIBS[view].single ? `${LIBS[view].unit === 'kitap' ? 'Kitap' : 'Bölüm'} ara ya da ${LIBS[view].item} no. yaz (ör. ${LIBS[view].ex})…` : `Bu ${LIBS[view].unit === 'kitap' ? 'kitapta' : 'bölümde'} ara ya da ${LIBS[view].item} no. yaz…`) : 'Zikir ara (ad, anlam, okunuş)…';
   navRecord();
+  retPaint();
   if (view === 'akis' || view === 'anasayfa') { update(); return; }
   if (view === 'selef') { renderQuotes(); applyFilter(); update(); return; }
   if (view === 'profil') { renderProfile(); update(); return; }
@@ -851,7 +852,7 @@ function quoteCard(q, cls) {
     // Kaynak kütüphanede: dokununca kitapta o madde açılır; ☆ o rivayeti Kaydettiklerim'e ekler
     const b = el('button', 'q-go', 'Kitapta aç ›');
     b.type = 'button';
-    b.addEventListener('click', () => goTo(q.go[0], q.go[1], q.go[2], true));
+    b.addEventListener('click', () => goTo(q.go[0], q.go[1], q.go[2], true, {label: 'Sözler', back: () => setView('selef', true)}));
     src.append(' ', b);
     box.append(quoteStar(q));
   }
@@ -1213,7 +1214,7 @@ function libRenderBooks(L, wrap) {
 }
 
 function libOpen(L, i, target = null) {
-  L.book = i; L.target = target; libSave(L); readExt = false;
+  L.book = i; L.target = target; libSave(L); readExt = false; RET = null;
   searchEl.value = '';
   renderCards();
   $('.list').scrollIntoView({block: 'start'});
@@ -1351,7 +1352,7 @@ function libRenderBook(L, wrap, meta) {
   const back = el('button', 'chip-button', L.unit === 'bölüm' ? '← Bölümler' : '← Kitaplar');
   back.type = 'button';
   if (L.single) back.hidden = true;
-  back.addEventListener('click', () => { L.book = null; libSave(L); readExt = false; searchEl.value = ''; renderCards(); });
+  back.addEventListener('click', () => { L.book = null; libSave(L); readExt = false; RET = null; searchEl.value = ''; renderCards(); });
   const cnt = L.data.babs.reduce((s, b) => s + b.h.length, 0);
   // Kitap dizinindeki gibi: kapaklı başlık + Okumaya devam et, katlanan nüsha notu, numaralı bab kartları
   head.append(back, libHead(L, {meta, i: L.book, cnt, babs: L.data.babs.length}), fsBar());
@@ -1909,7 +1910,7 @@ function feedCard(p, first) {
   star.addEventListener('click', async () => { await toggleSavePick(p); paint(); });
   const open = el('button', null, '📖');
   open.type = 'button'; open.setAttribute('aria-label', 'Kitapta aç'); open.title = 'Kitapta aç';
-  open.addEventListener('click', () => { ttsStop(); goTo(p.v, p.b, p.n, true); });
+  open.addEventListener('click', () => { ttsStop(); goTo(p.v, p.b, p.n, true, {label: 'Akış', back: () => setView('akis', true)}); });
   const shot = el('button', null, '📸');
   shot.type = 'button'; shot.setAttribute('aria-label', 'Görüntü olarak kaydet ya da paylaş'); shot.title = 'Görüntü olarak kaydet';
   shot.addEventListener('click', () => shotOpen(p));
@@ -2164,7 +2165,7 @@ function homePost(p) {
   });
   const open = el('button', null, '📖 Kitapta aç');
   open.type = 'button';
-  open.addEventListener('click', () => { ttsStop(); goTo(p.v, p.b, p.n, true); });
+  open.addEventListener('click', () => { ttsStop(); goTo(p.v, p.b, p.n, true, RET_HOME()); });
   const shot = el('button', null, '📸 Paylaş');
   shot.type = 'button'; shot.setAttribute('aria-label', 'Görüntü olarak paylaş ya da kaydet');
   shot.addEventListener('click', () => shotOpen(p));
@@ -2175,14 +2176,14 @@ function homePost(p) {
 }
 // Bab başlığına dokununca kitap o babın ilk rivayetinden açılır
 async function goToBab(p) {
-  if (p.v === 'usul') { goTo('usul', p.b, p.n, true); return; }
+  if (p.v === 'usul') { goTo('usul', p.b, p.n, true, RET_HOME()); return; }
   const L = LIBS[p.v];
   try {
     L.idx = L.idx || await libFetch(L, 'index.json');
     const data = await libFetch(L, 'tr/' + L.idx[p.b].f);
     const bab = data.babs.find(bb => bb.h.some(x => x[0] === p.n));
-    goTo(p.v, p.b, bab && bab.h.length ? bab.h[0][0] : p.n, true);
-  } catch (e) { goTo(p.v, p.b, p.n, true); }
+    goTo(p.v, p.b, bab && bab.h.length ? bab.h[0][0] : p.n, true, RET_HOME());
+  } catch (e) { goTo(p.v, p.b, p.n, true, RET_HOME()); }
 }
 function homeMore() {
   if (!HOME.pool || HOME.i >= HOME.pool.length) return;
@@ -2291,7 +2292,7 @@ async function renderDaily(next = false) {
   const L = LIBS[v], book = DAILY[v].books[b];
   $('#dailyT').textContent = t;
   $('#dailySrc').textContent = (L.bookKey ? L.src(n, {tr: book}) : L.single ? L.src(n) : L.src(n) + ' · ' + book) + ' ›';
-  $('#dailySrc').onclick = () => goTo(v, b, n, true);
+  $('#dailySrc').onclick = () => goTo(v, b, n, true, {label: 'Zikir', back: () => setView('main', true)});
   const nx = $('#dailyNext'); if (nx) nx.onclick = () => renderDaily(true);
   const k = v + ':' + (L.bookKey ? b + ':' : '') + n, st = $('#dailyStar');
   const paint = () => { const on = isSaved(k); st.textContent = on ? '★' : '☆'; st.setAttribute('aria-pressed', String(on)); st.setAttribute('aria-label', on ? 'Kaydettiklerimden çıkar' : 'Kaydet'); };
@@ -2311,8 +2312,21 @@ function renderResume() {
    o okumada kaldığın yer (RD.last) yazılmaz, kitap Okumaya devam ettiklerim'e girmez ve eski kaldığın yer bozulmaz; okunan rivayet sayısı yine tutulur.
    Kütüphanede gezinince (setView, kitap/bab seçimi, kitap listesine dönüş) kapanır. */
 let readExt = false;
-function goTo(v, b, n, ext = false) {
+/* Geri dönüş çubuğu: kitaba dışarıdan (Akış, Anasayfa, Sözler, Kaydettiklerim, arama, râvi sayfası) gelince listenin
+   üstünde “‹ Râvi: Ebû Seleme” gibi bir çubuk çıkar; dokununca geldiği yere döner. iOS'ta tarayıcı geri tuşu olmadığı için gerekli.
+   Kütüphanede gezinince (setView, kitap/bab seçimi, sekme değişimi) kaybolur. */
+let RET = null;
+const retBar = $('#retBar');
+function retPaint() {
+  const on = !!(RET && readExt && (LIBS[view] || view === 'usul'));
+  retBar.hidden = !on;
+  if (on) retBar.textContent = '‹ ' + RET.label;
+}
+retBar.addEventListener('click', () => { const r = RET; RET = null; retBar.hidden = true; if (r) r.back(); });
+const RET_HOME = () => ({label: 'Anasayfa', back: () => setView('anasayfa', true)});
+function goTo(v, b, n, ext = false, from = null) {
   readExt = ext;
+  RET = ext && from ? from : null;
   if (v === 'usul') { USUL_TARGET = n; view = 'usul'; }
   else { const L = LIBS[v]; L.book = b; L.target = n; libSave(L); view = v; }
   searchEl.value = '';
@@ -2533,7 +2547,7 @@ function renderSaved() {
     const go = el('button', 'chip-button saved-go', `${LIB_NAMES[x.v]}${x.title && x.v !== 'usul' ? ' · ' + x.title.replace(/ \(.*\)$/, '') : ''} → Bağlamında aç`);
     go.type = 'button';
     const n = x.v === 'usul' ? x.u[0] : x.h[0];
-    go.addEventListener('click', () => goTo(x.v, x.b, n, true));
+    go.addEventListener('click', () => goTo(x.v, x.b, n, true, {label: 'Kaydettiklerim', back: () => setView('kaydedilen', true)}));
     const cb = el('button', 'chip-button saved-col', x.c && x.c.length ? '📁 ' + x.c.join(' · ') : '📁 Koleksiyona ekle');
     cb.type = 'button';
     cb.addEventListener('click', () => colOpen(x.k));
@@ -3345,7 +3359,7 @@ function araFill(box, rows, r) {
     const t = el('span', 'ar-t' + (x.field === 'a' ? ' rtl' : '')); t.innerHTML = x.html;
     if (x.field === 'a') t.lang = 'ar';
     b.append(n, t);
-    b.addEventListener('click', () => { araRemember(ARA.q.value); araClose(() => goTo(g.v, g.v === 'usul' ? null : g.b, x.n, true)); });
+    b.addEventListener('click', () => { const q = ARA.q.value; araRemember(q); araClose(() => goTo(g.v, g.v === 'usul' ? null : g.b, x.n, true, {label: 'Arama: ' + q.trim(), back: () => araOpen(q)})); });
     box._list.append(b);
   }
   box._at += rows.length;
@@ -3493,7 +3507,7 @@ async function raviRender(name) {
           const bt = idx && idx[bi] ? idx[bi].tr : '';
           if (bt && !L.single) g.append(el('p', 'ravi-book-t', bt));
           const nums = el('div', 'ravi-nums');
-          const show = k => { for (const no of nos.slice(nums._n || 0, k)) { const b = el('button', 'ravi-no', String(no)); b.type = 'button'; b.addEventListener('click', () => raviClose(() => goTo(v, L.single ? 0 : bi, no, true))); nums.append(b); } nums._n = k; };
+          const show = k => { for (const no of nos.slice(nums._n || 0, k)) { const b = el('button', 'ravi-no', String(no)); b.type = 'button'; b.addEventListener('click', () => raviClose(() => goTo(v, L.single ? 0 : bi, no, true, {label: 'Râvi: ' + name, back: () => raviOpen(name)}))); nums.append(b); } nums._n = k; };
           show(60);
           g.append(nums);
           if (nos.length > 60) { const m = el('button', 'ravi-more-n', `+${nos.length - 60}`); m.type = 'button'; m.addEventListener('click', () => { show(nos.length); m.remove(); }); nums.append(m); }
