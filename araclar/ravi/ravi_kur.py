@@ -8,7 +8,7 @@ Veritabanı yalnız metinden türetilir: her râvi, zincirlerde yazıldığı ad
 (SPEC.md, isnad standardı). Arapça biçimler isim sözlüğünden (sozluk.tsv) gelir.
 
 Kullanım:
-  python3 araclar/ravi/ravi_kur.py              # sunan'dan kurar
+  python3 araclar/ravi/ravi_kur.py              # bütün kitaplıklardan kurar (panelli olanlar sîgalı, ötekiler sened satırından sîgasız)
   python3 araclar/ravi/ravi_kur.py sunan musned # birden çok kitaplık
 """
 import json, re, sys, collections
@@ -22,7 +22,7 @@ SOZLUK = R / 'araclar' / 'sunan' / 'sozluk.tsv'
 MUELLIF = {'sunan': 'Ebû Dâvûd', 'musned': 'Ahmed b. Hanbel'}
 
 BELIRSIZ = re.compile(r'^(bir |Basralı |Kûfeli |Medineli |Şamlı |.*ashâbından|.*arkadaşlarından|.*den bir |.*dan bir )|ya da|yahut', re.I)
-AKRABA = {'babası', 'dedesi', 'annesi', 'amcası', 'kardeşi', 'ninesi', 'dayısı', 'halası', 'teyzesi', 'oğlu', 'kızı', 'mevlâsı'}
+AKRABA = {'Babam', 'babam', 'dedem', 'amcam', 'babası', 'dedesi', 'annesi', 'amcası', 'kardeşi', 'ninesi', 'dayısı', 'halası', 'teyzesi', 'oğlu', 'kızı', 'mevlâsı'}
 
 
 def temel(ad):
@@ -49,8 +49,43 @@ def parcala(ad):
     return [p for p in parts if p]
 
 
+# Eski biçimdeki (panelsiz) kitapların sened satırını standarda yaklaştırır: notlar, saygı ifadeleri,
+# “—yani …—” açıklamaları atılır; baştaki harf-i tarif kaldırılır (ez-Zührî → Zührî); Resûlullah ﷺ halkası düşer.
+NOT_PAREN = re.compile(r'radıyallâhu|rahimehull|rahimehall|aleyhisselâm|yani|kendi|metin|mürsel|isnad|ayrıca|okuyarak|yılında|Mescid|bize|bana|dedi|lafız|lafz|;', re.I)
+TARIF = re.compile(r'^(?:el|er|es|eş|ez|ed|en|et|ey)-(?=[A-ZÂÎÛÇŞĞİÖÜ])')
+KISI_SIFIR = re.compile(r'^(Resûlullah|Nebî|Peygamber)\b')
+KANAAT = re.compile(r'\(([^)]*)\)')
+
+
+def ad_temizle(ad):
+    ad = re.sub(r'\s*—[^—]*—\s*', ' ', ad)                       # —yani et-Tâtarî—
+    ad = re.sub(r'\s*\((?:[^()]*)\)', lambda m: '' if NOT_PAREN.search(m.group(0)) else m.group(0), ad)
+    ad = re.sub(r'\s*ﷺ', '', ad)
+    ad = re.sub(r'\s+', ' ', ad).strip(' ,;:')
+    ad = TARIF.sub('', ad)
+    return ad
+
+
+def sened_zincirleri(sened):
+    """Panelsiz kitap: sened satırından yollar [[ad, ad, …], …] (sîgasız)."""
+    yollar = []
+    for yol in re.split(r'\s*;\s*ayrıca\s*', sened or ''):
+        adlar = []
+        for a in yol.split('→'):
+            # eski biçimde “X ; Y” aynı halkada iki ad: ikisi de ayrı râvi olarak alınır (“X ve Y” gibi)
+            a = ' ve '.join(x for x in (ad_temizle(x) for x in a.split(';')) if x and not KISI_SIFIR.match(x))
+            if not a:
+                continue
+            adlar.append(a)
+        if adlar:
+            yollar.append(adlar)
+    return yollar
+
+
 def tur(ad):
     t = temel(ad)
+    if not t:
+        return 'belirsiz'
     if t in AKRABA or t.split()[0] in AKRABA:
         return 'akrabalık'
     if BELIRSIZ.search(t):
@@ -93,16 +128,24 @@ def kur(kitapliklar):
                 for h in bb['h']:
                     no, info = h[0], h[4] if len(h) > 4 else None
                     zs = zincirler(info)
+                    panel = bool(zs)
+                    if not zs:
+                        # eski biçim: sened satırından, sîgasız; müellif halkası yok
+                        zs = [[None] + yol for yol in sened_zincirleri(h[1] if len(h) > 1 else '')]
                     if not zs:
                         continue
                     gorulen = set()
                     for z in zs:
-                        adlar = z[0::2]
-                        sigalar = z[1::2]
+                        if panel:
+                            adlar, sigalar = z[0::2], [str(x).split(' ')[0] for x in z[1::2]]
+                        else:
+                            adlar, sigalar = z, [None] * (len(z) - 1)
                         for i, kutu in enumerate(adlar):
                             if i == 0:
                                 continue           # müellif
                             for ad in parcala(kutu):
+                                if not temel(ad):
+                                    continue
                                 r = ravi.setdefault(ad, {
                                     'ad': ad, 'temel': temel(ad), 'tur': tur(ad),
                                     'ar': ters.get(temel(ad), [])[:4],
@@ -120,14 +163,16 @@ def kur(kitapliklar):
                                     rolu = 'hoca' if i == 1 else ('son' if i == len(adlar) - 1 else 'ara')
                                     r['rol'][rolu] += 1
                                 siga = sigalar[i - 1]
-                                r['sigalar'][siga] = r['sigalar'].get(siga, 0) + 1
+                                if siga:
+                                    r['sigalar'][siga] = r['sigalar'].get(siga, 0) + 1
                                 # hocası: zincirde bir sonraki kutu
                                 if i + 1 < len(adlar):
                                     for hoca in parcala(adlar[i + 1]):
                                         r['hocalari'][hoca] = r['hocalari'].get(hoca, 0) + 1
-                                        kenar[(ad, sigalar[i], hoca)] += 1
+                                        if sigalar[i]:
+                                            kenar[(ad, sigalar[i], hoca)] += 1
                                 # öğrencisi: bir önceki kutu (müellif dahil)
-                                for ogr in parcala(adlar[i - 1]):
+                                for ogr in (parcala(adlar[i - 1]) if adlar[i - 1] else []):
                                     r['ogrencileri'][ogr] = r['ogrencileri'].get(ogr, 0) + 1
     # ad eşleşmesi için temel → kayıtlar (araç veritabanı; aynı kişi anlamına gelmez)
     temeller = collections.defaultdict(list)
@@ -173,11 +218,20 @@ def kur(kitapliklar):
     }
     OUT.write_text(json.dumps(out, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
     # Uygulama dosyası (repo kökü ravi.json): râvi sayfası için sıkı biçim
-    # t[ad] = aynı adın kısa/tam yazımları (yalnız kimliği belirli olanlar); r[ad] = [arapça biçimler, hadis sayısı, {rivayet aldığı: [n, {sîga: n}]}, {rivayet verdiği: [n, {sîga: n}]}, {kitaplık: [[kitap sırası, no], …]}, {hoca, ara, son}]
+    # t[ad] = aynı adın kısa/tam yazımları (yalnız kimliği belirli olanlar); r[ad] = [arapça biçimler, hadis sayısı, {rivayet aldığı: [n, {sîga: n}]}, {rivayet verdiği: [n, {sîga: n}]}, {kitaplık: [[kitap sırası, [no, …]], …]}, {hoca, ara, son}]
     def iliski(ad, d, kaynak):
         # {ad: [n, {sîga: n}]} — sayıya göre sıralı
         return {k: [n, dict(sorted(kaynak[ad].get(k, {}).items(), key=lambda x: -x[1]))] for k, n in d.items()}
-    app = {'r': {ad: [r['ar'], r['sayi'], iliski(ad, r['hocalari'], aldigi), iliski(ad, r['ogrencileri'], verdigi), r['hadisler'], r['rol']]
+    def sikistir(hadisler):
+        # {kitaplık: [[kitap, no], …]} → {kitaplık: [[kitap, [no, …]], …]} (kitap sırasına göre)
+        out = {}
+        for lib, cift in hadisler.items():
+            g = collections.OrderedDict()
+            for bi, no in cift:
+                g.setdefault(bi, []).append(no)
+            out[lib] = [[bi, nos] for bi, nos in g.items()]
+        return out
+    app = {'r': {ad: [r['ar'], r['sayi'], iliski(ad, r['hocalari'], aldigi), iliski(ad, r['ogrencileri'], verdigi), sikistir(r['hadisler']), r['rol']]
                  for ad, r in out['ravi'].items()},
            't': out['ayni'], 'm': out['muellif'],
            'x': sorted(ad for ad, r in out['ravi'].items() if r['tur'] != 'ad')}  # akrabalık/belirsiz: râvi sayfası açılmaz
@@ -186,7 +240,7 @@ def kur(kitapliklar):
 
 
 if __name__ == '__main__':
-    libs = sys.argv[1:] or ['sunan']
+    libs = sys.argv[1:] or ['sunan', 'musned', 'musannef', 'ibnebiseybe', 'ahmed', 'zuhd', 'fezail', 'acurri', 'seria', 'hallal', 'safii', 'buhari', 'ebudavud', 'harb', 'ibane']
     o = kur(libs)
     turler = collections.Counter(r['tur'] for r in o['ravi'].values())
     arli = sum(1 for r in o['ravi'].values() if r['ar'])

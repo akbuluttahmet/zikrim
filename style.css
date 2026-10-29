@@ -850,3 +850,25 @@ body.view-profil #search,body.view-profil #toggleCompact{display:none}
 .ravi-chip.plain{opacity:.7}
 .ravi-more{margin:10px 0 0}
 .ravi-r .ar-t{font-size:14px}
+
+.ravi-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:6px 0 10px}
+.ravi-stat{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:9px 6px;text-align:center}
+.ravi-stat b{display:block;font-size:19px;line-height:1.1;color:var(--accent)}
+.ravi-stat span{display:block;font-size:10.5px;line-height:1.25;color:var(--muted);margin-top:3px}
+.ravi-libs{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;margin:0 -16px 10px;padding:0 16px 2px}
+.ravi-libs::-webkit-scrollbar{display:none}
+.ravi-lib{flex:none;display:flex;align-items:center;gap:6px;border:1px solid var(--border);background:var(--hero);color:var(--text);border-radius:999px;padding:6px 11px;font:inherit;font-size:12.5px;font-weight:600}
+.ravi-lib small{color:var(--accent);font-weight:700}
+.ravi-lib-d{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:0 12px;margin:0 0 8px}
+.ravi-lib-d>summary{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:11px 0;cursor:pointer;list-style:none}
+.ravi-lib-d>summary::-webkit-details-marker{display:none}
+.ravi-lib-d>summary::after{content:"›";color:var(--muted);font-size:20px;line-height:1;transform:rotate(90deg);transition:transform .2s}
+.ravi-lib-d[open]>summary::after{transform:rotate(-90deg)}
+.ravi-lib-t{font-weight:700;font-size:14.5px}
+.ravi-lib-d>summary small{color:var(--muted);font-weight:600;margin-left:auto}
+.ravi-book{padding:4px 0 10px;border-top:1px solid var(--border)}
+.ravi-book-t{margin:6px 0 6px;font-size:12.5px;font-weight:600;color:var(--muted)}
+.ravi-nums{display:flex;flex-wrap:wrap;gap:6px}
+.ravi-no,.ravi-more-n{border:1px solid var(--border);background:var(--bg);color:var(--accent);border-radius:9px;padding:5px 9px;font:inherit;font-size:13px;font-weight:600;font-variant-numeric:tabular-nums}
+.ravi-more-n{color:var(--muted)}
+.ravi-head .ravi-n{margin:0 0 8px}

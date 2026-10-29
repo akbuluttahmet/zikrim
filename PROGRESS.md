@@ -13,7 +13,7 @@ Her oturum: önce `SPEC.md`, sonra bu dosya. Bitince burayı güncelle (kitap, s
 ## Araçlar (hazır)
 
 - `SPEC.md` — şartname (format, sîga sözlüğü, şema, 5 örnek, oturum akışı).
-- `araclar/ravi/ravi_kur.py` → `araclar/ravi/ravi.json` — Sünen'den 5308 râvi kaydı, 14 465 hoca-öğrenci kenarı (2026-10-29). Yeni kitap derlenince `python3 araclar/ravi/ravi_kur.py sunan musned` ile yeniden üretilir.
+- `araclar/ravi/ravi_kur.py` → `araclar/ravi/ravi.json` + `ravi.json` — bütün kitaplıklardan 16 226 râvi kaydı (Sünen sîgalı, ötekiler sened satırından sîgasız; 2026-10-29). Her derlemeden sonra `python3 araclar/ravi/ravi_kur.py` ile yenilenir.
 - `araclar/dogrula.py <kitaplık> [--ravi] [--hepsi] [--json rapor.json]` — yayımlanmış verinin şartname denetimi. Hata = yayımlanmaz; uyarı = göz listesi.
 - `araclar/sunan/` — çalışma dosyası araçları (`denetle.py`, `derle.py`), kılavuz, sözlük.
 
@@ -38,6 +38,7 @@ Râvi sayfası ve `dogrula.py` yalnız `info.c` zinciri olan kitapları görür;
 
 ## Günlük
 
+- 2026-10-29 — Râvi sayfası bütün kitaplıkları kapsıyor; yeni düzen (özet kutuları, kitap pilleri, katlanır listeler).
 - 2026-10-29 — Râvi sayfası: “Rivayet aldıkları/verdikleri”, sîga dökümü, rol satırı, kütüphane senedde arama; ad eşleştirme sıkılaştırıldı.
 - 2026-10-29 — Râvi sayfası eklendi (`ravi.json`, panelde ada dokununca); arama → kitap hayalet tıklaması düzeltildi.
 - 2026-10-29 — Sünen yeni çeviriyle tamamlandı (5275). SPEC.md, râvi veritabanı, `dogrula.py`, PROGRESS.md kuruldu; Sünen'de ilk doğrulama: 0 hata, 106 uyarı.
