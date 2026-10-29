@@ -149,3 +149,8 @@
 - 19053 maddenin sonuna bab başlığı karışmış (“ما قالوا في الرجلين يحلفان…”) — ayrı bab olmalı mı, bakılmalı. 19153 tahvîlde Eş‘as yolu yarım. 19981 başlıksız bab. 19960 nüsha senedi.
 - Sened (notlu): 19196, 19245 “أبو عياش”, 19985 “حدثنا هشيم، نا يزيد بن هارون”, 20032 “نا مالك، نا وكيع”, 20072 metne “حدثنا أبو بكر قال:”.
 - Bozuk/şüpheli (notlu): 19055, 19061, 19063, 19137, 19159, 19172, 19187, 19189 (ve babı), 19213, 19215, 19271, 19295, 19976, 20045, 20058, 20066, 20096. 19296 “قالون” harfiyen.
+
+## k10 Talâk (p176–p183, 18511–19049 civarı)
+- 18541 ikinci rivayet birleşik (bab başlığıyla uyuşmuyor). 18554 = 18551 (nüshada tekrar). 18875 sonunda sonraki maddenin öneği kalmış. 18890 başlıksız bab.
+- Sened (notlu): 18587 “يعلى بن عيينة”, 18685, 18715, 18896, 18982.
+- Bozuk/şüpheli (notlu): 18557, 18795, 18866, 18873, 18975, 19010, 19029.

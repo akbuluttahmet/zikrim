@@ -1,0 +1,307 @@
+@ Buğdaya karşılık kavut ve benzerleri hakkında; onu caiz görenler
+
+20269 | Vekî‘ → Şu‘be → Hakem ve Hammâd | Şu‘be dedi ki: Hakem’e ve Hammâd’a, iki kafîz una karşılık bir kafîz buğdayı sordum; ikisi onu hoş görmediler.
+& haddesenâ, an, kâle
+^ قال: سألت الحكم
+
+20270 | Sehl b. Yûsuf → Amr → Hasan | Hasan’dan: O, bunu ancak tartı tartıya olursa (caiz görür), aksini hoş görmezdi.
+& haddesenâ, an, an
+^ «أنه كرهه
+
+20271 | Gunder → Eş‘as → Hasan | Hasan’dan: O, bunu ancak tartıyla olursa (caiz görür), aksini hoş görmezdi.
+& haddesenâ, an, an
+^ «أنه كرهه
+
+20272 | Yezîd b. Hârûn → Saîd → Katâde | Katâde’den: O, bunu ancak tartı tartıya olursa (caiz görür), aksini hoş görmezdi.
+& haddesenâ, an, an
+^ «أنه كرهه
+
+@ Satışta halâs hakkında
+
+20273 | Hüşeym → İsmâîl b. Sâlim → Şa‘bî | İsmâîl b. Sâlim dedi ki: Şa‘bî’yi şöyle derken işittim: “Halâs bir şey değildir. Kim bir şey satar da o, sahibi için hak edilirse (sahibine ait çıkarsa), satıcıya düşen, onu karşılığında aldığı bedeldir; ona bundan fazlası yoktur.”
+& haddesenâ, an, semi‘tü
+^ قال: سمعت الشعبي
+
+20274 | Esbât b. Muhammed → Mutarrif → Âmir → Şüreyh | Şüreyh dedi ki: “Halâsı ancak ahmak olan şart koşar. Onu sattığın gibi teslim et ya da aldığın gibi geri ver.”
+& haddesenâ, an, an, an
+^ قال: «لا يشترط
+
+20275 | Dahhâk b. Mahled → İbn Cüreyc → Atâ | Atâ’dan: O, halâsı bir şey saymazdı.
+& haddesenâ, an, an
+^ «أنه كان لا
+
+20276 | İsmâîl b. İbrâhîm → Osman el-Bettî → Hasan → Ali | Hasan’dan: Ali halâs hakkında güzel davranırdı.
+& haddesenâ, an, an, enne
+^ «كان يحسن
+
+20277 | Yahyâ b. Ya‘lâ et-Teymî → Mansûr → Hakem → Ali | Ali’den: Bir adam karısını, bir oğlunu ve cariyesini bırakıp (gitti). Karısı ve oğlu cariyeyi sattılar. Onu satın alan onunla cinsî münasebette bulundu, o da doğurdu. Sonra cariyenin sahibi geldi ve ona yapıştı. Onunla Ali’ye muhakeme oldu. Ali dedi ki: “Karın ve oğlun sattı; o da adamdan doğurdu. Satışı onayla.” Adam dedi ki: “Allah aşkına, Allah’ın Kitabı ile hükmetmeni istiyorum.” (Ali) dedi ki: “Cariyeni ve çocuğunu al.” Diğerine de dedi ki: “Kadını ve oğlu halâs ile tut.” (Bunu) alınca diğeri satışı onayladı.
+& haddesenâ, an, an, an
+^ أن رجلا ترك
+
+20278 | İsmâîl İbn Uleyye → Seleme b. Alkame → İbn Sîrîn | İbn Sîrîn dedi ki: “Kadılar, kendisine ait olmayan bir şeyi satan kimse hakkında şöyle hükmederlerdi: O, sahibi talep ederse onundur; bu (satıcı) da misliyle mesul tutulur.”
+& haddesenâ, an, an
+^ قال: «كانت القضاة
+
+20279 | İsmâîl İbn Uleyye → Eyyûb | Eyyûb’dan: Bir kadın kocası yokken onun evini sattı. (Koca) gelince satışı onaylamaktan kaçındı. (Kadın) onunla bu konuda İyâs b. Muâviye’ye muhakeme oldu. Müşteri “Allah seni ıslah etsin, ben onun için iki bin dirhem harcadım” demeye başladı. (İyâs) dedi ki: “el-Fâl ale’l-fâl” (metinde böyle). Dedi ki: “Adamın lehine evine hükmetti ve karısının hapse (götürülmesini) emretti. (Adam) bunu görünce satışı onayladı.”
+& haddesenâ, an
+^ أن امرأة باعت
+
+20280 | Muâz b. Muâz → İbn Avn → Muhammed | Muhammed’den: O, halâsı güçlü bir şart sayar ve bu konuda sıkı davranırdı.
+& haddesenâ, an, an
+^ «أنه كان يرى
+
+20281 | Dahhâk b. Mahled → Eş‘as → Hasan | Hasan’dan: O, halâsı bir şey saymazdı.
+& haddesenâ, an, an
+^ «أنه كان لا
+
+@ Kölelerin şahitliğini caiz görenler
+
+20282 | Hafs b. Gıyâs → Muhtâr b. Fülfül → Enes | Muhtâr b. Fülfül dedi ki: Enes’e kölelerin şahitliğini sordum. Dedi ki: “Caizdir.”
+& haddesenâ, an, kâle
+^ قال: سألت أنسا
+
+20283 | İbn Ebî Zâide → Eş‘as → Âmir → Şüreyh | Âmir’den: Şüreyh kölelerin şahitliğini caiz gördü.
+& haddesenâ, an, an, enne
+^ «أجاز شهادة
+
+20284 | Vekî‘ → Süfyân → Ammâr ed-Dühnî | Ammâr ed-Dühnî dedi ki: Şüreyh’in yanında bulundum; yanında bir köle bir ev hakkında şahitlik etti, (Şüreyh) onun şahitliğini kabul etti. “O köledir” denildi. Dedi ki: “Hepimiz köleleriz; annemiz de Havvâ’dır.”
+& haddesenâ, an, an
+^ قال: شهدت شريحا
+
+20285 | Hafs b. Gıyâs → Eş‘as → Şa‘bî | Şa‘bî dedi ki: Şüreyh dedi ki: “Kölelerin şahitliğini kabul etmezsin.” Ali dedi ki: “Hayır, biz onu kabul ederdik.” Dedi ki: Şüreyh bundan sonra onu kabul ederdi; ancak efendisi lehine olan müstesna.
+& haddesenâ, an, an
+^ قال: قال شريح
+
+@ Kölenin şahitliği caiz değildir diyenler
+
+20286 | Hafs b. Gıyâs → Haccâc → Atâ → İbn Abbâs | İbn Abbâs dedi ki: “Kölenin şahitliği caiz değildir.”
+& haddesenâ, an, an, an
+^ قال: «لا تجوز
+
+20287 | İbnü’l-Mübârek → İbn Cüreyc → Atâ | Atâ dedi ki: “Kölenin şahitliği caiz değildir.”
+& haddesenâ, an, an
+^ قال: «لا تجوز
+
+20288 | İbnü’l-Mübârek → Muhammed → Esed → Mekhûl | Mekhûl dedi ki: “Kölenin şahitliği caiz değildir.”
+& haddesenâ, an, an, an
+^ قال: «لا تجوز
+
+20289 | Yahyâ b. Zekeriyyâ b. Ebî Zâide → Abdülmelik → Atâ | Atâ dedi ki: “Kölenin şahitliği, önemsiz bir şeyde olsa bile caiz değildir.”
+& haddesenâ, an, an
+^ قال: «لا تجوز
+
+20290 | Vekî‘ → Süfyân → İbn Ebî Necîh → Mücâhid | Mücâhid’den: (Allah’ın) “Erkeklerinizden iki şahit tutun” (Bakara 2/282) sözü hakkında dedi ki: “Hür olanlardan.”
+& haddesenâ, an, an, an
+^ في قوله: واستشهدوا
+
+20291 | Vekî‘ → Zekeriyyâ → Âmir | Âmir dedi ki: “Kölenin şahitliği caiz değildir.”
+& haddesenâ, an, an
+^ قال: «لا تجوز
+
+20292 | Vekî‘ → İsrâîl → Îsâ b. Ebî Azze → Şa‘bî | Şa‘bî’den: O, bir kölenin şahitliğini reddetti.
+& haddesenâ, an, an, an
+^ «أنه رد
+
+20293 | Vekî‘ → Süfyân | Ebû Bekir dedi ki: Vekî‘i şöyle derken işittim: Süfyân dedi ki: “Kölenin şahitliği caiz değildir.” Ebû Bekir dedi ki: Bu, Vekî‘in de görüşüdür.
+& semi‘tü, kâle
+% Bu maddede “حدثنا” yoktur; İbn Ebî Şeybe “قال أبو بكر: سمعت وكيعا” diye başlar.
+^ «لا تجوز
+
+20294 | Vekî‘ → Hasan b. Sâlih → Mansûr → Mücâhid | Mücâhid dedi ki: “Onu bir dirhem üzerine (bile) geçerli kılmayın.”
+& haddesenâ, haddesenâ, an, an
+^ قال: «لا تجروها
+
+@ Rehin veren ile rehin alanın ihtilafa düşmesi hakkında
+
+20295 | Hafs b. Gıyâs → Abdülmelik → Atâ | Atâ dedi ki: “Rehin veren ile rehin alan ihtilafa düşer de bu ‘On’, şu ‘Yirmi’ derse, söz rehin verenin sözüdür.”
+& haddesenâ, an, an
+^ قال: " إذا اختلف
+
+20296 | Abdullah b. İdrîs → Bessâm → Hakem | Hakem dedi ki: “Söz rehin alanın sözüdür.”
+& haddesenâ, an, an
+^ قال: «القول قول
+
+20297 | Yahyâ b. Saîd → Eş‘as → Hasan | Hasan dedi ki: “Söz, rehin elinde olanın sözüdür.”
+& haddesenâ, an, an
+^ قال: «القول قول
+
+20298 | Zeyd b. el-Hubâb → Hammâd b. Seleme → İyâs b. Muâviye | İyâs b. Muâviye dedi ki: “Rehin veren ile rehin alan ihtilafa düşerse, (rehinle) onun kıymeti arasındaki miktarda söz rehin alanın sözüdür; (iddia kıymeti) aşarsa söz rehin verenin sözüdür.”
+& haddesenâ, an, an
+^ قال: «إذا اختلف
+
+20299 | Vekî‘ → Hammâd b. Zeyd → Ebû Hâşim → İbrâhîm | İbrâhîm dedi ki: “Rehin veren ile rehin alan ihtilafa düşerse söz rehin verenin sözüdür; ancak rehin alan beyyine getirirse müstesna.”
+& haddesenâ, an, an, an
+^ قال: «إذا اختلف
+
+20300 | İbn Ebî Zâide → İbn Hişâm → Âmir | Âmir dedi ki: “Rehin veren ile rehin alan rehinin kıymeti hakkında ihtilafa düşerse, beyyine rehini iddia edene düşer.”
+& haddesenâ, an, an
+% Arapçada ad böyle yazılıdır: “ابن هشام” (metinde böyle).
+^ قال: «إذا اختلف
+
+20301 | Ar‘ara b. el-Birind → Abdülmelik el-Ezrak → Abdülkerîm → Saîd b. Cübeyr | Saîd b. Cübeyr dedi ki: “Söz rehin alanın sözüdür.”
+& haddesenâ, an, an, an
+^ قال: «القول قول
+
+20302 | Abdüssamed b. Abdülvâris → Cerîr b. Hâzim → Hammâd | Cerîr b. Hâzim dedi ki: Hammâd’a, elinde rehin bulunan bir adam soruldu; (adam) “O on (dirhem) karşılığındadır” dedi, sahibi de “O bir dirhem karşılığındadır” dedi. (Hammâd) dedi ki: “Beyyine, fazlayı iddia edene düşer. Nitekim (adam) ‘O rehindir’ dese, sahibi de ‘O emanettir’ dese, söz malın sahibinin sözü olurdu.”
+& haddesenâ, an, kâle
+^ قال: سئل حماد
+
+20303 | Abdüla‘lâ → Ma‘mer → Zührî | Zührî dedi ki: “Söz rehin alanın sözüdür.”
+& haddesenâ, an, an
+^ قال: «القول قول
+
+@ Yanından geçtiğinde meyveden yemeye ruhsat verenler
+
+20304 | Vekî‘ → Câbir → Ebû Ca‘fer | Ebû Ca‘fer’den: Nebî ﷺ (sefere) çıktığında Ali’ye bahçe (duvarlarını) budamasını emrederdi.
+& haddesenâ, an, an
+^ «أن النبي
+
+20305 | Mu‘temir b. Süleymân → İbn Ebi’l-Hakem → ninesi → amcası Ebû Râfi‘ b. Amr el-Gıfârî | Ebû Râfi‘ b. Amr el-Gıfârî dedi ki: Ben çocukken Ensâr’ın hurma ağaçlarını taşlardım. Nebî’ye (aleyhisselâm): “Burada hurmalarımızı taşlayan bir çocuk var” denildi. Beni Nebî’ye ﷺ getirdiler. Dedi ki: “Ey çocuk, hurma ağaçlarını niçin taşlıyorsun?” Dedim ki: “Yiyorum.” Dedi ki: “Hurma ağaçlarını taşlama; dibine düşenden ye.” Sonra başımı meshetti ve dedi ki: “Allah’ım, karnını doyur.”
+& haddesenâ, semi‘tü, haddesenî, an
+% Ebû Râfi‘ b. Amr el-Gıfârî, Arapçada “عمي” (amcam) diye geçer; ninenin amcasıdır (metinde böyle).
+^ قال: كنت وأنا
+
+20306 | İbn Ebî Zâide → Muhammed b. İshâk → Amr b. Şuayb → babası → dedesi | Amr b. Şuayb’ın dedesi dedi ki: Müzeyne’den bir adamı, Nebî’ye (aleyhisselâm) kabukları içindeyken meyveleri sorarken işittim. Dedi ki: “Kim ağzıyla yer de eteğine bir şey almazsa ona bir şey yoktur.”
+& haddesenâ, an, an, an, an
+^ قال: سمعت رجلا
+
+20307 | Mu‘temir → Kurre → Hârûn b. Riâb → Sinân b. Seleme | Sinân b. Seleme, Bahreyn’de iken dedi ki: Ben yerden ham hurma toplayan küçük çocuklar arasındaydım. Ömer ansızın üzerimize geldi; çocuklar (kaçtı), ben (kaldım). Kalkıp dedim ki: “Ey mü’minlerin emîri, bu rüzgârın düşürdüğü şeydendir.” Dedi ki: “Onu bana göster.” Ona gösterince dedi ki: “Git.” Dedim ki: “Ey mü’minlerin emîri, şu çocuklara şimdi (durumu) açıkla; çünkü sen benden ayrılınca yanımdakini elimden çekip alırlar.” Dedi ki: Benimle birlikte yürüdü, ta ki güvenli yerime ulaştım.
+& haddesenâ, an, an, an
+% Hârûn b. Riâb, Sinân hakkında: “Bize Bahreyn’de iken rivayet etti.”
+^ قال: كنت في
+
+20308 | Cerîr b. Abdülhamîd → Alâ b. el-Müseyyeb → Hammâd → İbrâhîm | Alâ b. el-Müseyyeb dedi ki: Hammâd’a, hurma ağacından düşen, sana ait olmayan şeyi sordum. Dedi ki: İbrâhîm dedi ki: “İlk muhâcirler onu yemekte bir sakınca görmezlerdi.”
+& haddesenâ, an, kâle, kâle
+^ قال: سألت حمادا
+
+20309 | Ebû Bekir b. Ayyâş → Mansûr → Mücâhid → Ebû İyâz → Ömer | Ömer dedi ki: “Bir bahçenin yanından geçersen ye; eteğine bir şey alma.”
+& haddesenâ, an, an, an, kâle
+^ قال: قال عمر
+
+20310 | Cerîr → Mansûr → Ebû Vâil | Ebû Vâil dedi ki: “Gazveye çıkardık, meyvelerden alırdık ve bunda bir sakınca görmezdik.”
+& haddesenâ, an, an
+^ قال: «كنا نغزو
+
+20311 | Abbâd b. el-Avvâm → Süfyân b. Hüseyin → Hasan ve İbn Sîrîn | Süfyân b. Hüseyin dedi ki: Hasan’a ve İbn Sîrîn’e sordum; dedim ki: “Ben Übülle’ye çıktım; hurma ağaçlarının yanından geçiyoruz, ondan yiyoruz; meyvenin de (yanından geçiyoruz).” İkisi de bana bunda ruhsat verdi ve dediler ki: “Taşımadıkça ya da bozmadıkça.”
+& haddesenâ, an, kâle
+^ قال: سألت الحسن
+
+20312 | Abdüla‘lâ → Cüreyrî → Ebû Nadra → Ebû Saîd | Ebû Saîd dedi ki: “Bir bahçenin yanından geçersen sahibine seslen. Sana cevap verirse ondan yiyecek iste; sana cevap vermezse ye, bozma.”
+& haddesenâ, an, an, an
+^ قال: «إذا مررت
+
+20313 | Gunder → Şu‘be → Âsım → Ebû Zeyneb | Ebû Zeyneb dedi ki: Ebû Bekre, Ebû Berze ve Abdurrahmân b. Semüre ile birlikte bir orduda sefere çıktım; “meyvelerden yerdik.”
+& haddesenâ, an, an, an
+^ قال: سافرت في
+
+20314 | Abdullah b. İdrîs → Husayn → Zer → İbrâhîm | Zer dedi ki: “Onunla (İbrâhîm’le) birlikte sefere çıkardım; meyvelerden yerdi.”
+& haddesenâ, an, an, an
+% Arapçada sözün sahibi “إبراهيم، قال” diye geçer; “كنت أسافر معه” ifadesi Zer’in sözü olarak okunmuştur (metinde böyle).
+^ قال: «كنت أسافر
+
+20315 | Vekî‘ → Hişâm b. Sa‘d → Amr b. Şuayb | Amr b. Şuayb dedi ki: Resûlullah ﷺ buyurdu: “Kim bir bahçenin yanından geçerse yesin, taşımasın.”
+& haddesenâ, an, an
+^ قال: قال رسول الله
+
+20316 | Vekî‘ → İsrâîl → Câbir → Ebû Ca‘fer | Ebû Ca‘fer dedi ki: “Zimmet ehlinin meyvelerinde sakınca yoktur.”
+& haddesenâ, an, an, an
+^ قال: «لا بأس
+
+20317 | Vekî‘ → Yezîd b. Hârûn → İbn Sîrîn → Abîde | İbn Sîrîn dedi ki: Abîde’ye meyvenin yanından geçen yolcuyu sordum. Dedi ki: “Yer, bozmaz.”
+& haddesenâ, haddesenâ, an, kâle
+^ قال: سألت عبيدة
+
+20318 | Vekî‘ → Süfyân → Eyyûb → Muhammed → Abîde | Muhammed dedi ki: Abîde’ye sordum; o da bunun benzerini andı.
+& haddesenâ, an, an, an, kâle
+^ قال: سألت عبيدة
+
+20319 | Vekî‘ → Şu‘be → Ebû İmrân el-Cevnî → Cündeb el-Becelî | Cündeb el-Becelî dedi ki: “Resûlullah’ın ﷺ ashâbıyla birlikte gazveye çıkardık; onların yaptığı gibi yapardık. Meyveden alırdık, yerli kâfiri (rehber olarak) alırdık; bize köyden köye yol gösterirdi; evlerinde onlara ortak olmaksızın.”
+& kâle, haddesenâ, an, semi‘tü
+% Bu maddede “حدثنا” yoktur; Arapça “وكيع قال: نا شعبة” diye başlar.
+^ يقول: «كنا نغزو
+
+20320 | Gunder → Şu‘be → Hammâd | Şu‘be dedi ki: Hammâd’a meyveden yiyen yolcuyu sordum. Dedi ki: “Emîrler onlara zulmettiklerinde yemesi bana daha sevimlidir.” Hakem’e de sordum; dedi ki: “Ye.”
+& haddesenâ, an, kâle
+^ قال: سألت حمادا
+
+20321 | Şebâbe → Şu‘be → Ebû Bişr → Abbâd b. Şurahbîl | Abbâd b. Şurahbîl dedi ki: Bize bir kıtlık isabet etmişti. Bir bahçeye girdim, başak alıp ovaladım. Bahçenin sahibi gelip beni dövdü ve örtümü aldı. Nebî’ye ﷺ geldik. Dedi ki: “Aç –ya da açlıktan bitkin– iken onu doyurmadın, cahil iken ona öğretmedin.” Ve (adamın) elbisesini alıp sahibine geri verdi.
+& haddesenâ, haddesenâ, an, an
+% Abbâd b. Şurahbîl hakkında: “Benî Abd’den bir adam.”
+^ قال: كنا أصابتنا
+
+@ Sahiplerinin izni olmadıkça ondan yemeyi hoş görmeyenler
+
+20322 | Vekî‘ → Ali b. el-Mübârek → Yahyâ b. Ebî Kesîr → Ebû Abdurrahmân | Ebû Abdurrahmân dedi ki: Bir dihkanın bahçesinin yanına konakladık. Sa‘d bana dedi ki: “Gerçek bir müslüman olmak seni sevindirirse ondan hiçbir şey alma.” Bana bir dirhem verdi ve dedi ki: “Bir kısmıyla hurma, bir kısmıyla yem satın al.”
+& haddesenâ, an, an, an
+% Ebû Abdurrahmân, Sa‘d’ın mevlâsıdır.
+^ قال: نزلنا إلى
+
+20323 | Abde b. Süleymân → Saîd b. Ebî Arûbe → Katâde → İbn Abbâs | İbn Abbâs dedi ki: “Etrafı duvarla çevrilmiş bir hurmalığın ya da benzerinin yanından geçersen sahibinin izni olmadan oraya girme. Açık arazide onun yanından geçersen ye, taşıma.”
+& haddesenâ, an, an, an
+^ قال: «إذا مررت
+
+20324 | Kesîr b. Hişâm → Ca‘fer b. Burkân → Yezîd b. el-Esam | Yezîd b. el-Esam dedi ki: “Âişe beni ve Talha b. Ubeyd’in bir oğlunu –o, onun kız kardeşinin oğludur– gönderdi. Biz Medine bahçelerinden birinde durup ondan yemiştik. Bu ona ulaştı. Kız kardeşinin oğluna dönüp onu kınadı, sonra bana dönüp beni etkili bir öğütle öğütledi.”
+& haddesenâ, an, haddesenâ
+^ قال: «بعثتنا عائشة
+
+20325 | Vekî‘ → İsrâîl → Câbir → Âmir | Âmir dedi ki: “Meyveden ancak bedeliyle ye.”
+& haddesenâ, an, an, an
+^ قال: «لا تأكل
+
+20326 | Vekî‘ → Süfyân → İbrâhîm b. Abdüla‘lâ el-Ca‘fî → Saîd b. Cübeyr | Saîd b. Cübeyr dedi ki: “Meyveden ancak sahiplerinin izniyle ye.”
+& haddesenâ, haddesenâ, an, an
+^ قال: «لا تأكل
+
+20327 | Yezîd b. Hârûn → Saîd → Katâde → İkrime → İbn Abbâs | İbn Abbâs’tan: “Duvarı olmasa da meyveyi sahibinin izni olmadan toplamazdı.”
+& haddesenâ, ahberanâ, an, an, an
+^ قال: «كان لا
+
+20328 | Vekî‘ → Fudayl b. Gazvân → Abdurrahmân b. Hâzim | Abdurrahmân b. Hâzim dedi ki: Mücâhid’e ağaçtan düşen şeyi sordum. Dedi ki: “Onu yırtıcı hayvanlara ve kuşlara bırak.”
+& haddesenâ, haddesenâ, an
+^ قال: سألت مجاهدا
+
+20329 | Vekî‘ → Süfyân → Câbir → Nâfi‘ → İbn Ömer | İbn Ömer’den: O, (düşen meyveyi) toplamayı hoş görmedi.
+& haddesenâ, haddesenâ, an, an, an
+^ «أنه كره
+
+@ Emîrlerin hediyelerine ve âmilliğe ruhsat verenler
+
+20330 | Hâtim b. İsmâîl → Ca‘fer b. Yahyâ → babası → Hasan ve Hüseyin | Ca‘fer b. Yahyâ’nın babasından: Hasan ve Hüseyin, Muâviye’nin hediyelerini kabul ederlerdi.
+& haddesenâ, an, an, enne
+^ «كانا يقبلان
+
+20331 | Ebû Muâviye → A‘meş → Habîb | Habîb dedi ki: “İbn Ömer’i ve İbn Abbâs’ı gördüm; onlara Muhtâr’ın hediyeleri gelir, onları kabul ederlerdi.”
+& haddesenâ, an, an
+^ قال: «رأيت ابن
+
+20332 | Cerîr → Mugîre → Simâk b. Seleme → Abdurrahmân b. Isme | Abdurrahmân b. Isme dedi ki: “Âişe’nin yanındaydım; Muâviye’nin yanından bir elçi ona bir hediye getirdi, o da onu kabul etti.”
+& haddesenâ, an, an, an
+^ قال: «كنت عند
+
+20333 | Yahyâ b. Zekeriyyâ b. Ebî Zâide → Haccâc → Atâ | Atâ’dan: Muâviye, Âişe’ye yüz bin (dirhem) değer biçilen bir gerdanlık gönderdi; o da onu kabul etti ve mü’minlerin anneleri arasında taksim etti.
+& haddesenâ, an, an
+^ «أن عائشة
+
+20334 | Yahyâ b. Saîd → Abdülmelik b. Umeyr | Abdülmelik b. Umeyr dedi ki: “Bişr b. Mervân benimle beş kişiye beş yüz (dirhem) gönderdi: Ebû Cuhayfe’ye, Ebû Rezîn’e, Amr b. Meymûn’a, Mürre’ye ve Ebû Abdurrahmân’a. Ebû Rezîn, Ebû Cuhayfe ve Amr b. Meymûn onu geri çevirdiler; diğer ikisi kabul etti.”
+& haddesenâ, an
+^ قال: " أرسل معي
+
+20335 | Abdurrahmân b. Mehdî → Süfyân → Abdülmelik b. Umeyr | (Abdülmelik b. Umeyr) Yahyâ b. Saîd’in hadisine yakınını andı.
+& haddesenâ, an, an
+^ ذكر نحو حديث
+
+20336 | Abbâd b. el-Avvâm → Süfyân b. Hüseyin → Hasan | Süfyân b. Hüseyin dedi ki: Hasan’ı, bir adam ona sorarken işittim: “Ben âmilim; (vali) bana verip hediye ediyor (ne dersin)?” Dedi ki: “Onu al, babasız kalasıca, ve git.”
+& haddesenâ, an, semi‘tü
+^ قال: سمعت الحسن
+
+20337 | Vekî‘ → İsmâîl → Kays | Kays dedi ki: Babamla birlikte, hasta olan Ebû Bekir’i ziyaret etmek için yanına girdik. Bizi iki ata bindirdi. “Esmâ’yı, elleri dövmeli hâlde onun (üzerinden sinekleri) kovarken gördüm.”
+& haddesenâ, haddesenâ, an
+^ قال: دخلت مع
+
+20338 | Vekî‘ → Süfyân → Mansûr ve İbrâhîm b. Muhâcir | Mansûr ve İbrâhîm b. Muhâcir’den: İbrâhîm ve Temîm b. Seleme bir âmile gittiler. (Âmil) hediyede Temîm’i İbrâhîm’e üstün tuttu; İbrâhîm de kızdı.
+& haddesenâ, haddesenâ, an
+^ «أن إبراهيم،
+
+20339 | Yezîd → Şu‘be → İbrâhîm b. Muhammed b. el-Münteşir → babası | İbrâhîm b. Muhammed b. el-Münteşir’in babasından: Hâlid b. Esed, Mesrûk’a otuz bin (dirhem) gönderdi; o da onu geri çevirdi. (Babam) ona dedi ki: “Keşke onu alsaydın da onunla sadaka verseydin ve (akrabana) iyilik etseydin.” (Mesrûk) onu almaktan kaçındı.
+& haddesenâ, an, an, an
+^ أن خالد بن
