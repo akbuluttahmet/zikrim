@@ -1,0 +1,289 @@
+@ Adamın adamda alacağı olur da (borçlu) ona hediye verirse, onu alacağından sayar mı?
+
+20669 | İsmâîl b. İbrâhîm (İbn Uleyye) → Yahyâ b. Yezîd el-Hünâî → Enes b. Mâlik | Yahyâ b. Yezîd el-Hünâî dedi ki: Enes b. Mâlik’e, borçlusunun kendisine hediye verdiği adamı sordum. Dedi ki: “Eğer bundan önce de ona hediye veriyor idiyse bir sakıncası yoktur; bundan önce ona hediye vermiyor idiyse uygun olmaz.”
+& haddesenâ, an, kâle
+^ سألت أنس بن مالك
+
+20670 | İsmâîl b. İbrâhîm → Eyyûb → İkrime → İbn Abbâs | İbn Abbâs dedi ki: “Bir borç verdiğinde, (karşılığında) bir paça hediyesi de, bir binek hayvanına binmeyi de (kabul edip) hediye alma.”
+& haddesenâ, an, an, kâle
+^ «إذا أقرضت قرضا،
+
+20671 | Ebü’l-Ahvas → Esved b. Kays → Külsûm b. el-Akmer → Zir b. Hubeyş → Übey | Übey dedi ki: “Bir borç verdiğinde borçlu, borcu getirip yanında da bir hediye ile gelirse, ondan borcunu al, hediyesini ona geri çevir.”
+& haddesenâ, an, an, an, kâle
+^ «إذ أقرضت قرضا
+
+20672 | Cerîr → Mansûr → İbrâhîm → Alkame | Alkame dedi ki: “Adamın adamda alacağı olur da (borçlu), ondan (ödemeyi) ertelemesi için ona hediye verirse, (alacaklı) onu alacağından saysın.”
+& haddesenâ, an, an, an
+^ «إذا كان للرجل
+
+20673 | Cerîr → Mansûr ve Mugîre → İbrâhîm | İbrâhîm dedi ki: “Eğer bu, borçtan önce aralarında cereyan eden bir şey idiyse —öteki onu (yemeğe) çağırır, o da karşılığını verirdi— bunun bir sakıncası yoktur ve onu alacağından saymaz.”
+& haddesenâ, an, an
+^ «إذا كان ذلك
+
+20674 | Vekî‘ → Süfyân → İbn Cüreyc → Atâ | Atâ dedi ki: “Eğer bundan önce birbirlerine hediye veriyor idiyseler bir sakıncası yoktur.”
+& haddesenâ, an, an, an
+^ «إذا كانا يتهاديان
+
+20675 | Hafs b. Gıyâs → Âsım → İbn Sîrîn | İbn Sîrîn’den: Übey’in Ömer’de bir alacağı vardı. Ona bir hediye verdi, o da onu geri çevirdi. Ömer dedi ki: “Ribâ ancak ribâ yapmak ya da vadeyle (fazla almak) isteyen kimse üzerinedir.”
+& haddesenâ, an, an
+^ أن أبيا، كان
+
+20676 | Kesîr b. Hişâm → Ca‘fer b. Burkân → Zeyd b. Ebî Üneyse → Ali | Zeyd b. Ebî Üneyse’den: Ali’ye, adama borç verip ona hediye de veren adam soruldu. Dedi ki: “Bu, peşin ribâdır.”
+& haddesenâ, an, an, enne
+^ سئل عن الرجل
+
+20677 | Yahyâ b. Abdülmelik b. Ebî Ganiyye → babası → Hakem | Hakem dedi ki: “Kişinin, kendisinde alacağı olan adamın evinden yemesini —onu alacağından saymadıkça— hoş görmezdi.”
+& haddesenâ, an, an
+^ «كان» يكره
+
+20678 | Vekî‘ → Şu‘be → Ebû İshâk → Ebû Ömer | Ebû Ömer dedi ki: “(Alacağından) mahsup eder.”
+& haddesenâ, an, an, an
+^ «يقاصه»
+
+20679 | İbn Ebî Zâide ve Abde b. Süleymân → Sâlih b. Hay → Âmir | Âmir dedi ki: “Eğer adamda alacağın varsa onun misafiri olma.”
+& haddesenâ, an, an
+^ «إن كان لك
+
+20680 | İbn Ebî Zâide → İbn Sîrîn | İbn Sîrîn dedi ki: İbn Mes‘ûd’a, bir adama bir dirhem borç veren ve onun atının sırtını (binmeyi) şart koşan bir adam anlatıldı. Dedi ki: “Atının sırtından elde ettiği şey ribâdır.”
+& haddesenâ, an
+^ ذكر لابن مسعود
+
+20681 | Şihâb b. Muhammed el-Âmirî → Osman b. el-Esved → Mücâhid | Osman b. el-Esved dedi ki: Ona dedim ki: “Bir adamda bir dirhem alacağım olsa, ondan bir binek ödünç alabilir miyim ya da ondan bir iyilik isteyebilir miyim?” Dedi ki: “Sakıncası yoktur.”
+& haddesenâ, an, an
+^ قال: قلت له
+
+20682 | İbn İdrîs → Hişâm → İbn Sîrîn | İbn Sîrîn dedi ki: Şöyle derlerdi: “Ödeme ve eşekler (metinde böyle).”
+& haddesenâ, an, an
+^ " كانوا يقولون:
+
+@ Darda kalandan satın almak hakkında
+
+20683 | İbn İdrîs → Leys → Mücâhid → İbn Ömer | İbn Ömer dedi ki: “Darda kalanla alışveriş yapılmaz.”
+& haddesenâ, an, an, an
+^ «لا يباع من
+
+20684 | İbn İdrîs → Hişâm → Muhammed b. Sîrîn | Muhammed b. Sîrîn dedi ki: Şüreyh, sıkıştırma (altında yapılan) satışı geçerli saymazdı.
+& haddesenâ, an, an
+^ كان شريح «لا
+
+20685 | Vekî‘ → Hasan b. Sâlih → Abdüla‘lâ → Ebû Mugaffel | Ebû Mugaffel dedi ki: “Darda kalanın satışı ribâdır.”
+& haddesenâ, an, an, an
+^ «بيع المضطر ربا»
+
+20686 | Vekî‘ → İsrâîl ve Ali b. Sâlih → Ebü’l-Heysem → İbrâhîm | Ebü’l-Heysem dedi ki: İbrâhîm’e dedim ki: “Adama işkence ediliyor; ondan satın alabilir miyim?” Dedi ki: “Hayır.”
+& haddesenâ, an, an, kâle
+^ قلت لإبراهيم
+
+20687 | Vekî‘ → Hasan → Leys → Mücâhid | Mücâhid dedi ki: “Darda kalandan hiçbir şey satın alma.”
+& haddesenâ, an, an, an
+^ «لا تشتر من
+
+20688 | Vekî‘ → Ubeydullah b. el-Velîd → Sâlim | Sâlim dedi ki: “Darda kalanın satışı yasaklandı.”
+& haddesenâ, an, an
+^ «نهي عن بيع
+
+@ Menfaat sağlayan her borcu hoş görmeyenler
+
+20689 | Ebû Hâlid el-Ahmer → Haccâc → Atâ | Atâ dedi ki: “Menfaat sağlayan her borcu hoş görmezlerdi.”
+& haddesenâ, an, an
+^ «كانوا» يكرهون
+
+20690 | Hafs → Eş‘as → Hakem → İbrâhîm | İbrâhîm dedi ki: “Menfaat sağlayan her borç ribâdır.”
+& haddesenâ, an, an, an
+^ «كل قرض جر
+
+20691 | İbn İdrîs → Hişâm → Hasan ve Muhammed | Hasan ve Muhammed’den: İkisi de menfaat sağlayan her borcu hoş görmezlerdi.
+& haddesenâ, an, an
+^ «أنهما كانا»
+
+20692 | Vekî‘ → İbn Avn → İbn Sîrîn | İbn Sîrîn dedi ki: Bir adam bir adama beş yüz dirhem borç verdi ve ona atının sırtını (binmeyi) şart koştu. İbn Mes‘ûd dedi ki: “Atının sırtından elde ettiği şey ribâdır.”
+& haddesenâ, haddesenâ, an
+^ أقرض رجل رجلا
+
+20693 | Vekî‘ → Süfyân → Mugîre → İbrâhîm | İbrâhîm’den: O, menfaat sağlayan her borcu hoş görmedi.
+& haddesenâ, haddesenâ, an, an
+^ «أنه» كره
+
+@ Yaş hurmayı kuru hurma karşılığında satın almak hakkında
+
+20694 | Ebü’l-Ahvas → Târık → Mûsâ b. Târık → Saîd b. el-Müseyyeb | Saîd b. el-Müseyyeb’den: O, yaş hurmayı kuru hurma karşılığında misli misline (satmayı) hoş görmedi.
+& ahberanâ, an, an, an
+^ «أنه» كره الرطب
+
+20695 | Cerîr → Mugîre → İbrâhîm | İbrâhîm dedi ki: “Yaş (hurmayı) kuru (hurma) karşılığında satın alma.”
+& haddesenâ, an, an
+^ «لا تشتر الرطب
+
+20696 | İbn Ebî Zâide → Ubeydullah b. Ömer → Nâfi‘ → İbn Ömer | İbn Ömer’den: Nebî ﷺ, kuru hurmanın kuru hurma karşılığında ölçekle satılmasını (metinde böyle), üzümün kuru üzüm karşılığında ölçekle satılmasını ve ekinin buğday karşılığında ölçekle satılmasını yasakladı.
+& haddesenâ, an, an, an
+^ «أن النبي صلى
+
+20697 | Ebû Dâvûd et-Tayâlisî → Zâide b. Kudâme → Simâk → İkrime → İbn Abbâs | İbn Abbâs’tan: O, yaş hurmayı kuru hurma karşılığında (satmayı) hoş görmedi ve dedi ki: “O (yaş hurma), ölçekte —ya da kafîzde— ikisinin daha azıdır.”
+& haddesenâ, an, an, an, an
+^ أنه " كره الرطب
+
+20698 | Vekî‘ → Mâlik b. Enes → Abdullah b. Yezîd → Zeyd Ebû Ayyâş → Sa‘d | Zeyd Ebû Ayyâş dedi ki: Sa‘d’a, sült (arpası) karşılığında darı (satmayı) sordum; onu hoş görmedi ve dedi ki: Resûlullah’a ﷺ yaş hurmanın kuru hurma karşılığında (satılması) soruldu. “Kuruyunca eksilir mi?” buyurdu. “Evet” dediler. O da bunu hoş görmedi.
+& haddesenâ, an, an, an, kâle
+^ سألت سعدا عن
+
+20699 | Esbât b. Muhammed → Eş‘as → Hakem | Hakem’den: O, yaş hurmayı kuru hurma karşılığında, kuru olanla misli misline (satmayı) hoş görmedi.
+& haddesenâ, an, an
+^ «أنه» كره الرطب
+
+@ Adamın kölesinin bir kısmını azat etmesi hakkında
+
+20700 | Cerîr → Ebân b. Taglib → Hâris b. İbrâhîm ve başkası → İbrâhîm | İbrâhîm dedi ki: “Kim kendisine ait bir kölede payını azat eder de kölenin tamamı ya da bir kısmı onun idiyse, (köle) tamamen azatlıdır.”
+& haddesenâ, an, an, an
+^ «من أعتق شقصا
+
+20701 | Hafs b. Gıyâs → Leys → Âsım → İbn Abbâs | İbn Abbâs’tan, cariyesine “Fercin hürdür” diyen adam hakkında: Dedi ki: “O hürdür. Ondan bir şey azat olunca o hürdür.”
+& haddesenâ, an, an, an
+^ في " رجل قال
+
+20702 | Vekî‘ → Süfyân → Hâlid b. Seleme | Hâlid b. Seleme dedi ki: Bir adam, Ömer Arafat’ta iken ona geldi ve “Kölemin üçte birini azat ettim” dedi. Ömer dedi ki: “O tamamen hürdür; onun ortağı yoktur.”
+& haddesenâ, an, an
+^ جاء رجل إلى
+
+20703 | Esbât b. Muhammed → Mutarrif → Şa‘bî | Şa‘bî’den, kölesinin üçte birini azat eden adam hakkında: Dedi ki: “(Köle) üçte iki için onun adına çalışır; (efendi) geri kalanını tazmin etmez.”
+& haddesenâ, an, an
+^ في «رجل أعتق
+
+20704 | Abbâd b. el-Avvâm → Saîd → Katâde → Ebü’l-Melîh | Ebü’l-Melîh’ten: Bir adam kölesinin üçte birini azat etti. (Durum) Nebî’ye ﷺ arz edildi, o da: “O hürdür; onun ortağı yoktur” buyurdu.
+& haddesenâ, an, an, an
+^ أن رجلا أعتق
+
+20705 | Gunder → Şu‘be → Hakem ve Hammâd | Şu‘be dedi ki: Hakem’e, kölesine “Yarı bölümün hürdür” diyen adamı sordum. Dedi ki: “Eğer sizin dediğiniz gibi ‘Tazmin haktır’ ise o azatlıdır.” Hakem’in görüşü onun azat edilmesiydi. (Şu‘be) dedi ki: Hammâd’a sordum, o da dedi ki: “Yarısı azat olur, geri kalan yarısında çalışır.”
+& haddesenâ, an, kâle
+^ سألت الحكم عن
+
+20706 | Hafs → Eş‘as → Hasan → Ali | Ali dedi ki: “Kişi kölesinden dilediği kadarını azat eder.”
+& haddesenâ, an, an, kâle
+^ «يعتق الرجل ما
+
+20707 | Hafs b. Süleymân → İsmâîl → Hasan | Hasan dedi ki: “(Kişi) kölesini az ya da çok azat ederse o azatlıdır. Karısından bir parmağı ya da bundan fazlasını boşarsa o boşanmıştır.”
+& haddesenâ, an, an
+^ «إذا أعتق عبده
+
+@ Kadınların şahitliğinin geçerli olduğu şeyler
+
+20708 | Îsâ b. Yûnus → Evzâî → Zührî | Zührî dedi ki: “Sünnet şöyle cari oldu: Kadınların şahitliği, kadınların doğumları ve ayıpları gibi onlardan başkasının muttali olamadığı şeylerde geçerlidir. Ebenin tek başına şahitliği (doğan çocuğun) ses çıkarması hususunda geçerlidir. Bunun dışındakilerde ise iki kadın (ın şahitliği geçerlidir).”
+& haddesenâ, an, an
+^ «مضت السنة أن
+
+20709 | Ebû Bekir b. Ayyâş → Mutarrif → Şa‘bî | Şa‘bî’den, erkeklerin şahitliklerinin geçerli olmadığı şeyler hakkında: “Dört (kadın).” Hakem ise dedi ki: “İki kadın yeter.”
+& haddesenâ, an, an
+^ فيما لا تجوز
+
+20710 | İbn Ebî Zâide → Abdülmelik → Atâ | Atâ dedi ki: “Kadınların şahitliği (yeni doğanın) ses çıkarması hususunda geçerlidir.”
+& haddesenâ, an, an
+^ «تجوز شهادة النساء
+
+20711 | İbn Ebî Zâide → İsmâîl → Âmir | Âmir dedi ki: “Şahitliklerden öyle bir şahitlik vardır ki onda kadınların şahitliklerinden başkası geçerli olmaz.”
+& haddesenâ, an, an
+^ «من الشهادات شهادة
+
+20712 | Vekî‘ → Süfyân → Hammâd → İbrâhîm; ayrıca Vekî‘ → Süfyân → Yûnus → Hasan; ayrıca Vekî‘ → Süfyân → Eş‘as → Şa‘bî | İbrâhîm, Hasan ve Şa‘bî dediler ki: “Erkeklerin muttali olamadığı şeylerde tek bir kadının şahitliği geçerlidir.”
+& haddesenâ, an, an, an; haddesenâ, an, an, an; haddesenâ, an, an, an
+^ قالوا: «تجوز شهادة
+
+20713 | Vekî‘ → Süfyân → İbn Cüreyc → Atâ | Atâ dedi ki: “Erkeklerin şahitliğinin geçerli olmadığı şeylerde dört kadının şahitliğinden azı geçerli olmaz.”
+& haddesenâ, an, an, an
+^ «لا يجوز أقل
+
+20714 | Vekî‘ → Süfyân → Abdüla‘lâ → Şüreyh | Şüreyh’ten: O, bir ebenin şahitliğini geçerli saydı.
+& haddesenâ, an, an, an
+^ أنه «أجاز شهادة قابلة»
+
+20715 | Vekî‘ → Süfyân → Câbir → Abdullah b. Nücey → Ali | Ali’den: O, bir ebenin şahitliğini geçerli saydı.
+& haddesenâ, an, an, an, an
+^ أنه «أجاز شهادة قابلة»
+
+20716 | Hafs b. Gıyâs → Şeybânî ve Ebû Hanîfe → Hammâd | Hammâd dedi ki: “Tek bir ebenin şahitliği geçerlidir.” İkisinden biri (de şöyle) dedi: “Yahudi olsa bile.”
+& haddesenâ, an, an
+^ «تجوز شهادة قابلة
+
+20717 | Vekî‘ → İsmâîl → Şa‘bî | Şa‘bî dedi ki: “Şahitlikten öyle bir şahitlik vardır ki onda bir kadının şahitliğinden başkası geçerli olmaz.”
+& haddesenâ, an, an
+^ «من الشهادة شهادة
+
+@ İhtilaf eden iki şahit hakkında
+
+20718 | Şerîk → Câbir → bir adam → Şüreyh | Şüreyh’ten, ihtilaf eden iki şahit hakkında —biri yirmi üzerine, öteki on üzerine şahitlik etti—: Dedi ki: “On (ile) hükmedilir.”
+& haddesenâ, an, an, an
+^ في شاهدين يختلفان
+
+20719 | Ebû Muâviye → Hammâd → Mis‘ar → Ömer b. Abdullah b. Vâsile | Ömer b. Abdullah b. Vâsile dedi ki: “Şüreyh’in yanında iki şahit şahitlik etti; biri daha çok, öteki daha az (miktara şahitlik etti). O da ikisinin şahitliğini az olan üzerine geçerli saydı.”
+& haddesenâ, an, an, an
+^ «شهد شاهدان عند
+
+20720 | Ebû Muâviye → Muhtâr b. Abdullah b. Melîh es-Sekafî → Ömer b. Abdullah b. Vâsile | Ömer b. Abdullah b. Vâsile dedi ki: “Şüreyh’in yanında iki şahit şahitlik etti; biri bin üzerine, öteki beş yüz üzerine. Şüreyh ikisinin şahitliğini beş yüz üzerine geçerli saydı.”
+& haddesenâ, an, an
+^ «شهد عند شريح
+
+20721 | Sehl b. Yûsuf → Amr → Hasan | Hasan dedi ki: “Ona ikisinin daha azı vardır.”
+& haddesenâ, an, an
+^ «له أوكسهما»
+
+@ Havale hakkında; (alacaklı) ondan geri dönebilir mi?
+
+20722 | Ebü’l-Ahvas → Mugîre → İbrâhîm | İbrâhîm dedi ki: “Her havalede (alacaklı) geri döner; ancak adamın adama: ‘Falancanın üzerindeki (alacağı) sana şu kadara satıyorum’ demesi müstesna. Onu satınca geri dönmez.”
+& haddesenâ, an, an
+^ " كل حوالة يرجع
+
+20723 | Yahyâ b. Ebî Zâide → İbn Ebî Ganiyye → Hakem b. Uteybe | Hakem b. Uteybe dedi ki: “Havalede, (havale edilen) iflas etmedikçe ya da (geride bir şey) bırakmadan ölmedikçe arkadaşına geri dönülmez. Çünkü kişi bir kere zenginleşir, bir kere darlığa düşer.”
+& haddesenâ, an, an
+^ «لا يرجع في
+
+20724 | Vekî‘ → Şu‘be → Hulayd b. Ca‘fer → Ebû İyâs → Osman | Osman’dan, havale hakkında: “(Alacaklı) geri döner; Müslümanın üzerine (malının) zayi olması yoktur.”
+& haddesenâ, an, an, an, an
+^ في الحوالة: «يرجع،
+
+20725 | Abde b. Süleymân → İbn Ebî Arûbe → Katâde → Hasan | Hasan dedi ki: “Zengin birine havaleyi kabul eder, sonra o, bundan sonra iflas ederse bu onun aleyhine geçerlidir.”
+& haddesenâ, an, an, an
+^ «إذا احتال على
+
+20726 | Vekî‘ → Hattâb el-Usfurî → Şa‘bî | Hattâb el-Usfurî dedi ki: Bir adam beni bir Yahudiye havale etti; o da (ödemede) gevşek davrandı. Şa‘bî’ye sordum, dedi ki: “İlkine dön.”
+& haddesenâ, an, kâle
+^ أحالني رجل على
+
+20727 | Vekî‘ → Şu‘be → Hakem → Şüreyh | Şüreyh’ten, adamı (başkasına) havale eden, sonra da (alacağı) zayi olan adam hakkında: Dedi ki: “İlkine dönmez.”
+& haddesenâ, an, an, an
+^ في الرجل يحيل
+
+20728 | Vekî‘ → Zekeriyyâ → Şa‘bî → Şüreyh | (Şüreyh’ten) buna yakını (rivayet edildi).
+& haddesenâ, an, an, an
+^ بنحوه
+
+20729 | Vekî‘ → Süfyân → Abdullah b. Ebi’s-Sefer → Şa‘bî | Şa‘bî’den: O, (kişinin) “Falancanın üzerindeki (alacağı) senden satın alıyorum” demesini hoş görmedi ve “Bu garardır” dedi.
+& haddesenâ, an, an, an
+^ أنه كره أن
+
+20730 | Muâz → Eş‘as → Hasan | Hasan’dan: O, havaleyi beraat saymazdı; ancak (alacaklı) onu ibra ederse (müstesna); onu ibra edince beri olmuştur.
+& haddesenâ, an, an
+^ «أنه كان لا
+
+@ Kadının kocasına (bir şey) vermesi hakkında
+
+20731 | Ali b. Müshir → Şeybânî → Muhammed b. Ubeydullah es-Sekafî | Muhammed b. Ubeydullah es-Sekafî dedi ki: “Ömer b. el-Hattâb şöyle yazdı: ‘Kadınlar kocalarına arzu ve korkuyla verirler. Hangi kadın kocasına bir şey verir de sonra onu geri almak isterse, ona o daha layıktır.’”
+& haddesenâ, an, an
+^ «كتب عمر بن
+
+20732 | Ebû Bekir b. Ayyâş → Mugîre → Âmir | Âmir dedi ki: “Kadın hibesinden dönemez, erkek de hibesinden dönemez.”
+& haddesenâ, an, an
+^ «لا ترجع المرأة
+
+20733 | Vekî‘ → Süfyân → Abdülkerîm el-Cezerî → Ömer b. Abdülazîz | Ömer b. Abdülazîz’den, koca ve kadın hakkında: “İkisinden hiçbirinin, arkadaşına hibe ettiği şeyden dönme hakkı yoktur.”
+& haddesenâ, an, an, an
+^ «في الزوج والمرأة
+
+20734 | İbn Ebî Zâide → Eş‘as → İbn Sîrîn | İbn Sîrîn dedi ki: Bir kadın, kocasına verdiği bir şey hakkında onunla Şüreyh’e muhakeme olmaya geldi. Adam dedi ki: “Allah teâlâ: ‘Eğer gönül hoşluğuyla ondan size bir şey bağışlarlarsa onu afiyetle, hoşça yiyin’ (Nisâ 4/4) buyurmadı mı?” Şüreyh dedi ki: “Eğer onun gönlü buna hoş olsaydı siz ikiniz muhakeme olmazdınız.”
+& haddesenâ, an, an
+^ جاءت مرأة تخاصم
+
+20735 | İbn Ebî Zâide → İbn Avn → İbn Sîrîn → Şüreyh | Şüreyh’ten: “Onu zorlama ve horlanma olmaksızın bıraktığına dair iki adil şahit (gerekir).”
+& haddesenâ, an, an, an
+^ «شاهدان ذوا عدل
+
+20736 | İbn Mehdî → Zem‘a → İbn Tâvûs → babası Tâvûs | Tâvûs dedi ki: “Kadın kocasına hibe eder, sonra ondan dönerse (o şey) ona geri verilir.”
+& haddesenâ, an, an, an
+^ «إذا وهبت المرأة

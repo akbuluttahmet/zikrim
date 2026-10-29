@@ -1,0 +1,308 @@
+@ Îlâda dört ay geçince (kadın) iddet bekler diyenler
+
+18582 | Abdüsselâm → Ali b. Bezîme → Ebû Ubeyde → Mesrûk → Abdullah | Abdullah dedi ki: “Dört ay geçince bu bâin bir talaktır; (kadın) bundan sonra üç hayız iddet bekler.”
+& haddesenâ, an, an, an, an
+^ قال: «إذا مضت
+
+18583 | Abdüla‘lâ → Hişâm → Hasan ve Muhammed | Hasan ve Muhammed dediler ki: “(Kadın) dört aydan sonra boşanmış kadının iddetini bekler.”
+& haddesenâ, an, an
+^ قالا: «تعتد
+
+18584 | Gunder → Şu‘be → Hakem ve Hammâd | Hakem ve Hammâd dediler ki: “Adam karısına îlâ yapar da dört ay geçerse, (kadın) hayız görmüyorsa bundan sonra üç ay iddet bekler.”
+& haddesenâ, an, an
+^ قالا: «إذا آلى
+
+18585 | Sekafî → Bürd → Mekhûl | Mekhûl dedi ki: “Adam karısına îlâ yapar da dört ay geçerse, bu bir talaktır; (kadın) iddete yeniden başlar.”
+& haddesenâ, an, an
+^ قال: «إذا آلى
+
+18586 | Süfyân b. Uyeyne → Amr → Câbir b. Zeyd | Câbir b. Zeyd dedi ki: “Ona iddet gerekmez.”
+& haddesenâ, an, an
+^ قال: «ليس عليها
+
+18587 | Ya‘lâ b. Uyeyne → Abdülmelik → Atâ | Atâ’dan: Karısına îlâ yapan ve dört ay geçen adam hakkında, (kadın) nasıl iddet bekler (diye soruldu). Dedi ki: “Üç kur’ iddet bekler.”
+& haddesenâ, an, an
+% Arapçada ad böyle yazılıdır: “يعلى بن عيينة” (metinde böyle).
+^ في الرجل آلى
+
+@ Dört aydan az süreye îlâ yapan adam hakkında söyledikleri; bu îlâ değildir diyenler
+
+18588 | Ali b. Müshir → Saîd → Âmir el-Ahvel → Atâ → İbn Abbâs | İbn Abbâs dedi ki: “Karısına bir ay, iki ay ya da üç ay, sınıra ulaşmayacak (bir süre) îlâ yaparsa bu îlâ değildir.”
+& haddesenâ, an, an, an, an
+^ قال: «إذا آلى من
+
+18589 | Hafs → Abdülmelik → Atâ | Atâ dedi ki: “Dört (ay)dan az (bir süre) üzerine yemin ederse bu îlâ değildir.”
+& haddesenâ, an, an
+^ قال: «إذا حلف
+
+18590 | Zeyd b. el-Hubâb → Süfyân → Câbir → Şa‘bî | Şa‘bî’den: Üç ay karısına yaklaşmayacağına yemin eden, sonra da dört ay geçinceye kadar onu bırakan adam hakkında dedi ki: “Îlâ yapmış olmaz.”
+& haddesenâ, an, an, an
+^ في رجل حلف
+
+@ Dört aydan az (bir süre) üzerine yemin ederse îlâ yapmış olur diyenler
+
+18591 | İbn İdrîs → Leys → Vebere → Abdullah | Vebere’den: Bir adam karısına bir ay îlâ yaptı; Abdullah da bunu (îlâ olarak) onun aleyhine geçerli saydı.
+& haddesenâ, an, an, an
+^ أن رجلا آلى
+
+18592 | Abdüla‘lâ → Hişâm → Hasan ve Muhammed | Hasan ve Muhammed dediler ki: “Adam karısına bir ay îlâ yapar, sonra da dört ay geçinceye kadar onu bırakırsa, bu bâin bir talaktır.”
+& haddesenâ, an, an
+^ قالا: «إذا آلى
+
+18593 | Cerîr → Mugîre → Hammâd | Hammâd dedi ki: “Adam karısına ‘Vallahi bugün sana yaklaşmayacağım’ der de onu dört ay bırakırsa bu îlâdır.”
+& haddesenâ, an, an
+^ قال: " إذا قال
+
+18594 | Vekî‘ → Süfyân → Mugîre → İbrâhîm | İbrâhîm dedi ki: “Dört (ay)dan az (bir süre) üzerine yemin ederse îlâ yapmış olur.”
+& haddesenâ, an, an, an
+^ قال: «إذا حلف
+
+18595 | Zeyd b. el-Hubâb → Hammâd b. Seleme → Haccâc → Hakem | Hakem’den: Bir ay karısına yaklaşmayacağına yemin eden adam hakkında dedi ki: “O, îlâ yapmıştır.”
+& haddesenâ, an, an, an
+^ في الرجل يحلف
+
+@ Karısına îlâ yapan, sonra (ondan) dönüp ona yönelen, fakat hastalık ya da bir özür buna engel olunca diliyle dönen adam hakkında söyledikleri; bu ric‘attir diyenler
+
+18596 | Cerîr → Mansûr → İbrâhîm → Ebü’ş-Şa‘sâ | Ebü’ş-Şa‘sâ dedi ki: Mahalleden bir adam îlâ yaptı; karısı da lohusa oldu. Alkame’ye, Esved’e ve Mesrûk’a sordum; dediler ki: “Diliyle dönerse dönmüş olur.”
+& haddesenâ, an, an, an
+^ قال: آلى رجل
+
+18597 | Cerîr → Mansûr → bir adam → İbrâhîm | İbrâhîm dedi ki: “Adam karısına îlâ yapar da onunla cimâ etmesine hastalık, meşguliyet ya da kendisinden veya kadından kaynaklanan bir özür engel olur ve dönüşüne şahit tutarsa, bu ona yeter.”
+& haddesenâ, an, an, an
+^ قال: «إذا آلى
+
+18598 | Vekî‘ → Süfyân → Eyyûb → Ebû Kılâbe | Ebû Kılâbe dedi ki: “Diliyle dönerse bu ric‘attir.”
+& haddesenâ, an, an, an
+^ قال: «إذا راجع
+
+18599 | Ma‘n b. Îsâ → İbn Ebî Zi’b → Zührî | Zührî îlâ yapan hakkında dedi ki: “Hasta ya da yolcu olursa veya kadın hayızlı olursa, dönüşüne şahit tutar.”
+& haddesenâ, an, an
+^ قال في المولي
+
+18600 | Abdülvehhâb → Saîd → Katâde → Hasan ve İkrime | Hasan ve İkrime dediler ki: “Mazur sayılacağı bir özrü olur da döndüğüne dair kendisi için şahit tutarsa, bu onun hakkıdır.”
+& haddesenâ, an, an, an
+^ قالا: «إذا كان
+
+18601 | Abde → İbn Ebî Arûbe → Katâde → Hasan | Hasan dedi ki: “Adam karısına îlâ yapar da döndüğüne şahit tutarsa, bu onun hakkıdır.”
+& haddesenâ, an, an, an
+^ قال: «إذا آلى
+
+@ Onun için cimâdan başka dönüş yoktur diyenler
+
+18602 | Muhammed b. Fudayl → Mutarrif → Şa‘bî → İbn Abbâs | İbn Abbâs dedi ki: “Dönüş (fey’) cimâdır.”
+& haddesenâ, an, an, an
+^ قال: «الفيء الجماع»
+
+18603 | Vekî‘ → Şu‘be → Hakem → Miksem → İbn Abbâs | İbn Abbâs dedi ki: “Talaka azmetmek dört ayın sona ermesidir; dönüş ise cimâdır.”
+& haddesenâ, an, an, an, an
+^ قال: «عزيمة الطلاق
+
+18604 | Cerîr b. Abdülhamîd → Mansûr → Şa‘bî ve Hakem | Şa‘bî ve Hakem dediler ki: “Dönüş cimâdır.”
+& haddesenâ, an, an
+^ قالا: «الفيء الجماع»
+
+18605 | Hafs → İsmâîl | İsmâîl dedi ki: “Cimâdan başka dönüş yoktur.”
+& haddesenâ, an
+^ قال: «لا فيء
+
+18606 | Hafs → A‘meş → İbrâhîm | İbrâhîm dedi ki: “Cimâdan başka dönüş yoktur.”
+& haddesenâ, an, an
+^ قال: «لا فيء
+
+18607 | Hafs → İsmâîl → Şa‘bî | Şa‘bî dedi ki: “Dönüş cimâdır.”
+& haddesenâ, an, an
+^ قال: «الفيء الجماع»
+
+18608 | Vekî‘ → Süfyân → Ali b. Bezîme → Saîd b. Cübeyr | Saîd b. Cübeyr dedi ki: “Dönüş cimâdır.”
+& haddesenâ, an, an, an
+^ قال: «الفيء الجماع»
+
+18609 | Yezîd b. Hârûn → Muhammed b. Sâlim → Şa‘bî → Ali ve İbn Mes‘ûd ve İbn Abbâs | Ali, İbn Mes‘ûd ve İbn Abbâs dediler ki: “Dönüş cimâdır.” İbn Mes‘ûd da dedi ki: “Eğer onda kendisiyle cimâ arasına giren yaşlılık, hastalık ya da hapis gibi bir engel varsa, onun dönüşü kalbiyle ve diliyle dönmesidir.”
+& haddesenâ, an, an, an
+^ قالوا: «الفيء
+
+18610 | Abdüsselâm → Husayf → Saîd b. Cübeyr | Saîd b. Cübeyr’den: (Husayf) ona, karısına îlâ yapan bir adamı sordu. Dedi ki: “Kişinin karısından nail olduğu şeylere ondan nail olur, ancak onunla cimâ etmez. Onunla cimâ etmeden önce dört ay geçerse, kadın bâin olarak boşanmıştır.”
+& haddesenâ, an, an
+^ أنه سأله عن
+
+18611 | Vekî‘ → Süfyân → Husayn → Şa‘bî → Mesrûk | Mesrûk dedi ki: “Dönüş cimâdır.”
+& haddesenâ, an, an, an, an
+^ قال: «الفيء الجماع»
+
+@ Cariyeye îlâ yapan adam hakkında söyledikleri: Onun îlâsı ne kadardır?
+
+18612 | İsmâîl b. Uleyye → Yûnus → Hasan | Hasan’dan: O, cariyeye îlâ hakkında şöyle derdi: “İki ay geçer de kocası dönmezse îlâ gerçekleşmiş olur.”
+& haddesenâ, an, an
+^ أنه كان يقول
+
+18613 | Abdüsselâm b. Harb → Mugîre → İbrâhîm | İbrâhîm’den: Bir cariyeye îlâ yapan kimse hakkında dedi ki: “Onun îlâsı iki aydır.”
+& haddesenâ, an, an
+^ فيمن آلى
+
+18614 | Hafs → Eş‘as → Hakem → İbrâhîm | (İbrâhîm’den) bunun benzeri (rivayet edildi).
+& haddesenâ, an, an, an
+^ مثله
+
+18615 | Yezîd b. Hârûn → Cüveybir → Dahhâk | Dahhâk’tan: Hür (adam) cariyeye îlâ yaparsa ya da (onu) boşarsa, onun iddeti hür kadının iddetinin yarısıdır.
+& haddesenâ, an, an
+^ «في الحر إذا
+
+18616 | Şebâbe → Şu‘be → Hakem → İbrâhîm | Şu‘be dedi ki: Hakem’e cariyeye îlâ yapan kimseyi sordum; dedi ki: İbrâhîm dedi ki: “Onun iddeti iki aydır.” Hammâd’a da sordum; dedi ki: “Bunun benzeri.”
+& haddesenâ, haddesenâ, an, kâle
+^ قال: سألت الحكم
+
+@ Karısına îlâ yapan, sonra da onu boşayan adam hakkında söyledikleri
+
+18617 | Hüşeym → Mugîre → İbrâhîm | İbrâhîm dedi ki: “Îlâ yapıp sonra boşarsa ya da boşayıp sonra îlâ yaparsa, talak îlâyı ortadan kaldırır.”
+& haddesenâ, an, an
+^ قال: «إذا آلى
+
+18618 | Hüşeym → Mugîre → Şa‘bî | Şa‘bî dedi ki: “Bu ikisi yarış atları gibidir: Hangisi önce gelirse onunla hükmedilir; ikisi birlikte gerçekleşirse de onunla hükmedilir.”
+& haddesenâ, an, an
+^ قال: «هما كفرسي
+
+18619 | Hüşeym → Yûnus → Hasan | Hasan’dan: O, Şa‘bî’nin sözünün benzerini söylerdi.
+& haddesenâ, an, an
+^ أنه كان يقول
+
+18620 | Vekî‘ → İsmâîl → Şa‘bî | Şa‘bî’den, karısına îlâ yapıp sonra boşayan adam hakkında: “Kadın üç hayız görmeden önce dört ay geçerse, bâin olmuştur.”
+& haddesenâ, an, an
+^ " في الرجل يولي
+
+18621 | Vekî‘ → Süfyân → Hammâd → İbrâhîm | İbrâhîm dedi ki: “Talak îlâyı ortadan kaldırır.”
+& haddesenâ, an, an, an
+^ قال: «يهدم
+
+18622 | Ebû Muâviye → A‘meş → İbrâhîm | İbrâhîm dedi ki: “Talak îlâyı ortadan kaldırır.”
+& haddesenâ, an, an
+^ قال: «يهدم
+
+18623 | Yezîd b. Hârûn → Haccâc → Şa‘bî → Abdullah | Abdullah dedi ki: “Talak îlâyı ortadan kaldırır.” Ali de dedi ki: “Bu ikisi yarış atları gibidir.”
+& haddesenâ, an, an, an
+^ قال: «يهدم
+
+@ Îlâ rıza hâlinde de öfke hâlinde de olur diyenler ve öfke hâlinde olur diyenler
+
+18624 | Hafs b. Gıyâs → Abdullah b. Amr b. Mürre → Amr b. Mürre → Ebû Ubeyd → Abdullah | Abdullah dedi ki: “Îlâ rıza hâlinde de öfke hâlinde de olur.”
+& haddesenâ, an, an, an, an
+^ قال: «الإيلاء في
+
+18625 | Ebü’l-Ahvas → Simâk b. Harb → Umeyre → Ümmü Atıyye | Ümmü Atıyye dedi ki: Cübeyr karısına: “Kardeşimin oğlunu da oğlunla birlikte emzir” dedi. Kadın: “İki (çocuğu) emzirmeye gücüm yetmez” dedi. Bunun üzerine (Cübeyr), onu sütten kesinceye kadar ona yaklaşmayacağına yemin etti. Onu sütten kesince, (Cübeyr) onu meclisin yanından geçirdi. Topluluk: “Onu ne güzel beslemişsiniz” dedi. Cübeyr dedi ki: “Ben, onu sütten kesinceye kadar ona yaklaşmayacağıma yemin etmiştim.” Topluluk: “Bu îlâdır” dedi. Ali ona dedi ki: “Eğer bunu öfkeyle yaptıysan karın sana helal olmaz; değilse o senin karındır.”
+& haddesenâ, an, an, an
+^ قالت: قال جبير
+
+18626 | Hafs → Leys → Zübeyd → ona rivayet eden kimse → Ali | Ali dedi ki: “Îlâ ancak öfke hâlinde olur.”
+& haddesenâ, an, an, an, an
+^ قال: «إنما الإيلاء
+
+18627 | Hüşeym → Ka‘kā‘ b. Yezîd → Hasan | Ka‘kā‘ b. Yezîd dedi ki: Hasan’a îlâyı sordum; dedi ki: “Îlâ ancak öfke hâlinde olandır.” İbn Sîrîn’e de sordum; dedi ki: “Bunun ne olduğunu bilmiyorum.” Ve îlâ âyetini okudu.
+& haddesenâ, an, kâle
+^ قال: سألت الحسن
+
+18628 | Hüşeym → Mugîre → Mutarrif → Şa‘bî | Şa‘bî’den: Çocuğunu sütten kesinceye kadar karısına yaklaşmayacağına yemin eden adam hakkında dedi ki: “Dört ay geçince îlâ (hükmü) girmiş olur.”
+& haddesenâ, an, an, an
+^ في رجل حلف
+
+18629 | Ömer b. Hârûn → İsmâîl b. Abdülmelik → Saîd b. Cübeyr | Saîd b. Cübeyr dedi ki: “Îlâ, rıza hâlinde ve öfke hâlinde birdir.”
+& haddesenâ, an, an
+^ قال: «الإيلاء في
+
+@ “Îlâ ancak yeminle olur” diyenler
+
+18630 | Ali b. Müshir → Saîd → Katâde → Câbir b. Zeyd → İbn Abbâs | İbn Abbâs dedi ki: “Îlâ ancak yeminle olur.”
+& haddesenâ, an, an, an, an
+^ قال: «لا إيلاء
+
+18631 | Hafs → İbn Cüreyc → Atâ | Atâ dedi ki: “Îlâ ancak cimâ üzerine yeminle olur.”
+& haddesenâ, an, an
+^ قال: «الإيلاء لا
+
+18632 | Abdurrahmân b. Mehdî → Ebû Hurre | Ebû Hurre dedi ki: Hasan’a, karısına yedi ay küsen bir adamı sordum; dedi ki: “Küslüğü uzatmış.” “Ona îlâ (hükmü) girer mi?” dedim. “Yemin etti mi?” dedi. “Hayır” dedim. Dedi ki: “Yemin etmedikçe îlâ yoktur.”
+& haddesenâ, an
+^ قال: سألت الحسن
+
+18633 | Ebû Muâviye → A‘meş → İbrâhîm | İbrâhîm dedi ki: “Dört ay geçinceye kadar cimâya engel olan her yemin îlâdır.”
+& haddesenâ, an, an
+^ قال: «كل يمين
+
+18634 | Yezîd b. Hârûn → Habîb → Amr b. Herim → Câbir b. Zeyd | Amr b. Herim dedi ki: Câbir b. Zeyd’e, karısına küsen ve dört ay geçen bir adam soruldu. Dedi ki: “Kadın ona haram olmaz; ancak ona dokunmayacağına ve onunla barışmayacağına Allah’a yemin etmişse (başka). Buna yemin eder de dört ay geçinceye kadar dönmezse, kadın ondan bâin olmuştur; ‘elliyye’ (yemin) de budur.”
+& haddesenâ, an, an, kâle
+^ قال: سئل جابر
+
+18635 | İbn Mehdî → Hişâm → Katâde | Katâde dedi ki: “Yemin etmedikçe îlâ yoktur.”
+& haddesenâ, an, an
+^ قال: «لا إيلاء
+
+18636 | Vekî‘ → Süfyân → Abdullah b. Ebi’s-Sefer → Şa‘bî | Şa‘bî dedi ki: “Cimâya engel olan her yemin îlâdır.”
+& haddesenâ, haddesenâ, an, an
+^ قال: «كل يمين
+
+18637 | Vekî‘ → Süfyân → Mansûr ve Mugîre → İbrâhîm | İbrâhîm dedi ki: “Cimâya engel olan her yemin îlâdır.”
+& haddesenâ, haddesenâ, an, an
+^ قال: «كل يمين
+
+@ Kadına îlâ yapan, sonra iddet geçen, sonra da boşayan adam hakkında söyledikleri
+
+18638 | Abdüla‘lâ → Yûnus → Hasan | Hasan dedi ki: “Îlâ iddeti sona erince, (sonraki talakı) hiçbir şey saymaz.”
+& haddesenâ, an, an
+^ قال: «إذا انقضت
+
+18639 | Cerîr → Mugîre → İbrâhîm | İbrâhîm dedi ki: “Adam, îlâdan ya da talaktan dolayı kendisinden iddet bekleyen karısına: ‘O boştur’ derse, bu onun hakkında geçerlidir. İddeti sona erdikten sonra ‘Sen boşsun’ derse bu bir şey değildir; sahip olmadığı şeyi boşamış olur.”
+& haddesenâ, an, an
+^ قال: " إذا قال
+
+@ Köle hür kadına îlâ yaparsa bu konuda söyledikleri
+
+18640 | Abdüla‘lâ → Yûnus → Hasan | Hasan’dan: Ona kölenin hür kadına îlâsı soruldu; dedi ki: “Dört ay bekler.”
+& haddesenâ, an, an
+^ سئل عن إيلاء
+
+18641 | Ebû Isâm → Evzâî → Zührî | Zührî dedi ki: “Kölenin îlâsı, hürün îlâsının yarısıdır.”
+& haddesenâ, an, an
+^ قال: «إيلاء العبد
+
+@ Karısına îlâ yapan, sonra îlâ iddeti geçen adam hakkında söyledikleri; ona iddet içinde talip olabilir dediler
+
+18642 | Abdüsselâm b. Harb → Ali b. Bezîme → Ebû Ubeyde → Mesrûk → Abdullah | Abdullah dedi ki: “İddeti içinde ondan başkası ona talip olmaz; iddeti sona erince o ve (diğer) insanlar eşit olur.”
+& haddesenâ, an, an, an, an
+^ قال: «لا يخطبها
+
+18643 | Abdüla‘lâ → Hişâm → Hasan | Hasan dedi ki: “İddeti içinde ona kendisi talip olur, ondan başkası talip olmaz.”
+& haddesenâ, an, an
+^ قال: «يخطبها
+
+18644 | Ebû Üsâme → İbn Avn → Muhammed | Muhammed dedi ki: Îlâ hakkında şöyle derlerdi ya da konuşurlardı: “Dört ay geçince bu bâin bir talaktır; dilerse iddeti içinde ona talip olur.” İbn Avn dedi ki: Muhammed’e: “Âmir, ‘İddeti içinde ona (kocası) talip olur, ondan başkası talip olmaz’ diyor” dedim. Dedi ki: “Âmir doğru söylemiş.”
+& haddesenâ, an, an
+^ قال: كانوا يقولون
+
+18645 | Gunder → Şu‘be → Mugîre → Şa‘bî → Mesrûk | Mesrûk dedi ki: “Dört ay geçince bu bir bâin (talak)tır; kocası iddeti içinde ona talip olur, ondan başkası talip olmaz.”
+& haddesenâ, an, an, semi‘a, semi‘a
+^ قال: «إذا مضت
+
+18646 | Ya‘lâ b. Ubeyd → Abdülmelik → Atâ | Atâ dedi ki: “Kocası onunla evlenmek isterse ondan (dolayı) iddet beklemez; fakat insanlardan (dolayı) üç kur’ iddet bekler.”
+& haddesenâ, an, an
+^ قال: «لا تعتد
+
+@ Karısına îlâ yaparsa kadının nafakası olur mu, olmaz mı, bu konuda söyledikleri
+
+18647 | İsmâîl b. Uleyye → Yûnus → Hasan | Hasan’dan: O şöyle derdi: “Hamile iken üç talakla boşanan kadına ve hamile iken îlâ yapılan kadına nafaka vardır.”
+& haddesenâ, an, an
+^ أنه كان يقول
+
+18648 | İbn Uleyye → Hişâm ed-Destuvâî → Hammâd → İbrâhîm | İbrâhîm dedi ki: “Üç talakla boşanan, îlâ yapılan, hul‘ yapan ve lian yapan kadınlar hamile iseler onlara nafaka vardır; ancak bu (nafakanın düşmesi) hul‘ yapan kadına şart koşulmuşsa (başka).”
+& haddesenâ, an, an, an
+^ قال: «للمطلقة
+
+@ Bir yerde karısıyla zifafa girmeyeceğine yemin eden adam hakkında söyledikleri; îlâ yapmış olmaz diyenler
+
+18649 | Abdüla‘lâ → Ma‘mer → Zührî | Zührî’den: Bir kadınla evlenen, kadının ailesinin ona güçlük çıkardığı, onun da onunla zifafa girmeyeceğine yemin ettiği adam hakkında Zührî dedi ki: “Zifaftan sonra olmadıkça îlâ yoktur.”
+& haddesenâ, an, an
+^ في رجل تزوج
+
+18650 | Ebû Âsım → İbn Cüreyc → Atâ | Atâ dedi ki: “Onunla zifafa girmeden önce ona îlâ yaparsa bu îlâ değildir.” “Onunla cimâ etmeye gücü yetse de mi?” dedim. Dedi ki: “Onunla cimâ etmeye gücü yetse de.”
+& haddesenâ, an, an
+^ قال: «إذا آلى
+
+18651 | Muhammed b. Yezîd → Ebü’l-Alâ → Hâşim | Hâşim’den: Karısına “Vallahi bu evde karımla zifafa girmeyeceğim” deyip sonra dört ay geçinceye kadar onu bırakan adam hakkında dedi ki: “Bu îlâdır.” Hammâd ise: “Îlâ değildir” dedi.
+& haddesenâ, an, an
+^ في الرجل قال
