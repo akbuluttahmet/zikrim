@@ -1,0 +1,59 @@
+@ Kasten öldürüp kaçan ve yakalanamayan adam
+
+28062 | Muhammed b. Bekr → İbn Cüreyc → Atâ | İbn Cüreyc dedi ki: Atâ’ya dedim ki: “Bir adam bir adamı kasten öldürüp kaçtı; ölünceye kadar yakalanamadı ve mal bıraktı?” Dedi ki: “O zaman onun malında diyet vardır; öldürülenin diyeti.” Ona denildi ki: “Katil ölünceye kadar hapsedildi?” Dedi ki: “Onu öldürmüş oldular; ölünceye kadar onu hapsettiler, o da zindanda öldü.”
+& haddesenâ, an, kâle
+^ قال: قلت لعطاء
+
+@ Parçalanmış olarak bulunan adam
+
+28063 | Mervân b. Muâviye → Sâid b. Müslim → Şa‘bî | Şa‘bî’den: Ona üç kabilede bulunan bir maktul soruldu: Başı bir kabilede, ayakları bir kabilede, ortası da bir kabilede. Şa‘bî dedi ki: “Ortanın üzerine namaz kılınır; diyet ve ‘Biz öldürmedik ve öldüreni de bilmiyoruz’ kasâmesi de orta (kısmın bulunduğu yerin) halkına düşer.”
+& haddesenâ, an, an
+^ قال: سئل عن
+
+@ “Dinar ve dirhem (olarak ödenen) diyette ağırlaştırma yoktur” diyenler
+
+28064 | Muâviye b. Hişâm → Süfyân → Ma‘mer → bir adam → İkrime | İkrime dedi ki: “Dinar ve dirhem (olarak ödenen) diyette ağırlaştırma yoktur; ağırlaştırma ancak develerdedir.”
+& haddesenâ, haddesenâ, an, an, an
+^ قال: «ليس في
+
+@ Diyet üzerine sulh yapan, sonra katili öldüren adam
+
+28065 | İbn Mehdî → Kâsım b. el-Fadl → Hârûn → İkrime | İkrime’den, diyeti aldıktan sonra öldüren adam hakkında: “Öldürülür. Allah’ın ‘Ona elem verici bir azap vardır’ (Bakara 2/178) buyurduğunu işitmedin mi?” dedi.
+& haddesenâ, an, an, an
+^ في رجل قتل
+
+28066 | İbn Mehdî → Hammâd b. Seleme → Yûnus → Hasan | Hasan’dan, diyeti aldıktan sonra öldüren kimse hakkında: “Ondan diyet alınır ve öldürülmez” dedi.
+& haddesenâ, an, an, an
+^ فيمن قتل بعد
+
+28067 | Ebû Dâvûd → Vehb → Yûnus → Hasan | Hasan’dan, bir yakını öldürülüp (katili) affeden, sonra gidip onu öldüren adam hakkında: Hasan dedi ki: “Öldürülmez.”
+& haddesenâ, an, an, an
+^ في رجل قتل
+
+@ Zinadan hamile kalan kadın
+
+28068 | Humeyd b. Abdurrahmân → Züheyr → Câbir → Âmir | Câbir’den, zinadan hamile kalan, karnındakini doğurup sonra recmedilmek üzere hapsedilen, bir adamın da yanına girip onu öldürdüğü kadın hakkında: (Câbir) dedi ki: Âmir dedi ki: “Bu hususta bir şey bilmiyorum; ancak çocuk sultanındır, onun hakkında dilediği gibi hükmeder.” (Câbir) dedi ki: Hammâd da bana İbrâhîm’den rivayet etti, (İbrâhîm) dedi ki: “Müslümanlardan hiç kimse ona (kadına) diğerinden daha hak sahibi değildir.” Hammâd da dedi ki: “Çocukta gurre vardır.”
+& haddesenâ, an, an, kâle
+^ في امرأة حبلت
+
+@ Hayvanları (nehirden) geçiren geçit sahibi
+
+28069 | Humeyd b. Abdurrahmân → Hasan → Câbir → Âmir | Âmir’den, hayvanları (nehirden) geçiren ve (hayvanların) boğulduğu geçit sahibi hakkında: “Ona tazmin yoktur” dedi.
+& haddesenâ, an, an, an
+^ في صاحب المعبر
+
+@ Kulak memesi hakkında
+
+28070 | Abdürrahîm ve İbn Nümeyr → Haccâc → Mekhûl → Zeyd b. Sâbit | Zeyd b. Sâbit dedi ki: “Kulak memesinde kulak diyetinin üçte biri vardır.”
+& haddesenâ, an, an, an
+^ قال: «في شحمة
+
+@ Birbirini yaralayan kavim
+
+28071 | Abdullah b. İdrîs → Husayn → Âmir | Âmir dedi ki: Bir eşeği boynuzlayıp öldüren bir öküz hakkında Ali’ye muhakeme olundu. Ali dedi ki: “Eğer öküz eşeğin yanına girip onu öldürdüyse (sahibi) tazmin eder; eğer eşek öküzün yanına girip (öküz) onu öldürdüyse ona tazmin yoktur.”
+& haddesenâ, an, an
+^ قال: اختصم إلى
+
+28072 | Şerîk → Câbir → Âmir | Âmir dedi ki: “Onların bir kısmı için diğer kısmından kısas alınır, sonra hadler uygulanır” —birbirini yaralayan kavim hakkında demek istiyor—.
+& haddesenâ, an, an
+^ قال: «يقتص لبعضهم

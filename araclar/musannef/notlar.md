@@ -205,3 +205,7 @@
 - 25030 ikinci rivayet birleşik. 25135 senedsiz. 25151 “حدثنا أبو بكر قال: حدثنا أبو بكر عن شعبة” (ikinci Ebû Bekir halka yapılmadı) — bakılmalı. Başlıksız bablar: 24874, 25204. 25290 nüshada yok.
 - Sened (notlu): 24789, 24935 “بلغني حفص”, 24949 “حدثنا أصحابنا”, 25100/25152 “بن زيد/بن يزيد”, 25234.
 - Bozuk/şüpheli (notlu): 24763, 24902, 24908, 24909, 24948, 25016, 25063, 25085, 25096, 25102, 25137, 25187, 25256.
+
+## k18 Diyât (p281–p287, 27800–28072)
+- 27806 nüsha senedi. 27825 metinde “6” rakamı. 27888 dört yol (“وعن”). 27986, 28000 âyet yeri maddenin başına kaymış. 27846 başlıksız bab. 27903, 27945 öneksiz. 28045 “عباد بن عوف”.
+- Bozuk/şüpheli (notlu): 27878, 27883, 27888, 27892, 27941, 27965, 28010.

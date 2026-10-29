@@ -1,0 +1,263 @@
+@ Tabip, tedavi eden ve sünnetçi
+
+27597 | Vekî‘ → Yûnus → Câbir → Âmir | Âmir dedi ki: “Tedavi edene tazmin yoktur.”
+& haddesenâ, haddesenâ, an, an
+^ قال: «ليس على المداوي
+
+27598 | Vekî‘ → Yûnus → Ebû İshâk → Şa‘bî | Ebû İshâk dedi ki: Şa‘bî’yi şöyle derken işittim: “Hacamatçıya, baytara ve tedavi edene tazmin yoktur.”
+& haddesenâ, haddesenâ, an, semi‘tü
+^ يقول: «ليس على حجام
+
+27599 | Vekî‘ → İsrâîl → Câbir → Âmir | Âmir, bir atın gözünden perde (dokusu) çıkaran ve atın (bu yüzden) öldüğü baytar hakkında dedi ki: “Tazmin eder.”
+& haddesenâ, haddesenâ, an, an
+^ في بيطار نزع
+
+27600 | Sekafî → Eyyûb → Ebû Kılâbe → Ebü’l-Melîh | Ebü’l-Melîh’ten: Medine’de bir sünnetçi kadın bir kızı sünnet etti, (kız) öldü. Ömer ona: “Şu kadarını bıraksaydın ya!” dedi “ve onun diyetini âkilesine yükledi.”
+& haddesenâ, an, an, an
+^ أن ختانة بالمدينة
+
+27601 | Hafs → İbn Cüreyc → Eyyûb → Ebû Kılâbe | Ebû Kılâbe’den: Kızları sünnet eden bir kadın (birine) zarar verdi. Ömer ona tazmin ettirdi ve: “Şu kadarını bıraksaydın ya!” dedi.
+& haddesenâ, an, an, an
+^ أن امرأة كانت
+
+@ Öldürülen ve kanını affeden adam
+
+27602 | İbn Uyeyne → İbn Tâvûs | İbn Tâvûs dedi ki: Babama dedim ki: Öldürülen ve kanını affeden adam (ne olur)? “Geçerlidir” dedi. Dedim ki: “Hata mı, kasten mi?” “Evet” dedi.
+& haddesenâ, an
+^ قال: قلت لأبي
+
+27603 | Hüşeym → Yûnus → Hasan | Hasan’dan: O şöyle derdi: “Adam, ölmeden önce kasıtta kendi katilini affettiğinde (bu) geçerlidir.”
+& haddesenâ, an, an
+^ أنه كان يقول
+
+27604 | Muhammed b. Bişr → Saîd → Katâde | Katâde’den: Urve b. Mes‘ûd es-Sekafî kavmini Allah’a ve Resûlü’ne çağırdı. Onlardan bir adam ona ok attı; o da öldü ve onu affetti. Bu, Nebî’ye ﷺ götürüldü; onun affını geçerli saydı ve şöyle buyurdu: “O, Yâsîn (sûresindeki) adam gibidir.”
+& haddesenâ, haddesenâ, an
+^ أن عروة بن مسعود
+
+27605 | Muhammed b. Bekr → İbn Cüreyc → Atâ | İbn Cüreyc dedi ki: Atâ’yı şöyle derken işittim: “Hata ile öldürülen kişi diyetini kendisini öldürene bağışlarsa, ona bundan ancak üçte bir (bağışlama hakkı) vardır; çünkü o, vasiyet edeceği maldandır.”
+& haddesenâ, an, semi‘tü
+^ يقول: «إن وهب
+
+27606 | Abdurrahmân b. Mehdî → İbn Mübârek → Ma‘mer → Simâk b. el-Fadl → Ömer b. Abdülazîz | Ömer b. Abdülazîz dedi ki: “Üçte birden (geçerlidir).”
+& haddesenâ, an, an, an, an
+^ قال: «من الثلث»
+
+@ Haremde öldürülen adam
+
+27607 | İsmâîl b. İbrâhîm → Muhammed b. İshâk → Abdurrahmân b. Ebî Zâide → Nâfi‘ b. Cübeyr → İbn Abbâs | İbn Abbâs dedi ki: “Haram aylarda öldürülenin diyetine dört bin eklenir; haremde öldürülenin diyetine de dört bin eklenir. Haremdekinin diyetinin kıymeti yirmi bindir.”
+& haddesenâ, an, haddesenî, an, an
+^ قال: «يزاد في دية
+
+27608 | İbn Mübârek → Ma‘mer → Amr b. Abdullah → İkrime → Ömer b. el-Hattâb | Ömer b. el-Hattâb’dan: Köy halkına diyeti on iki bin olarak hükmetti ve şöyle dedi: “Zaman değişir; benden sonraki hâkimlerden size karşı korkarım. Köy halkına diyetin ağırlaştırılmasında bir artırma yoktur; haram ayda da, harem(de) de; köy halkının diyetinde ağırlaştırma yoktur, onda artırma yoktur.”
+& haddesenâ, an, an, an, an
+^ قضى بالدية على
+
+27609 | İbn Uyeyne → İbn Ebî Necîh → babası | İbn Ebî Necîh’in babasından: Osman, “haremde öldürülen bir kadın hakkında bir diyet ve diyetin üçte biriyle hükmetti.”
+& haddesenâ, an, an
+^ أن عثمان «قضى
+
+27610 | Muhammed b. Bişr ve Ebû Üsâme → Saîd → Katâde → Saîd b. el-Müseyyeb, Süleymân b. Yesâr ve Atâ | Saîd b. el-Müseyyeb, Süleymân b. Yesâr ve Atâ dediler ki: “Haram beldede öldürüldüğünde bir diyet ve diyetin üçte biri; haram ayda ihramlı iken öldürüldüğünde ağırlaştırılmış diyet (vardır).”
+& haddesenâ, an, an, an
+^ قالوا: «إذا قتل
+
+27611 | Ebû Üsâme → Hişâm → Kays b. Sa‘d → Atâ, Saîd b. Cübeyr ve Mücâhid | Atâ, Saîd b. Cübeyr ve Mücâhid’den: Onlar haremde öldürülen hakkında bir diyet ve diyetin üçte biri (gerekir) dediler. Biri de: “Öyle sanıyorum” dedi. Saîd b. Cübeyr dedi ki: “Haremde öldürülene de bir diyet ve diyetin üçte biri (gerekir).”
+& haddesenâ, an, an, an
+^ أنهم قالوا في
+
+27612 | Abdüla‘lâ → Ma‘mer → Zührî | Zührî’den: O, adam hakkında dedi ki: “Haremde ya da haram aylarda öldürülürse bir diyet ve diyetin üçte biri (gerekir).”
+& haddesenâ, an, an
+^ أنه قال في الرجل
+
+@ Haremde öldürülenin diyeti artırılmaz diyenler
+
+27613 | Süfyân b. Uyeyne → Mugîre → İbrâhîm | İbrâhîm dedi ki: “Haremde ve haremin dışında öldürülenin diyeti eşittir.”
+& haddesenâ, an, an
+^ قال: «دية الذي
+
+27614 | Muhammed b. Bişr → Saîd → Ebû Ma‘şer → İbrâhîm | İbrâhîm dedi ki: “Haram beldede de haram beldenin dışında da öldürüldüğünde diyet birdir.”
+& haddesenâ, haddesenâ, an, an
+^ قال: «إذا قتل في
+
+27615 | Vekî‘ → İsrâîl → Câbir → Âmir | Âmir dedi ki: “İkisinin diyeti eşittir.”
+& haddesenâ, haddesenâ, an, an
+^ قال: «ديتهما سواء»
+
+27616 | Muhammed b. Bişr → Saîd → Katâde → Hasan | Hasan dedi ki: “Bir diyete artırma yapılmaz”; İbrâhîm’in sözü gibi.
+& haddesenâ, haddesenâ, an, an
+^ قال: «لا يزاد
+
+27617 | İbn Uyeyne → Amr → İbn Tâvûs → babası | İbn Tâvûs’un babası dedi ki: “Diyetin ağırlaştırılması haram ayda, harem(de), ihramlıda ve komşuda (olur).”
+& haddesenâ, an, an, an
+^ قال: «تغليظ الدية
+
+27618 | Muhammed b. Bekr → İbn Cüreyc → İbn Tâvûs → babası | İbn Tâvûs’un babasından: Nebî ﷺ buyurdu: “Komşu hakkında ve haram ayda ağırlaştırma vardır.”
+& haddesenâ, an, an, an
+^ عن النبي صلى الله عليه وسلم، قال
+
+27619 | Muhammed b. Bekr → İbn Cüreyc → Amr b. Dînâr ve Süleymân el-Ahvel → Tâvûs | Amr b. Dînâr ve Süleymân el-Ahvel, Tâvûs’u şöyle derken işittiler: “Haremde ve haram ayda ağırlaştırma vardır.”
+& haddesenâ, an, ahberanî, semi‘a
+^ يقول: «في الحرم
+
+27620 | Ebû Üsâme → Hişâm → Hasan | Hasan dedi ki: “Haremde öldürülen, haremin dışında öldürülenin diyetinden fazlası verilmez.”
+& haddesenâ, an, an
+^ قال: «لا يزاد الذي
+
+@ Adamı boğan adam
+
+27621 | İbn Mübârek → Ma‘mer → Simâk b. el-Fadl | Simâk b. el-Fadl’dan: Bir adam, (üzerindeki) gümüş süs eşyaları için bir çocuğu boğdu. (Simâk) dedi ki: Ömer b. Abdülazîz’e yazıldı; o da (adamın) öldürülmesini yazdı.
+& haddesenâ, an, an
+^ أن رجلا خنق
+
+27622 | Süfyân → Ebû Hâşim → İbrâhîm | İbrâhîm dedi ki: “Onu öldürünceye kadar boğduğunda onun karşılığında öldürülür.”
+& haddesenâ, an, an
+^ قال: «إذا خنقه
+
+27623 | İsrâîl → Câbir → Âmir | Âmir dedi ki: “Adam (başka) bir adamı boğar ve onu öldürünceye kadar ondan (elini) kaldırmazsa (bu) kısastır; ondan (elini) kaldırır, sonra ölürse ağırlaştırılmış diyet (vardır).”
+& haddesenâ, an, an
+^ قال: «إذا خنق
+
+27624 | Hafs → Eş‘as → Hakem | Hakem’den: “Bir adam (başka) bir adamı boğup öldürdü; ona ağırlaştırılmış diyet yüklendi.”
+& haddesenâ, an, an
+^ «أن رجلا خنق
+
+27625 | Ebû Kuteybe ve Ebû Dâvûd et-Tayâlisî → Şu‘be → Hammâd | Hammâd dedi ki: “O, hatadır.”
+& haddesenâ, an, an
+^ قال: «هو خطأ»
+
+@ Adamı döven, (dövülenin de) ölünceye kadar hasta kaldığı adam
+
+27626 | Cerîr → Mugîre → Hâris | Hâris, (başka) bir adamı döven adam hakkında dedi ki: “Şahitler onu dövdüğüne ve (dövülenin) onun dövmesinden ölünceye kadar hasta kaldığına şahitlik ettiklerinde, ona diyeti yüklerim. Kasten ise kısas, hata ise diyet âkileye (düşer).”
+& haddesenâ, an, an
+^ في الرجل يضرب
+
+27627 | Ebû Üsâme → Hişâm → Hasan | Hasan, (başka) bir adamı döven, (dövülenin de) ölünceye kadar yatağında bitkin kaldığı adam hakkında dedi ki: “Onda kısas vardır.”
+& haddesenâ, an, an
+^ في الرجل يضرب
+
+27628 | Vekî‘ → A‘meş → Temîm b. Seleme | Temîm b. Seleme dedi ki: İki adam Şüreyh’in huzurunda bir adam aleyhine şahitlik ettiler ve dediler ki: Şahitlik ederiz ki bu, şunu yere yıktı ve ölünceye kadar onu sıkmaya devam etti. Şüreyh dedi ki: “Onu öldürdüğüne mi şahitlik ediyorsunuz?”
+& haddesenâ, haddesenâ, an
+^ قال: شهد رجلان
+
+27629 | Muhammed b. Bekr → İbn Cüreyc → İbn Şihâb | İbn Şihâb’dan: Ömer b. el-Hattâb (hakkında): “Onun zamanında Cüheyne’den bir adam Benî Gıfâr’dan bir adamı ya da Benî Gıfâr’dan bir adam Cüheyne’den bir adamı (hayvanına) çiğnetti. (Ölenin) ailesi onun bundan öldüğünü iddia etti. Ömer, iddia edenlerden elli adama yemin ettirmek istedi; yemin etmekten kaçındılar. Aleyhine iddiada bulunulanlar da yemin etmekten kaçındılar. Ömer bu konuda diyetin yarısıyla hükmetti.”
+& haddesenâ, an, ahberanî
+^ أن عمر بن الخطاب
+
+27630 | Muhammed b. Bekr → İbn Cüreyc → Hasan b. Müslim | Hasan b. Müslim’den: Bir cariye Benî Zeyd’in bir azatlısının parmağını ısırdı; (diş) onda gömüldü (metinde böyle) ve (adam) öldü. Cariye onu ısırdığını itiraf etti. Ömer b. Abdülazîz bu konuda, Benî Zeyd’in, onun ısırmasından öldüğüne dair –yeminler onlara tekrar ettirilerek– elli yemin etmelerine, sonra cariyenin onların olmasına, aksi hâlde onlara bir hak olmamasına hükmetti. Yemin etmekten kaçındılar.
+& haddesenâ, an, ahberanî
+^ أن أمة عضت
+
+@ Adama çarpan adam
+
+27631 | Ebû Muâviye → Haccâc → Ebû Avn → Şüreyh | Şüreyh’ten: Bir adam bir sandalyeyle (birine) rastladı, ona çarpıp onu öldürdü. Şüreyh dedi ki: “Çarpan, çarpılanı tazmin eder.”
+& haddesenâ, an, an, an
+^ أن رجلا لقي
+
+27632 | Abdürrahîm b. Süleymân → Eş‘as → Hammâd → İbrâhîm → Ali | Ali’den: “Çarpışan iki süvari hakkında, biri ölünce sağ olanı ölüyü tazmin etmekle (sorumlu tuttu).”
+& haddesenâ, an, an, an, an
+^ في: «فارسين
+
+27633 | Hüşeym → İsmâîl b. Sâlim → Şa‘bî | Şa‘bî’den: Ona çarpışan, birinin battığı iki gemi soruldu; dedi ki: “Diğerine tazmin yoktur; fakat hangi adam Müslümanların yolu üzerine bir gemi bağlar da (gemi bir şeye) isabet ederse o tazmin eder.”
+& haddesenâ, an, an
+^ أنه سئل عن
+
+27634 | Ebû Hâlid → Eş‘as → Hakem → Ali | Ali, çarpışan iki süvari hakkında dedi ki: “Sağ olan ölünün diyetini tazmin eder.”
+& haddesenâ, an, an, an
+^ في الفارسين
+
+27635 | Abbâd b. el-Avvâm → Haccâc → Katâde → Ka‘b b. Sevvâr | Ka‘b b. Sevvâr’dan: Bir adam bir eşeğin üzerindeydi; dar bir sokakta deve üzerindeki bir adam onun karşısına çıktı. Eşek ürktü, adamı yere düşürdü ve ona bir şey isabet etti. Ka‘b b. Sevvâr deve sahibine hiçbir şey tazmin ettirmedi.
+& haddesenâ, an, an, an
+^ أن رجلا كان
+
+27636 | Şebâbe → İbn Ebî Zi’b → Muttalib b. es-Sâib es-Sehmî → Saîd b. el-Müseyyeb | Saîd b. el-Müseyyeb’den: “Osman, birbiriyle dövüşen her iki dövüşenin aralarındakini tazmin edeceklerine hükmetti.”
+& haddesenâ, an, an, an
+^ «أن عثمان قضى
+
+@ Sahibine karşı şahit tutulan eğik duvar
+
+27637 | Muâz b. Muâz → Eş‘as → Hasan | Hasan dedi ki: “Eğik duvarın sahibine karşı şahit tutulur da (duvar) yıkılıp (bir şeye) isabet ederse o tazmin eder.”
+& haddesenâ, an, an
+^ قال: «إذا شهد
+
+27638 | Vekî‘ → Süfyân → Câbir → Âmir → Şüreyh | Şüreyh dedi ki: “Adamın duvarı eğik olur da ona karşı şahit tutulursa tazmin eder.”
+& haddesenâ, haddesenâ, an, an, an
+^ قال: «إذا كان حائط
+
+27639 | Vekî‘ → Süfyân → Mugîre → İbrâhîm | (İbrâhîm’den) bunun benzeri (rivayet edildi).
+& haddesenâ, haddesenâ, an, an
+^ مثله
+
+27640 | Abdülvehhâb b. Atâ el-Haffâf → Saîd → Katâde | Katâde’den: “O, eğik duvar hakkında şöyle derdi: Sahibine karşı şahitlik ederler de (duvar) bir insanı öldürürse o tazmin eder.”
+& haddesenâ, an, an
+^ «أنه كان يقول
+
+@ Adamın üzerine düşen ya da onun üzerine atlayan adam
+
+27641 | Ebû Hâlid → Haccâc → İbn Avn → Şüreyh | Şüreyh’ten: Bir çocuk başka birinin üzerine atladı; alttaki kenara çekildi, üstekinin ön dişi kırıldı. (Şüreyh) üsttekine tazmin ettirdi, alttakine tazmin ettirmedi.
+& haddesenâ, an, an, an
+^ أن غلاما وثب
+
+27642 | Vekî‘ → İmrân b. Hudeyr → Ebû Miclez | Ebû Miclez dedi ki: Bir adam (başka) bir adamın üzerine düşse de biri ölse, geride kalan tazmin eder. “Neden?” dersen, dedi ki: “Çünkü Müslümanın kanı heder edilmez.”
+& haddesenâ, haddesenâ, an
+^ قال: " لو صرع
+
+27643 | Vekî‘ → Süfyân → Mansûr → İbrâhîm | İbrâhîm’den: “İki çocuk oynuyorlardı; biri diğerini yere yıktı. Birinin başı yarıldı, diğerinin ön dişi kırıldı. (Hâkim) alttakine üsttekini tazmin ettirdi, üsttekine alttakini tazmin ettirmedi.”
+& haddesenâ, haddesenâ, an, an
+^ «أن غلامين كانا
+
+27644 | Vekî‘ → Süfyân → Ebû Hasîn → Şüreyh | Şüreyh’ten: Bir evin üstünden (başka) bir adamın üzerine düşen ve üstteki ölen adam hakkında Şüreyh dedi ki: “Ben yeri tazmin ettirmem.”
+& haddesenâ, haddesenâ, an, an
+^ في رجل وقع
+
+27645 | Şüreyh → İsrâîl → Câbir → Âmir | Âmir dedi ki: Alttaki ölürse üstteki tazmin eder.
+& haddesenâ, haddesenâ, an, an
+% Arapçada ad “حدثنا شريح” diye yazılıdır (metinde böyle).
+^ قال: إن مات
+
+27646 | Abdürrahîm → Haccâc → Hakem → İbrâhîm → Ali b. Ebî Tâlib | Ali b. Ebî Tâlib dedi ki: “İki çocuk oynuyorlardı; biri arkadaşının sırtına atladı. Üsttekinin ön dişi kırıldı, alttakinin başı yarıldı. (Ali) onları birbirlerine tazmin ettirdi.”
+& haddesenâ, an, an, an, an
+^ قال: «كان غلامان
+
+27647 | Gunder → Şu‘be → Hakem | Hakem, bir evin üstünden geçen (başka) bir adamın üzerine düşen ve ikisinden biri ölen adam hakkında dedi ki: “İkisinden sağ olan tazmin eder.”
+& haddesenâ, an, an
+^ في رجل وقع
+
+27648 | Mugîre → İbrâhîm | İbrâhîm’den: (Başka) bir adamın üzerine atlayan, atlayanın ön dişinin kırıldığı, üzerine atlananın da başının yarıldığı adam hakkında: (Hâkim) atlayanın ön dişini heder saydı ve ona üzerine atlananın baş yarasını tazmin ettirdi.
+& haddesenâ, an
+% Arapçada “حدثنا مغيرة” diye geçiyor; İbn Ebî Şeybe ile Mugîre arasında hoca adı yok (metinde böyle).
+^ في رجل وثب
+
+@ Adamı vuran, (vurulanın da) elini çekip çıkardığı adam
+
+27649 | Ebû Üsâme → İbn Cüreyc → Atâ → Safvân b. Ya‘lâ b. Ümeyye → babası | Safvân b. Ya‘lâ b. Ümeyye’nin babası dedi ki: Benim bir ücretlim vardı; bir insanla dövüştü. Biri diğerinin elini ısırdı. Atâ dedi ki: Safvân bana haber verdi: “Hangisi diğerini ısırdıysa, ısırılan elini ısıranın ağzından çekip çıkardı ve onun ön dişlerinden birini söktü. İkisi Nebî’ye (aleyhisselâm) geldiler; o da ön dişini heder saydı.”
+& haddesenâ, an, ahberanî, ahberanî, an
+^ قال: كان لي أجير
+
+27650 | Ebû Üsâme → Saîd → Katâde → Zürâre → İmrân b. Husayn | İmrân b. Husayn dedi ki: “Resûlullah ﷺ onu iptal etti.”
+& haddesenâ, an, an, an, an
+^ قال: «فأبطلها رسول الله
+
+27651 | İbn Uyeyne → Amr → Atâ | Atâ’dan: Nebî ﷺ zamanında bir adam (başka) birinin elini ısırdı; (o da elini çekip) onun ön dişini söktü. Resûlullah ﷺ onu heder saydı.
+& haddesenâ, an, an
+^ أن رجلا عض
+
+27652 | İsmâîl b. İbrâhîm → Eyyûb → İbn Sîrîn | İbn Sîrîn dedi ki: Bana haber verildi ki bir adam (başka) bir adamın elini ısırdı. (O da) elini onun ağzından çekip çıkardı ve onun ağzından bir ya da iki ön dişini düşürdü. (Isıran) kısas istemek için Nebî’ye ﷺ geldi. (Nebî) buyurdu: “Yesin diye elini senin ağzında mı bıraksın? İstersen elini ona ver, ısırsın, sonra sen de çekip çıkar.”
+& haddesenâ, an, an
+^ قال: " نبئت أن
+
+27653 | Ebû Üsâme → İbn Cüreyc → İbn Ebî Müleyke → dedesi | İbn Ebî Müleyke’nin dedesinden: Bir insan Ebû Bekir’e geldi; bir insan onu ısırmış, o da elini ondan çekmiş, (ısıranın) ön dişi düşmüştü. Ebû Bekir dedi ki: “Onun sağ eli kayboldu.” (metinde böyle)
+& haddesenâ, an, ahberanî, an
+^ أن إنسانا أتى
+
+27654 | Hafs → İbn Cüreyc | İbn Cüreyc’ten: Ebû Bekir ve Ömer “onu iptal ettiler.”
+& haddesenâ, an
+^ أن أبا بكر، وعمر
+
+27655 | Hafs → Şeybânî → Muhammed b. Ubeydullah → Şüreyh | Şüreyh’ten: Bir adamı ısıran, (ısırılanın elini) çekip çıkardığı, (ısıranın da) ön dişinin söküldüğü adam hakkında: Şüreyh onu iptal etti.
+& haddesenâ, an, an, an
+^ في رجل عض
+
+@ Adamı, (adam) abdest bozuncaya kadar döven adam
+
+27656 | Yezîd b. Hârûn → Yahyâ b. Saîd | Yahyâ b. Saîd’den: Ömer b. Abdülazîz zamanında bedevîlerden iki adam Medine’de davalaştılar. Biri arkadaşı için: “Vallahi onu, altına pisleyinceye kadar dövdüm” dedi. (Diğeri): “Şahit olun, vallahi doğru söyledi” dedi. Ömer b. Abdülazîz, Saîd b. el-Müseyyeb’e, bir adamı altına pisleyinceye kadar döven adam hakkında geçmişte uygulanmış bir eser ya da sünnet olup olmadığını sormak için haber gönderdi. Saîd dedi ki: “Osman bu konuda diyetin üçte biriyle hükmetti.”
+& haddesenâ, an
+^ أن رجلين من الأعراب
