@@ -3,7 +3,7 @@
 import json, re, collections, os
 R = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..') + '/'
 bad = 0
-for v in ['musannef', 'ibnebiseybe', 'musned', 'ahmed', 'zuhd', 'fezail', 'berbehari', 'acurri', 'seria', 'hallal', 'safii', 'buhari', 'ebudavud', 'harb', 'ibane', 'sunan']:
+for v in ['musannef', 'ibnebiseybe', 'musned', 'ahmed', 'zuhd', 'fezail', 'berbehari', 'acurri', 'seria', 'hallal', 'safii', 'buhari', 'ebudavud', 'harb', 'ibane', 'sunan', 'leys']:
     idx = json.load(open(f'{R}{v}/index.json'))
     for b in idx:
         if not b.get('t'): continue

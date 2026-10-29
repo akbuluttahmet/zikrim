@@ -23,7 +23,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from dogrula import onek_dus  # kitaplığa özgü nüsha/müellif öneği (tek tanım)
 
 R = Path(__file__).resolve().parents[1]
-LIBS = ['ibnebiseybe', 'ahmed', 'zuhd', 'fezail', 'acurri', 'hallal', 'safii', 'buhari', 'ebudavud', 'harb', 'ibane', 'berbehari']
+LIBS = ['ibnebiseybe', 'ahmed', 'zuhd', 'fezail', 'acurri', 'hallal', 'safii', 'buhari', 'ebudavud', 'harb', 'ibane', 'berbehari']  # leys: paneller elle verildi, hizalama bozuyor (ONEK zinciri uzun)
 DIA = re.compile(r'[ً-ْٰـ]')
 B = r'(?<![ء-ي])', r'(?![ء-ي])'
 

@@ -6,6 +6,9 @@ Biçim: `- [ ] kitaplık no — mesele. Seçenekler. (tarih)`
 
 ## 1. Karar bekleyen çeviri / isnad yerleri
 
+- [ ] **leys 0** — Sümâme hadisinin sonundaki “sahih, müttefekun aleyh; Buhârî … Müslim …” tahric cümlesi nüshanın ana metnindedir (muhakkik dipnotu değil); çevrildi. Kitabın müellifi dışından (meclisi imlâ eden hâfızın) söz olduğu için çıkarılmasını istersen söyle. (2026-10-29)
+- [ ] **leys 6** — `أن محبرا أخبره` adının harekesi nüshada yok; `Muhabber` yazıldı. Sözün kaynağı Re’sü’l-Câlût olduğu için SPEC §2'ye göre zincirin sonuna `kâle` ile yazıldı. (2026-10-29)
+- [ ] **leys** — Ahmet'in gönderdiği Şâmile 1020 (İhsan Abbas, el-Arab fî Sıkılliyye) ve 367 (el-Muallimî, Kitâbü'ş-Şefâa) listedeki eserler değil; Zeyd Ferâiz / Râfi‘ / Hammâd için doğru adresler bekleniyor. (2026-10-29)
 - [ ] **Yeni 9 eser — Şâmile bağlantıları** (`CLAUDE.md` “Eklenecek erken dönem eserleri”): listendeki bağlantılar metin olarak geldi, adresler ulaşmadı. Bulunanlar: Ukbe Müsnedi 30774, Sahîfetü Hemmâm 7776, Zührî Nâsih 26887, Fevâidü'l-Leys 9812, İbn Vehb el-Câmi‘ 1380, Müsnedü'ş-Şâfiî 9344 (DKİ; Sencer tertibi 9615 değil — hangisi istendiyse söyle). Bulunamayanlar: Zeyd b. Sâbit Ferâiz, Râfi‘ b. Hadîc hadis cüzü, Hammâd b. Zeyd cüzü, Zührî hadis cüzü — bu dördünün Şâmile adresini gönder. (2026-10-29)
 
 - [ ] **seria 1927** — Arapça: `حدثنا أبو عبيد الله القرقساني، وقال ابن الفحام: عن غالب بن عبيد الله العقيلي`. İbnü'l-Fahhâm'ın yolunda hoca farklı adlanıyor (ya da farklı kişi). Şu an tek zincir + `n` notu. Seçenek: iki yollu tahvîl (`…; ayrıca … Gālib b. Ubeydullah el-Ukaylî → Atâ …`). (2026-10-29)

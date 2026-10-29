@@ -20,7 +20,8 @@ Her oturum: önce `SPEC.md`, sonra bu dosya. Bitince burayı güncelle (kitap, s
 | Ebû Dâvûd (`ebudavud/`), Harb (`harb/`), el-Berbehârî (`berbehari/`) | isnad standardı (SPEC) | **tamamlandı** — 243 madde (2026-10-29) | `dogrula.py`: 0 hata, 1 uyarı (berbehari ﷺ) |
 | Müsned (`musned/`) | isnad standardı (SPEC) | **sürüyor** — m001 tamamlandı (1–81, 81/81), m002 p006–p012 (82–207) çevrildi; toplam 207/1380 madde (2026-10-29) | `dogrula.py` (1–207): 0 hata, 0 kısa, 0 sîga; m002–m003 bölüm bitene kadar korundu |
 | el-Musannef (`musannef/`) | eski biçim (17/40 kitap, 16 352 madde; sened var, panel yok) | daha sonra standarda getirilecek | `CLAUDE.md` “Kaynaklar” |
-| **9 erken dönem eseri** (Zeyd b. Sâbit, Ukbe b. Âmir, Râfi‘ b. Hadîc, Hemmâm, Zührî, Müsnedü'ş-Şâfiî, Hammâd b. Zeyd, Leys, İbn Vehb) | isnad standardı (SPEC) | **başlanmadı** — kaynaklar kaydedildi (2026-10-29) | `CLAUDE.md` “Eklenecek erken dönem eserleri”; 4 eserin Şâmile numarası eksik (aşağıda) |
+| Leys b. Sa‘d (`leys/`) | isnad standardı (SPEC) | **tamamlandı** — 1/1 kitap (Fevâidü'l-Leys), 8 madde (2026-10-29) | `dogrula.py --ravi`: 0 hata, 0 uyarı; paneller elle |
+| **Diğer 8 erken dönem eseri** (Zeyd b. Sâbit, Ukbe b. Âmir, Râfi‘ b. Hadîc, Hemmâm, Zührî, Müsnedü'ş-Şâfiî, Hammâd b. Zeyd, İbn Vehb) | isnad standardı (SPEC) | **başlanmadı** — kaynaklar kaydedildi (2026-10-29) | `CLAUDE.md` “Eklenecek erken dönem eserleri”; 3 eserin Şâmile numarası eksik (aşağıda) |
 
 ## Araçlar (hazır)
 
@@ -52,7 +53,7 @@ Musannef ve Müsned dışındaki bütün kitaplıklar standarttadır (2026-10-29
 
 ## Eklenecek 9 erken dönem eseri — sıra önerisi
 
-Küçükten büyüğe (OpenITI kelime sayısı): Leys Fevâid (≈1 400) → Zührî Nâsih (≈3 900) → Sahîfetü Hemmâm (≈4 600, 138 hadis) → Ukbe Müsnedi (Şâmile 30774, boyut bilinmiyor) → İbn Vehb el-Câmi‘ (≈32 000) → Müsnedü'ş-Şâfiî (≈86 000; `safii/` s02). Şâmile numarası bulunamayanlar (Zeyd Ferâiz, Râfi‘ Hadîs, Hammâd Cüz, Zührî hadis cüzü) Ahmet bağlantıyı verince sıraya girer (`GOZDEN.md`). Her kitapta Sünen iş akışı: `kilavuz.md` uyarlanır → parti → `denetle.py` → derle → `dogrula.py --ravi` 0 hata → `ravi_kur.py` → yayın.
+Küçükten büyüğe (OpenITI kelime sayısı): ~~Leys Fevâid~~ (bitti) → Zührî Nâsih (≈3 900) → Sahîfetü Hemmâm (≈4 600, 138 hadis) → Ukbe Müsnedi (Şâmile 30774, boyut bilinmiyor) → İbn Vehb el-Câmi‘ (≈32 000) → Müsnedü'ş-Şâfiî (≈86 000; `safii/` s02). Şâmile numarası bulunamayanlar (Zeyd Ferâiz, Râfi‘ Hadîs, Hammâd Cüz, Zührî hadis cüzü; Ahmet'in gönderdiği 1020 ve 367 başka kitaplar çıktı) Ahmet bağlantıyı verince sıraya girer (`GOZDEN.md`). Her kitapta Sünen iş akışı: `kilavuz.md` uyarlanır → parti → `denetle.py` → derle → `dogrula.py --ravi` 0 hata → `ravi_kur.py` → yayın.
 
 ## 12 kitaplık — gözle bakılacak uyarılar (dogrula.py, 2026-10-29, sîga eşlemesinden sonra)
 

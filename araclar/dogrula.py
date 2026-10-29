@@ -34,6 +34,7 @@ MUELLIF = {
     'ebudavud': 'Ebû Dâvûd',
     'harb': 'Harb b. İsmâîl',
     'ibane': 'İbn Batta',
+    'leys': 'Leys b. Sa‘d',
 }
 # Müellifin metin içi notlarının Arapça ve Türkçe kalıbı (sayıları eşleşmeli)
 MUELLIF_NOT = {'sunan': (r'قال أبو داود', r'Ebû Dâvûd (?:dedi|der|şöyle)'),
@@ -70,6 +71,8 @@ ONEK = {
     'zuhd': _AHMED, 'fezail': _AHMED, 'ahmed': _AHMED,
     'buhari': [(re.compile(r'^\s*(?:و?(?:حدثنا|ثنا|أخبرنا)\s+)محمود(?:\s+بن\s+إسحاق)?' + _AY + r'(?:و?(?:حدثنا|ثنا|أخبرنا|حدثني)\s+)?(?:أبو عبد الله\s+)?(?:محمد\s+بن\s+إسماعيل\s+)?البخاري' + _AY), None)],
     'safii': [(re.compile(r'^\s*(?:و?(?:حدثنا|ثنا|أخبرنا)\s+)الربيع(?:\s+بن\s+سليمان)?' + _AY + r'(?:و?(?:حدثنا|ثنا|أخبرنا)\s+)الشافعي' + _AY), None)],
+    # Fevâidü'l-Leys: kitabı rivayet eden nüsha zinciri (… → İbn Bükeyr / Îsâ b. Hammâd → الليث) düşülür, c[0] = Leys b. Sa‘d
+    'leys': [(re.compile(r'^.*?(?:حدثني|حدثنا|ثنا|أخبرنا)\s+الليث(?:\s+بن\s+سعد)?' + _AY), None)],
     'acurri': [(re.compile(r'^\s*(?:و?(?:حدثنا|ثنا|أخبرنا|أنا)\s+)(?:أبو بكر|محمد(?:\s+بن\s+الحسين)?)(?:\s+(?:بن\s+الحسين\s+)?الآجري)?' + _AY + r'(?=(?:و?(?:حدثنا|ثنا|أخبرنا|أنا|حدثني|أخبرني|قال)' + r'(?![ء-ي])))'), None)],
 }
 
