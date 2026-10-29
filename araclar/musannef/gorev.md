@@ -17,3 +17,4 @@ Ek kurallar:
 - Arapça anlamca yanlış görünse bile asla anlamdan “düzelterek” çevirme: harfiyen çevir ve gerekiyorsa `(metinde böyle)` ekle.
 - `(metinde böyle)` notunu yalnız gerçekten bozuk/şüpheli yerde kullan; her küçük tuhaflıkta değil.
 - Raporda isim listesi verme; yalnız şüpheli madde numaraları ve tek satırlık açıklama.
+- Râvi adını asla dışarıdan bilgiyle “düzeltme” (ör. أبي بكر → Ebî Bekre yazma): Arapçada ne yazıyorsa onu Türkçeye aktar; şüpheliyse `% Arapçada ad böyle yazılıdır: “…” (metinde böyle).` notu yeter.

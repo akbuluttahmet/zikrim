@@ -18,3 +18,9 @@
 - 9497 son halka “Huzeyfe’nin bir kızı ve bir kız kardeşi” tek kutu; 9628 “وأبي” → “Vekî‘’in babası”.
 - 9706 yalnız soru, cevap nüshada yok. 9800 kaza konusu “hurma ile iftar” babında.
 - Başlıksız bablar: 9563, 9610, 9782.
+
+## k01 Tahârât (p024–p030, 1651–2117)
+- 1783 içinde 1784 birleşik (tek madde, notlu); 1842 sonunda ikinci rivayet (notlu).
+- Başlıksız bablar: 1765, 1776, 1898, 1905. 1756: önceki bab başlığındaki âyet yeri maddeye kaymış, başlıkta verildi.
+- Şüpheli metin (notlu): 1913 “لا يكني”, 1968, 2054. 1695 “وكان يقول يعني بذلك قتادة” muğlak. 2110 “وضأته” öznesi belirsiz.
+- Ad yazımları (Arapçadaki gibi bırakıldı, notlu): 1878 “عبد الرحمن بن أبي بكر”, 1958 “يزيد الآني”, 2079 “موسى بن أبي زائدة”, 2089 “هشيم بن سعد”.
