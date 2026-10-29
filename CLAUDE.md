@@ -64,6 +64,24 @@ Bu repoda çalışan her oturum (Claude Code, başka sohbetler) bu kurallara uya
 - Bu üç kitaplığın derleme araçları oturum dosyalarındadır: `clean.py` (OpenITI → düz satır), `seg.py` / kitaba özel ayırıcı (→ `items.json`: [no, Arapça]), `build.py` (çeviri `N | sened | metin` + items.json → `tr/*.json`).
 - Arapça metinler Şâmile'deki aynı neşirden aynen alınır. Toplu metin için OpenITI GitHub kopyaları kullanılabilir (`raw.githubusercontent.com/OpenITI/...`).
 
+### Eklenecek erken dönem eserleri (Ahmet, 2026-10-29)
+
+Hepsi Şâmile'den, SPEC isnad standardıyla eklenir; sıra ve durum `PROGRESS.md`'de. Kitaplık klasörü ve müellif adı (`MUELLIF`/`RAVI_MUELLIF`/`c[0]`) parantezdedir; kitap râvisinin (nüsha senedi) adı `ONEK`'e girer, zincire yazılmaz.
+
+- **Sahâbe dönemi**
+  - Zeyd b. Sâbit (ö. 45/665): Cüz’ü Ferâizi Zeyd b. Sâbit (`zeyd/`, müellif `Zeyd b. Sâbit`). Şâmile no. **bulunamadı** — Ahmet'in verdiği bağlantı beklenir; OpenITI'de yok (Sevrî'nin el-Ferâiz'i 26488 ile karıştırılmaz).
+  - Ukbe b. Âmir el-Cühenî (ö. 58/678): Müsnedü Ukbe b. Âmir, İbn Kutluboğa derlemesi (`ukbe/`, müellif `Ukbe b. Âmir`; derleyen İbn Kutluboğa'nın senedleri `ONEK`). Şâmile no. **30774**. OpenITI'de yok; metin Şâmile sayfalarından alınır.
+  - Râfi‘ b. Hadîc (ö. 74/693): Hadîsü Râfi‘ b. Hadîc (`rafi/`, müellif `Râfi‘ b. Hadîc`). Şâmile no. **bulunamadı** — bağlantı beklenir.
+- **Tâbiîn dönemi**
+  - Hemmâm b. Münebbih (ö. 132/750): Sahîfetü Hemmâm b. Münebbih (`hemmam/`, müellif `Hemmâm b. Münebbih`; bütün hadisler Ebû Hüreyre'den, nüsha senedi Abdürrezzâk → Ma‘mer → Hemmâm 0 numaralı maddede ve `ONEK`'te). Şâmile no. **7776** (Ali Hasan Abdülhamîd neşri, el-Mektebü'l-İslâmî / Dâru Ammâr); OpenITI `0132HammamIbnMunabbih.Sahifa.Shamela0007776-ara1` (≈4 600 kelime, 138 hadis).
+  - İbn Şihâb ez-Zührî (ö. 124/742): en-Nâsih ve'l-mensûh ve Tenzîlü'l-Kur’ân (`zuhri/`, müellif `ez-Zührî`): Şâmile no. **26887** (Hâtim Sâlih ed-Dâmin, Müessesetü'r-Risâle); OpenITI `0124IbnShihabZuhri.TanzilQuran.Shamela0026887-ara1` (≈3 900 kelime). Cüz’ü ehâdîsi'z-Zührî: Şâmile no. **bulunamadı** — bağlantı beklenir.
+- **Tebeu't-tâbiîn dönemi**
+  - eş-Şâfiî (ö. 204/820): Müsnedü'ş-Şâfiî, mevcut `safii/` kitaplığına **s02** olarak (müellif `eş-Şâfiî`; nüsha râvisi er-Rebî‘ zaten `ONEK`'te). Şâmile no. **9344** (Dârü'l-Kütübi'l-İlmiyye, 1400); OpenITI `0204Shafici.Musnad.Shamela0009344-ara1` (≈86 000 kelime). Sencer tertibi (Şâmile 9615) ve 21495 kullanılmaz; numaralar DKİ neşrine göre.
+  - Hammâd b. Zeyd (ö. 179/795): Cüz’ü Hammâd b. Zeyd (`hammad/`, müellif `Hammâd b. Zeyd`). Şâmile no. **bulunamadı** — bağlantı beklenir; OpenITI'de yok.
+  - el-Leys b. Sa‘d (ö. 175/791): Cüz’ün fîhi meclis min fevâidi'l-Leys b. Sa‘d (`leys/`, müellif `el-Leys b. Sa‘d`). Şâmile no. **9812** (Muhammed b. Rızk et-Tarhûnî, Dâru Âlemi'l-Kütüb); OpenITI `0175LaythIbnSacd.MajlisMinFawaid.Shamela0009812-ara1` (≈1 400 kelime). Avâli'l-Leys (5676) ayrı eserdir, bu listede yok.
+  - Abdullah b. Vehb (ö. 197/812): el-Câmi‘ fi'l-hadîs (`ibnvehb/`, müellif `İbn Vehb`). Şâmile no. **1380** (Mustafa Hasan Hüseyin Ebü'l-Hayr tahkiki, Dâru İbni'l-Cevzî, 2 cilt); OpenITI `0197IbnWahbQurashi.JamicFiHadith.Shamela0001380-ara1` (≈32 000 kelime). Rif‘at Fevzî'nin “Cüz’ü'l-Câmi‘” neşri (26865) ve Tefsîrü'l-Kur’ân mine'l-Câmi‘ (37361) ayrıdır, alınmaz.
+- Yeni kitaplık açılırken: `index.json` + `tr/*.json`, `SHELVES` (+ yeni âlimse `ALIM_AR`/`ALIM_INI`), `dogrula.py`/`ravi_kur.py` `MUELLIF` ve `ONEK`, `script.js` `RAVI_MUELLIF`, `sw.js` sürüm, `gunun.py`/`akis.py` havuzları.
+
 ### Sünen-i Ebî Dâvûd
 
 - Şâmile 1726: Muhammed Muhyiddin Abdülhamîd tahkiki, el-Mektebetü’l-Asriyye, Sayda–Beyrut, 4 cilt. OpenITI `0275AbuDawudSijistani.Sunan.Shamela0001726-ara1`.
