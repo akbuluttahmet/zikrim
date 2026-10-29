@@ -844,6 +844,9 @@ body.view-profil #search,body.view-profil #toggleCompact{display:none}
 .ravi-chips{display:flex;flex-wrap:wrap;gap:7px}
 .ravi-chip{border:1px solid var(--border);background:var(--card);color:var(--text);border-radius:999px;padding:7px 12px;font:inherit;font-size:13px;line-height:1.2;text-align:left}
 .ravi-chip small{color:var(--muted);font-weight:600}
+.ravi-chip-n{display:block}
+.ravi-chip-s{display:block;font-size:11px;color:var(--accent);margin-top:2px;letter-spacing:.1px}
+.ravi-ara{display:block;width:100%;text-align:left;margin:0 0 18px;white-space:normal;line-height:1.35}
 .ravi-chip.plain{opacity:.7}
 .ravi-more{margin:10px 0 0}
 .ravi-r .ar-t{font-size:14px}

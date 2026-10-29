@@ -32,7 +32,12 @@ Hepsi: `python3 araclar/dogrula.py sunan --hepsi`
 - Bölümleme: sahâbî müsnedleri (`index.json`'daki `g` grupları); parti = 15–20 hadis.
 - Sözlük: `sozluk.tsv` Sünen adlarını içerir; Müsned'de yeni adlar aynı dosyaya eklenir (tek sözlük).
 
+## Standarda getirme sırası (Sünen'deki isnad standardı bütün kitaplara)
+
+Râvi sayfası ve `dogrula.py` yalnız `info.c` zinciri olan kitapları görür; eski biçimdeki kitaplar (sened satırında notlar, saygı ifadeleri, nüsha zinciri) standarda getirildikçe `araclar/ravi/ravi_kur.py` ve `dogrula.py` `MUELLIF` listesine eklenir. Sıra (öneri): 1) Müsned (baştan, en büyük kazanç), 2) Musannef (16 352 madde; sened var, panel yok → sened temizlenir, `&` sîga satırı Arapçadan üretilir), 3) ez-Zühd ve Fezâil (sened başındaki “(Ahmed …)” nüsha notları `n`'ye), 4) eş-Şerîa, el-İbâne, el-Âcurrî, 5) küçük kitaplar. Her kitapta: `kilavuz.md` uyarlanır → parti → `denetle.py` → derle → `dogrula.py --ravi` 0 hata → `ravi_kur.py` yenilenir → yayın.
+
 ## Günlük
 
+- 2026-10-29 — Râvi sayfası: “Rivayet aldıkları/verdikleri”, sîga dökümü, rol satırı, kütüphane senedde arama; ad eşleştirme sıkılaştırıldı.
 - 2026-10-29 — Râvi sayfası eklendi (`ravi.json`, panelde ada dokununca); arama → kitap hayalet tıklaması düzeltildi.
 - 2026-10-29 — Sünen yeni çeviriyle tamamlandı (5275). SPEC.md, râvi veritabanı, `dogrula.py`, PROGRESS.md kuruldu; Sünen'de ilk doğrulama: 0 hata, 106 uyarı.
