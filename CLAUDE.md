@@ -2,6 +2,8 @@
 
 Bu repoda çalışan her oturum (Claude Code, başka sohbetler) bu kurallara uyar. Kurallar Ahmet'indir; değiştirmeden önce ona sor.
 
+**Hadis çevirisi yapan oturum önce `SPEC.md`'yi (isnad/çeviri şartnamesi, örnekler, oturum akışı) ve `PROGRESS.md`'yi (durum, açık işler) okur.** Râvi veritabanı `araclar/ravi/ravi.json`, yayımlanmış verinin denetimi `python3 araclar/dogrula.py <kitaplık> --ravi`.
+
 ## Uygulama
 
 - **Sekîne**: Zikir sayacı, hadis kütüphanesi (Musannef ve İbn Ebî Şeybe’nin küçük kitapları, Müsned, Usûlü's-Sünne, ez-Zühd, Fezâilü's-sahâbe ve İmam Ahmed'in diğer risaleleri, Şerhu's-Sünne, el-Âcurrî, el-Hallâl, eş-Şâfiî, el-Buhârî, Ebû Dâvûd, Harb el-Kirmânî, İbn Batta’nın el-İbânetü’l-kübrâ’sı), Sözler ve Hanbelî fıkhından oluşan, telefonun ana ekranına eklenen bir PWA. Adres: https://akbuluttahmet.github.io/zikrim/ (GitHub Pages, `main` dalı).
