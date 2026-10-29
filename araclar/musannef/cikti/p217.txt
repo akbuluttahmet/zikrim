@@ -75,7 +75,7 @@
 
 @ Bir malda ortak olan iki adam hakkında: Mal birine ona, ötekine dokuza mal olur
 
-21720 | İbn Uleyye → Hâlid → İbn Sîrîn | İbn Sîrîn’den: O, iki adam arasında olan, yarısı birine yirmiye, yarısı da ötekine ona mal olan bir elbise hakkında şöyle dedi (metinde “dediler”): “Onu pazarlıkla ya da kârla (murâbaha) satarlarsa, o ikisi arasında yarı yarıyadır.”
+21720 | İbn Uleyye → Hâlid → İbn Sîrîn | İbn Sîrîn’den: O, iki adam arasında olan, yarısı birine yirmiye, yarısı da ötekine ona mal olan bir elbise hakkında şöyle dediler (metinde böyle): “Onu pazarlıkla ya da kârla (murâbaha) satarlarsa, o ikisi arasında yarı yarıyadır.”
 & haddesenâ, an, an
 % Arapçada tek kişiden sonra “قالا” (metinde böyle).
 ^ أنه قال في

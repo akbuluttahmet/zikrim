@@ -159,3 +159,8 @@
 - 20768 senedsiz. 20950 senede bir not karışmış (“Belki Ebû Sâlih'ten…”) — notta. 21015 nüsha senedi. 21130 âyet yeri maddeye kaymış. 21149 sonunda tekrar/birleşik olabilir. Başlıksız bablar: 20911, 20921, 21025.
 - Sened (notlu): 20746, 20776, 20798, 20827, 20829, 20850, 20909 (hoca yok), 21002, 21003, 21004, 21009, 21137.
 - Bozuk/şüpheli (notlu): 20682, 20696, 20756, 20757, 20766, 20840, 20853, 20869, 20880, 20926, 20934, 21057, 21062, 21073, 21083, 21094 (bab), 21096, 21139, 21142, 21152.
+
+## k13 Büyû‘ (p216–p223, 21650–22110 civarı)
+- 21717 nüsha senedi. 21832 ikinci rivayet birleşik (senedinde ad düşmüş). 21662 önceki maddenin senedi “و” ile bağlanmış (tahvîl gibi). 22001 sened Vekî‘de kesik.
+- Sened (notlu): 21780, 21808, 21884, 21940 (“حدثنا أيوب”), 22031, 22057 “ابن يونس”, 22099 (senedde Hüşeym, metinde “قال هشام”), 22103.
+- Bozuk/şüpheli (notlu): 21668, 21676, 21706, 21720, 21723, 21746, 21764, 21843, 21844, 21900, 21902, 21970, 21980, 21995, 21999, 22051, 22073, 22079.

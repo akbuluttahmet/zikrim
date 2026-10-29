@@ -150,9 +150,9 @@
 & haddesenâ, an, an, an
 ^ أنه قال: ربما
 
-22896 | Vekî‘ → Mis‘ar → Ezher el-Attâr → Muhârib b. Disâr | Muhârib b. Disâr dedi ki: Ömer dedi ki: “Hasımları barışıncaya kadar geri çevirin; çünkü kesin hüküm vermek topluluk arasında kinler doğurur.”
-& haddesenâ, haddesenâ, an, an
-^ قال: قال عمر:
+22896 | Vekî‘ → Mis‘ar → Ezher el-Attâr → Muhârib b. Disâr → Ömer | Muhârib b. Disâr dedi ki: Ömer dedi ki: “Hasımları barışıncaya kadar geri çevirin; çünkü kesin hüküm vermek topluluk arasında kinler doğurur.”
+& haddesenâ, haddesenâ, an, an, kâle
+^ «ردوا الخصوم
 
 22897 | Cerîr b. Hâzim → İbn Sîrîn | İbn Sîrîn dedi ki: “Ömer b. el-Hattâb bir kadı gönderdi. İki adam bir dinar hakkında ona davalaştılar.” Dedi ki: “(Kadı) onu birine verdi, diğerine de kendi yanından bir dinar verdi. Bu Ömer’e ulaşınca ona (adam) gönderip onu azletti.”
 & haddesenâ, an
