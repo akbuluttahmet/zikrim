@@ -13,6 +13,7 @@
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="ai.css">
 <title>Sekîne — Zikir ve İlim</title>
 </head>
 <body data-theme="classic" class="at-main" data-tab="zikir">
@@ -23,7 +24,7 @@
       <span class="eyebrow" id="today">GÜNLÜK HUZUR</span>
       <h1>Sekîne <span class="sparkle">✦</span></h1>
     </div>
-    <div class="hd-btns"><button id="openSearch" class="icon-button" aria-label="Bütün kütüphanede ara" title="Ara"><svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="M20 20l-4.2-4.2"></path></svg></button>
+    <div class="hd-btns"><button type="button" id="openAi" class="icon-button" aria-label="Kaynaklı yapay zekâya sor" title="Kütüphaneye sor" style="font-size:23px;font-weight:650">✦</button><button id="openSearch" class="icon-button" aria-label="Bütün kütüphanede ara" title="Ara"><svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="M20 20l-4.2-4.2"></path></svg></button>
     <button id="openSettings" class="icon-button" aria-label="Ayarlar" title="Ayarlar"><svg class="ic-gear" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg></button></div>
   </header>
 
@@ -233,6 +234,36 @@
     <button type="button" class="tab" data-tab="profil"><span class="tab-ic" aria-hidden="true">👤</span>Profilim</button>
   </div>
 </nav>
+<!-- Kaynaklı AI: bilgi yalnız uygulamadaki ara.json kütüphanesinden alınır -->
+<section id="aiPage" class="ai-page" hidden aria-label="Kaynaklı İslami İlim Asistanı">
+  <div class="ai-head"><button id="aiBack" class="ai-back" type="button" aria-label="Geri">‹</button><h2>✦ Kütüphaneye Sor</h2></div>
+  <div class="ai-scroll">
+    <div class="ai-eyebrow">SEKÎNE · KAYNAKLI AI</div>
+    <p class="ai-intro">Sor, birlikte kaynaklarına bakalım.</p>
+    <p class="ai-caption">Yalnızca Sekîne kütüphanesinde bulunan metinlerle cevap verir. Her açıklamanın altında açılabilir rivayet kaynakları bulunur.</p>
+    <div class="ai-examples">
+      <button type="button" data-ai-example="Sabır hakkında rivayetlerde ne anlatılıyor?">Sabır hakkında</button>
+      <button type="button" data-ai-example="Teheccüd namazı hakkında hangi rivayetler var?">Teheccüd rivayetleri</button>
+      <button type="button" data-ai-example="İman artar ve eksilir mi?">İman artar mı?</button>
+    </div>
+    <form id="aiForm" class="ai-form">
+      <label for="aiQuestion">Kütüphaneye sor</label>
+      <textarea id="aiQuestion" maxlength="500" rows="3" placeholder="Ör. İmam Ahmed kadere iman hakkında ne söylüyor?" required></textarea>
+      <button id="aiAsk" class="ai-send" type="submit">Kaynaklı cevap getir</button>
+    </form>
+    <p id="aiStatus" class="ai-status" role="status" aria-live="polite">Sorunu yazarak kütüphaneden destekli cevap alabilirsin.</p>
+    <div id="aiResult" class="ai-result" aria-live="polite"></div>
+    <details class="ai-config">
+      <summary>AI sunucusu bağlantısı (ilk kurulum)</summary>
+      <div class="ai-config-inner">
+        <input type="url" id="aiEndpoint" placeholder="https://...workers.dev" aria-label="Cloudflare Worker adresi" spellcheck="false">
+        <button type="button" id="aiSaveEndpoint">Kaydet</button>
+      </div>
+      <p id="aiConnection">Sunucu adresi burada yapılandırılır.</p>
+    </details>
+    <p class="ai-disclaimer">Yapay zekâ metni yanlış yorumlayabilir. Önemli dinî hükümler için kaynakları bizzat kontrol et. Sorular yanıt üretilirken AI sağlayıcısına iletilir.</p>
+  </div>
+</section>
 <!-- Bütün kütüphanede arama (ara-worker.js; veriler ara.json, ara-ar.json) -->
 <section id="araPage" class="ara" hidden aria-label="Bütün kütüphanede ara">
   <div class="ara-top">
@@ -251,5 +282,6 @@
 <script src="usul.js"></script>
 <script src="hadis.js"></script>
 <script src="script.js"></script>
+<script src="ai.js"></script>
 </body>
 </html>
