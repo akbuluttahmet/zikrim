@@ -35,3 +35,13 @@
 - Sened sorunları (Arapçadaki gibi, notlu): 788 Ebû Ca‘fer iki kez; 852 başta hoca yok (Mugîre'den başlar); 853 “حدثنا أبو بكر، عن أبي حيان” arada hoca yok; 904 “أيوب بن محمد”; 936 “أبو علية”; 957 “عن زيد، عن خالد الجهني”; 969 “حدثنا محمد، عن بشر”; 1019 “معاذ”; 1073 “عن عطاء، عن الحكم، وعن المقسم”.
 - Metne giren “حدثنا أبو بكر قال:” kayıtları: 947, 956, 1016, 1059. 948 başı eksik (947'nin tekrarı) ve sonunda ikinci rivayet birleşik. 1035'te Bakî b. Mahled nüsha senedi.
 - Başlıksız bablar: 880, 897, 934, 960, 967, 1067.
+
+## k26 Ferâiz (p307–p311, 31134–31394)
+- 31134 bab başlığında “ابنة أخيه” iki kez (metinde böyle); 31199 bab başlığı karışık.
+- Bozuk (notlu): 31150, 31198 (yarım), 31214, 31258 (yarım), 31362; tek kelimelik (metinde böyle): 31234, 31259, 31261 (uzun, tekrarlı), 31272, 31278, 31285, 31294, 31318, 31327, 31365, 31390.
+- Sened: 31159 “عن إبراهيم، وعمر، وعلي، وعبد الله” → İbrâhîm → Ömer, Ali ve Abdullah; 31160 Ebû Bekir'in “Cübeyr b. Nüfeyr'den sanırım” sözü metinde; 31245 “فضيل”; 31296 “حفص، عن غياث” iki halka; 31326/31335 metin içinde “حدثنا أبو بكر”.
+
+## k04 Sıyâm (p031–p038, 8867–9406)
+- Bozuk/şüpheli (notlu): 8886, 8900, 8933 (yarım), 8937, 8965, 8973, 8988, 9052, 9053, 9163, 9181, 9185, 9218, 9242, 9281, 9382, 9403, 9406.
+- Sened (Arapçadaki gibi): 8966 “محمد بن محمد بن بشر”, 9201 “نعس بن الوليد”, 9291, 9334 “هشام، عن عروة، عن أبيه”, 9346 yalnız İbn Nümeyr, 9381, 9387; 9257 ve 9271 iki yol (tahvîl gibi yazıldı); 9297 “Basralılardan bir grup ve Hasan”.
+- 9366 sonunda ikinci rivayet birleşik. 9073 başlıksız bab. 9151 yalnız “رضي الله”.
