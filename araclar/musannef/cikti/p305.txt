@@ -40,7 +40,7 @@
 & haddesenâ, haddesenâ, an, an
 ^ قال: قال رسول الله
 
-31042 | Zeyd b. Hubâb → Ebû Sinân → Ebû İshâk → Amr b. Meymûn | Amr b. Meymûn dedi ki: “Bir ferîza hakkında ihtilaf ettiklerinde Âişe’ye gelirlerdi, o da onlara onu bildirirdi.”
+31042 | Zeyd b. el-Hubâb → Ebû Sinân → Ebû İshâk → Amr b. Meymûn | Amr b. Meymûn dedi ki: “Bir ferîza hakkında ihtilaf ettiklerinde Âişe’ye gelirlerdi, o da onlara onu bildirirdi.”
 & haddesenâ, ahberanâ, haddesenî, an
 ^ قال: " كانوا إذا
 
@@ -168,7 +168,7 @@
 & haddesenâ, an, an, an
 ^ قال: حدثت ابن الزبير
 
-31072 | Zeyd b. Hubâb → Yahyâ b. Eyyûb el-Mısrî → Yezîd b. Ebî Habîb → Ebû Seleme → Ömer | Ömer, malı kız ile kız kardeş arasında yarı yarıya kıldı.
+31072 | Zeyd b. el-Hubâb → Yahyâ b. Eyyûb el-Mısrî → Yezîd b. Ebî Habîb → Ebû Seleme → Ömer | Ömer, malı kız ile kız kardeş arasında yarı yarıya kıldı.
 & haddesenâ, haddesenî, haddesenâ, an, enne
 ^ «جعل المال بين
 

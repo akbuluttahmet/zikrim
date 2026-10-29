@@ -12,3 +12,8 @@ Her parça için:
 Kurallar özetle: tam ve aslına sadık çeviri; sened satırı yalnız adlar ve ` → `; `حدثنا أبو بكر قال:` öneği senede girmez; her adın sîgası Arapçada adın önündeki lafız; metin sözü söyleyenle (zincirin son halkasıyla) başlar: `X dedi ki:` ya da `عن X أن …` → `X’ten: …`; her صلى الله عليه وسلم için ﷺ (ek kelimeye: `Nebî’ye ﷺ`); `(?)` asla; dışarıdan bilgi, açıklama, “yani” yok; âyetler tırnakta ve yeriyle `(Nisâ 4/11)`.
 
 git commit/push YAPMA; yalnız kendi cikti dosyalarına yaz. Bitince kısa rapor: hangi parçalar tamam (denetle sonucu) ve Ahmet'in bakması gereken şüpheli yerler (bozuk/okunamayan metin, birleşik madde, karar gerektiren yer) madde numarasıyla, her biri tek satır. Raporu kısa tut.
+
+Ek kurallar:
+- Arapça anlamca yanlış görünse bile asla anlamdan “düzelterek” çevirme: harfiyen çevir ve gerekiyorsa `(metinde böyle)` ekle.
+- `(metinde böyle)` notunu yalnız gerçekten bozuk/şüpheli yerde kullan; her küçük tuhaflıkta değil.
+- Raporda isim listesi verme; yalnız şüpheli madde numaraları ve tek satırlık açıklama.
