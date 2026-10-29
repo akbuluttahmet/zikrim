@@ -16,7 +16,7 @@ Her oturum: önce `SPEC.md`, sonra bu dosya. Bitince burayı güncelle (kitap, s
 | el-Hallâl (`hallal/`) | isnad standardı (SPEC) | **tamamlandı** — 7/7 kitap, 372 madde (2026-10-29) | `dogrula.py`: 0 hata, 38 uyarı (28 metin başı, 7 sîga) |
 | eş-Şâfiî (`safii/`) | isnad standardı (SPEC) | **tamamlandı** — 1/1 kitap, 547 madde (2026-10-29) | `dogrula.py`: 0 hata, 5 uyarı |
 | el-Buhârî (`buhari/`) | isnad standardı (SPEC) | **tamamlandı** — 2/2 kitap, 307 madde (2026-10-29) | `dogrula.py`: 0 hata, 25 uyarı (22 metin başı, 1 kısa) |
-| el-İbâne (`ibane/`) | isnad standardı (SPEC) | **sürüyor** — 19/22 bölüm (i01–i19), 2682 madde (2026-10-29) | `dogrula.py`: 0 hata, 143 uyarı |
+| el-İbâne (`ibane/`) | isnad standardı (SPEC) | **sürüyor** — 20/22 bölüm (i01–i20), 2842 madde (2026-10-29) | `dogrula.py`: 0 hata, 152 uyarı |
 | Ebû Dâvûd (`ebudavud/`), Harb (`harb/`), el-Berbehârî (`berbehari/`) | isnad standardı (SPEC) | **tamamlandı** — 243 madde (2026-10-29) | `dogrula.py`: 0 hata, 1 uyarı (berbehari ﷺ) |
 | Müsned (`musned/`) | isnad standardı (SPEC) | **sürüyor** — m001 tamamlandı (1–81, 81/81), m002 p006–p012 (82–207) çevrildi; toplam 207/1380 madde (2026-10-29) | `dogrula.py` (1–207): 0 hata, 0 kısa, 0 sîga; m002–m003 bölüm bitene kadar korundu |
 | el-Musannef (`musannef/`) | eski biçim (17/40 kitap, 16 352 madde; sened var, panel yok) | daha sonra standarda getirilecek | `CLAUDE.md` “Kaynaklar” |
