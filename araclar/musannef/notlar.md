@@ -221,3 +221,7 @@
 - 27731 ikinci alıntıya Arapçada âyet işareti yok; Tâhâ 20/82 yeri verildi — onay bekliyor. 27666 tahvîl, Âmir'in sözü Ali'ninkiyle birleşik.
 - Sened (notlu): 27474 “ابن أبي عروة”, 27645 “حدثنا شريح”, 27659 “غندر بن سليمان”, 27773. “وعن” iki yol: 27280, 27438, 27448, 27480, 27487, 27506, 27559, 27665.
 - Bozuk/şüpheli (notlu): 27325, 27573, 27577, 27581, 27630, 27653, 27731, 27741.
+
+## k19 Hudûd (p297–p304, 28651–29041)
+- 28796 “عن أبي” Übey diye okundu (harekesiz; “Ebû Bekir” düşmüş de olabilir) — bakılmalı. 28723, 28734 Arapça “[النور: 2]” ile başlıyor. 28929 “أو حدثت عنه” notta. 29011 dört yol.
+- Bozuk/şüpheli (notlu): 28684, 28766, 28769, 28773, 28778, 28780, 28789, 28806, 28810, 28824, 28825, 28868, 28871, 28874, 28893, 28896, 28922, 28924, 28940, 28944, 28993, 29005.
