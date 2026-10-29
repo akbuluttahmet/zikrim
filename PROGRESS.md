@@ -23,7 +23,7 @@ Her oturum: önce `SPEC.md`, sonra bu dosya. Bitince burayı güncelle (kitap, s
 | Leys b. Sa‘d (`leys/`) | isnad standardı (SPEC) | **tamamlandı** — 1/1 kitap (Fevâidü'l-Leys), 8 madde (2026-10-29) | `dogrula.py --ravi`: 0 hata, 0 uyarı; paneller elle |
 | ez-Zührî (`zuhri/`) | isnad standardı (SPEC) | **tamamlandı** — 2/2 kitap (en-Nâsih ve'l-mensûh 49, Tenzîlü'l-Kur’ân 118 madde) (2026-10-29) | `dogrula.py --ravi`: 0 hata, 0 uyarı; paneller elle |
 | Hemmâm b. Münebbih (`hemmam/`) | isnad standardı (SPEC) | **tamamlandı** — 1/1 kitap (es-Sahîfe), 140 madde (2026-10-29) | `dogrula.py --ravi`: 0 hata, 0 uyarı; `k = 0` (Arapçada isnad yok) |
-| İbn Vehb el-Câmi‘ (`ibnvehb/`) | isnad standardı (SPEC) | **sürüyor** — 3/5 bölüm (j01–j03, 413 madde) (2026-10-29) | `dogrula.py`: 0 hata; çeviri sözlükleri oturum dosyalarında |
+| İbn Vehb el-Câmi‘ (`ibnvehb/`) | isnad standardı (SPEC) | **sürüyor** — 4/5 bölüm (j01–j04, 561 madde) (2026-10-29) | `dogrula.py`: 0 hata; çeviri sözlükleri oturum dosyalarında |
 | **Diğer 5 erken dönem eseri** (Zeyd b. Sâbit, Ukbe b. Âmir, Râfi‘ b. Hadîc, Müsnedü'ş-Şâfiî, Hammâd b. Zeyd; Zührî'nin hadis cüzü) | isnad standardı (SPEC) | **başlanmadı** — kaynaklar kaydedildi (2026-10-29) | `CLAUDE.md` “Eklenecek erken dönem eserleri”; 3 eserin Şâmile numarası eksik (aşağıda) |
 
 ## Araçlar (hazır)
