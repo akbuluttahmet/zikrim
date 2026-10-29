@@ -1,0 +1,274 @@
+@ İhrama erken girmeyi hoş görmeyenler
+
+12698 | Vekî‘ → Ebû Hüreyre → Mücâhid | Ebû Hüreyre dedi ki: Mücâhid’i, bir adam ona “Hangisi daha faziletlidir: evimden mi ihrama gireyim, kavmimin mescidinden mi, şehirden mi, yoksa mîkattan mı?” diye sorarken işittim. Mücâhid şöyle dedi: “Ben terviye günü ihrama giriyorum da ihramımdan çıkıncaya kadar ihramdan çıkamamaktan korkuyorum.”
+& haddesenâ, an, semi‘tü
+% Arapçada ad böyle yazılıdır: “عن أبي هريرة” (metinde böyle).
+^ وسأله رجل: أيهما
+
+@ İhrama girmek isteyen kişinin (kurbanlığa) gerdanlık takması, çul örtmesi ya da iş‘âr yapması hakkında
+
+12699 | Ebü’l-Ahvas → Leys → Atâ → İbn Abbâs | İbn Abbâs dedi ki: “Kurbanlığa gerdanlık takıldığında sahibi umre ya da hac istiyorsa ihrama girmiş olur.”
+& haddesenâ, an, an, an
+^ «إذا قلد الهدي
+
+12700 | Ebü’l-Ahvas → Mugîre → İbrâhîm | İbrâhîm dedi ki: “Kurbanlığa gerdanlık takıldığında sahibi ihram istiyorsa ihram vâcip olmuştur.”
+& haddesenâ, an, an
+^ «إذا قلد الهدي
+
+12701 | İbn Fudayl → Husayn → Şa‘bî | Şa‘bî dedi ki: “Kâdisiyye’de kurbanlığına gerdanlık takmış, üzerinde bir kaftan ve sarık bulunan bir adam gördüm; ona sarığını çıkarmasını emrettim.” Ve dedi ki: “Kişi gerdanlık takar ya da çul örterse ihrama girmiş olur.”
+& haddesenâ, an, an
+^ «رأيت رجلا بالقادسية
+
+12702 | İbn Uyeyne → Amr → Ebü’ş-Şa‘sâ | Ebü’ş-Şa‘sâ dedi ki: “Hacı gerdanlık taktığında ihrama girmiş olur.”
+& haddesenâ, an, an
+^ «إذا قلد الحاج
+
+12703 | Ebû Hâlid → Haccâc → Atâ ve İbnü’l-Esved | Atâ ve İbnü’l-Esved dediler ki: “Bir veya iki gün (önce) dilemedikçe, gerdanlık takması ve ihrama girmesi gerekmez.”
+& haddesenâ, an, an
+^ قالا: «ليس له
+
+12704 | Vekî‘ → Mis‘ar → İbn Avn → Saîd b. Cübeyr | Saîd b. Cübeyr’den: Gerdanlık takmış bir adam gördü ve şöyle dedi: “Bu ise ihrama girmiştir.”
+& haddesenâ, an, an, an
+^ قال: رأى رجلا
+
+12705 | Hafs → Leys → Mücâhid ve Atâ → İbn Abbâs | İbn Abbâs dedi ki: “Kim çul örter ya da gerdanlık takarsa ona ihram vâcip olmuştur.”
+& haddesenâ, an, an, an
+^ «من جلل أو
+
+12706 | Vekî‘ → Süfyân → Habîb b. Ebî Sâbit → İbn Abbâs | İbn Abbâs dedi ki: “Kim çul örter, gerdanlık takar ya da iş‘âr yaparsa ihrama girmiş olur.”
+& haddesenâ, an, an, an
+^ «من جلل، أو
+
+12707 | İbn Fudayl → Yahyâ b. Saîd → Saîd b. el-Müseyyeb ve Süleymân b. Yesâr | Saîd b. el-Müseyyeb ve Süleymân b. Yesâr dediler ki: Saîd b. Kays yola çıktı. Zülhuleyfe’de iken, hanımı saçını tararken birden gerdanlık takılmış kurbanlık develerle karşılaştı. Başını kadının elinden çekti ve şöyle dedi: “Bu develere gerdanlık takan kimse ihramını tamamlasın.”
+& haddesenâ, an, an
+^ قالا: خرج سعيد
+
+12708 | Mu‘temir → Leys → Tâvûs → Mücâhid | Mücâhid dedi ki: “Kurbanlığına gerdanlık takar ya da ona çul örterse ve ihram istiyorsa, ihrama girmiş olur.”
+& haddesenâ, an, an, an
+^ «إذا قلد هديه،
+
+12709 | Gunder → Şu‘be → Habîb b. Ebî Sâbit → Meymûn b. Şibl | Meymûn b. Şibl’den, kurbanlığa iş‘âr yapan adam hakkında. Şöyle dedi: “Kim hac aylarında kurbanlığa iş‘âr yapar ve gerdanlık takarsa ona hac vâcip olmuştur. Bunu hac ayları dışında yaparsa, bu onun aleyhine ayıplanmaz.”
+& haddesenâ, an, an, an
+^ عن الرجل يشعر
+
+12710 | Gunder → Şu‘be → Hammâd | Şu‘be dedi ki: Hammâd’a, kurbanlık devesine gerdanlık takan adamı sordum. Dedi ki: “Dilerse ihrama girmez.”
+& haddesenâ, an, kâle
+^ قال: سألت حمادا،
+
+12711 | İbn Nümeyr → Ubeydullah b. Ömer → Nâfi‘ → İbn Ömer | İbn Ömer dedi ki: “Kim gerdanlık takarsa ihrama girmiş olur.”
+& haddesenâ, haddesenâ, an, an
+^ «من قلد، فقد
+
+@ Kurbanlığını gönderip kendisi (evinde) kalan kişi hakkında: Ona ihram vâcip olur mu, olmaz mı?
+
+12712 | Ebû Muâviye → A‘meş → İbrâhîm → Esved → Âişe | Âişe dedi ki: “Resûlullah’ın ﷺ kurbanlıkları için gerdanlıkları ben örerdim. O, kurbanlığına gerdanlık takar, sonra onu gönderir, sonra (evinde) kalır ve muhrimin sakındığı şeylerden hiçbirinden sakınmazdı.”
+& haddesenâ, an, an, an, an
+^ «كنت أفتل القلائد
+
+12713 | Gunder → Katâde → Enes | Enes’ten: O, kurbanlığı gönderir, sonra muhrimin kendini tuttuğu şeylerden hiçbirinden kendini tutmazdı.
+& haddesenâ, an, an
+^ «أنه كان يبعث
+
+12714 | Gunder → Saîd → Katâde → Saîd b. el-Müseyyeb | Saîd b. el-Müseyyeb dedi ki: “Kim kurbanlığını gönderirse, muhrimin kendini tuttuğu şeylerden hiçbirinden kendini tutmaz; ancak Cem‘ gecesi kadınlardan kendini tutar.”
+& haddesenâ, an, an, an
+^ «من بعث بهديه،
+
+12715 | Gunder → Saîd → Katâde → Hasan | Hasan’dan: O, bununla fetva verir ve şöyle derdi: “Muhrimin kendini tuttuğu hiçbir şeyden kendini tutmaz.”
+& haddesenâ, an, an, an
+^ أنه كان يفتي
+
+12716 | İbn Uyeyne → Yahyâ b. Saîd → Amre → Âişe | Âişe dedi ki: “İhrama ancak telbiye getiren ve lebbeyk diyen kimse girer.”
+& haddesenâ, an, an, an
+^ «إنما يحرم من
+
+12717 | İbn Nümeyr → A‘meş → İbrâhîm → Alkame | Alkame dedi ki: “Abdullah kurbanlığını benimle gönderdi ve ihrama girmedi.”
+& haddesenâ, haddesenâ, an, an
+^ «بعث معي عبد
+
+12718 | Gunder → Saîd → Ebû Ma‘şer → İbrâhîm → Alkame → Abdullah | Abdullah’tan: O, kurbanlığı gönderir ve muhrimin kendini tuttuğu şeylerden kendini tutmazdı.
+& haddesenâ, an, an, an, an, an
+^ «أنه كان يبعث
+
+@ Muhrimin kendini tuttuğu şeylerden kendini tutanlar
+
+12719 | Abdülvehhâb es-Sekafî → Ca‘fer b. Muhammed → babası | Ca‘fer b. Muhammed’in babasından: Ömer, Ali ve İbn Abbâs, kurbanlık deve gönderen adam hakkında şöyle derlerdi: “Muhrimin kendini tuttuğu şeylerden kendini tutar; yalnız telbiye getirmez.” Ca‘fer dedi ki: “Onlarla bir gün sözleşir; iş‘âr yapmaları için onlarla sözleştiği o gün gelince muhrimin kendini tuttuğu şeylerden kendini tutar.”
+& haddesenâ, an, an
+^ أن عمر، وعليا،
+
+12720 | İbn Uleyye → Eyyûb → Nâfi‘ | Nâfi‘den: İbn Ömer kurbanlığı gönderdiğinde, telbiye getirmemesi dışında muhrimin kendini tuttuğu şeylerden kendini tutardı.
+& haddesenâ, an, an
+^ أن ابن عمر «كان
+
+12721 | Sekafî → Yahyâ b. Saîd → Muhammed b. İbrâhîm → Rebîa b. Abdullah b. el-Hüdeyr | Rebîa b. Abdullah b. el-Hüdeyr’den: O, Ali b. Ebî Tâlib zamanında Basra emiri iken İbn Abbâs’ı Basra minberinde (elbisesinden) soyunmuş olarak gördü. İnsanlara onu sordu; “Kurbanlığına gerdanlık takılmasını emretti; bu yüzden soyundu” dediler. (Dedi ki:) İbn ez-Zübeyr’e rastladım ve bunu ona anlattım. Şöyle dedi: “Kâbe’nin Rabbine yemin olsun ki bid‘attir.”
+& haddesenâ, an, ahberanî, ahberahû
+^ أنه رأى ابن
+
+12722 | Abdüla‘lâ b. Abdüla‘lâ → Hişâm → Muhammed | Muhammed dedi ki: “Kişi kurbanlık gönderdiğinde, onu beraberinde gönderdiği kimseye o günden itibaren şu şu gün gerdanlık takmasını emreder; sonra muhrimin kadınlardan kendini tuttuğu şeylerden kendini tutar.”
+& haddesenâ, an, an
+^ قال: «إذا بعث
+
+@ Umre hakkında: Her ayda diyenler ve ne zaman dilersen diyenler
+
+12723 | Ali b. Müshir → Katâde → Ubâde → Muâviye → Âişe | Âişe dedi ki: “Umre bütün zaman boyunca helâldir; yalnız üç gün hariç: Kurban bayramı günü ve teşrik günlerinden iki gün.”
+& haddesenâ, an, an, an, an
+^ قالت: " حلت
+
+12724 | Hafs → Leys → Tâvûs | Tâvûs’tan: Ona umre soruldu. Şöyle dedi: “Teşrik günleri geçince, gelecek yıla kadar ne zaman dilersen umre yap.”
+& haddesenâ, an, an
+^ أنه سئل عن
+
+12725 | İbn Uleyye → İbn Ebî Necîh → Mücâhid → Ali | Mücâhid dedi ki: Ali dedi ki: “Her ayda bir umre.” Saîd b. Cübeyr de dedi ki: “Her yılda bir umre.”
+& haddesenâ, an, an, kâle
+^ «في كل شهر
+
+12726 | Abbâd → Saîd → Katâde → İkrime | İkrime dedi ki: “Gücünün yettiği kadar umre yap.”
+& haddesenâ, an, an, an
+^ «اعتمر ما أمكنك»
+
+12727 | İbn Uyeyne → İbn Ebî Hüseyin → Enes b. Mâlik’in çocuklarından biri | Enes b. Mâlik’in çocuklarından biri dedi ki: “Nadr b. Mâlik burada Mekke’de ikamet ederdi. Başı (saçı) uzayınca çıkar ve umre yapardı.”
+& haddesenâ, an, an
+^ «كان النضر بن
+
+12728 | Yahyâ b. Saîd → Ubeydullah b. Ömer → Nâfi‘ → İbn Ömer | İbn Ömer’den: O, her yıl bir umre yapardı; yalnız savaş yılı hariç, o yıl Şevvâl’de ve Receb’de umre yaptı.
+& haddesenâ, an, an, an
+^ «أنه كان يعتمر
+
+12729 | Ezher es-Semmân → İbn Avn → Muhammed | Muhammed dedi ki: “Umreyi ancak yılda bir defa uygun görürdü.”
+& haddesenâ, an, an
+^ قال: «كان لا
+
+12730 | Yahyâ b. Saîd → İbn Cüreyc → Sadaka → Kâsım | Kâsım’dan: O, her ayda iki defa umre yapmayı hoş görmedi.
+& haddesenâ, an, an, an
+^ «أنه كره أن
+
+12731 | Vekî‘ → Süfyân → Mansûr → İbrâhîm | İbrâhîm dedi ki: “Yılda ancak bir defa umre yaparlardı.”
+& haddesenâ, an, an, an
+^ «ما كانوا يعتمرون
+
+12732 | Vekî‘ → Süfyân → Haccâc → Atâ | Haccâc dedi ki: Atâ’ya ayda iki defa umre yapmayı sordum. “Sakıncası yok” dedi.
+& haddesenâ, an, an, kâle
+^ قال: سألت عطاء،
+
+12733 | Hafs b. Gıyâs → Amr | Amr dedi ki: “Hasan umreyi ancak her yılda (bir defa) uygun görürdü.”
+& haddesenâ, an
+^ «كان الحسن لا
+
+@ Hanımıyla konuşup da mezi gelen kişi hakkında
+
+12734 | Şerîk → İbrâhîm b. Muhâcir → Mücâhid | Mücâhid dedi ki: İbn Abbâs, hanımına söven bir adam gördü ve “Neyin var?” dedi. (Adam) “Mezim geldi” dedi. İbn Abbâs şöyle dedi: “Ona dokunma ve bunun için (kan) akıt.”
+& haddesenâ, an, an
+^ قال: رأى ابن
+
+12735 | Cerîr → Ebân b. Tağlib → Hakem | Hakem dedi ki: Tâif halkından bir adam hac için muhrim olarak geldi. Bir bostanda kadınlar gördü; onlara bakmayı sürdürdü, sonunda mezisi geldi. Saîd b. Cübeyr’e sordu; o da şöyle dedi: “Kan akıt ve haccını tamamla.”
+& haddesenâ, an, an
+^ قال: أقبل رجل
+
+12736 | Ebû Bekir b. Ayyâş → Hübeyre ed-Dabbî | Hübeyre ed-Dabbî dedi ki: Hanımım yanımda olduğu hâlde Mekke’ye çıktım. Onunla konuştum ve mezim geldi. Atâ’ya sordum, “Bir koyun” dedi.
+& haddesenâ, an
+^ قال: " خرجت
+
+12737 | Hafs → İbn Cüreyc → Atâ | Atâ dedi ki: “İki sünnet yeri birleşmedikçe hac bozulmaz. İki sünnet yeri birleşince hac bozulur ve tazminat vâcip olur.”
+& haddesenâ, an, an
+^ «لا يفسد الحج
+
+@ Daha önce haccetmemişken hac etmeyi kendine adak olarak borçlanan erkek ve kadın hakkında
+
+12738 | Ebü’l-Ahvas → Zeyd b. Cübeyr | Zeyd b. Cübeyr dedi ki: İbn Ömer’in yanında oturuyordum. Ona bir kadın gelip “Haccetmeyi adadım; bu hacdan önce hiç haccetmedim” dedi. (İbn Ömer) “Bu İslâm haccıdır; adağını yerine getireceğin şeyi ara” dedi.
+& haddesenâ, an
+^ قال: كنت عند
+
+12739 | Hafs → Hişâm → Ebû Uyeyne’nin mevlâsı Vâsıl → bir şeyh → İbn Abbâs | Bir şeyh, İbn Abbâs’tan işitti; ona bir kadın gelip “Haccetmeyi adadım ve İslâm haccını yapmadım” dedi. İbn Abbâs şöyle dedi: “Kâbe’nin Rabbine yemin olsun ki ikisini de ödedin.”
+& haddesenâ, an, an, haddesenî, semi‘a
+^ وأتته امرأة،
+
+12740 | Abdülvehhâb → Hâlid → İkrime | İkrime’den: Bir adam haccetmeyi adadı, (daha önce) de haccetmemişti. (İkrime) dedi ki: “Ondan farz yerine de adak yerine de geçer.”
+& haddesenâ, an, an
+^ أن رجلا نذر
+
+12741 | Muhâribî → Leys → Mücâhid | Mücâhid’den, hacca dair üzerinde bir yemin bulunan, İslâm haccını da yapmamış olan bir adam hakkında —onun haccı yoktur (metinde böyle)—, şöyle dedi: “İkisinden de yeter; bir şeye gücü yeterse haccetsin.”
+& haddesenâ, an, an
+^ في رجل كانت
+
+12742 | Vekî‘ → Süfyân → Ebü’r-Rebî‘ → Saîd b. Cübeyr; ayrıca Vekî‘ → Süfyân → Leys → Mücâhid | Mücâhid dedi ki: “İslâm haccı, onun haccı ve adağı yerine ona yeter.”
+& haddesenâ, an, an, an; haddesenâ, an, an, an
+^ قال: «يجزيه حجة
+
+12743 | Ebû Muâviye → İbn Cüreyc → Atâ | Atâ’dan: Bir adam ona “Üzerimde hac adağı var ve İslâm haccını yapmadım; hangisiyle başlayayım?” dedi. (Atâ) “İslâm haccıyla başla” dedi.
+& haddesenâ, an, an
+^ قال له رجل:
+
+12744 | Vekî‘ → Şu‘be → Süleymân el-A‘meş | Süleymân el-A‘meş dedi ki: Bir insanı, haccetmeyi adayıp da (henüz) haccetmemiş bir adam hakkında şöyle derken işittim: “Farzla başlar.”
+& haddesenâ, an, an
+^ قال: " سمعت
+
+@ Namazın ardından ihrama girmeyi müstehap görenler
+
+12745 | Abdüsselâm → Husayf → Saîd b. Cübeyr → İbn Abbâs | İbn Abbâs’tan: Nebî ﷺ namazın ardından ihrama girdi.
+& haddesenâ, an, an, an
+^ «أن النبي صلى الله عليه وسلم أحرم دبر الصلاة»
+
+12746 | Hafs → Amr → Hasan | Hasan’dan: Nebî ﷺ öğle namazının ardından ihrama girdi. Hasan da öğlenin ardından ihrama girmeyi müstehap görürdü; bunu yapmazsa ikindi namazının ardından.
+& haddesenâ, an, an
+^ «أن النبي صلى الله عليه وسلم أحرم دبر صلاة الظهر»
+
+12747 | Ebû Hâlid → İbn Cüreyc → İbn Sâbit | İbn Sâbit dedi ki: “Selûl, telbiyenin ardından (metinde böyle) dört yerde ihrama girmeyi müstehap görürdü: namazın ardından, bir vadiye inip onu çıktıklarında ve yol arkadaşlarının bir araya gelmesi anında.”
+& haddesenâ, an, an
+^ قال: " كان
+
+12748 | Cerîr → Mugîre → İbrâhîm | İbrâhîm dedi ki: “Telbiye şu yerlerde müstehaptır: farz namazın ardından, bir yüksekliğe çıkarken, bir vadiye inerken, deven seninle her doğrulup kalktığında ve bir kafileyle her karşılaştığında.”
+& haddesenâ, an, an
+^ قال: " يستحب
+
+12749 | Şerîk → Câbir → Abdurrahmân b. el-Esved → babası | Abdurrahmân b. el-Esved’in babasından: O, farz namazın ardından ihrama girerdi.
+& haddesenâ, an, an, an
+^ «أنه كان يحرم
+
+12750 | Ebû Muâviye → A‘meş → Hayseme | Hayseme dedi ki: “Telbiyeyi altı (yerde) müstehap görürlerdi: namazın ardından, kişinin bineği onunla doğrulduğunda, bir yüksekliğe çıktığında, bir vadiye indiğinde ve birbirleriyle karşılaştıklarında.”
+& haddesenâ, an, an
+^ قال: " كانوا
+
+12751 | İbn Fudayl → Abdülmelik → Atâ | Abdülmelik dedi ki: Atâ’ya, kişi ihrama girmek istediğinde telbiyeyi sordum. Dedi ki: “Dilersen namazın ardından; dilersen de bindiğin yerde deve seninle yürüdüğünde. Şöyle dersin: ‘Bunu bizim hizmetimize veren (Allah) münezzehtir; yoksa biz buna güç yetiremezdik.’ (Zuhruf 43/13)”
+& haddesenâ, an, kâle
+^ قال: " إن
+
+12752 | Vekî‘ → Süfyân → İbn Cüreyc → Hayyân → Ebü’ş-Şa‘sâ → Câbir b. Zeyd | Câbir b. Zeyd dedi ki: “Kimisi binekli iken ihrama girerdi, kimisi de yemek yerken ihrama girerdi.”
+& haddesenâ, an, an, an, an, an
+^ «كان بعضهم يحرم
+
+12753 | Ebû Âmir el-Akadî → Eflah | Eflah dedi ki: “Kâsım nafile ve farz namazın ardından telbiye getirirdi.”
+& haddesenâ, an
+^ «كان القاسم يلبي
+
+@ Muhrimin tırnağını kesmesi ve yarayı deşmesi hakkında
+
+12754 | Abdüsselâm → Harb → Eyyûb → İkrime → İbn Abbâs | İbn Abbâs’tan, tırnağı kırılan muhrim hakkında. Dedi ki: “O durumda onu kendinden at.”
+& haddesenâ, an, an, an, an
+^ في المحرم ينكسر
+
+12755 | İbn Mübârek → Hâlid → İkrime → İbn Abbâs | İbn Abbâs dedi ki: “Muhrimin tırnağı kırılırsa onu kessin.”
+& haddesenâ, an, an, an
+^ «إذا انكسر ظفر المحرم، فليقصه»
+
+12756 | Cerîr → Yezîd → Saîd b. Cübeyr | Saîd b. Cübeyr dedi ki: “Muhrimin tırnağı kırılırsa onu atar.”
+& haddesenâ, an, an
+^ «إذا انكسر ظفر المحرم ألقاه»
+
+12757 | Yahyâ b. Saîd → Muhammed b. Abdullah b. Ebî Meryem | Muhammed b. Abdullah b. Ebî Meryem dedi ki: Ben muhrim iken tırnağım kırıldı, bana eziyet verdi, ben de onu kestim. Saîd b. Cübeyr’e sordum. “Sana eziyet verdi mi?” dedi. “Evet” dedim. Dedi ki: “Ey kardeşimin oğlu, onu kes. ‘Allah sizin için kolaylık ister, sizin için zorluk istemez.’ (Bakara 2/185)”
+& haddesenâ, an
+^ قال: انكسر ظفري
+
+12758 | Abdüla‘lâ → Hişâm → Hasan ve Atâ | Hasan ve Atâ dedi ki: “Tırnağı kırılırsa kırıldığı yerden (keser), ona bir şey gerekmez. Kırılmadan önce onu keserse ona kan gerekir.”
+& haddesenâ, an, an
+^ قال: «إذا انكسر
+
+12759 | Ebû Dâvûd → Hammâd b. Seleme → Hammâd | Hammâd dedi ki: “Muhrim tırnağını koparır.”
+& haddesenâ, an, an
+^ «ينزع المحرم ظفره»
+
+12760 | Hafs → Haccâc → Atâ | Atâ dedi ki: “Muhrim çıbanı yoklar.”
+& haddesenâ, an, an
+^ «المحرم يجس القرحة»
+
+12761 | Abbâd b. el-Avvâm → Ebû Hanîfe → Hammâd → İbrâhîm | İbrâhîm’den, muhrim hakkında: “Yarayı deşer, çıbanı sıkar, kırıldığında tırnağı ısırır ve kırığa yakın olanı da.”
+& haddesenâ, an, an, an
+^ " في المحرم:

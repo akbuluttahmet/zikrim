@@ -1,0 +1,350 @@
+@ Tohumlara ve sığırlara harcama yapmışken arazisinin zekâtını çıkaran adam hakkında söyledikleri
+
+10095 | Abdülvehhâb es-Sekafî → Habîb el-Muallim → Atâ | Habîb el-Muallim dedi ki: Atâ, ekin hakkında —sahibi orakçıların ve (harmanda) dolaşanların ücretini verdiğinde, onlara verdiği şeyde ona sadaka (zekât) düşer mi?— şöyle derdi: “Hayır; sadaka ancak senin eline geçen şeydedir.”
+& haddesenâ, an, kâle
+^ «لا إنما الصدقة
+
+10096 | Vekî‘ → Ebû Avâne → Ebû Bişr → Amr b. Herim → Câbir b. Zeyd → İbn Ömer ve İbn Abbâs | İbn Ömer’den ve İbn Abbâs’tan, meyvesi için harcama yapan adam hakkında: Biri “Onun (tamamının) zekâtını verir” dedi. Diğeri ise “Harcamayı ayırır, kalanın zekâtını verir” dedi.
+& haddesenâ, an, an, an, an, an
+^ في الرجل ينفق على
+
+10097 | Vekî‘ → İsmâîl b. Abdülmelik → Atâ | Atâ dedi ki: “Tohumu ve harcamayı ayır, kalanın zekâtını ver.”
+& haddesenâ, an, an
+^ قال: «ارفع البذر
+
+@ Zekâtı öne almak hakkında söyledikleri
+
+10098 | Hafs b. Gıyâs → Haccâc → Hakem | Hakem’den: Resûlullah ﷺ sadaka (zekât) üzerine bir memur gönderdi. (Memur) Abbâs’a, ondan peşin almak için geldi. Abbâs ona: “Ben malımın iki yıllık sadakasını peşin verdim” dedi. (Memur) Nebî’ye ﷺ geldi; (Nebî) “Amcam doğru söylemiş” buyurdu.
+& haddesenâ, an, an
+^ أن رسول الله صلى الله عليه وسلم بعث
+
+10099 | Yahyâ b. Saîd → Yûsuf b. Abde → Atâ | Atâ dedi ki: “Onu öne almasında sakınca yoktur.”
+& haddesenâ, an, an
+^ قال: «لا بأس أن
+
+10100 | Vekî‘ → Süfyân → Sâlim → Saîd b. Cübeyr | Saîd b. Cübeyr dedi ki: “Zekâtı öne almakta sakınca yoktur.”
+& haddesenâ, an, an, an
+^ قال: «لا بأس بتعجيل
+
+10101 | Cerîr → Mugîre → İbrâhîm; ayrıca Cerîr → Mugîre → Hammâd → İbrâhîm | İbrâhîm dedi ki: “Malının zekâtını öne alman ve onu gelecek (yıllar) için hesaba katman sakıncasızdır.”
+& haddesenâ, an, an; haddesenâ, an, an, an
+% Mugîre’den İbrâhîm’e ya da Hammâd vasıtasıyla İbrâhîm’e (şüpheyle).
+^ قال: «لا بأس أن
+
+10102 | Ebû Üsâme → Saîd → Katâde → Hasan | Hasan dedi ki: “Hepsini çıkarırsa zekâtı öne almakta sakınca yoktur.”
+& haddesenâ, an, an, an
+^ قال: «لا بأس بتعجيل
+
+10103 | Vekî‘ → Hammâd b. Zeyd → Hafs b. Süleymân → Hasan | Hafs b. Süleymân dedi ki: Hasan’a, üç yılın zekâtını bir defada çıkaran bir adamı sordum. “Ona yeterli olur” dedi.
+& haddesenâ, an, an, kâle
+^ قال: «يجزيه»
+
+10104 | Muhammed b. Zeyd → Cüveybir → Dahhâk | Dahhâk dedi ki: “Onu vaktinden önce öne almasında sakınca yoktur.”
+& haddesenâ, an, an
+^ قال: «لا بأس أن
+
+10105 | Humeyd b. Abdurrahmân → Hasan b. Sâlih → İbn Ebî Leylâ → Hakem | Hakem dedi ki: “Onu öne almasında sakınca yoktur.”
+& haddesenâ, an, an, an
+^ قال: «لا بأس أن
+
+10106 | Ömer b. Yûnus → Zührî | Zührî’den: O, kişinin zekâtını vakti gelmeden öne almasında bir sakınca görmezdi.
+& haddesenâ, an
+^ أنه كان «لا يرى
+
+10107 | Ebû Üsâme → İbn Avn → İbn Sîrîn | İbn Sîrîn dedi ki: “Zekâtı vaktinden bir ya da iki ay önce öne almak hakkında bunun ne olduğunu bilmiyorum.”
+& haddesenâ, an, an
+^ قال: «ما أدري ما
+
+@ Arazisinden yiyecek (ürün) çıkıp zekâtını veren adamın (sonraki) zekâtı hakkında söyledikleri
+
+10108 | İbnü’l-Mübârek → Ma‘mer → İbn Tâvûs → babası | İbn Tâvûs’un babasından: Arazisinden ona yiyecek (ürün) çıkardı, onun zekâtını verirdi; sonra satmak istediği hâlde yanında iki üç yıl kalır, onun (yeniden) zekâtını vermezdi.
+& haddesenâ, an, an, an
+^ أنه كان «يخرج له
+
+10109 | İbnü’l-Mübârek → İbn Lehîa → Abdullah b. Ebî Ca‘fer → Ömer b. Abdülazîz | Ömer b. Abdülazîz şöyle yazdı: “Ekinden öşür alındığında, on yıl kalsa bile onda (artık) zekât yoktur.”
+& haddesenâ, an, haddesenî, enne
+^ كتب «إذا أخذ من
+
+10110 | Abdüsselâm → Yûnus → Hasan | Hasan dedi ki: “Ekinin, hurmanın ve yerin bitirdiği her şeyin sadakasını çıkarınca, üzerinden bir yıl geçinceye kadar onda zekât yoktur.”
+& haddesenâ, an, an
+^ قال: «إذا أخرج صدقة
+
+10111 | Muhammed b. Bekr → İbn Cüreyc → Atâ | İbn Cüreyc dedi ki: Atâ’ya: “Yemek istediğim bir yiyeceği tutuyorum, üzerinden bir yıl geçiyor” dedim. Dedi ki: “Ömrüme yemin olsun ki onda sana sadaka (zekât) yoktur. Biz de bunu yapıyoruz; yiyecek satın alıyoruz ve onun zekâtını vermiyoruz. Eğer onu satmak istiyorsan, sattığında zekâtını ver.”
+& haddesenâ, an, kâle
+^ قال: «ليس عليك فيه
+
+10112 | Muhammed b. Bekr → İbn Cüreyc → Abdülkerîm | İbn Cüreyc dedi ki: Abdülkerîm bana ekin hakkında dedi ki: “İlk defa onun zekâtını verdiysen, sonra yanında üzerinden bir yıl geçerse, onun zekâtını verme; ilki sana yeter.”
+& haddesenâ, an, kâle
+^ في الحرث: «إذا أعطيت
+
+@ Yetim malında zekât ve onun zekâtını verenler hakkında söyledikleri
+
+10113 | Şerîk → Ebü’l-Yakzân → İbn Ebî Leylâ | İbn Ebî Leylâ’dan: Ali, himayesinde bulunan yetimler olan Ebû Râfi‘ oğullarının mallarının zekâtını verdi ve şöyle dedi: “Zekâtını vermediğim bir malı idare edeceğimi mi sanıyorsunuz?”
+& haddesenâ, an, an
+^ أن عليا، زكى أموال
+
+10114 | Ali b. Müshir → Yahyâ b. Saîd → Kâsım | Kâsım dedi ki: “Âişe’nin himayesinde yetimlerdik; mallarımızın zekâtını verir ve onları bize (sermaye olarak) denizde ticarete verirdi.”
+& haddesenâ, an, an
+^ قال: «كنا أيتاما في
+
+10115 | Abdürrahîm b. Süleymân → Eş‘as → Ebü’z-Zübeyr → Câbir | Câbir dedi ki: “Yetimin malında zekât vardır.”
+& haddesenâ, an, an, an
+^ قال: «في مال اليتيم
+
+10116 | Ali b. Müshir → Leys → Nâfi‘ → İbn Ömer | İbn Ömer’den: O, yetimin malının zekâtını verirdi.
+& haddesenâ, an, an, an
+^ أنه كان «يزكي مال
+
+10117 | İbn İdrîs → Muhammed b. İshâk → Zührî → Ömer | Ömer dedi ki: “Yetimler için mallarında (kazanç) arayın; zekât onu tüketmesin.”
+& haddesenâ, an, an, kâle
+^ «ابتغوا لليتامى في
+
+10118 | Ebû Hâlid el-Ahmer → Yahyâ, Hanzala ve Humeyd → Kâsım | Kâsım’dan: Âişe onların mallarını denizde ticarete verir ve zekâtını verirdi.
+& haddesenâ, an, an
+^ أن عائشة كانت «تبضع
+
+10119 | İbn Uleyye → Eyyûb → Amr b. Dînâr → Mekhûl → Ömer | Ömer dedi ki: “Yetimlerin mallarıyla (kazanç) arayın; sadaka (zekât) onu tüketmesin.”
+& haddesenâ, an, an, an, kâle
+^ «ابتغوا بأموال اليتامى
+
+10120 | Vekî‘ → Hüseyin → İbn Ebî Ferve → Şa‘bî | Şa‘bî dedi ki: “Yetimin malında zekât vardır.”
+& haddesenâ, an, an, an
+^ قال: «في مال اليتيم
+
+10121 | Ebû Üsâme → Hişâm → İbn Sîrîn | İbn Sîrîn dedi ki: “Yetimin malında onun lehine hak vardır, aleyhine de hak vardır. Ben ancak Allah teâlânın dediğini söylerim.”
+& haddesenâ, an, an
+^ قال: " في مال اليتيم
+
+10122 | Yahyâ b. Yemân → Hasan b. Yezîd → Tâvûs | Tâvûs dedi ki: “Yetimin malının zekâtını ver; yoksa o senin boynunda bir borçtur.”
+& haddesenâ, an, an
+^ قال: «زك مال اليتيم
+
+10123 | Vekî‘ → Mûsâ b. Ubeyde → Abdullah b. Dînâr | Abdullah b. Dînâr dedi ki: İbn Ömer bir yetimin malına (velî olmaya) çağrıldı. Dedi ki: “Dilerseniz, yıldan yıla zekâtını vermem şartıyla onu idare ederim.”
+& haddesenâ, an, an
+^ قال: دعا ابن عمر
+
+10124 | İbn Nümeyr → Mâlik b. Miğvel → Atâ | Atâ’dan: O, yetimin malında zekât (gerektiğini) gördü.
+& haddesenâ, an, an
+^ أنه «رأى في مال
+
+@ Yetimin malında, (yetim) ergenliğe erinceye kadar zekât yoktur diyenler
+
+10125 | İbn İdrîs → Leys → Mücâhid → İbn Mes‘ûd | İbn Mes‘ûd’dan: O şöyle derdi: “Yetimin malında vâcip olan zekâtı say. (Yetim) ergenliğe erip ondan rüşd görülünce onu ona teslim et; dilerse zekâtını verir, dilerse bırakır.”
+& haddesenâ, an, an, an
+^ أنه كان يقول: «أحص
+
+10126 | Cerîr → Mansûr → İbrâhîm | İbrâhîm dedi ki: “Yetimin malında, (yetim) bâliğ oluncaya kadar zekât yoktur.”
+& haddesenâ, an, an
+^ قال: «ليس في مال
+
+10127 | Vekî‘ → Süfyân → A‘meş → İbrâhîm | (İbrâhîm’den) bunun benzeri (rivayet edildi).
+& haddesenâ, an, an, an
+^ مثله
+
+10128 | Ebû Üsâme → Hişâm → Hasan | Hasan dedi ki: “Yetimin malında, (yetim) bâliğ oluncaya kadar zekât yoktur.”
+& haddesenâ, an, an
+^ قال: «ليس في مال
+
+10129 | Vekî‘ → Süfyân → Yûnus → Hasan | Hasan’dan: Yanında, yetim olan kardeşinin oğullarına ait bir mal vardı; onun zekâtını vermezdi.
+& haddesenâ, an, an, an
+^ أنه كان «عنده مال
+
+10130 | Hafs → Haccâc → Hakem → Şüreyh | Hakem dedi ki: Şüreyh’e yetimin malı hakkında “Onda zekât var mı?” diye soruldu. Dedi ki: “Evet; ama benim yanımda olsaydı onun zekâtını vermezdim.”
+& haddesenâ, an, an, an
+^ قال: سئل في مال
+
+10131 | Vekî‘ → Süfyân → Câbir → Âmir | Âmir dedi ki: “Yetimin malında zekât yoktur.”
+& haddesenâ, an, an, an
+^ قال: «ليس في مال
+
+10132 | Vekî‘ → Saîd b. Dînâr | Saîd b. Dînâr dedi ki: Yetimin malını, onda zekât var mı diye sordum. Dedi ki: “Evet; ama benim yanımda olsaydı onun zekâtını vermezdim.”
+& haddesenâ, an
+% Sorulan kişinin adı metinde yoktur.
+^ قال: «نعم، ولو كان
+
+10133 | Yahyâ b. Yemân → Hasan b. Zeyd → Mücâhid | Hasan b. Zeyd dedi ki: Mücâhid’i şöyle derken işittim: “Onu say; (ergenliğe erdiğini) bildiğinde zekâtını ver.”
+& haddesenâ, an, semi‘tü
+^ يقول: «أحصه فإذا
+
+10134 | Ebû Üsâme → Saîd → Katâde → Hasan | Hasan dedi ki: “Hurma ağacından ve hayvanlardan alınır; mala gelince, (yetim) bâliğ oluncaya kadar (alınmaz)” —yani yetimin malını (kastediyor)—.
+& haddesenâ, an, an, an
+^ قال: «يؤخذ من النخل
+
+10135 | Ebû Bekir b. Ayyâş → Âsım → Ebû Vâil | Âsım’dan: Ebû Vâil şöyle derdi: “Himayemde sekiz bin (dirhemi) olan bir yetim vardı. Onun zekâtını vermedim; nihayet ergenliğe erince onu ona teslim ettim.”
+& haddesenâ, an, enne
+^ كان يقول: «كان في
+
+10136 | İbn Uyeyne → Amr → Abdurrahmân b. es-Sâib | Abdurrahmân b. es-Sâib dedi ki: “İbn Ömer’in yanında bir yetimin malı vardı; zekâtını ödemesin diye onun malını borç olarak aldı.”
+& haddesenâ, an, an
+^ قال: «كان عند ابن
+
+@ Atların zekâtı hakkında söyledikleri
+
+10137 | Hâtim b. İsmâîl → Huseym b. Irâk → babası → Ebû Hüreyre | Huseym b. Irâk’ın babası dedi ki: Ebû Hüreyre’yi şöyle derken işittim: Resûlullah ﷺ buyurdu: “Müslümana kölesinde ve atında sadaka (zekât) yoktur.”
+& haddesenâ, an, semi‘tü, semi‘tü
+^ يقول: قال رسول الله
+
+10138 | Süfyân b. Uyeyne → Abdullah b. Dînâr → Süleymân b. Yesâr → Irâk b. Mâlik → Ebû Hüreyre | Ebû Hüreyre dedi ki: Resûlullah ﷺ buyurdu: “Müslümana atında ve kölesinde sadaka (zekât) yoktur.”
+& haddesenâ, an, an, an, an
+^ قال: قال رسول الله
+
+10139 | Vekî‘ → Üsâme → Mekhûl → Irâk b. Mâlik → Ebû Hüreyre | Ebû Hüreyre dedi ki: Resûlullah ﷺ buyurdu: “Müslümana kölesinde, atında ve cariyesinde sadaka (zekât) yoktur.”
+& haddesenâ, an, an, an, an
+^ قال: قال رسول الله
+
+10140 | İbn Uyeyne → Ebû İshâk → Hâris → Ali | Ali dedi ki: Resûlullah ﷺ buyurdu: “Atların ve kölelerin sadakasını (zekâtını) size bağışladım.”
+& haddesenâ, an, an, an
+^ قال: قال رسول الله
+
+10141 | İbnü’l-Mübârek → Haccâc → Ebû İshâk → Hâris → Ali | Ali dedi ki: Resûlullah ﷺ buyurdu: “Atlar ve kölelere gelince, onların sadakalarını affettim.”
+& haddesenâ, an, an, an, an
+^ قال: قال رسول الله
+
+10142 | Abdürrahîm b. Süleymân → İbn Hâlid → Şubeyl b. Avf | Şubeyl b. Avf dedi ki: Ömer b. el-Hattâb insanlara sadakayı emretti. İnsanlar: “Ey mü’minlerin emîri, atlarımız ve kölelerimiz var; bize onar onar (dirhem) farz kıl” dediler. Dedi ki: “Bana gelince, ben bunu size farz kılmam.”
+& haddesenâ, an, an
+% Şubeyl b. Avf câhiliyeye yetişmişti.
+^ أمر عمر بن الخطاب
+
+10143 | Muhammed b. Bekr → İbn Cüreyc → Abdullah b. Ebî Hüseyin → İbn Şihâb | İbn Şihâb’dan: Osman atların sadakasını (zekâtını) alırdı. Nemir’in kız kardeşinin oğlu Sâib de ona, Ömer’e atların sadakasını getirdiğini haber verdi.
+& haddesenâ, an, ahberanî, ahberahû
+^ أن عثمان كان «يصدق
+
+10144 | İbn Uyeyne → İbn Tâvûs → babası → İbn Abbâs | İbn Abbâs dedi ki: “Allah yolunda savaşan gazinin atında sadaka (zekât) yoktur.”
+& haddesenâ, an, an, an
+^ قال: «ليس في فرس
+
+10145 | İbn Uyeyne → Abdullah b. Dînâr → İbnü’l-Müseyyeb | Abdullah b. Dînâr dedi ki: İbnü’l-Müseyyeb’e “Beygirlerde sadaka (zekât) var mı?” diye soruldu. Dedi ki: “Atlarda sadaka mı var ki?”
+& haddesenâ, an, kâle
+^ قال: «أو في الخيل
+
+10146 | Abdürrahîm b. Süleymân → Yahyâ b. Süleymân → Yahyâ b. Saîd → Abdullah b. Dînâr → Saîd b. el-Müseyyeb | Abdullah b. Dînâr dedi ki: Saîd b. el-Müseyyeb’e beygirlerin sadakasını sordum. Dedi ki: “Bana (metinde böyle) atlarda sadaka mı var? Atlarda sadaka mı var?”
+& haddesenâ, an, an, an, kâle
+^ فقال: «لي أو في
+
+10147 | Ebû Üsâme → Nâfi‘ → Ömer b. Abdülazîz | Ömer b. Abdülazîz dedi ki: “Atlarda sadaka (zekât) yoktur.”
+& haddesenâ, an, enne
+^ قال: «ليس في الخيل
+
+10148 | Sekafî → Burd → Mekhûl | Mekhûl dedi ki: “Atlarda ve kölelerde sadaka (zekât) yoktur.”
+& haddesenâ, an, an
+^ قال: «ليس في الخيل
+
+10149 | Vekî‘ → Mâlik → Atâ | Atâ dedi ki: “Otlakta otlayan atlarda sadaka (zekât) yoktur.”
+& haddesenâ, an, an
+^ قال: «ليس في الخيل
+
+10150 | Ali b. Müshir → Ecleh → Şa‘bî | Ecleh dedi ki: Şa‘bî’ye atların ve kölelerin sadakasını sordum. Dedi ki: “İkisinde zekât yoktur.”
+& haddesenâ, an, kâle
+^ فقال: «ليس فيهما
+
+10151 | Hüşeym → Mugîre → İbrâhîm | İbrâhîm’den: O, ticaret için olan kölelerde fıtır (sadakası) dışında sadaka görmezdi; fakat onlara değer biçer ve onlar için zekâtı öderdi.
+& haddesenâ, an, an
+^ أنه كان «لا يرى
+
+10152 | Hüşeym → Yûnus → Hasan | Hasan’dan: O da bunun benzerini söylerdi.
+& haddesenâ, an, an
+^ أنه كان يقول: مثل
+
+10153 | Vekî‘ → İbnü’l-Mübârek → Hasan | Hasan dedi ki: “Atlarda, beygirlerde ve eşeklerde sadaka (zekât) yoktur.”
+& haddesenâ, an, an
+^ قال: «ليس في الخيل
+
+10154 | Vekî‘ → Süfyân → İbn Cüreyc → Atâ | Atâ’dan, ticaret için olan köle hakkında: Dedi ki: “Onda fıtır (sadakası) dışında zekât yoktur.”
+& haddesenâ, an, an, an
+^ في العبد للتجارة قال
+
+10155 | Abdürrahîm → İbn Sâlim → Şa‘bî | Şa‘bî dedi ki: “Hayvanda ve köleye zekât yoktur; ancak ticaret için olursa başka.”
+& haddesenâ, an, an
+^ قال: «ليس على البهيمة
+
+10156 | Gunder → Şu‘be → Hakem | Hakem dedi ki: “Atlarda sadaka (zekât) yoktur.” Hammâd ise: “Onlarda vardır” dedi.
+& haddesenâ, an, an
+^ قال: «ليس في الخيل
+
+10157 | Cerîr → Mansûr → İbrâhîm | İbrâhîm dedi ki: Eşekleri, onlarda zekât var mı yok mu diye sordum. Dedi ki: “Ben onları sığırlara benzetirim; onlarda bir şey bilmiyoruz.”
+& haddesenâ, an, an
+^ قال: سألت عن الحمير
+
+10158 | Vekî‘ → Mübârek → Hasan | Hasan dedi ki: “Eşeklerde sadaka (zekât) yoktur.”
+& haddesenâ, an, an
+^ قال: «ليس في الحمير
+
+@ Ziynet eşyası hakkında
+
+10159 | Abdürrahîm b. Süleymân → Haccâc → Amr b. Şuayb → babası → dedesi | Amr b. Şuayb’ın dedesinden: İki kadın, ellerinde altın bilezikler olduğu hâlde Nebî’ye ﷺ geldi. Resûlullah ﷺ onlara: “Rabbinizin size ateşten bilezikler takmasını ister misiniz?” buyurdu. “Hayır” dediler. “Öyleyse ellerinizdeki şunun hakkını ödeyin” buyurdu.
+& haddesenâ, an, an, an, an
+^ أن امرأتين أتتا النبي
+
+10160 | Abdürrahîm ve Vekî‘ → Müsâvir el-Verrâk → Şuayb | Şuayb dedi ki: Ömer, Ebû Mûsâ’ya şöyle yazdı: “Yanındaki müslüman kadınlara, ziynet eşyalarından sadaka vermelerini emret; hediyeyi ve fazlalığı aralarında birbirine karşılık yapmasınlar.”
+& haddesenâ, an, an
+^ قال: كتب عمر إلى
+
+10161 | Abde → Saîd → Katâde → Enes | Enes dedi ki: “Bir defa zekâtı verilir.”
+& haddesenâ, an, an, an
+^ قال: «يزكي مرة»
+
+10162 | Ebü’l-Ahvas → Ebû İshâk → Abdullah b. Şeddâd | Abdullah b. Şeddâd’dan: O, ziynet eşyasında zekât görürdü.
+& haddesenâ, an, an
+^ أنه كان «يرى في
+
+10163 | Cerîr → Mansûr → İbrâhîm | İbrâhîm dedi ki: “Ziynet eşyasında zekât vardır.”
+& haddesenâ, an, an
+^ قال: «في الحلي زكاة»
+
+10164 | Şerîk → Sâlim → Saîd b. Cübeyr | Saîd b. Cübeyr dedi ki: “Altın ve gümüş ziynet eşyasında zekât vardır.” (Râvi) dedi ki: Bu, Süfyân’ın da görüşüdür.
+& haddesenâ, an, an
+^ قال: «في حلي الذهب
+
+10165 | Vekî‘ → Cerîr b. Hâzim → Amr b. Şuayb → Abdullah b. Ömer | Abdullah b. Ömer’den: O, kadınlarına ziynet eşyalarının zekâtını vermelerini emrederdi.
+& haddesenâ, an, an, an
+^ أنه كان «يأمر نساءه
+
+10166 | Vekî‘ → Mâlik → Atâ | Atâ dedi ki: “Ziynet eşyasında zekât vardır.”
+& haddesenâ, an, an
+^ قال: «في الحلي زكاة»
+
+10167 | İbn Mehdî → Zem‘a → İbn Tâvûs → babası | İbn Tâvûs’un babası dedi ki: “Ziynet eşyasında zekât vardır.”
+& haddesenâ, an, an, an
+^ قال: «في الحلي زكاة»
+
+10168 | İbn Mehdî → Habîb → Amr b. Herim → Câbir b. Zeyd | Amr b. Herim dedi ki: Câbir b. Zeyd’e “Ziynet eşyasında zekât var mı?” diye soruldu. Dedi ki: “Evet, yirmi miskal ya da iki yüz dirhem olursa.”
+& haddesenâ, an, an, kâle
+^ قال: «نعم إذا كان
+
+10169 | Ebû Hâlid el-Ahmer → Haccâc → Atâ, Zührî ve Mekhûl | Atâ, Zührî ve Mekhûl dediler ki: “Ziynet eşyasında zekât vardır.” Ve dediler ki: “Altın ve gümüş ziynet eşyasında zekât olduğuna dair sünnet geçmiştir.”
+& haddesenâ, an, an
+^ قالوا: في الحلي زكاة
+
+10170 | Vekî‘ → Süfyân → Ebû Ca‘fer el-Ferrâ → Abdullah b. Şeddâd | Abdullah b. Şeddâd dedi ki: “Ziynet eşyasında zekât vardır; yüzükte bile.”
+& haddesenâ, an, an, an
+^ قال: «في الحلي زكاة
+
+10171 | Ubeydullah b. Mûsâ → Ca‘fer b. Meymûn | Ca‘fer b. Meymûn dedi ki: “Yanımızda bir gerdanlık vardı; onun zekâtını verdik, öyle ki onun (verilen zekâtının) değerini aştığını sanıyorum.”
+& haddesenâ, an
+^ قال: «كان عندنا طوق
+
+10172 | İbn Ebî Adî → Hüseyin → Atâ | Atâ dedi ki: “Ziynet eşyası zekâtın vâcip olduğu miktara ulaşınca onda zekât vardır.”
+& haddesenâ, an, an
+^ قال: «إذا بلغ الحلي
+
+@ Ziynet eşyasında zekât yoktur diyenler
+
+10173 | Ebü’l-Ahvas → Ebû İshâk → Nâfi‘ → İbn Ömer | İbn Ömer’den: O, ziynet eşyasında zekât görmezdi.
+& haddesenâ, an, an, an
+^ أنه كان «لا يرى
+
+10174 | Ali b. Müshir → Şeybânî → Abdullah b. Zekvân ve Amr b. Mürre → Kâsım | Kâsım dedi ki: “Malımız Âişe’nin yanındaydı; ziynet eşyası dışında onun zekâtını verirdi.”
+& haddesenâ, an, an, an
+^ قال: «كان مالنا عند
+
+10175 | Vekî‘ → Süfyân → Abdurrahmân b. el-Kâsım → babası → Âişe | Âişe’den: O, onun (ziynet eşyasının) zekâtını vermezdi.
+& haddesenâ, an, an, an, an
+^ أنها «كانت لا تزكيه»
+
+10176 | Vekî‘ → Dilhem b. Sâlih → Atâ → Âişe | Âişe’den: Kardeşinin kızlarının ziynet eşyası vardı; onun zekâtını vermezdi.
+& haddesenâ, an, an, an
+^ قال: «كان لبنات أخيها
+
+10177 | Abde b. Süleymân → Abdülmelik → Ebü’z-Zübeyr → Câbir | Câbir dedi ki: “Ziynet eşyasında zekât yoktur.” (Ebü’z-Zübeyr dedi ki:) “Onda bin dinar var” dedim. Dedi ki: “Ödünç verilir ve giyilir.”
+& haddesenâ, an, an, an
+^ قال: «لا زكاة في

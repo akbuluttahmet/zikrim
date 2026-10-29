@@ -1,0 +1,265 @@
+@ Hurmanın tahmin edilmesi (hars) hakkında zikredilenler
+
+10558 | İbnü’l-Mübârek → Ma‘mer → İbn Tâvûs → babası → Ebû Bekir b. Hazm | Ebû Bekir b. Hazm dedi ki: Resûlullah ﷺ tahminciyi gönderdiğinde “ona, ariyyeler dışında hurmayı tahmin etmemesini emrederdi.”
+& haddesenâ, an, an, an, an
+^ قال: كان رسول
+
+10559 | Ebû Dâvûd ve Gunder → Şu‘be → Habîb b. Abdurrahmân → Abdurrahmân b. Mes‘ûd → Sehl b. Ebî Hasme | Habîb b. Abdurrahmân dedi ki: Abdurrahmân b. Mes‘ûd’u şöyle derken işittim: Sehl b. Ebî Hasme bir meclise geldi ve anlattı ki Resûlullah ﷺ buyurdu: “Tahmin ettiğinizde alın ve üçte birini bırakın; üçte biri(ni bırakmayı uygun) bulmazsanız dörtte birini (bırakın).”
+& haddesenâ, an, an, semi‘tü, enne
+^ أن رسول الله
+
+10560 | Ebû Hâlid el-Ahmer → Yahyâ b. Saîd → Büşeyr b. Yesâr | Büşeyr b. Yesâr’dan: Ömer, Ebû Hayseme’yi hurmayı tahmin etmek üzere gönderirdi ve dedi ki: “Bir ev halkına bahçelerinde vardığında, yiyecekleri kadarını onlar aleyhine tahmin etme.”
+& haddesenâ, an, an
+^ أن عمر، كان
+
+10561 | Muhammed b. Ebî Bekir → İbn Cüreyc → Ebü’z-Zübeyr → Câbir | Ebü’z-Zübeyr’den: Onu (Câbir’i) şöyle derken işitti: “İbn Revâha onu —Hayber’i demektir— kırk bin vesk olarak tahmin etti.” (Câbir) iddia etti ki İbn Revâha yahudileri muhayyer bıraktığında onlar buğdayı (mahsulü) aldılar ve üzerlerine yirmi bin vesk (borç) kaldı.
+& haddesenâ, an, an, an
+^ أنه سمعه يقول:
+
+10562 | Vekî‘ → Cerîr b. Hâzim → Kays b. Sa‘d → Mekhûl | Mekhûl dedi ki: Resûlullah ﷺ buyurdu: “Tahminde insanlara hafiflet; çünkü malda ariyye ve vasiyet vardır.” Dedi ki: “Ariyye: Adamın, (başka bir) adamın bahçesinde ona bağışladığı hurma ağacıdır. Vasiyet: Adamın miskinler için yaptığı vasiyettir.”
+& haddesenâ, an, an, an
+^ قال: قال رسول
+
+10563 | İsmâîl b. İbrâhîm → Abdurrahmân b. İshâk → Zührî → Saîd b. el-Müseyyeb | Saîd b. el-Müseyyeb’den: Resûlullah ﷺ, Attâb b. Esîd’e üzümü hurmanın tahmin edildiği gibi tahmin etmesini, (böylece) hurmanın zekâtının (kuru) hurma olarak ödendiği gibi onun zekâtının da (kuru üzüm olarak) ödenmesini emretti. İşte bu, Resûlullah’ın ﷺ hurma ve üzüm hakkındaki sünnetidir.
+& haddesenâ, an, an, an
+^ أن رسول الله
+
+10564 | Muhammed b. Bekr → İbn Cüreyc → Abdülkerîm ve Amr b. Dînâr | İbn Cüreyc dedi ki: Abdülkerîm ve Amr b. Dînâr bana dediler ki: “Hurma ve üzüm tahmin edilir, tahıl tahmin edilmez.”
+& haddesenâ, an, kâle
+^ «يخرص النخل والعنب،
+
+@ Tahmin hakkında söyledikleri: Hurma ne zaman tahmin edilir
+
+10565 | Muhammed b. Bekr → İbn Cüreyc → Atâ | İbn Cüreyc dedi ki: Atâ’ya: “Hurma ne zaman tahmin edilir?” dedim. Dedi ki: “Yenilecek hâle geldiğinde.”
+& haddesenâ, an, kâle
+^ قال: قلت لعطاء:
+
+10566 | Muhammed b. Bekr → İbn Cüreyc → Abdullah b. Fülân | İbn Cüreyc dedi ki: Abdullah b. Fülân bize böyle haber verdi ki Nebî ﷺ, hurmaları olgunlaştığında Hayber’in tahmin edilmesini emretti. Dedi ki: İbn Şihâb da dedi ki: “Nebî ﷺ Hayber’in, hurmanın ilki olgunlaştığında tahmin edilmesini emretti.”
+& haddesenâ, kâle, ahberanâ
+^ أن النبي صلى
+
+@ Üzerinde, (ürünün) çıkardığından fazla borç bulunan adam hakkında söyledikleri
+
+10567 | Muhammed b. Bekr → İbn Cüreyc → Atâ | İbn Cüreyc dedi ki: Atâ’ya: “Bir adamın ekini var; borcu malından fazla. Onu biçti; hasat günü onun hakkını öder mi?” dedim. Dedi ki: “Borcu malından fazla olan adamın üzerinde ne hayvanlarında ne de asıl (malın)da sadaka görmüyoruz; ancak hasat günü, onu biçtiği gün onun hakkını öder.”
+& haddesenâ, an, kâle
+^ قال: قلت لعطاء:
+
+10568 | Muhammed b. Bekr → İbn Cüreyc → Ebü’z-Zübeyr → Tâvûs | İbn Cüreyc dedi ki: Ebü’z-Zübeyr bana şöyle dedi: Tâvûs’u şöyle derken işittim: “Onun üzerine sadaka yoktur.”
+& haddesenâ, an, kâle, semi‘tü
+^ «ليس عليه صدقة»
+
+@ Öşür memurunun birine yemin ettirmesi ya da birini araması hakkında söyledikleri
+
+10569 | Abbâd b. el-Avvâm → Zibrikân → Abdullah b. Mugaffel | Abdullah b. Mugaffel’den: O öşürlerin başındaydı ve onlara yemin ettirirdi. Ebû Vâil yanından geçti ve dedi ki: “İnsanlara malları üzerine niçin yemin ettiriyorsun da onları cehenneme atıyorsun?” (Abdullah) dedi ki: “Onlara yemin ettirmesem hiçbir şey vermezler.” (Ebû Vâil) dedi ki: “Onların sana vermemeleri, senin onlara yemin ettirmenden daha hayırlıdır.”
+& haddesenâ, an, an
+^ أنه كان على
+
+10570 | Hafs → İsmâîl → Ebû İshâk | Ebû İshâk dedi ki: Mesrûk, Silsile’nin (başında) idi. Yanından geçip ona bir şey veren olursa ondan kabul eder ve şöyle derdi: “Yanında, bizim hakkımız olan bir şey var mı?” “Evet” derse (alır); yoksa “Git” derdi.
+& haddesenâ, an, an
+^ قال: كان مسروق،
+
+10571 | Ma‘mer → Kurre → kendisine anlatan biri | Kurre’ye anlatan kişi dedi ki: “Bir gemiyle Humeyd b. Abdurrahmân’ın yanından geçtim; içindekiler üzerine bana yemin ettirmedikçe beni bırakmadı.”
+& haddesenâ, an, an
+^ قال: «مررت على
+
+10572 | Vekî‘ → İsmâîl b. İbrâhîm b. el-Muhâcir → babası → Ziyâd b. Hudeyr | Ziyâd b. Hudeyr dedi ki: Ömer beni öşürlerin başına gönderdi “ve bana kimseyi aramamamı emretti.”
+& haddesenâ, an, an, an
+^ قال: بعثني عمر
+
+10573 | Vekî‘ → Süfyân → Leys → Tâvûs | Tâvûs dedi ki: “Öşür memuru ancak yolcuya yol gösterirdi; kendisine bir şey getirenden de onu kabul ederdi.”
+& haddesenâ, an, an, an
+^ قال: «إنما كان
+
+@ Müslümanlar üzerine öşür (gümrük) yoktur diyenler
+
+10574 | Ebü’l-Ahvas → Atâ b. es-Sâib → Harb b. Ubeydullah → dedesi Ebû Ümâme | Ebû Ümâme dedi ki: Resûlullah ﷺ buyurdu: “Müslümanlar üzerine öşür yoktur; öşür ancak yahudiler ve hristiyanlar üzerinedir.”
+& haddesenâ, an, an, an
+^ قال: قال رسول
+
+10575 | Vekî‘ → Süfyân → Atâ b. es-Sâib → Harb b. Ubeydullah → Hâlid | Hâlid’den, o Nebî’den ﷺ Ebü’l-Ahvas’ın hadisinin benzeri (rivayet edildi).
+& haddesenâ, an, an, an, an
+^ عن النبي صلى
+
+10576 | Fadl b. Dükeyn → İsrâîl → İbrâhîm b. el-Muhâcir → biri → Amr b. Hureys → Saîd b. Zeyd | Saîd b. Zeyd dedi ki: Resûlullah’ı ﷺ şöyle buyururken işittim: “Ey Araplar topluluğu! Sizden öşürleri kaldıran Allah’a hamd edin.”
+& haddesenâ, an, an, haddesenî, semi‘a, an
+% İbrâhîm b. el-Muhâcir’e anlatan kişi, Amr b. Hureys’i işiten biridir.
+^ قال: سمعت رسول
+
+10577 | Cerîr b. Abdülhamîd → Kâbûs → babası → İbn Abbâs | İbn Abbâs dedi ki: Resûlullah ﷺ buyurdu: “Bir yerde iki kıble olmaz; müslüman üzerine de cizye yoktur.”
+& haddesenâ, an, an, an
+^ قال: قال رسول
+
+10578 | Şerîk → İbrâhîm b. el-Muhâcir → Ziyâd b. Hudeyr | Ziyâd b. Hudeyr dedi ki: “Ömer beni Sevâd’a gönderdi ve bana bir müslümandan ya da harâc ödeyen bir zimmîden —yahudi ya da hristiyan— öşür almamı yasakladı.”
+& haddesenâ, an, an
+^ قال: «بعثني عمر
+
+10579 | Affân → Hammâd b. Seleme → Humeyd → Hasan → Osman b. Ebi’l-Âs | Osman b. Ebi’l-Âs’tan: Sakîf heyeti Resûlullah’a ﷺ geldi ve ona; (savaşa) toplanmamalarını, öşür alınmamalarını ve başlarına kendilerinden başkasının tayin edilmemesini şart koştular.
+& haddesenâ, an, an, an, an
+^ «أن وفد ثقيف
+
+@ Benî Tağlib hristiyanları hakkında: Onlardan ne alınır
+
+10580 | Şerîk → İbrâhîm b. el-Muhâcir → Ziyâd b. Hudeyr | Ziyâd b. Hudeyr dedi ki: Ömer beni Benî Tağlib hristiyanlarına gönderdi “ve bana mallarının öşrünün yarısını almamı emretti.”
+& haddesenâ, an, an
+^ قال: بعثني عمر
+
+10581 | Ali b. Müshir → Şeybânî → Seffâh → Matar → Dâvûd b. Kerdûs → Ömer b. el-Hattâb | Ömer b. el-Hattâb’dan: O, Benî Tağlib hristiyanlarıyla; zekâtın onlara iki kat olarak uygulanması, hiçbir küçüğü hristiyan yapmamaları ve kendi dinlerinden başkasına zorlanmamaları şartıyla anlaştı. Dâvûd dedi ki: “Onların zimmeti yoktur; (çocukları) hristiyan yaptılar.”
+& haddesenâ, an, an, an, an, an
+^ «أنه صالح نصارى
+
+10582 | Vekî‘ → Süfyân → Abdullah b. Muhammed b. Ziyâd b. Hudeyr | Abdullah b. Muhammed b. Ziyâd b. Hudeyr dedi ki: Dedemle birlikteydim; değeri yirmi bin olan bir atla bir hristiyanın yanından geçti ve ona dedi ki: “İstersen iki bin verirsin; istersen atı alırız ve sana onun değeri olan on sekiz bini veririz.”
+& haddesenâ, an, an
+^ قال: كنت مع
+
+10583 | Ebû Üsâme → Saîd → Katâde → Ebû Miclez | Ebû Miclez’den: Ömer, Osman b. Huneyf’i gönderdi; o da zimmîler üzerine, gidip geldikleri (ticaret) mallarında her yirmi dirhemde bir dirhem koydu ve bunu Ömer’e yazdı; (Ömer) razı oldu ve onu onayladı. (Osman) Ömer’e dedi ki: “Harp ehlinin tüccarlarından ne kadar almamızı emredersin?” (Ömer) dedi ki: “Siz onların ülkelerine gittiğinizde onlar sizden ne kadar alıyorlar?” “Öşür” dediler. Dedi ki: “Öyleyse siz de onlardan öyle alın.”
+& haddesenâ, an, an, an
+^ أن عمر بعث
+
+10584 | Abdüla‘lâ → Ma‘mer → Zührî → Ubeydullah b. Abdullah | Ubeydullah b. Abdullah’tan: Ömer b. el-Hattâb onun babasını ve başka bir adamı, zimmîlerin Medine’ye gidip geldikleri (ticaret) mallarının sadakaları üzerine görevlendirdi. (Ömer) onlara, Medine’ye taşısınlar diye kendilerine hafiflik olmak üzere buğdaydan öşrün yarısını, baklagillerden —ki onlar tanelerdir— ise öşrü almalarını emrederdi.
+& haddesenâ, an, an, an
+^ أن عمر بن الخطاب،
+
+10585 | İbn İdrîs → babası → Hammâd → İbrâhîm | İbrâhîm dedi ki: “Zimmîlerden her yirmi dirhemde bir dirhem, harp ehlinden her on dirhemde bir dirhem, zimmîlerden şarap ticareti yaptıklarında ise her on dirhemde bir dirhem alınır.”
+& haddesenâ, an, an, an
+^ قال: «يؤخذ من
+
+10586 | Ya‘lâ → Yahyâ b. Saîd → Ruzeyk | Ruzeyk’ten —Benî Fezâze’nin mevlâsı—: Ömer b. el-Hattâb ona yazdı: “Zimmî tüccarlardan yanından geçenlerden, ortaya koydukları mallarından ve döndürdükleri ticaret (mallarından) her yirmi dinarda bir dinar al. Bundan eksik olanda on (dinar)a ulaşıncaya kadar hesabınca (al). Üç dinar eksik olursa onu bırak, ondan hiçbir şey alma. Onlardan aldığın şeyle, gelecek yılın aynı vaktine kadar (geçerli) bir beraat (makbuz) yaz.”
+& haddesenâ, an, an
+% Ruzeyk, Benî Fezâze’nin mevlâsıdır.
+^ أن عمر بن الخطاب
+
+10587 | Hammâd b. Hâlid → İbn Ebî Zi’b → Zührî | İbn Ebî Zi’b dedi ki: Zührî’ye Kelb ve Tağlib hristiyanlarının cizyesini sordum. Dedi ki: Bize ulaştı ki “onlardan hayvanlarının öşrünün yarısı alınır.”
+& haddesenâ, an, kâle
+^ قال: وسألت الزهري،
+
+@ Öşrü yılda ancak bir defa (almayı) görenler
+
+10588 | Ebû Bekir b. Ayyâş → Ebû Hasîn → Ziyâd b. Hudeyr | Ziyâd b. Hudeyr dedi ki: Ömer beni gelip geçenlerin üzerine görevlendirdi. Gelenden de gidenden de öşür alıyordum. Bir adam ona gidip (durumu) bildirdi; o da bana “ancak bir defa öşür al” diye yazdı; yılda demektir.
+& haddesenâ, an, an
+^ قال: استعملني عمر
+
+10589 | Vekî‘ → Süfyân → Gâlib b. Ebi’l-Hüzeyl → İbrâhîm | İbrâhîm dedi ki: Bir hristiyan Ömer’e geldi ve dedi ki: “Senin memurun yılda iki defa öşür aldı.” (Ömer) “Sen kimsin?” dedi. “Ben hristiyan ihtiyarım” dedi. Ömer ona: “Ben de hanîf ihtiyarım” dedi “ve memuruna, yılda ancak bir defa öşür almasını yazdı.”
+& haddesenâ, an, an, an
+^ قال: جاء نصراني
+
+10590 | Vekî‘ → Süfyân → İbrâhîm b. el-Muhâcir → Ziyâd b. Hudeyr | Ziyâd b. Hudeyr dedi ki: “İslâm’da öşür alan ilk kişi benim.”
+& haddesenâ, an, an, an
+^ قال: «أنا أول
+
+@ Fakirler ve miskinler hakkında söyledikleri: Onlar kimlerdir
+
+10591 | Vekî‘ → Süfyân → İbrâhîm b. el-Muhâcir → Ziyâd b. Hudeyr → bir adam → Câbir b. Zeyd | Câbir b. Zeyd’den: Ona fakirler ve miskinler soruldu, dedi ki: “Fakirler: İffetli davranıp (dilenmeyen)ler; miskinler: Dilenenler.”
+& haddesenâ, an, an, an, haddesenâ, an
+^ أنه سئل عن
+
+10592 | Ebû Üsâme → Cerîr b. Hâzim → bir adam → Câbir b. Zeyd | Câbir b. Zeyd’den: Ona fakirler ve miskinler soruldu, dedi ki: “Fakirler: İffetli davranıp (dilenmeyen)ler; miskinler: Dilenenler.”
+& haddesenâ, haddesenî, an, an
+^ أنه سئل عن
+
+10593 | Ebû Hâlid → Cerîr b. Hâzim → Ali b. el-Hakem → Dahhâk b. Müzâhim | Ali b. el-Hakem dedi ki: Dahhâk b. Müzâhim’i, “Sadakalar ancak fakirler ve miskinler içindir” (Tevbe 9/60) (âyeti hakkında) şöyle derken işittim: “Fakirler: Hicret edenler; miskinler: Hicret etmeyenler.”
+& haddesenâ, an, an, semi‘tü
+^ {إنما الصدقات للفقراء
+
+10594 | Muhammed b. Abdullah el-Esedî → Mugaffel → Zührî | Mugaffel dedi ki: Zührî’ye Allah teâlânın “Sadakalar ancak fakirler … içindir” (Tevbe 9/60) sözünü sordum. Dedi ki: “Fakirler: Evlerinde olup dilenmeyenler; miskinler: Çıkıp dilenenler.”
+& haddesenâ, haddesenâ, kâle
+% Arapçada ad böyle yazılıdır: “مغفل” (metinde böyle).
+^ قال: سألت الزهري
+
+@ Bedeviler hakkında: Onların üzerine fıtır zekâtı (var mı)
+
+10595 | Vekî‘ → Zem‘a b. Sâlih → Yuhannes → İbnü’z-Zübeyr | İbnü’z-Zübeyr dedi ki: “Bedeviler üzerine fıtır sadakası vardır.”
+& haddesenâ, an, an, an
+^ قال: «على الأعراب
+
+10596 | Vekî‘ → Süfyân → İbn Cüreyc → Atâ | Atâ dedi ki: “Bedeviler üzerine fıtır zekâtı yoktur.”
+& haddesenâ, an, an, an
+^ قال: «ليس على
+
+10597 | Şebâbe b. Sevvâr → İbn Ebî Zi’b → İshâk b. Talha → İsmâîl b. Ümeyye → Saîd b. el-Âs | Saîd b. el-Âs dedi ki: Ebû Bekir es-Sıddîk bedevilerden fıtır sadakası olarak keş alırdı.
+& haddesenâ, haddesenâ, an, an, an
+^ قال: كان أبو بكر
+
+10598 | Vekî‘ → Süfyân → bir adam → Hasan | Hasan dedi ki: “Sütten verirler.”
+& haddesenâ, an, an, an
+^ قال: «يعطون من
+
+10599 | Ebû Dâvûd → Ebû Hurre → Hasan | Hasan’dan: O dedi ki: “Bedeviler üzerine fıtır sadakası, bir sâ‘ süttür.”
+& haddesenâ, an, an
+% Arapçada ad böyle yazılıdır: “أبو دواد” (metinde böyle).
+^ أنه قال: «على
+
+@ Hristiyan köleyi azat eden adam hakkında söyledikleri
+
+10600 | Hafs → Ebû Hâlid → Şa‘bî | Şa‘bî’den, hristiyan köleyi azat eden adam hakkında; dedi ki: “Onun zimmeti, mevlâlarının zimmetidir.”
+& haddesenâ, an, an
+^ في الرجل يعتق
+
+10601 | Hafs → Amr → Hasan | Hasan dedi ki: “Onun üzerine cizye yoktur.”
+& haddesenâ, an, an
+^ قال: «ليس عليه
+
+10602 | Hafs → Abîde → İbrâhîm | İbrâhîm’den, hristiyan köleyi azat eden adam hakkında; dedi ki: “Onun üzerine cizye vardır.”
+& haddesenâ, an, an
+^ في الرجل يعتق
+
+10603 | İbn Mehdî → Süfyân → Sinân → Ömer b. Abdülazîz | Sinân’dan: Ömer b. Abdülazîz, bir müslümanın azat ettiği bir hristiyandan cizye aldı.
+& haddesenâ, an, an, enne
+^ «أخذ الجزية من
+
+@ Harâc arazisi hakkında söyledikleri
+
+10604 | Vekî‘ → Süfyân → Amr b. Meymûn → Ömer b. Abdülazîz | Amr b. Meymûn dedi ki: Ömer b. Abdülazîz’e harâc arazisini sordum: “Onun üzerine zekât var mı?” Dedi ki: “Harâc arazi üzerine, zekât ise tahıl üzerinedir.”
+& haddesenâ, an, an, kâle
+^ قال: سألت عمر
+
+10605 | Zeyd b. el-Hubâb → Muâviye b. Sâlih → Ebû Hâşim → Ömer b. Abdülazîz | Ömer b. Abdülazîz dedi ki: “Harâc arazi üzerine, öşür ise tahıl üzerinedir.”
+& haddesenâ, an, an, an
+^ قال: «الخراج على
+
+10606 | Ebû Üsâme → Eş‘as → Hasan | Eş‘as dedi ki: Hasan şöyle derdi: “Hurmadan öşür alınıyorsa, yüz bin (değerinde) olsa bile onda zekât yoktur.”
+& haddesenâ, an, an
+^ قال: كان يقول:
+
+10607 | Vekî‘ → Hasan ve Süfyân | Vekî‘ dedi ki: Hasan ve Süfyân şöyle derlerdi: “Onun üzerine (zekât) vardır.”
+& haddesenâ, kâle
+^ «عليه»
+
+@ Bir arazide harâc ve öşür bir araya gelmez diyenler
+
+10608 | İbrâhîm b. el-Mugîre → Ebû Hamza es-Sekûnî → Şa‘bî | Şa‘bî dedi ki: “Bir arazide harâc ve öşür bir araya gelmez.”
+& haddesenâ, an, an
+% İbrâhîm b. el-Mugîre, Abdullah b. el-Mübârek’in damadıdır.
+^ قال: «لا يجتمع
+
+10609 | Ebû Tümeyle Yahyâ b. Vâdıh → Ebü’l-Münîb → İkrime | İkrime dedi ki: “Bir malda harâc ve öşür bir araya gelmez.”
+& haddesenâ, an, an
+^ قال: «لا يجتمع
+
+10610 | Vekî‘ → Ebû Hanîfe | Vekî‘ dedi ki: Ebû Hanîfe şöyle derdi: “Bir adam üzerinde harâc ve zekât bir araya gelmez.”
+& haddesenâ, kâle
+^ «لا يجتمع خراج
+
+@ Allah teâlânın “Mallarında belli bir hak” sözü
+
+10611 | Hafs → Abdullah b. Muhammed | Abdullah b. Muhammed’den, “Mallarında belli bir hak bulunanlar” (Meâric 70/24) sözü hakkında; dedi ki: “Zekâttır.”
+& haddesenâ, an
+% Maddenin başında “[المعارج: 24]” işareti yazılıdır (bab başlığındaki âyetin yeri).
+^ في قوله {والذين
+
+10612 | Sehl b. Yûsuf → Amr → Hasan | Hasan’dan, “Mallarında belli bir hak bulunanlar” (Meâric 70/24) hakkında; dedi ki: “Farz zekâttır.”
+& haddesenâ, an, an
+^ قال: «الزكاة المفروضة»
+
+10613 | Vekî‘ → İsrâîl → Ebü’l-Heysem → İbrâhîm | İbrâhîm dedi ki: “Atiyyeleri çıkarıldığında ondan sadaka verirlerdi.”
+& haddesenâ, an, an, an
+^ قال: «كانوا إذا
+
+@ Yıllarca malını kaybedip sonra onu bulan ve zekâtını veren adam hakkında söyledikleri
+
+10614 | Abdürrahîm → Amr b. Meymûn | Amr b. Meymûn dedi ki: Abdülmelik zamanında vali, Rakka ehlinden Ebû Âişe denilen bir adamın yirmi binlik malını aldı ve (mal) beytülmâle konuldu. Ömer b. Abdülazîz (halifeliği) üstlenince onun çocukları ona geldiler ve haksızlığa uğradıklarını ona arz ettiler. O da Meymûn’a yazdı: “Mallarını onlara verin ve onun bu yılın zekâtını alın. Eğer o kayıp (dımâr) bir mal olmasaydı, geçmiş (yılların) zekâtını ondan alırdık.”
+& haddesenâ, an
+^ قال: أخذ الوالي
+
+10615 | Ebû Üsâme → Hişâm → Meymûn | Meymûn’dan: Bir adamın malı haksızlıkların birinde elinden gitti ve beytülmâle düştü. Ömer b. Abdülazîz (halifeliği) üstlenince (mesele) ona arz edildi. Ömer şunu yazdı: “Onu ona verin ve ondan geçmiş (yılların) zekâtını alın.” Sonra onların arkasından şu mektubu gönderdi: “Onu ona verin, sonra ondan o yılın zekâtını alın; çünkü o kayıp (dımâr) bir maldı.”
+& haddesenâ, an, an
+^ أن رجلا، ذهب

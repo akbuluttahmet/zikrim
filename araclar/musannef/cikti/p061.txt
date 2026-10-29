@@ -1,0 +1,99 @@
+@ Bir topluluğun bulduğu rikâz hakkında: Onda zekât (var mı)
+
+10779 | İbn Uyeyne → Zührî → Saîd b. el-Müseyyeb → Ebû Hüreyre | Ebû Hüreyre’den, o Nebî’den ﷺ: Buyurdu ki: “Rikâzda beşte bir vardır.”
+& haddesenâ, an, an, an
+^ قال: «في الركاز
+
+10780 | Hâlid b. Mahled → Kesîr b. Abdullah el-Müzenî → babası → dedesi | Kesîr b. Abdullah el-Müzenî’nin dedesinden, o Nebî’den ﷺ: Buyurdu ki: “Rikâzda beşte bir vardır.”
+& haddesenâ, an, an, an
+^ قال: «في الركاز
+
+10781 | Fadl b. Dükeyn → İsrâîl → Simâk → İkrime → İbn Abbâs | İbn Abbâs’tan, o Nebî’den ﷺ: Dedi ki: “Nebî ﷺ rikâzda beşte bir (alınmasına) hükmetti.”
+& haddesenâ, an, an, an, an
+^ قال: «قضى النبي
+
+10782 | Fadl b. Dükeyn → Ömer b. el-Velîd el-Müsennâ → İkrime | İkrime’den: Ona bir yeraltı mahzeni bulan adam soruldu. Dedi ki: “Beşte birini öde.”
+& haddesenâ, haddesenâ, an
+% Arapçada ad böyle yazılıdır: “عمر بن الوليد المثنى” (metinde böyle).
+^ قال: سئل عن
+
+@ Adamın malının kötüsünü sadaka olarak vermesini hoş görmeyenler
+
+10783 | Hâtim b. İsmâîl → Humeyd b. Sahr → Ömer b. Ebî Bekir → babası | Ömer b. Ebî Bekir’in babası dedi ki: Resûlullah ﷺ mescide girdi; mescidde asılı hurma salkımları vardı; içinde (bozuk) yanaklı (metinde böyle) bir salkım vardı. (Resûlullah’ın) yanında bir hurma dalı —ya da elinde bir asâ— vardı. Dedi ki: Onu (salkımı) dürttü ve buyurdu ki: “Bunu kim getirdi?” “Falan” dediler. Resûlullah ﷺ buyurdu: “Sadakalarını tutan, sonra (kötüsünü) açığa atan insanlara yazıklar olsun! Onu ne kuşlar ne yırtıcılar yer … (metin bu kısımda bozuktur) Şam’a doğru.”
+& haddesenâ, an, an, haddesenî
+^ دخل رسول الله
+
+10784 | Ebû Üsâme → Muhammed b. Ebî Hafsa → Zührî → Ebû Ümâme b. Sehl | Ebû Ümâme b. Sehl dedi ki: “Bazı insanlar meyvelerinin kötülerini sadaka olarak verirlerdi; nihayet şu (âyet) indi: ‘Kendiniz göz yummadan alıcısı olmayacağınız kötüsünü (Allah yolunda) harcamaya kalkışmayın.’ (Bakara 2/267)”
+& haddesenâ, an, haddesenî, an
+^ قال: " كان ناس
+
+10785 | İbn Uleyye → Seleme b. Alkame → İbn Sîrîn → Abîde | İbn Sîrîn’den: O, Abîde’ye Allah teâlânın “Kendiniz alıcısı olmayacağınız kötüsünü (Allah yolunda) harcamaya kalkışmayın” (Bakara 2/267) sözünü sordu. (Abîde dedi ki:) “Bu ancak zekât hakkındadır; sahte dirhemler bana hurmadan daha sevimlidir.”
+& haddesenâ, an, an, an
+^ «إنما ذلك في
+
+10786 | Vekî‘ → Yezîd → Hasan | Hasan’dan, “Kötüsünü (Allah yolunda) harcamaya kalkışmayın” (Bakara 2/267) (hakkında); dedi ki: “Adam malının bayağısını sadaka olarak verirdi.”
+& haddesenâ, an, an
+^ قال: «كان الرجل
+
+10787 | Ubeydullah b. Mûsâ → İsrâîl → Süddî → Ebû Mâlik → Berâ | Berâ’dan, Allah teâlânın “Kötüsüne kalkışmayın” (Bakara 2/267) sözü hakkında; dedi ki: “Bizim hakkımızda indi. Biz hurmalık sahipleriydik; adam hurmalığından azlığına ve çokluğuna göre getirirdi.” Dedi ki: “Adam bir salkım, (başka) adam iki salkım getirir ve onu mescide asardı.” Dedi ki: “Suffe ehlinin yiyeceği yoktu. Onlardan biri salkıma gelince onu asâyla vurur, ondan kuru ve ham hurma düşer, o da yerdi. Hayra rağbet etmeyen bazı kimseler vardı; onlardan biri içinde çürük ve kuru (değersiz) hurma bulunan salkımı getirir, kırılmış salkımı getirir ve onu asardı.” Dedi ki: “Bunun üzerine Allah ‘Kendiniz göz yummadan alıcısı olmayacağınız kötüsünü (Allah yolunda) harcamaya kalkışmayın’ (Bakara 2/267) (âyetini) indirdi.” Dedi ki: “Sizden birine verdiğinin benzeri hediye edilse, ancak göz yumarak ve utanarak onu alırdı.” Dedi ki: “Bundan sonra adam yanındakinin iyisini getirirdi.”
+& haddesenâ, an, an, an, an
+^ قال: «نزلت فينا
+
+@ Tahmin edilip (ürününde) fazla bulamayan adam hakkında: Ne yapar
+
+10788 | Muâz b. Muâz → Eş‘as → Hasan | Hasan’dan, meyvesi (ürünü) kendisine tahmin edilen, onda (fark) olan adam hakkında (metinde böyle); dedi ki: “Ona tahmin edilen (ödenir).” Dedi ki: “Fazla olan onundur, eksik olan onun üzerinedir.”
+& haddesenâ, ahberanâ, an
+^ في رجل خرصت
+
+@ Zekâttan kabul edenler
+
+10789 | Yahyâ b. Saîd → Şu‘be → Hakem | Hakem dedi ki: “İbrâhîm bizden iki defa zekât istedi.”
+& haddesenâ, an, an
+^ قال: «سألنا إبراهيم
+
+10790 | Hüşeym → Abîde → İbrâhîm | Abîde dedi ki: “Ona (İbrâhîm’e) zekât getirdim, onu kabul etti.” Dedi ki: Bana Bedir ehlinden bazılarının onu kabul ettiğini haber verdi.
+& haddesenâ, an, an
+^ قال: «أتيته بزكاة،
+
+@ Fıtır zekâtını bayramdan bir ya da iki gün önce acele vermek hakkında
+
+10791 | Abdüsselâm → Ömer b. Müsâvir → Hasan | Hasan’dan: O, adamın fıtır sadakasını Fıtır’dan bir ya da iki gün önce acele vermesinde bir sakınca görmezdi.
+& haddesenâ, an, an
+^ أنه كان «لا
+
+10792 | Ebû Üsâme → Ubeydullah b. Ömer → Nâfi‘ → İbn Ömer | İbn Ömer’den: O, fıtır zekâtını teslim alan (memur) oturduğunda, (bayramdan) bir ya da iki gün (önce verirdi) ve bunda bir sakınca görmezdi.
+& haddesenâ, haddesenâ, an, an
+^ أنه كان «إذا
+
+@ Bir adamdan isteyip “Allah adına senden istiyorum” diyen adam hakkında
+
+10793 | Vekî‘ → Muhammed b. Müslim → İbrâhîm b. Meysere → Ya‘kûb b. Âsım → Abdullah b. Amr | Abdullah b. Amr dedi ki: “Kimden Allah adına istenir de verirse, ona yetmiş ecir vardır.”
+& haddesenâ, haddesenâ, an, an, an
+^ قال: «من سئل
+
+10794 | Vekî‘ → Süfyân → İbn Cüreyc → Atâ | Atâ’dan: O, Allah’ın vechi adına ya da Kur’ân adına dünya işlerinden bir şey istenmesini hoş görmedi.
+& haddesenâ, haddesenâ, an, an
+^ أنه «كره أن
+
+10795 | Hammâd b. Mes‘ade → Yezîd | Seleme’nin mevlâsı Yezîd dedi ki: Bir insan Seleme’den Allah’ın vechi adına bir şey isterse ona mutlaka verirdi; (ama) bunu hoş görmez ve şöyle derdi: “Bu ısrarla dilenmektir.”
+& haddesenâ, an
+% Yezîd, Seleme’nin mevlâsıdır.
+^ قال: كان سلمة
+
+10796 | Ali b. Müshir → Leys → Mücâhid → Abdullah b. Ömer | Abdullah b. Ömer dedi ki: Resûlullah ﷺ buyurdu: “Kim Allah adına isterse ona verin.”
+& haddesenâ, an, an, an
+^ قال: قال رسول
+
+@ Şarap hakkında: Öşürlenir mi, öşürlenmez mi
+
+10797 | İbn Mehdî → Müsennâ | Müsennâ dedi ki: Ömer b. Abdülazîz’in mektubu bize okundu: “Müslüman şarabı öşürlemesin.”
+& haddesenâ, an
+^ قال: قرئ علينا
+
+10798 | Vekî‘ → Süfyân → Hammâd → İbrâhîm | İbrâhîm dedi ki: “Şarap öşürlenir ve onun üzerine (öşür) katlanır.”
+& haddesenâ, an, an, an
+^ قال: «يعشر الخمر،
+
+10799 | Vekî‘ → İsrâîl → İbrâhîm b. Abdüla‘lâ → Süveyd b. Gafele | Süveyd b. Gafele’den: Ömer’in memurları ona, cizyede aldıkları domuzlar ve şarap hakkında yazdılar. Ömer şunu yazdı: “Onları sahiplerine sattırın.”
+& haddesenâ, an, an, an
+^ أن عمال عمر

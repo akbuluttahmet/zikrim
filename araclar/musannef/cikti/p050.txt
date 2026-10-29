@@ -1,0 +1,293 @@
+@ Zekât ancak buğday, arpa, hurma ve kuru üzümdedir diyenler
+
+10027 | Ebû Üsâme → Hişâm → Hasan | Hasan dedi ki: “Zekât buğdayda, arpada, hurmada ve kuru üzümdedir.”
+& haddesenâ, an, an
+^ قال: «الزكاة في البر
+
+@ Yerin çıkardığı her şeyde zekât vardır
+
+10028 | Ma‘mer b. Süleymân er-Rakkî → Husayf → Mücâhid | Mücâhid dedi ki: “Yerin çıkardığı şeyde, azında da çoğunda da öşür ya da öşrün yarısı vardır.”
+& haddesenâ, an, an
+^ قال: «فيما أخرجت الأرض
+
+10029 | Gunder → Şu‘be → Hammâd | Hammâd dedi ki: “Yerin çıkardığı her şeyde öşür ya da öşrün yarısı vardır.”
+& haddesenâ, an, an
+^ قال: «في كل شيء
+
+10030 | Vekî‘ → Ebû Hanîfe → Hammâd → İbrâhîm | İbrâhîm dedi ki: “Yerin çıkardığı her şeyde zekât vardır; on demet sebzede bile.”
+& haddesenâ, an, an, an
+^ قال: «في كل شيء
+
+10031 | Abdüla‘lâ → Ma‘mer → Zührî | Zührî’den: O, meyvede bir miktar (nisap) belirlemezdi ve şöyle derdi: “Öşür ve öşrün yarısı.”
+& haddesenâ, an, an
+^ أنه كان لا يوقت
+
+10032 | Abdüla‘lâ → Ma‘mer → bir adam → Mücâhid | (Mücâhid’den) bunun benzeri (rivayet edildi).
+& haddesenâ, an, an, an
+^ مثله.
+
+10033 | Abdüla‘lâ → Ma‘mer | Ma‘mer dedi ki: Ömer b. Abdülazîz bunu Yemen halkına yazdı.
+& haddesenâ, an
+^ قال: كتب بذلك
+
+10034 | Vekî‘ → Süfyân → Mansûr → İbrâhîm | İbrâhîm dedi ki: “Yerin çıkardığı her şeyde zekât vardır.”
+& haddesenâ, an, an, an
+^ قال: «في كل شيء
+
+@ Yeşil sebzeler hakkında: Onlarda zekât yoktur diyenler
+
+10035 | Ebû Muâviye → Leys → Mücâhid → İbn Ömer | İbn Ömer dedi ki: “Yeşil sebzelerde zekât vardır.”
+& haddesenâ, an, an, an
+^ قال: «في الخضراوات
+
+10036 | Vekî‘ → Kays → Ebû İshâk → Âsım b. Damre → Ali | Ali dedi ki: “Yeşil sebzelerde bir şey yoktur.”
+& haddesenâ, an, an, an, an
+^ قال: «ليس في الخضر
+
+10037 | Yahyâ b. Saîd → Mücâlid → Şa‘bî | Şa‘bî dedi ki: “Sebzelerde, salatalıkta, acurda ve benzerlerinde sadaka (zekât) yoktur.”
+& haddesenâ, an, an
+^ قال: «ليس في البقول
+
+10038 | Hafs → Ecleh → Âmir | Âmir dedi ki: “Yaz mahsulünde sadaka (zekât) yoktur.”
+& haddesenâ, an, an
+^ قال: «ليس في غلة
+
+10039 | Hâtim b. Verdân → Burd → Mekhûl | Mekhûl dedi ki: “Yeşil sebzelerde zekât yoktur; ancak mal hâline gelirse onda zekât olur.”
+& haddesenâ, an, an
+^ قال: «ليس في الخضر
+
+10040 | Vekî‘ → Süfyân → Mugîre → Mücâhid ve İbrâhîm | Mugîre dedi ki: Mücâhid’i ve İbrâhîm’i, ikisi otururlarken şöyle derlerken işittim: “Sebzelerde, elmada ve yeşil sebzelerde zekât yoktur.”
+& haddesenâ, an, an, semi‘tü
+^ وهما جالسان، يقولان
+
+10041 | Sehl b. Yûsuf → Şu‘be → Hakem | Hakem dedi ki: “Yeşil sebzelerde sadaka (zekât) yoktur.”
+& haddesenâ, an, an
+^ قال: «ليس في الخضراوات
+
+10042 | Humeyd b. Abdurrahmân → Husayn → Mutarrif → Hakem | Mutarrif dedi ki: Hakem’e yoncayı, pamukları ve susamları sordum. “Onlarda bir şey yoktur” dedi. Hakem dedi ki: Arkadaşlarımızdan ezberlediğimize göre onlar şöyle derlerdi: “Bunlardan hiçbirinde bir şey yoktur; ancak buğdayda, arpada, hurmada ve kuru üzümde vardır.”
+& haddesenâ, an, an, kâle
+^ فقال: ليس فيها
+
+10043 | İsmâîl b. Ayyâş → Atâ el-Horasânî | Atâ el-Horasânî dedi ki: “Meyvede —ceviz, badem, bütün sebzeler ve yeşil sebzeler— öşür yoktur. Fakat bunlardan satılıp iki yüz dirheme ya da daha fazlasına ulaşanda zekât vardır.”
+& haddesenâ, an
+^ قال: «ليس في الفاكهة
+
+10044 | Muhammed b. Bekr → İbn Cüreyc → Atâ | Atâ dedi ki: “Sebzelerde, kamışta, kavunda, acurda, pamukta, meyvelerde, turuncda, elmada, incirde, narda, mersekte (metinde böyle) ve meyvede (sadaka) yoktur.” Hepsi sadaka olan şeylerden sayılır (metinde böyle).
+& haddesenâ, an, kâle
+^ «ليس في البقول
+
+10045 | Abdüssamed → Hammâd b. Seleme → Ali b. el-Hakem → Ebü’l-Alâ b. eş-Şıhhîr | Ebü’l-Alâ b. eş-Şıhhîr dedi ki: “Yemlerde ve sebzelerde sadaka (zekât) yoktur.”
+& haddesenâ, an, an, an
+^ قال: «ليس في الأعلاف
+
+@ Zeytinde zekât var mıdır, yok mudur, hakkında
+
+10046 | İbnü’l-Mübârek → Ma‘mer → Zührî | Zührî’den, zeytin hakkında: Dedi ki: “O, ölçeklenen bir şeydir; onda öşür vardır.”
+& haddesenâ, an, an
+^ في الزيتون، قال
+
+10047 | İbn Mehdî → İmrân el-Kattân → Leys → Tâvûs → İbn Abbâs | İbn Abbâs dedi ki: “Zeytinde öşür vardır.”
+& haddesenâ, an, an, an, an
+^ قال: «في الزيتون العشر»
+
+10048 | Zeyd b. Hubâb → Recâ b. Ebî Seleme → Yezîd b. Câbir | Recâ b. Ebî Seleme dedi ki: Yezîd b. Câbir’e zeytini sordum; dedi ki: “Ömer b. el-Hattâb Şam’da onun öşrünü aldı.”
+& haddesenâ, an, kâle
+^ فقال: «عشره عمر
+
+10049 | Zeyd b. Hubâb → Recâ → Atâ el-Horasânî | Atâ el-Horasânî dedi ki: “Onda öşür vardır.”
+& haddesenâ, an, an
+^ قال: «فيه العشر»
+
+@ Balda zekât var mıdır, yok mudur, hakkında
+
+10050 | Vekî‘ → Saîd b. Abdülazîz → Süleymân b. Mûsâ → Ebû Seyyâre el-Mut‘î | Ebû Seyyâre el-Mut‘î dedi ki: “Ey Allah’ın Resûlü, benim arılarım var” dedim. “Onun öşrünü ver” buyurdu. (Ebû Seyyâre) dedi ki: “Evet.” “Ey Allah’ın Resûlü, onu benim için koru altına al” dedim. Dedi ki: “Onu benim için koru altına aldı.”
+& haddesenâ, an, an, an
+^ قال: قلت يا رسول
+
+10051 | Abbâd b. Avvâm → Yahyâ b. Saîd → Amr b. Şuayb | Amr b. Şuayb’dan: Tâif emîri Ömer b. el-Hattâb’a şöyle yazdı: “Bal sahipleri, bizden öncekilere verdikleri şeyi bize vermiyorlar.” (Amr) dedi ki: (Ömer) ona şöyle yazdı: “Resûlullah’a ﷺ verdikleri şeyi sana verirlerse onlar için (arı yaylalarını) koru altına al; yoksa onlar için koru altına alma.” (Râvi) dedi ki: Amr b. Şuayb, onların her on kırbadan bir kırba verdiklerini ileri sürdü.
+& haddesenâ, an, an
+^ أن أمير الطائف، كتب
+
+10052 | İbnü’l-Mübârek → Atâ el-Horasânî → Ömer | Ömer dedi ki: “Balda öşür vardır.”
+& haddesenâ, an, an
+^ قال: «في العسل عشر»
+
+10053 | Safvân b. Îsâ → Hâris b. Abdurrahmân → Münîr b. Abdullah → babası → Sa‘d b. Ebî Zübâb | Sa‘d b. Ebî Zübâb’dan: Kavminin yanına geldi ve onlara: “Balda zekât vardır; çünkü zekâtı verilmeyen malda hayır yoktur” dedi. Dedi ki: “Ne kadar (gerektiğini) görüyorsun?” dediler. “Öşür” dedim. Onlardan öşrü aldı; onu Ömer’e getirdi ve içinde ne olduğunu ona haber verdi. Dedi ki: Ömer onu aldı ve müslümanların sadakaları arasına kattı.
+& haddesenâ, an, an, an, an
+^ أنه قدم على قومه
+
+10054 | Vekî‘ → İbn Ebî Zi’b → Zührî | Zührî dedi ki: “Balda öşür vardır.”
+& haddesenâ, an, an
+^ قال: «في العسل العشر»
+
+@ Balda zekât yoktur diyenler
+
+10055 | Vekî‘ → Süfyân → İbrâhîm b. Meysere → Tâvûs | Tâvûs’tan: Muâz Yemen’e geldiğinde ona bal ve koyunların evkâsı (iki nisap arası fazlalığı) getirildi. Dedi ki: “Bunlarda bana bir şey emredilmedi.”
+& haddesenâ, an, an, an
+^ أن معاذا، لما أتى
+
+10056 | Vekî‘ → Süfyân → Ubeydullah → Nâfi‘ | Nâfi‘ dedi ki: Ömer b. Abdülazîz beni Yemen’e gönderdi. Baldan öşür almak istedim. Mugîre b. Hakîm es-San‘ânî: “Onda bir şey yoktur” dedi. Ömer b. Abdülazîz’e yazdım; dedi ki: “Doğru söylemiş; o adaletli ve kendisinden razı olunan biridir.”
+& haddesenâ, an, an, an
+^ قال: بعثني عمر بن
+
+10057 | Ebû Üsâme → Ubeydullah b. Ömer → Nâfi‘ | Nâfi‘ dedi ki: Ömer b. Abdülazîz bana balın sadakasını (zekâtını) sordu. “Mugîre b. Hakîm bana onda sadaka (zekât) olmadığını haber verdi” dedim. Ömer dedi ki: “(O,) adaletli ve sözü tasdik edilen biridir.”
+& haddesenâ, an, an
+^ قال: سألني عمر بن
+
+@ Amberde zekât yoktur diyenler
+
+10058 | İbn Uyeyne → Amr → İbn Üzeyne → İbn Abbâs | İbn Abbâs dedi ki: “Amber rikâz (gömü) değildir; o ancak denizin kıyıya attığı bir şeydir; onda bir şey yoktur.”
+& haddesenâ, an, an, semi‘a
+^ قال: «ليس العنبر
+
+10059 | Vekî‘ → Süfyân es-Sevrî → Amr → İbn Üzeyne → İbn Abbâs | İbn Abbâs dedi ki: “Amberde zekât yoktur; o ancak denizin kıyıya attığı bir şeydir.”
+& haddesenâ, an, an, an, an
+^ قال: «ليس في العنبر
+
+10060 | Vekî‘ → İbrâhîm b. İsmâîl → Ebü’z-Zübeyr → Câbir | Câbir dedi ki: “Amberde zekât yoktur; o ancak onu alan için bir ganimettir.”
+& haddesenâ, an, an, an
+^ قال: «ليس في العنبر
+
+10061 | İbn Uyeyne → Ma‘mer → Urve b. Muhammed | Urve b. Muhammed’den: Ömer b. Abdülazîz’e, içinde yedi yüz rıtıl bulunan bir amber parçası hakkında yazdı. (Ömer) dedi ki: “Onda beşte bir vardır.”
+& haddesenâ, an, enne
+^ كتب إلى عمر بن
+
+10062 | Vekî‘ → Süfyân → Leys → Ömer b. Abdülazîz | Leys’ten: Ömer b. Abdülazîz amberden beşte bir aldı.
+& haddesenâ, an, an, enne
+^ «خمس العنبر»
+
+10063 | Muâz b. Muâz → Eş‘as → Hasan | Eş‘as dedi ki: Hasan şöyle derdi: “Amberde beşte bir vardır.” İnci hakkında da böyle derdi.
+& haddesenâ, an, an
+^ قال: كان يقول: "
+
+10064 | İbn Uyeyne → İbn Tâvûs → babası → İbrâhîm b. Sa‘d b. Ayyâş | İbn Tâvûs’un babası dedi ki: İbrâhîm b. Sa‘d b. Ayyâş’a amberi sordum; dedi ki: “Eğer onda bir şey varsa, onda beşte bir vardır.”
+& haddesenâ, an, an, kâle
+^ فقال: «إن كان فيه
+
+10065 | Vekî‘ → Süfyân es-Sevrî → İbn Tâvûs → babası → İbn Abbâs | İbn Tâvûs’un babasından: İbn Abbâs’a amber soruldu; dedi ki: “Eğer onda bir şey varsa, onda beşte bir vardır.”
+& haddesenâ, an, an, an, enne
+^ سئل عن العنبر فقال
+
+10066 | Vekî‘ → Süfyân | Vekî‘ dedi ki: Süfyân şöyle derdi: “Amberde, balda ve evkâsta zekât yoktur.”
+& haddesenâ, kâle
+^ يقول: «ليس في العنبر
+
+@ İnci ve zümrüt hakkında
+
+10067 | Ebü’l-Ahvas → Husayf → İkrime | İkrime dedi ki: “İnci taşında ve zümrüt taşında zekât yoktur; ancak ticaret için olurlarsa başka. Ticaret için olurlarsa ikisinde de zekât vardır.”
+& haddesenâ, an, an
+^ قال: «ليس في حجر
+
+10068 | Şerîk → Sâlim → Saîd b. Cübeyr | Saîd b. Cübeyr dedi ki: “Boncukta ve incide zekât yoktur; ancak ticaret için olurlarsa başka.”
+& haddesenâ, an, an
+^ قال: «ليس في الخرز
+
+10069 | Şerîk → Husayf → İkrime | (İkrime’den) bunun benzeri (rivayet edildi).
+& haddesenâ, an, an
+^ مثله
+
+10070 | Vekî‘ → Süfyân → Sâlim → Saîd b. Cübeyr | Saîd b. Cübeyr dedi ki: “Boncukta zekât yoktur; ancak ticaret için olursa başka.”
+& haddesenâ, an, an, an
+^ قال: «ليس في الخرز
+
+10071 | İbn Nümeyr → Haccâc → Atâ, Zührî ve Mekhûl | Atâ, Zührî ve Mekhûl dediler ki: “Mücevherde bir şey yoktur; ancak ticaret için olursa başka.”
+& haddesenâ, an, an
+^ قالوا: «ليس في الجوهر
+
+10072 | Sehl b. Yûsuf → Şu‘be → Hakem | Hakem’den: O, ziynet eşyasında altın ve gümüş dışında zekât görmezdi; mücevherde, incide ve bu türden şeylerde de görmezdi.
+& haddesenâ, an, an
+^ أنه كان «لا يرى
+
+10073 | Hafs → Haccâc → Talha → İbrâhîm | İbrâhîm dedi ki: “Ticaret kastedilen her şeyde zekât vardır; kerpiç ya da çamur olsa bile.” (Haccâc) dedi ki: Hakem de bu görüşteydi.
+& haddesenâ, an, an, an
+^ قال: " كل شيء
+
+10074 | Cerîr → Mugîre → Hammâd | Hammâd dedi ki: “Mücevherde zekât yoktur; ancak ticaret için satın alınırsa başka.”
+& haddesenâ, an, an
+^ قال: «ليس في الجوهر
+
+10075 | Muhammed b. Bükeyr → İbn Cüreyc → Atâ | İbn Cüreyc dedi ki: Atâ bana dedi ki: “İncide, zebercedde, yakutta, yüzük taşlarında, eşyada ve döndürülmeyen (ticarete konmayan) hiçbir şeyde sadaka (zekât) yoktur. Bunlardan döndürülen (ticarete konan) bir şey olursa, satıldığı zaman bedelinde sadaka (zekât) vardır.”
+& haddesenâ, an, kâle
+^ «لا صدقة في اللؤلؤ
+
+10076 | Ca‘fer b. Avn → Üsâme → Kâsım | Üsâme dedi ki: Kâsım’a inciyi, onda zekât var mı yok mu diye sordum. Dedi ki: “Ondan ziynet gibi giyilen, ticaret için olmayanda zekât yoktur; ondan ticaret için olanda ise zekât vardır.”
+& haddesenâ, an, kâle
+^ فقال: «ما كان منه
+
+10077 | Ezher → İbn Avn → Ebü’l-Melîh | Ebü’l-Melîh’ten, andığı bir sözde: Sanki onda —yani incide— zekât görüyordu.
+& haddesenâ, an, an
+^ في حديث ذكره كأنه
+
+@ Akarsu ile ve dolaplarla sulanan (ürün) hakkında söyledikleri
+
+10078 | Ali b. Hâşim → İbn Ebî Leylâ → Abdülkerîm → Amr b. Şuayb → babası → dedesi | Amr b. Şuayb’ın dedesinden: Nebî ﷺ buyurdu: “Akarsu ile sulananda öşür, büyük kova ile sulananda öşrün yarısı vardır.”
+& haddesenâ, an, an, an, an, an
+^ عن النبي صلى الله عليه وسلم قال
+
+10079 | Ali b. Müshir → Ecleh → Şa‘bî → babası | Şa‘bî’nin babası dedi ki: Resûlullah ﷺ Yemen’e şöyle yazdı: “Buğday, arpa, hurma ve kuru üzümden, gökyüzünün suladığından ve akan su ile sulanandan öşür alınır; su çeken develerle sulanandan öşrün yarısı (alınır).”
+& haddesenâ, an, an, an
+^ قال: كتب رسول الله
+
+10080 | Cerîr → Mansûr → Hakem | Hakem dedi ki: Resûlullah ﷺ Yemen’deki Muâz’a şöyle yazdı: “Gökyüzünün suladığında ya da akan su ile sulananda öşür, büyük kova ve dolapla sulananda öşrün yarısı vardır.”
+& haddesenâ, an, an
+^ قال: كتب رسول الله
+
+10081 | Vekî‘ → Hemmâm → Katâde → Sâlih Ebü’l-Halîl | Sâlih Ebü’l-Halîl dedi ki: “Resûlullah ﷺ, gökyüzünün ya da akan pınarın suladığında, akan su ile (sulananda) ya da kökleriyle sulanan (ba‘l) olanda tam öşrü; kova ipi ile sulananda ise öşrün yarısını sünnet kıldı.”
+& haddesenâ, an, an, an
+^ قال: «سن رسول الله
+
+10082 | Vekî‘ → Süfyân → Ebû İshâk → Âsım b. Damre → Ali | Ali dedi ki: “Gökyüzünün suladığında ya da akarsu ile (sulanan) olanda öşür vardır; dolapla sulananda ise öşrün yarısı vardır.”
+& haddesenâ, an, an, an, an
+^ قال: «فيما سقت السماء
+
+10083 | İbn Uleyye → İbn Ebî Arûbe → Katâde | Katâde dedi ki: “Resûlullah ﷺ, gökyüzünün suladığında ya da akan suyun suladığında ve kökleriyle sulanan (ba‘l) olanda tam öşrü; kova ipi ile sulananda ise öşrün yarısını sünnet kıldı.” (İbn Ebî Arûbe) dedi ki: Katâde dedi ki: “Şöyle denirdi: ‘Meyveden ölçeklenen şeyde öşür ve öşrün yarısı vardır.’”
+& haddesenâ, an, an
+^ قال: «سن رسول الله
+
+10084 | Muhammed b. Bekr → İbn Cüreyc → Mûsâ b. Ukbe → Nâfi‘ → İbn Ömer | İbn Ömer’den: O şöyle derdi: “Meyvelerin ve ekinin sadakası (zekâtı): Hurma ağacı ya da buğday, arpa veya kavuzsuz arpa gibi ekinden, kökleriyle sulanan (ba‘l) ya da nehirle sulanan ya da pınarla sulanan ya da asrî olan ve yağmurla sulananda öşür, yani her ondan bir vardır. Ondan su çeken hayvanla sulananda öşrün yarısı, yani her yirmiden bir vardır.” Nebî ﷺ de Yemen halkına, Hâris b. Abdükülâl’e ve onunla birlikte Yemen halkından Meâfir ve Hemdân’dan olanlara şöyle yazdı: “Mü’minlere mallarının sadakasından, pınarın suladığı ve gökyüzünün suladığının öşürleri olarak öşür, büyük kova ile sulananda öşrün yarısı düşer.”
+& haddesenâ, an, ahberanî, an, an
+^ أنه كان يقول: صدقة
+
+10085 | Muhammed b. Bekr → İbn Cüreyc → Atâ | İbn Cüreyc dedi ki: Atâ’ya, kanallarla sulanan hurma ağacı, üzüm ya da tahıl hakkında (sordum). “Öşür” dedi.
+& haddesenâ, an, kâle
+^ قال: «العشر»
+
+10086 | Muhammed b. Bekr → İbn Cüreyc → Ebü’z-Zübeyr → Câbir | Ebü’z-Zübeyr, Câbir’i şöyle derken işitti: “Onlarda öşür vardır.” (Ebü’z-Zübeyr dedi ki:) “Akan su ile sulanan hurma ağacı, üzüm ya da tahılda?” dedim. “Öşür” dedi. Dedi ki: “Kova ile ve su çeken develerle sulananda?” dedim. “Öşrün yarısı” dedi.
+& haddesenâ, an, ahberanî, semi‘a
+^ يقول: «فيها العشر»
+
+10087 | Muhammed b. Bekr → İbn Cüreyc → Ebü’z-Zübeyr → Câbir b. Abdullah | Câbir b. Abdullah’tan: Dedi ki: “Öşrün yarısı.”
+& haddesenâ, an, ahberanî, ahberanî
+^ أنه قال: «نصف العشر»
+
+10088 | Abdüla‘lâ → Ma‘mer → Zührî | Zührî’den: O, meyvede bir miktar (nisap) belirlemezdi ve şöyle derdi: “Öşür ve öşrün yarısı.”
+& haddesenâ, an, an
+^ أنه كان لا يوقت
+
+10089 | Abdüla‘lâ → Ma‘mer → bir adam → Mücâhid | (Mücâhid’den) bunun benzeri (rivayet edildi).
+& haddesenâ, an, an, an
+^ مثله.
+
+@ (başlıksız)
+
+10090 | Abdüla‘lâ → Ma‘mer | Ma‘mer dedi ki: Ömer b. Abdülazîz bunu Yemen halkına yazdı.
+& haddesenâ, an
+^ قال: كتب بذلك
+
+10091 | Abdülvehhâb → Atâ → Yûnus → Hasan | Hasan dedi ki: “Buğdayda, arpada, hurmada ve üzümde, beş vesk —ki bu üç yüz sâdır— olduğunda, (kova ile) sulanıyorsa öşrün yarısı vardır. Gökyüzünün ve pınarın suladığında ise öşür vardır.”
+& haddesenâ, an, an, an
+^ قال: «في البر، والشعير
+
+10092 | Şebâbe b. Sevvâr → Leys → Sa‘d → Nâfi‘ | Nâfi‘den: Abdullah, ekinin ve meyvelerin sadakası (zekâtı) ile bunlardan nehirden ya da pınardan su içen ya da asrî olan ya da ba‘l olan hakkında şöyle fetva verirdi: “Öşürlerin sadakası her ondan birdir. Bunlardan su çekmekle (sulanan) olanın sadakası ise öşürlerin yarısı, her yirmiden birdir.”
+& haddesenâ, an, an, an
+^ أن عبد الله، كان
+
+@ Akarsu ile sulanan ve kova ile de sulanan (ürün) nasıl zekâtlandırılır, hakkında söyledikleri
+
+10093 | İbnü’l-Mübârek → İbn Cüreyc → Atâ | Atâ’dan, zamanın (bir kısmında) akarsu üzerinde olup sonra kuyu ile —yani kova ile— ve dolapla sulanan ekin hakkında: Dedi ki: “Onunla sulanmanın daha çok olanına göre zekâtı alınır.”
+& haddesenâ, an, an
+^ في الزرع يكون على
+
+10094 | Muhammed b. Bekr → İbn Cüreyc → Atâ | İbn Cüreyc dedi ki: Atâ’ya: “(Ekin) zamanın çoğunda pınar üzerinde olur; sonra bazı dönemlerde onunla sulamak için kuyuya ihtiyaç duyar, sonra (yine) bir dönem, sonra pınara döner; sadakası nasıldır?” dedim. Dedi ki: “Öşür. Bazen de bu, onunla sulanmanın daha çok olanına göre olur: Pınarla sulanması kova ile sulanmasından daha çoksa onda öşür vardır; kova ile sulanması pınarla sulanmasından daha çoksa onda öşrün yarısı vardır.” “Zamanın çoğunda ba‘l ya da asrî olup sonra kuyuya ihtiyaç duyan mal da bunun yerinde midir?” dedim. “Evet” dedi. Ebü’z-Zübeyr dedi ki: İbn Ömer’i de bu sözü söylerken işittim (metinde böyle). Sonra Sâlim b. Abdullah’a sordum; Abdullah’ın sözü gibi söyledi.
+& haddesenâ, an, kâle
+^ قال: «العشر، وقد يكون

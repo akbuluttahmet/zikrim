@@ -1,0 +1,310 @@
+@ Fıtır sadakası hakkında: Yarım sâ‘ buğday diyenler
+
+10338 | Cerîr → Mansûr → İbrâhîm | İbrâhîm dedi ki: “Fıtır sadakası küçük ve büyük, hür ve köle (herkes) için, her insan başına yarım sâ‘ buğdaydır.”
+& haddesenâ, an, an
+^ قال: «صدقة الفطر
+
+10339 | Cerîr → Mansûr → Mücâhid | Mücâhid dedi ki: “Her insan başına yarım sâ‘ buğday; buğdaydan başka olan hurma, kuru üzüm, keş ya da başka bir şey veya arpadan ise tam bir sâ‘.”
+& haddesenâ, an, an
+^ قال: «عن كل إنسان
+
+10340 | Hüşeym → İsmâîl b. Sâlim → Şa‘bî | Şa‘bî’den: O şöyle derdi: “Fıtır sadakası, hürlerden oruç tutan kimse için ve kölelerden oruç tutan için (verilir); oruç tutmayan için de yarım sâ‘ buğday ya da bir sâ‘ hurma veya arpa(dır).”
+& haddesenâ, an, an
+^ أنه كان يقول:
+
+10341 | Hüşeym → Mansûr → Hasan | Hasan’dan: O, hürlerden oruç tutmayan kimse hakkında Şa‘bî’nin sözünün benzerini söyledi.
+& haddesenâ, an, an
+^ مثل قول الشعبي
+
+10342 | Muhammed b. Bekr → İbn Cüreyc → Abdülkerîm → İbrâhîm → Alkame ve Esved → Abdullah | Abdullah dedi ki: “İki müd buğday ya da bir sâ‘ hurma veya arpa.”
+& haddesenâ, an, an, an, an, an
+^ أنه قال: «مدان
+
+10343 | Muhammed b. Bekr → İbn Cüreyc → İbnü’z-Zübeyr | (İbnü’z-Zübeyr’den) bunun benzeri (rivayet edildi).
+& haddesenâ, an, an
+^ مثله
+
+10344 | Muhammed b. Bekr → İbn Cüreyc → Abdülkerîm → İbn Tâvûs → babası | İbn Tâvûs’un babası dedi ki: “Yarım sâ‘ buğday ya da bir sâ‘ hurma.”
+& haddesenâ, an, an, an, an
+^ قال: «نصف صاع
+
+10345 | Mu‘temir → Burd → Mekhûl | Mekhûl dedi ki: “Bir sâ‘ hurma ya da bir sâ‘ arpa.”
+& haddesenâ, an, an
+^ أنه قال: «صاع
+
+10346 | Muhammed b. Bekr → İbn Cüreyc → Atâ | Atâ dedi ki: “İki müd buğday ya da bir sâ‘ hurma veya arpa.”
+& haddesenâ, an, an
+^ قال: «مدان
+
+10347 | Muhammed b. Bekr → İbn Cüreyc → Amr → İbnü’z-Zübeyr | Amr, İbnü’z-Zübeyr’i minberin üzerindeyken şöyle derken işitti: “İki müd buğday ya da bir sâ‘ arpa veya hurma.”
+& haddesenâ, an, an, semi‘a
+^ وهو على المنبر
+
+10348 | Ebû Dâvûd → Şu‘be → Hakem ve Hammâd | Şu‘be’den: O, Hakem ve Hammâd’a sordu, ikisi de: “Yarım sâ‘ buğday” dediler. (Şu‘be) dedi ki: Abdurrahmân b. el-Kâsım ve Sa‘d b. İbrâhîm’e de sordum, onlar da bunun gibisini söylediler.
+& haddesenâ, an, kâle
+^ أنه سأل الحكم،
+
+10349 | Ebû Üsâme → İshâk b. Süleymân eş-Şeybânî → Ebû Habîb → Abdullah b. Şeddâd | Ebû Habîb dedi ki: Abdullah b. Şeddâd’a fıtır sadakasını sordum, dedi ki: “Yarım sâ‘ buğday ya da un.”
+& haddesenâ, an, haddesenî, kâle
+^ سألت عبد الله بن شداد،
+
+10350 | Vekî‘ → Süfyân → Abdüla‘lâ → Ebû Abdurrahmân → Ali | Ali’den, fıtır sadakası hakkında; dedi ki: “Bir sâ‘ hurma ya da bir sâ‘ arpa veya yarım sâ‘ buğday.”
+& haddesenâ, an, an, an, an
+^ في صدقة الفطر
+
+10351 | Vekî‘ → Hişâm → Fâtıma → Esmâ | Esmâ’dan: O, ölen kimse için ve ailesinden hazır olan ile uzakta olan için fıtır zekâtını yarım sâ‘ buğday ya da bir sâ‘ hurma veya arpa olarak verirdi.
+& haddesenâ, an, an, an
+^ أنها كانت
+
+10352 | Ebû Üsâme → İbn Avn | İbn Avn dedi ki: Ömer b. Abdülazîz’in Adî’ye (yazdığı) mektubun Basra’da okunduğunu işittim: “Ramazan sadakası hakkında: Küçük ve büyük, hür ya da köle, erkek ya da kadın herkes için yarım sâ‘ buğday ya da bir sâ‘ hurma.”
+& haddesenâ, an
+^ قال: سمعت كتاب
+
+10353 | Abdurrahmân b. Süleymân → Haccâc → Atâ → İbn Abbâs | İbn Abbâs dedi ki: “Sadaka bir sâ‘ hurma ya da yarım sâ‘ yiyecektir.”
+& haddesenâ, an, an, an
+^ قال: «الصدقة صاع
+
+10354 | Hafs b. Gıyâs → Dahhâk b. Osman → Nâfi‘ → İbn Ömer | İbn Ömer dedi ki: “Resûlullah ﷺ fıtır sadakasını bir sâ‘ hurma ya da bir sâ‘ arpa olarak farz kıldı.” Dedi ki: İbn Ömer onu, geçimini sağladığı kimseler için, kadınları ve kadınlarının köleleri için verirdi; ancak mükâteb olan iki köle müstesna, onlar için vermezdi.
+& haddesenâ, an, an, an
+^ قال: «فرض رسول
+
+@ Fıtır sadakası bir sâ‘ arpa, hurma ya da buğdaydır diyenler
+
+10355 | Ebû Üsâme → Ubeydullah b. Ömer → Nâfi‘ → İbn Ömer | İbn Ömer dedi ki: “Resûlullah ﷺ fıtır sadakasını, köle ya da hür, küçük ya da büyük herkes üzerine bir sâ‘ hurma ya da bir sâ‘ arpa olarak farz kıldı.”
+& haddesenâ, an, an, an
+^ قال: «فرض رسول
+
+10356 | Ebû Hâlid el-Ahmer → İbn Aclân → İbn Ebî Serh → Ebû Saîd el-Hudrî | Ebû Saîd el-Hudrî’den, fıtır sadakası hakkında; dedi ki: “Allah’a yemin olsun ki ben, Resûlullah ﷺ zamanında çıkardığımızdan başkasını çıkarmam: Bir sâ‘ hurma ya da bir sâ‘ arpa veya bir sâ‘ kuru üzüm ya da bir sâ‘ keş.”
+& haddesenâ, an, an, an
+^ في صدقة الفطر
+
+10357 | Cerîr → Mansûr → İbrâhîm → Esved → Âişe | Âişe dedi ki: “Allah insanlara genişlik verdiğinde, her insan başına buğdaydan bir sâ‘ı tamamlamalarını severim.”
+& haddesenâ, an, an, an, an
+^ قالت: «إني أحب
+
+10358 | Cerîr → Âsım → Ebü’l-Âliye | Ebü’l-Âliye dedi ki: “Fıtır sadakasında her insan başına bir sâ‘ buğday (gerekir).”
+& haddesenâ, an, an
+^ قال: «على كل
+
+10359 | Gunder → Şu‘be → Ebû İshâk → Mesrûk | Ebû İshâk dedi ki: Mesrûk’u şöyle derken işittim: “Fıtır sadakası birer sâ‘dır.”
+& haddesenâ, an, an, semi‘tü
+^ «صدقة الفطر صاعا
+
+10360 | Gunder → Şu‘be → Ebû İshâk → Ebû Abdurrahmân | Ebû İshâk dedi ki: Ebû Abdurrahmân’ı şöyle derken işittim: “Her küçük ve büyük için birer sâ‘ yazılmıştır (farzdır).”
+& haddesenâ, an, an, semi‘tü
+^ «صاع صاع
+
+10361 | Ebû Dâvûd → Şu‘be → Ebû İshâk → İbnü’z-Zübeyr | Ebû İshâk dedi ki: İbnü’z-Zübeyr bize şunu yazdı: “İmandan sonra fâsıklık adı ne kötüdür!” (Hucurât 49/11), “Fıtır sadakası birer sâ‘dır.”
+& haddesenâ, an, an, ketebe ileyye
+^ كتب إلينا
+
+10362 | İbn Uleyye → Eyyûb → Ebû Kılâbe | Ebû Kılâbe dedi ki: “Fıtır sadakası küçük ve büyük, hür ve köle, erkek ve kadın için(dir).” Dedi ki: “Karındaki çocuk için bile verirlerdi.”
+& haddesenâ, an, an
+^ قال: «صدقة الفطر
+
+10363 | Hafs → Âsım → Şa‘bî, Ebü’l-Âliye ve İbn Sîrîn | Şa‘bî, Ebü’l-Âliye ve İbn Sîrîn dediler ki: “Fıtır sadakası küçük ve büyük, hür ve köle, hazır ve uzakta olan, erkek ve kadın, zengin ve fakir için(dir).”
+& haddesenâ, an, an
+^ قالوا: «صدقة الفطر
+
+10364 | Vekî‘ → Süfyân → Ebû İshâk → Hâris → Ali | Ali dedi ki: “O, oruca gücü yeten kimse üzerinedir.”
+& haddesenâ, an, an, an, an
+^ قال: «هي على
+
+10365 | Vekî‘ → Süfyân → Abdüla‘lâ → Ebû Abdurrahmân → Ali | Ali dedi ki: “Fıtır sadakası, nafakası senin üzerine düşen kimse içindir.”
+& haddesenâ, an, an, an, an
+^ قال: «صدقة الفطر
+
+10366 | Vekî‘ → Süfyân → Teymî → Ebû Miclez → İbn Ömer | İbn Ömer’den: O, fıtır zekâtında hurmayı müstehap görürdü.
+& haddesenâ, an, an, an, an
+^ أنه كان «يستحب
+
+10367 | Abdürrahîm → Eş‘as → İbn Sîrîn | İbn Sîrîn dedi ki: “Fıtır sadakasında buğday, arpa, hurma, kuru üzüm ve kabuksuz arpa yeterlidir” —kavut ve unda ise şüphe etti— ve dedi ki: “Bunların hepsinden (vermek) birdir.”
+& haddesenâ, an, an
+^ قال: «تجزي في
+
+@ Fıtır zekâtında dirhem vermek hakkında
+
+10368 | Ebû Üsâme → İbn Avn | İbn Avn dedi ki: Ömer b. Abdülazîz’in Basra’da Adî’ye (yazdığı) mektubunun okunduğunu işittim: “Divan ehlinden, atiyyelerinden her insan başına yarım dirhem alınır.”
+& haddesenâ, an
+^ قال: سمعت كتاب
+
+10369 | Vekî‘ → Kurre | Kurre dedi ki: Fıtır sadakası hakkında Ömer b. Abdülazîz’in mektubu bize geldi: “Her insan başına yarım sâ‘ ya da onun kıymeti olan yarım dirhem.”
+& haddesenâ, an
+^ قال: جاءنا كتاب
+
+10370 | Vekî‘ → Süfyân → Hişâm → Hasan | Hasan dedi ki: “Fıtır sadakasında dirhem vermende sakınca yoktur.”
+& haddesenâ, an, an, an
+^ قال: «لا بأس
+
+10371 | Ebû Üsâme → Züheyr → Ebû İshâk | Züheyr dedi ki: Ebû İshâk’ı şöyle derken işittim: “Onlara yetiştim; Ramazan sadakasında yiyeceğin kıymeti kadar dirhem veriyorlardı.”
+& haddesenâ, an, semi‘tü
+^ «أدركتهم وهم
+
+10372 | Ömer → İbn Cüreyc → Atâ | Atâ’dan: O, fıtır sadakasında gümüş (para) vermeyi hoş görmedi.
+& an, an, an
+^ أنه كره أن
+
+@ Kendisi için (fıtır sadakası) verilen hristiyan köle hakkında söyledikleri
+
+10373 | İsmâîl b. Ayyâş → Amr b. Muhâcir → Ömer b. Abdülazîz | Amr b. Muhâcir dedi ki: Ömer b. Abdülazîz’i şöyle derken işittim: “Müslüman adam hristiyan kölesi için fıtır sadakasını öder.”
+& haddesenâ, an, an
+^ قال: سمعته يقول:
+
+10374 | Abdullah b. Dâvûd → Evzâî → İbn Ömer | Evzâî dedi ki: İbn Ömer’den bana ulaştı ki o, hristiyan kölesi için fıtır sadakası verirdi.
+& haddesenâ, an, unbi’tü
+^ أنه كان «يعطي
+
+10375 | Vekî‘ → Sevr → Süleymân b. Mûsâ → Atâ | Süleymân b. Mûsâ dedi ki: Atâ’ya yazıp ona yahudi ve hristiyan köleler hakkında sordu: “Onlar için fıtır zekâtı (olarak) yiyecek vereyim mi?” (Atâ) dedi ki: “Evet.”
+& haddesenâ, an, an, kâle
+^ قال: كتب إلى
+
+10376 | İbn Ayyâş → Abîde → İbrâhîm | İbrâhîm, Ömer b. Abdülazîz’in sözünün benzerini söyledi.
+& haddesenâ, an, an
+^ قال: مثل قول
+
+10377 | Muhammed b. Bekr → İbn Cüreyc → Atâ | Atâ dedi ki: “Eğer senin döndürülmeyen —ticaret için demektir— hristiyan kölelerin varsa, fıtır günü onlar için zekât ver.”
+& haddesenâ, an, kâle
+^ «إذا كان لك
+
+@ Efendisine ait bir arazide uzakta bulunan köle için verilmesi hakkında söyledikleri
+
+10378 | Ebû Hâlid el-Ahmer → Hâris b. Ebî Zübâb → Nâfi‘ → İbn Ömer | Nâfi‘’den: İbn Ömer, Ömer’in arazisinde bulunan köleleri için sadaka verirdi.
+& haddesenâ, an, an, enne
+^ «كان يعطي عن
+
+10379 | Vekî‘ → Hişâm b. Urve → Fâtıma → Esmâ | Esmâ’dan: O, ölen kimse için ve ailesinden hazır olan ile uzakta olan için fıtır sadakası verirdi.
+& haddesenâ, an, an, an
+^ «أنها كانت تعطي
+
+10380 | Vekî‘ → İbn Ebî Zi’b → Yezîd b. Abdullah b. Kusayt → Muhammed b. Abdurrahmân, Saîd b. el-Müseyyeb, Atâ b. Yesâr ve Ebû Seleme b. Abdurrahmân | Muhammed b. Abdurrahmân, Saîd b. el-Müseyyeb, Atâ b. Yesâr ve Ebû Seleme b. Abdurrahmân dediler ki: “Kimin ekinde ya da sağmal hayvanlarda (çalışan) bir kölesi varsa, onun üzerine fıtır sadakası vardır.”
+& haddesenâ, an, an, an
+^ قالوا: «من كان
+
+10381 | Ebû İshâk → Nâfi‘ → Abdullah b. Ömer | Ebû İshâk’tan rivayet edildi, dedi ki: Nâfi‘ bana anlattı ki Abdullah b. Ömer, fıtır sadakasını ev halkının hepsi için; hürleri ve köleleri, küçükleri ve büyükleri, kölelerden müslüman olanları ve kâfir olanları için çıkarırdı.
+& an, haddesenî, enne
+% Madde “وروي عن أبي إسحاق” diye başlar; İbn Ebî Şeybe’nin hocası yazılı değildir.
+^ «كان يخرج صدقة
+
+10382 | Muhammed b. Bekr → İbn Cüreyc → İbn Tâvûs → babası | İbn Tâvûs’un babasından: O, arazisinin işçileri için (fıtır sadakası) verirdi.
+& haddesenâ, an, an, an
+^ «أنه كان يعطي
+
+10383 | Muhammed b. Bekr → İbn Cüreyc → Atâ | İbn Cüreyc dedi ki: Atâ’ya: “Hayvan ya da ekin kölesi için zekât var mı?” dedim. “Hayır” dedi.
+& haddesenâ, an, kâle
+^ قال: قلت لعطاء:
+
+10384 | Hafs → Âsım → Ebü’l-Âliye, Şa‘bî ve İbn Sîrîn | Ebü’l-Âliye, Şa‘bî ve İbn Sîrîn dediler ki: “O, hazır olan ve uzakta olan için(dir).”
+& haddesenâ, an, an
+^ قالوا: «هي على
+
+10385 | Muhammed b. Bekr → İbn Cüreyc → Ümeyye b. Ebî Osman → Ümeyye b. Abdullah → Nâfi‘ b. Alkame | Nâfi‘ b. Alkame, Abdülmelik b. Mervân’a yazıp ona bahçede ve hayvanlar (arasında) bulunan köleyi sordu: Onun için fıtır günü zekât var mı? Dedi ki: “Hayır; çünkü içinde bulunduğu bahçe ve hayvanların sadakası zaten verilmiştir, bu yüzden onun üzerine zekât yoktur.”
+& haddesenâ, an, ahberanî, an, enne
+^ كتب إلى عبد الملك
+
+@ Mükâteb için efendisinin (fıtır sadakası) verip vermeyeceği hakkında söyledikleri
+
+10386 | Hafs → Dahhâk b. Osman → Nâfi‘ → İbn Ömer | İbn Ömer’den: Onun iki mükâtebi vardı, onlar için (fıtır sadakası) vermedi.
+& haddesenâ, an, an, an
+^ قال: «كان له
+
+10387 | Sehl b. Yûsuf → Amr → Hasan | Hasan’dan: O, mükâteb için Ramazan sadakası (gerektiğini) görürdü.
+& haddesenâ, an, an
+^ «أنه كان يرى
+
+10388 | Kesîr b. Hişâm → Ca‘fer b. Burkân → Meymûn | Ca‘fer b. Burkân dedi ki: Bana ulaştı ki Meymûn, mükâteb için fıtır sadakasını öderdi.
+& haddesenâ, an, unbi’tü
+^ «كان يؤدي عن
+
+10389 | Muhammed b. Ebî Bekir → İbn Cüreyc → Atâ | Atâ dedi ki: Eğer mükâteb ise ve kendi adına (fıtır sadakasını) verdiyse —dedi ki— “Kendine yetmiştir; kendi adına vermediyse efendisi onun adına öder.”
+& haddesenâ, an, an
+^ قال: إن كان
+
+10390 | İbnü’d-Derâverdî → Mûsâ b. Ukbe → Nâfi‘ → İbn Ömer | İbn Ömer’den: O, mükâteb üzerine fıtır zekâtı (gerektiğini) görmezdi.
+& haddesenâ, an, an, an
+^ أنه كان «لا
+
+@ Fıtır sadakasında hangi sâ‘ ile verilir
+
+10391 | Mu‘temir → Burd → Mekhûl | Mekhûl dedi ki: “Her kavim Medine ehlinin sâ‘ı ile verir.”
+& haddesenâ, an, an
+^ قال: «يعطي كل
+
+10392 | Yahyâ b. Saîd → Osman b. el-Esved → Mücâhid | Mücâhid dedi ki: “Ailene yiyecek temin ettiğin müd ile.”
+& haddesenâ, an, an
+^ قال: «بالمد الذي
+
+10393 | Hammâd b. Mes‘ade → Hâlid b. Ebî Bekir → Sâlim | Sâlim dedi ki: “Fıtır zekâtını, (bayram namazına) gitmeden önce o günkü çarşı sâ‘ı ile çıkarır ve ancak hurma çıkarır.”
+& haddesenâ, an, kâle
+^ «يخرج زكاة الفطر
+
+10394 | Vekî‘ → Rebî‘ → Hasan | Hasan dedi ki: “Her kavim kendi sâ‘ı ile verir.”
+& haddesenâ, an, an
+^ قال: «يعطي كل
+
+10395 | Abdürrahîm → Hişâm b. Urve → babası ya da Fâtıma → Esmâ | Esmâ dedi ki: “Erzak aldıkları müd ve sâ‘ ile.”
+& haddesenâ, an, an, an
+^ قالت: «بالمد والصاع
+
+10396 | Amr → İbn Cüreyc → Atâ | Atâ dedi ki: “Nebî’nin ﷺ müddü ile verirsen senin yerine geçer; ailene yiyecek temin ettiğin müd ile verirsen (yine) senin yerine geçer.”
+& haddesenâ, an, an
+^ قال: «إذا أعطيت
+
+10397 | Muhammed b. Bekr → İbn Cüreyc → Atâ | Atâ dedi ki: “Bugünkü ölçeğinle, (yani) alıp verdiğin ve geçindiğin ölçekle vermen bana daha sevimlidir.”
+& haddesenâ, an, kâle
+^ «أحب إلي أن
+
+@ Müslüman olmayanlara sadaka hakkında söyledikleri
+
+10398 | Cerîr b. Abdülhamîd → Eş‘as → Ca‘fer → Saîd b. Cübeyr | Saîd b. Cübeyr dedi ki: Resûlullah ﷺ buyurdu: “Ancak kendi dininizden olanlara sadaka verin.” Bunun üzerine Allah teâlâ “Onları hidayete erdirmek sana düşmez” (Bakara 2/272) âyetini “Hayırdan ne harcarsanız size tam olarak ödenir” (Bakara 2/272) sözüne kadar indirdi. Dedi ki: Resûlullah ﷺ buyurdu: “Bütün din mensuplarına sadaka verin.”
+& haddesenâ, an, an, an
+^ قال: قال رسول
+
+10399 | Ebû Muâviye → Haccâc → Sâlim → İbnü’l-Hanefiyye | İbnü’l-Hanefiyye dedi ki: “İnsanlar müşriklere sadaka vermeyi hoş görmediler.” Bunun üzerine Allah teâlâ “Onları hidayete erdirmek sana düşmez” (Bakara 2/272) âyetini indirdi. Dedi ki: “Bunun üzerine insanlar onlara sadaka verdiler.”
+& haddesenâ, an, an, an
+^ قال: «كره الناس
+
+10400 | Cerîr → Leys → Mücâhid | Mücâhid dedi ki: “Yahudiye de hristiyana da sadaka verme; ancak ondan başkasını bulamazsan (verebilirsin).”
+& haddesenâ, an, an
+^ قال: «لا تصدق
+
+10401 | İbn Fudayl → Zibrikân es-Serrâc → Ebû Rezîn | Ebû Rezîn dedi ki: Süfyân b. Seleme ile beraberdim; “Yanından müşriklerden esirler geçti, bana onlara sadaka vermemi emretti.” Sonra şu âyeti okudu: “Onlar, kendileri sevdikleri hâlde yemeği yoksula, yetime ve esire yedirirler.” (İnsân 76/8)
+& haddesenâ, an, an
+^ قال: كنت مع
+
+10402 | Vekî‘ → Şerîk → Abdülkerîm → İkrime | İkrime dedi ki: “Ona yemek yedir, nafaka (para) verme.”
+& haddesenâ, an, an, an
+^ قال: «أطعمه ولا
+
+10403 | Vekî‘ → Süfyân → Ebû İshâk → Ebû Meysere | Ebû Meysere’den: O, rahiplere fıtır sadakasından verirdi.
+& haddesenâ, an, an, an
+^ أنه كان «يعطي
+
+10404 | Humeyd b. Abdurrahmân → Züheyr → Abdülkerîm → İkrime | İkrime dedi ki: “Yahudilere ve hristiyana nafaka (para) olarak sadaka verme.”
+& haddesenâ, an, an, an
+^ قال: «لا تصدق
+
+10405 | Ebû Hâlid el-Ahmer → Haccâc → Amr b. Mürre → Saîd b. Cübeyr; ayrıca Ebû Hâlid el-Ahmer → Haccâc → Atâ | Saîd b. Cübeyr ve Atâ, “Onlar, kendileri sevdikleri hâlde yemeği yoksula, yetime ve esire yedirirler” (İnsân 76/8) (âyeti hakkında) dediler ki: “Kıble ehlinden olanlar ve diğerleri.”
+& haddesenâ, an, an, an; haddesenâ, an, an
+^ {ويطعمون الطعام على
+
+10406 | Ebû Muâviye → Amr b. Nâfi‘ → Ebû Bekir el-Absî → Ömer | Ömer’den, Allah teâlânın “Sadakalar ancak fakirler … içindir” (Tevbe 9/60) sözü hakkında; dedi ki: “Onlar ehl-i kitabın kötürümleridir.”
+& haddesenâ, an, an, an
+^ في قوله تعالى:
+
+10407 | Humeyd b. Abdurrahmân → Hasan → Leys → Mücâhid ve Tâvûs | Mücâhid ve Tâvûs’tan: İkisi de hristiyana sadaka vermeyi hoş görmediler.
+& haddesenâ, an, an, an
+^ أنهما «كرها
+
+10408 | Şebâbe → Şu‘be → Osman el-Bettî → Hasan | Hasan’dan, Allah teâlânın “Onlar, kendileri sevdikleri hâlde yemeği yoksula, yetime ve esire yedirirler” (İnsân 76/8) sözü hakkında; dedi ki: “(Esirler,) şirk ehlinden olan esirlerdir.”
+& haddesenâ, haddesenâ, an, an
+^ في قوله تعالى:
+
+10409 | Yezîd b. Hârûn → Habîb b. Ebî Habîb → Amr b. Herim → Câbir b. Zeyd | Câbir b. Zeyd’den: Ona sadakanın kimlere verileceği soruldu. Dedi ki: “Müslümanlardan yoksul olanlara ve onların zimmîlerine.” Ve dedi ki: “Resûlullah ﷺ zimmîlere sadakadan ve humustan pay dağıtırdı.”
+& haddesenâ, ahberanâ, an, an
+^ قال: سئل عن
+
+@ Zimmîlere sadakadan verilmesi hakkında söyledikleri
+
+10410 | Ebü’l-Ahvas → İbrâhîm b. Muhâcir → İbrâhîm | İbrâhîm b. Muhâcir dedi ki: İbrâhîm’e müslüman olmayanlara sadaka vermeyi sordum, dedi ki: “Zekâta gelince, hayır; ama bir adam (nafile) sadaka vermek isterse sakıncası yoktur.”
+& haddesenâ, an, kâle
+^ قال: سألت إبراهيم،

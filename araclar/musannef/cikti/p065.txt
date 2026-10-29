@@ -1,0 +1,302 @@
+@ Erkek çocuğu yıkayan kadınlar hakkında
+
+10988 | Hişâm → Yûnus → Hasan | Hasan’dan: O, sütten kesilmiş ya da biraz daha büyük olan erkek çocuğu kadının yıkamasında bir sakınca görmezdi.
+& haddesenâ, an, an
+^ أنه كان «لا
+
+10989 | Ezher → İbn Avn → Muhammed | İbn Avn’dan: Muhammed’e çocuğu yıkayan kadın soruldu. Dedi ki: “Bunda bir sakınca bilmiyorum.”
+& haddesenâ, an, kâle
+^ سئل محمد، عن
+
+10990 | Hafs → Leys → Atâ | Atâ dedi ki: “Yürümeye başlamış çocuğun bir bez parçası içine konulup kadınların onu yıkaması yeterlidir.”
+& haddesenâ, an, an
+^ قال: «يكفي الصبي
+
+@ Kadın yıkandığında saçıyla ne yapılır hakkında
+
+10991 | Abdülvehhâb → Eyyûb → Hafsa bt. Sîrîn → Ümmü Atıyye | Ümmü Atıyye dedi ki: “Onun saçını üç örgü hâlinde taradım.” Nebî’nin ﷺ kızını kastediyor.
+& haddesenâ, an, haddesenî, enne
+^ قالت: «مشطتها ثلاثة
+
+10992 | Hafs → Eş‘as → İbn Sîrîn | İbn Sîrîn şöyle derdi: “(Ölü kadın) yıkandığında saçı üç örgü yapılır, sonra arkasına konur.”
+& haddesenâ, an, an
+^ قال: كان يقول
+
+@ Öldürülen ya da şehit düşen kimse hakkında; olduğu gibi mi defnedilir yoksa yıkanır mı?
+
+10993 | Ali b. Müshir → Şeybânî → Müsennâ → Bilâl el-Abdî → şeyhleri | Bilâl el-Abdî dedi ki: Cemel günü yaralandığında Zeyd b. Sûhân’ın yanında bulunmuş olan şeyhlerimiz bize anlattılar; (Zeyd) dedi ki: “Elbiselerimi üzerime bağlayın, benden kanı yıkamayın; çünkü ben dava edecek bir adamım.”
+& haddesenâ, an, an, an, haddesenâ
+^ قال: «شدوا علي
+
+10994 | Ebû Üsâme → Hişâm → İbn Sîrîn → Hucr b. Adî | İbn Sîrîn’den: Ona şehidin yıkanması sorulduğunda Hucr b. Adî’nin hadisini anlatırdı. Dedi ki: Hucr b. Adî, ev halkından yanında bulunanlara dedi ki: “Benden kanı yıkamayın, benden demiri çözmeyin, beni elbiselerim içinde defnedin; çünkü yarın ben ve Muâviye büyük yolda karşılaşacağız.”
+& haddesenâ, an, an, kâle
+^ قال: كان إذا سئل
+
+10995 | Şerîk → Ebû İshâk | Ebû İshâk’tan: Abdullah’ın arkadaşlarından bir adamı düşman öldürdü; biz de onu elbiseleri içinde defnettik.
+& haddesenâ, an
+^ أن رجلا من أصحاب
+
+10996 | Vekî‘ → Süfyân → Kays b. Müslim → Abdurrahmân b. Ebî Leylâ → Saîd b. Abd el-Kârî | Abdurrahmân b. Ebî Leylâ dedi ki: Saîd b. Abd el-Kârî Kâdisiyye günü dedi ki: “İnşallah yarın düşmanla karşılaşacağız ve şehit düşeceğiz. Bizden kanı yıkamayın ve bizi ancak üzerimizdeki elbise içinde kefenleyin.”
+& haddesenâ, haddesenâ, an, an, kâle
+^ يوم القادسية: «إنا
+
+10997 | Vekî‘ → Süfyân → Muhavvel b. Râşid en-Nehdî → Ayzâr b. Hureys el-Abdî → Zeyd b. Sûhân | Ayzâr b. Hureys el-Abdî dedi ki: Zeyd b. Sûhân Cemel günü dedi ki: “Beni toprağa iyice gömün, benden kanı yıkamayın, mestler dışında benden hiçbir elbise çıkarmayın; çünkü ben hüccet getirecek, hüccetleşecek biriyim.”
+& haddesenâ, haddesenâ, an, an, kâle
+^ يوم الجمل: «ارمسوني
+
+10998 | Vekî‘ → Mis‘ar ve Süfyân → Mus‘ab b. el-Müsennâ | Mus‘ab b. el-Müsennâ’dan –Süfyân: “Bir adamdan, o Zeyd b. Sûhân’dan” dedi; Mis‘ar ise: “Mus‘ab b. el-Müsennâ’dan” dedi–: O, Cemel günü dedi ki: “Bizi, kanlarımızdan toprağa bulaşanla birlikte defnedin.”
+& haddesenâ, an, an
+% Süfyân: “عن رجل، عن زيد بن صوحان” dedi; Mis‘ar: “عن مصعب بن المثنى” dedi.
+^ أنه قال يوم الجمل
+
+10999 | Vekî‘ → Şu‘be → Katâde → Saîd b. el-Müseyyeb ve Hasan | Saîd b. el-Müseyyeb ve Hasan’dan: İkisi dediler ki: “Şehit, ölen her ölü gibi yıkanır; ancak cünüp olursa (metinde böyle).”
+& haddesenâ, haddesenâ, an, an
+^ أنهما قالا: «الشهيد
+
+11000 | Vekî‘ → Zekeriyyâ → Âmir | Âmir’den: Hanzala b. er-Râhib’i melekler temizledi.
+& haddesenâ, haddesenâ, an
+^ «أن حنظلة بن
+
+11001 | Vekî‘ → İsmâîl b. Ebî Hâlid → Yahyâ b. Âbis → Ammâr | Ammâr dedi ki: “Beni elbiselerim içinde defnedin; çünkü ben dava edecek biriyim.”
+& haddesenâ, haddesenâ, an, an
+% Arapçada sened böyle yazılıdır: “عن يحيى بن عابس، وعن عمار” (metinde böyle).
+^ قال: «ادفنوني في
+
+11002 | Îsâ b. Yûnus → İsmâîl b. Ebî Hâlid → Yahyâ b. Âbis → Kays b. Ebî Hâzim → Ammâr | İsmâîl b. Ebî Hâlid dedi ki: Yahyâ b. Âbis’i Kays b. Ebî Hâzim’den, o Ammâr’dan bunun benzerini anlatırken işittim.
+& haddesenâ, an, semi‘tü, an, an
+^ مثله
+
+11003 | Ebû Bekir b. Ayyâş → Mugîre → İbrâhîm | İbrâhîm dedi ki: “Öldürülen kimse kaldırıldığında elbiseleri içinde defnedilir. Eğer kaldırıldığında kendisinde bir can kırıntısı varsa, ona başkasına yapılan yapılır.”
+& haddesenâ, an, an
+^ قال: «إذا رفع
+
+11004 | Vekî‘ → Süfyân → Îsâ b. Ebî Azze → Âmir | Âmir’den, hırsızların öldürdüğü bir adam hakkında: Dedi ki: “Elbiseleri içinde defnedilir, yıkanmaz.”
+& haddesenâ, haddesenâ, an, an
+^ في رجل قتلته
+
+11005 | Ebû Üsâme → Sâbit b. Umâre → Guneym b. Kays | Sâbit b. Umâre dedi ki: Guneym b. Kays’ı şöyle derken işittim: “Şehit elbiseleri içinde defnedilir, yıkanmaz.”
+& haddesenâ, haddesenâ, semi‘tü
+^ يقول: «الشهيد يدفن
+
+11006 | Abdüla‘lâ → Yûnus → Hasan | Hasan’dan, öldürülen kimse hakkında: “Eğer üzerinde (bir süre) yaşama mühleti olduysa yıkanır.”
+& haddesenâ, an, an
+^ في القتيل: «إذا
+
+11007 | Hafs b. Gıyâs → Eş‘as → Hasan ve Hammâd ve Hakem → İbrâhîm | İbrâhîm dedi ki: “Savaş alanında ölürse defnedilir; üzerindeki mest ya da ayakkabı çıkarılır. Kendisinde bir can kırıntısı varken kaldırılır da sonra ölürse, ona ölüye yapılan yapılır.”
+& haddesenâ, an, an, an
+^ قال: «إذا مات
+
+11008 | Îsâ b. Yûnus → Amr → Hasan | Hasan’dan: Nebî ﷺ, şehit düştüğünde Hamza hakkında emretti, o da yıkandı.
+& haddesenâ, an, an
+^ أن النبي صلى الله عليه وسلم «أمر
+
+11009 | Fudayl → Sinân → Leys b. Sa‘d → İbn Şihâb → Abdurrahmân b. Ka‘b b. Mâlik → Câbir b. Abdullah | Câbir b. Abdullah’tan: Nebî ﷺ Uhud şehitlerinin namazını kılmadı ve onlar yıkanmadılar.
+& haddesenâ, haddesenâ, ahberanâ, an, an, ahberahû
+^ أن النبي صلى الله عليه وسلم «لم
+
+11010 | Abdullah b. Nümeyr → Ubeydullah → Nâfi‘ → İbn Ömer | İbn Ömer dedi ki: “Ömer kefenlendi, hanûtlandı ve yıkandı.”
+& haddesenâ, haddesenâ, an, an
+^ قال: «كفن عمر
+
+11011 | Şerîk → İbn Ebî Leylâ → Nâfi‘ → İbn Ömer | İbn Ömer’den buna yakını (rivayet edildi); ancak o: “Şehitlerin en faziletlilerinden idi” dedi.
+& haddesenâ, an, an, an
+^ بنحوه إلا أنه
+
+11012 | Vekî‘ → Süfyân → İbn Ebî Arûbe → Ebû Ma‘şer → İbrâhîm | İbrâhîm dedi ki: “Savaş alanında öldürülürse elbiseleri içinde defnedilir ve yıkanmaz.”
+& haddesenâ, an, an, an, an
+^ قال: «إذا قتل
+
+@ Recmedilen kadın yıkanır mı, yıkanmaz mı hakkında
+
+11013 | Vekî‘ b. el-Cerrâh → Süfyân → Alkame b. Mersed → Şa‘bî | Şa‘bî dedi ki: Ali, Şerâha’yı recmedince Hemdân (kabilesi) Ali’ye gelip: “Ona ne yapılacak?” dediler. (Ali): “Ona, kadınlarınız evlerinde öldüklerinde onlara yaptığınız gibi yapın” dedi.
+& haddesenâ, an, an, an
+^ قال: لما رجم علي
+
+11014 | Ebû Muâviye → Ebû Hanîfe → Alkame b. Mersed → babası | Alkame b. Mersed’in babası dedi ki: Mâiz recmedilince: “Ey Allah’ın Resûlü, ona ne yapılacak?” dediler. Buyurdu ki: “Ona ölülerinize yaptığınız yıkama, kefenleme, hanût sürme ve namazını kılmayı yapın.”
+& haddesenâ, an, an, an
+^ قال: لما رجم ماعز
+
+@ Boğulan kimseye ne yapılır, yıkanır mı, yıkanmaz mı hakkında
+
+11015 | Ebû Muâviye → Haccâc → Atâ | Atâ dedi ki: “Boğulan kimse yıkanır, kefenlenir, hanûtlanır ve ona başkasına yapılan yapılır.”
+& haddesenâ, an, an
+^ قال: «يغسل الغريق
+
+@ Ölen cünüp ve hayızlıya ne yapılır hakkında
+
+11016 | Abdüsselâm b. Harb → Haccâc → Atâ | Atâ dedi ki: “Cünüp ve hayızlı öldüğünde onlara başkalarına yapılan yapılır.”
+& haddesenâ, an, an
+^ قال: «إذا مات
+
+11017 | Gunder → Eş‘as → Hasan | Hasan, cünüp öldüğünde dedi ki: “Cünüplüğü için bir gusülle yıkanır, bir de ölü yıkamasıyla yıkanır.” Hayızdan temizlenip de yıkanmadan önce ölen kadın hakkındaki sözü de böyledir.
+& haddesenâ, an, an
+^ قال: إذا مات الجنب
+
+@ Hanût hakkında; onunla ne yapılır ve nereye konur?
+
+11018 | Vekî‘ → İsmâîl b. Ebî Hâlid → Hakîm b. Câbir | Hakîm b. Câbir dedi ki: İbn Kays öldüğünde Hasan b. Ali dedi ki: “Onu yıkadığınızda bana haber verinceye kadar onu kımıldatmayın.” Geldi ve ona hanût ile bir abdest aldırdı.
+& haddesenâ, an, an
+^ قال: لما مات ابن
+
+11019 | Ma‘n b. Îsâ → Hâlid b. Ebî Bekir → Sâlim ve Ubeydullah b. Abdullah | Hâlid b. Ebî Bekir dedi ki: Sâlim ve Ubeydullah b. Abdullah’ı, kendilerine ölünün güzel kokusu anıldığında şöyle derlerken işittim: “Onu, onunla elbiseleri arasına koyun.”
+& haddesenâ, an, semi‘tü
+^ إذا ذكر لهما
+
+11020 | Muhammed b. Fudayl → Hasan b. Ubeydullah → İbrâhîm | İbrâhîm dedi ki: “Elbiseleri tütsülenir, hanûtu da secde yerlerine (sürülür).”
+& haddesenâ, an, an
+^ قال: «تجمر ثيابه
+
+11021 | Yezîd b. Hârûn → Haccâc → Fudayl → İbrâhîm | İbrâhîm’den, ölünün hanûtu hakkında: Dedi ki: “Secde yerlerinden başlanır.”
+& haddesenâ, an, an, an
+^ في حنوط الميت
+
+11022 | Vekî‘ → Süfyân → Mansûr → İbrâhîm | İbrâhîm dedi ki: “Yıkanması bitince secde yerleri güzel koku ile tek tek (koku sürülür).”
+& haddesenâ, an, an, an
+^ قال: «إذا فرغ
+
+11023 | Abdüssamed b. Abdülvâris → Haccâc → Kûfelilerden Ziyâd denilen bir şeyh → İbrâhîm → İbn Mes‘ûd | İbn Mes‘ûd dedi ki: “Kâfur ölünün secde yerinin üzerine konur.”
+& haddesenâ, an, an, an, an
+^ قال: «يوضع الكافور
+
+@ Ölünün yüzüne konulan pamuk hakkında
+
+11024 | Yezîd b. Hârûn → Hişâm | Hişâm dedi ki: Eyyûb, ölünün yıkanmasını bitirdikten sonra yüzünü bir pamukla kapatırdı. Muhammed ise bunu yapmazdı.
+& haddesenâ, an
+^ قال: كان أيوب
+
+11025 | Abdüsselâm b. Harb → Amr → Hasan | Hasan’dan: Ölü için pamuk yoksa keten kırpıntısının yeteceği görüşündeydi.
+& haddesenâ, an, an
+^ أنه كان يرى
+
+@ Ölünün makatının doldurulması ve (ondan çıkmasından) korktukları şey hakkında
+
+11026 | Abdullah b. el-Mübârek → İbn Cüreyc → Atâ | İbn Cüreyc dedi ki: (Atâ’ya): “Pamuk doldurayım mı?” dedim. “Evet” dedi. “Ondan bir şey taşmasın diye mi?” dedim. “Evet” dedi.
+& haddesenâ, an, an
+^ قال: قلت: أحشو
+
+11027 | Hüşeym → Mugîre → İbrâhîm | İbrâhîm dedi ki: “Ondan çıkmasından korktukları şey için ölüye (pamuk) doldurulur.”
+& haddesenâ, an, an
+^ قال: «يحشى من
+
+11028 | İbn Mehdî → Hişâm → Matar → Hasan | Hasan dedi ki: “Makatı, kulakları ve burnu doldurulur.”
+& haddesenâ, an, an, an
+^ قال: «يحشى دبره
+
+11029 | Ebû Dâvûd → Rebî‘ → İbn Sîrîn | Rebî‘ dedi ki: İbn Sîrîn’i şöyle derken işittim: “Ölünün makatına, ağzına ve burun deliklerine pamuk doldurulur.” Muhammed dedi ki: “Makatıyla uğraşacağın zaman ona sol elle uğraş.”
+& haddesenâ, an, semi‘tü
+^ يقول: «يحشى دبر
+
+11030 | Vekî‘ → Hassân b. İbrâhîm → Ümeyye el-Ezdî → Câbir b. Zeyd | Câbir b. Zeyd dedi ki: “Ölüye (pamuk) doldurulduğunda yumuşak yerleri ve kulakları keten kırpıntısıyla tıkanır.”
+& haddesenâ, an, an, an
+^ قال: «إذا حشي
+
+@ Hanûtta misk hakkında; ona ruhsat verenler
+
+11031 | Abdullah b. el-Mübârek → Humeyd → Enes | Enes’ten: O, hanûtuna, içinde Resûlullah’ın ﷺ saçından bir saç bulunan bir kese misk ya da misk koydu.
+& haddesenâ, an, an
+^ «أنه جعل في
+
+11032 | Abdürrahîm b. Süleymân → Âsım → İbn Sîrîn → İbn Ömer | İbn Sîrîn dedi ki: İbn Ömer’e hanûta konulan misk soruldu. Dedi ki: “O, güzel kokularınızın en güzellerinden değil mi?”
+& haddesenâ, an, an, kâle
+^ قال: سئل ابن عمر
+
+11033 | Mu‘temir b. Süleymân → babası → Muhammed b. Sîrîn → İbn Ömer | Muhammed b. Sîrîn dedi ki: İbn Ömer’e: “Ölüye misk yaklaştırılır mı?” diye soruldu. Dedi ki: “O, güzel kokularınızın en güzellerinden değil mi?”
+& haddesenâ, an, an, kâle
+^ قال: سئل ابن عمر
+
+11034 | Abdurrahmân b. Mehdî → Müsennâ b. Saîd → Katâde → Saîd b. el-Müseyyeb | Katâde dedi ki: Saîd b. el-Müseyyeb’e ölünün hanûtundaki miski sordum. “Onda sakınca yoktur” dedi. Bu, Câbir b. Zeyd’e de soruldu; o da: “Onda sakınca yoktur” dedi.
+& haddesenâ, an, an, kâle
+^ قال: سألت سعيد
+
+11035 | Abdürrahîm b. Süleymân → Abdülmelik → Atâ | Atâ’dan: Ona: “Ölüye misk ile koku sürülür mü?” diye soruldu. Dedi ki: “Evet; tütsülemede kullandıkları şeye misk koymuyorlar mı?”
+& haddesenâ, an, an
+^ أنه سئل أيطيب
+
+11036 | Humeyd b. Abdurrahmân → Hasan → Hârûn b. Sa‘d | Hârûn b. Sa‘d’dan: Ali, hanûtuna misk konulmasını vasiyet etti ve: “O, Nebî’nin ﷺ hanûtundan artandır” dedi.
+& haddesenâ, an, an
+^ أن عليا أوصى
+
+11037 | Muhammed b. Fudayl → Atâ b. es-Sâib ve Muhammed b. Sûka → Şa‘bî | Şa‘bî dedi ki: Selmân Belencer’e gazaya çıkınca payına bir kese misk düştü. Dönünce onu hanımına emanet etti. Vefat ettiği hastalığa yakalanınca, ölmek üzereyken hanımına: “Sana emanet ettiğim keseyi bana göster” dedi. Onu getirdi. “Bana temiz bir kap getir” dedi. Onu getirdi. “Onu (suyla) çalkala, sonra onu etrafıma serp; çünkü yanıma Allah’ın yaratıklarından, yemek yemeyen fakat kokuyu alan bir yaratık gelecek” dedi. Ve: “Yanımdan çık, beni ara sıra kolla” dedi. (Hanımı) dedi ki: Çıktım, sonra döndüm; vefat etmişti.
+& haddesenâ, an, an
+^ قال: لما غزا سلمان
+
+11038 | İbn Uleyye → Eyyûb → Nâfi‘ | Nâfi‘den: İbn Ömer bir ölüyü misk ile hanûtladı.
+& haddesenâ, an, an
+^ أن ابن عمر «حنط
+
+@ Hanûtta miski hoş görmeyenler
+
+11039 | Abbâd b. el-Avvâm → Haccâc → Fudayl → İbn Mugaffel → Ömer | İbn Mugaffel dedi ki: Ömer dedi ki: “Beni misk ile hanûtlamayın.”
+& haddesenâ, an, an, an, kâle
+^ «لا تحنطوني بمسك»
+
+11040 | Hâtim b. İsmâîl → Ca‘fer b. Muhammed → Süfyân b. Âsım | Süfyân b. Âsım dedi ki: Ömer b. Abdülazîz’in yanında bulundum; bir cariyesine dedi ki: “Hanûtumu miskle hazırladığını görüyorum; ona misk koyma.”
+& haddesenâ, an, an
+^ قال: شهدت عمر
+
+11041 | Ebû Hâlid el-Ahmer → İbn Cüreyc → Atâ | Atâ’dan: Dedi ki: “Hanûtta amberde sakınca yoktur.” Ve: “O ancak bir zamktır” dedi. Miski ise diri ve ölü için hoş görmedi ve: “O bir leştir” dedi.
+& haddesenâ, an, an
+^ أنه قال: «لا
+
+11042 | İsmâîl b. Uleyye → Leys → Mücâhid | Mücâhid’den: O, ölü için miski hoş görmedi.
+& haddesenâ, an, an
+^ أنه «كره المسك
+
+11043 | Sehl b. Yûsuf → Amr → Hasan | Hasan’dan: O, miski diri ve ölü için hoş görmezdi ve şöyle derdi: “Müslümanlar onu hoş görmezlerdi ve: ‘O bir leştir’ derlerdi.”
+& haddesenâ, an, an
+^ أنه كان يكره
+
+11044 | Yahyâ b. Yemân ve Vekî‘ → İbn Ebî Revvâd → Dahhâk | Dahhâk’tan: O, hanûtta miski hoş görmedi.
+& haddesenâ, an, an
+^ أنه " كره المسك
+
+@ Ölü kaç (parça) ile kefenlenir hakkında söyledikleri
+
+11045 | Hafs b. Gıyâs → Hişâm b. Urve → babası → Âişe | Âişe’den: Resûlullah ﷺ, içinde gömlek ve sarık bulunmayan üç Yemen kumaşı içinde kefenlendi. Âişe’ye: “Onun hibere bir bürde içinde kefenlendiğini iddia ediyorlar” dedik. Dedi ki: “Hibere bir bürde getirdiler, fakat onu onunla kefenlemediler.”
+& haddesenâ, an, an, an
+^ أن رسول الله صلى الله عليه وسلم «كفن
+
+11046 | Abdullah b. İdrîs → Yezîd → Miksem → İbn Abbâs | İbn Abbâs dedi ki: “Resûlullah’ın ﷺ kefeni üç elbise idi: İçinde vefat ettiği gömleği ve kendisine ait Necrân işi bir cübbe.”
+& haddesenâ, an, an, an
+^ قال: " كان كفن
+
+11047 | Şerîk → Ebû İshâk | Ebû İshâk dedi ki: Benî Abdülmuttalib’in meclislerinden bir meclisin yanından geçtim ve onlara: “Resûlullah ﷺ kaç (parça) içinde kefenlendi?” diye sordum. Dediler ki: “İçinde gömlek, kaftan ve sarık bulunmayan üç (parça) içinde.”
+& haddesenâ, an
+^ قال: مررت على
+
+11048 | Hafs b. Gıyâs → Ca‘fer → babası | Ca‘fer’in babası dedi ki: “Resûlullah ﷺ iki Suhâr elbisesi ve bir hibere bürde içinde kefenlendi.” (Ca‘fer) dedi ki: Babam da bana bunu vasiyet etti.
+& haddesenâ, an, an
+^ قال: «كفن رسول
+
+11049 | Cerîr → Mansûr | Mansûr dedi ki: “Resûlullah ﷺ kırmızı bir hulle ve kırmızı toprakla boyanmış bir elbise içinde kefenlendi.”
+& haddesenâ, an
+^ قال: «كفن رسول
+
+11050 | Muhammed b. Fudayl → Hişâm → babası → Âişe | Âişe dedi ki: Ebû Bekir’e ölüm gelince: “Resûlullah ﷺ kaç (parça) içinde kefenlendi?” dedi. “Üç Sehûl elbisesi içinde” dedim. Üzerindeki eski bir elbiseye bakıp: “Bunu yıkayın ve üzerine iki elbise daha ilave edin” dedi. “Bilakis sana yeni elbiseler satın alalım” dedim. Dedi ki: “Diri, yeniye ölüden daha çok hak sahibidir; o ancak irin içindir.”
+& haddesenâ, an, an, an
+^ قالت: لما حضر أبو
+
+11051 | Süfyân b. Uyeyne → Amr → İbn Müleyke → Âişe | Âişe dedi ki: Ebû Bekir: “Resûlullah’ı ﷺ kaç (parça) içinde kefenlediniz?” dedi. “Üç elbise içinde” dedim. Dedi ki: “Şu iki elbisemi yıkayın ve bana çarşıdan bir elbise satın alın.” (Âişe): “Biz varlıklıyız” dedi. Dedi ki: “Kızcağızım, diri, yeniye ölüden daha çok hak sahibidir; o ancak irin ve cerahat içindir.”
+& haddesenâ, an, an, an
+% Arapçada ad böyle yazılıdır: “ابن مليكة” (metinde böyle).
+^ قالت: قال أبو بكر
+
+11052 | Ali b. Müshir → Ubeydullah → Abdurrahmân b. el-Kâsım → babası | Abdurrahmân b. el-Kâsım’ın babası dedi ki: “Ebû Bekir iki Sehûl elbisesi ve kendisine ait, yıkanmasını emrettiği kırmızı toprakla boyanmış bir ridâ içinde kefenlendi.”
+& haddesenâ, an, an, an
+^ قال: «كفن أبو
+
+11053 | Vekî‘ → Süfyân → Âsım → Sâlim → İbn Ömer | İbn Ömer’den: Ömer üç elbise içinde kefenlendi.
+& haddesenâ, an, an, an, an
+^ «أن عمر كفن
+
+11054 | Vekî‘ → Sevr → Râşid b. Sa‘d → Ömer | Ömer dedi ki: “Kişi üç elbise içinde kefenlenir. Haddi aşmayın; ‘Şüphesiz Allah haddi aşanları sevmez.’ (Bakara 2/190)”
+& haddesenâ, an, an, kâle
+^ " يكفن الرجل
+
+11055 | Yahyâ b. Saîd → Ca‘dî → İbrâhîm b. Nâfi‘ → Ebû Hüreyre | Ebû Hüreyre dedi ki: “Beni üç elbise içinde kefenleyin; beni onlara iyice sarın.”
+& haddesenâ, an, an, kâle
+^ «كفنوني في ثلاثة
+
+11056 | Yezîd b. Hârûn → Habîb → Amr → İbrâhîm → Câbir b. Zeyd → İbn Abbâs | İbrâhîm dedi ki: Câbir b. Zeyd’e ölünün kefenden kaç (parça) ile kefenleneceği soruldu. Dedi ki: İbn Abbâs şöyle derdi: “Bir elbise, ya da üç elbise, ya da beş elbise.”
+& haddesenâ, an, an, an, kâle, kâle
+^ «ثوب، أو ثلاثة
