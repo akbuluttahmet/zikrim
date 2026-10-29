@@ -3495,7 +3495,7 @@ async function raviRender(name) {
   const TABS = [['al', 'Aldıkları', Object.keys(aldigi).length], ['ver', 'Verdikleri', Object.keys(verdigi).length], ['riv', 'Rivayetleri', sayi]];
   const seg = el('div', 'ravi-seg'), pane = el('div', 'ravi-pane');
   const btns = {};
-  for (const [k, l, n] of TABS) { const b = el('button', null, l + ' '); b.type = 'button'; b.append(el('small', null, fmt(n))); b.addEventListener('click', () => tab(k)); btns[k] = b; seg.append(b); }
+  for (const [k, l, n] of TABS) { const b = el('button', null, l + ' '); b.type = 'button'; b.append(el('small', null, k === 'riv' ? fmt(n) : `${fmt(n)} kişi`)); b.addEventListener('click', () => tab(k)); btns[k] = b; seg.append(b); }
   RAVI.body.append(seg, pane);
   const panes = {};
   const build = k => {
