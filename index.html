@@ -13,6 +13,9 @@
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="ai.css">
+<!-- Ayrı sunucu varsa HTTPS API kökü: https://sunucun.example/api/ai -->
+<meta name="sekine-ai-api" content="">
 <title>Sekîne — Zikir ve İlim</title>
 </head>
 <body data-theme="classic" class="at-main" data-tab="zikir">
@@ -245,11 +248,27 @@
   <div id="araRes" class="ara-res"></div>
 </section>
 <div id="toast" role="status" aria-live="polite"></div>
+<dialog id="aiSheet" class="sheet ai-sheet" aria-labelledby="aiTitle">
+  <div class="ai-heading"><h2 id="aiTitle">Kaynaklara sor <small>· Deneme</small></h2><button type="button" id="aiClose" class="ghost" aria-label="Kaynaklara sor penceresini kapat">Kapat</button></div>
+  <p class="ai-intro">Yalnızca mevcut Türkçe kütüphane metinlerinde arar. Gemini ilgili kaynakları seçer; alıntılar metinden aynen gösterilir. Yeni hüküm veya sıhhat değerlendirmesi üretmez.</p>
+  <p class="ai-hint">“Gemini ile seç” sorunu ve bulunan Türkçe metinleri Gemini hizmetine gönderir. “Kaynak ara” Gemini kullanmaz.</p>
+  <form id="aiForm">
+    <label for="aiQuestion">Sorun<textarea id="aiQuestion" minlength="3" maxlength="800" required placeholder="Örneğin: Kabir azabından Allah’a sığınmakla ilgili hangi rivayet var?"></textarea></label>
+    <label for="aiLibrary">Aranacak kitaplık<select id="aiLibrary"><option value="">Bütün kütüphane</option><option value="musannef">el-Musannef</option><option value="musned">el-Müsned</option><option value="sunan">Sünen-i Ebî Dâvûd</option><option value="usul">Usûlü’s-Sünne</option><option value="acurri">el-Âcurrî</option><option value="seria">eş-Şerîa</option><option value="ahmed">İmam Ahmed’in risaleleri</option><option value="zuhd">ez-Zühd</option><option value="fezail">Fezâilü’s-sahâbe</option><option value="ibnebiseybe">İbn Ebî Şeybe’nin küçük kitapları</option><option value="berbehari">Şerhu’s-Sünne</option><option value="hallal">el-Hallâl</option><option value="safii">eş-Şâfiî</option><option value="buhari">el-Buhârî</option><option value="ebudavud">Ebû Dâvûd’un risalesi</option><option value="harb">Harb el-Kirmânî</option><option value="ibane">el-İbâne</option></select></label>
+    <div class="ai-examples" aria-label="Örnek sorular"><button type="button" class="chip-button" data-ai-example="Kabir azabından Allah’a sığınmakla ilgili hangi rivayet var?">Allah’a sığınma</button><button type="button" class="chip-button" data-ai-example="İçim daraldığında okuyabileceğim dualar var mı?">Sıkıntı anında dua</button></div>
+    <div class="ai-actions"><button type="submit" class="primary" value="gemini">Gemini ile seç</button><button type="submit" class="ghost" value="search">Kaynak ara</button></div>
+  </form>
+  <div id="aiAccess" class="ai-access" hidden><label for="aiToken">Deneme erişim kodu<input id="aiToken" type="password" autocomplete="off" placeholder="Yalnız bu pencere açıkken kullanılır"></label><button type="button" class="chip-button" id="aiSetToken">Kodu kullan</button></div>
+  <p id="aiStatus" class="ai-status" role="status" aria-live="polite">Kaynak seçimine bakabilir, kaynakları kitapta açabilir ve yanlış sonuçlar için düzeltme hazırlayabilirsin.</p>
+  <div id="aiResults"></div>
+  <details id="aiFeedback" class="ai-feedback" hidden><summary>Sonucu değerlendir / düzelt</summary><p class="ai-hint">Doğru kaynakları yukarıda işaretle. Düzeltmen dosya olarak indirilir; inceleme ve onay olmadan sisteme eklenmez.</p><label class="ai-check"><input type="checkbox" id="aiAbstain">Bu soruya mevcut kaynaklarla cevap verilmemeli</label><label for="aiFeedbackNote">Düzeltmen veya eksik kaynak<textarea id="aiFeedbackNote" maxlength="2000" placeholder="Beklediğin kaynak ve düzeltilmesi gereken nokta…"></textarea></label><button type="button" class="chip-button" id="aiExportFeedback">Düzeltmeyi indir</button></details>
+</dialog>
 <button type="button" id="toTop" class="to-top" aria-label="Başa dön" title="Başa dön" tabindex="-1">↑</button>
 <label id="haptic" class="haptic" aria-hidden="true"><input type="checkbox" switch tabindex="-1"></label>
 <script src="fikih.js"></script>
 <script src="usul.js"></script>
 <script src="hadis.js"></script>
 <script src="script.js"></script>
+<script src="ai.js"></script>
 </body>
 </html>

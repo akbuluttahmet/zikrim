@@ -1,0 +1,23 @@
+name: Kaynaklı AI denemesi
+on:
+  pull_request:
+    paths: ['ai/**', 'ai.js', 'ai.css', 'script.js', 'index.html', 'sw.js', 'araclar/ai_indeks.py', '**/*.json', 'usul.js', '.github/workflows/ai-deneme.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  dogrula:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: python3 araclar/ai_indeks.py
+      - run: python3 -m unittest ai.test_ai -v
+      - run: python3 -m ai.evaluate --include-drafts --report ai/reports/retrieval.json
+      - run: node --check ai.js && node --check script.js && node --check sw.js
+      - run: python3 araclar/kontrol.py

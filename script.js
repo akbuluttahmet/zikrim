@@ -2351,6 +2351,11 @@ function libSub(v, span) {
 function openLib(v) { if (LIBS[v]) LIBS[v].book = null; setView(v); }
 // Okumaya devam ettiklerim Profilim'dedir; Kütüphane kökü Kaydettiklerim, Sözler ve âlimlerden oluşur
 function renderLibrary() {
+  const ai = el('button', 'lib-saved');
+  ai.type = 'button'; ai.dataset.openAi = '';
+  ai.append(el('span', null, 'Kaynaklara sor'), el('small', null, 'Deneme'));
+  ai.dataset.search = 'kaynaklara sor yapay zeka ai';
+  cardsEl.append(ai);
   const sv = el('button', 'lib-saved');
   sv.type = 'button';
   const c = el('small', null); c.id = 'cntSaved'; c.textContent = RD.saved.length;
@@ -3336,6 +3341,32 @@ $('#araAll').addEventListener('click', () => araOpen(searchEl.value.trim()));
 searchEl.addEventListener('pointerdown', e => { if (view === 'kutuphane') { e.preventDefault(); araOpen(searchEl.value.trim()); } });
 searchEl.addEventListener('focus', () => { if (view === 'kutuphane') { searchEl.blur(); araOpen(searchEl.value.trim()); } });
 searchEl.addEventListener('input', () => { $('#araAll').hidden = !(searchEl.value.trim().length > 1 && !/^\d+$/.test(searchEl.value.trim()) && (LIBS[view] || view === 'usul' || view === 'alim' || view === 'kaydedilen')); });
+
+// AI kaynakları kitap sırasıyla değil dosya adıyla çözülür; eski indeks yanlış rivayeti açmaz.
+document.addEventListener('sekine:ai-source', async e => {
+  const {source, done} = e.detail || {};
+  if (typeof done !== 'function') return;
+  try {
+    if (!source || typeof source.library !== 'string' || !Number.isFinite(source.number)) throw new Error();
+    if (source.library === 'usul') {
+      const item = USUL.find(x => x[0] === source.number);
+      if (!item || item[2] !== source.text) throw new Error();
+      done(null); goTo('usul', null, source.number, true);
+      return;
+    }
+    const L = LIBS[source.library];
+    if (!L) throw new Error();
+    L.idx = L.idx || await libFetch(L, 'index.json');
+    const bi = L.idx.findIndex(x => x.f === source.file && x.t);
+    if (bi < 0) throw new Error();
+    const data = await libFetch(L, 'tr/' + L.idx[bi].f);
+    const item = data.babs.flatMap(bb => bb.h).find(h => h[0] === source.number);
+    if (!item || item[2] !== source.text) throw new Error();
+    done(null); goTo(source.library, bi, source.number, true);
+  } catch {
+    done('Kaynak bu kütüphane sürümüyle eşleşmedi veya yüklenemedi. Uygulamayı yenileyip tekrar dene.');
+  }
+});
 
 function navRecord() {
   if (navSkip) return;

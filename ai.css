@@ -1,0 +1,23 @@
+/* Mevcut temanın renklerini kullanan kaynaklı AI denemesi. */
+.ai-sheet{width:min(720px,calc(100vw - 20px));max-height:calc(100dvh - 24px)}
+.ai-heading{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.ai-heading h2{margin:0}
+.ai-intro,.ai-bab,.ai-hint{color:var(--muted);font-size:13px;line-height:1.6}
+.ai-sheet #aiQuestion{min-height:90px}
+.ai-sheet select{width:100%;padding:10px;border:1px solid var(--border);border-radius:10px;background:var(--bg);color:var(--text);font:inherit;margin-top:6px}
+.ai-actions,.ai-examples{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.ai-examples button{font-size:12px}
+.ai-status{line-height:1.6;font-size:14px;white-space:pre-wrap}
+.ai-source{border:1px solid var(--border);border-radius:16px;padding:16px;margin:16px 0;background:var(--bg)}
+.ai-source h3{margin:0;font-size:15px;line-height:1.6}
+.ai-source blockquote{margin:12px 0;padding-inline-start:12px;border-inline-start:3px solid var(--accent);font-size:16px;line-height:1.8;white-space:pre-wrap;overflow-wrap:anywhere}
+.ai-source summary{cursor:pointer;font-size:13px;padding:8px 0}
+.ai-original{white-space:pre-wrap;line-height:1.8;overflow-wrap:anywhere}
+.ai-arabic{font-family:var(--arabic);font-size:23px;line-height:2}
+.ai-edition{font-size:12px;line-height:1.7;color:var(--muted)}
+.ai-full{margin-bottom:12px}
+.ai-sheet label.ai-correct{display:flex;align-items:center;gap:6px;margin:12px 0 0;font-size:12px;font-weight:400}
+.ai-feedback{border-top:1px solid var(--border);padding-top:12px;margin-top:18px}
+.ai-sheet label.ai-check{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:400}
+.ai-access{padding:12px;border:1px solid var(--border);border-radius:12px}
+@media(prefers-reduced-motion:reduce){.ai-sheet{scroll-behavior:auto}}
