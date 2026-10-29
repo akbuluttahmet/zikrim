@@ -1,0 +1,312 @@
+@ Bir adamın başka bir adamı (evinde) oturtması
+
+20113 | İsmâîl b. İbrâhîm → Hâlid el-Hazzâ → Ömer b. Abdülazîz | Hâlid el-Hazzâ dedi ki: Ömer b. Abdülazîz, süknânın (oturtma hakkının) âriyet olduğunu yazdı. (Oturtan) “O, onun ve akibinindir” derse, o onundur; onlardan bir kadın kaldıkça akibinindir. Hepsi tükenince onun mirasçılarına döner.
+& haddesenâ, an, kâle
+^ قال: كتب عمر
+
+20114 | İbn Ebî Zâide → Abdülmelik → Atâ | Atâ’dan: Bir adamı kendisi ve akibi için (evinde) oturtan, sonra ölen adam hakkında dedi ki: “Onun mirasçıları onu çıkaramaz; onlardan biri kaldıkça akibini de (çıkaramazlar).”
+& haddesenâ, an, an
+^ في الرجل يسكن
+
+20115 | Vekî‘ → Sâib b. Ömer → İbn Ebî Müleyke | İbn Ebî Müleyke dedi ki: Âişe (birini evine) oturttuğunda “Seni, bana uygun göründüğü sürece oturttum” derdi.
+& haddesenâ, an, an
+^ قال: كانت عائشة
+
+20116 | İbn Ebî Zâide → Haccâc → Osman → Şüreyh | Şüreyh dedi ki: “Süknâ, sahibinin şart koştuğu şeydir.”
+& haddesenâ, an, an, an
+% Osman, Şüreyh’in kardeşinin oğludur.
+^ قال: «السكنى ما
+
+20117 | Hafs → Haccâc → Osman → Şüreyh | (Şüreyh’ten) buna yakını (rivayet edildi).
+& haddesenâ, an, an, an
+^ بنحوه
+
+20118 | Hafs → Eş‘as → Hasan ve Şa‘bî | Hasan ve Şa‘bî dediler ki: “Süknâ âriyettir.”
+& haddesenâ, an, an
+^ قالا: «السكنى
+
+20119 | Hüşeym → Mugîre → İbrâhîm | Mugîre dedi ki: İbrâhîm’e, evinde bir adamı oturtan, sonra oturtan da oturan da ölen bir adamı sordum. Dedi ki: “Oturtanın mirasçılarına döner.” Dedim ki: “Ey Ebû İmrân, Şüreyh ‘Kim bir şeye hayatı boyunca mâlik kılınırsa, o, kendisinden sonra onun mirasçılarınındır’ derdi.” Dedi ki: “Bu ancak umrâdadır. Süknâ, gelir ve âriyet ise sahiplerinin mirasçılarına döner.”
+& haddesenâ, an, an
+^ قال: سألته عن
+
+20120 | Abdüla‘lâ → Ma‘mer → Zührî | Zührî dedi ki: “Adam bir şey hibe eder de ‘O senin ve akibinindir’ derse, o onun ve mirasçılarınındır.” “O, hayatın boyunca senindir” derse, o ona geri döner.
+& haddesenâ, an, an
+^ قال: " إذا وهب
+
+20121 | İbn Ebî Ganiyye → babası → Hakem | Hakem dedi ki: “Süknâ âriyettir.”
+& haddesenâ, an, an
+^ قال: «السكنى عارية»
+
+20122 | İbn Ebî Zâide → Eş‘as → Muhammed | Muhammed dedi ki: Kardeşler Şüreyh’e dava götürdüler. Biri dedi ki: “(O), beni evlendirdi; beni ve oğullarımı (evine) yerleştirdi.” (Şüreyh) dedi ki: “Onu evlendirdi ve yerleştirdi mi?” Onlar “Onu evlendirdi ve yerleştirdi” dediler. (Şüreyh) dedi ki: “Onun, hayatında seni bununla kendisine tercih ettiğine dair adalet sahibi iki şahit (gerekir).”
+& haddesenâ, an, an
+^ قال: اختصم إخوة
+
+@ Sadaka kabzedilmedikçe geçerli olmaz diyenler
+
+20123 | Abdullah b. el-Mübârek → Ma‘mer → Zührî | Zührî dedi ki: “Bir adam oğluna yüz dinar sadaka verdi; ikisi ortaktı, mal da oğlunun elindeydi.” Dedi ki: “Onu zapt etmedikçe geçerli olmaz.” Ebû Bekir ve Ömer: “Zapt etmezse onun için bir şey yoktur” diye hükmettiler.
+& haddesenâ, an, an
+^ قال: «تصدق رجل
+
+20124 | İbn Uyeyne → Zührî → Urve → Abdurrahmân b. Abdin el-Kârî → Ömer | Ömer dedi ki: “Kimi adamlara ne oluyor ki çocuklarına bağışlar veriyorlar; onlardan birinin oğlu ölünce ‘Malım benimdir ve elimdedir’ diyor; kendisi ölünce ‘Onu çocuğuma bağışlamıştım’ diyor. Bağış yoktur; ancak babanın değil, çocuğun zapt ettiği bağış müstesna.”
+& haddesenâ, an, an, an, kâle
+^ " ما بال رجال
+
+20125 | Süfyân b. Uyeyne → Zührî → Saîd | Saîd dedi ki: Osman’a, çocuk küçük olduğunda (bağışı) zapt edemediği şikâyet edildi. “(Osman), babası ona hibe edip şahit tuttuğunda (çocuğun) zapt etmiş olacağı görüşüne vardı.”
+& haddesenâ, an, an
+^ قال: شكي ذلك
+
+20126 | Ebû Muâviye → Îsâ b. el-Müseyyeb → Şa‘bî → Osman | Osman dedi ki: “Sadaka kabzedilmedikçe geçerli olmaz; ancak anne babası arasındaki çocuk müstesna, çünkü onların (onun adına) kabzı onun için kabzdır.”
+& haddesenâ, an, an, an
+^ أنه قال: «لا
+
+20127 | İbnü’l-Mübârek → Haccâc → Şa‘bî | Haccâc dedi ki: Şa‘bî’yi şöyle derken işittim: “Sadaka kabzedilmedikçe geçerli olmaz.”
+& haddesenâ, an, semi‘tü
+^ قال: سمعت الشعبي
+
+20128 | İbnü’l-Mübârek → İsmâîl → Şa‘bî | (Şa‘bî’den) bunun benzeri (rivayet edildi).
+& haddesenâ, an, an
+^ مثله
+
+20129 | Vekî‘ → Süfyân → Ebû Hasîn → Şüreyh | Şüreyh dedi ki: “Sadaka kabzedilmedikçe geçerli olmaz.”
+& haddesenâ, an, an, an
+^ قال: «لا تجوز
+
+20130 | Vekî‘ → Süfyân → Câbir → Kâsım → Muâz ve Şüreyh | Kâsım dedi ki: Muâz ve Şüreyh şöyle derlerdi: “Sadaka kabzedilmedikçe geçerli olmaz; ancak anne babası arasındaki çocuk müstesna.”
+& haddesenâ, an, an, an, kâle
+^ قال: كان معاذ
+
+20131 | Vekî‘ → Hemmâm → Katâde → Hasan → Nadr b. Enes | Nadr b. Enes dedi ki: Babam bana evinin yarısını bağışladı. Ebû Bürde dedi ki: “Bunu zapt etmek seni sevindirirse onu kabzet; çünkü Ömer b. el-Hattâb bağışlar hakkında, onlardan kabzedilenin geçerli, kabzedilmeyenin miras olduğuna hükmetti.”
+& haddesenâ, haddesenâ, an, an, an
+^ قال: نحلني أبي
+
+20132 | Vekî‘ → Şu‘be → Hakem ve Hammâd | Şu‘be dedi ki: Hakem’e ve Hammâd’a sordum; dediler ki: “Kabzedilmedikçe geçerli olmaz.”
+& haddesenâ, an, kâle
+^ قال: سألت الحكم
+
+20133 | Hafs → Eş‘as → İbrâhîm | İbrâhîm dedi ki: “Sadaka bilinirse, kabzedilmese de geçerlidir.” (Kişi) “Falan falan yerdeki evim” ya da “kölem” derse, “kabzedilmese de geçerlidir.”
+& haddesenâ, an, an
+^ قال: «إذا علمت
+
+20134 | Hafs → Haccâc → Kâsım → Ali ve Abdullah | Ali ve Abdullah dediler ki: “Sadaka bilinirse, kabzedilmese de geçerlidir.”
+& haddesenâ, an, an, an
+^ قالا: «إذا علمت
+
+20135 | Süfyân b. Uyeyne → Zührî → Urve → Âişe | Âişe’den: Ebû Bekir ona yirmi vesklik hurma hasadı bağışlamıştı. (Ölüm) hâli gelince ona dedi ki: “Keşke onu zapt etseydin ya da kesip devşirseydin. O, bugün ancak mirasçının malıdır.”
+& haddesenâ, an, an, an
+^ أن أبا بكر، كان
+
+20136 | Vekî‘ → Îsâ b. el-Müseyyeb → Kâsım b. Abdurrahmân → babası → İbn Mes‘ûd | İbn Mes‘ûd dedi ki: “Sadaka bilindiğinde, kabzedilsin ya da kabzedilmesin (geçerlidir).”
+& haddesenâ, haddesenâ, an, an, an
+^ قال: «الصدقة إذا
+
+20137 | Hafs → Haccâc → Atâ → İbn Abbâs | İbn Abbâs dedi ki: “Sadaka kabzedilmedikçe geçerli olmaz.”
+& haddesenâ, an, an, an
+^ قال: «لا تجوز
+
+20138 | Hafs → Haccâc → Fudayl → İbrâhîm | İbrâhîm dedi ki: “O, kabzedilmese de geçerlidir.”
+& haddesenâ, an, an, an
+^ قال: «هي جائزة
+
+20139 | Ebû Muâviye → Haccâc → kendisine rivayet eden biri → İbn Abbâs | İbn Abbâs dedi ki: “Sadaka kabzedilmedikçe geçerli olmaz.”
+& haddesenâ, an, an, an
+^ قال: «لا تجوز
+
+@ Genç köleler karşılığında mükâtebe hakkında
+
+20140 | Abbâd b. el-Avvâm → Muhammed b. İshâk → Nâfi‘ → İbn Ömer | İbn Ömer’den: “Genç köleler karşılığında mükâtebe yapmakta bir sakınca görmezdi.”
+& haddesenâ, an, an, an
+^ قال: «كان لا
+
+20141 | İsmâîl b. İbrâhîm → Eyyûb → Nâfi‘ | Nâfi‘’den: Hafsa, kendisine ait bir köleyle genç köleler karşılığında mükâtebe yaptı.
+& haddesenâ, an, an
+^ أن حفصة
+
+20142 | Hüşeym b. Beşîr → Abdülhamîd → Sevvâr → Sâre | Sâre’den: Ebû Berze kölelerinden bazısıyla köleler karşılığında mükâtebe yaptı.
+& haddesenâ, an, an, haddesenî
+% Sevvâr, Sâre hakkında: “Bir hısımım; Ebû Berze’nin mevlâsı.”
+^ أن أبا برزة
+
+20143 | Hüşeym ve Cerîr → Mugîre → İbrâhîm | İbrâhîm dedi ki: “Bir köleyle genç köleler karşılığında mükâtebe yapılmasında sakınca yoktur.”
+& haddesenâ, an, an
+^ قال: «لا بأس
+
+20144 | Vekî‘ → Süfyân → Ammâr → Saîd b. Cübeyr | Saîd b. Cübeyr dedi ki: “Bir köleyle genç köleler karşılığında mükâtebe yapılmasında sakınca yoktur.” Cerîr bunda “genç cariyeler” (lafzını) ekledi.
+& haddesenâ, an, an, an
+^ قال: «لا بأس
+
+20145 | İbn İdrîs → Hişâm → Hasan ve İbn Sîrîn | Hasan ve İbn Sîrîn’den: İkisi, mükâtebin genç köleler karşılığında mükâtebe yapmasında bir sakınca görmezlerdi.
+& haddesenâ, an, an
+^ «أنهما كانا
+
+20146 | Vekî‘ → Süfyân → Ammâr → Saîd b. Cübeyr | Saîd b. Cübeyr dedi ki: “Genç köleler karşılığında mükâtebede sakınca yoktur.”
+& haddesenâ, an, an, an
+^ قال: «لا بأس
+
+20147 | Hafs → Şeybânî → Şa‘bî | Şa‘bî dedi ki: “Kişinin kölesiyle genç köleler karşılığında mükâtebe yapmasında sakınca yoktur.”
+& haddesenâ, an, an
+^ قال: «لا بأس
+
+20148 | İbnü’l-Mübârek → Evzâî → Atâ → İbn Abbâs | İbn Abbâs’tan: O, adamın kölesiyle genç köleler karşılığında mükâtebe yapmasında bir sakınca görmezdi.
+& haddesenâ, an, an, an
+^ «أنه كان
+
+20149 | Abbâd b. el-Avvâm → Haccâc → İkrime b. Hâlid el-Mahzûmî | İkrime b. Hâlid el-Mahzûmî’den: Bir adam kölesiyle, onun sanatı gibi sanat icra eden iki köle karşılığında mükâtebe yaptı. Ömer b. el-Hattâb’a başvurdular. (Ömer) dedi ki: “Sana onun sanatı gibi sanat icra eden iki köle getirmezse onu köleliğe geri döndür.”
+& haddesenâ, an, an
+^ أن رجلا كاتب
+
+20150 | Abdüla‘lâ → Ma‘mer → Zührî | Zührî dedi ki: “Kişinin kölesiyle belirli bir vadeye kadar köleler karşılığında mükâtebe yapmasında sakınca yoktur.”
+& haddesenâ, an, an
+^ قال: «لا بأس
+
+20151 | Abdülvehhâb b. Atâ → Saîd → Katâde → Ömer b. Abdülazîz | Ömer b. Abdülazîz’den: O, genç köleler karşılığında peşin olarak mükâtebe yapmakta bir sakınca görmez, veresiye olmasını ise hoş görmezdi. Bu, Katâde’nin de görüşüdür.
+& haddesenâ, an, an, an
+^ «أنه كان
+
+20152 | Vekî‘ → Hammâd b. Zeyd → Abdullah b. Ebî Bekir b. Enes | Abdullah b. Ebî Bekir b. Enes dedi ki: Sîrîn’in mükâtebe (yazısı) yanımızdadır: “Bu, Enes b. Mâlik’in kölesiyle üzerinde mükâtebe yaptığı şeydir: Onunla şu kadar bin ve onun işi gibi iş yapan iki köle karşılığında mükâtebe yaptı.”
+& haddesenâ, haddesenâ, an
+^ قال: هذه مكاتبة
+
+@ Îneyi hoş görmeyenler
+
+20153 | Hafs b. Gıyâs → Leys → Atâ → İbn Ömer | İbn Ömer dedi ki: “Îneden nehyetti.”
+& haddesenâ, an, an, an
+^ قال: «نهى
+
+20154 | Hafs → Eş‘as → Hakem → Mesrûk | Mesrûk dedi ki: “Îne haramdır.”
+& haddesenâ, an, an, an
+^ قال: «العينة حرام»
+
+@ (başlıksız)
+
+20155 | Mu‘temir b. Süleymân → babası → İyâs b. Muâviye | İyâs b. Muâviye’den: “O, sûku (caiz) görürdü”; îneyi kastediyor (metinde böyle).
+& haddesenâ, an, an
+^ «أنه كان
+
+20156 | Ebû Muâviye → Hişâm → İbn Sîrîn | İbn Sîrîn’den: O, îneyi hoş görmedi.
+& haddesenâ, an, an
+^ «أنه كره
+
+20157 | Muâz b. Muâz → İbn Avn → Muhammed → İbn Abbâs | İbn Avn dedi ki: Muhammed’in yanında îneyi andılar. O dedi ki: Bana haber verildi ki İbn Abbâs şöyle derdi: “Dirhemlere karşılık dirhemler, aralarında da bir cerîre.”
+& haddesenâ, an, kâle, unbi’tü
+^ قال: ذكروا عند
+
+20158 | Fadl b. Dükeyn → Ebû Cenâb ve Yezîd b. Merdânbe → Ömer b. Abdülazîz | Ebû Cenâb ve Yezîd b. Merdânbe’den; biri “bize geldi”, öbürü “geldi” dedi: Ömer b. Abdülazîz’in Abdülhamîd’e mektubu (geldi): “Senin tarafındakileri îneden men et; çünkü o ribânın kardeşidir.”
+& haddesenâ, an, kâle
+^ قال أحدهما:
+
+20159 | Vekî‘ → Rebî‘ → Hasan ve İbn Sîrîn | Hasan ve İbn Sîrîn’den: İkisi îneyi ve insanların ondan içine girdikleri şeyi hoş görmediler.
+& haddesenâ, an, an
+^ «أنهما كرها
+
+20160 | Yezîd b. Hârûn → Haccâc → Ebû İshâk → Mesrûk | Ebû İshâk dedi ki: Mesrûk’tan işittim: “Îneyi ve cerîreyi hoş görmedi.”
+& haddesenâ, an, an, semi‘tü
+^ قال: سمعت مسروقا
+
+@ Hayvan kiralayıp onunla (belirlenen yeri) aşan adam
+
+20161 | Hüşeym → Ebû Hamza İmrân b. Ebî Atâ | İmrân dedi ki: “Şüreyh’in yanında bulundum; ona iki adam dava götürmüştü. Biri diğerinden belirli bir yere kadar bir hayvan kiralamış ve (orayı) aşmıştı. Şüreyh onu tazminle yükümlü tuttu.”
+& haddesenâ, an
+^ قال: «شهدت
+
+20162 | Hafs b. Gıyâs → Hasan b. Ubeydullah → İbrâhîm | Hasan b. Ubeydullah dedi ki: İbrâhîm’e, bir hayvan kiralayıp onunla (belirlenen yeri) aşan adamı sordum. Dedi ki: “O tazminle yükümlüdür; muhalefet ettiği kısımda ona kira yoktur.”
+& haddesenâ, an, kâle
+^ قال: سألت إبراهيم
+
+20163 | Vekî‘ → Süfyân → Eş‘as → Hakem | Hakem dedi ki: “Hayvan sağ salim kalırsa iki kira onun üzerinde toplanır.”
+& haddesenâ, an, an, an
+^ قال: «إذا سلمت
+
+20164 | Ebû Üsâme → İbn Ebî Zâide → Muhammed b. Abdullah es-Sekafî → Şüreyh | Şüreyh’ten: O, bir adamdan Redme’ye kadar bir hayvan kiralayan, onunla vakti aşan, hayvanın sakatlanıp ölmesi üzerine (olan) bir adam hakkında hükmetti: Ona, belirttiği yere kadar ücreti yükledi; muhalefet ettiği zaman da hayvanı ona tazmin ettirdi.
+& haddesenâ, haddesenâ, haddesenî, an
+^ أنه «قضى في
+
+20165 | Muhammed b. Fudayl → Hasan b. Ubeydullah → İbrâhîm | İbrâhîm dedi ki: “Kişi hayvanı bir yere kadar kiralarsa, onun kirası (sahibi) içindir. Onunla (orayı) aşar da hayvan telef olursa, (sahibi) için onun ilk kirası vardır; (kiracının) da onu tazmin etmesi gerekir.”
+& haddesenâ, an, an
+^ قال: «إذا تكارى
+
+20166 | Vekî‘ → Süfyân → İbn Avn → Şüreyh | Şüreyh’ten: Bir hayvan kiralayıp vakti aşan adam hakkında dedi ki: “Kira ve tazmin onun üzerinde toplanır.”
+& haddesenâ, an, an, an
+^ في رجل اكترى
+
+@ Bir mal satın alan, (malın) alıcı kabzetmeden önce satıcının elinde helâk olduğu adam hakkında
+
+20167 | Abbâd b. el-Avvâm → Eş‘as → Hakem | Hakem’den: Bir adamdan mal satın alan, (mal) onu kabzetmeden önce satıcının elinde helâk olan adam hakkında dedi ki: “Eğer (satıcı) ona ‘Malını al’ demiş de o almamışsa, (mal) satıcının elinde müşterinin malıdır. Eğer ‘Bedeli getirinceye kadar onu sana vermem’ demişse, satıcının malıdır.”
+& haddesenâ, an, an
+^ في رجل اشترى
+
+20168 | İbn Ebî Zâide (Dâvûd) → Âmir | Dâvûd dedi ki: Âmir’e dedim: “Bir adam vadeli olarak kumaş satın aldı; onu alıkoydu, denkledi ve satıcının evine koydu; onu mal karşılığında rehin olarak alıkoymadı. Sonra mal yandı.” Dedi ki: “Satıcının malındandır.”
+& haddesenâ, kâle
+% Arapçada ad böyle yazılıdır: “ابن أبي زائدة هو داود” (metinde böyle).
+^ قال: قلت لعامر
+
+20169 | İbn Uleyye → İbn Avn → İbrâhîm | İbrâhîm dedi ki: “Adam malı satın alır da müşteri ‘Onu bana taşı’ der, satıcı da ‘Hayır, bedeli bana getirinceye kadar (olmaz)’ derse, bu rehin yerindedir; helâk olursa satıcının malındandır. Satıcı müşteriye ‘Onu taşı’ der de (müşteri) ‘Bedeli sana getirinceye kadar onu bırak’ derse, bu emanet yerindedir; helâk olursa müşterinin malındandır. Bunu satar, şunu satmaz.” İbn Avn dedi ki: Bunu Muhammed’e andım; dedi ki: “Doğru söylemiş, sanırım.”
+& haddesenâ, an, an
+^ قال: " إذا اشترى
+
+20170 | İsmâîl b. İbrâhîm → Dâvûd b. Ebî Hind → Şa‘bî | Dâvûd b. Ebî Hind’den: Bir adam bir adamdan vadeli olarak mal satın aldı ve onu alıkoydu. Geceleyin onlara bir yangın baskın yaptı ve bir kısmını yaktı. Şa‘bî’ye sordum; dedi ki: “O, elinde bulunan kimsenin malındandır.”
+& haddesenâ, an, kâle
+^ أن رجلا ابتاع
+
+@ Efendisinin kendisine çıkmamayı ve evlenmemeyi şart koştuğu mükâtep hakkında
+
+20171 | Hüşeym → Yûnus → Hasan | Hasan’dan: O derdi ki: (Efendi) mükâtebine çıkmamayı ve evlenmemeyi şart koşarsa –dedi ki– “Onun şartı bâtıldır; (mükâtep) dilediği yere gider ve evlenir.”
+& haddesenâ, an, an
+^ أنه كان يقول
+
+20172 | Hüşeym → Abîde → İbrâhîm | İbrâhîm dedi ki: “Siz mükâtebe helâl olmayan şartlar koşuyorsunuz; ona çıkmamayı ve evlenmemeyi şart koşuyor.” Dedi ki: “Çıkar ve evlenir.”
+& haddesenâ, an, an
+^ قال: " إنكم
+
+20173 | Hüşeym → İsmâîl → Şa‘bî | (Şa‘bî’den) bunun benzeri (rivayet edildi).
+& haddesenâ, an, an
+^ مثله
+
+20174 | Hafs b. Gıyâs → Eş‘as → Ebü’z-Zübeyr → Câbir | Câbir dedi ki: “Kitâb ehli için ona şart koştukları vardır; onlar için ondan aldıkları da vardır.”
+& haddesenâ, an, an, an
+^ قال: «لأهل الكتاب
+
+20175 | Vekî‘ → Süfyân → Ebü’l-Cehm → Saîd b. Cübeyr | Saîd b. Cübeyr dedi ki: “Dilerse çıkar.”
+& haddesenâ, an, an, an
+^ قال: «يخرج إن
+
+20176 | Vekî‘ → İsmâîl → Şa‘bî | Şa‘bî’den: Mükâtebine çıkmamayı şart koşan adam hakkında dedi ki: “Çıkar.” Vekî‘ dedi ki: Süfyân dedi ki: “Efendisinin izni olmadan çıkmaz.”
+& haddesenâ, an, an
+^ في رجل اشترط
+
+20177 | Ebû Bahr el-Bekrâvî → Muhammed b. Ebî Yahyâ → annesi | Muhammed b. Ebî Yahyâ dedi ki: Annem bana haber verdi ki onun dedesi Abdullah b. Kays el-Eslemî’nin mükâtebi idi. Basra’ya çıkmak istedi; (Abdullah) onu engelledi. Osman’a geldi; (Osman) dedi ki: “Onu engellemek senin hakkın değildir.” (Abdullah) da onu serbest bıraktı.
+& haddesenâ, an, ahberanî
+^ قال: أخبرتني أمي
+
+20178 | Vekî‘ → Süfyân → Câbir | Câbir’den: Mükâtebine çıkmamayı ve evlenmemeyi şart koşan adam hakkında dedi ki: “Evlenir ve çıkar.”
+& haddesenâ, an, an
+^ في الرجل يشترط
+
+20179 | Hafs → Eş‘as → Hakem ve Hammâd → İbrâhîm | İbrâhîm dedi ki: “Mükâtebe zarar verecek şeyi şart koşmalarını hoş görmezlerdi: şehirden çıkmamasını ve evlenmemesini.”
+& haddesenâ, an, an, an
+^ قال: " كانوا
+
+@ Süslü kılıç, süslü kemer ve mushaf hakkında
+
+20180 | Şerîk b. Abdullah → İbrâhîm b. Muhâcir → İbrâhîm | İbrâhîm dedi ki: “Habbâb demirci idi. Bazen süslü kılıcı gümüş karşılığında satın alırdı.” “Bazen (de) mushafı andı.”
+& haddesenâ, an, an
+^ قال: «كان خباب
+
+20181 | Ebû Bekir b. Ayyâş → Husayn → Şa‘bî | Şa‘bî dedi ki: “Süslü kılıcı gümüş karşılığında satın almakta sakınca yoktur.”
+& haddesenâ, an, an
+^ قال: «لا بأس
+
+20182 | Hafs b. Gıyâs → Eş‘as → Hasan | Hasan dedi ki: “Gümüş kaplamalı kılıcı peşin karşılığında satın almakta sakınca yoktur.”
+& haddesenâ, an, an
+^ قال: «لا بأس
+
+20183 | Hafs → Eş‘as → İbn Sîrîn | İbn Sîrîn’den: O, bunu hoş görmedi.
+& haddesenâ, an, an
+^ «أنه كرهه»
+
+20184 | Vekî‘ → Muhammed b. Abdullah → Ebû Kılâbe → Enes | Enes dedi ki: Biz Fâris toprağındayken Ömer’in mektubu bize geldi: “İçinde gümüş halka bulunan kılıçları dirhemle satmayın.”
+& haddesenâ, an, an, an
+^ قال: أتانا كتاب
+
+20185 | İbnü’l-Mübârek → Saîd b. Yezîd → Hâlid b. Ebî İmrân → Haneş → Fadâle b. Ubeyd | Fadâle b. Ubeyd dedi ki: Hayber günü Nebî’ye (aleyhisselâm), içinde altınla tutturulmuş boncuklar bulunan bir gerdanlık getirildi; onu bir adam dokuz ya da yedi dinara satın almıştı. (Adam) Nebî’ye (aleyhisselâm) gelip bunu ona andı. (Nebî) dedi ki: “Hayır, ikisinin arasını ayırıncaya kadar (olmaz).” (Adam) dedi ki: “Ben ancak taşları istedim.” Dedi ki: “Hayır, ikisinin arasını ayırıncaya kadar.”
+& haddesenâ, an, semi‘tü, an, an
+^ قال: أتي النبي

@@ -1,0 +1,240 @@
+@ Boşanan kadın hakkında söyledikleri: İddeti içinde hacca gidebilir mi? Bunu hoş görmeyenler
+
+18852 | Vekî‘ → Ali b. el-Mübârek → Yahyâ b. Ebî Kesîr | Yahyâ b. Ebî Kesîr’den: İbn Ömer, iddeti içinde hacceden bir kadını azarladı.
+& haddesenâ, an, an
+^ «أن ابن عمر
+
+18853 | Ebû Hâlid el-Ahmer → Eş‘as → Ebü’z-Zübeyr → Câbir | Câbir dedi ki: “Ömer b. el-Hattâb, kocaları o su başlarından bazısında öldürülmüş, hacca giden kadınları Zülhuleyfe’den geri çevirdi.”
+& haddesenâ, an, an, an
+^ قال: «رد عمر
+
+18854 | Ebû Hâlid el-Ahmer → Mâlik b. Enes → Humeyd b. Kays → Amr b. Şuayb → Saîd b. el-Müseyyeb | Saîd b. el-Müseyyeb dedi ki: “Ömer, kocaları ölmüş kadınları Beydâ’dan geri çevirdi ve onları hacdan men etti.”
+& haddesenâ, an, an, an, an
+^ قال: «رد عمر
+
+@ Boşanan kadına iddeti içinde hacca gitmeye ruhsat verenler
+
+18855 | Vekî‘ → Üsâme → Kâsım; ayrıca Vekî‘ → Cerîr b. Hâzim → Atâ | Kâsım’dan ve Atâ’dan: Âişe, Ümmü Külsûm’u iddeti içinde hacca götürdü.
+& haddesenâ, an, an; haddesenâ, an, an
+^ «أن عائشة أحجت
+
+18856 | Ebû Muâviye → Haccâc → Atâ → İbn Abbâs | İbn Abbâs’tan: O, üç talakla boşanmış kadınların ve kocaları ölmüş kadınların iddetleri içinde hac yapmalarında bir sakınca görmezdi.
+& haddesenâ, an, an, an
+^ «أنه كان لا
+
+18857 | Sekafî → Habîb el-Muallim → Atâ | Habîb el-Muallim dedi ki: Atâ’ya, üç talakla boşanmış kadını ve kocası ölmüş kadını sordum: İddetleri içinde hac yapabilirler mi? Dedi ki: “Evet.” Habîb dedi ki: Hasan da bunun benzerini söylerdi.
+& haddesenâ, an, kâle
+^ قال: سألت عطاء
+
+@ Kocası ölen kadın hakkında; evinde iddet bekler diyenler
+
+18858 | Ebû Hâlid el-Ahmer → Sa‘d b. İshâk → Zeyneb bt. Ka‘b b. Ucre → Füreya bt. Mâlik | Zeyneb bt. Ka‘b b. Ucre’den (o, Ebû Saîd el-Hudrî’nin nikâhı altındaydı): Onun kız kardeşi Füreya bt. Mâlik dedi ki: Kocam kaçan kölelerini aramaya çıktı; onlara Kadûm’un kenarında yetişti, onu öldürdüler. Kocamın ölüm haberi geldiğinde ben, ailemin evlerinden uzak, Ensâr’ın evlerinden bir evdeydim. Nebî’ye ﷺ gelip dedim ki: “Ey Allah’ın Resûlü, bana kocamın ölüm haberi geldi; ben bir evdeyim, kardeşlerimin evi de ailemin evinden uzaktır. (Kocam) bana harcanacak bir mal bırakmadı, miras bırakılan bir mal da, sahip olduğu bir ev de (bırakmadı). Eğer izin vermeyi uygun görürsen, ailemin evine ya da kardeşlerimin evine katılayım; çünkü bu bana daha sevimli ve işimin bir kısmını bana daha çok derleyip toplayacak olandır.” Buyurdu ki: “Dilersen yap.” (Füreya) dedi ki: Allah’ın Resûlü’nün diliyle hükmettiğine gözüm aydın olarak çıktım. Mescidde ya da odanın bir kısmındayken beni çağırdı ve “Ne demiştin?” diye sordu. Kıssayı ona anlattım. Buyurdu ki: “Yazılı (iddet) süresini doluncaya kadar kocanın içinde bulunduğu evinde kal.” (Füreya) dedi ki: Orada dört ay on gün iddet bekledim.
+& haddesenâ, an, an, enne
+% Zeyneb bt. Ka‘b b. Ucre, Ebû Saîd el-Hudrî’nin nikâhı altındaydı.
+^ قالت: خرج زوجي
+
+18859 | İbn Uyeyne → Mansûr → İbrâhîm → Alkame | Alkame’den: Hemdân’dan bazı kadınların kocaları öldürüldü. Abdullah dedi ki: “Gündüz bir araya gelirler, geceyi de kendi evlerinde geçirirler.”
+& haddesenâ, an, an, an
+^ أن نسوة من همدان
+
+18860 | Ebü’l-Ahvas → Mansûr → İbrâhîm | İbrâhîm dedi ki: Hemdân’dan bazı kadınların kocaları öldü. İddet beklemek için içlerinden bir kadının evinde bir araya gelmek istediler. İbn Mes‘ûd’a sormak için haber gönderdiler. Dedi ki: “Her kadın kendi evinde iddet bekler.”
+& haddesenâ, an, an
+^ قال: توفي عن
+
+18861 | İbn Uleyye → Eyyûb → Yûsuf b. Mâhek → annesi Müseyke | Yûsuf b. Mâhek’in annesi Müseyke’den: Bir kadın iddet içindeyken ailesini ziyaret etti; onların yanında doğum sancısı tuttu. (Müseyke dedi ki:) Osman yatsıyı kılıp yatağına girdikten sonra bana (haber) gönderdi. Dedim ki: “Falan kadın iddeti içindeyken ailesini ziyaret etti; doğum sancısı çekiyor; bana ne emredersin?” (Râvi) dedi ki: O hâlde evine taşınmasını emretti.
+& haddesenâ, an, an, an
+^ أن امرأة زارت
+
+18862 | Vekî‘ → Ali b. el-Mübârek → Yahyâ b. Ebî Kesîr → İbn Sevbân | İbn Sevbân’dan: Kocası ölmüş ve muhtaçlık içinde olan bir kadın, ailesine gitmek için Ömer’e (izin) sordu. (Ömer) ona gündüzün aydınlığında ailesine gitmesine ruhsat verdi.
+& haddesenâ, an, an, an
+^ أن امرأة توفي
+
+18863 | Vekî‘ → Ali b. el-Mübârek → Yahyâ b. Ebî Kesîr → Muhammed b. Abdurrahmân | Muhammed b. Abdurrahmân’dan: Ensâr’dan kocası ölmüş bir kadın Zeyd b. Sâbit’e sordu; (Zeyd) ona ancak gündüzünün ve gecesinin aydınlığında ruhsat verdi.
+& haddesenâ, an, an, an
+^ أن امرأة من الأنصار
+
+18864 | Cerîr → Mansûr → İbrâhîm | İbrâhîm dedi ki: Kocası ölmüş bir kadın ondan (dolayı) iddet bekliyordu. Babası hastalandı. Ümmü Seleme’ye: “Babama gidip ona bakabilir miyim?” diye sormak için haber gönderdi. (Ümmü Seleme) dedi ki: “Günün iki ucundan birinde evinde bulunursan (olur).”
+& haddesenâ, an, an
+^ قال: كانت امرأة
+
+18865 | Vekî‘ → İsmâîl → İbrâhîm | İsmâîl dedi ki: İbrâhîm’i şöyle derken işittim: “Kocası ölen kadın, evinden başka yerde gecelemez.”
+& haddesenâ, an, semi‘tü
+^ قال: سمعت إبراهيم
+
+18866 | Vekî‘ → Üsâme b. Zeyd → Nâfi‘ | Nâfi‘’den: Bir kadının kocası öldü; (kadın) bir gün evinde iddet bekledi (metinde böyle). İbn Ömer ona onu kaza etmesini emretti.
+& haddesenâ, an, an
+^ أن امرأة توفي
+
+18867 | Ebû Üsâme → Hişâm b. Urve → babası | Hişâm b. Urve dedi ki: Babama kocası ölen kadını sordum: Taşınabilir mi? Dedi ki: “Hayır; ancak ailesi taşınırsa onlarla birlikte taşınır.”
+& haddesenâ, an, kâle
+^ قال: سألت أبي
+
+18868 | İbn Fudayl → Husayf → Saîd b. el-Müseyyeb | Husayf dedi ki: Saîd b. el-Müseyyeb’e kocası ölen kadını sordum: Evinden çıkabilir mi? Dedi ki: “Hayır.”
+& haddesenâ, an, kâle
+^ قال: سألت سعيد
+
+18869 | Gunder → Şu‘be → Hakem | Hakem dedi ki: Ömer ve Abdullah, “Taşınmaz” derlerdi.
+& haddesenâ, an, an
+^ قال: كان عمر
+
+18870 | Abde → İsmâîl → Şa‘bî | Şa‘bî dedi ki: “Abdullah’ın arkadaşları şöyle derlerdi: Kocasının evinde süresini tamamlayıncaya kadar çıkmaz.”
+& haddesenâ, an, an
+^ قال: " كان أصحاب
+
+18871 | Ebû Hâlid el-Ahmer → Yahyâ b. Saîd → Saîd b. el-Müseyyeb | Saîd b. el-Müseyyeb’den: Ensâr’dan bir kadının kocası öldü; babası da hastalandı. (Kadın) Ömer’den izin istedi; (Ömer) ona ancak evinde (kalmasına) ruhsat verdi.
+& haddesenâ, an, an
+^ «أن امرأة من الأنصار
+
+18872 | Ebû Hâlid el-Ahmer → Muhammed b. Aclân → Avf b. Ebî Cemîle | Avf b. Ebî Cemîle dedi ki: Bir dostum öldü ve Kubâ’da bir eşini bıraktı. Karısı gelip dedi ki: “İbn Ömer’e sor: (Hasta olan bir yakınıma) çıkıp onunla ilgilenebilir miyim?” İbn Ömer’e gittim; dedi ki: “Gündüz çıkar, geceleyin (dışarıda) gecelemez.”
+& haddesenâ, an, an
+^ قال: توفي صديق
+
+18873 | Yezîd b. Hârûn → İbn Avn → Enes → İbn Sîrîn | İbn Sîrîn’den: Abdullah’ın bir kızının kocası öldü. (Kız) onlara geldi ve yanlarında gecelemek istedi. Abdullah b. Ömer onu engelledi ve dedi ki: “Evine dön; evim (yine) onun içindedir” (metinde böyle).
+& haddesenâ, ahberanâ, an, an
+^ أن ابنة لعبد الله
+
+@ Kocası ölen kadına (evinden) çıkmaya ruhsat verenler
+
+18874 | Cerîr b. Abdülhamîd → Mansûr → Hakem | Hakem dedi ki: “Ömer öldürüldüğünde Ali, Ümmü Külsûm’u taşıdı; Talha öldürüldüğünde de Âişe kız kardeşini taşıdı.”
+& haddesenâ, an, an
+^ قال: «نقل علي
+
+18875 | İbn Uyeyne → Amr → Atâ ve Ebü’ş-Şa‘sâ | Atâ’dan ve Ebü’ş-Şa‘sâ’dan, kocası ölen kadın hakkında: İkisi dediler ki: “Çıkar.”
+& haddesenâ, an, an
+% Maddenin sonunda bir sonraki maddenin başı olan “حدثنا أبو بكر قال:” yazılıdır.
+^ في المتوفى عنها
+
+18876 | Muhammed b. Müyesser → İbn Cüreyc → Atâ → İbn Abbâs; ayrıca Muhammed b. Müyesser → İbn Cüreyc → Ebü’z-Zübeyr → Câbir | İbn Abbâs ve Câbir dediler ki: “Kocası ölen kadın dilediği yerde iddet bekler.”
+& haddesenâ, an, an, an; haddesenâ, an, an, an
+^ قالا: «تعتد
+
+18877 | Abde b. Süleymân → İsmâîl → Şa‘bî | Şa‘bî dedi ki: “Ali, kocası ölen kadını yolculuğa çıkarırdı.”
+& haddesenâ, an, an
+^ قال: «كان علي
+
+18878 | Vekî‘ → Süfyân → Firâs → Şa‘bî | Şa‘bî’den: Ali, Ümmü Külsûm’u yedi (gün)den sonra taşıdı.
+& haddesenâ, an, an, an
+^ «أن عليا نقل
+
+@ Karısını boşayan, (kadının da) bir ya da iki hayız gördüğü adam hakkında
+
+18879 | Yahyâ b. Saîd → Süfyân → Mugîre → İbrâhîm | İbrâhîm’den: Karısını boşayan, kadının bir ya da iki hayız gördüğü, iddeti içinde evlendiği ve iddetinin (ikinci) kocasının yanında sona erdiği adam hakkında dedi ki: “Ondan bir talakla bâin olmuştur.”
+& haddesenâ, an, an, an
+^ في رجل طلق
+
+18880 | Abdüla‘lâ → Saîd → Ali b. el-Hakem → Muhammed b. Yezîd → Saîd b. Cübeyr | Abdüla‘lâ dedi ki: Saîd’e, bir kadınla iddeti içinde evlenen, sonra onunla iddeti içinde evlendiğini öğrenen ve kadının iddeti onun yanında sona ermiş olan bir adam soruldu: Birinci kocasının ona dönme hakkı var mıdır? Bize Ali b. el-Hakem’den, o Muhammed b. Yezîd’den, o Saîd b. Cübeyr’den rivayet etti; o dedi ki: “İkisinin arası ayrılır; onun (birincinin) ona dönme hakkı yoktur, çünkü iddeti bunun yanında sona ermiştir.”
+& haddesenâ, kâle, an, an, an
+^ أنه قال: «يفرق
+
+18881 | Abdüla‘lâ → Saîd → Katâde | Katâde’den: O dedi ki: “Kocası ona en hak sahibidir; iddeti sona erinceye kadar ona yaklaşmaz.”
+& haddesenâ, an, an
+^ أنه قال: «زوجها
+
+18882 | İbn Mehdî → Süfyân → Mugîre → İbrâhîm | İbrâhîm’den: Karısını bir ya da iki talakla boşayan, kadının onun yanında iki hayız gördüğü, sonra bir adamın onunla evlendiği ve onun yanında da iki hayız gördüğü (kadın) hakkında dedi ki: “Birinciden bâin olmuştur; bunu (hayızları) ondan sonraki için saymaz.”
+& haddesenâ, an, an, an
+^ في رجل طلق
+
+18883 | İbn Mehdî → Süfyân → Ma‘mer → Zührî | Zührî dedi ki: “Onu sayar.”
+& haddesenâ, an, an, an
+^ قال: «تحتسب به»
+
+@ Kocası ölen cariye hakkında söyledikleri: Ne kadar iddet bekler?
+
+18884 | İsmâîl b. Uleyye → Yûnus → Hakem | Hakem dedi ki: “Kocası ondan ölürse” —cariyeyi kastediyor— “iki ay beş gece iddet bekler.”
+& haddesenâ, an, an
+^ قال: «إن توفي
+
+18885 | Abde b. Süleymân → Saîd → Ebû Ma‘şer → İbrâhîm | İbrâhîm dedi ki: “Kocası ölünce cariyenin iddeti, hür kadının iddetinin yarısı, iki ay beş gündür.”
+& haddesenâ, an, an, an
+^ قال: «عدة الأمة
+
+18886 | Ubeydullah b. Mûsâ → Şeybân → Firâs → Şa‘bî | Şa‘bî’den: Hür olan kocası ölen köle kadın hakkında: Onun iddeti iki ay beş gündür.
+& haddesenâ, an, an, an
+^ «في مملوكة توفي
+
+18887 | Şebâbe → Leys b. Sa‘d → Bükeyr → İbnü’l-Müseyyeb ve İbn Kusayt | İbnü’l-Müseyyeb’den ve İbn Kusayt’tan: Hür olan kocası ölen cariye hakkında: Onun iddeti iki ay beş gündür.
+& haddesenâ, an, an, an
+^ «في الأمة إذا توفي عنها زوجها حرا
+
+18888 | Şebâbe → Leys b. Sa‘d → Bükeyr → İbnü’l-Müseyyeb ve İbn Kusayt | İbnü’l-Müseyyeb’den ve İbn Kusayt’tan: Kocası ölen cariye hakkında: İki ay beş gün iddet bekler.
+& haddesenâ, an, an, an
+^ «في الأمة إذا توفي عنها زوجها اعتدت
+
+18889 | Hâtim b. Verdân → Bürd → Mekhûl | Mekhûl’den: Kocası ölen cariye hakkında: Hür kadının iddetini bekler.
+& haddesenâ, an, an
+^ «في الأمة إذا مات
+
+@ (başlıksız)
+
+18890 | Süfyân b. Uyeyne → Zührî → Süleymân b. Yesâr → Zeyd b. Sâbit | Süleymân b. Yesâr’dan: Muâviye, Zeyd b. Sâbit’e sordu. (Zeyd) dedi ki: “Üçüncü hayza girince ondan kurtulmuştur.”
+& haddesenâ, an, an, kâle
+^ «إذا طعنت
+
+18891 | Cerîr b. Abdülhamîd → Mugîre → Mûsâ b. Şeddâd → Ömer b. Sâbit → Zeyd b. Sâbit | Ömer b. Sâbit dedi ki: Zeyd b. Sâbit şöyle derdi: “Kocası ona dönmeden önce üçüncü hayzı görürse, (koca) ric‘ata sahip olmaz.”
+& haddesenâ, an, an, an, kâle
+^ «إذا حاضت
+
+18892 | İbn İdrîs → Eş‘as → Zührî → Ebû Bekir b. Abdurrahmân → Âişe ve Zeyd | Ebû Bekir b. Abdurrahmân’dan: Âişe ve Zeyd şöyle derlerdi: “Üçüncü kana girince onun ona dönme hakkı yoktur.”
+& haddesenâ, an, an, an, enne
+^ «إذا دخلت
+
+18893 | Ebû Muâviye → Abdullah b. Ömer → Nâfi‘ → İbn Ömer ve Zeyd b. Sâbit | İbn Ömer ve Zeyd b. Sâbit’ten: İkisi dediler ki: “Üçüncü (hayzı) görünce bâin olmuştur.”
+& haddesenâ, an, an, an
+^ أنهما قالا
+
+18894 | Abdülvehhâb es-Sekafî → Yahyâ b. Saîd → Ebân b. Osman ve Sâlim b. Abdullah | Ebân b. Osman ve Sâlim b. Abdullah dediler ki: “Üçüncü hayza girince bâin olmuştur.”
+& haddesenâ, an, an
+^ قالا: «إذا دخلت
+
+18895 | Vekî‘ → Süfyân → Ebü’z-Zinâd → Süleymân b. Yesâr → Zeyd b. Sâbit | Zeyd b. Sâbit dedi ki: “Üçüncü hayza girince ondan bâin olmuştur.”
+& haddesenâ, an, an, an, an
+^ قال: «إذا دخلت
+
+@ Üçüncü hayızdan gusletmedikçe o, ona dönmeye en hak sahibidir diyenler
+
+18896 | Hafs b. Gıyâs → A‘meş → İbrâhîm → Amr ve Abdullah | Amr ve Abdullah’tan: İkisi dediler ki: “Karısını boşayan kimse, kadın üçüncü hayzından gusletmedikçe ona dönmeye en hak sahibidir.”
+& haddesenâ, an, an, an
+% Arapçada ad böyle yazılıdır: “عمرو” (metinde böyle).
+^ أنهما قالا
+
+18897 | Gunder → Şu‘be → Hakem → İbrâhîm → Esved → Ömer ve Abdullah | Ömer ve Abdullah dediler ki: “O, ona en hak sahibidir.”
+& haddesenâ, an, an, an, an, an
+^ قالا: «هو أحق
+
+18898 | İbn Uyeyne → Mansûr → İbrâhîm → Alkame → Ömer ve Abdullah | Ömer ve Abdullah dediler ki: “Üçüncü hayızdan gusledinceye kadar o, ona en hak sahibidir.”
+& haddesenâ, an, an, an, an
+^ قالا: «هو أحق
+
+18899 | İsmâîl b. Ayyâş → Abdullah el-Kelâî → Mekhûl | Mekhûl’den: Ebû Bekir, Ömer, Ali, İbn Mes‘ûd, Ebü’d-Derdâ, Ubâde b. es-Sâmit ve Abdullah b. Kays el-Eş‘arî, karısını bir ya da iki talakla boşayan adam hakkında şöyle derlerdi: “Kadın üçüncü hayzından gusletmedikçe o, ona en hak sahibidir; iddet içinde bulunduğu sürece o ona, o da ona mirasçı olur.”
+& haddesenâ, an, an
+^ أن أبا بكر،
+
+18900 | İsmâîl b. Ayyâş → Ubeydullah b. Ubeyd → Mekhûl → İbn Ömer | Mekhûl dedi ki: İbn Ömer dedi ki: “Kadın üzerine suyu dökmeden önce yıkanma yerine onun yanına girerse, o ona en hak sahibidir.”
+& haddesenâ, an, an, kâle
+^ «إن دخل عليها
+
+18901 | Süfyân b. Uyeyne → Zührî → Saîd b. el-Müseyyeb → Ali | Ali dedi ki: “Üçüncü hayızdan gusledinceye kadar o, ona en hak sahibidir.”
+& haddesenâ, an, an, an
+^ قال: «هو أحق
+
+18902 | Yahyâ b. Saîd → İbn Aclân → Mekhûl → Saîd b. el-Müseyyeb | Saîd b. el-Müseyyeb dedi ki: “Bir adam, yıkanmakta iken karısının yanına girip ‘Sana döndüm’ dese, kadın da ‘Yalan söyledin, yalan söyledin’ deyip suyu başına dökse, o (adam) ona en hak sahibidir.”
+& haddesenâ, an, an, an
+^ قال: " لو أن
+
+18903 | Abbâd b. el-Avvâm → Cüveybir → Dahhâk b. Müzâhim | Dahhâk b. Müzâhim’den: Bir kadın genç bir adamla evlendi; (adam) onu bir ya da iki talakla boşadı. (Dahhâk) dedi ki: Kadın üçüncü hayızdan yıkanırken (adam) ona gelip dedi ki: “Ey falan kadın, ben sana döndüm.” Kadın dedi ki: “Yalan söyledin; bu senin elinde değil.” Sultan Ömer b. el-Hattâb’a başvurdular; yanında Abdullah b. Mes‘ûd vardı. Ömer dedi ki: “Ne görüyorsun, ey Ebû Abdurrahmân?” (Abdullah kadına) dedi ki: “Allah adına sana soruyorum: Suyu (vücuduna) çarpmış mıydın?” Kadın: “Yapmadım” dedi. (Abdullah adama) dedi ki: “Elinden tut.”
+& haddesenâ, an, an
+^ أن امرأة تزوجت
+
+@ Karısını boşayıp talakı ona bildiren, sonra ona dönen fakat kadın evleninceye kadar dönüşü ona bildirmeyen adam hakkında söyledikleri
+
+18904 | Vekî‘ → İsmâîl b. Ebî Hâlid → Hakem | Hakem’den: Ebû Kenef karısını boşadı, fakat ona bildirmedi; (sonra) ona dönüşüne şahit tuttu. Ömer ona dedi ki: “Eğer evlenmeden önce ona yetişirsen, ona en hak sahibi sensin.”
+& haddesenâ, an, an
+^ أن أبا كنف
+
+18905 | Vekî‘ → Şu‘be → Hakem → Ali | Ali dedi ki: “Onu boşar, sonra ona dönüşüne şahit tutarsa, ona bildirsin ya da bildirmesin, o onun karısıdır.”
+& haddesenâ, an, an, kâle
+^ «إذا طلقها
+
+18906 | Muhammed b. Fudayl → Şa‘bî → Umeyr b. Yezîd → Şüreyh | Umeyr b. Yezîd dedi ki: Şüreyh’in yanında oturuyordum. Bir adam bir kadınla davalaşmaya geldi. Kadın dedi ki: “Beni boşadı; iddetim geçinceye kadar dönüşü bana bildirmedi; ben de evlendim ve kocam benimle zifafa girdi.” Şüreyh dedi ki: “Talakı ona bildirdiğin gibi dönüşü de ona bildirseydin ya!” Ve onu ona geri vermedi.
+& haddesenâ, an, an, kâle
+^ قال: كنت قاعدا

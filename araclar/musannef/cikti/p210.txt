@@ -1,0 +1,277 @@
+@ Bir şeyi iddia eden, birinin iki şahit, diğerinin bir adam getirdiği iki adam hakkında
+
+21277 | Yezîd b. Hârûn → Haccâc → Simâk → Haneş b. el-Mu‘temir → Ali | Ali’den: Dedi ki: “Bir katır hakkında iki adam ona davalaştı. Bu, katırın kendi yanında doğduğuna dair beş şahit getirdi; şu da kendi yanında doğduğuna dair iki şahit getirdi. (Ali) onu yedide birlik paylar üzerine kıldı.”
+& haddesenâ, an, an, an, an
+^ قال: «اختصم إليه
+
+@ Ticarete izinli köle hakkında
+
+21278 | Hüşeym → Mugîre → İbrâhîm | İbrâhîm dedi ki: “Ticarete izinli köle iflas ettiğinde borcu kendi boynundadır. Efendisi onu satmak isterse satar ve bedelini alacaklılar arasında paylaştırır; ona bedelinden fazlası düşmez.”
+& haddesenâ, an, an
+^ قال: «إذا أفلس
+
+21279 | Hüşeym → Yûnus → Hasan | Hasan dedi ki: “Eğer onu satmak isterlerse satarlar; dilerlerse onu (borcu için) çalıştırırlar.” (Yûnus) dedi ki: Şüreyh de bunu söylerdi.
+& haddesenâ, an, an
+^ قال: «إن شاءوا
+
+21280 | Vekî‘ → Süfyân → Mutarrif → Hakem | Hakem dedi ki: “Borç boynunu kuşatıncaya kadar satılmaz.”
+& haddesenâ, an, an, an
+^ قال: «لا يباع
+
+21281 | İsmâîl b. Uleyye → İbn Avn → İbn Sîrîn | İbn Sîrîn’den: Abdurrahmân b. Üzeyne’ye, borca girmiş bir köle getirildi. “Malı borcu karşılığındadır, malı borcu karşılığındadır” dedi.
+& haddesenâ, an, an
+^ أن عبد الرحمن
+
+21282 | Vekî‘ → Süfyân → Hişâm → İbn Sîrîn | İbn Sîrîn dedi ki: “Onun borcu bedelindedir.”
+& haddesenâ, an, an, an
+^ قال: «دينه في
+
+21283 | Vekî‘ → Hasan b. Sâlih → Hasan b. Amr → Fudayl → İbrâhîm | İbrâhîm dedi ki: “Köle, üzerinde yüz bin (borç) olsa bile borç için satılmaz.”
+& haddesenâ, haddesenâ, an, an, an
+^ قال: «لا يباع
+
+21284 | İbn İdrîs → Şeybânî → Şa‘bî → Şüreyh | Şüreyh’ten, kölesine borçlanma izni veren adam hakkında. Dedi ki: “Alacaklılar için satılmasını görüşündeydi.”
+& haddesenâ, an, an, an
+^ في الرجل يأذن
+
+@ Bir eşya ya da köle satın alıp bir kısmında ayıp bulan adam hakkında
+
+21285 | Hüşeym → İsmâîl b. Sâlim → Kâsım b. Abdurrahmân | Kâsım b. Abdurrahmân’dan: O, eşya satın alıp bir kısmında ayıp bulan adam hakkında şöyle derdi: “Ya hepsini alır ya da hepsini geri verir.”
+& haddesenâ, an, an
+^ أنه كان يقول
+
+21286 | Yahyâ b. Saîd → Süfyân → Şeybânî → Âmir | Âmir’den, eşya satın alıp bir kısmında ayıp bulan adam hakkında. Dedi ki: “Ya hepsini alır ya da hepsini geri verir.”
+& haddesenâ, an, an, an
+^ في الرجل يشتري
+
+21287 | Cerîr → Mugîre → Hâris el-Uklî | Hâris el-Uklî dedi ki: “Adam iki köle ya da iki mal satın alıp birinde ayıp bulursa ve onu geri vermek isterse, onu değeriyle geri verir; ayıbı olmayan da onun üzerine geçerli olur.”
+& haddesenâ, an, an
+^ قال: إذا «اشترى
+
+21288 | Muâz b. Muâz → Eş‘as → Hasan | Hasan’dan, köleleri satın alıp bir kısmında ayıp bulan adam hakkında. Dedi ki: “Onun değeriyle geri verir; eşyada da bunun gibidir.” Muhammed de bunu söyledi.
+& haddesenâ, an, an
+^ في الرجل يشتري
+
+21289 | Vekî‘ → Hasan b. Sâlih → Şeybânî → Şüreyh | Şüreyh’ten, eşyayı tek akitle satın alıp bir kısmında ayıp bulan adam hakkında. Dedi ki: “Ya hepsini alır ya da hepsini geri verir.”
+& haddesenâ, an, an, an
+^ في الرجل يشتري
+
+21290 | Abbâd → Eş‘as → Âmir ve İbn Sîrîn | Âmir ve İbn Sîrîn dediler ki: Adam toptan bir satışla satın alıp onda bir ayıp görürse, dediler ki: “Hepsini geri verir.”
+& haddesenâ, an, an
+^ قالا: إذا ابتاع
+
+21291 | Vekî‘ → Süfyân → bir adam → Atâ | Atâ’dan, bir eşya satın alıp bir kısmında ayıp bulan adam hakkında. Dedi ki: “Onu geri verir; kalanı da değeriyle üzerine kalır.”
+& haddesenâ, an, an, an
+^ في رجل اشترى
+
+21292 | Abdüsselâm → Leys → Haccâc b. Yesâr | Haccâc b. Yesâr’dan: Bir adam bir adamdan yağ tulumları satın aldı ve sahibine (bedelini) peşin ödedi. Tulumlar eksik çıktı; dirhemlerin bir kısmıyla onunla takas yapmak istedi. İbn Ömer: “Aldığını ya hepsiyle al ya da hepsini geri ver” dedi.
+& haddesenâ, an, an
+^ أن رجلا اشترى
+
+@ Mudârib (sermaye işleten) hakkında: Nafakası nereden olur?
+
+21293 | İbn İdrîs → Hişâm → Hasan | Hasan dedi ki: “Mudâribin nafakası malın tamamındandır.” İbn Sîrîn ise: “Öyle değildir” dedi.
+& haddesenâ, an, an
+^ قال: «نفقة المضارب
+
+21294 | Hafs → Eş‘as → Hakem ve Hammâd → İbrâhîm | İbrâhîm dedi ki: “Mudârib ma‘rûf üzere harcar ve giyinir. Kâr ederse (bu) kârındandır; zarar ederse sermayedendir.” (Eş‘as) dedi ki: İbn Sîrîn’e sordum; dedi ki: “Mal sahibinden izin almadıkça harcamasını sevmem.”
+& haddesenâ, an, an, an
+^ قال: «المضارب ينفق
+
+21295 | Cerîr → Mugîre → Hammâd | Hammâd dedi ki: “Mudârib dilerse, (bu) mudârebeden olduğunda ücretli tutar ve köleleri doyurur; onlarla birlikte yemez.”
+& haddesenâ, an, an
+^ قال: «إن شاء
+
+21296 | Cerîr → Mugîre → Hammâd | Hammâd dedi ki: “Mudârib, içinde mudârebe için bir fayda olmadıkça ne yiyecek ne de faydalanacağı bir şey şart koşar. Eğer içinde mudârebe için bir fayda yoksa, bu kendi malından olur.”
+& haddesenâ, an, an
+^ قال: «لا يشترط
+
+21297 | Zeyd b. Hubâb → İbn Lehîa → Hâlid b. Ebî İmrân → Kâsım ve Sâlim | Hâlid b. Ebî İmrân’dan: O, Kâsım ve Sâlim’e ma‘rûf üzere yiyip içen, giyinen ve binen mukârid hakkında sordu. Dedi ki: “Mudârebe sebebiyle olduğunda sakıncası yoktur.”
+& haddesenâ, an, an, an
+^ أنه سألهما عن
+
+@ Şuf‘a gaip olan için olur mu, olmaz mı?
+
+21298 | Ali b. Müshir → Abdülmelik → Atâ → Câbir | Câbir dedi ki: Resûlullah ﷺ buyurdu: “Şefî‘ (şuf‘a sahibi), komşusunun şuf‘asına daha çok hak sahibidir; gaip olsa bile, yolları bir olduğunda onun için beklenir.”
+& haddesenâ, an, an, an
+^ قال: قال رسول
+
+21299 | Hafs → Şeybânî → Humeyd el-Ezrak → Ömer b. Abdülazîz | Ömer b. Abdülazîz’den: O, on yıl sonra ortak lehine şuf‘aya hükmetti; sahibi gaipti.
+& haddesenâ, an, an, an
+^ أنه «قضى بالشفعة
+
+21300 | İbn Ebî Adî → Eş‘as → Hasan | Hasan’dan: Dedi ki: “Küçük ve gaip için şuf‘a (hakkı) görürdü.”
+& haddesenâ, an, an
+^ قال: «كان يرى
+
+21301 | Humeyd b. Abdurrahmân → Hasan b. Sâlih → Mutarrif → Şüreyh | Şüreyh’ten, satılan ve şefî‘i gaip ya da küçük olan ev hakkında. Dedi ki: “Gaip dönünceye kadar, küçük de büyüyünceye kadar şuf‘aya daha çok hak sahibidir.”
+& haddesenâ, an, an, an
+^ في الدار تبتاع
+
+21302 | Cerîr → Mugîre → İbrâhîm | İbrâhîm dedi ki: “Gaip için şuf‘a yoktur.” Hâris de bu görüşteydi.
+& haddesenâ, an, an
+^ قال: «ليس لغائب
+
+21303 | Vekî‘ → Süfyân → Câbir → Şa‘bî | Şa‘bî dedi ki: “Gaip için şuf‘a vardır.”
+& haddesenâ, haddesenâ, an, an
+^ قال: «للغائب شفعة»
+
+21304 | Humeyd b. Abdurrahmân → Hasan → Mücâlid → Şa‘bî | Şa‘bî dedi ki: “Gaip için şuf‘a vardır; ona yazılır. Eğer alır ve bedeli gönderirse (ne âlâ); yoksa onun şuf‘ası yoktur.”
+& haddesenâ, an, an, an
+^ قال: «للغائب شفعة
+
+@ Tevliye satış mıdır, değil midir?
+
+21305 | Mu‘temir b. Süleymân → babası → Hasan ve İbn Sîrîn | (Süleymân) dedi ki: “Hasan ve İbn Sîrîn’in sözü, tevliyenin satış olduğu (görüşüne) vardı.”
+& haddesenâ, an, an
+^ قال: «صار قولهما
+
+21306 | Şerîk → Câbir → Âmir | Âmir dedi ki: “Tevliye satıştır.”
+& haddesenâ, an, an
+^ قال: «التولية بيع»
+
+21307 | İbnü’l-Mübârek → Ma‘mer → Zührî | Zührî dedi ki: “Tevliye satıştır; teslim almadıkça tevliye yapma.”
+& haddesenâ, an, an
+^ قال: «التولية بيع،
+
+21308 | Mu‘temir b. Süleymân → Ma‘mer → İbn Tâvûs → babası | İbn Tâvûs’un babasından: O, tevliyede sakınca görmezdi.
+& haddesenâ, an, an, an
+^ أنه كان «لا
+
+21309 | Hafs → Ebû Kays → İbn Sîrîn | İbn Sîrîn dedi ki: “Tevliye satıştır.”
+& haddesenâ, an, an
+^ قال: «التولية بيع»
+
+21310 | Mu‘temir b. Süleymân → Ma‘mer → Zührî | Zührî dedi ki: “Tevliye satıştır.”
+& haddesenâ, an, an
+^ قال: «التولية بيع»
+
+21311 | İbn İdrîs → Hişâm → Muhammed | Muhammed dedi ki: “Tevliye satıştır.”
+& haddesenâ, an, an
+^ قال: «التولية بيع»
+
+@ Kaçak köleyi yakalayıp da elinden kaçan adam hakkında
+
+21312 | Vekî‘ → Süfyân → Hazn b. Bişr → Recâ b. el-Hâris | Recâ b. el-Hâris’ten: Bir adam kaçak bir köle için ücret (ca‘l) şart koştu. Onu geri getirmek için yakaladı, fakat elinden kaçtı. Onu Şüreyh’e dava etti; (Şüreyh) onu tazminle yükümlü tuttu. Bu Ali’ye ulaştı ve şöyle dedi: “Kötü hükmetti. Allah’a yemin eder ki elinden kaçmıştır; ona tazmin yoktur.”
+& haddesenâ, an, an, an
+^ أن رجلا اجتعل
+
+21313 | Ali b. Müshir, Abde ve Vekî‘ → İbn Ebî Hâlid → Şa‘bî | Şa‘bî’den, geri getirmek için kaçak bir köle yakalayan ve (kölenin) elinden gittiği adam hakkında. Dedi ki: “Ona bir şey yoktur.”
+& haddesenâ, an, an
+^ في رجل أخذ
+
+21314 | Yahyâ b. Saîd el-Kattân → Eş‘as → Hasan | Hasan dedi ki: “Ona bir şey yoktur.”
+& haddesenâ, an, an
+^ قال: «ليس عليه
+
+21315 | Ebû Muâviye → Şeybânî → Şa‘bî → Şüreyh | Şüreyh’ten: Bir adam kaçak bir köle yakaladı, köle de elinden kaçtı. (Şa‘bî) dedi ki: Kölenin efendisi geldi ve onu Şüreyh’e getirdi. Şüreyh: “Daha önce senden de kaçmıştı; ona bir şey yoktur” dedi.
+& haddesenâ, an, an, an
+^ أن رجلا أخذ
+
+21316 | Dahhâk b. Mahled → İbn Cüreyc → İbn Ebî Müleyke | İbn Cüreyc dedi ki: İbn Ebî Müleyke bana dedi ki: “Eğer elinden giderse ona bir şey yoktur.”
+& haddesenâ, an, kâle
+^ «إن ذهب منه
+
+21317 | Muhammed b. Yezîd → Ebü’l-Alâ → Katâde, Ebû Hâşim ve Mansûr | Katâde, Ebû Hâşim ve Mansûr dediler ki: “Eğer onu yakalayanın elinden kaçarsa, ona tazmin yoktur.”
+& haddesenâ, an, an
+^ قالوا: «إن فر
+
+@ “Ölçek ve tartıyı belirttiğinde ölçsün” diyenler
+
+21318 | Yahyâ b. Ebî Zâide ve İbn Ebî Ganiyye → Abdülmelik b. Ebî Ganiyye → Hakem | Hakem dedi ki: Nebî ﷺ zamanında Osman’a yiyecek geldi. (Nebî ﷺ) “Bizimle Osman’a gidin, yiyeceğini satmada ona yardım edelim” dedi. Onun yanına durdu. Osman şöyle diyordu: “Bu çuvalda şu kadar var, onu şu kadara satıyorum.” Resûlullah ﷺ buyurdu: “(Miktarı) belirttiğinde ölç.”
+& haddesenâ, an, an
+^ قال: قدم لعثمان
+
+21319 | Abbâd b. el-Avvâm → Teymî → İbn Sîrîn | İbn Sîrîn dedi ki: “Ölçek ve tartıyı belirttiğinde onu ölçünceye kadar satmasın.”
+& haddesenâ, an, an
+^ قال: «إذا سمى
+
+21320 | Abbâd b. el-Avvâm → Saîd → Katâde ve Hasan | Katâde ve Hasan dediler ki: “Ölçek ve tartıyı belirttiğinde onu ölçsün.”
+& haddesenâ, an, an
+^ أنهما قالا: «إذا
+
+21321 | Cerîr → Mugîre → İbrâhîm | İbrâhîm dedi ki: “Selem yaptığında ve bir ölçek belirttiğinde götürü olarak alma.”
+& haddesenâ, an, an
+^ قال: «إذا أسلمت
+
+21322 | İbn Ebî Zâide → Zekeriyyâ → Şa‘bî | Şa‘bî dedi ki: “Yiyeceği vesklerle satın aldığında onu ölç; yani onu ölçekle satın aldığında.”
+& haddesenâ, an, an
+^ قال: «إذا ابتعت
+
+@ Yiyeceği teslim almadan önce tevliye ile satın alan adam hakkında
+
+21323 | Yahyâ b. Saîd → Teymî → Hasan | Hasan’dan: O, yiyecekten bir şeyi teslim alıncaya kadar tevliye ile devretmeyi hoş görmedi.
+& haddesenâ, an, an
+^ أنه «كره أن
+
+21324 | İbn Uleyye → Saîd → Katâde | Katâde’den: O, yiyeceği teslim alınmadan önce tevliye ile devretmekte sakınca görmezdi ve “O bir iyiliktir” derdi.
+& haddesenâ, an, an
+^ " أنه كان لا
+
+21325 | İbn Uleyye → Saîd → Vehb el-Ammî → Atâ | Atâ’dan: O, onu teslim almadan önce tevliye ile devretmesinde sakınca görmezdi.
+& haddesenâ, an, an, an
+^ «أنه كان لا
+
+21326 | Ebû Hâlid el-Ahmer → Yahyâ b. Saîd → Saîd | Saîd dedi ki: “Kim bir şeyi ölçekle ya da tartıyla satın alırsa, onu teslim alıncaya kadar satmasın.” Ölçek ve tartı olmaksızın onu tevliye ile devretmesinde ya da onda ortaklık vermesinde sakınca görmezdi.
+& haddesenâ, an, an
+^ قال: «من اشترى
+
+21327 | İbn Ebî Zâide → Süleymân b. Bilâl → Rebîa → Saîd b. el-Müseyyeb | Saîd b. el-Müseyyeb’den; onu merfû olarak (rivayet etti), dedi ki: “Tam teslim almadan önce tevliye ve ortaklıkta sakınca yoktur.”
+& haddesenâ, an, an, an
+^ رفعه قال: «لا
+
+@ “Bir malı satın aldığında teslim alıncaya kadar onu satma” diyenler
+
+21328 | Ebü’l-Ahvas → Abdülazîz b. Rufey‘ → Atâ → Hizâm b. Hakîm → Hakîm | Hizâm b. Hakîm dedi ki: Hakîm bana dedi ki: Sadaka yiyeceğinden bir yiyecek satın aldım ve onu teslim almadan önce onda kâr ettim. Nebî’ye ﷺ geldim; buyurdu ki: “Onu teslim alıncaya kadar satma.”
+& haddesenâ, an, an, an, kâle
+^ ابتعت طعاما من
+
+21329 | Ali b. Müshir ve İbn Ebî Zâide → Ubeydullah → Nâfi‘ → İbn Ömer | İbn Ömer dedi ki: Resûlullah ﷺ buyurdu: “Biriniz bir yiyecek satın aldığında, onu teslim alıncaya kadar satmasın.” İbn Ebî Zâide: “ve onu teslim alır” dedi.
+& haddesenâ, an, an, an
+% İkisi de Ubeydullah’tan rivayet etti.
+^ قال: قال رسول
+
+21330 | Abbâd b. el-Avvâm → Haccâc → Atıyye → İbn Ömer | Atıyye dedi ki: İbn Ömer’e kuru üzüm, hurma, buğday ve arpa hakkında sordum. “Bunda sakınca yoktur; fakat onu teslim alıncaya kadar satma” dedi.
+& haddesenâ, an, an, an
+^ قال: سألته في
+
+21331 | İbn Uleyye → Eyyûb → Nâfi‘ | Nâfi‘ dedi ki: Bana haber verildi ki Hakîm b. Hizâm erzak senetlerini satın alıyordu; Ömer onu, teslim almadıkça satmaktan nehyetti.
+& haddesenâ, an, an
+^ قال: قال: نبئت
+
+21332 | Ali b. Müshir → Şeybânî → Muhammed b. Beşîr → Ubeydullah → Nâfi‘ → İbn Ömer → Ömer | (Ömer’den) Eyyûb’un hadisine yakın (rivayet edildi).
+& haddesenâ, an, haddesenâ, an, an, an, an
+^ بنحو من حديث
+
+21333 | Ali b. Müshir → İsmâîl b. Ebî Hâlid → Şa‘bî | Şa‘bî dedi ki: “Bir malı satın aldığında, ebediyen onu teslim alıncaya kadar satma.”
+& haddesenâ, an, an
+^ قال: «إذا ابتعت
+
+21334 | Abde b. Süleymân → Yahyâ b. Saîd → Saîd b. el-Müseyyeb | Saîd b. el-Müseyyeb dedi ki: “Bir yiyecek satın aldığında, onu teslim alıncaya kadar satma.” Ortaklıkta ya da ona bedeli vermende sakınca görmezdi.
+& haddesenâ, an, an
+^ قال: «إذا اشتريت
+
+21335 | Abdullah b. Nümeyr → Abdülmelik → Atâ | Atâ’dan, bir malı satın alıp sonra teslim almadan önce onu satan adam hakkında. Dedi ki: “Onu teslim almaz.” (metinde böyle)
+& haddesenâ, an, an
+^ في الرجل يشتري
+
+21336 | İbn Mehdî → Süfyân → babası → İbrâhîm | Süfyân’ın babası dedi ki: İbrâhîm’e, bir malı teslim almadan önce satan adamın sorulduğunu işittim. Dedi ki: “Bu ancak ölçek ve tartıda idi.”
+& haddesenâ, an, an, semi‘tü
+^ سئل عن الرجل
+
+21337 | Hüşeym → Amr b. Dînâr → Tâvûs → İbn Abbâs | İbn Abbâs dedi ki: “Nehyedilen yiyecek, teslim alınıncaya kadar satılmaz. Her şeyi yiyecek gibi sanıyorum.”
+& haddesenâ, an, an, an
+^ قال: «الطعام الذي
+
+21338 | Muhammed b. Müyesser → İbn Cüreyc → Şa‘bî → Hârice b. Zeyd → Zeyd b. Sâbit | Zeyd b. Sâbit’ten: O, el-Câr sayfalarını (senetlerini) satın alanları, onları tam teslim alıncaya kadar (satmaktan) nehyederdi.
+& haddesenâ, an, an, an, an
+^ أنه كان «ينهى
+
+21339 | Vekî‘ → Süfyân → İbn Tâvûs → babası → İbn Abbâs | İbn Abbâs dedi ki: Resûlullah ﷺ buyurdu: “Kim bir yiyecek satın alırsa, onu ölçünceye kadar satmasın.” (Tâvûs dedi ki:) İbn Abbâs’a: “Niçin?” dedim. Dedi ki: “Görmüyor musun, onlar altını ve yiyeceği ertelenmiş olarak alıp satıyorlar.”
+& haddesenâ, an, an, an, an
+^ قال: قال رسول
+
+21340 | Zeyd b. Habbâb → Dahhâk b. Osman → Bükeyr b. Abdullah b. el-Eşecc → Süleymân b. Yesâr → Ebû Hüreyre | Ebû Hüreyre’den: Nebî ﷺ buyurdu: “Kim bir yiyecek satın alırsa, onu ölçünceye kadar satmasın.”
+& haddesenâ, haddesenâ, ahberanî, an, an
+% Arapçada ad böyle yazılıdır: “زيد بن خباب” (metinde böyle).
+^ أن النبي صلى

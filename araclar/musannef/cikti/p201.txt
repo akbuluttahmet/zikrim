@@ -1,0 +1,279 @@
+@ Kadının kocasına (bir şey) vermesi hakkında
+
+20737 | Gunder → Şu‘be → Mansûr → İbrâhîm | İbrâhîm dedi ki: “Kadın kocasına gönül hoşluğuyla verirse bu geçerlidir.” Mansûr ise dedi ki: “(Bu) hoşuma gitmez.”
+& haddesenâ, an, an, an
+^ «إن أعطت المرأة
+
+20738 | İbn Ebî Zâide ve Vekî‘ → İsmâîl → Âmir | Âmir dedi ki: “Kocasının kendisine verdiği şey kadın için geçerlidir; kadının ona verdiği şey ise onun için geçerli değildir.”
+& haddesenâ, an, an
+^ «يجوز لها ما
+
+@ Adamın adamın yanında araziyi rehin bırakması hakkında
+
+20739 | Ebü’l-Ahvas → Mugîre → İbrâhîm | İbrâhîm dedi ki: “Adam araziyi rehin alırsa onda bir şey işlemesi hakkı yoktur. Eğer işlerse, rehininden (alacağından) arazi sahibi lehine benzerinin ücreti hesaplanır.”
+& haddesenâ, an, an
+^ «إذا ارتهن الرجل
+
+20740 | İbnü’l-Mübârek → Ma‘mer → İbn Tâvûs → babası | İbn Tâvûs’un babasından, mehri karşılığında karısına bir araziyi rehin veren, kadının da (arazinin) gelirinden yediği adam hakkında: Dedi ki: “Onun aleyhine hesaplanır.”
+& haddesenâ, an, an, an
+^ في رجل رهن
+
+20741 | İbn Ebî Zâide → Zekeriyyâ → Âmir | Âmir’den, oğlu olan bir cariyeyi rehin alan, cariyenin de onun (çocuğunu) emzirdiği adam hakkında: Dedi ki: “Emzirdiği şey karşılığında benzerinin ücreti onun hesabına geçirilir.”
+& haddesenâ, an, an
+^ في رجل ارتهن
+
+20742 | İbn Ebî Zâide → Şu‘be → Hakem → İbrâhîm | İbrâhîm dedi ki: “Rehinden bir şeyle faydalanırsa, o kadarıyla mahsup eder.”
+& haddesenâ, an, an, an
+^ «إذا انتفع من
+
+20743 | Yahyâ b. Âdem → Hasan → Mugîre → İbrâhîm | İbrâhîm’den, bir evi ya da bir köleyi rehin alıp ondan gelir elde eden adam hakkında: Dedi ki: “Gelir rehindendir.”
+& haddesenâ, haddesenâ, an, an
+^ في رجل ارتهن
+
+@ Adamın vârise ya da vâris olmayana bir borcu ikrar etmesi hakkında
+
+20744 | İbn Uleyye → Leys → Tâvûs | Tâvûs dedi ki: “Bir vârise borcu ikrar ederse geçerlidir.”
+& haddesenâ, an, an
+^ «إذا أقر لوارث
+
+20745 | İbn Uleyye → Âmir el-Ahvel → Hasan | Âmir el-Ahvel dedi ki: Hasan’a bu soruldu, dedi ki: “Onu ona yüklerim, ondan (onun yerine) yüklenmem.”
+& haddesenâ, an, kâle
+^ سئل الحسن عنه،
+
+20746 | Vekî‘ → Süfyân → İbn Ebî Leylâ → Hakem; ayrıca Vekî‘ → Süfyân → Mansûr → İbrâhîm; ayrıca Vekî‘ → Süfyân → Câbir → Şa‘bî → Şüreyh | (İkisi) dediler ki: “Hastalıkta bir vârise borcu ikrar ederse, ancak beyyine ile geçerli olur; vâris olmayana ikrar ederse geçerlidir.”
+& haddesenâ, an, an, an; haddesenâ, an, an, an; haddesenâ, an, an, an, an
+% Arapçada “قالا” (ikisi dediler) ikil kipiyle yazılıdır.
+^ قالا: «إذا أقر
+
+20747 | Zeyd b. el-Hubâb → Hammâd b. Seleme → Katâde → İbn Üzeyne | İbn Üzeyne’den, vârise borcu ikrar eden adam hakkında: Dedi ki: “Geçerli değildir.”
+& haddesenâ, haddesenâ, an, an
+^ في الرجل يقر
+
+20748 | Vekî‘ → Süfyân → İbn Cüreyc → Atâ | Atâ dedi ki: “Hastanın ikrarı geçerli değildir.”
+& haddesenâ, an, an, an
+^ «لا يجوز إقرار
+
+20749 | Zeyd b. el-Hubâb → Hammâd b. Seleme → Kays b. Sa‘d → Atâ | Atâ’dan, vârise borcu ikrar eden adam hakkında: Dedi ki: “Geçerlidir.”
+& haddesenâ, haddesenâ, an, an
+^ في رجل أقر
+
+20750 | İsmâîl b. Ayyâş → Abdülazîz b. Ubeydullah → Şa‘bî → Şüreyh | Şüreyh’ten: O, adamın ölümü sırasında vâris olmayana borcu itiraf etmesini geçerli sayardı; vârise ise ancak beyyine ile geçerli sayardı.
+& haddesenâ, an, an, an
+^ «أنه كان يجيز
+
+20751 | Ömer b. Eyyûb el-Mevsılî → Ca‘fer → Meymûn | Meymûn dedi ki: “Adam hastalığında bir borcu ikrar ederse, onun aleyhine geçerli olmasını uygun görürüm. Çünkü onu sağlıklı iken ikrar etseydi geçerli olurdu; (kişi) en doğru olduğu (an) ölümü sırasındadır.”
+& haddesenâ, an, an
+^ «إذا أقر الرجل
+
+@ Adamın adama vadeli olarak yiyecek satması hakkında
+
+20752 | İbn Uyeyne → Amr → Tâvûs | Tâvûs dedi ki: “Vadeli olarak yiyecek sattığında vade gelince (karşılığında) yiyecek alma.” (Amr) dedi ki: Câbir b. Zeyd Ebü’ş-Şa‘sâ ise şöyle dedi: “Alacağının vadesi gelince onun karşılığında dilediğini al.”
+& haddesenâ, an, an
+^ «إذا بعت طعاما
+
+20753 | Yahyâ b. Saîd el-Kattân → Muhammed b. Abdullah b. Ebî Meryem → Saîd b. el-Müseyyeb | Muhammed b. Abdullah b. Ebî Meryem dedi ki: Saîd b. el-Müseyyeb’e dedim ki: “Bir adama hurma sattım; hurmamın bedelinden (karşılık olarak) hurma alabilir miyim?” Dedi ki: “Ölçülen ve tartılan (cinsten) yiyecek kesinlikle alma.”
+& haddesenâ, an, kâle
+^ قلت لسعيد بن
+
+20754 | İbn Ebî Zâide → Eş‘as → Âmir | Âmir dedi ki: “Vadeli olarak yiyecek sattığında malının (vadesi) gelince onun karşılığında eşyalardan dilediğini al; aynı yiyeceği alma.”
+& haddesenâ, an, an
+^ «إذا بعت طعاما
+
+20755 | Vekî‘ → Ali b. el-Mübârek → Yahyâ b. Ebî Kesîr → Ebû Seleme | Ebû Seleme’den, bir adama vadeli olarak koyun satan, vade gelince de (karşılığında) koyun alıp mahsup etmek isteyen adam hakkında: Onu hoş görmedi.
+& haddesenâ, an, an, an
+^ في «رجل باع
+
+20756 | Cerîr → Mugîre → Hâris ve Hammâd | Hâris ve Hammâd’dan: İkisi de, adamın kırık yiyeceği (metinde böyle) kırka veresiye satıp sonra ondan bunun benzeri yiyeceği kırktan aşağıya satın almasını hoş görmezlerdi.
+& haddesenâ, an, an
+^ «أنهما كانا يكرهان
+
+20757 | Abde b. Süleymân → Saîd → Katâde → Tâvûs → İbn Abbâs | İbn Abbâs dedi ki: “Ölçülen ve tartılan şeylerden vadeli bir satış yaptığında vaden gelince, bulduğu şeylerden bu ikisine muhalif olanı alma (metinde böyle).”
+& haddesenâ, an, an, an, kâle
+^ «إذا بعت بيعا
+
+20758 | Hammâd b. Hâlid → Mâlik b. Enes → Ebü’z-Zinâd → Saîd b. el-Müseyyeb ve Süleymân b. Yesâr | Saîd b. el-Müseyyeb ve Süleymân b. Yesâr dediler ki: “Kim vadeli olarak altın karşılığında yiyecek satar da vade gelirse, onun karşılığında hurma alma.”
+& haddesenâ, an, an, an
+^ «من باع طعاما
+
+20759 | Vekî‘ → Süfyân → İbn Cüreyc → Atâ | Atâ dedi ki: “Ölçülen bir şey alma.”
+& haddesenâ, an, an, an
+^ «لا تأخذ كيلا»
+
+20760 | Vekî‘ → İbrâhîm b. Nâfi‘ → Tâvûs | İbrâhîm b. Nâfi‘ dedi ki: Tâvûs’a, bir adama vadeli olarak buğday satan adamı sordum: Vade gelince dirhemlerinin yerine buğday alabilir mi? Dedi ki: “Hayır.”
+& haddesenâ, an, kâle
+^ سألت طاوسا عن
+
+20761 | Vekî‘ → Atâ → İbn Abbâs | İbn Abbâs dedi ki: “Onun yerine buğday almasında sakınca yoktur.”
+& haddesenâ, an, an
+^ «لا بأس أن
+
+20762 | Vekî‘ → Süfyân → Hişâm → İbn Sîrîn | İbn Sîrîn’den, vadeli olarak yiyecek satan, vade gelip de onun yanında dirhem bulamayan adam hakkında: Dedi ki: “Dilediğini al.”
+& haddesenâ, an, an, an
+^ في الرجل يبيع
+
+20763 | Vekî‘ → Süfyân → Câbir → Şa‘bî | Şa‘bî dedi ki: “Bu, yiyecek karşılığında yiyecektir.”
+& haddesenâ, an, an, an
+^ «ذلك طعام بطعام»
+
+20764 | İbn Uleyye → Eyyûb → Muhammed | Eyyûb dedi ki: Muhammed’e, vadeli olarak mal satan, vade gelince de (karşılığında) mal alıp alamayacağı adam soruldu. Dedi ki: “Kişi borçlusuna gelir, ondan (mal) alırdı.” Ona: “Yiyecek satıp (karşılığında) yiyecek alabilir mi?” denildi. Dedi ki: “Bu hususta bir şey söylemiyorum.”
+& haddesenâ, an, kâle
+^ سئل محمد عن
+
+20765 | Muhammed b. Mus‘ab → Evzâî → Yahyâ b. Ebî Kesîr | Yahyâ b. Ebî Kesîr dedi ki: Ömer b. Abdülazîz, ölmüş kimsenin yiyecekten olan alacağı hakkında hüküm verdi ve dedi ki: “Yiyecek almaz.”
+& haddesenâ, an, an
+^ قضى عمر بن
+
+@ Bir ev satın alıp onu bina eden adam hakkında
+
+20766 | Hafs → Şeybânî → Şa‘bî | Şa‘bî’den, evi satın alıp onu bina eden, sonra şüf‘a sahibi gelen adam hakkında: Dedi ki: “Onu binasıyla alır ya da onu gömer (metinde böyle).” Hammâd ise dedi ki: “Onun binasını söker ve onu alır.”
+& haddesenâ, an, an
+^ في الرجل يشتري
+
+20767 | İbn Uleyye → Hâlid el-Hazzâ | Hâlid el-Hazzâ’dan: Bir adam bir ev satın alıp onu bina etti. Sonra bir adam gelip ona hak sahibi çıktı. (Bunun üzerine) şöyle yazdı: Arsaya kıymet biçilir, binaya da kıymet biçilir. (Hak sahibi) dilerse binayı kıymetiyle alır; kabul etmezse arsayı kıymetiyle teslim eder.
+& haddesenâ, an
+^ «أن رجلا اشترى
+
+20768 |  | Ebû Bekir dedi ki: Vekî‘ dedi ki: Süfyân dedi ki: “Binasını söker.”
+
+@ Bir ev (mehri) üzerine kadınla evlenen adam hakkında
+
+20769 | Hüşeym b. Beşîr → Ebû İkrime → Hâris el-Uklî | Hâris el-Uklî’den, bir ev (mehri) üzerine bir kadınla evlenen, evin şüf‘a sahibinin de (evi) talep ettiği adam hakkında: Dedi ki: “Onu kadının mehr-i misliyle alır.” (Hüşeym) dedi ki: İbn Şübrüme ise dedi ki: “Ben bunu uygun görmüyorum; ama şüf‘a sahibi onu kıymetiyle alır.”
+& haddesenâ, an, an
+^ في رجل تزوج
+
+20770 | Ebû Muâviye → Ya‘kûb b. Abdullah → Hasan | Hasan dedi ki: “Mehirde şüf‘a yoktur.”
+& haddesenâ, an, an
+^ «ليس في صداق
+
+20771 | Vekî‘ → Süfyân → Mansûr → Şa‘bî | Şa‘bî dedi ki: “Mehirde şüf‘a yoktur.”
+& haddesenâ, an, an, unbi’tü
+^ «ليس في صداق
+
+20772 | Yahyâ b. Âdem → Hasan b. Sâlih → İbn Ebî Leylâ | İbn Ebî Leylâ’dan, bir ev (mehri) üzerine kadınla evlenen adam hakkında: Dedi ki: “Şüf‘a sahibi onu evin kıymetiyle alır.”
+& haddesenâ, haddesenâ, an
+^ في الرجل يتزوج
+
+@ Adamın adamda alacağı olup onun nerede olduğunu bilmemesi hakkında
+
+20773 | Cerîr → Mugîre → İbrâhîm | İbrâhîm dedi ki: “Eğer senin üzerinde bir adama borç varsa da onun nerede olduğunu ve vârisinin nerede olduğunu bilmiyorsan, onu onun adına sadaka olarak ver. Eğer gelirse onu muhayyer bırak.”
+& haddesenâ, an, an
+^ «إن كان عليك
+
+20774 | İbn İdrîs → Şu‘be → Abdullah b. Hanaş → İbn Ömer | İbn Ömer’den, ölen ve üzerinde, alacak sahibi bilinmeyen bir borç bulunan adam hakkında: O borcun onun adına sadaka olarak verilmesini emretti.
+& haddesenâ, an, an, an
+^ في «رجل هلك
+
+20775 | Hafs b. Gıyâs → Eş‘as → Hasan | Hasan dedi ki: “Adam üzerinde borç olduğu halde ölür de (alacaklının) vârisi bilinmezse, onu Allah yolunda harcasın. Eğer (alacaklı) Müslüman idiyse ve vârisi bilinmiyorsa onu onun adına sadaka olarak versin.”
+& haddesenâ, an, an
+^ «إذا مات الرجل
+
+20776 | Şerîk → Âmir → Şakîk → Ebû Vâil | Ebû Vâil dedi ki: Abdullah yedi yüz dirheme bir cariye satın aldı. Sahibi kayboldu; (Abdullah) onu bir yıl —ya da “bir sene” dedi— ilan etti. Sonra mescide çıktı, sadaka vermeye başladı ve şöyle diyordu: “Allah’ım, (sevabı) onun içindir; eğer (razı olmayı) kabul etmezse (sevap) benim üzerime ve bana (aittir).” Sonra dedi ki: “Buluntu mala ya da kayıp hayvana böyle yapın.”
+& haddesenâ, an, an, an
+% Arapçada zincir “عن عامر، عن شقيق، عن أبي وائل” diye yazılıdır (metinde böyle).
+^ اشترى عبد الله
+
+@ Humustan cariye satın alan adam hakkında
+
+20777 | Ebü’l-Ahvas → Ebû İshâk → Muhammed b. Zeyd | Muhammed b. Zeyd dedi ki: Taksim edilmiş bir humustan bir cariye satın aldım; yanında on beş dinar buldum. Onu Abdurrahmân b. Hâlid b. el-Velîd’e getirdim, dedi ki: “O senindir.”
+& haddesenâ, an, an
+^ اشتريت جارية من
+
+20778 | Ebû Bekir b. Ayyâş → Şeybânî → Şa‘bî | Şa‘bî’den, ganimetten bir esir kadın satın alıp onun yanında gümüş bulan adam hakkında: Dedi ki: “Onu geri verir.”
+& haddesenâ, an, an
+^ في رجل اشترى
+
+20779 | Hüşeym → Husayn | Husayn’dan: Bir adam Kâdisiyye günü fey’den bir cariye satın aldı. (Cariye) ona yanında bulunan bir ziynet getirdi. (Adam) Sa‘d b. Ebî Vakkâs’a gelip ona haber verdi. O da: “Onu Müslümanların ganimetlerine kat” dedi.
+& haddesenâ, an
+^ أن رجلا اشترى
+
+@ Üzerinde (köle azadı) borcu olan adam hakkında
+
+20780 | İbn Uleyye → Cüreyrî → Ebû Abdullah el-Cesrî | Ebû Abdullah el-Cesrî —Cesr Anaze (kabilesinden)— dedi ki: Ma‘kıl b. Yesâr’a dedim ki: “Bizden biri azat edilecek (köleyi) azat etmek istiyor.” Dedi ki: “Azat etmek istediğin bir köleyi satın aldığında, sahiplerine azat şartını koşma; çünkü bu kölelikten bir bağdır. Fakat onu (şart koşmadan) susarak satın al; dilersen tutarsın, dilersen azat edersin.”
+& haddesenâ, an, an
+% Arapçada adın ardından “جسر عنزة” kaydı vardır.
+^ قلت لمعقل بن
+
+20781 | İbn Uleyye | İbn Uleyye dedi ki: Bu hadisi Eyyûb’a anlattım, o da dedi ki: “O (şartla alınan köle) tam değildir.”
+& haddesenâ
+^ حدثت بهذا الحديث،
+
+20782 | Hüşeym → Şeybânî → Şa‘bî | Şa‘bî’den: O, üzerinde bir köle (azadı borcu) bulunan, (köleyi) satın alan ve kendisine onu azat etmesi şart koşulan adam hakkında şöyle derdi: Bunu hoş görmedi ve “Tam değildir” dedi.
+& haddesenâ, an, an
+^ أنه كان يقول
+
+20783 | Vekî‘ → Süfyân → Mugîre → İbrâhîm; ayrıca Vekî‘ → Süfyân → İbn Ebî Hâlid → Şa‘bî | İbrâhîm ve Şa‘bî dediler ki: “Onu satın alır ve azat edilmesini şart koşarsa, ikisi de onu kusursuz görmezlerdi.”
+& haddesenâ, an, an, an; haddesenâ, an, an, an
+^ قالا: «إذا اشتراها
+
+20784 | Cerîr → Mugîre → İbrâhîm | İbrâhîm’den, üzerinde vacip bir köle (azadı) olan ve onu satın alan adam hakkında: Onu azat için satın aldığını şart koşmaz.
+& haddesenâ, an, an
+^ في «الرجل يكون
+
+20785 | Abbâd b. el-Avvâm → Hârûn b. Mûsâ → Ali b. Zâide → Nâfi‘ → İbn Ömer | İbn Ömer’den: Ona, cariye satın alan ve efendisinin (satıcının) onun azat edilmesini şart koştuğu adam soruldu. Dedi ki: “Ecir, şart koşan efendisinindir.”
+& haddesenâ, an, ahberanî, an, an
+^ أنه سئل عن
+
+@ Bir yük denginde ortak olan topluluk hakkında
+
+20786 | Abdüsselâm → Mugîre → İbrâhîm | İbrâhîm’den, bir yük denginde ortak olan topluluk hakkında: Dedi ki: “Paylaşmadan önce birbirlerine satmalarında sakınca yoktur.”
+& haddesenâ, an, an
+^ في القوم يشتركون
+
+20787 | Muhammed b. Ebî Adî → İbn Avn → İbn Sîrîn | İbn Avn dedi ki: Ona (İbn Sîrîn’e), iki adam arasında olan ve biri onu (ortağıyla) paylaşmadan önce payını sattığı bir malı sordum. Dedi ki: “Sakıncası yoktur.”
+& haddesenâ, an, an
+^ قال: سألته عن
+
+20788 | İbn Uyeyne → Amr b. Dînâr → Atâ → İbn Abbâs | İbn Abbâs dedi ki: “İki ortak (birbirlerinin payını alarak) ortaklıktan çıkarlar.”
+& haddesenâ, an, an, an
+^ «يتخارج الشريكان»
+
+20789 | Abdülvehhâb es-Sekafî → Eyyûb → Muhammed | Muhammed’den: O, kişinin malı taksim etmeden önce satmasında bir sakınca görmezdi.
+& haddesenâ, an, an
+^ «أنه كان لا
+
+20790 | Sehl b. Yûsuf → Amr → Hasan | Hasan dedi ki: “Taksim edilebilecek şeyi taksim edilmeden satmayı hoş görmezdi; taksim edilemeyecek bir şey ise onda sakınca yoktur.”
+& haddesenâ, an, an
+^ «كان يكره أن
+
+20791 | Abdülvehhâb el-Haffâf → İbn Ebî Arûbe → Katâde → Saîd b. el-Müseyyeb | Saîd b. el-Müseyyeb’den: O, ortağın, (ortağıyla) paylaşmadıkça (payını) ortağına satmasında —ölçü ve tartı (ile satılanlar) hariç— bir sakınca görmezdi.
+& haddesenâ, an, an, an
+^ «أنه كان لا
+
+@ Haraç arazisi satın almak hakkında
+
+20792 | Hafs → Mücâlid → Şa‘bî → İbn Mes‘ûd | İbn Mes‘ûd’dan: O, haraç arazisi satın aldı.
+& haddesenâ, an, an, enne
+^ «اشترى أرض خراج».
+
+20793 | Hafs → Haccâc → Kâsım → İbn Mes‘ûd | (İbn Mes‘ûd’dan) bunun benzeri (rivayet edildi).
+& haddesenâ, an, an, an
+^ بمثله
+
+20794 | Abbâd b. el-Avvâm → Haccâc → Hakem → İbn Mugaffel | İbn Mugaffel dedi ki: “Sevâd arazisinden Bânikyâ halkı, Hîre halkı ve Ülleys halkı dışındakilerden hiçbir şey satın alma.”
+& haddesenâ, an, an, an
+^ «لا تشترين من
+
+20795 | Ebû Üsâme → Hişâm → Hasan ve Muhammed | Hasan ve Muhammed’den: İkisi de cizye arazisinden sultandan satın almayı hoş görmediler.
+& haddesenâ, an, an
+^ «أنهما كرها أن
+
+20796 | İbn İdrîs → Hişâm → Hasan ve Muhammed | Hasan ve Muhammed dediler ki: Ömer şöyle yazdı: “Zimmet ehlinin akarından ve topraklarından herhangi bir şey satın almanız sizin için (caiz) değildir.”
+& haddesenâ, an, an
+^ قالا: كتب عمر:
+
+20797 | Zeyd b. el-Hubâb → Recâ b. Ebî Seleme → Nuaym b. Selâme | Nuaym b. Selâme’den: Ömer b. Abdülazîz bir adama, karşılığında cizye ödeyeceği bir arazi verdi.
+& haddesenâ, an, ahberanî
+^ أن عمر بن
+
+20798 | Zeyd b. Habbâb → bir adam → İbn Avn → İbn Sîrîn | İbn Sîrîn dedi ki: “Onların, karşılığında haraç ödedikleri arazileri vardı.”
+& haddesenâ, ahberanî, haddesenâ, an
+% Arapçada ad “زيد بن خباب” diye yazılıdır (metinde böyle).
+^ «كانت لهم أرض
+
+20799 | Vekî‘ → Ebân b. Sam‘a → Bekr b. Abdullah el-Müzenî | Bekr b. Abdullah el-Müzenî dedi ki: Haraç arazisini suyuyla birlikte satın almayı sordum; dedi ki: “Resûlullah ﷺ, Allah sizi ondan kurtardıktan sonra boyunlarınıza zillet koymanızı yasakladı.”
+& haddesenâ, an, an
+^ سألت عن شراء
+
+20800 | Yahyâ b. Saîd → Muhammed b. Aclân → Nâfi‘ → İbn Ömer | İbn Ömer’den: Bir adam (ona) haraç arazisi satın almayı —ya da bu manada bir şeyi— sordu. Dedi ki: “Zilleti onun boynundan çıkarıp kendi boynuna koyarsın.”
+& haddesenâ, an, an, an
+^ أن رجلا سأل
