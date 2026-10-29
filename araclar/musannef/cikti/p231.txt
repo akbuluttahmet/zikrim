@@ -1,0 +1,273 @@
+@ Altın altına karşılık, gümüş gümüşe karşılık diyenler
+
+22498 | Ebü’l-Ahvas → Zeyd b. Cübeyr → İbn Ömer | Zeyd b. Cübeyr dedi ki: Bir adam İbn Ömer’e altın ve gümüşü sordu. İbn Ömer dedi ki: “Altın altına, gümüş gümüşe karşılık, tartıya tartı.”
+& haddesenâ, an, kâle
+^ قال: سأل رجل
+
+22499 | İbn Ebî Leylâ → Hakem → Abdurrahmân b. Ebî Leylâ → Ömer | Ömer dedi ki: “Bir dirhemi iki dirheme karşılık satmayın; çünkü bu, aceleci ribâdır.”
+& haddesenâ, an, an, kâle
+^ «لا تبيعوا الدرهم
+
+22500 | İbn İshâk → Vüheyb → Yahyâ b. Ebî İshâk → Abdurrahmân b. Ebî Bekre → babası | Abdurrahmân b. Ebî Bekre’nin babası dedi ki: “Resûlullah ﷺ altını altına, gümüşü gümüşe karşılık, ancak eşit olarak satmamızı (emretti); (aksini) bize yasakladı. Altını gümüşe, gümüşü altına karşılık dilediğimiz gibi satmamızı emretti.”
+& haddesenâ, an, an, an, an
+% Arapçada sened böyle yazılıdır: “حدثنا ابن إسحاق، عن وهيب” (metinde böyle).
+^ قال: «نهانا رسول الله
+
+22501 | Ya‘lâ → Kelbî → Seleme → Ebû Râfi‘ → Ebû Bekir | Ebû Bekir dedi ki: Nebî’yi ﷺ şöyle derken işittim: “Altın altına karşılık tartıya tartı, gümüş gümüşe karşılık tartıya tartı; fazla veren de fazla isteyen de ateştedir.”
+& haddesenâ, an, an, an, an
+^ قال: سمعت النبي
+
+22502 | Affân → Şu‘be → Habîb b. Ebî Sâbit → Ebü’l-Minhâl → Berâ b. Âzib ve Zeyd b. Erkam | Ebü’l-Minhâl dedi ki: Berâ b. Âzib’e ve Zeyd b. Erkam’a sarfı sordum; ikisi de şöyle diyordu: “Resûlullah ﷺ gümüşün altına karşılık veresiye satılmasını yasakladı.”
+& haddesenâ, haddesenâ, ahberanâ, semi‘tü, kâle
+^ قال: سألت البراء
+
+22503 | Vekî‘ → Nasr b. Ali el-Cehdamî → Kays b. Rebâh el-Huddânî → Meleke bt. Hâni’ | Meleke bt. Hâni’ dedi ki: Âişe’nin yanına girdim; üzerimde gümüşten iki bilezik vardı. “Ey mü’minlerin annesi, onları dirhemlere karşılık satayım mı?” dedim. Dedi ki: “Gümüş gümüşe karşılık, tartıya tartı, misli misline.”
+& haddesenâ, haddesenâ, an, an
+^ قالت: دخلت على عائشة
+
+22504 | Mu‘temir b. Süleymân → Abdülazîz b. Hakîm | Abdülazîz b. Hakîm dedi ki: İbn Ömer’in yanında bulundum; Basra ehlinden bir adam ona gelip dedi ki: “Küçük dirhemleri bozdurup onlarla büyüklerini alan bir kavmin yanından geldim.” (İbn Ömer) “Fazla alıyorlar mı?” dedi. “Evet” dedi. Dedi ki: “Hayır, ancak tartıya tartı.”
+& haddesenâ, semi‘tü
+^ يقول: شهدت ابن عمر
+
+@ Sarf yaptığında, seninle onun arasında bir belirsizlik varken ondan ayrılma diyenler
+
+22505 | Ebü’l-Ahvas → Simâk → Saîd b. Cübeyr → İbn Ömer | İbn Ömer dedi ki: Altını gümüşe, gümüşü altına karşılık satardım. Nebî’ye ﷺ gelip ona sordum; buyurdu ki: “Arkadaşınla alışveriş ettiğinde, seninle onun arasında bir belirsizlik varken ondan ayrılma.”
+& haddesenâ, an, an, an
+^ قال: كنت أبيع
+
+22506 | Mu‘temir b. Süleymân → Abdülazîz b. Hakîm → İbn Ömer | Abdülazîz b. Hakîm dedi ki: İbn Ömer’i şöyle derken işittim: “Bir dinar bozdurduğunda, bedelini almadıkça kalkma.”
+& haddesenâ, an, semi‘tü
+^ يقول: «إذا صرفت
+
+22507 | İbn Uyeyne → Amr → İbn Ömer → Ömer | İbn Ömer şöyle derdi: Ömer dedi ki: “Senden bir deve sağımı kadar mühlet isterse ona mühlet verme”; yani sarfta.
+& haddesenâ, semi‘a, an, kâle
+% Arapçada sened böyle yazılıdır: “قال: سمع عمرو، عن ابن عمر، يقول” (metinde böyle).
+^ «استنظرك حلب
+
+22508 | Sekafî → Eyyûb → Ebû Kılâbe | Ebû Kılâbe’den: Talha tartıyla dinar bozdurdu; Ömer onu, (bedelini) tamamen almadıkça ondan ayrılmaktan men etti.
+& haddesenâ, an, an
+^ أن طلحة «اصطرف
+
+22509 | İbn Uyeyne → Ubeydullah b. Ebî Yezîd → İbn Abbâs → Üsâme | Üsâme dedi ki: Resûlullah ﷺ buyurdu: “Ribâ ancak veresiyededir.”
+& haddesenâ, an, an, an
+^ قال: قال رسول الله
+
+22510 | Gunder → Hişâm → Hasan ve İbn Sîrîn | Hasan ve İbn Sîrîn dediler ki: “Altını gümüşe karşılık sattığında, seninle onun arasında bir şart varken ondan ayrılma; ancak peşin (al-ver olmalı).”
+& haddesenâ, an, an
+^ قالا: «إذا بعت
+
+22511 | Ali b. Müshir → Şeybânî → Ukbe Ebü’l-Ahdar → İbn Ömer | Ukbe Ebü’l-Ahdar dedi ki: İbn Ömer’e veresiye satılan altın soruldu. Dedi ki: Ömer b. el-Hattâb’ı bu minberin üzerinde işittim; kendisine bu soruldu ve dedi ki: “Onu veresiyeye bıraktığı her saat ribâdır.”
+& haddesenâ, an, an, kâle
+^ قال: سئل ابن عمر
+
+22512 | Hüşeym → Mugîre | Mugîre dedi ki: “Aralarındaki (iş) bitmeden ayrılmasınlar.”
+& haddesenâ, an
+^ قال: «لا يفترقا
+
+22513 | Vekî‘ → Süfyân → Mugîre → Şibâk → İbrâhîm → Şüreyh | Şüreyh dedi ki: “Sarfta, aralarında bir belirsizlik yokken ayrılmaları bana daha sevimlidir.”
+& haddesenâ, haddesenâ, an, an, an, an
+^ قال: «أحب إلي
+
+@ Sarfı hoş görmeyenler
+
+22514 | İsmâîl b. İbrâhîm → Habîb b. eş-Şehîd | Habîb b. eş-Şehîd dedi ki: Leyl el-Ukaylî, yanında bir adamla İbn Sîrîn’e geldi ve “Bu, sana sarfı soruyor” dedi. (İbn Sîrîn) dedi ki: “Onu Nebî ﷺ, Ebû Bekir, Ömer ve Osman yasakladı.”
+& haddesenâ, an
+^ قال: جاء ليل
+
+22515 | Vekî‘ → Şu‘be → Katâde → Saîd b. el-Müseyyeb | Saîd b. el-Müseyyeb’den: Ali ve Osman sarfı yasakladılar.
+& haddesenâ, an, an, an
+^ أن عليا، وعثمان
+
+22516 | Yezîd b. Hârûn → Selîm b. Hayyân → Ebû Gâlib → Ebû Ümâme | Ebû Gâlib dedi ki: Onu (Ebû Ümâme’yi) şöyle derken işittim: “Sarf ribâdır.”
+& haddesenâ, an, an, an
+^ قال: سمعته يقول
+
+22517 | Vekî‘ → Cerîr b. Hâzim → Muhammed b. Ebî Ya‘kûb → Yahyâ et-Tavîl | Yahyâ et-Tavîl dedi ki: Ali’ye sarf soruldu; dedi ki: “Bu, aceleci ribâdır.”
+& haddesenâ, haddesenâ, an, an
+^ قال: سئل علي
+
+22518 | Vekî‘ → Ebû Halde → Ebü’l-Âliye | Ebü’l-Âliye dedi ki: “Susamış olduğum hâlde bir sarrafın evinin yanından geçsem, ondan su istemem.”
+& haddesenâ, haddesenâ, an
+^ قال: «لو مررت
+
+@ Malı olan köleyi ya da içinde hurma bulunan hurmalığı satın alan adam
+
+22519 | Süfyân b. Uyeyne → Zührî → Sâlim → babası | Sâlim’in babasından: Nebî (aleyhisselâm) buyurdu: “Kim aşılandıktan sonra hurmalık satarsa, meyvesi satıcınındır; ancak alıcı onu şart koşarsa (başka). Kim de malı olan bir köle satarsa, malı satıcınındır; ancak alıcı onu şart koşarsa (başka).”
+& haddesenâ, an, an, an
+^ عن النبي عليه السلام قال
+
+22520 | Vekî‘ → Süfyân → Câbir b. Abdullah’ı işiten biri → Câbir b. Abdullah | Câbir b. Abdullah şöyle derdi: Resûlullah ﷺ buyurdu: “Kim malı olan bir köle satarsa, malı satıcınındır; ancak alıcı şart koşarsa (başka).”
+& haddesenâ, an, an, semi‘a
+^ يقول: قال رسول الله
+
+22521 | Ebü’l-Ahvas → Abdülazîz b. Rufey‘ → Atâ ve İbn Ebî Müleyke | Atâ ve İbn Ebî Müleyke dediler ki: Resûlullah ﷺ buyurdu: “Kim malı olan bir köle satarsa, malı satıcınındır; ancak alıcı şart koşarsa (başka)” –(alıcı) “Onu ve malını senden satın aldım” der–; “kim de aşılanmış hurmalık satarsa, meyvesi satıcınındır; ancak alıcı şart koşarsa (başka).”
+& haddesenâ, an, an
+^ قالا: قال رسول الله
+
+22522 | İbn Fudayl → Eş‘as → Ebü’z-Zübeyr → Câbir; ayrıca İbn Fudayl → Eş‘as → Nâfi‘ → İbn Ömer | Câbir ve İbn Ömer dediler ki: “Kim hurmalık satarsa, meyve satıcınındır; ancak alıcı şart koşarsa (başka). Kim de malı olan bir köle satarsa, mal satıcınındır; ancak alıcı şart koşarsa (başka).”
+& haddesenâ, an, an, an; haddesenâ, an, an, an
+^ قالا: «من باع
+
+22523 | Hâtim b. İsmâîl → Ca‘fer → babası → Ali | Ali dedi ki: “Kim malı olan bir köle satarsa, mal satıcınındır. Kim de aşılanmış –yani tozlaştırılmış– hurmalık satarsa, meyvesi satıcınındır; ancak alıcı şart koşarsa (başka). Resûlullah ﷺ bununla hükmetti.”
+& haddesenâ, an, an, kâle
+^ " من باع عبدا
+
+22524 | Abde b. Süleymân → Ubeydullah → Nâfi‘ → İbn Ömer → Ömer | Ömer dedi ki: “Kim malı olan bir köle satarsa, malı efendisinindir; ancak onu satın alan şart koşarsa (başka).”
+& haddesenâ, an, an, an, kâle
+^ «من باع عبدا
+
+22525 | İbn İdrîs → Şeybânî → Şa‘bî → Abdullah b. Utbe ve Şüreyh | Abdullah b. Utbe ve Şüreyh dediler ki: “Onu malı varken sattığında, malı alıcınındır.”
+& haddesenâ, an, an, an
+^ قالا: «إذا باعه
+
+22526 | Ubeydullah → Hanzala → Tâvûs | Tâvûs’tan: Ona bir köle satın alıp malını şart koşan bir adam soruldu. Dedi ki: “Malı onundur; eğer şart koşmadıysa malı efendisinindir.”
+& haddesenâ, an, an
+^ سئل عن رجل
+
+22527 | Cerîr → Mansûr → İbrâhîm | İbrâhîm dedi ki: “(Köle) malı varken satıldığında, malı alıcınındır.”
+& haddesenâ, an, an
+^ قال: «إذا بيع
+
+22528 | Ebû Üsâme → Hişâm → Muhammed | Muhammed’den: O, kişi kölesini malı varken sattığında “Onu sana malıyla birlikte satıyorum” demesinde bir sakınca görmezdi.
+& haddesenâ, an, an
+^ أنه كان لا يرى
+
+@ Bir hayvanı bir hayvan ve peşin bir dirheme karşılık (satmak) hakkında
+
+22529 | İsmâîl b. Uleyye → Eyyûb → Muhammed | Muhammed’den: O, hayvanı hayvana karşılık, hayvan(ın karşılığı olan) dirhemler peşin, dirhemler veresiye olarak (satmakta) bir sakınca görmezdi (metinde böyle).
+& haddesenâ, an, an
+^ «أنه كان لا يرى
+
+22530 | Sehl b. Yûsuf → Eş‘as → Hasan ve Muhammed | Hasan ve Muhammed’den: Aralarında bir dirhem bulunan, dirhem veresiye olmak üzere ineğe karşılık inek (hakkında): Muhammed dedi ki: “Bunda sakınca yoktur.” Hasan ise onu hoş görmedi.
+& haddesenâ, an, an
+^ بقرة ببقرة
+
+22531 | Hocalardan biri → Kays → Alâ b. el-Müseyyeb → Hammâd → İbrâhîm | İbrâhîm dedi ki: “Hayvan peşin ve dirhemler hazır olduğunda, aralarında on dirhem bulunan deveye karşılık devenin satılmasında sakınca yoktur.” Dirhemler peşin, hayvan ertelenmiş olduğunda ise onu hoş görmedi.
+& haddesenâ, an, an, an, an
+^ قال: «لا بأس أن
+
+@ Üzüm ne zaman satılır, hakkında
+
+22532 | Gunder → Şu‘be → Humeyd → Enes | Humeyd dedi ki: Onu (Enes’i) şöyle derken işittim: “Üzüm kararmadıkça satılmaz.”
+& haddesenâ, an, an, an
+^ قال: سمعته يقول
+
+22533 | İbn Mehdî → Hammâd b. Seleme → Humeyd → Enes | Enes’ten: Nebî ﷺ, üzümün kararmadıkça satılmasını yasakladı.
+& haddesenâ, an, an, an
+^ أن النبي صلى الله عليه وسلم: «نهى
+
+@ Kişi başına şuf‘a hakkında
+
+22534 | Gunder → Şu‘be → Ebû Şeybe → Îsâ b. el-Hâris → Şüreyh | Şüreyh’ten: O, şuf‘a hakkında dedi ki: “Payların miktarına göredir.”
+& haddesenâ, an, an, an, an
+^ أنه قال في الشفعة
+
+22535 | Vekî‘ → Süfyân → Câbir → Âmir; ayrıca Vekî‘ → Süfyân → İbn Cüreyc → Atâ | Âmir ve Atâ dediler ki: “Şuf‘a hisselere göredir.”
+& haddesenâ, haddesenâ, an, an; haddesenâ, haddesenâ, an, an
+^ قالا: «الشفعة
+
+22536 | Vekî‘ → Süfyân → Eş‘as → Âmir | Âmir dedi ki: “Şuf‘a kişi başınadır.”
+& haddesenâ, haddesenâ, an, an
+^ قال: «الشفعة على
+
+22537 | Ebû Muâviye → Eş‘as → Şa‘bî | Şa‘bî dedi ki: “Şuf‘a kişi başınadır.” Hasan ise dedi ki: “O, payların miktarına göredir.”
+& haddesenâ, an, an
+^ قال: «الشفعة على
+
+22538 | Vekî‘ → Süfyân | Vekî‘ dedi ki: Süfyân’ı şöyle derken işittim: “Şuf‘a, kasâme ve diyet kişi başınadır.”
+& haddesenâ, semi‘tü
+^ يقول: «الشفعة
+
+22539 | Zeyd b. Hubâb → Ebû Şeybe → Hakem | Hakem dedi ki: “O, kişi başınadır.”
+& haddesenâ, an, an
+^ قال: «هي على
+
+22540 | Muâz → Eş‘as → Hasan | Hasan dedi ki: “Şuf‘a payların miktarına göredir.”
+& haddesenâ, an, an
+^ قال: «الشفعة على قدر
+
+@ Kapılar ve sınırlar sebebiyle şuf‘a
+
+22541 | Vekî‘ → Süfyân → Şeybânî → Şa‘bî | Şa‘bî dedi ki: “Şuf‘a sınırlar sebebiyledir; kapılar sebebiyle şuf‘a yoktur.”
+& haddesenâ, haddesenâ, an, an
+^ قال: «الشفعة بالحدود
+
+22542 | Vekî‘ → Süfyân → İbrâhîm b. Muhâcir → İbrâhîm | İbrâhîm dedi ki: “Şuf‘a kapılar sebebiyledir.”
+& haddesenâ, haddesenâ, an, an
+^ قال: «الشفعة بالأبواب»
+
+22543 | Vekî‘ → İsrâîl → Câbir → Âmir → Şüreyh | Şüreyh dedi ki: “Şuf‘a duvarlar sebebiyledir.”
+& haddesenâ, haddesenâ, an, an, an
+^ قال: «الشفعة بالحيطان»
+
+22544 | Abbâd b. el-Avvâm → Şeybânî → Şa‘bî | Şa‘bî dedi ki: “Kapılar sebebiyle şuf‘a bir şey değildir; şuf‘a ancak sınırlar sebebiyledir.”
+& haddesenâ, an, an
+^ قال: «الشفعة بالأبواب ليس
+
+@ Bakırı demire karşılık veresiye (satmak)
+
+22545 | Şebâbe → Şu‘be → Hakem ve Hammâd | Şu‘be dedi ki: Hakem’e ve Hammâd’a bakırı demire karşılık veresiye (satmayı) sordum. Hammâd bunu hoş görmedi; Hakem ise bunda bir sakınca görmedi.
+& haddesenâ, an, kâle
+^ قال: سألت الحكم
+
+@ Mükâtebe bedelinin tamamını getiren mükâteb
+
+22546 | İbn Ebî Zâide → İbn Avn → Muhammed | Muhammed dedi ki: Bir mükâteb, malın hepsini efendisine vermek istedi. (Efendisi) “Onu ancak taksitler hâlinde alırım” dedi. Osman ona azat (belgesini) yazdı, malı aldı ve dedi ki: “Ben onu sana taksitler hâlinde veririm.” Adam bunu görünce malı aldı.
+& haddesenâ, an, an
+^ قال: أراد مكاتب
+
+22547 | Ali b. Hâşim → Ebû Leylâ → Ebû Dabbe | Ebû Dabbe dedi ki: Malın tamamını getiren bir mükâteb(in davası) Ömer’e götürüldü. Efendisi dedi ki: “Onu senden kabul etmem; ben seninle, onu senden yıllar içinde taksitler hâlinde alayım da bana faydası olsun diye mükâtebe yaptım; belki de bununla birlikte ölürsün, ben de sana mirasçı olurum.” Ömer malın (alınmasını) emretti, onu beytülmâle koydu, sonra onu ona (efendiye) taksitler hâlinde ödedi ve (mükâtebin) azadını geçerli kıldı.
+& haddesenâ, an, an
+^ قال: رفع إلى عمر
+
+22548 | Vekî‘ → İsrâîl → Abdülazîz b. Rufey‘ → Ebû Bekir b. Amr b. Hazm | Ebû Bekir b. Amr b. Hazm’dan: Bir adam bir kölesiyle mükâtebe yaptı ve onu ona taksitlere böldü. (Köle) mükâtebe bedelinin hepsini ona getirdi; efendi onu ancak taksitler hâlinde kabul etmekten kaçındı. Mükâteb Ömer’e geldi; (Ömer) efendisine (haber) gönderdi, o da geldi. Malı ona arz etti; onu almaktan kaçındı. Ömer dedi ki: “Ey Yerfâ, onu beytülmâle koy.” Efendiye: “Onu taksitler hâlinde al” dedi. Mükâtebe de: “Dilediğin yere git” dedi.
+& haddesenâ, an, an, an
+^ أن رجلا كاتب
+
+@ Bir fülûsu iki fülûsa karşılık (değiştirmek) hakkında
+
+22549 | Cerîr → Leys → Mücâhid | Mücâhid dedi ki: “Bir fülûsu iki fülûsa karşılık peşin olarak (değiştirmekte) sakınca yoktur.”
+& haddesenâ, an, an
+^ قال: «لا بأس بالفلس
+
+22550 | Hafs → Leys → Tâvûs | (Tâvûs’tan) bunun benzeri (rivayet edildi).
+& haddesenâ, an, an
+^ مثله
+
+22551 | Ebû Muâviye → Şeybânî → Hammâd | Hammâd dedi ki: “Bir fülûsu iki fülûsa karşılık peşin olarak (değiştirmekte) sakınca yoktur.”
+& haddesenâ, an, an
+^ قال: «لا بأس بالفلس
+
+@ Üzerinde borç olduğu hâlde köleyi satan adam
+
+22552 | İbn İdrîs → Şeybânî | Şeybânî’den: “Onun borcu hakkında: efendisinin üzerinedir ve bedelini aşmaz. Onu malı varken sattığında, malı onu satın alanındır”; yani alıcının (metin bu kısımda bozuktur).
+& haddesenâ, an
+^ «عن دينه
+
+22553 | Cerîr → Mansûr → İbrâhîm | İbrâhîm dedi ki: “Köle, üzerinde borç ve malı varken satıldığında, malı onu satın alanındır.”
+& haddesenâ, an, an
+^ قال: «إذا بيع العبد
+
+22554 | Yezîd b. Hârûn → İbn Avn ve Hişâm ve Eş‘as → Muhammed → Şüreyh | Şüreyh’ten, üzerinde borç olan köle hakkında, dedi ki: “Onun borcu, onu satan ve bedelini yiyenin üzerinedir.”
+& haddesenâ, ahberanâ, an, an
+^ في العبد وعليه دين
+
+22555 | İbn Uleyye → İbn Avn → İbn Sîrîn | İbn Sîrîn’den: Abdurrahmân b. Üzeyne’ye borca girmiş bir köle (davası) getirildi; dedi ki: “Malı borcuna karşılıktır.”
+& haddesenâ, an, an
+^ أن عبد الرحمن بن أذينة
+
+@ Bir hayvan satın alıp onunla yolculuk eden, sonra onda bir kusur bulan adam
+
+22556 | İsmâîl b. Uleyye → Eyyûb → İbn Sîrîn | İbn Sîrîn dedi ki: Bir adam bir adamdan bir hayvan satın aldı ve onunla yolculuk etti. Dönünce onda bir kusur buldu; onunla Şüreyh’e muhakeme oldu. (Şüreyh satıcıya) dedi ki: “Ona sırtı(nı kullanma) hususunda sen izin verdin.”
+& haddesenâ, an, an
+^ قال: اشترى رجل
+
+22557 | Vekî‘ → Süfyân → Gaylân → Hakem | Hakem’den, bir hayvan satın alıp onu zayıflatan, sonra onda bir kusur bulan adam hakkında, dedi ki: “Onu geri verir; onunla birlikte zayıflık ile semizlik arasındaki (farkı) da geri verir.”
+& haddesenâ, an, an, an
+^ في رجل اشترى دابة
+
+@ Şahitlik edip sonra birinin (şahitliğinden) döndüğü iki şahit
+
+22558 | Abdurrahmân b. Mehdî → Süfyân → Ebû Hasîn | Ebû Hasîn’den: İki adam Şüreyh’in yanında şahitlik ettiler; (Şüreyh) hükmü yürürlüğe koydu, sonra ikisinden biri (şahitliğinden) döndü. Şüreyh onun dönüşünü kabul etmedi.
+& haddesenâ, an, an
+^ «عن رجلين

@@ -1,0 +1,270 @@
+@ Hep birlikte mükâtebe yapan, bir kısmı ölen topluluk hakkında
+
+20539 | Fadl b. Dükeyn → İbn Ebî Ganiyye → Hakem | Hakem’den: Ev halkının hepsiyle mükâtebe yapan, bir kısmı ölen adam hakkında dedi ki: “Hisse oranında ondan düşürülür.”
+& haddesenâ, an, an
+^ في الرجل يكاتب
+
+@ Bir cariye satın alan, cariye ondan doğuran, sonra (başka) bir adamın cariyenin kendisine ait olduğuna beyyine getirdiği adam hakkında
+
+20540 | Ebû Bekir b. Ayyâş → Mutarrif → Âmir → Ali | Ali’den: Bir cariye satın alan, (cariye) ondan çocuklar doğuran, sonra (başka) bir adamın onun kendisine ait olduğuna beyyine getirdiği adam hakkında dedi ki: “(Cariye) ona geri verilir; çocuğuna da ona karşı kıymet biçilir. (Müşteri de) onu kendisine satanı, değerli ya da değersiz ne ise onunla tazmine zorlar.”
+& haddesenâ, an, an, an
+^ في رجل اشترى
+
+20541 | Hüşeym → Mugîre → İbrâhîm | İbrâhîm’den: Cariyesini, onu satın almış bir adamın yanında, ondan doğurmuş olarak bulan adam hakkında dedi ki: “(Cariyeyi) alır, çocuğun kıymetini de babalarından alır; kıymetten de ona bir miktar indirim yapılır.”
+& haddesenâ, an, an
+^ في رجل وجد
+
+20542 | Hüşeym → Mugîre → Şa‘bî → Ebû Meysere | Ebû Meysere dedi ki: “Her genç köleye karşılık bir genç köle bir farizadır. Biz girdik ve …” (metin bu kısımda bozuktur).
+& haddesenâ, an, an, kâle
+^ قال: قال أبو
+
+20543 | Hüşeym → Yûnus → Muhammed b. Sâlim → Şa‘bî | Muhammed b. Sâlim dedi ki: Ona (Şa‘bî’ye) dedim: “Çocuğa ne zaman kıymet biçilir?” Dedi ki: “Doğdukları gün.”
+& haddesenâ, an, an, kâle
+^ قال: قلت له
+
+@ Âriyet hakkında; onu tazmin ettirmeyenler ve (tazmin ettirenler)
+
+20544 | Ebü’l-Ahvas → Abdülazîz b. Rufey‘ → İbn Ebî Müleyke → İbn Abbâs | İbn Ebî Müleyke dedi ki: “İbn Abbâs bana, sahibi isterse âriyeti tazmin ettir diye yazdı.”
+& haddesenâ, an, an, ketebe ileyye
+^ قال: «كتب إلي
+
+20545 | İsmâîl b. Ayyâş → Sevâde b. Ziyâd → Ömer b. Abdülazîz | Sevâde b. Ziyâd dedi ki: Ömer b. Abdülazîz’e, düğün zinetini ödünç alan, zinetin de helâk olduğu bir kadın hakkında yazdım. Ömer b. Abdülazîz şöyle yazdı: “… (metin bu kelimede bozuktur) bir hıyanet olmadıkça ona tazmin yoktur.”
+& haddesenâ, an, kâle
+^ قال: كتبت إلى
+
+20546 | Hafs → Haccâc → Hakem → Ali | Hakem’den: Ali âriyet hakkında dedi ki: “O emindir.”
+& haddesenâ, an, an, enne
+^ قال في العارية
+
+20547 | Cerîr → Mugîre → Simâk | Simâk dedi ki: Bir kadın yüzükler ödünç aldı. Abdest almak isteyince onları kucağına koydu, kayboldular. Şüreyh’e başvurdular. (Şüreyh) dedi ki: “O, onları ancak geri vermek için ödünç aldı; muhalefet etti.” Şüreyh onu tazminle yükümlü tuttu.
+& haddesenâ, an, an
+^ قال: استعارت امرأة
+
+20548 | Cerîr → Mugîre → İbrâhîm | İbrâhîm dedi ki: “Kiralayana ve ödünç alana, muhalefet etmedikçe tazmin yoktur.”
+& haddesenâ, an, an
+^ قال: «ليس على
+
+20549 | Yahyâ b. Abdülmelik b. Ebî Ganiyye → babası → Hakem ve Hammâd | Hakem ve Hammâd’dan: İkisi ödünç alanı tazminle yükümlü tutmazlardı.
+& haddesenâ, an, an
+^ «أنهما كانا
+
+20550 | Yezîd b. Hârûn → Hişâm → Hasan | Hasan dedi ki: “Âriyet sahibi (ödünç alan) muhalefet ederse tazmin eder.”
+& haddesenâ, an, an
+^ قال: «إذا خالف
+
+20551 | İbn Mehdî → Süfyân → Ebû İshâk → Atâ | Atâ dedi ki: “Âriyet tazmin edilir.”
+& haddesenâ, an, an, an
+^ قال: «العارية مضمونة»
+
+20552 | Vekî‘ → İbn Cüreyc ve İbn Şerîk → İbn Ebî Müleyke | İbn Ebî Müleyke’den: İbn Abbâs âriyeti tazmin ettirirdi. İbn Cüreyc (şunu) ekledi: “Sahibi onu satarsa.”
+& haddesenâ, an, an
+^ «أن ابن عباس
+
+20553 | Vekî‘ → Ali b. Sâlih → Abdüla‘lâ → Muhammed İbnü’l-Hanefiyye → Ali | Ali dedi ki: “Âriyet satış değildir, tazmin edilir de değildir; o ancak bir iyiliktir. Ancak muhalefet ederse tazmin eder.”
+& haddesenâ, an, an, an, an
+^ قال: «العارية ليست
+
+20554 | Cerîr → Mugîre → İbrâhîm | İbrâhîm’den: Bir adamdan bir at ödünç alıp onu ölünceye kadar koşturan adam hakkında dedi ki: “Ona tazmin yoktur; çünkü adam atını koşturur.”
+& haddesenâ, an, an
+^ في رجل استعار
+
+20555 | Fadl b. Dükeyn → İsrâîl → Ebû İshâk → Şa‘bî → Mesrûk | Mesrûk’tan: O, âriyeti tazmin ettirirdi.
+& haddesenâ, an, an, an, an
+^ «أنه كان يضمن
+
+20556 | İbn Ebî Zâide → Hasan | Hasan dedi ki: “Bir binek hayvanını ödünç alıp onu kiraya verirse tazmin eder.”
+& haddesenâ, an
+^ قال: «إذا استعار
+
+20557 | Cerîr → Abdülazîz b. Rufey‘ → İyâs b. Abdullah b. Safvân | İyâs b. Abdullah b. Safvân’dan: Safvân, Resûlullah’tan ﷺ kaçtı. Resûlullah ﷺ ona (haber) gönderdi; Resûlullah ﷺ Huneyn’e (gitmek) istiyordu. Dedi ki: “Ey Safvân, yanında silah var mı?” (Safvân) dedi ki: “Âriyet olarak mı, gasp olarak mı?” Dedi ki: “Hayır, bilakis âriyet olarak.” Ona otuz ile kırk arası zırh ödünç verdi. Resûlullah ﷺ Huneyn’e gazveye çıktı. Müşrikler bozguna uğrayınca Safvân’ın zırhları toplandı; onlardan birkaç zırh kayıp bulundu. Resûlullah ﷺ ona dedi ki: “Ey Safvân, zırhlarından birkaç zırhı kaybettik; sana tazmin edelim mi?” Dedi ki: “Hayır, ey Allah’ın Resûlü ﷺ; bugün kalbimde (önceden) olmayan şey var.”
+& haddesenâ, an, an
+^ أن صفوان هرب
+
+20558 | Vekî‘ → Şu‘be → Hakem → İbrâhîm | İbrâhîm dedi ki: “Şüreyh hiçbir âriyeti tazmin ettirmedi; ancak bir yüzük ödünç alıp onu yıkanma yerine koyan, (yüzüğün de) kaybolduğu bir kadın müstesna; onu tazminle yükümlü tuttu.”
+& haddesenâ, an, an, an
+^ قال: «ما ضمن
+
+20559 | Vekî‘ → İsrâîl → Eş‘as b. Ebi’ş-Şa‘sâ → Şüreyh | Şüreyh’ten: O, âriyeti tazmin ettirirdi.
+& haddesenâ, haddesenâ, an, an
+^ " أنه كان
+
+20560 | İbn İdrîs → Şeybânî → Şa‘bî | Şa‘bî dedi ki: Şüreyh, Ziyâd ona emredinceye kadar âriyeti ve emaneti tazmin ettirmezdi. (Şeybânî) dedi ki: Ona dedim: “Peki bunu nasıl yapardı?” Dedi ki: “Ölünceye kadar onu tazmin ettirmeye devam etti.”
+& haddesenâ, an, an
+^ قال: كان شريح
+
+20561 | İbn Uyeyne → Amr → Abdurrahmân b. es-Sâib | Abdurrahmân b. es-Sâib’den: Bir adam bir adamdan bir deve ödünç aldı; deve helâk oldu. Mervân, Ebû Hüreyre’ye sordu; o da dedi ki: “Tazmin eder.”
+& haddesenâ, an, an
+^ أن رجلا استعار
+
+20562 | İsmâîl b. Ayyâş → Şurahbîl b. Müslim el-Havlânî → Ebû Ümâme el-Bâhilî | Ebû Ümâme el-Bâhilî dedi ki: Nebî’yi ﷺ Vedâ haccında şöyle derken işittim: “Âriyet geri verilir, borç ödenir, za‘îm de ödemekle yükümlüdür” –kefili kastediyor.
+& haddesenâ, an, semi‘tü
+^ قال: سمعت النبي
+
+20563 | Abde b. Süleymân → Saîd → Katâde → Hasan → Semüre | Semüre’den: Nebî ﷺ buyurdu: “Elin aldığı şey, onu geri verinceye kadar onun üzerinedir.”
+& haddesenâ, an, an, an, an
+^ عن النبي صلى
+
+@ Mükâtep, üzerinde bir şey kaldıkça köledir, hakkında
+
+20564 | İsmâîl b. Uleyye → Eyyûb → Nâfi‘ → İbn Ömer | İbn Ömer dedi ki: “Mükâtep, üzerinde bir dirhem kaldıkça köledir.”
+& haddesenâ, an, an, an
+^ قال: «المكاتب عبد
+
+20565 | Ali b. Müshir → Ubeydullah → Nâfi‘ → İbn Ömer | İbn Ömer dedi ki: “Mükâtep, üzerinde mükâtebesinden bir dirhem kaldıkça köledir.”
+& haddesenâ, an, an, an
+^ قال: «المكاتب عبد
+
+20566 | Vekî‘ → İsmâîl → Şa‘bî; ayrıca Vekî‘ → Süfyân → İbn Ebî Necîh → Mücâhid → Zeyd | Zeyd dedi ki: “Mükâtep, üzerinde bir dirhem kaldıkça köledir.”
+& haddesenâ, an, an; haddesenâ, an, an, an, an
+% Arapçada birinci yolda Şa‘bî’den sonra ad yoktur; “Zeyd” yalnız ikinci yolun sonunda geçer.
+^ قال: قال: «المكاتب
+
+20567 | Hafs b. Gıyâs → Amr b. Meymûn → Süleymân b. Yesâr | Süleymân b. Yesâr dedi ki: Âişe’nin yanına girmek için izin istedim. “Süleymân mı?” dedi. “Süleymân” dedim. Dedi ki: “Mükâtebenden üzerinde kalanı ödedin mi, onun üzerine anlaştın mı?” Dedim ki: “Evet, biraz bir şey müstesna.” Dedi ki: “Gir; çünkü sen, üzerinde bir şey kaldıkça kölesin.”
+& haddesenâ, an, an
+^ قال: استأذنت على
+
+20568 | Hafs → Leys → Mücâhid | Mücâhid dedi ki: Mü’minlerin anneleri, mükâtebesinden üzerinde bir miskal ya da bir dinar kaldıkça mükâtepten örtünmezlerdi.
+& haddesenâ, an, an
+^ قال: كانت أمهات
+
+20569 | Vekî‘ → Ca‘fer b. Burkân → Meymûn | Meymûn’dan: Âişe, Ebû Meryem künyesiyle anılan bir mükâtebine dedi ki: “Gir; üzerinde dört dirhemden başka bir şey kalmamış olsa bile.”
+& haddesenâ, an, an
+^ أن عائشة قالت
+
+20570 | Vekî‘ → Ali b. el-Mübârek → Yahyâ → İkrime → İbn Abbâs | İbn Abbâs dedi ki: “Mükâtebin haddi kölenin haddidir.”
+& haddesenâ, an, an, an, an
+^ قال: «حد المكاتب
+
+20571 | İbn Süleymân → Sâlih b. Hayy → Şa‘bî | Şa‘bî dedi ki: “Üzerinde bir dirhem kaldıkça kölenin haddi, mükâtebin haddidir.”
+& haddesenâ, an, an
+^ قال: «حد المملوك
+
+20572 | Yahyâ b. Yemân → İsrâîl → Abbâd b. Mansûr → Hammâd → İbrâhîm → Osman | Osman dedi ki: “Mükâtep, üzerinde bir dirhem kaldıkça köledir.”
+& haddesenâ, an, an, an, an, an
+^ قال: «المكاتب عبد
+
+20573 | Zeyd b. Hubâb → Dâvûd b. Ebi’l-Furât → İbrâhîm es-Sâiğ → Atâ, Abdullah b. Ubeyd b. Umeyr ve Nâfi‘ | Atâ, Abdullah b. Ubeyd b. Umeyr ve Nâfi‘ dediler ki: “Mükâtep, üzerinde bir dirhem kaldıkça köledir.”
+& haddesenâ, an, an, an
+^ قالوا: «المكاتب عبد
+
+@ Mükâtebesini ödediğinde köleliğe geri döndürülmez diyenler
+
+20574 | Ali b. Müshir → Şeybânî → Şa‘bî → Abdullah | Abdullah dedi ki: “Mükâtep boynundan (bedelini) öderse köleliğe geri döndürülmez.”
+& haddesenâ, an, an, kâle
+^ قال: قال عبد
+
+20575 | Hafs b. Gıyâs → A‘meş → İbrâhîm → Abdullah; ayrıca Hafs b. Gıyâs → Eş‘as → Şa‘bî → Abdullah | Abdullah dedi ki: “Mükâtep mükâtebesinin üçte birini öderse o borçludur.”
+& haddesenâ, an, an, kâle; haddesenâ, an, an, kâle
+^ قالا: قال عبد
+
+20576 | Abdülvehhâb es-Sekafî → Yahyâ b. Saîd → Urve | Urve’den: Mervân şöyle hükmederdi: Mükâtep mükâtebesinin yarısını öderse (kalanı) onunla takip edilen bir borçtur. “Bunu Abdülmelik b. Mervân’a andım; onunla amel etmekten kaçındı.”
+& haddesenâ, an, an
+^ أن مروان «كان
+
+20577 | İbn Ebî Zâide ve Vekî‘ → Mes‘ûdî → Kâsım → Câbir b. Semüre → Ömer | Ömer dedi ki: “Siz mükâteplerle mükâtebe yapıyorsunuz; (mükâtep) yarısını öderse köleliğe geri döndürülmez.”
+& haddesenâ, an, an, an, kâle
+^ قال: قال عمر
+
+20578 | Vekî‘ → Mes‘ûdî → Hakem → Ali | Ali dedi ki: “İlk taksitte onda âzatlık cereyan eder.”
+& haddesenâ, an, an, an
+^ قال: «تجري فيه
+
+20579 | Abdüla‘lâ → Hişâm → Hasan | Hasan’dan: Mükâtebesinin bir kısmını ödemiş olarak âciz kalan, (efendileri de) ona (geri dönmeyi) şart koşmuş olan mükâtep hakkında (soruldu): O (köleliğe) döndürülür mü? Dedi ki: “Yarısını ödemişse o borçludur.”
+& haddesenâ, an, an
+^ أنه قال في
+
+20580 | Abdüla‘lâ → Hişâm → Hasan | Hasan’dan: Âciz kalan mükâtep hakkında dedi ki: “Yarısını ödemişse o borçludur.”
+& haddesenâ, an, an
+^ أنه قال في
+
+20581 | Gunder → Şu‘be → Mansûr → İbrâhîm | İbrâhîm dedi ki: “Üçte birini, dörtte birini ya da yarısını öderse onu köleleştirmeleri hakları değildir.”
+& haddesenâ, an, an, an
+^ قال: «إذا أدى
+
+20582 | İbn Uyeyne → Zührî → Nebhân → Ümmü Seleme | Ümmü Seleme dedi ki: Resûlullah ﷺ buyurdu: “Birinizin mükâtebi olur da yanında ödeyecek şeyi bulunursa ondan örtünsün.”
+& haddesenâ, an, an, an
+^ قالت: قال رسول
+
+20583 | Vekî‘ → Süfyân → Mansûr → İbrâhîm | İbrâhîm dedi ki: “Üçte birini ya da dörtte birini öderse o borçludur” denirdi.
+& haddesenâ, haddesenâ, an, an
+^ قال: كان يقال
+
+20584 | Vekî‘ → Süfyân → Târık → Şa‘bî → Ali | Ali dedi ki: “Mükâtepten ödediği kadarı âzat olur.”
+& haddesenâ, haddesenâ, an, an, an
+^ قال: «يعتق من
+
+@ Karz, vadeli olsa bile peşindir diyenler
+
+20585 | Cerîr → Mugîre → Hâris ve arkadaşları → Abîde → İbrâhîm | İbrâhîm dedi ki: “Karz, vadeli olsa bile peşindir.”
+& haddesenâ, an, an, an, an
+^ قال: «والقرض حال
+
+@ Cariyesini âzat edip karnındakini istisna eden adam hakkında
+
+20586 | Hüşeym → Mugîre → İbrâhîm | İbrâhîm’den: Hamile (bir cariyeyi) satan ya da onu âzat edip karnındakini istisna eden kimse hakkında dedi ki: “Yaratılışı belirginleşmiş olanda istisnası onundur; yaratılışı belirginleşmemişse ona bir şey yoktur.”
+& haddesenâ, an, an
+^ قال: من باع
+
+20587 | Hüşeym → Yûnus → Hasan | Hasan’dan: O, satışta istisnasını caiz görür, âzatta caiz görmezdi.
+& haddesenâ, an, an
+^ «أنه كان يجيز
+
+20588 | Yahyâ b. Saîd → Hişâm → Muhammed | Muhammed’den: Cariyeyi âzat edip karnındakini istisna eden adam hakkında dedi ki: “İstisnası onundur.”
+& haddesenâ, an, an
+^ في الرجل يعتق
+
+20589 | Abdüla‘lâ → Ma‘mer → Zührî | Zührî dedi ki: “İkisi de hürdür.”
+& haddesenâ, an, an
+^ قال: «هما حران»
+
+20590 | Yahyâ b. Yemân → Süfyân → İbn Cüreyc → Atâ; ayrıca Yahyâ b. Yemân → Süfyân → Câbir → Şa‘bî; ayrıca Yahyâ b. Yemân → Süfyân → Mansûr → İbrâhîm | Atâ, Şa‘bî ve İbrâhîm dediler ki: “(Cariyeyi) âzat edip karnındakini istisna ederse, istisnası onundur.”
+& haddesenâ, an, an, an; haddesenâ, an, an, an; haddesenâ, an, an, an
+^ قالوا: «إذا أعتقها
+
+20591 | Haramî b. Umâre b. Ebî Hafsa → Şu‘be → Hakem ve Hammâd | Şu‘be dedi ki: Hakem’e ve Hammâd’a sordum; dediler ki: “Bu onun hakkıdır.”
+& haddesenâ, an, kâle
+^ قال: سألت الحكم
+
+20592 | Kurre b. Süleymân → Muhammed b. el-Fadâ → babası → İbn Ömer | İbn Ömer’den: Cariyeyi satıp karnındakini istisna eden adam hakkında dedi ki: “İstisnası onundur.”
+& haddesenâ, an, an, an
+^ في الرجل يبيع
+
+@ Bir şey iddia edip ona beyyine getiren, (sonra) satmadığına dair yemin ettirilen adam hakkında
+
+20593 | Cerîr → Mugîre → Hâris | Hâris’ten: Bir adamın elindeki binek hayvanını iddia edip “Benden kayboldu” diyen adam hakkında dedi ki: “Şahitlere ‘O satmadı, hibe etmedi’ (diye şahitlik edin) demem. Fakat şahitler onun kendi hayvanı olduğuna ve ondan kaybolduğuna şahitlik ederlerse, ona ‘satmadığına ve hibe etmediğine’ Allah adına yemin ettiririm.”
+& haddesenâ, an, an
+^ في الرجل يدعي
+
+20594 | Cerîr → Eş‘as → İbn Sîrîn → Şüreyh | Şüreyh dedi ki: “Şahitler onun kendi hayvanı olduğuna şahitlik ederlerse, ona Allah adına ‘Helâk etmedim ve helâk edene emretmedim’ diye yemin ettiririm.”
+& haddesenâ, an, an, an
+^ قال: " إذا شهدت
+
+20595 | Humeyd b. Abdurrahmân → Hasan b. Sâlih → Esved b. Kays → Hassân b. Sümâme | Hassân b. Sümâme’den: Huzeyfe kendisine ait bir deveyi tanıdı ve onun hakkında müslümanların kadılarından bir kadıya dava götürdü. Yargılamada Huzeyfe’ye yemin düştü; o da “kendisinden başka ilah olmayan Allah’a yemin olsun ki satmadı ve hibe etmedi” diye yemin etti.
+& haddesenâ, an, an, an
+^ أن حذيفة عرف
+
+@ Arpaya karşılık buğday, bire iki hakkında
+
+20596 | Cerîr → Mugîre | Mugîre dedi ki: Haccâc insanlara rızık (tayın) verirdi ve rızık sahiplerine derdi ki: “Dileyen, kendisine ait iki cerîb buğdaya karşılık dört cerîb arpa alsın.” İbrâhîm’e ve Şa‘bî’ye sordular; dediler ki: “Onda sakınca yoktur.”
+& haddesenâ, an
+^ قال: كان الحجاج
+
+20597 | İbn Fudayl → Eş‘as → Ebü’z-Zübeyr → Câbir | Câbir dedi ki: “İki tür farklı olunca peşin olarak fazlalıkta sakınca yoktur.”
+& haddesenâ, an, an, an
+^ قال: «إذا اختلف
+
+20598 | Abdüla‘lâ → Ma‘mer → Zührî → Sâlim → İbn Ömer | Sâlim’den: İbn Ömer, ölçülen şeyde renkleri farklı olduğunda, peşin olarak bire iki (satmakta) bir sakınca görmezdi.
+& haddesenâ, an, an, an, enne
+^ «كان لا يرى
+
+20599 | Abdülvehhâb es-Sekafî → Hâlid → Ebû Kılâbe | Ebû Kılâbe dedi ki: “İki tür farklı olunca nasıl dilersen sat.”
+& haddesenâ, an, an
+^ قال: «إذا اختلف
+
+20600 | Abdüla‘lâ → Ma‘mer → Zührî | Zührî’den: O, buğdayı arpaya karşılık, biri diğerinden fazla olarak peşin satmakta bir sakınca görmezdi.
+& haddesenâ, an, an
+^ «أنه كان لا
+
+20601 | Yezîd b. Hârûn → İbn Ebî Arûbe → Katâde → Müslim b. Yesâr → Ebü’l-Eş‘as es-San‘ânî → Ubâde b. es-Sâmit | Ubâde b. es-Sâmit dedi ki: “Buğdayı arpaya karşılık, arpa ondan fazla olarak peşin satmakta sakınca yoktur; veresiye ise uygun değildir.”
+& haddesenâ, an, an, an, an, enne
+^ قال: «لا بأس
