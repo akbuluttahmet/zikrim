@@ -1,0 +1,288 @@
+@ Ölüp oğlunu, babasını ve mevlâsını bırakan, sonra mevlâsı ölüp mal bırakan adam
+
+31530 | Hüşeym → Şeybânî → Şa‘bî → Şüreyh | Şüreyh’ten: Şöyle derdi: “Velâ, mal yerindedir.”
+& haddesenâ, an, an, an
+^ " أنه كان يقول
+
+31531 | Vekî‘ → Ebû Âsım → Şa‘bî → Şüreyh | Şüreyh’ten: O, velâyı mal gibi işletirdi.
+& haddesenâ, haddesenâ, an, an
+^ «أنه كان يجري
+
+@ Ölüp bir mevlâsını, dedesini ve kardeşini bırakan adam hakkında: Velâ kimindir?
+
+31532 | Vekî‘ → Süfyân → İbn Cüreyc → Atâ | Atâ’dan, ölüp bir mevlâsını, dedesini ve kardeşini bırakan adam hakkında —mevlâsının velâsı kimindir?— Atâ dedi ki: “Velâ ikisi arasında yarı yarıyadır.”
+& haddesenâ, haddesenâ, an, an
+^ في رجل مات وترك
+
+31533 | Vekî‘ → Süfyân → Zührî | Zührî’den: Şöyle dedi: “Velâ dedenindir.”
+& haddesenâ, kâle, unbi’tü
+^ أنه قال: «الولاء
+
+31534 | Zeyd b. el-Hubâb → İbn Ebî Zi’b → Zührî | Zührî’den, dedesini ve kardeşini bırakan adam hakkında; dedi ki: “Velâ dedenindir; çünkü (kişi) dedeye nisbet edilir, kardeşe nisbet edilmez.”
+& haddesenâ, an, an
+^ في رجل ترك جده
+
+@ Hür bir kadınla evlenen, sonra (kadın) ona çocuklar doğurduktan sonra azat edilen köle: Çocuğunun velâsı kimin olur?
+
+31535 | Cerîr → Mansûr ve A‘meş → İbrâhîm → Ömer | Ömer’den, hür kadınla evlenen, (kadının) ona çocuklar doğurduğu, sonra azat edilen köle hakkında; dedi ki: “Çocuğunun velâsı ona katılır.”
+& haddesenâ, an, an, an
+^ في المملوك تزوج
+
+31536 | Vekî‘ → A‘meş → İbrâhîm → Esved → Ömer | Ömer dedi ki: “Hür kadın kölenin nikâhı altında olur da doğurursa, çocuğunun velâsı annenin mevlâlarınındır. Baba azat edilince velâyı (kendine) çeker.”
+& haddesenâ, haddesenâ, an, an, kâle
+% A‘meş: “Sanırım Esved’den” dedi.
+^ «إذا كانت الحرة
+
+31537 | Hafs → Eş‘as → Şa‘bî → Ömer, Ali, Abdullah ve Zeyd | Ömer, Ali, Abdullah ve Zeyd şöyle derlerdi: “(Köle) azat edilir ve hür bir kadından çocukları olursa onların velâsını (kendine) çeker.” (Eş‘as dedi ki:) Şa‘bî’ye: “Ya dede?” dedim. Dedi ki: “Dede de babanın çektiği gibi çeker.”
+& haddesenâ, an, an, an
+^ كانوا يقولون
+
+31538 | Mu‘temir → Haccâc → Şa‘bî → Hâris → Ali | Ali dedi ki: “(Baba) azat edildiğinde velâ babanın mevlâlarına döner.” (Şa‘bî) Ömer ile Osman’ın “bununla hükmettiklerini”, Şüreyh’in ise “(önce) bununla hükmetmeyip sonra bununla hükmettiğini” rivayet etti.
+& haddesenâ, an, an, an, an
+^ قال: «يرجع الولاء
+
+31539 | Vekî‘ → Hişâm b. Urve → babası | Hişâm b. Urve’nin babasından: Zübeyr’in mükâteb bir kölesi, Râfi‘ b. Hadîc’in bir ümmüveledi ile evlendi. (Kadın) çocuklar doğurdu, sonra (köle) azat edildi. Zübeyr ile Râfi‘ onların velâsı hakkında Osman’a davalaştılar; (Osman) velânın Zübeyr’e ait olduğuna hükmetti.
+& haddesenâ, haddesenâ, an
+^ " أن مكاتبا للزبير
+
+31540 | Vekî‘ → Süfyân → Humeyd el-A‘rec → Muhammed b. İbrâhîm et-Teymî | Muhammed b. İbrâhîm et-Teymî’den: Osman b. Affân velânın Zübeyr’e ait olduğuna hükmetti.
+& haddesenâ, haddesenâ, an, an
+^ أن عثمان بن عفان
+
+31541 | Vekî‘ → Süfyân → Câbir → Şa‘bî → Esved → Abdullah | Abdullah dedi ki: “Baba azat edilince velâyı (kendine) çeker.”
+& haddesenâ, haddesenâ, an, an, an, an
+^ قال: «إذا أعتق الأب
+
+31542 | Vekî‘ → İsrâîl → Câbir → Ensâr’dan İbrâhîm denilen bir adam → Ali | Ali dedi ki: “Baba azat edilince velâyı (kendine) çeker.”
+& haddesenâ, haddesenâ, an, an, an
+^ قال: «إذا أعتق الأب
+
+31543 | Vekî‘ → İsrâîl → Câbir → Âmir → Şüreyh | Şüreyh’ten: O, velânın çekilmesiyle hükmetmezdi; nihayet Esved ona Abdullah’tan “onun bununla hükmettiğini” rivayet etti; bunun üzerine Şüreyh (bununla) hükmetti.
+& haddesenâ, haddesenâ, an, an, an
+^ أنه كان لا يقضي
+
+31544 | Abdüla‘lâ → Dâvûd → İkrime b. Hâlid → Ömer b. Abdülazîz | Ömer b. Abdülazîz dedi ki: “Çocuğunun velâsını (kendine) çeker.”
+& haddesenâ, an, an, an
+^ قال: «يجر ولاء
+
+31545 | Abdüla‘lâ → Hişâm → Muhammed | Muhammed dedi ki: “Çocuğunun velâsını (kendine) çeker.”
+& haddesenâ, an, an
+^ قال: «يجر ولاء
+
+31546 | Mu‘temir → Yûnus → Hasan | Hasan dedi ki: “(Baba) azat edildiğinde velâ babanın mevlâlarına döner.”
+& haddesenâ, an, an
+^ قال: «يرجع الولاء
+
+31547 | Abdüssamed b. Abdülvâris → Hammâd b. Seleme → Katâde → Saîd ve Hılâs | Saîd ve Hılâs’tan: Şöyle dediler: “Köle hür kadınla evlenir, (kadın) çocuklar doğurur, sonra (köle) azat edilirse velâyı (kendine) çeker.”
+& haddesenâ, an, an, an
+^ أنهما قالا: «إذا
+
+31548 | Vekî‘ → Süfyân → Abdullah b. Ebi’s-Sefer → Şa‘bî | Şa‘bî dedi ki: “Dede velâyı (kendine) çeker.”
+& haddesenâ, haddesenâ, an, an
+^ قال: «الجد يجر
+
+@ (Kadın) onun köle olduğu sırada ne doğurduysa onun velâsı annesinin mevlâlarınındır diyenler
+
+31549 | Abdurrahmân b. Mehdî → Hammâd b. Seleme → Kays b. Sa‘d → Mücâhid; ayrıca Abdurrahmân b. Mehdî → Hammâd b. Seleme → Katâde → Humeyd b. Abdurrahmân ve İkrime b. Hâlid → Yezîd b. Abdülmelik | Dediler ki: “(Kadın) onun köle olduğu sırada ne doğurduysa velâ annenin mevlâlarınındır; onun hür olduğu sırada ne doğurduysa velâ babanın mevlâlarınındır.”
+& haddesenâ, an, an, an; haddesenâ, an, an, an, an
+^ قالوا: «ما ولدت
+
+31550 | Abdüla‘lâ → Ma‘mer → Zührî | Zührî’den: Şöyle derdi: “(Baba) velâyı ancak kendisi hürken doğanlarda çeker.”
+& haddesenâ, an, an
+^ أنه كان يقول
+
+31551 | Abdülvehhâb b. Atâ → İbn Cüreyc | İbn Cüreyc dedi ki: Atâ’ya: “Bir adam (köle) hür bir kadınla evlendi, (kadın) doğurdu, sonra köle azat edildi; çocuğunun velâsı kimindir?” dedim. Dedi ki: “Çocuğunun velâsı annelerinin ailesinindir.”
+& haddesenâ, an
+^ قال: قلت لعطاء
+
+31552 | İbn Uleyye → İbn Avn → Hasan | Hasan şöyle derdi: “Adam azat edilir, oğlunu da başka bir adam azat ederse, (oğul) babasının velâsını çeker.” Muhammed b. Sîrîn ona gelip: “Ömer bunu söylüyor” dedi. (Hasan) “Biz (de) bunu söylüyoruz” dedi.
+& haddesenâ, an, an
+^ كان يقول
+
+@ Bir kavmin azat ettiği, babasını da başkalarının azat ettiği adam hakkında
+
+31553 | Cerîr → Mugîre → İbrâhîm | İbrâhîm’den, bir kavmin azat ettiği, babasını da başkalarının azat ettiği adam hakkında; dedi ki: “İkisi akrabalık bağıyla birbirine mirasçı olurlar; ikisinin cinayeti (diyeti) de kendi mevlâlarının âkılesine düşer.”
+& haddesenâ, an, an
+^ في رجل أعتقه
+
+31554 | Vekî‘ → Süfyân → Hammâd → İbrâhîm | İbrâhîm dedi ki: Ali ile Zübeyr, Safiyye’nin bir mevlâsı hakkında Ömer’e davalaştılar. Ömer mirasın Zübeyr’e, diyetin Ali’ye ait olduğuna hükmetti.
+& haddesenâ, haddesenâ, an, an
+^ قال: اختصم علي
+
+@ Asabeden biri anne yönünden de (ölüye) daha yakın olursa mal onundur diyenler
+
+31555 | Vekî‘ → A‘meş → Ebû Vâil | Ebû Vâil dedi ki: Ömer Abdullah’a şöyle yazdı: “Asabeden biri anne yönünden de daha yakın olursa malı ona ver.”
+& haddesenâ, haddesenâ, an
+^ قال: " كتب عمر
+
+31556 | Vekî‘ → Süfyân → Ebû İshâk → Hâris → Ali | Ali dedi ki: “Resûlullah ﷺ borcun vasiyetten önce (ödenmesine) hükmetti —siz ise ‘Yapılacak vasiyetten ya da borçtan sonra’ (Nisâ 4/11) diye okuyorsunuz—; ve ana-baba bir kardeşlerin, baba bir kardeşler dışında birbirine mirasçı olacaklarına, (yani) ana-baba bir kardeşlerin baba bir kardeşler dışında (mirasçı olacaklarına hükmetti).”
+& haddesenâ, haddesenâ, an, an, an
+^ قال: «قضى رسول الله
+
+31557 | Vekî‘ → Mâlik b. Miğvel | Mâlik b. Miğvel dedi ki: Şa‘bî’ye, üç tane ana-baba bir amcaoğlunu ve iki tane baba bir amcaoğlunu sordum. Şa‘bî şöyle dedi: “Mal baba bir olanlarındır (metinde böyle).”
+& haddesenâ, haddesenâ
+^ قال: سألت الشعبي
+
+31558 | Cerîr → Mansûr → İbrâhîm → Ömer | Ömer dedi ki: Asabeden biri anne yönünden de daha yakın olursa —dedi ki—: “Velâ onundur.”
+& haddesenâ, an, an, kâle
+^ إذا كانت العصبة
+
+@ Velâ hakkında, “O, en büyüğündür” yani ölüye en yakın olanındır diyenler
+
+31559 | İbn Fudayl → Mugîre → İbrâhîm → Ali, Abdullah ve Zeyd | Ali, Abdullah ve Zeyd dediler ki: “Velâ (nesepçe) en büyüğünündür.”
+& haddesenâ, an, an, enne
+^ قالوا: «الولاء للكبر»
+
+31560 | Vekî‘ → Süfyân → Mansûr → İbrâhîm → Ömer, Abdullah ve Zeyd | Ömer, Abdullah ve Zeyd dediler ki: “Velâ (nesepçe) en büyüğünündür.”
+& haddesenâ, haddesenâ, an, an, an
+^ قالوا: «الولاء للكبر»
+
+31561 | İbn İdrîs → Şeybânî → Şa‘bî → Şüreyh | Şüreyh’ten: O, bu hususta malda hükmettiği gibi hükmederdi. (Şa‘bî) dedi ki: Ali ile Zeyd ise onu (nesepçe) en büyüğe verirlerdi.
+& haddesenâ, an, an, an
+^ «أنه قضى فيه
+
+31562 | Vekî‘ → Mis‘ar ve Süfyân → İmrân b. Müslim b. Riyâh es-Sekafî → Abdullah b. Ma‘kıl → Ali | Ali dedi ki: “Velâ kölelikten bir şubedir; mirası kim elde ederse velâyı da o elde eder.”
+& haddesenâ, haddesenâ, an, an, an
+^ قال: «الولاء شعبة
+
+31563 | Vekî‘ → Mis‘ar → İbn Riyâh → Sâlim b. Abdullah | Sâlim b. Abdullah dedi ki: “Velâ (nesepçe) en büyüğünündür.”
+& haddesenâ, an, an, an
+^ قال: «الولاء للكبر»
+
+31564 | Vekî‘ → Süfyân → Leys → Tâvûs | Tâvûs dedi ki: “Velâ (nesepçe) en büyüğünündür.”
+& haddesenâ, haddesenâ, an, an
+^ قال: «الولاء للكبر»
+
+31565 | Vekî‘ → Süfyân → İmrân b. Müslim → Ebû Mâlik el-Gıfârî | Ebû Mâlik el-Gıfârî dedi ki: “İlk azat eden; sizden (metin bu kelimede bozuktur) kim ona mirasçı olursa, mevlâsının velâsı onundur.”
+& haddesenâ, haddesenâ, an, an
+^ قال: «المعتق الأول
+
+31566 | Hüşeym → Yûnus → İbn Sîrîn | İbn Sîrîn dedi ki: “Bir kavmin mevlâsı ölünce insanlardan ona en yakın olana bakılır ve mirası ona verilir.”
+& haddesenâ, an, an
+^ قال: «إذا مات مولى
+
+31567 | Vekî‘ → Ebû Âsım → Şa‘bî | Şa‘bî dedi ki: Şüreyh velâyı mal gibi işletirdi. Şa‘bî dedi ki: “Medine ehli ise ‘Velâ (nesepçe) en büyüğünündür’ derler.”
+& haddesenâ, an, an
+^ قال: كان شريح
+
+31568 | Vekî‘ → Mis‘ar → Ebû Avn → Şüreyh | Şüreyh, Eş‘as hakkında velânın amca ile kardeş arasında olduğuna hükmetti.
+& haddesenâ, haddesenâ, an, enne
+^ «قضى في الأشعث
+
+@ Lakît (bulunmuş çocuk): Velâsı kimindir?
+
+31569 | İbn Uyeyne → Zührî → Süneyn Ebû Cemîle | Süneyn Ebû Cemîle şöyle diyordu: Ömer zamanında atılmış bir çocuk buldum. Kabile reisim onu Ömer’e anlattı. (Ömer) beni çağırıp sordu; ben de ona haber verdim. Şöyle dedi: “O hürdür, velâsı senindir, emzirilmesi de bize (beytülmâle) aittir.”
+& haddesenâ, an, semi‘a
+^ يقول: وجدت منبوذا
+
+31570 | Hâtim b. İsmâîl → Ca‘fer → babası → Ali | Ali dedi ki: “Atılmış çocuk hürdür. Eğer onu bulana velâ bağıyla bağlanmak isterse ona bağlanır; ondan başkasına bağlanmak isterse ona bağlanır.”
+& haddesenâ, an, an, kâle
+^ " المنبوذ حر
+
+31571 | Ömer b. Hârûn → İbn Cüreyc → Atâ | Atâ dedi ki: “Düşürülmüş (bulunmuş) çocuk dilediğine velâ bağıyla bağlanır.”
+& haddesenâ, an, an
+^ قال: «الساقط يوالي
+
+@ Lakîtin mirası hakkında: Kimindir?
+
+31572 | Abdüsselâm b. Harb → Mugîre → İbrâhîm | İbrâhîm dedi ki: “Lakîtin mirası, lukata (bulunmuş mal) yerindedir.”
+& haddesenâ, an, an
+^ قال: «ميراث اللقيط
+
+31573 | Abdüla‘lâ → Hişâm → Hasan | Hasan dedi ki: “Onun cinayeti (diyeti) beytülmâle aittir, mirası da onlarındır.”
+& haddesenâ, an, an
+^ قال: «جريرته في
+
+31574 | Hammâd b. Hâlid → İbn Ebî Zi’b → Zührî | Zührî’den: Ömer b. el-Hattâb atılmış çocuğun mirasını, onu himayesine alana verdi.
+& haddesenâ, an, an
+^ «أن عمر بن الخطاب
+
+31575 | İsmâîl b. Ayyâş → Ömer b. Ru’be → Abdülvâhid b. Abdullah en-Nasrî → Vâsile b. el-Eska‘ | Vâsile b. el-Eska‘ dedi ki: “Kadın üç (kişiye) mirasçı olur: Bulduğu çocuğa, azat ettiği köleye ve lânetleştiği (hakkında) oğluna.”
+& haddesenâ, an, an, an
+^ " ترث المرأة
+
+@ Bir adamın vesilesiyle Müslüman olan, sonra ölen adam hakkında: Ona (o adam) mirasçı olur diyenler
+
+31576 | Vekî‘ → Abdülazîz → Abdullah b. Mevheb → Temîm ed-Dârî | Abdullah b. Mevheb dedi ki: Temîm ed-Dârî’yi şöyle derken işittim: “Ey Allah’ın Resûlü, Ehl-i kitaptan olup Müslümanlardan bir adamın vesilesiyle Müslüman olan adam hakkında sünnet nedir?” dedim. Buyurdu ki: “O, onun hayatına ve ölümüne insanların en lâyıkıdır.”
+& haddesenâ, haddesenâ, an, semi‘tü
+^ يقول: قلت: يا رسول
+
+31577 | Abdüsselâm → Husayf → Mücâhid | Mücâhid’den: Bir adam Ömer’e gelip şöyle dedi: “Bir adam benim vesilemle Müslüman oldu, sonra öldü ve bin dirhem bıraktı. Ondan (almaktan) sıkıntı duydum, onu sana getirdim.” (Ömer) dedi ki: “Ne dersin, eğer o bir cinayet işleseydi (diyeti) kime düşerdi?” (Adam) “Bana” dedi. (Ömer) “Öyleyse mirası senindir” dedi.
+& haddesenâ, an, an
+^ أن رجلا، أتى عمر
+
+31578 | Abdüla‘lâ → Ma‘mer → Zührî | Zührî’den: Ömer b. el-Hattâb şöyle dedi: “Bir adam bir adamla velâ bağı kurarsa, onun mirası ona aittir, diyeti de onun üzerinedir.”
+& haddesenâ, an, an
+^ أن عمر بن الخطاب
+
+31579 | İbn Nümeyr → Abdülazîz b. Ömer | Abdülazîz b. Ömer dedi ki: “Babam, zimmet ehlinden olup bir adamın vesilesiyle Müslüman olan, sonra ölüp bir kız bırakan adam hakkında hüküm verdi: Kızına yarıyı, vesilesiyle Müslüman olduğu kimseye de yarıyı verdi.”
+& haddesenâ, haddesenâ
+^ قال: «قضى أبي
+
+31580 | Vekî‘ → Süfyân → Kays b. Müslim → Muhammed b. el-Münteşir → Mesrûk | Mesrûk dedi ki: Aramızda Deylem’den gelmiş, misafir olarak kalan bir adam vardı. Öldü ve üç yüz dirhem bıraktı. İbn Mes‘ûd’a gidip ona sordum. Şöyle dedi: “Onun bir akrabası var mı, ya da sizden birinin onunla bir velâ akdi var mı?” “Hayır” dedik. Dedi ki: “Öyleyse işte burada pek çok mirasçı vardır.” —Yani beytülmâli (kastediyor).
+& haddesenâ, haddesenâ, an, an, an
+^ قال: كان فينا رجل
+
+31581 | İbn İdrîs → Leys → Ebü’l-Eş‘as → mevlâsı | Ebü’l-Eş‘as’ın mevlâsı dedi ki: Ömer’e, benim vesilemle Müslüman olan bir adamı sordum. Şöyle dedi: “Bir mirasçı bırakmadıkça onun mirasına insanların en lâyıkı sensin. Eğer bir mirasçı bırakmazsa (metinde böyle) beytülmâle aittir.”
+& haddesenâ, an, an, an
+^ قال: سألت عمر
+
+31582 | Vekî‘ → Rebî‘ b. Ebî Sâlih el-Eslemî → adını verdiği bir adam | Adını verdiği bir adamdan: Sevâd ehlinden Haşî denilen bir adam velâ bağı kurmak için Ali’ye geldi; (Ali) onunla velâ bağı kurmayı kabul etmedi. (Râvi) dedi ki: “Bunun üzerine Abbâs’a ya da İbn Abbâs’a gitti; o da onunla velâ bağı kurdu.”
+& haddesenâ, haddesenâ, an
+^ أن رجلا من أهل
+
+31583 | Gunder → Osman b. Gıyâs | Osman b. Gıyâs’tan: Hasan, bir adamın vesilesiyle Müslüman olan adam hakkında şöyle derdi: “Mirası onundur; ancak bir kız kardeşi olursa (başka). Eğer kız kardeşi varsa mal onundur, ona o daha lâyıktır.”
+& haddesenâ, an
+^ كان الحسن، يقول
+
+31584 | Yezîd b. Hârûn → Hişâm → İbn Sîrîn | İbn Sîrîn’den: Ebü’l-Hüzeyl’in vesilesiyle bir adam Müslüman oldu; sonra öldü ve on bin dirhem bıraktı. Ebû Hüzeyl onları Ziyâd’a getirdi. Ziyâd: “Ona sen daha lâyıksın” dedi. (Ebû Hüzeyl) “Ona ihtiyacım yok” dedi. Ziyâd: “Sen onun mirasçısısın” dedi. O kabul etmedi; Ziyâd da onu alıp beytülmâle koydu.
+& haddesenâ, ahberanâ, an
+^ " أن أبا الهذيل
+
+@ Bir adam onun vesilesiyle Müslüman olursa, onun mirasından bir şey (o adama) yoktur diyenler
+
+31585 | Vekî‘ → Süfyân → Mutarrif → Şa‘bî; ayrıca Vekî‘ → Süfyân → Yûnus → Hasan | Şa‘bî ve Hasan dediler ki: “Onun mirası Müslümanlarındır, diyeti de onların üzerinedir.”
+& haddesenâ, haddesenâ, an, an; haddesenâ, haddesenâ, an, an
+^ قالا: «ميراثه
+
+31586 | Vekî‘ → Dâvûd b. Ebî Abdullah | Dâvûd b. Ebî Abdullah dedi ki: Bizim bir sütannemiz vardı; onun, bizim vesilemizle Müslüman olan bir oğlu vardı. Oğul öldü ve mal bıraktı. Şa‘bî’ye sordum; şöyle dedi: “Onu annesine ver.”
+& haddesenâ, haddesenâ
+^ قال: كانت لنا ظئر
+
+31587 | Vekî‘ → Hasan b. Sâlih → Mutarrif → Şa‘bî | Şa‘bî dedi ki: “Velâ ancak nimet sahibi (azat eden) içindir.”
+& haddesenâ, haddesenâ, an, an
+^ قال: «لا ولاء
+
+31588 | Abdüla‘lâ → Yûnus → Hasan | Hasan’dan, bir adamla velâ bağı kuran ve onun vesilesiyle Müslüman olan adam hakkında; dedi ki: “Ona mirasçı olmaz; ancak (o kişi) dilerse malının tamamını ona vasiyet eder.”
+& haddesenâ, an, an
+^ في رجل والى رجلا
+
+@ Ölen ve kendisine bir mirasçı bilinmeyen adam hakkında
+
+31589 | Vekî‘ → Süfyân → Abdurrahmân b. el-Esbahânî → Mücâhid b. Verdân → Urve b. ez-Zübeyr → Âişe | Âişe’den: Nebî’nin ﷺ bir mevlâsı bir hurma ağacından düşüp öldü; mal bıraktı, ne çocuk ne de yakın bir akraba bıraktı. Nebî ﷺ buyurdu ki: “Mirasını onun köyünün halkından bir adama verin.”
+& haddesenâ, haddesenâ, an, an, an, an
+^ أن مولى للنبي
+
+31590 | Vekî‘ → Ali b. el-Mübârek → Yahyâ b. Ebî Kesîr → Muhammed b. Abdurrahmân b. Sevbân | Muhammed b. Abdurrahmân b. Sevbân’dan: Cürhüm’den bir adam Serât’ta vefat etti ve mal bıraktı. Bunun hakkında Ömer’e yazıldı. Ömer Şam’a yazdı; Cürhüm’den geriye kalmış tek bir kişi bulamadılar. Bunun üzerine Ömer onun mirasını, içlerinde vefat ettiği kavim arasında taksim etti.
+& haddesenâ, haddesenâ, an, an
+^ أن رجلا من جرهم
+
+31591 | Bişr b. el-Mufaddal → Abdurrahmân b. İshâk → babası → Abdurrahmân b. Amr b. Sehl | Abdurrahmân b. Amr b. Sehl dedi ki: “Osman zamanında mevlâsı olmayan bir mevlâ öldü. Osman onun malı hakkında emir verdi; (mal) beytülmâle konuldu.”
+& haddesenâ, an, an, an
+^ قال: «مات مولى
+
+31592 | Vekî‘ → İsmâîl → Şa‘bî → Mesrûk | Mesrûk’tan: Ona, azat eden mevlâ da mirasçı da bırakmadan ölen adam soruldu. Dedi ki: “Malı, onu (vasiyetle) koyduğu yerdedir. Eğer bir şey vasiyet etmediyse malı beytülmâldedir.”
+& haddesenâ, an, an, an
+^ سئل عن رجل
+
+31593 | Abbâd b. el-Avvâm → Ebû Bekir b. Ahmer → Abdullah b. Büreyde → babası | Abdullah b. Büreyde’nin babası dedi ki: Resûlullah’ın ﷺ yanındaydım. Bir adam gelip şöyle dedi: “Ey Allah’ın Resûlü, yanımda Ezd’den bir adamın mirası var; onu kendisine vereceğim bir Ezdli bulamadım.” Buyurdu ki: “Git, bir yıl ya da bir sene bir Ezdli ara ve onu ona ver.” (Râvi) dedi ki: Gitti, sonra yedinci yılda ona gelip: “Ey Allah’ın Resûlü, onu kendisine vereceğim bir Ezdli bulamadım” dedi. Buyurdu ki: “İlk (karşılaştığın) Huzâalıya git ve onu ona ver.” (Râvi) dedi ki: (Adam) dönüp gidince (Nebî): “Onu bana getirin” dedi. (Sonra) buyurdu ki: “Git, onu Huzâa’nın en büyüğüne ver.”
+& haddesenâ, an, an, an
+^ قال:، كنت عند
+
+31594 | Yezîd b. Hârûn → Hammâd b. Seleme → Amr b. Dînâr → Yahyâ b. Ca‘de → Ömer | Ömer’den: Bir adam öldü ve asabe bırakmadı. Ömer şöyle dedi: “Ona, onun öfkesiyle öfkelenen kimse ve komşuları mirasçı olur.”
+& haddesenâ, an, an, an, an
+^ أن رجلا مات
+
+31595 | Yezîd b. Hârûn → Hammâd b. Seleme → Muhammed b. İshâk → Ya‘kûb b. Utbe → Süleymân b. Yesâr | Süleymân b. Yesâr dedi ki: Habeşistan’dan bir adam vefat etti; mirası Resûlullah’a ﷺ getirildi. Buyurdu ki: “Bakın, onun bir mirasçısı var mı?” Ona bir mirasçı bulamadılar. Bunun üzerine Resûlullah ﷺ buyurdu: “Burada Habeşlilerin Müslümanlarından kim var, bakın ve mirasını onlara verin.”
+& haddesenâ, an, haddesenâ, an, an
+^ قال: توفي رجل
