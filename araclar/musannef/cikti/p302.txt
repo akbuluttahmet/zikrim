@@ -1,0 +1,158 @@
+@ Hadde şahitlik üzerine şahitlik hakkında
+
+28910 | Vekî‘ → İsrâîl → Câbir → Âmir → Şüreyh ve Mesrûk | Şüreyh ve Mesrûk’tan: İkisi şöyle dedi: “Hadde şahitlik üzerine şahitlik geçerli olmaz; hadde kefil de olunmaz.”
+& haddesenâ, an, an, an, an
+^ أنهما قالا
+
+@ Hadleri ve kısası Harem’de uygulamak hakkında
+
+28911 | Abdullah b. İdrîs → Mutarrif → Âmir | Âmir dedi ki: “(Suçlu) Harem’e kaçarsa emniyete kavuşmuştur. Eğer onu (suçu) Harem’de işlediyse, Harem’de ona had uygulanır.”
+& haddesenâ, an, an
+^ قال: «إذا هرب
+
+28912 | İbn İdrîs → Leys → Atâ | Atâ’dan: Velîd Harem’de bir adama had uygulamak istedi. Ubeyd b. Umeyr ona şöyle dedi: “Onu (suçu) orada işlemiş olmadıkça ona (haddi) uygulama.”
+& haddesenâ, an, an
+^ أن الوليد أراد
+
+28913 | Abdullah b. İdrîs → Hişâm → Hasan ve Atâ | Hasan ve Atâ dediler ki: “(Kişi) Harem dışında bir hadde müstahak olur, sonra Harem’e gelirse, kendisine (had) uygulanıncaya (uygulanmak üzere) Harem’den çıkarılır.”
+& haddesenâ, an, an
+^ قالا: «إذا أصاب
+
+28914 | Ebü’l-Ahvas → Husayf → Mücâhid | Mücâhid dedi ki: “Adam Harem dışında hadde müstahak olur, sonra Harem’e gelirse Harem’den çıkarılır ve ona had uygulanır. Onu (suçu) Harem’de işlerse Harem’de ona uygulanır.”
+& haddesenâ, an, an
+^ قال: «إذا أصاب الرجل
+
+28915 | Abdüsselâm b. Harb → Husayf → Mücâhid | Mücâhid’den: Bir adamı öldürüp sonra Harem’e giren bir adam hakkında şöyle dedi: “Yakalanır, Harem’den çıkarılır, sonra ona had uygulanır.” –Öldürmeyi kastediyor.–
+& haddesenâ, an, an
+^ أن رجلا قتل رجلا
+
+28916 | Abdüsselâm → Atâ b. es-Sâib → Saîd; ayrıca Abdüsselâm → Abdülmelik → Atâ | Saîd ve Atâ’dan: Öldürüp sonra Harem’e giren adam hakkında şöyle dedi: “Mekke halkı onunla alışveriş yapmaz, ondan satın almaz, ona su vermez, onu doyurmaz, onu barındırmaz ve onu evlendirmez; ta ki çıksın ve (suçu) sebebiyle yakalansın.”
+& haddesenâ, an, an; haddesenâ, an, an
+^ في الرجل يقتل
+
+28917 | Ebû Muâviye → Haccâc → Atâ → İbn Ömer ve İbn Abbâs | İbn Ömer ve İbn Abbâs dediler ki: “Babalarımızın katilini Harem’de bulsaydık onu öldürmezdik.”
+& haddesenâ, an, an, an
+^ قالا: «لو وجدنا
+
+28918 | Vekî‘ → Şu‘be | Şu‘be dedi ki: Hakem’e ve Hammâd’a, öldürüp sonra Harem’e giren adamı sordum. Hammâd: “Çıkarılır ve ona had uygulanır” dedi. Hakem ise: “Onunla alışveriş yapılmaz ve onunla birlikte yemek yenmez” dedi.
+& haddesenâ, an
+^ قال: سألت الحكم
+
+@ Hırsızlık yapıp çaldığı malı dışarı atan ve evde yakalanan adam hakkında; ona ne gerekir?
+
+28919 | Muhammed b. Bekr → İbn Cüreyc → Ebû Bekir b. Abdullah → Hâlid b. Saîd → Saîd b. el-Müseyyeb ve Ubeydullah b. Abdullah b. Utbe | Saîd b. el-Müseyyeb ve Ubeydullah b. Abdullah b. Utbe’den: Onlara, hırsızlık yapıp çaldığı malı evin dışına atan ve eşyayı çaldığı evde yakalanan hırsız soruldu: “Ona el kesme gerekir mi?” İkisi de: “Ona el kesme gerekir” dediler.
+& haddesenâ, an, ahberanî, enne, an
+^ أنهما سئلا
+
+@ Kendilerine (duvar) delinerek (girilen), yardım isteyen, hırsızlık yapan kişiler bulan ve (başkaları da) onlarla birlikte yakalanan topluluk hakkında
+
+28920 | Muhammed b. Bekr → İbn Cüreyc → Ma‘mer → Husayf | Husayf dedi ki: Bir topluluk evlerinden eşyalarını kaybetti. Evde bir delik gördüler; çıkıp bakındılar. Bir de baktılar ki iki adam koşuyor. Birine, yanında eşyaları olduğu hâlde yetiştiler; diğeri onlardan kaçıp kurtuldu. (Husayf) dedi ki: Onu bize getirdiler. (Adam) şöyle dedi: “Ben bir şey çalmadım. Ancak bu kaçıp kurtulan beni ücretle tuttu ve bu eşyayı onun için taşımam için bana verdi; onu nereden getirdiğini bilmiyorum.” Husayf dedi ki: Bunu Ömer b. Abdülazîz’e yazdı. O da şöyle yazdı: “İbret verici bir cezaya çarptırılsın ve hapse süresiz konsun; elini kesme.”
+& haddesenâ, an, ahberanî, an
+^ قال: فقد قوم
+
+28921 | Hüşeym → İsmâîl b. Ebî Hâlid → Âmir | Âmir’den: Bir adamdan bir elbise alan bir adam hakkında –(sahibi) “Onu çaldın” dedi, (diğeri) “Onu ancak onun üzerindeki bir hakkım sebebiyle aldım” dedi– Şa‘bî şöyle dedi: “Ona had yoktur.”
+& haddesenâ, an, an
+^ في رجل أخذ من رجل
+
+@ Yanında eşya bulunan zan altındaki adam hakkında
+
+28922 | Muhammed b. Bekr → İbn Cüreyc → Atâ | Atâ dedi ki: “Zan altında bulunan kötü bir adamın yanında çalınmış mal bulunursa ve ‘Onu satın aldım’ derse, onu kimden satın aldığı ortaya çıkmazsa (metinde böyle) ya da ‘Onu buldum’ derse, eli kesilmez ve cezalandırılmaz.”
+& haddesenâ, an, kâle
+^ " إن وجدت سرقة
+
+28923 | Muhammed b. Bekr → İbn Cüreyc | İbn Cüreyc dedi ki: Ömer b. Abdülazîz bir mektup yazdı, onu okudum: “Eşya adamın yanında bulunur ve ‘Onu satın aldım’ derse onun elini kesme; onu hapiste sıkıca bağla ve Allah’ın onun hakkındaki emri gelinceye kadar onu kimsenin sözüyle bırakma.” (İbn Cüreyc) dedi ki: Bunu Atâ’ya andım, o da onu yadırgadı.
+& haddesenâ, an
+^ قال: كتب عمر
+
+@ Adama kılıçla vuran ve ona silah kaldıran adam hakkında
+
+28924 | Muhammed b. Bekr → İbn Cüreyc → İbn Tâvûs → babası → İbn ez-Zübeyr | İbn Tâvûs’un babası dedi ki: İbn ez-Zübeyr’i şöyle derken işittim: “Kim silah kaldırır, sonra onu (birine) vurursa (metinde böyle) onun kanı heder olur.” (İbn Tâvûs) dedi ki: Tâvûs da bunu (böyle) görürdü.
+& haddesenâ, an, an, an, semi‘tü
+^ «من رفع السلاح
+
+28925 | Muhammed b. Bekr → İbn Cüreyc → Ma‘mer → İbn Şihâb | İbn Şihâb’dan: Bir adam bir adama kılıçla vurdu; Mervân b. el-Hakem onun elini kesmedi. Ömer b. Abdülazîz ise Velîd b. Abdülmelik’in mektubuyla bu hususta bir adamın elini kesti.
+& haddesenâ, an, ahberanî, an
+^ أن رجلا ضرب رجلا
+
+28926 | Muhammed b. Bekr → İbn Cüreyc → Ziyâd → İbn Şihâb | İbn Şihâb dedi ki: Safvân b. el-Muattal, Hassân b. el-Furey‘a’ya, onu hicvettiği bir hiciv sebebiyle kılıçla vurdu; Resûlullah ﷺ onun elini kesmedi.
+& haddesenâ, an, ahberanî, enne
+^ قال: ضرب صفوان
+
+28927 | Ebû Üsâme → Ubeydullah → Nâfi‘ → İbn Ömer | İbn Ömer dedi ki: Resûlullah ﷺ buyurdu: “Bize karşı silah kaldıran bizden değildir.”
+& haddesenâ, an, an, an
+^ قال: قال رسول الله
+
+28928 | Cerîr → Alâ b. el-Müseyyeb → Hayseme → Ömer | Hayseme dedi ki: Ömer şöyle dedi: “Bize karşı silah çeken bizden değildir.”
+& haddesenâ, an, an, kâle
+^ قال: قال عمر
+
+28929 | Cerîr b. Abdülhamîd → Mansûr → İbrâhîm → Alkame | (Alkame’den) buna yakını (rivayet edildi).
+% Lafız: “Cerîr b. Abdülhamîd bize rivayet etti ya da ondan bana rivayet edildi.”
+& haddesenâ, an, an, an
+^ بنحوه
+
+28930 | Mus‘ab b. el-Mikdâm → İkrime b. Ammâr → İyâs b. Seleme → babası | İyâs b. Seleme’nin babası dedi ki: Resûlullah ﷺ buyurdu: “Bize karşı kılıç çeken bizden değildir.”
+& haddesenâ, an, an, an
+^ قال: قال رسول الله
+
+28931 | Yahyâ b. Âdem → Şerîk → Muhammed b. Aclân → babası → Ebû Hüreyre | Ebû Hüreyre dedi ki: Resûlullah ﷺ buyurdu: “Bize karşı silah kaldıran bizden değildir.”
+& haddesenâ, an, an, an, an
+^ قال: قال رسول الله
+
+@ Kanın korunduğu ve adamdan öldürmenin kaldırıldığı şey hakkında
+
+28932 | Ebû Hâlid el-Ahmer Süleymân b. Hayyân → A‘meş → Ebû Zabyân → Üsâme | Üsâme dedi ki: Resûlullah ﷺ bizi bir seriyye ile gönderdi. Cüheyne’den Hurakât (kabilesine) sabah baskını yaptık. Bir adama yetiştim; “Lâ ilâhe illallah” dedi. Ona mızrak sapladım. Bundan içime bir şey düştü. Bunu Nebî’ye (aleyhisselâm) anlattım. Resûlullah şöyle buyurdu: “ ‘Lâ ilâhe illallah’ dedi de onu öldürdün mü?” (Üsâme) dedi ki: Dedim ki: “Ey Allah’ın Resûlü, onu ancak silahtan korkarak söyledi.” Buyurdu ki: “Onu söyleyip söylemediğini bilmek için kalbini yarsaydın ya!” (Üsâme) dedi ki: Bunu bana o kadar tekrarlayıp durdu ki, o gün müslüman olmuş olmayı temenni ettim.
+& haddesenâ, an, an, an
+^ قال: بعثنا رسول الله
+
+28933 | Ebû Muâviye → A‘meş → Ebû Zabyân → Üsâme | Üsâme dedi ki: Resûlullah ﷺ bizi bir seriyye ile gönderdi; ve buna yakınını zikretti.
+& haddesenâ, an, an, an
+^ قال: بعثنا رسول الله
+
+28934 | Hafs b. Gıyâs → A‘meş → Ebû Süfyân → Câbir; ayrıca Hafs b. Gıyâs → A‘meş → Ebû Sâlih → Ebû Hüreyre | Câbir ve Ebû Hüreyre dedi ki: Resûlullah ﷺ buyurdu: “İnsanlarla ‘Lâ ilâhe illallah’ deyinceye kadar savaşmakla emrolundum. Onu söylediklerinde, hakkı (olan durumlar) hariç kanlarını ve mallarını benden korumuş olurlar; hesapları da Allah’a aittir.”
+& haddesenâ, an, an, an; haddesenâ, an, an, an
+^ قال: قال رسول الله
+
+28935 | Ebû Hâlid el-Ahmer → Ebû Mâlik → babası | Ebû Mâlik’in babası dedi ki: Nebî’yi ﷺ şöyle buyururken işittim: “Kim Allah’ı birler ve O’nun dışında tapılan şeyleri inkâr ederse kanı haram olur; hesabı da Allah’a aittir.”
+& haddesenâ, an, an
+^ قال: سمعت النبي
+
+28936 | Vekî‘ → Süfyân → Ebü’z-Zübeyr → Câbir | Câbir dedi ki: Resûlullah ﷺ buyurdu: “İnsanlarla ‘Lâ ilâhe illallah’ deyinceye kadar savaşmakla emrolundum. Onu söylediklerinde, hakkı (olan durumlar) hariç kanlarını ve mallarını benden korumuş olurlar; hesapları da Allah’a aittir.” Sonra şunu okudu: “Sen öğüt ver; sen ancak bir öğütçüsün. Sen onların üzerinde bir zorba değilsin.” (Gâşiye 88/21-22)
+& haddesenâ, haddesenâ, an, an
+^ قال: قال رسول الله
+
+28937 | Abdullah b. Bekr es-Sehmî → Hâtim b. Ebî Sağîre → Nu‘mân b. Sâlim → Amr b. Evs → babası | Amr b. Evs’in babasından: Resûlullah ﷺ buyurdu: “İnsanlarla ‘Lâ ilâhe illallah’ deyinceye kadar savaşmakla emrolundum.”
+& haddesenâ, an, an, enne, an
+^ أن رسول الله صلى الله عليه وسلم، قال
+
+28938 | Fadl b. Dükeyn → Ebân b. Abdullah → İbrâhîm b. Cerîr | İbrâhîm b. Cerîr dedi ki: Resûlullah ﷺ buyurdu: “İnsanlarla ‘Lâ ilâhe illallah’ deyinceye kadar savaşmakla emrolundum.”
+& haddesenâ, an, an
+^ قال: قال رسول الله
+
+28939 | Vekî‘ → Süfyân → Tev’eme’nin mevlâsı Ebû Sâlih → Ebû Hüreyre | Ebû Hüreyre dedi ki: Resûlullah ﷺ buyurdu: “İnsanlarla ‘Lâ ilâhe illallah’ deyinceye kadar savaşmakla emrolundum. Onu söylediklerinde, hakkı (olan durumlar) hariç kanları ve malları bana haram olur; hesapları da Allah’a aittir.”
+& haddesenâ, an, an, an
+^ قال: قال رسول الله
+
+28940 | Vekî‘ → Süfyân → Habîb b. Ebî Amra → Saîd b. Cübeyr | Saîd b. Cübeyr dedi ki: Mikdâd b. el-Esved bir seriyyede çıktı. Küçük bir koyun sürüsü içinde bulunan bir adama rastladılar. Onu öldürmek istediler; o: “Lâ ilâhe illallah” dedi. Mikdâd şöyle dedi: “Ailesine ve malına kavuşmayı istedi (metinde böyle).” (Saîd) dedi ki: Dönüp gelince bunu Nebî’ye ﷺ anlattılar; şu (âyet) indi: “Ey iman edenler! Allah yolunda sefere çıktığınız zaman (durumu) iyice araştırın; size selâm verene, dünya hayatının geçici menfaatini arayarak ‘Sen mümin değilsin’ demeyin.” (Nisâ 4/94) (Saîd) dedi ki: (Bu) ganimettir. “Allah katında pek çok ganimet vardır. Daha önce siz de böyleydiniz.” (Nisâ 4/94) (Saîd) dedi ki: İmanınızı müşriklerden gizliyordunuz. “Allah size lütufta bulundu” (Nisâ 4/94): İslâm’ı açığa çıkardı. “O hâlde iyice araştırın” (Nisâ 4/94): Allah’tan bir tehdit olarak. “Şüphesiz Allah yaptıklarınızdan haberdardır.” (Nisâ 4/94)
+& haddesenâ, haddesenâ, an, an
+^ قال: خرج المقداد
+
+28941 | Abdürrahîm b. Süleymân → İsrâîl → Simâk → İkrime → İbn Abbâs | İbn Abbâs dedi ki: Benî Süleym’den bir adam, Resûlullah’ın ﷺ ashâbından bir grubun yanından geçti; yanında koyunlar vardı. Onlara selâm verdi. Dediler ki: “Size ancak sizden korunmak için selâm verdi.” Ona yöneldiler, onu öldürdüler ve koyunlarını aldılar. Onları Resûlullah’a ﷺ getirdiler. Allah şunu indirdi: “Ey iman edenler! Allah yolunda sefere çıktığınız zaman (durumu) iyice araştırın; size selâm verene, dünya hayatının geçici menfaatini arayarak ‘Sen mümin değilsin’ demeyin. Allah katında pek çok ganimet vardır.” (Nisâ 4/94) –âyetin sonuna kadar–.
+& haddesenâ, an, an, an, an
+^ قال: مر رجل
+
+28942 | Vekî‘ → İsrâîl → Simâk → İkrime → İbn Abbâs | (İbn Abbâs’tan) bunun benzeri (rivayet edildi); (ancak Vekî‘) “Onları Nebî’ye (aleyhisselâm) getirdiler” (sözünü) zikretmedi.
+& haddesenâ, haddesenâ, an, an, an
+^ بمثله ولم يذكر
+
+28943 | Şebâbe b. Sevvâr → Leys b. Sa‘d → İbn Şihâb → Atâ b. Yezîd el-Leysî → Ubeydullah b. Adî b. el-Hıyâr → Mikdâd | Mikdâd’dan: Ona (Ubeydullah’a) haber verdi ki kendisi şöyle demiş: “Ey Allah’ın Resûlü, ne dersin, kâfirlerden bir adamla karşılaşsam, benimle savaşsa ve ellerimden birine kılıçla vurup onu kesse, sonra benden bir ağaca sığınıp ‘Allah’a teslim oldum’ dese, onu söyledikten sonra onu öldüreyim mi, ey Allah’ın Resûlü?” Resûlullah ﷺ: “Onu öldürme” buyurdu. Dedim ki: “Ey Allah’ın Resûlü, elimi kesti, sonra bundan sonra (bunu) söyledi; onu kestiği için onu öldüreyim mi?” Buyurdu ki: “Onu öldürme; çünkü o, sen onu öldürmeden önceki senin konumundadır; sen de onun, söylediği kelimeyi söylemeden önceki konumundasın.”
+& haddesenâ, haddesenâ, an, an, an, an
+^ أنه أخبره أنه قال
+
+28944 | Şebâbe b. Sevvâr → Süleymân b. el-Mugîre → Humeyd b. Hilâl → Bişr b. Âsım el-Leysî | Humeyd b. Hilâl dedi ki: Ebü’l-Âliye bana ve bir arkadaşıma geldi ve şöyle dedi: “Gelin; çünkü siz ikiniz benden daha gençsiniz –ya da hadisi benden daha iyi belleyicisiniz–.” Gidip Bişr b. Âsım el-Leysî’ye geldik. (Bişr) şöyle dedi: Nebî ﷺ bir seriyye gönderdi; (seriyye) bir topluluğa baskın yaptı. Topluluktan bir adam (kaçıp) ayrıldı. Seriyyeden kılıcını çekmiş bir adam onun peşine düştü. Topluluktan ayrılan adam: “Ben müslümanım” dedi. (Peşindeki) onun söylediğine bakmadı (metinde böyle). (Bişr) dedi ki: Ona vurdu ve onu öldürdü. Hadis Nebî’ye ﷺ ulaştı. Nebî (aleyhisselâm) çok şiddetli bir söz söyledi. (Bu) katile ulaştı. Nebî ﷺ hutbe okurken katil şöyle dedi: “Vallahi ey Allah’ın Nebîsi, o söylediğini ancak öldürülmekten korunmak için söyledi.” Nebî (aleyhisselâm) ondan ve insanlardan ona yakın olanlardan yüz çevirdi. Bunu iki kez yaptı; her seferinde Nebî ﷺ yüzünü ondan çevirdi. (Katil) sabredemeyip üçüncü kez bunun benzerini söyledi. Nebî (aleyhisselâm) yüzündeki hoşnutsuzluk tanınır hâlde yüzünü (ona) döndü ve şöyle buyurdu: “Allah, mümini öldüren kimse hakkında (özrünü kabul etmeyi) bana reddetti.” Bunu üç kez söylüyordu.
+& haddesenâ, haddesenâ, an, kâle
+^ قال: جاء أبو العالية
+
+28945 | Yezîd b. Hârûn → Süfyân b. Hüseyin → Zührî → Ubeydullah b. Abdullah b. Utbe | Ubeydullah b. Abdullah b. Utbe dedi ki: Ebû Bekir döneminde irtidat eden irtidat edince Ebû Bekir onlarla cihad etmek istedi. Ömer şöyle dedi: “Resûlullah’ı ﷺ şöyle buyururken işitmişken onlarla savaşacak mısın: ‘Kim Allah’tan başka ilâh olmadığına ve Muhammed’in Allah’ın Resûlü olduğuna şahitlik ederse, hak (olan durumlar) hariç onların malı haram olur; hesapları da Allah teâlâya aittir.’” Ebû Bekir şöyle dedi: “Vallahi namaz ile zekâtın arasını ayıranla mutlaka savaşacağım. Vallahi ikisinin arasını ayıranla, ikisini bir araya getirinceye kadar mutlaka savaşacağım.” Ömer dedi ki: “Onunla birlikte savaştık; bu doğru bir işti.” (Ebû Bekir) onlardan zafer elde ettiklerine zafer elde edince şöyle dedi: “Benden iki şıktan birini seçin: Ya (yurtlarınızdan) sürüp çıkaran savaş ya da rezil eden alçaklık (anlaşması).” Dediler ki: “Bu sürüp çıkaran savaşı tanıdık; peki rezil eden alçaklık nedir?” Şöyle dedi: “Bizim ölülerimizin cennette, sizin ölülerinizin de cehennemde olduğuna şahitlik edeceksiniz.” Onlar da (bunu) yaptılar.
+& haddesenâ, ahberanâ, an, an
+^ قال: لما ارتد

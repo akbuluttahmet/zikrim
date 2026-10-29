@@ -1,0 +1,289 @@
+@ Adamın başını yaran, (yaralanana) kısas aldırılan, (kısas alınanın da) ölmesi
+
+27657 | Ali b. Müshir → Şeybânî → Şa‘bî | Şa‘bî, bir yaralama yapan, kendisinden kısas alınan ve ölen adam hakkında dedi ki: “Ölünün diyetinden ilkinin yarası(nın diyeti) düşülür.” Abdullah b. Zekvân dedi ki: Ölünün diyetinden ona bir şey yoktur.
+& haddesenâ, an, an
+^ في الرجل إذا
+
+27658 | Mugîre → İbrâhîm | İbrâhîm dedi ki: “Yara miktarınca ondan düşülür.”
+& an, an
+% Senedin başında “Ebû Bekir bize rivayet etti, dedi ki:” ibaresinden sonra “Ebû Bekir” adı ikinci kez geçiyor; Mugîre’den önceki ad budur (metinde böyle).
+^ قال: «يدفع عنه
+
+27659 | Gunder b. Süleymân → Saîd → Ebû Ma‘şer → İbrâhîm → Abdullah | Abdullah dedi ki: “Yara miktarınca ondan kaldırılır; diyetin geri kalanını tazmin eder.”
+& haddesenâ, an, an, an, an
+% Arapçada ad “غندر بن سليمان” diye yazılıdır (metinde böyle).
+^ قال: «يرفع عنه
+
+27660 | Abdüla‘lâ → Ma‘mer → Zührî | Zührî dedi ki: “Kendisinden kısas alınan ölürse, kısas aldıran diyeti tazmin eder.”
+& haddesenâ, an, an
+^ قال: «إذا مات الذي
+
+27661 | İbn Mehdî → Hammâd → İbrâhîm → Alkame | Alkame’den: “Kendisinden kısas alınan hakkında: Hangisi ölürse diyeti ödenir.”
+& haddesenâ, an, an, an
+^ «في المقتص منه
+
+27662 | Vekî‘ → Şu‘be → Hakem | Hakem dedi ki: Ziyâd b. Cübeyr’den hac için izin istedim. Bana, bir adamın başını yaran, ondan kısas aldırılan ve kısas alınanın öldüğü adamı sordu. Dedim ki: Ona diyet gerekir, baş yarası miktarınca ondan kaldırılır. Sonra bunu unuttum. İbrâhîm geldi, ona sordum; dedi ki: “Ona diyet gerekir.”
+& haddesenâ, an, an
+^ قال: استأذنت زياد
+
+27663 | Vekî‘ → Şu‘be | Şu‘be dedi ki: Hakem’e ve Hammâd’a bunu sordum; dediler ki: “Ona diyet gerekir.” Hammâd dedi ki: “Baş yarası miktarınca ondan kaldırılır.”
+& haddesenâ, an
+^ قال: سألت الحكم
+
+27664 | Vekî‘ → Şerîk → Mugîre → İbrâhîm ve Şa‘bî | İbrâhîm ve Şa‘bî dediler ki: “Ona diyet gerekir; baş yarası miktarınca ondan kaldırılır.”
+& haddesenâ, haddesenâ, an, an
+^ قالا: «عليه الدية
+
+27665 | İbn Mehdî → Süfyân → Ma‘mer → İbn Tâvûs → babası; ayrıca İbn Mehdî → Süfyân → İbn Cüreyc → Atâ | (İbn Tâvûs’un babası ve Atâ) dediler ki: “Ona diyet gerekir; ondan bir şey kaldırılmaz.”
+& haddesenâ, an, an, an, an; haddesenâ, an, an, an
+^ قالا: «عليه الدية
+
+@ Kısasta ölürse ona diyet yoktur diyenler
+
+27666 | Abdürrahîm → Eş‘as → Âmir; ayrıca Abdürrahîm → Haccâc → Umeyr b. Sa‘d → Katâde → Hılâs → Ali | Ali’den: O dedi ki: “Kim kısasla, Allah’ın Kitabı’yla ölürse ona diyet yoktur.”
+& haddesenâ, an, an; haddesenâ, an, an, an, an, an
+^ أنه قال: «من مات
+
+27667 | Abdürrahîm → Ömer | (Ömer’den) bunun benzeri (rivayet edildi).
+& haddesenâ, an
+^ مثله
+
+27668 | Ebû Üsâme → Hişâm → Hasan | Hasan’dan: “Kendisinden kısas alınıp ölen adam hakkında: Ona diyet yoktur; onu Allah’ın Kitabı öldürdü.”
+& haddesenâ, an, an
+^ «في الرجل يقتص
+
+27669 | Vekî‘ → Süfyân → Yûnus → Hasan | Hasan, kısasta ölen adam hakkında dedi ki: Ona diyet yoktur.
+& haddesenâ, an, an, an
+^ في الرجل يموت
+
+27670 | Abbâd b. el-Avvâm → Basra halkından bir şeyh → Ebû Nadra → Ebû Saîd | Ebû Saîd’den: Ebû Bekir ve Ömer dediler ki: “Kimi bir had öldürürse ona diyet yoktur.”
+& haddesenâ, an, an, an
+^ أن أبا بكر، وعمر
+
+27671 | Ebû Üsâme → Hişâm → Hasan ve Muhammed | Hasan ve Muhammed, üzerine had uygulanıp ölen adam hakkında dedi ki: “Ona diyet yoktur.”
+& haddesenâ, an, an
+^ في الرجل يقام
+
+27672 | Abbâd → Haccâc → Umeyr b. Sa‘d → Ali | Umeyr b. Sa‘d dedi ki: Ali dedi ki: “Adama zina, hırsızlık ya da kazf haddi uygulanır da ölürse ona diyet yoktur.”
+& haddesenâ, an, an, kâle
+^ قال: قال علي
+
+27673 | Vekî‘ → Mis‘ar ve Süfyân → Ebû Hasîn → Umeyr b. Sa‘d en-Nehaî → Ali | Umeyr b. Sa‘d en-Nehaî dedi ki: Ali dedi ki: “Bir adama had uygulayıp da ölünce içimde ondan dolayı bir şey bulmam; ancak içki içen müstesna, o ölürse onun diyetini öderim.” Süfyân şunu ekledi: Bu, Resûlullah’ın ﷺ onu (bir ölçüyle) sünnet kılmamış olmasındandır.
+& haddesenâ, haddesenâ, an, an, kâle
+^ قال: قال علي
+
+27674 | Muhammed b. Bişr → Saîd → Matar → Atâ → Ubeyd b. Umeyr | Ubeyd b. Umeyr’den: Ömer ve Ali dediler ki: “Kimi kısas öldürürse ona diyet yoktur.”
+& haddesenâ, haddesenâ, an, an, an
+^ أن عمر، وعليا
+
+@ Kasıt demirle (olur) diyenler
+
+27675 | Ebû Hâlid → İbn Cüreyc → Abdülkerîm → Ali ve Abdullah | Ali ve Abdullah dediler ki: “Kasıt silahtır.”
+& haddesenâ, an, an, an
+^ قالا: «العمد السلاح»
+
+27676 | Ebû Hâlid → İbn Cüreyc → Atâ | (Atâ’dan) bunun benzeri (rivayet edildi).
+& haddesenâ, an, an
+^ مثله
+
+27677 | Ebû Hâlid → İbn Cüreyc → kendisine rivayet eden biri → Saîd b. el-Müseyyeb | Saîd b. el-Müseyyeb dedi ki: “Kasıt iğne ve ondan büyüğüyle (olur).”
+& haddesenâ, an, an, an
+^ قال: «العمد بالإبرة
+
+27678 | Abbâd → Eş‘as → Şa‘bî → Mesrûk | Mesrûk dedi ki: “Kasıt demir parçasıyla (olur).”
+& haddesenâ, an, an, an
+^ قال: «العمد بالحديدة»
+
+27679 | İbn Fudayl → Şa‘bî | Şa‘bî dedi ki: “Demir parçasıyla olan her şey kasıttır.”
+& haddesenâ, an
+^ قال: «كل شيء
+
+27680 | Ebû Üsâme → Hişâm → Hasan | Hasan dedi ki: “Vuran, demir parçasıyla vurmadıkça ondan kısas alınmaz.”
+& haddesenâ, an, an
+^ قال: «لا يقاد من
+
+27681 | Vekî‘ → Süfyân → Câbir → Ebû Âzib → Nu‘mân b. Beşîr | Nu‘mân b. Beşîr’den: Resûlullah ﷺ buyurdu: “Kılıç dışındaki her şey hatadır; her hatanın bir erşi vardır.”
+& haddesenâ, an, an, an, an
+^ قال رسول الله
+
+27682 | Vekî‘ → Süfyân → Mugîre → İbrâhîm | İbrâhîm dedi ki: “Kasıt silahla (olur).”
+& haddesenâ, haddesenâ, an, an
+^ قال: «العمد بالسلاح»
+
+@ Onu kayayla vurup tekrarladığında
+
+27683 | İbn İdrîs → Şeybânî → Ziyâd b. İlâka → bir adam | Bir adamdan: Bir adam başka bir adama iri bir taş atıp onu öldürdü; Resûlullah ﷺ ondan kısas aldırdı.
+& haddesenâ, an, an, an
+^ أن رجلا رمى
+
+27684 | Cerîr → Mugîre → İbrâhîm | İbrâhîm dedi ki: “Kayayla vurmak kasıttır; onda kısas vardır.”
+& haddesenâ, an, an
+^ قال: «الضرب بالصخرة
+
+27685 | Ebû Hâlid → İbn Cüreyc → Ebü’z-Zübeyr → Ubeyd b. Umeyr | Ubeyd b. Umeyr dedi ki: “Kuvvetli –güçlü demek istiyor– adam bir kayaya ya da bir kütüğe yönelip onunla adamın başını ezer; bundan daha kasıtlı hangi kasıt olabilir?”
+& haddesenâ, an, an, an
+^ قال: «يعمد الرجل
+
+27686 | Şerîk → Zeyd b. Cübeyr → Cerve b. Humeyl → babası → Ömer | Cerve b. Humeyl’in babası dedi ki: Ömer dedi ki: “Biriniz kardeşine yönelir de onu et yiyen (kılıç) gibi bir şeyle vurur. Bunu yapıp (birini) öldüren bir adam bana getirilirse ondan mutlaka kısas aldırırım.”
+& haddesenâ, an, an, an, kâle
+^ «يعمد أحدكم
+
+27687 | Abdüla‘lâ → Ma‘mer → Zührî | Zührî dedi ki: “Onu kasten sopayla vurur; (sopa) sahibini öldürdüğünde vuran öldürülür.”
+& haddesenâ, an, an
+^ قال: «يضربه بالعصا
+
+27688 | Ebü’l-Ahvas → Ebû İshâk → Âsım b. Damre → Ali | Ali dedi ki: “Kasta benzer (öldürme) sopa ve iri taşla olandır.”
+& haddesenâ, an, an, an
+^ قال: «شبه العمد
+
+27689 | Vekî‘ → Muhammed b. Kays → Şa‘bî | Şa‘bî dedi ki: “Sopayla vurup tekrar tekrar vurduğunda öldürülür.”
+& haddesenâ, haddesenâ, an
+^ قال: «إذا ضرب بالعصا
+
+27690 | Vekî‘ → Şu‘be | Şu‘be dedi ki: Hakem’e ve Hammâd’a, (başka) bir adamı sopayla vurup öldüren adamı sordum. Hakem dedi ki: “Ona kısas yoktur.” Hammâd dedi ki: “Öldürülür.”
+& haddesenâ, haddesenâ
+^ قال: سألت الحكم
+
+27691 | Vekî‘ → Süfyân → Câbir → Âmir | Âmir dedi ki: “Sopayla tekrar tekrar vurduğunda (bu) kısastır.”
+& haddesenâ, haddesenâ, an, an
+^ قال: «إذا أعل
+
+27692 | Vekî‘ → Hişâm → Katâde → Enes | Enes’ten: “Bir Yahudi bir kadının başını taşla ezdi; Nebî ﷺ de onun başını iki taş arasında ezdi.”
+& haddesenâ, haddesenâ, an, an
+^ «أن يهوديا رضخ
+
+@ Bir grubun öldürdüğü adam
+
+27693 | Abdullah b. Nümeyr → Yahyâ b. Saîd → Saîd b. el-Müseyyeb | Saîd b. el-Müseyyeb’den: San‘â’da bir insan öldürüldü. Ömer onun karşılığında yedi kişiyi öldürdü ve şöyle dedi: “San‘â halkı onun (öldürülmesi) üzerine birleşseydi, onun karşılığında hepsini öldürürdüm.”
+& haddesenâ, an, an
+^ أن إنسانا قتل
+
+27694 | Vekî‘ → Hişâm → Katâde → Saîd b. el-Müseyyeb → Ömer | Saîd b. el-Müseyyeb dedi ki: Ömer dedi ki: “San‘â halkı ona ortak olsaydı onları öldürürdüm.”
+& haddesenâ, haddesenâ, an, an, kâle
+^ قال: قال عمر
+
+27695 | Vekî‘ → Umerî → Nâfi‘ → İbn Ömer | İbn Ömer’den: Ömer b. el-Hattâb bir adam karşılığında San‘â halkından yedi kişiyi öldürdü ve şöyle dedi: “San‘â halkı ona ortak olsaydı onları öldürürdüm.”
+& haddesenâ, haddesenâ, an, an
+^ أن عمر بن الخطاب
+
+27696 | Vekî‘ → İsrâîl → Ebû İshâk → Saîd b. Vehb | Saîd b. Vehb dedi ki: Bazı adamlar yolculuğa çıktılar; bir adam da onlara arkadaş oldu. (Dönüp) geldiler, o yanlarında değildi. (Saîd) dedi ki: Ailesi onları itham etti. Şüreyh dedi ki: Şahitleriniz (getirin) ki onlar arkadaşınızı öldürdüler; yoksa onu öldürmediklerine dair Allah’a yemin ederler. Onları Ali’ye getirdiler; ben de yanındaydım. (Ali) onları birbirinden ayırdı, onlar da itiraf ettiler. Ali’yi şöyle derken işittim: “Ben Ebü’l-Hasan’ım, el-Karm (olan)!” Onlar hakkında emir verdi, öldürüldüler.
+& haddesenâ, haddesenâ, an, an
+^ قال: خرج رجال
+
+27697 | Muhammed b. Bekr → İbn Cüreyc → Süleymân b. Mûsâ | İbn Cüreyc dedi ki: Süleymân b. Mûsâ’yı (şöyle) derken işittim: “Bir adam(ın öldürülmesi) için birlikte (kuyuya) sarkıtan kavim hakkında: Onun karşılığında hepsini öldürür.”
+& haddesenâ, an, semi‘tü
+^ قال: «في القوم
+
+27698 | Muhammed b. Bekr → İbn Cüreyc → Atâ | İbn Cüreyc dedi ki: Atâ’ya dedim ki: (Bir) adam iki hür adamı kasten öldürdü. Dedi ki: “O, ikisi arasında kısastır.”
+& haddesenâ, an, kâle
+^ قلت لعطاء رجل
+
+27699 | Ebû Muâviye → Mücâlid → Şa‘bî → Mugîre b. Şu‘be | Mugîre b. Şu‘be’den: “O, bir adam karşılığında yedi kişiyi öldürdü.”
+& haddesenâ, an, an, an
+^ «أنه قتل سبعة
+
+@ Onlardan yalnız birini öldürenler
+
+27700 | Mu‘temir b. Süleymân → İsmâîl b. Ebî Hâlid → Habîb b. Ebî Sâbit | Habîb b. Ebî Sâbit dedi ki: “Bir adam karşılığında iki adam öldürülmez.”
+& haddesenâ, an, an
+^ قال: «لا يقتل رجلان
+
+27701 | Muhammed b. Bekr → İbn Cüreyc → Amr b. Dînâr | Amr b. Dînâr dedi ki: “Abdülmelik ve İbnü’z-Zübeyr onlardan yalnız birini öldürürlerdi.”
+& haddesenâ, an, an
+^ قال: «كان عبد الملك
+
+27702 | Ebû Üsâme → Hişâm → Muhammed | Muhammed dedi ki: “Onlardan yalnız biri öldürülür.”
+& haddesenâ, an, an
+^ قال: «لا يقتل منهم
+
+27703 | Ubeydullah b. Mûsâ → Hasan b. Sâlih → Simâk → Zühl b. Ka‘b | Zühl b. Ka‘b’dan: Muâz, Ömer’e dedi ki: “Bir can karşılığında iki canı öldürmek senin hakkın değildir.”
+& haddesenâ, an, an, an
+^ أن معاذا قال
+
+@ Kendini yaralayan adam
+
+27704 | İbn Fudayl → Leys → Amr b. Şuayb → babası → dedesi Abdullah b. Amr | Amr b. Şuayb’ın dedesi Abdullah b. Amr dedi ki: Bir adam bir eşeği sürüyordu, onun üzerine de biniyordu. Yanındaki bir sopayla ona vurdu; ondan bir kıymık uçtu ve gözüne isabet edip onu kör etti. Bu (mesele) Ömer b. el-Hattâb’a götürüldü. Dedi ki: “O, Müslümanların ellerinden bir eldir; kimseye saldırıda bulunmadan (bu zarar) ona isabet etti.” Ve gözünün diyetini âkilesine yükledi.
+& haddesenâ, an, an, an, an
+^ قال: كان رجل يسوق
+
+27705 | Muhammed b. Bekr → İbn Cüreyc → Atâ | İbn Cüreyc dedi ki: Atâ’ya dedim ki: Adam hata ile kendini yaralarsa ona beyyine gerekir mi? Dedi ki: “Onun diyetini âkilesi öder.”
+& haddesenâ, an, kâle
+^ قلت لعطاء: الرجل
+
+@ Haddde hata eden imam
+
+27706 | Haramî b. Umâre → Şu‘be | Şu‘be dedi ki: Hakem’e ve Hammâd’a, bir adam aleyhine şahitlik eden, (bunun üzerine) eli kesilen, sonra bakılınca şahitlerden birinin köle olduğu (anlaşılan) iki adamı sordum. Dediler ki: “İmam tazmin eder.”
+& haddesenâ, an
+^ قال: سألت الحكم
+
+@ Oğlunu hata ile öldüren adam
+
+27707 | İbn Fudayl → Eş‘as → İbn Sîrîn | İbn Sîrîn dedi ki: “Bir adam, (atı) tırmandırmak için oğlunu bir ata bindirdi; (atı) mahmuzladı ve ona vurdu, (at da çocuğu) öldürdü. Onun diyetini âkilesine yükledi ve babayı hiçbir şeye mirasçı kılmadı.”
+& haddesenâ, an, an
+^ قال: «حمل رجل
+
+27708 | Muhammed b. Bekr → İbn Cüreyc → Atâ | İbn Cüreyc dedi ki: Atâ’ya dedim ki: Adam oğlunu hata ile öldürürse? Dedi ki: “Onun diyetini âkilesi öder.”
+& haddesenâ, an, kâle
+^ قلت لعطاء الرجل
+
+27709 | Muhammed b. Bekr → İbn Cüreyc → Amr b. Dînâr | İbn Cüreyc dedi ki: Amr b. Dînâr bana haber verdi ki, babasını ve kardeşini öldüren bir adam Abdülmelik b. Mervân’a geldi. (Abdülmelik) dedi ki: “Yalnız senin malında.”
+& haddesenâ, an, ahberanî
+^ أن عبد الملك بن مروان
+
+@ Birbirlerinin başını yaran kavim
+
+27710 | Ebü’l-Ahvas → Simâk → Abdurrahmân b. el-Ka‘kâ‘ | Abdurrahmân b. el-Ka‘kâ‘ dedi ki: Evime bir kavmi davet ettim. Yiyip içtiler, sarhoş oldular ve evdeki bıçaklara kalkıp birbirlerine saldırdılar; birbirlerini yaraladılar. Dört kişiydiler; ikisi öldü, ikisi kaldı. Ali diyeti dördünün hepsine yükledi ve yaralı olan ikisine, yaralarından kendilerine isabet edeni (diyetten) düştü.
+& haddesenâ, an, an
+^ قال: دعوت إلى بيتي
+
+27711 | Vekî‘ → Zekeriyyâ → Âmir | Âmir’den: Hasan b. Ali’ye üç kişiyi öldüren iki adam getirildi; iki adam da yaralanmıştı. Hasan b. Ali dedi ki: “İki adama üç kişinin diyeti (düşer); iki adamın yarası(nın diyeti) onlardan kaldırılır.”
+& haddesenâ, haddesenâ, an
+^ أن الحسن بن علي
+
+27712 | Muhammed b. Bekr → İbn Cüreyc → Atâ ve İbn Ebî Müleyke | Atâ ve İbn Ebî Müleyke dediler ki: “Bir adam bir adamı öldürdü; öldürülen de katili (birkaç) yarayla yaraladı. Katil öldürüldü ve maktulün ailesi katilin yarasının diyetini ödedi.”
+& haddesenâ, an, an
+^ قالا: «أن رجلا قتل
+
+27713 | Cerîr → Mugîre → İbrâhîm | İbrâhîm dedi ki: “Bir evde ölüler ve baş yaraları bulundu; bir kısmını bir kısmına karşılık tuttu.”
+& haddesenâ, an, an
+^ قال: «وجد في بيت
+
+27714 | Hafs → Şeybânî → Şa‘bî | Şa‘bî dedi ki: “Zerâre’den bir kavim çıkıp birbirleriyle dövüştüler, birbirlerini öldürdüler. Ali, öldürülenin diyetini tazmin ettirdi ve yaralılardan yaraları miktarınca kaldırdı.”
+& haddesenâ, an, an
+^ قال: «خرج قوم
+
+@ Adamı ısıran köpek
+
+27715 | Muhammed b. Fudayl → Ebû Hasîn → Şa‘bî | Şa‘bî dedi ki: “Köpek evde olur da ev halkı adama izin verir, o da girer, (köpek) onu ısırırsa tazmin ederler; izinsiz girer de onu ısırırsa tazmin etmezler.”
+& haddesenâ, an, an
+^ قال: «إذا كان الكلب
+
+27716 | Vekî‘ → Zekeriyyâ → Âmir | Âmir dedi ki: “Köpekleri evlerinden bir karış ya da daha fazla dışarıda ısırırsa tazmin ederler.”
+& haddesenâ, haddesenâ, an
+^ قال: «إن عقر
+
+27717 | Vekî‘ → Muhammed b. Kays → Şa‘bî | Şa‘bî dedi ki: “Adam (birini) evine soktuğunda, onu soktuğu gibi çıkarıncaya kadar ondan sorumludur.”
+& haddesenâ, an, semi‘a
+^ قال: «إذا أدخل
+
+27718 | Abde b. Süleymân → Saîd → Ebû Ma‘şer → İbrâhîm | İbrâhîm dedi ki: “Onların izniyle girer de (köpek) onu ısırırsa tazmin ederler; izinleri olmadan girer de onu ısırırsa tazmin etmezler.”
+& haddesenâ, an, an, an
+^ قال: «إذا دخل بإذنهم
+
+27719 | Vekî‘ → Süfyân → Târık b. Abdurrahmân | Târık b. Abdurrahmân dedi ki: Şüreyh’in yanındaydım. Dağarcığı yırtılmış, baldırı tırmalanmış bir dilenci ona geldi ve dedi ki: Bir kavmin evine girdim, köpekleri beni ısırdı. Şüreyh dedi ki: “Sana izin vermişlerse onlar tazmin ederler; yoksa onlara tazmin yoktur.”
+& haddesenâ, haddesenâ, an
+^ قال: كنت عند شريح
+
+27720 | Ubeydullah → Şu‘be → Hakem | Hakem, ısıran köpek hakkında dedi ki: “Tazmin etmez.”
+& haddesenâ, an, an
+^ في الكلب العقور
+
+27721 | İbn İdrîs → Husayn → Âmir | Husayn dedi ki: Âmir, köpekler hakkında şöyle derdi: Adam koyunlarla birlikteyken onların yanına gelir de onu ısırırlarsa (sahibine) tazmin yoktur; yolda insanlara saldırıp birine isabet ederlerse ona tazmin gerekir.
+& haddesenâ, an, an
+^ قال: كان يقول
+
+@ Kısas ancak kılıçla olur diyenler
+
+27722 | Îsâ b. Yûnus → Eş‘as ve Amr → Hasan | Hasan dedi ki: Resûlullah ﷺ buyurdu: “Kısas ancak kılıçla olur.”
+& haddesenâ, an, an
+^ قال: قال رسول الله
