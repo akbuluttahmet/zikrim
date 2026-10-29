@@ -14,7 +14,7 @@
 
 16818 | Abdüla‘lâ → Burd → Mekhûl → Ali | Ali dedi ki: “Peştamalın üstü.”
 & haddesenâ, an, an, an
-^ قال: «ما فوق الإزار» حدثنا ابن إدريس
+^ قال: «ما فوق الإزار»
 
 16819 | İbn İdrîs → Yezîd b. Ebî Ziyâd → Saîd b. Cübeyr | Saîd b. Cübeyr şöyle diyordu: “Peştamalın üstü senindir; altındakine muttali olma.”
 & haddesenâ, an, an
@@ -32,7 +32,7 @@
 & haddesenâ, an, an
 ^ قال: «إذا كفت الحائضة
 
-16823 | Şerîk → Câbir → Âmir | Âmir dedi ki: “Kanı (metinde böyle) … (metin bu kelimede bozuktur) ona gelir.”
+16823 | Şerîk → Câbir → Âmir | Âmir dedi ki: “Kanı indirdiği sürece (metinde böyle) ona gelir.”
 & haddesenâ, an, an
 ^ قال: «يأتيها ما أحط
 
@@ -42,11 +42,11 @@
 
 16825 | Vekî‘ → Salt b. Behrâm → İbrâhîm | İbrâhîm dedi ki: “Peştamalın üstü senindir.”
 & haddesenâ, an, an
-^ قال: «لك ما فوق الإزار» حدثنا وكيع
+^ قال: «لك ما فوق الإزار»
 
 16826 | Vekî‘ → Ebû Mekîn → İkrime | İkrime dedi ki: “Peştamalın üstü.”
 & haddesenâ, an, an
-^ قال: «ما فوق الإزار» حدثنا حاتم
+^ قال: «ما فوق الإزار»
 
 16827 | Hâtim b. İsmâîl → Abdurrahmân b. Harmele | Abdurrahmân b. Harmele’den: O, bir adamı Saîd b. el-Müseyyeb’e soru sorarken işitti: “Hayızlı iken karımla tenimi birleştireyim mi?” Dedi ki: “Kendinle onun o (yeri) arasına bir elbise koy, sonra onunla tenini birleştir.”
 & haddesenâ, an
@@ -62,7 +62,7 @@
 
 16830 | Abdüla‘lâ → Hişâm → Hasan | Hasan dedi ki: “Peştamalın üstü.”
 & haddesenâ, an, an
-^ قال: «ما فوق الإزار» حدثنا أسباط
+^ قال: «ما فوق الإزار»
 
 16831 | Esbât → Eş‘as → İbn Sîrîn → Abîde | Abîde’den, hayızlı kadın hakkında: “Peştamalın üstü senindir.”
 & haddesenâ, an, an, an
@@ -254,19 +254,19 @@
 
 16875 | Mervân b. Muâviye → İmrân → Hasan | Hasan’dan: “Fakat onlarla gizlice sözleşmeyin” (Bakara 2/235). Dedi ki: “Zina.”
 & haddesenâ, an, an
-^ {ولكن لا تواعدوهن سرا} [البقرة: 235] قال: «الزنا» حدثنا وكيع
+^ {ولكن لا تواعدوهن سرا} [البقرة: 235] قال: «الزنا»
 
 16876 | Vekî‘ → Süfyân → Süddî → İbrâhîm | İbrâhîm dedi ki: “Zina.”
 & haddesenâ, an, an, an
-^ قال: «الزنا» حدثنا جرير
+^ قال: «الزنا»
 
 16877 | Cerîr → Teymî → Ebû Miclez | Ebû Miclez dedi ki: “Zina.”
 & haddesenâ, an, an
-^ قال: «الزنا» حدثنا أبو بكر
+^ قال: «الزنا»
 
 16878 | Zeyd b. el-Hubâb → Muhammed b. Yahyâ b. Habbân → A‘rec → Câbir b. Zeyd | Câbir b. Zeyd dedi ki: “Zina.”
 & haddesenâ, an, an, an
-^ قال: «الزنا» حدثنا أبو بكر قال: نا يحيى
+^ قال: «الزنا»
 
 16879 | Yahyâ b. Yemân → Süfyân → Alkame b. Mersed → Dahhâk | Dahhâk dedi ki: “Ondan, kendisinden başkasıyla evlenmeyeceğine dair söz almaz.”
 & haddesenâ, an, an, an
