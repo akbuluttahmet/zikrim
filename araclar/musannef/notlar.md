@@ -65,3 +65,8 @@
 - Metne karışan “حدثنا أبو بكر قال:”: 9803. Belirsiz anlatı: 9817. 9818 son halka “Resûlullah'ı işiten biri”. 10132 sorulan kişinin adı yok.
 - Sened (Arapçadaki gibi): 9970 ilk râvi düşmüş (“حدثنا عن ليث”, `…`), 10003, 10016, 10179, 10184, 10198, 10221, 10231, 10253, 10268, 10321; 9964, 10313 “حدثنا أبو بكر عن …”.
 - Bozuk/şüpheli (notlu): 9985, 10044, 10094, 10146, 10253, 10279, 10310. Başlıksız bablar: 9880, 10090.
+
+## k06 Cenâiz (p078–p084, 11860–12144)
+- 11932 ikinci rivayet birleşik. Başlıksız bablar: 11944, 11952, 12124.
+- Sened (Arapçadaki gibi, notlu): 11909, 11915, 11983, 12006, 12083 (Süfyân iki kez).
+- Bozuk/şüpheli (notlu): 11867, 11913, 11973, 11982 (“الخيب”; 12132'de “النحيب”), 11992, 12013, 12023, 12051, 12056, 12061, 12075, 12078, 12094, 12110, 12128.
