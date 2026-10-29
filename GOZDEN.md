@@ -26,8 +26,8 @@ Biçim: `- [ ] kitaplık no — mesele. Seçenekler. (tarih)`
 
 - [ ] **fezail 1038** — oran 0,18 ve Türkçede 3 ﷺ eksik: çeviri büyük ihtimalle yarım. (2026-10-29)
 - [ ] **sunan 518** (0,74), **2661** (0,66), **3810** (0,69). (2026-10-29)
-- [ ] **12 kitaplık, oran < 0,75 (16):** zuhd 165, 1118 · fezail 240, 1174, 1236 · ahmed m03 61, m06 1, 107, 108 (0,72), 220 · hallal h03 189 · buhari b01 95, b02 157, 170, 178, 180. (2026-10-29)
-- [ ] **musned** — 143 maddede oran < 0,75 (`python3 araclar/dogrula.py musned --hepsi`); Müsned baştan yapılacağı için orada çözülür. (2026-10-29)
+- [ ] **12 kitaplık, oran < 0,75 (5; oran harekesiz Arapçaya göre):** ahmed m06 1 (0,74), 108 (0,71) · hallal h03 189 (0,71) · buhari b01 95 (0,74) · fezail 1038 (yukarıda). Önceki listedeki öteki maddeler harekeden kaynaklanan yapay uyarıydı. (2026-10-29)
+- [ ] **musned (eski çeviri)** — oran harekesiz Arapçaya göre hesaplanınca yalnız m002 287 (0,67) kalıyor; önceki 143 uyarı harekedendi. Müsned baştan yapılacağı için orada çözülür. (2026-10-29)
 
 ## 3. Dinî / saygı ifadesi kontrolü
 

@@ -248,8 +248,11 @@ def madde_denetle(rp, lib, dosya, h, ravi, bab_i):
         a, t = len(re.findall(a_pat, ar)), len(re.findall(t_pat, metin))
         if t < a:
             rp.u('müellif notu eksik', yer, f'Türkçe {t}, Arapça {a}')
-    if len(ar) > 120 and (len(sened) + len(metin)) / len(ar) < 0.75:
-        rp.u('çeviri kısa olabilir', yer, f'oran {(len(sened) + len(metin)) / len(ar):.2f}')
+    # Oran harekesiz Arapçaya ve nüsha/müellif öneği düşülmüş metne göre: harekeli neşirlerde (Müsned vb.)
+    # harekeler oranı yapay olarak düşürüyordu. Eşik Sünen'de (harekesiz) ayarlandı; sadık çevirilerde medyan ≈1,3.
+    ar_say, _ = onek_dus(lib, HAREKE.sub('', ar))
+    if len(ar_say) > 120 and (len(sened) + len(metin)) / len(ar_say) < 0.75:
+        rp.u('çeviri kısa olabilir', yer, f'oran {(len(sened) + len(metin)) / len(ar_say):.2f}')
     # --- râvi veritabanı ---
     if ravi and zs:
         rdb, kenarlar = ravi['ravi'], ravi['_kenar']
