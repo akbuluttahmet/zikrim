@@ -278,6 +278,20 @@ body.view-selef #toggleCompact,body.view-selef .sort-hint{display:none}
 .rv-s{display:inline-block;margin:0 6px;padding:0 7px;border-radius:999px;background:var(--hero);color:var(--accent);font-size:12px;font-weight:700}
 .rv-g{color:var(--muted);font-size:11.5px;margin-right:6px}
 .rv-chain li .rv-n+.rv-s+.rv-g+.rv-n::before,.rv-chain li .rv-s+.rv-n::before{content:"→ ";color:var(--muted);font-weight:400}
+/* Dikey isnad zinciri: râvi düğümü, altında sîga, sonra sonraki râvi */
+.rv-tl{list-style:none;margin:0 0 10px;padding:0}
+.rv-node{position:relative;padding:2px 0 2px 20px;font-size:14px;font-weight:600;line-height:1.4}
+.rv-node::before{content:"";position:absolute;left:2px;top:.55em;width:8px;height:8px;border-radius:50%;border:2px solid var(--accent);background:var(--card)}
+.rv-node.last{color:var(--accent)}
+.rv-node.last::before{background:var(--accent)}
+.rv-link{margin-left:7px;padding:3px 0 3px 17px;border-left:2px solid var(--border);line-height:1.3}
+.rv-link .rv-s{margin:0 6px 0 0}
+.rv-join{color:var(--muted);font-weight:400;font-size:12px}
+.rv-join::before{border-style:dashed;background:transparent}
+.rv-yollar{display:grid;gap:8px;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));margin-bottom:6px}
+.rv-yol{border:1px dashed var(--border);border-radius:10px;padding:6px 8px 0}
+.rv-yol-h{margin:0 0 4px;font-size:12px;font-weight:700;color:var(--muted)}
+.rv-ortak-h{margin-top:6px}
 .mus-grp{margin:16px 2px 2px;font-weight:800;color:var(--accent);font-size:15px}
 .mus-grp1{margin:6px 2px 2px 12px;font-size:13px;font-weight:700;color:var(--muted)}
 .mus-grp[hidden]{display:none}
@@ -503,6 +517,7 @@ body[data-tab=akis] .app{visibility:hidden}
 .fd-chip[aria-pressed=true]{background:var(--accent);border-color:var(--accent);color:var(--accentText)}
 /* D şablonu: isnad zinciri */
 .fd-isn-h{font-size:10.5px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;color:var(--muted)}
+.fd-isn-ek{display:block;margin-top:2px;font-size:11.5px;color:var(--muted);font-style:italic}
 .fd-chain{list-style:none;margin:-6px 0 0;padding:0}
 .fd-chain li{position:relative;padding:0 0 6px 20px;font-size:13px;line-height:1.35;color:var(--muted)}
 .fd-chain li::before{content:'';position:absolute;left:2px;top:4px;width:7px;height:7px;border-radius:50%;border:1.5px solid var(--muted);background:var(--card);opacity:.7}

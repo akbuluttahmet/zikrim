@@ -33,10 +33,12 @@ KAYNAK_EK = {'musned': 44, 'musannef': 35, 'ibnebiseybe': 39, 'ahmed': 73, 'zuhd
 def satir(n, kar): return max(1, math.ceil(n / kar))
 def yukseklik(v, n, t, sened, kitap, bab):
     h, parca = 46, 2                                           # dolgu; metin + kaynak
-    adlar = [a for a in re.split(r'\s*→\s*', sened) if a] if sened else []
+    yollar = re.split(r'\s*;\s*ayrıca\s*', sened) if sened else []
+    adlar = [a for a in re.split(r'\s*→\s*', yollar[0]) if a] if yollar else []
     if adlar:                                                  # “İSNAD” başlığı + zincir
         h += 13 + 14 - 6 + sum(satir(len(a), KAR['ad']) * SATIR['ad'] + 6 for a in adlar) - 6
         parca += 2
+        if len(yollar) > 1: h += SATIR['ad'] + 4                # “+ bir yoldan daha” satırı
     boy = 's' if len(t) < 140 else 'l' if len(t) > 300 else 'm'
     h += satir(len(t), KAR[boy]) * SATIR[boy]
     h += satir(KAYNAK_EK.get(v, 50) + len(str(n)) + len(kitap), KAR['kaynak']) * SATIR['kaynak']

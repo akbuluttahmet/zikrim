@@ -1220,7 +1220,57 @@ function libOpen(L, i, target = null) {
 }
 
 /* Râvi paneli: yalnızca eserin kendi metnindeki bilgiler. h[4] = {c: [isim, sîga, isim, ...], n: [metindeki notlar]} */
-const SIGA = {'haddesenâ': 'bize anlattı', 'haddesenî': 'bana anlattı', 'ahberanâ': 'bize haber verdi', 'ahberanî': 'bana haber verdi', 'semi‘tü': 'işittim', 'semi‘a': 'işitti', 'an': '“-den” (an‘ane)', 'enne': '“ki…” diye', 'kâle': 'dedi'};
+const SIGA = {'haddesenâ': 'bize anlattı', 'haddesenî': 'bana anlattı', 'ahberanâ': 'bize haber verdi', 'ahberanî': 'bana haber verdi', 'enbe’enâ': 'bize bildirdi', 'semi‘tü': 'işittim', 'semi‘a': 'işitti', 'an': '“-den” (an‘ane)', 'enne': '“ki…” diye', 'kâle': 'dedi', 'haddesehû': 'ona anlattı', 'haddesehüm': 'onlara anlattı', 'ahberahû': 'ona haber verdi', 'ahberahüm': 'onlara haber verdi'};
+/* İsnad zinciri: info.c tek zincir [isim, sîga, isim, …] ya da tahvîlde zincirler dizisi [[…], […]].
+   Dikey çizilir: râvi, altında bir sonrakinden aldığı sîga, sonra o râvi. Tahvîlde her yol ayrı,
+   bütün yollarda ortak olan son kısım “Yollar burada birleşir” başlığıyla bir kez gösterilir. */
+function rvChains(d, c) {
+  const chains = (Array.isArray(c[0]) ? c : [c]).map(z => ({names: z.filter((_, i) => i % 2 === 0), sigs: z.filter((_, i) => i % 2 === 1)}));
+  const sigEl = s => {
+    const li = el('li', 'rv-link');
+    li.append(el('span', 'rv-s', s));
+    const g = SIGA[String(s).split(' ')[0]];
+    if (g && !String(s).includes('(')) li.append(el('small', 'rv-g', g));
+    return li;
+  };
+  // tl: names[a..b] ve aralarındaki sîgalar; lead: ilk isimden önce gelen sîga (ortak kısmın girişi)
+  const tl = (z, a, b, opt = {}) => {
+    const ol = el('ol', 'rv-tl');
+    for (let i = a; i <= b; i++) {
+      if (i > a) ol.append(sigEl(z.sigs[i - 1]));
+      ol.append(el('li', 'rv-node' + (opt.last && i === b ? ' last' : ''), z.names[i]));
+    }
+    if (opt.tail) ol.append(sigEl(opt.tail), el('li', 'rv-node rv-join', '↓ birleşme'));
+    return ol;
+  };
+  // Bütün yollarda isim ve sîgasıyla aynı olan son kısım
+  let k = 0;
+  if (chains.length > 1) {
+    const min = Math.min(...chains.map(z => z.names.length));
+    while (k < min - 1) {
+      const j = z => z.names.length - 1 - k;
+      const ref = chains[0];
+      if (!chains.every(z => z.names[j(z)] === ref.names[j(ref)] && (k === 0 || z.sigs[j(z)] === ref.sigs[j(ref)]))) break;
+      k++;
+    }
+  }
+  d.append(el('p', 'rv-h', 'Her râvi, kendisinden sonraki râviden hadisi hangi lafızla aldığını söylüyor:'));
+  if (chains.length === 1) { d.append(tl(chains[0], 0, chains[0].names.length - 1, {last: true})); return; }
+  const wrap = el('div', 'rv-yollar');
+  chains.forEach((z, i) => {
+    const box = el('div', 'rv-yol');
+    box.append(el('p', 'rv-yol-h', `${i + 1}. yol`));
+    const end = z.names.length - 1 - k;
+    box.append(k ? tl(z, 0, end, {tail: z.sigs[end]}) : tl(z, 0, z.names.length - 1, {last: true}));
+    wrap.append(box);
+  });
+  d.append(wrap);
+  if (k) {
+    const z = chains[0], s = z.names.length - k;
+    d.append(el('p', 'rv-yol-h rv-ortak-h', 'Yollar burada birleşir'));
+    d.append(tl(z, s, z.names.length - 1, {last: true}));
+  }
+}
 function libItem(L, h) {
   const [n, sened, metin, ziyade, info, ar] = h;
   const a = el('article', 'mus-h');
@@ -1249,22 +1299,9 @@ function libItem(L, h) {
     d.append(el('summary', null, 'Râviler ve isnad'));
     d.fill = () => {
       if (d.dataset.done) return; d.dataset.done = 1;
-      if (info.c && info.c.length > 1) {
-        d.append(el('p', 'rv-h', 'Rivayet sîgaları — her râvi, bir sonrakinden hangi lafızla aldığını söylüyor:'));
-        const ol = el('ol', 'rv-chain');
-        for (let i = 0; i + 2 < info.c.length + 1 && i + 1 < info.c.length; i += 2) {
-          const from = info.c[i], sig = info.c[i + 1], to = info.c[i + 2];
-          const li = el('li');
-          li.append(el('span', 'rv-n', from), el('span', 'rv-s', sig));
-          const g = SIGA[sig.split(' ')[0]];
-          if (g && !sig.includes('(')) li.append(el('small', 'rv-g', g));
-          if (to && to !== '—') li.append(el('span', 'rv-n', to));
-          ol.append(li);
-        }
-        d.append(ol);
-      }
+      if (info.c && info.c.length > 1) rvChains(d, info.c);
       if (info.n && info.n.length) {
-        d.append(el('p', 'rv-h', 'Müsned metnindeki kayıtlar:'));
+        d.append(el('p', 'rv-h', 'Metindeki kayıtlar:'));
         const ul = el('ul', 'rv-list');
         for (const x of info.n) ul.append(el('li', null, x));
         d.append(ul);
@@ -1822,12 +1859,14 @@ function feedCard(p, first) {
   const a = el('article', 'fd-card');
   a._p = p;
   const box = el('div', 'fd-in');
-  const names = p.s ? p.s.split(/\s*→\s*/).filter(Boolean) : [];
+  const yollar = p.s ? p.s.split(/\s*;\s*ayrıca\s*/) : [];
+  const names = yollar.length ? yollar[0].split(/\s*→\s*/).filter(Boolean) : [];
   if (names.length) {
     const ol = el('ol', 'fd-chain');
     ol.setAttribute('aria-label', 'İsnad');
     names.forEach((nm, i) => { const li = el('li', i === names.length - 1 ? 'last' : null, nm); li.style.setProperty('--i', i); ol.append(li); });
     box.append(el('span', 'fd-isn-h', 'İsnad'), ol);
+    if (yollar.length > 1) box.append(el('span', 'fd-isn-ek', yollar.length === 2 ? '+ bir yoldan daha' : `+ ${yollar.length - 1} yoldan daha`));
   }
   const t = el('p', 'fd-t' + (p.t.length < 140 ? ' s' : p.t.length > 300 ? ' l' : ''), p.t);
   const src = feedSrc(p);
@@ -1901,7 +1940,7 @@ function shotCanvas(p, size = 'post', bg = 'tema') {
     return lines;
   };
   // Önce yerleşim, sonra çizim
-  const names = p.s ? p.s.split(/\s*→\s*/).filter(Boolean) : [];
+  const names = p.s ? p.s.split(/\s*;\s*ayrıca\s*/)[0].split(/\s*→\s*/).filter(Boolean) : [];
   const NAME = font(400, 32), NAME_B = font(700, 32), SRC = font(400, 28), BAB = font(400, 28, 'italic');
   const big = size === 'story' ? 4 : 0;
   const TXT = font(400, (p.t.length < 140 ? 48 : p.t.length > 300 ? 40 : 44) + big);
