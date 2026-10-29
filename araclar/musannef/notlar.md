@@ -50,3 +50,7 @@
 - Bozuk/şüpheli (notlu): 81 (okunamayan yer), 95, 125, 145, 257, 427 (sened–metin uyumsuz), 398 “قال عطاء، عن الوضوء” (anlama göre çevrildi, notlu — bakılmalı).
 - Sened (Arapçadaki gibi, notlu): 102 “أمامة”, 229 “أبي المغيرة بن شعبة”, 550 “Ebû Nümeyr”, 253 sened ortasında “حدثنا أبو بكر قال:”, 278 “حدثنا أبو بكر عن مغيرة” (hoca düşmüş), 410 “حدثت عن هشيم” (unbi’tü), 537.
 - 456 başlıksız bab; 377 neşrin köşeli parantezi korundu.
+
+## k01 Tahârât (p017–p023, 1140–1650)
+- Bozuk/şüpheli (notlu): 1147, 1158 (ve babı: “نحر الدابة”), 1176, 1466 (“إلى أن يسيل”), 1481, 1564, 1574.
+- Sened (Arapçadaki gibi): 1337 “جابر بن عامر”, 1447 “معتمر بن عمران”, 1452 “حديث ابن علية”, 1506 “ابن عوف الأعرابي”, 1641 “عبيد الله بن القطينة” (591'de “القبطية”), 1649 “حفص، عن غياث”, 1650 Leys tekrarı, 1616 “وقال غير حسين”; 1273, 1405, 1553 “وعن” bağları iki yol olarak.
