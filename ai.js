@@ -7,12 +7,12 @@
   const input = byId('aiQuestion'), ask = byId('aiAsk'), status = byId('aiStatus');
   const result = byId('aiResult'), config = byId('aiEndpoint'), configInfo = byId('aiConnection');
   let opened = false, pushed = false, requestCount = 0, busy = false;
-  const KEY = 'sekine-ai-endpoint';
+  const KEY = 'sekine-ai-endpoint';\n  const DEFAULT_ENDPOINT = ''; // Worker yayına alınınca tüm kullanıcılar için adres buraya yazılır.
   const fallback = 'Kütüphanede bu soruyu açıklayacak yeterli kaynak bulunamadı.';
   const getApi = () => {
     let value = '';
     try {value = localStorage.getItem(KEY) || '';} catch {}
-    return value.trim();
+    return (value || DEFAULT_ENDPOINT).trim();
   };
   function validApi(url) {
     try {
