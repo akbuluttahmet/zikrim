@@ -1,5 +1,7 @@
 # Sekîne — iPhone PWA
 
+Kaynaklı AI denemesi: [Gemini kurulumu, yerel deneme ve örnek sorular](ai/README.md).
+
 Ana ekrana eklenen, çevrimdışı çalışan kişisel zikir sayacı. Veriler telefondaki tarayıcı depolamasında (localStorage) tutulur.
 
 ## Sürüm 2'deki yenilikler

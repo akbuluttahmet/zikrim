@@ -1,0 +1,10 @@
+{
+  "libraries": ["musned", "musannef", "ibnebiseybe", "ahmed", "zuhd", "fezail", "usul", "berbehari", "seria", "acurri", "hallal", "safii", "buhari", "ebudavud", "harb", "ibane", "sunan"],
+  "excluded_ids": [],
+  "aliases": [
+    {"triggers": ["içim daral", "iç sıkınt", "üzünt", "kaygı", "keder"], "terms": ["sıkınt", "keder", "hüzün", "dua"]},
+    {"triggers": ["sabır", "sabret"], "terms": ["sabır", "sabr", "sabret"]},
+    {"triggers": ["bağışlan", "af dile", "istiğfar"], "terms": ["istiğfar", "bağışla", "mağfiret"]},
+    {"triggers": ["gece namaz", "teheccüd"], "terms": ["teheccüd", "gece", "namaz"]}
+  ]
+}

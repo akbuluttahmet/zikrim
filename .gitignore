@@ -1,1 +1,8 @@
 node_modules/
+__pycache__/
+*.pyc
+.env
+.env.*
+!ai/.env.example
+ai/.data/
+ai/reports/
