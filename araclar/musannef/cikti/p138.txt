@@ -1,0 +1,375 @@
+@ Köle hakkında: Kaç kadınla evlenir?
+
+16035 | Hâtim b. İsmâîl → Ca‘fer → babası → Ali | Ca‘fer’in babasından: Ali şöyle derdi: “Köle ikiden fazla (kadınla) nikâhlanmaz.”
+& haddesenâ, an, an, enne
+^ كان يقول
+
+16036 | İbn Uyeyne → İbn Ebî Necîh → Mücâhid | Mücâhid’den, köle hakkında; dedi ki: “Dört (kadınla) evlenir.” Atâ da “İki” dedi.
+& haddesenâ, an, an
+^ في العبد، قال
+
+16037 | Cerîr → Şeybânî → Şa‘bî | Şa‘bî dedi ki: “Köle ancak iki kadınla evlenir.”
+& haddesenâ, an, an
+^ قال: «لا يتزوج
+
+16038 | Vekî‘ → Süfyân → İbn Cüreyc → Atâ | Atâ dedi ki: “Ancak iki (kadınla) evlenir.”
+& haddesenâ, an, an, an
+^ قال: «لا يتزوج
+
+16039 | Sekafî → Yûnus → Muhammed | Muhammed’den, köle olan adam hakkında: “Onun ikiden fazla (kadını) bir araya getirmesi hoş görülmez.” Câriye mi hür mü olduklarını zikretmiyordu. “Onun malı ancak efendisinin malıdır.”
+& haddesenâ, an, an
+^ في الرجل المملوك
+
+16040 | İbn Uleyye → Yûnus → Hasan | Hasan dedi ki: “İki (kadınla) evlenir.”
+& haddesenâ, an, an
+^ قال: «يتزوج اثنتين»
+
+16041 | Yahyâ b. Abdülmelik b. Ebî Ganiyye → babası → Hakem | Hakem dedi ki: “Kişi, kölesine satın alacağı câriye ile cinsel ilişkiye girmesi için izin verirse bu, efendi tarafından (kıyılmış) bir nikâhtır. (Köle) ikiden fazlasıyla ilişkiye girmez.”
+& haddesenâ, an, an
+^ قال: «إذا أذن
+
+16042 | İbn Ebî Zâide → İbn Avn → Muhammed → Ömer | Muhammed dedi ki: Ömer dedi ki: “Köleye kadınlardan neyin helâl olduğunu kim bilir?” Bir adam: “Ben” dedi. “Kaç?” dedi. “İki kadın” dedi. (Ömer) sustu.
+& haddesenâ, an, an, kâle
+^ قال: قال عمر
+
+16043 | Zeyd b. el-Hubâb → İbn Lehîa → Hâlid b. Ebî İmrân → Sâlim ve Kâsım | Hâlid b. Ebî İmrân dedi ki: Sâlim’e ve Kâsım’a, kölenin kaç (kadınla) evleneceğini sordum. “Dört” dediler.
+& haddesenâ, an, an, kâle
+^ قال: سألت سالما
+
+16044 | Muhâribî → Leys → Hakem | Hakem dedi ki: Resûlullah’ın ﷺ ashâbı, kölenin kadınlardan ikiden fazlasını bir araya getiremeyeceği üzerinde icmâ ettiler.
+& haddesenâ, an, an
+^ قال: أجمع أصحاب
+
+16045 | Vekî‘ → Saîd → Ebû Ma‘şer → İbrâhîm | İbrâhîm dedi ki: “Köle ikiden fazla (kadınla) evlenir.”
+& haddesenâ, an, an, an
+^ قال: «يتزوج المملوك
+
+@ Efendisinin izni olmadan evlenen köle
+
+16046 | Vekî‘ → Hişâm → Hasan; ayrıca Vekî‘ → Mugîre → İbrâhîm | Hasan ve İbrâhîm dediler ki: “Köle efendisinin izni olmadan evlenir, sonra efendisi izin verirse (nikâh) câizdir.”
+& haddesenâ, an, an; haddesenâ, an, an
+^ قالا: «إذا تزوج
+
+16047 | Ebû Dâvûd → Şu‘be → Mansûr → Hasan | Hasan dedi ki: “Efendisi onu onaylarsa câizdir.”
+& haddesenâ, an, an, an
+^ قال: «إذا أجازه
+
+16048 | Abde b. Süleymân → Saîd → Katâde → İbnü’l-Müseyyeb ve Hasan | İbnü’l-Müseyyeb ve Hasan’dan, efendisinin izni olmadan evlenen köle hakkında; dediler ki: “Efendisi dilerse nikâhı onaylar, dilerse reddeder.”
+& haddesenâ, an, an, an
+^ في العبد يتزوج
+
+16049 | Ebû Dâvûd → Şu‘be → Hakem | Hakem dedi ki: “Velî onu onaylarsa câiz olur.” Hammâd da dedi ki: “Nikâh yeniden kıyılır.”
+& haddesenâ, an, an
+^ قال: «إن أجازه
+
+@ Kişi karısını boşar, sonra onunla bir köle efendisinin izni olmadan evlenir
+
+16050 | Hüşeym → Mansûr → Hasan | Hasan dedi ki: Kişi karısını boşar, sonra onunla bir köle efendilerinin izni olmadan evlenip gerdeğe girerse –Hasan dedi ki–: “(Bu köle) koca değildir.”
+& haddesenâ, an, an
+^ قال: إذا طلق
+
+16051 | Hüşeym → Muhammed b. Sâlim → Şa‘bî | Şa‘bî’den, Hasan’ın sözünün benzeri (rivayet edildi). Hakem de dedi ki: “O kocadır; (ilk koca) ona dönebilir.”
+& haddesenâ, an, an
+^ مثل قول الحسن
+
+16052 | Hafs b. Gıyâs → İbn Cüreyc → Atâ | Atâ’dan, üç talakla boşanıp sonra efendilerinin izni olmadan bir kölenin evlendiği kadın hakkında; dedi ki: Atâ dedi ki: “Nikâh şekli dışında olan her nikâhta (kadın) ilk kocasına dönemez.”
+& haddesenâ, an, an
+^ في المرأة تطلق
+
+16053 | İsmâîl b. Ayyâş → İbn Abdülazîz b. Abdullah → Hâris → İbrâhîm | İbrâhîm dedi ki: “Ona dönemez; çünkü o, doğru olmayan bir nikâhtır.”
+& haddesenâ, an, an, an
+% Arapçada ad böyle yazılıdır: “عن ابن عبد العزيز بن عبد الله” (metinde böyle).
+^ قال: «لا ترجع
+
+16054 | Abdüssamed b. Abdülvâris → Câbir → Hammâd | Hammâd dedi ki: “Müslümanların câiz olan nikâhıyla nikâhlanmadıkça, onunla ilk kocasına dönmesi helâl olmaz.”
+& haddesenâ, an, an
+^ قال: «لا يحل
+
+16055 | Affân → Saîd b. Zeyd → Leys → Tâvûs | Tâvûs dedi ki: “Sünnete uygun olmayan her nikâhta kadın ilk kocasına helâl olmaz.”
+& haddesenâ, haddesenâ, haddesenâ, an
+^ قال: «كل نكاح
+
+16056 | Ebû Üsâme → Süfyân → Câbir → Âmir | Âmir’den, köle ve hadım hakkında; dedi ki: “O kocadır.”
+& haddesenâ, an, an, an
+^ في العبد والخصي
+
+@ Câriyeyle evlenen adam: Bunu hoş görmeyenler
+
+16057 | Hüşeym → Ebû Bişr → Saîd b. Cübeyr | Saîd b. Cübeyr’den, câriyeyle evlenen hür adam hakkında; dedi ki: “Zinadan ancak biraz uzaklaşmıştır.” (Allah’ın) “Sabretmeniz sizin için daha hayırlıdır” (Nisâ 4/25) sözü sebebiyle. Dedi ki: “(Yani) câriyeyle nikâhlanmaktan (sabretmeniz).”
+& haddesenâ, an, an
+^ في الحر يتزوج
+
+16058 | Hüşeym → Avvâm → ona rivayet eden biri → İbn Abbâs | İbn Abbâs dedi ki: “Câriyeyle nikâhlanan, zinadan ancak biraz uzaklaşmıştır.”
+& haddesenâ, an, an, an
+^ قال: «ما ازلحف
+
+16059 | İbn Uleyye → Yûnus → Hasan | Hasan’dan: O, hür kadına gücü yettiği sürece câriyeyle evlenmeyi hoş görmezdi; ancak sıkıntıya (zinaya) düşmekten korkarsa (başka).
+& haddesenâ, an, an
+^ أنه كان «يكره
+
+16060 | İbn Uyeyne → Amr → Câbir | Amr dedi ki: Atâ Câbir’e câriyeyle nikâhı sordu. “Bugün uygun olmaz” dedi.
+& haddesenâ, an, kâle
+^ قال: سأل عطاء
+
+16061 | Abdüla‘lâ → Burd → Mekhûl | Mekhûl dedi ki: “Hür adama, (hür kadınla evlenmeye) mâlî güç bulamaması dışında câriyeyle evlenmesi uygun olmaz.”
+& haddesenâ, an, an
+^ قال: «لا يصلح
+
+16062 | Mu‘temir → Ebû Ubeyde → Umâre b. Hassân → Câbir b. Zeyd | Umâre b. Hassân’dan: Bir kadın Câbir b. Zeyd’e gelip dedi ki: “Bir adam benden câriyeme talip oluyor.” “Onu (onunla) evlendirme” dedi. “O kendi nefsi hakkında korkuyor” dedi. “Onu evlendirme” dedi. “Onunla zina etmekten korkuyor” dedi. “O hâlde onu evlendir” dedi.
+& haddesenâ, an, an, kâle
+^ أن امرأة أتت
+
+16063 | Abdullah b. İdrîs → Şu‘be → Hakem ve Hammâd | Hakem ve Hammâd’dan: Onlara câriyeyle nikâh soruldu. Dediler ki: “(O,) sizden sıkıntıya (zinaya) düşmekten korkanlar içindir.”
+& haddesenâ, an, an
+^ سئلا عن نكاح
+
+16064 | Vekî‘ → Süfyân → Leys → Mücâhid | Mücâhid dedi ki: “Bu ümmete genişlik tanınan şeylerden biri, câriye ve Hristiyan kadınla nikâhtır.”
+& haddesenâ, an, an, an
+^ قال: «إنه مما
+
+16065 | İbn İdrîs → Leys b. Sa‘d → Saîd b. el-Müseyyeb → Ömer | Ömer dedi ki: “Hür bir kadınla nikâhlanan her köle(nin) yarısı âzat olmuştur; bir câriyeyle nikâhlanan her hür(ün) yarısı köleleşmiştir.”
+& haddesenâ, an, an, kâle
+^ «أيما عبد نكح
+
+16066 | Fadl → Şerîk → Humeyd → Âmir | Âmir dedi ki: “Câriyeyle nikâh leş, kan ve domuz eti gibidir; ancak zorda kalana helâl olur.”
+& haddesenâ, an, an, an
+^ قال: «نكاح الأمة
+
+@ Hür adamın câriyeyle evlenmesine ruhsat verenler: Onlardan kaçını bir araya getirir?
+
+16067 | Abdüsselâm b. Harb → Atâ ve Husayf → Saîd b. Cübeyr → İbn Abbâs | İbn Abbâs dedi ki: “Hür adam câriyelerden ancak biriyle evlenir.”
+& haddesenâ, an, an, an
+^ قال: «لا يتزوج
+
+16068 | Gunder → Şu‘be → Ebû Hâşim → Hâris | Hâris dedi ki: “Hür adam câriyelerden dört (tanesiyle) evlenir.” Hammâd da “İki” dedi.
+& haddesenâ, an, an, an
+^ قال: «يتزوج الحر
+
+16069 | Ravh b. Ubâde → İbn Ebî Zi’b → Zührî | Zührî dedi ki: “Hür adam dört câriye ve dört Hristiyan kadınla evlenir; köle de öyledir.”
+& haddesenâ, an, an
+^ قال: «يتزوج الحر
+
+16070 | Abdüla‘lâ → Saîd → Katâde | Katâde dedi ki: “Allah ancak bir (câriyeyi), kendi nefsi hakkında sıkıntıya (zinaya) düşmekten korkan ve (hür kadınla evlenmeye) mâlî güç bulamayan kimseye helâl kıldı.”
+& haddesenâ, an, an
+^ قال: «إنما أحل
+
+@ Hür kadının üzerine câriyeyle evlenmeyi hoş görmeyenler
+
+16071 | Ebû Dâvûd et-Tayâlisî → Hişâm ed-Destevâî → bir adam → Hasan | Hasan’dan: Resûlullah ﷺ, hür kadının üzerine câriyeyle nikâhlanmayı yasakladı.
+& haddesenâ, an, an, an
+^ أن رسول الله صلى الله عليه وسلم «نهى
+
+16072 | İbn Uleyye → Yûnus → Hasan | Hasan dedi ki: “Hür kadının üzerine câriyeyle nikâhlanılmaz; bunu yaparsa (bu hâlde) bırakılmaz.”
+& haddesenâ, an, an
+^ قال: «لا ينكح
+
+16073 | Abdüla‘lâ → Burd → Mekhûl | Mekhûl dedi ki: “Kişi hür kadının üzerine câriyeyle evlenmez; câriyenin üzerine hür kadınla evlenir.”
+& haddesenâ, an, an
+^ قال: «لا يتزوج
+
+16074 | Vekî‘ → İbn Ebî Leylâ → Minhâl → Abbâd b. Abdullah → Ali | Ali dedi ki: “Hür kadının üzerine câriye nikâhlanmaz” –ya da: “Câriyenin üzerine hür kadın nikâhlanmaz”–.
+& haddesenâ, an, an, an, an
+^ قال: «لا تنكح
+
+16075 | Vekî‘ → İsmâîl → Şa‘bî → Mesrûk | Mesrûk dedi ki: “Hür kadının üzerine câriyeyle ancak köle nikâhlanır.”
+& haddesenâ, an, an, an
+^ قال: «لا ينكح
+
+16076 | Vekî‘ → İsrâîl → Câbir → Âmir → Mesrûk → Abdullah | Abdullah dedi ki: “Ancak köle (nikâhlanır).”
+& haddesenâ, an, an, an, an, an
+^ قال: «إلا المملوك»
+
+16077 | Abde → Yahyâ b. Saîd → İbnü’l-Müseyyeb | İbnü’l-Müseyyeb dedi ki: “Câriyenin üzerine hür kadınla evlenir; hür kadının üzerine câriyeyle evlenmez.”
+& haddesenâ, an, an
+^ قال: «يتزوج الحرة
+
+16078 | İbn Nümeyr → Abdullah → Atâ | Atâ’dan, câriyenin üzerine hür kadınla nikâhlanan adam hakkında; dedi ki: “Güzeldir.”
+& haddesenâ, an, an
+^ في الرجل ينكح
+
+16079 | Ebû Dâvûd et-Tayâlisî → Zem‘a → İbn Tâvûs → babası | İbn Tâvûs dedi ki: Babama dedim ki: “Bir adam hür kadının üzerine bir câriyeyle nikâhlandı; (insanlar) da onun (câriyenin) kendisine haram olduğunu ileri sürüyorlar.” Dedi ki: “Doğru söylemişler.”
+& haddesenâ, an, an, kâle
+^ قال: قلت لأبي
+
+16080 | Abde → Saîd → Katâde → İbnü’l-Müseyyeb ve Hasan | İbnü’l-Müseyyeb ve Hasan’dan, hür kadının üzerine câriyeyle evlenen adam hakkında; dedi ki: “Onunla câriye arası ayrılmaz.”
+& haddesenâ, an, an, an
+^ في رجل يتزوج
+
+16081 | Hakkâm er-Râzî → Müsennâ → Zührî | Zührî’den, hür kadının üzerine câriyeyle evlenen adam hakkında; dedi ki: “Sırtı acıtılır (dövülür) ve (câriye) ondan alınır.”
+& haddesenâ, an, an
+^ في رجل تزوج
+
+@ Câriyenin üzerine hür kadınla nikâhlanırsa onunla câriye arası ayrılır
+
+16082 | Ebû Bekir b. Ayyâş → Mansûr → İbrâhîm | İbrâhîm dedi ki: “Kişi câriyenin üzerine hür kadınla evlenirse, ondan çocuğu olmadıkça onunla (câriye) arası ayrılır.”
+& haddesenâ, an, an
+^ قال: «إذا تزوج
+
+16083 | İbn Uyeyne → Amr → İbn Abbâs | İbn Abbâs dedi ki: “Câriyenin üzerine hür kadınla nikâhlanmak câriyenin boşanmasıdır.”
+& haddesenâ, an, an
+^ قال: «نكاح الحرة
+
+16084 | İbn Uyeyne → İsmâîl → Şa‘bî → Mesrûk | (Mesrûk’tan) bunun benzeri (rivayet edildi); ancak o şöyle dedi: “O, zorda kaldığın leş gibidir; Allah seni ondan müstağni kılınca müstağni ol.”
+& haddesenâ, an, an, an
+^ مثله
+
+16085 | Vekî‘ → İsmâîl → Şa‘bî → Mesrûk | Mesrûk dedi ki: “Câriyenin üzerine hür kadınla nikâhlanmak câriyenin boşanmasıdır.”
+& haddesenâ, an, an, an
+^ قال: «نكاح الحرة
+
+16086 | Abdüla‘lâ → Saîd → Katâde → Câbir b. Zeyd → İbn Abbâs | İbn Abbâs dedi ki: “Câriyenin üzerine hür kadınla evlenirse bu, köle kadın için boşanmadır.”
+& haddesenâ, an, an, an, an
+^ قال: «إذا تزوج
+
+@ Yahudi ve Hristiyan kadının üzerine evlendiği câriye
+
+16087 | Abde b. Süleymân → Saîd → Katâde → İbnü’l-Müseyyeb ve Hasan | İbnü’l-Müseyyeb ve Hasan’dan, Yahudi ve Hristiyan kadının üzerine köle kadınla evlenen adam hakkında; dediler ki: “Onunla köle kadın arası ayrılır.”
+& haddesenâ, an, an, an
+^ في الرجل يتزوج
+
+16088 | Ma‘n b. Îsâ → İbn Ebî Zi’b → Zührî | Zührî’den, nikâhı altında Hristiyan bir kadın bulunan adam hakkında: “Onun üzerine Müslüman bir câriyeyle evlenmez.”
+& haddesenâ, an, an
+^ «في الرجل يكون
+
+@ Müslüman kadının üzerine Hristiyan kadınla evlenmeyi hoş görmeyenler
+
+16089 | Yahyâ b. Âdem → Şerîk → Sâlim → Saîd b. Cübeyr → İbn Abbâs | İbn Abbâs dedi ki: “Müslüman kadının üzerine Yahudi ve Hristiyan kadınla evlenmez” –bununla Müslüman (erkeği) kastediyor–.
+& haddesenâ, haddesenâ, an, an, an
+^ قال: «لا يتزوج
+
+@ Hür kadın ile câriye hakkında: Bir araya geldiklerinde aralarında (geceleri) nasıl paylaştırır?
+
+16090 | Ebû Hâlid el-Ahmer → Haccâc → Minhâl → Zer → Ali | Ali dedi ki: “Câriyenin üzerine hür kadınla evlenirse, buna bir gün, buna da iki gün ayırır.”
+& haddesenâ, an, an, an, an
+% Arapçada ad böyle yazılıdır: “عن ذر” (metinde böyle).
+^ قال: «إذا تزوج
+
+16091 | Ali b. Hâşim → İbn Ebî Leylâ → Minhâl → Zir | Zir dedi ki: “Câriyenin üzerine hür kadınla evlenirse câriyeye bir gün, hür kadına iki gün ayırır.”
+& haddesenâ, an, an, an
+^ قال: «إذا تزوج
+
+16092 | Ebû Hâlid el-Ahmer → Haccâc → Hakem → İbrâhîm | (İbrâhîm’den) bunun benzeri (rivayet edildi).
+& haddesenâ, an, an, an
+^ مثله
+
+16093 | Ebû Hâlid el-Ahmer → Yahyâ b. Saîd → Saîd b. el-Müseyyeb | Saîd b. el-Müseyyeb dedi ki: “Hür kadına iki gün ve iki gece, câriyeye bir gün ve bir gece (vardır).”
+& haddesenâ, an, an
+^ قال: «للحرة يومان
+
+16094 | Esbât b. Muhammed → Mutarrif → Şa‘bî → Mesrûk | Mesrûk dedi ki: “İkisi bir araya gelince hür kadına kendisinden ve malından üçte iki ayırır.”
+& haddesenâ, an, an, an
+^ قال: «إذا اجتمعتا
+
+16095 | Şerîk → Câbir → Ebû Ca‘fer; ayrıca Şerîk → Firâs → Âmir | Ebû Ca‘fer ve Âmir dedi ki: “Câriyenin üzerine hür kadınla evlenir ve bir gün ve bir gece ayırır (metinde böyle).”
+& haddesenâ, an, an; haddesenâ, an, an
+^ قال: «يتزوج الحرة
+
+16096 | İbn Uleyye → Yûnus → Hasan | Hasan dedi ki: “Câriyenin üzerine hür kadın nikâhlanırsa hür kadın üstün tutulur; hür kadına iki gece, câriyeye bir gece ayırır.”
+& haddesenâ, an, an
+^ قال: «إذا نكحت
+
+16097 | İbn İdrîs → babası → Hammâd → İbrâhîm | İbrâhîm dedi ki: “Câriyeyle nikâhlanır, sonra hür kadınla nikâhlanacak (imkânı) bulursa, dilerse onu (câriyeyi) tutar; iki gece ve bir gece (olarak) paylaştırır.”
+& haddesenâ, an, an, an
+^ قال: «إذا نكح
+
+16098 | İbn Nümeyr → Abdülmelik → Atâ | Atâ dedi ki: “Hür kadına iki gün, câriyeye bir gün ayırır.”
+& haddesenâ, an, an
+^ قال: «يقسم للحرة
+
+16099 | Yahyâ b. Ya‘lâ et-Teymî → Mansûr → İbrâhîm | İbrâhîm dedi ki: “Hür kadına iki gün, câriyeye bir gün (vardır).”
+& haddesenâ, an, an
+^ قال: «للحرة يومان
+
+16100 | Yûnus b. Muhammed → Şerîk → Atâ → Saîd b. Cübeyr | Saîd b. Cübeyr dedi ki: “Hür kadına iki gün, câriyeye bir gün (vardır).”
+& haddesenâ, haddesenâ, an, an
+^ قال: «للحرة يومان
+
+@ Müslüman ve Hristiyan kadın bir araya gelirse: “Aralarındaki paylaştırma eşittir” diyenler
+
+16101 | Abde → Saîd → Katâde → İbnü’l-Müseyyeb ve Hasan | İbnü’l-Müseyyeb ve Hasan’dan, Müslüman kadının üzerine Yahudi ve Hristiyan kadınla evlenen kimse hakkında; dediler ki: “Aralarında eşit olarak paylaştırır.”
+& haddesenâ, an, an, an
+^ فيمن يتزوج
+
+16102 | Ma‘n → İbn Ebî Zi’b → Zührî | Zührî dedi ki: “Aralarındaki paylaştırma eşittir.”
+& haddesenâ, an, an
+^ قال: «قسمتهما سواء»
+
+16103 | Esbât b. Muhammed → Mutarrif → Şa‘bî | Şa‘bî’den, Müslüman kadınla ve Yahudi ya da Hristiyan kadınla evlenen adam hakkında; dedi ki: “Malından ve kendisinden paylaştırmada aralarında eşitlik gözetir.”
+& haddesenâ, an, an
+^ في الرجل يتزوج
+
+16104 | Ebû Hâlid → Saîd → Hakem ve Hammâd | Saîd dedi ki: Hakem’e ve Hammâd’a sordum; dediler ki: “Paylaştırmada ikisi eşittir.”
+& haddesenâ, an, kâle
+% Ebû Hâlid hakkında: “Ahmer değildir.”
+^ قال: سألت الحكم
+
+@ Bir kadınla evlenip açıkta bir şey (mehir) gösteren, gizlide daha azını (kararlaştıran) adam hakkında
+
+16105 | Hüşeym → Yûnus → Hasan | Hasan’dan: Açıkta ondan fazlası ilan edilen gizli mehir hakkında dedi ki: “Gizli olan esas alınır, açıktaki geçersiz olur.”
+& haddesenâ, haddesenâ, an
+^ أنه قال: «في صداق
+
+16106 | Hüşeym → Hâlid → İbn Sîrîn → Şüreyh | Şüreyh dedi ki: “Gizli olan esas alınır, açıktaki geçersiz olur.”
+& haddesenâ, an, an, an
+^ قال: «يؤخذ بالسر
+
+16107 | Mu‘temir → Ma‘mer → Zührî | Zührî dedi ki: “İş gizli olana göredir.”
+& haddesenâ, an, an
+^ قال: «الأمر على
+
+16108 | İbn Uleyye → Mansûr → Hakem b. Uyeyne | Mansûr dedi ki: Hakem b. Uyeyne’ye, gizlide bin (dirhem) mehir verip açıkta iki bin ilan eden adamı sordum. Dedi ki: “Gizli olan esas alınır, çünkü hak odur; açıktaki geçersiz olur.”
+& haddesenâ, an, kâle
+% Arapçada ad böyle yazılıdır: “الحكم بن عيينة” (metinde böyle).
+^ قال: سألت الحكم
+
+16109 | Ebû Muâviye → Haccâc → Ebû Avn → Şüreyh | Şüreyh dedi ki: “İlki esas alınır.”
+& haddesenâ, an, an, an
+^ قال: «يؤخذ بالأول»
+
+@ “Açıktaki esas alınır” diyenler
+
+16110 | Hüşeym → Husayn → Şa‘bî | Şa‘bî dedi ki: “Açıktaki esas alınır.”
+& haddesenâ, an, an
+^ قال: «يؤخذ بالعلانية»
+
+16111 | İbn Müshir ve Ebû Muâviye → Şeybânî → Şa‘bî | Şa‘bî dedi ki: “Açıktaki esas alınır.”
+& haddesenâ, an, an
+^ قال: «يؤخذ بالعلانية»
+
+16112 | İbn Uleyye → Mansûr b. Abdurrahmân → Şa‘bî → Şüreyh | Mansûr b. Abdurrahmân dedi ki: Şa‘bî ile karşılaştım ve ona bunu sordum. Dedi ki: Şüreyh dedi ki: “Açıktaki gizliyi yıktı.”
+& haddesenâ, an, an, kâle
+^ قال: لقيت الشعبي
+
+16113 | Vekî‘ → Hammâd b. Zeyd → Şu‘be → Ebû Kılâbe | Ebû Kılâbe dedi ki: “Açıktaki esas alınır.”
+& haddesenâ, an, an, an
+^ قال: «يؤخذ بالعلانية»
+
+@ Câriyeyle evlenip sonra onu satın alan adam
+
+16114 | Cerîr → Mugîre → İbrâhîm → Şa‘bî | Şa‘bî dedi ki: “Câriye hür bir adamın nikâhı altındayken onu satın alırsa nikâh bâtıl olur; (kadın) onun câriyesi olur, dilerse onunla cinsel ilişkiye girer.”
+& haddesenâ, an, an, an
+^ قال: «إذا كانت
+
+16115 | İbn Uleyye → Yûnus → Hasan | Hasan’dan, câriyeyi seven (metinde böyle), sonra onu satın alan adam hakkında; dedi ki: “Kölelik (mülkiyeti) onun (nikâh) akdini giderdi.”
+& haddesenâ, an, an
+^ في الرجل يحب
+
+16116 | Vekî‘ → İbnü’l-Mübârek → Yahyâ b. Ebî Kesîr → Mekhûl | Mekhûl’den, câriyeyle evlenip sonra onu satın alan adam hakkında; dedi ki: “Onunla mülkiyet yoluyla cinsel ilişkiye girer.”
+& haddesenâ, an, an, an
+^ في الرجل يتزوج
+
+16117 | Mu‘temir → Leys → Tâvûs | Tâvûs dedi ki: “Onunla mülkiyet yoluyla cinsel ilişkiye girer.”
+& haddesenâ, an, an
+^ قال: «يطؤها بالملك»
+
+16118 | Hammâd b. Hâlid → İbn Ebî Zi’b → Atâ | İbn Ebî Zi’b dedi ki: Atâ’ya, nikâhı altında câriye bulunup onu satın alan adamı sordum. Dedi ki: “O bir câriyedir; onunla dilediğini yapar.” Dedi ki: Zührî’ye de sordum; o da bunun benzerini söyledi.
+& haddesenâ, an, kâle
+^ قال: سألت عطاء
+
+16119 | Hâlid b. Hayyân → Ca‘fer b. Burkân → Zührî | Ca‘fer b. Burkân dedi ki: Zührî’ye, nikâhı altında bir câriye bulunup onu satın alan adamı sordum. Dedi ki: “Satın alma nikâhı yıktı.” Ca‘fer dedi ki: Meymûn b. Mihrân’a da bunu sordum. Dedi ki: “Ona iki mülk yönünden helâl olur: evlenme yönünden ve satın alma yönünden.”
+& haddesenâ, an, kâle
+^ قال: سألت الزهري
+
+16120 | Yezîd b. Hârûn → Habîb → Amr → Câbir b. Zeyd | Amr dedi ki: Câbir b. Zeyd’e, nikâhı altında bir câriye bulunup onu bir talakla boşayan, sonra köle (olan kendisi) âzat edilip karısını satın alan adam soruldu: “Onun konumu nedir?” Dedi ki: “Onu satın alınca o, câriye (sürriyye) konumundadır.” İkrime ve Hasan da bununla fetva verdi.
+& haddesenâ, an, an, kâle
+^ قال: سئل جابر
