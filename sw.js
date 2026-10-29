@@ -1,5 +1,5 @@
 // Güncelleme yaptığında bu sürüm adını artır
-const CACHE = 'zikrim-v201';
+const CACHE = 'zikrim-v202';
 // Büyük veri dosyaları (ara, ara-ar, akis, ravi; ≈45 MB) sürümsüz ayrı önbellekte durur: her yayında yeniden inmez,
 // yalnız sunucudaki ETag değişince (activate'te HEAD ile bakılır) silinir ve ilk kullanımda yeniden indirilir.
 const DATA_CACHE = 'zikrim-data';

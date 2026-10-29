@@ -42,6 +42,7 @@ MUELLIF_NOT = {'sunan': (r'قال أبو داود', r'Ebû Dâvûd (?:dedi|der|�
 
 SIGALAR = {'haddesenâ', 'haddesenî', 'ahberanâ', 'ahberanî', 'enbe’enâ', 'semi‘tü', 'semi‘a', 'an', 'enne', 'kâle',
            'haddesehû', 'haddesehüm', 'ahberahû', 'ahberahüm', 'kara’tü', 'kurie', 'unbi’tü'}
+HAREKE = re.compile(r'[ً-ْٰـ]')
 SALAVAT = re.compile(r'صلى الله عليه وسلم|صلى الله عليه وآله وسلم|صلى عليه وسلم')
 ARAPCA = re.compile(r'[؀-ۿ]{3,}')
 BIRINCI_SAHIS = re.compile(r'(?:^|→\s*)(?:babam|dedem|amcam|annem|kardeşim|dayım|halam|ninem)\b')
@@ -54,9 +55,37 @@ SAYGI_SENED = re.compile(r'radıyallâhu|aleyhisselâm|rahmetullâhi|rahimehulla
 SENED_KIRLI = re.compile(r'\((?:yine|metinde böyle|metin [^)]*bozuk|[^)]*’d[ae]\b[^)]*)\)|—\s*(?:→|$|;)|;(?!\s*ayrıca\s)')
 # Merfû hadiste zincir sahâbîyle biter; Nebî/Resûlullah zincire yazılmaz (tanımlayıcı etiket hariç: “Nebî’nin ﷺ ashâbından biri”)
 SON_NEBI = re.compile(r'(?:^|→\s*)(?:Nebî|Resûlullah|Allah Resûlü|Peygamber)\s*ﷺ?\s*$')
+# Arapça isnadın başındaki nüsha/müellif öneği: panelde halka değildir (c[0] müellif), sîga sayımından
+# ve siga_hizala.py'deki eşlemeden düşülür. Eşleşme sonucu `c[0]` kararıdır (None = mevcut c[0] korunur).
+_AY = r'\s*[،,:]?\s*(?:قال\s*[:،,]?\s*)?'
+_ABD = r'عبد الله(?:\s+بن\s+أحمد(?:\s+بن\s+(?:محمد\s+بن\s+)?حنبل)?)?'
+_LAFIZ = r'(?:و?(?:حدثني|حدثنا|ثني|ثنا|نا|أخبرني|أخبرنا|قال)\s+)'
+_AHMED = [
+    (re.compile(r'^\s*(?:قال\s*[:،,]?\s*)?' + _LAFIZ + '?' + _ABD + _AY + _LAFIZ + r'أبي(?![ء-ي])' + _AY), 'Ahmed b. Hanbel'),
+    (re.compile(r'^\s*(?:قال\s*[:،,]?\s*)?' + _LAFIZ + r'أبي(?![ء-ي])' + _AY), 'Ahmed b. Hanbel'),
+    (re.compile(r'^\s*(?:قال\s*[:،,]?\s*)?' + _LAFIZ + r'أحمد\s+بن\s+(?:محمد\s+بن\s+)?حنبل' + _AY), 'Ahmed b. Hanbel'),
+    (re.compile(r'^\s*(?:قال\s*[:،,]?\s*)?' + _LAFIZ + _ABD + _AY), 'Abdullah b. Ahmed'),
+]
+ONEK = {
+    'zuhd': _AHMED, 'fezail': _AHMED, 'ahmed': _AHMED,
+    'buhari': [(re.compile(r'^\s*(?:و?(?:حدثنا|ثنا|أخبرنا)\s+)محمود(?:\s+بن\s+إسحاق)?' + _AY + r'(?:و?(?:حدثنا|ثنا|أخبرنا|حدثني)\s+)?(?:أبو عبد الله\s+)?(?:محمد\s+بن\s+إسماعيل\s+)?البخاري' + _AY), None)],
+    'safii': [(re.compile(r'^\s*(?:و?(?:حدثنا|ثنا|أخبرنا)\s+)الربيع(?:\s+بن\s+سليمان)?' + _AY + r'(?:و?(?:حدثنا|ثنا|أخبرنا)\s+)الشافعي' + _AY), None)],
+    'acurri': [(re.compile(r'^\s*(?:و?(?:حدثنا|ثنا|أخبرنا|أنا)\s+)(?:أبو بكر|محمد(?:\s+بن\s+الحسين)?)(?:\s+(?:بن\s+الحسين\s+)?الآجري)?' + _AY + r'(?=(?:و?(?:حدثنا|ثنا|أخبرنا|أنا|حدثني|أخبرني|قال)' + r'(?![ء-ي])))'), None)],
+}
+
+
+def onek_dus(lib, isnad):
+    """Isnadın başındaki nüsha/müellif öneğini düşürür → (kalan isnad, c[0] kararı ya da None)."""
+    for pat, c0 in ONEK.get(lib, []):
+        m = pat.match(isnad)
+        if m:
+            return isnad[m.end():], c0
+    return isnad, None
+
+
 SIGA_AR = {
     'an': r'(?<![ء-ي])عن(?![ء-ي])',
-    'haddesenâ': r'(?<![ء-ي])(?:و?حدثنا|و?ثنا|(?<=[\s،,:])نا)(?![ء-ي])',
+    'haddesenâ': r'(?<![ء-ي])(?:و?حدثنا|و?ثنا|قثنا|(?<=[\s،,:])نا)(?![ء-ي])',
     'haddesenî': r'(?<![ء-ي])و?حدثت?ني(?![ء-ي])',
     'ahberanâ': r'(?<![ء-ي])(?:و?أخبرنا|و?أنا|و?أنبأنا)(?![ء-ي])',
     'ahberanî': r'(?<![ء-ي])و?أخبرت?ني(?![ء-ي])',
@@ -180,7 +209,7 @@ def madde_denetle(rp, lib, dosya, h, ravi, bab_i):
         else:
             if ar[k - 1] not in ' «"،,:.؟)(\n':
                 rp.u('k kelime ortasında', yer, repr(ar[max(0, k - 8):k + 8]))
-            isnad = ar[:k]
+            isnad, _ = onek_dus(lib, HAREKE.sub('', ar[:k]))
             # tahvîl
             if re.search(r'(?:^|[\s،,])ح(?:[\s،,]|$)', isnad) and len(zs) == 1:
                 rp.u('tahvîl (ح) var, tek yol', yer)

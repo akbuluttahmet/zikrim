@@ -16,11 +16,18 @@ Biçim: `- [ ] kitaplık no — mesele. Seçenekler. (tarih)`
 - [ ] **sunan 2624** — zincirin Ya‘lâ → Saîd → İbn Abbâs kısmı Arapçada matn içinde; gözden geçir. (PROGRESS'ten)
 - [ ] **safii s01 163, 457, 493, 495, 505, 514, 515** — zincir `→ Resûlullah ﷺ` ile bitiyor (eski biçim; standarda geçerken sahâbîyle bitirilecek). 493: `İbn Uyeyne → (isnadla) → Resûlullah ﷺ` sahte halka. (2026-10-29)
 
+- [ ] **12 kitaplık — sîga eşlemesi (2026-10-29)** — 14:18'deki toplu dönüştürmenin sîgaları Arapçaya göre yeniden eşlendi (`araclar/siga_hizala.py`). Arapçada lafzı bulunamayan 195 halka `an`/`kâle` aldı, 83 maddede hizalama belirsiz; liste `araclar/siga_hizala_rapor.md` (fezail 96+32, acurri 29+14, zuhd 18+9, ahmed 18+6, hallal 17+16, buhari 9+1, ibane 4+3, ibnebiseybe 3+1, ebudavud 1+1). Belirsiz olanlara bak; kalan "sîga sayısı uyuşmuyor" ve "k kelime ortasında" numaraları `PROGRESS.md`'de.
+- [ ] **fezail — 614 Abdullah ziyâdesi** — Arapçası `حدثنا عبد الله` ile başlayıp `حدثني أبي` içermeyen maddelerde `c[0]` Ahmed b. Hanbel'den Abdullah b. Ahmed'e çevrildi (Müsned kararıyla aynı). Arapçası doğrudan hocayla başlayan 443 maddede (ör. f01 1: `قثنا سعد…`, nüshada Abdullah/babası öneki yok) `c[0]` Ahmed b. Hanbel bırakıldı; bu karar doğru mu? (2026-10-29)
+- [ ] **ahmed m10 (Suâlâtü Ebî Dâvûd), m07–m09** — zincirler nüsha râvisiyle başlıyor (`أنا الحسين نا أبو داود نا موسى…`) ama `c[0]` Ahmed b. Hanbel yazılmış; Ahmed bu zincirde yok. Seçenek: `c[0]` kitabın derleyicisi (Ebû Dâvûd / el-Merrûzî / Sâlih / el-Meymûnî) ya da nüsha râvisi; `dogrula.py` `MUELLIF['ahmed']` buna göre genişler. (2026-10-29)
+- [ ] **fezail 44 ve benzerleri ("metin son râviyle başlamıyor", ≈340)** — Arapça zincir `سمعت أبا جحيفة قال: سمعت عليا` ile Ali'ye kadar iniyor, sened Ebû Cuhayfe'de bitiyor; SPEC'e göre sözün kaynağı `kâle` ile zincire yazılmalı. Kitap kitap bakılacak (`dogrula.py <kitaplık> --hepsi`). (2026-10-29)
+- [ ] **fezail f01 2** — `وكان من الثقات` (Ebû Muhammed el-Hazzâz hakkında) senedden atılmış, `n`'ye de yazılmamış; dönüştürmede düşen bu tür sened içi notlar başka maddelerde de olabilir. (2026-10-29)
+
 ## 2. Çeviri eksik ya da kısa olabilir (oran = Türkçe/Arapça uzunluğu)
 
 - [ ] **fezail 1038** — oran 0,18 ve Türkçede 3 ﷺ eksik: çeviri büyük ihtimalle yarım. (2026-10-29)
 - [ ] **sunan 518** (0,74), **2661** (0,66), **3810** (0,69). (PROGRESS'ten)
 - [ ] **ahmed m06 108** — oran 0,72. (2026-10-29)
+- [ ] **12 kitaplık, oran < 0,75 (17):** zuhd 165, 1118 · fezail 240, 1174, 1236 · ahmed m03 61, m06 1, 107, 220 · hallal h03 189 · buhari b01 95, b02 157, 170, 178, 180. (2026-10-29)
 - [ ] **musned** — 143 maddede oran < 0,75 (`python3 araclar/dogrula.py musned --hepsi`); Müsned baştan yapılacağı için orada çözülür. (2026-10-29)
 
 ## 3. Dinî / saygı ifadesi kontrolü

@@ -3,8 +3,15 @@
 Musannef ve Müsned dışındaki bütün kitaplıkları SPEC.md (Sünen-i Ebî Dâvûd)
 isnad ve râvi paneli standardına getirir.
 
-Kullanım:
-  python3 araclar/standarda_getir.py
+**BİR KEZ ÇALIŞTIRILDI (2026-10-29); tekrar çalıştırılmaz.** Eski biçimdeki
+sened satırını temizleyip panel üretmek için yazıldı; standarda getirilmiş
+veriye ikinci kez uygulanırsa Abdullah/babası halkalarını ve müellifi bozar.
+Bu yüzden panelli (info.c) madde gören kitaplıkta durur. Sîgalar ve `k`
+sonradan `araclar/siga_hizala.py` ile Arapçadan yeniden eşlendi; sîga
+düzeltmesi için o araç kullanılır.
+
+Kullanım (yalnız panelsiz, eski biçimdeki kitaplık için):
+  python3 araclar/standarda_getir.py <kitaplık>
 """
 import json, re, sys
 from pathlib import Path
@@ -574,6 +581,15 @@ def main():
         if not idx_p.exists():
             continue
         idx = json.load(open(idx_p, encoding='utf-8'))
+        panelli = 0
+        for b in idx:
+            tr_p = R / lib / 'tr' / b['f']
+            if tr_p.exists():
+                for bab in json.load(open(tr_p, encoding='utf-8')).get('babs', []):
+                    panelli += sum(1 for h in bab.get('h', []) if len(h) > 4 and isinstance(h[4], dict) and h[4].get('c'))
+        if panelli:
+            print(f'{lib:12s}: {panelli} madde zaten panelli — bu kitaplık standarda getirilmiş, atlandı.')
+            continue
         total_items = 0
         total_panels = 0
         for b in idx:

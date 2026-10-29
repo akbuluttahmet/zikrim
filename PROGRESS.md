@@ -8,16 +8,16 @@ Her oturum: önce `SPEC.md`, sonra bu dosya. Bitince burayı güncelle (kitap, s
 |---|---|---|---|
 | Sünen-i Ebî Dâvûd (`sunan/`) | isnad standardı (SPEC) | **tamamlandı** — 40/40 bölüm, 5275 madde (2026-10-29) | `dogrula.py`: 0 hata, 106 uyarı (aşağıda) |
 | eş-Şerîa (`seria/`) | isnad standardı (SPEC) | **tamamlandı** — 17/17 bölüm, 2169 madde (2026-10-29) | `dogrula.py`: 0 hata, 423 uyarı (sened temizliği 2026-10-29) |
-| ez-Zühd (`zuhd/`) | isnad standardı (SPEC) | **tamamlandı** — 8/8 bölüm, 2375 madde (2026-10-29) | `dogrula.py`: 0 hata |
-| Fezâilü’s-sahâbe (`fezail/`) | isnad standardı (SPEC) | **tamamlandı** — 9/9 bölüm, 1965 madde (2026-10-29) | `dogrula.py`: 0 hata |
-| İmam Ahmed (`ahmed/`) | isnad standardı (SPEC) | **tamamlandı** — 9/9 kitap, 2117 madde (2026-10-29) | `dogrula.py`: 0 hata |
-| el-Âcurrî (`acurri/`) | isnad standardı (SPEC) | **tamamlandı** — 12/12 kitap, 825 madde (2026-10-29) | `dogrula.py`: 0 hata |
-| İbn Ebî Şeybe (`ibnebiseybe/`) | isnad standardı (SPEC) | **tamamlandı** — 2/2 kitap, 642 madde (2026-10-29) | `dogrula.py`: 0 hata |
-| el-Hallâl (`hallal/`) | isnad standardı (SPEC) | **tamamlandı** — 7/7 kitap, 372 madde (2026-10-29) | `dogrula.py`: 0 hata |
-| eş-Şâfiî (`safii/`) | isnad standardı (SPEC) | **tamamlandı** — 1/1 kitap, 547 madde (2026-10-29) | `dogrula.py`: 0 hata |
-| el-Buhârî (`buhari/`) | isnad standardı (SPEC) | **tamamlandı** — 2/2 kitap, 307 madde (2026-10-29) | `dogrula.py`: 0 hata |
-| el-İbâne (`ibane/`) | isnad standardı (SPEC) | **tamamlandı** — 1/4 kitap, 146 madde (2026-10-29) | `dogrula.py`: 0 hata |
-| Ebû Dâvûd (`ebudavud/`), Harb (`harb/`), el-Berbehârî (`berbehari/`) | isnad standardı (SPEC) | **tamamlandı** — 243 madde (2026-10-29) | `dogrula.py`: 0 hata |
+| ez-Zühd (`zuhd/`) | isnad standardı (SPEC) | **tamamlandı** — 8/8 bölüm, 2375 madde (2026-10-29) | `dogrula.py`: 0 hata, 110 uyarı (68 metin başı, 32 ﷺ, 4 sîga, 4 k) |
+| Fezâilü’s-sahâbe (`fezail/`) | isnad standardı (SPEC) | **tamamlandı** — 9/9 bölüm, 1965 madde (2026-10-29) | `dogrula.py`: 0 hata, 157 uyarı (114 metin başı, 22 sîga, 16 k, 4 kısa) |
+| İmam Ahmed (`ahmed/`) | isnad standardı (SPEC) | **tamamlandı** — 9/9 kitap, 2117 madde (2026-10-29) | `dogrula.py`: 0 hata, 79 uyarı (51 metin başı, 14 sîga, 9 k, 5 kısa) |
+| el-Âcurrî (`acurri/`) | isnad standardı (SPEC) | **tamamlandı** — 12/12 kitap, 825 madde (2026-10-29) | `dogrula.py`: 0 hata, 62 uyarı (38 metin başı, 17 sîga, 5 k) |
+| İbn Ebî Şeybe (`ibnebiseybe/`) | isnad standardı (SPEC) | **tamamlandı** — 2/2 kitap, 642 madde (2026-10-29) | `dogrula.py`: 0 hata, 26 uyarı (13 metin başı, 6 sîga, 5 ﷺ) |
+| el-Hallâl (`hallal/`) | isnad standardı (SPEC) | **tamamlandı** — 7/7 kitap, 372 madde (2026-10-29) | `dogrula.py`: 0 hata, 38 uyarı (28 metin başı, 7 sîga) |
+| eş-Şâfiî (`safii/`) | isnad standardı (SPEC) | **tamamlandı** — 1/1 kitap, 547 madde (2026-10-29) | `dogrula.py`: 0 hata, 5 uyarı |
+| el-Buhârî (`buhari/`) | isnad standardı (SPEC) | **tamamlandı** — 2/2 kitap, 307 madde (2026-10-29) | `dogrula.py`: 0 hata, 29 uyarı (22 metin başı, 5 kısa) |
+| el-İbâne (`ibane/`) | isnad standardı (SPEC) | **tamamlandı** — 1/4 kitap, 146 madde (2026-10-29) | `dogrula.py`: 0 hata, 10 uyarı |
+| Ebû Dâvûd (`ebudavud/`), Harb (`harb/`), el-Berbehârî (`berbehari/`) | isnad standardı (SPEC) | **tamamlandı** — 243 madde (2026-10-29) | `dogrula.py`: 0 hata, 1 uyarı (berbehari ﷺ) |
 | Müsned (`musned/`) | eski biçim (4 bölüm, 561/1380 çevrili) | **baştan yapılacak**, Sünen standardıyla | Şuayb el-Arnaût neşri, Şâmile 25794; ziyade işaretleri (1/2/3) korunur; `c[0]` müellif kararı aşağıda |
 | el-Musannef (`musannef/`) | eski biçim (17/40 kitap, 16 352 madde; sened var, panel yok) | daha sonra standarda getirilecek | `CLAUDE.md` “Kaynaklar” |
 
@@ -26,6 +26,8 @@ Her oturum: önce `SPEC.md`, sonra bu dosya. Bitince burayı güncelle (kitap, s
 - `SPEC.md` — şartname (format, sîga sözlüğü, şema, 5 örnek, oturum akışı).
 - `araclar/ravi/ravi_kur.py` → `araclar/ravi/ravi.json` + `ravi.json` — bütün kitaplıklardan 16 151 râvi kaydı, 37 496 hoca-öğrenci kenarı (Musannef dışındaki tüm kitaplıklar panelli ve sîgalı; 2026-10-29). Her derlemeden sonra `python3 araclar/ravi/ravi_kur.py` ile yenilenir.
 - `araclar/dogrula.py <kitaplık> [--ravi] [--hepsi] [--json rapor.json]` — yayımlanmış verinin şartname denetimi. Hata = yayımlanmaz; uyarı = göz listesi. Sened satırında `(yine)`, `(metinde böyle)`, yer/zaman notu, ad sonunda `—`, `; ayrıca` dışı `;`, `rahimehullah` ve zincir sonunda Nebî/Resûlullah da hatadır (2026-10-29).
+- `araclar/siga_hizala.py [kitaplık…] [--rapor dosya]` — panelli maddelerde sîgaları ve `k`'yi Arapça isnaddan yeniden eşler (halka ↔ ondan önceki lafız; ad özellikleriyle hizalama: بن↔b., أبو↔Ebû, أبيه↔babası, و↔ve). Müellif/nüsha öneği `dogrula.py` → `ONEK` tablosundan düşülür (Zühd/Fezâil/İmam Ahmed'de `حدثنا عبد الله … حدثني أبي` → `c[0]` Ahmed b. Hanbel, yalnız `حدثنا عبد الله` → Abdullah b. Ahmed; Buhârî'de Mahmûd → Buhârî; Şâfiî'de Rebî‘ → Şâfiî; Âcurrî'de Ebû Bekir/Muhammed → Âcurrî). Adlar değişmez; bulunamayan halka `an`/`kâle` alır ve rapora yazılır (`araclar/siga_hizala_rapor.md`). Tekrar çalıştırılabilir.
+- `araclar/standarda_getir.py` — eski biçimden panele geçiş betiği; **bir kez çalıştırıldı**, panelli kitaplıkta kendini durdurur (tekrar uygulanırsa Abdullah/babası halkalarını bozar).
 - `araclar/sunan/` — çalışma dosyası araçları (`denetle.py`, `derle.py`), kılavuz, sözlük.
 
 ## Sünen — gözle bakılacak uyarılar (dogrula.py, 2026-10-29)
@@ -47,8 +49,19 @@ Hepsi: `python3 araclar/dogrula.py sunan --hepsi`
 
 Râvi sayfası ve `dogrula.py` yalnız `info.c` zinciri olan kitapları görür; eski biçimdeki kitaplar (sened satırında notlar, saygı ifadeleri, nüsha zinciri) standarda getirildikçe `araclar/ravi/ravi_kur.py` ve `dogrula.py` `MUELLIF` listesine eklenir. Sıra (öneri): 1) Müsned (baştan, en büyük kazanç), 2) Musannef (16 352 madde; sened var, panel yok → sened temizlenir, `&` sîga satırı Arapçadan üretilir), 3) ez-Zühd ve Fezâil (sened başındaki “(Ahmed …)” nüsha notları `n`'ye), 4) eş-Şerîa, el-İbâne, el-Âcurrî, 5) küçük kitaplar. Her kitapta: `kilavuz.md` uyarlanır → parti → `denetle.py` → derle → `dogrula.py --ravi` 0 hata → `ravi_kur.py` yenilenir → yayın.
 
+## 12 kitaplık — gözle bakılacak uyarılar (dogrula.py, 2026-10-29, sîga eşlemesinden sonra)
+
+Hepsi: `python3 araclar/dogrula.py <kitaplık> --hepsi`. Sayılar yukarıdaki tabloda.
+
+- **Sîga sayısı uyuşmuyor (78):** zuhd 813, 1658, 2320 · fezail 81, 128, 168, 253, 279, 347, 403, 619, 870, 1099, 1105, 1227, 1299, 1330, 1333, 1439, 1576, 1590 · ahmed m01 0, m04 0, 231, 249, 278, 390, 403, 435, 438, m06 10, m09 2, 3, 4, 168 · acurri a01 90.07, a02 10, 27, a04 16, a05 3, 45, a06 53, 64, a07 11, 38, 41, a10 75, 102, 118, a11 34, 60, 65 · ibnebiseybe e01 24, e02 29, 85, e03 91, 100 · hallal h02 1, 41, 54, h03 105, 170 · safii 0, 163 · buhari b02 86, 116 · ibane 12, 103, 124. Çoğu tahvîl, ortak lafız (`قالا: حدثنا`) ya da `k` sonrasına taşan zincir; gerçek kayma varsa `siga_hizala_rapor.md`'de de görünür.
+- **`k` kelime ortasında (39):** zuhd 1191, 1564, 1795, 2230 · fezail 82, 490, 492, 620, 919, 996, 1274, 1282, 1364, 1429, 1436, 1509, 1529, 1625, 1722, 1839 · ahmed m03 30, 38, 39, 41, 52, 75, 105, m06 129, 182 · acurri a05 7, a09 62, a11 12, 29, 47 · ibnebiseybe e03 274, 327 · hallal h03 182, 207 · ibane 124. Son halkanın Arapçadaki yeri belirsiz; elle `k` ver.
+- **Metin son râviyle başlamıyor (≈340):** çoğu anlatı rivayeti ya da sened satırında son halkanın eksik olması (ör. fezail 44: Arapça `سمعت عليا` ile Ali'ye kadar iner, sened Ebû Cuhayfe'de biter). SPEC §1'e göre sözün kaynağı zincire `kâle` ile yazılmalı; kitap kitap gözden geçirilecek.
+- **Çeviri kısa olabilir (17), ﷺ eksik (41):** `GOZDEN.md`.
+- Sîga eşlemesinin kendi raporu: `araclar/siga_hizala_rapor.md` (195 lafzı bulunamayan halka, 83 belirsiz hizalama).
+
 ## Günlük
 
+- 2026-10-29 — Sîga düzeltmesi: 14:18'deki toplu dönüştürmede (`standarda_getir.py`) sîgalar Türkçe zincire sırayla sayılarak verilmişti; Türkçe sened Abdullah → babası önekini atmış maddelerde (Fezâil'in tamamına yakını, Zühd ve Buhârî'nin bir kısmı) sîgalar bir-iki halka kaymış, Fezâil'de 614 Abdullah ziyâdesi `c[0]` = Ahmed b. Hanbel yazılmış, `k` birçok yerde erken kalmıştı. `araclar/siga_hizala.py` yazıldı: sîgalar ve `k` Arapça isnaddan yeniden eşlendi (12 kitaplıkta 5 550 panel değişti; dogrula "sîga sayısı uyuşmuyor" 2 037 → 78). `dogrula.py`: `ONEK` tablosu (sayımdan düşülür), harekesiz sayım, `قثنا` haddesenâ sayılır. Tablodaki satırlara uyarı sayıları yazıldı; `standarda_getir.py` tek kullanımlık olarak işaretlendi.
 - 2026-10-29 — Musannef ve Müsned dışındaki tüm kitaplıklar (`ibnebiseybe`, `ahmed`, `zuhd`, `fezail`, `acurri`, `hallal`, `safii`, `buhari`, `ebudavud`, `harb`, `ibane`, `berbehari` — `sunan` ve `seria` ile birlikte 14 kitaplık, 16 983 madde) `SPEC.md` isnad ve râvi paneli standardına getirildi (`dogrula.py --ravi`: 0 hata); `ravi.json` ve râvi sayfası güncellendi (16 151 râvi, 37 496 sîgalı kenar).
 - 2026-10-29 — Genel denetim: sw.js çevrimdışı hatası ve ayrı veri önbelleği, bildirimde Sünen adı, Âcurrî ad birliği, `index.json` `t/n` kesirli maddeleri sayar (6 kitaplık), `dogrula.py` yeni sened denetimleri + eş-Şerîa sened temizliği, 427 “ﷺ’e” ek düzeltmesi (Musannef), README yeniden yazıldı, ölü CSS silindi, manifest kısayolları.
 

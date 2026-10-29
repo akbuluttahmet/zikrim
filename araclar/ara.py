@@ -17,7 +17,7 @@ libs, H, AR = [], [], []
 for li, v in enumerate(LIBS):
     if v == 'usul':
         try:
-            u = json.loads(subprocess.check_output(['node', '-e', "const s=require('fs').readFileSync(process.argv[1],'utf8');eval(s.replace(/const /g,'var '));console.log(JSON.stringify({t:USUL,a:USUL_AR}))", R + 'usul.js']))
+            u = json.loads(subprocess.check_output(['node', '-e', "const s=require('fs').readFileSync(process.argv[1],'utf8');eval(s.replace(/^\\s*.use strict.;?/,'').replace(/const /g,'var '));console.log(JSON.stringify({t:USUL,a:USUL_AR}))", R + 'usul.js']))
         except Exception:
             usul_src = open(R + 'usul.js', encoding='utf8').read()
             m_t = re.search(r'const\s+USUL\s*=\s*(\[\s*\[.*?\]\s*\]);', usul_src, re.DOTALL)
