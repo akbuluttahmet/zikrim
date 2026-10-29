@@ -1,0 +1,226 @@
+@ Lohusa kadın hakkında söyledikleri: Kocası onunla birleşinceye kadar ne kadar bekler?
+
+17450 | Hafs → Eş‘as → Hasan → Osman b. Ebi’l-Âs | Osman b. Ebi’l-Âs’tan: O, kadınlarına şöyle dedi: “Lohusalıkta kırk geceden önce bana görünmeye kalkışmayın.”
+& haddesenâ, an, an, an
+^ أنه قال لنسائه
+
+17451 | Vekî‘ → İsrâîl → Câbir → Abdullah b. Yesâr → Ömer | Ömer dedi ki: “Lohusa kadın kırk gün oturur.”
+& haddesenâ, an, an, an, an
+^ قال: «تجلس النفساء أربعين
+
+17452 | Mu‘temir b. Süleymân → babası → Hasan | Hasan dedi ki: “Kadınlar kırk gün beklerler, sonra gusledip namaz kılar.” Şa‘bî de: “İki ay bekler, sonra o, istihâzalı kadın konumundadır” dedi.
+& haddesenâ, an, an
+^ قال: «تربص النساء
+
+17453 | Esbât b. Muhammed → Eş‘as → Hasan | Hasan dedi ki: “Lohusa kadın kırk günden fazla oturmaz.” Ebû Bekir dedi ki: Atâ: “Alıştığı âdeti kadar oturur, kırk geceden fazla oturmaz” (dedi).
+& haddesenâ, an, an
+% Arapçada “حدثنا أبو بكر قال:: عطاء” diye yazılıdır; arada sened düşmüş görünüyor (metinde böyle).
+^ قال: «لا تجلس النفساء
+
+17454 | Vekî‘ → Ebû Avâne → Ebû Bişr → Yûsuf b. Mâhek → İbn Abbâs | İbn Abbâs dedi ki: “Lohusa kadın kırk güne yakın oturur.”
+& haddesenâ, an, an, an, an
+^ قال: «تجلس النفساء نحوا
+
+17455 | Ebû Üsâme → Züheyr → Ali b. Abdüla‘lâ → Ebû Sehl → Müsse → Ümmü Seleme | Ümmü Seleme dedi ki: “Resûlullah ﷺ zamanında lohusa kadın kırk gün otururdu. Biz de çillerden dolayı yüzlerimize vers sürerdik.”
+& haddesenâ, an, haddesenâ, an, an, an
+^ قالت: «كانت النفساء
+
+@ Hamile iken câriye satın alan ya da onunla birleşen adam hakkında söyledikleri: Bu konuda ne dediler?
+
+17456 | Süfyân b. Uyeyne → Ubeydullah b. Ebî Yezîd → İbn Abbâs | Ubeydullah b. Ebî Yezîd’den: O, İbn Abbâs’a hamile iken câriye satın alan adamı sordu: Onunla ilişkiye girebilir mi? “Hayır” dedi ve şunu okudu: “Hamilelerin süresi de yüklerini doğurmalarıdır.” (Talâk 65/4)
+& haddesenâ, an, kâle
+^ أنه سأل ابن عباس
+
+17457 | Ebû Hâlid el-Ahmer → Dâvûd → Şa‘bî | Dâvûd dedi ki: Şa‘bî’ye şöyle dedim: “Ebû Mûsâ, Tüster’i fethettiğinde, hamile kadınlarla ilişkiye girilmemesini ve müşriklere çocuklarında ortak olunmamasını yasakladı; çünkü su (meni) çocukta artış yapar. Bu, kendi görüşüyle söylediği bir şey mi, yoksa Nebî’den rivayet ettiği bir şey mi?” Şöyle dedi: “Resûlullah ﷺ Evtâs günü hamile kadınla doğuruncaya kadar, hamile olup olmadığı belli olmayanla da istibrâ edilinceye kadar ilişkiye girilmesini yasakladı.”
+& haddesenâ, an, an
+^ قال: قلت له
+
+17458 | Ebû Hâlid el-Ahmer → Haccâc → Katâde → Ebû Kılâbe | Ebû Kılâbe dedi ki: Resûlullah ﷺ buyurdu: “Hamile kadınla ilişkiye giren bizden değildir.”
+& haddesenâ, an, an, an
+^ قال: قال رسول الله
+
+17459 | Ebû Hâlid el-Ahmer → Haccâc → Hakem → Miksem → İbn Abbâs | İbn Abbâs’tan, Nebî’den (aleyhisselâm) bunun benzeri (rivayet edildi).
+& haddesenâ, an, an, an, an
+^ عن النبي عليه السلام مثله
+
+17460 | Abdürrahîm b. Süleymân → Muhammed b. İshâk → Yezîd b. Ebî Habîb → Ebû Merzûk Habîb | Ebû Merzûk Habîb dedi ki: Ruveyfi‘ b. Sâbit el-Ensârî ile birlikte Mağrib tarafına sefere çıktık ve Harbe denilen bir köyü fethettik. (Ruveyfi‘) aramızda hatip olarak kalktı ve şöyle dedi: “Ben size ancak Resûlullah’tan ﷺ Hayber günü aramızda (söylerken) işittiğimi söylüyorum: ‘Kim Allah’a ve âhiret gününe iman ediyorsa, suyunu başkasının ekinine sakın akıtmasın.’”
+& haddesenâ, an, an, an
+^ قال: غزونا مع
+
+17461 | Ebû Muâviye → Muhammed b. İshâk → Yezîd b. Ebî Habîb → Haneş es-San‘ânî → Ebû Merzûk Habîb → Ruveyfi‘ b. Sâbit | Ruveyfi‘ b. Sâbit’ten, Nebî’den bunun benzeri (rivayet edildi).
+& haddesenâ, an, an, an, an, an
+^ عن النبي بمثله
+
+17462 | Hafs b. Gıyâs → Haccâc → Abdullah b. Zeyd → Ali | Ali dedi ki: “Resûlullah ﷺ hamile kadınla doğuruncaya kadar, hayızlı kadınla da bir hayızla istibrâ edilinceye kadar ilişkiye girilmesini yasakladı.”
+& haddesenâ, an, an, an
+^ قال: «نهى رسول الله
+
+17463 | Ebü’l-Ahvas → Ebû İshâk → Sıle ve Kusem ve Nâciye b. Ka‘b | Sıle, Kusem ve Nâciye b. Ka‘b dediler ki: “Hangi adam hamile bir câriye satın alırsa, yükünü doğuruncaya kadar onunla ilişkiye girmesin. Hangi adam bir câriye satın alırsa, hayız görünceye kadar ona yaklaşmasın.”
+& haddesenâ, an, an
+^ قالوا: «أيما رجل
+
+17464 | İbn Nümeyr → Yahyâ b. Saîd → Saîd b. el-Müseyyeb | Saîd b. el-Müseyyeb dedi ki: “Adamın, karnında başkasına ait bir cenin bulunan bir câriye ya da kadınla ilişkiye girmesi yasaklandı.”
+& haddesenâ, an, an
+^ قال: «نهي أن يطأ
+
+17465 | Ebû Üsâme → Eş‘as → Hasan | Hasan dedi ki: Tüster fethedildiğinde Ebû Mûsâ esirler elde etti. Ömer ona şunu yazdı: “Hiç kimse (hamile) bir kadınla doğuruncaya kadar ilişkiye girmesin; müslümanlara (metinde böyle) çocuklarında ortak olmasınlar; çünkü su (meni) çocuğun tamamlanmasıdır.”
+& haddesenâ, an, an
+^ قال: لما فتحت
+
+17466 | Mu‘temir b. Süleymân → Ma‘mer → Amr b. Müslim → Tâvûs | Tâvûs’tan: Resûlullah ﷺ yaptığı bir gazvede bir münadiye, erkeklerin hamile kadınla doğuruncaya kadar, hamile olmayanla da hayız görünceye kadar ilişkiye girmemelerini (ilan etmesini) emretti.
+& haddesenâ, an, an, an
+^ أن رسول الله صلى الله عليه وسلم «أمر
+
+17467 | Ebû Üsâme → Abdurrahmân b. Yezîd → Kâsım ve Mekhûl → Ebû Ümâme | Ebû Ümâme’den: Resûlullah ﷺ Hayber günü hamile kadınlarla doğuruncaya kadar ilişkiye girilmesini yasakladı.
+& haddesenâ, an, haddesenâ, an
+^ أن رسول الله صلى الله عليه وسلم «نهى
+
+17468 | Yezîd b. Hârûn → Şu‘be → Yezîd b. Humeyr → Abdurrahmân b. Cübeyr b. Nüfeyr → babası → Ebü’d-Derdâ | Ebü’d-Derdâ’dan: Nebî ﷺ, bir çadırın ya da otağın kapısında bulunan, doğumu yaklaşmış (hamile) bir kadının yanından geçti. “Bu kimin?” buyurdu. “Falancanın” dediler. “Onunla birleşiyor mu?” buyurdu. “Evet” dediler. Şöyle buyurdu: “Ona, kendisiyle beraber kabrine girecek bir lanetle lanet etmeyi düşündüm. (O çocuk) onun gözünde ve kulağında (ona) düşmanken onu nasıl hizmetinde kullanır? Ona helâl değilken ona nasıl varis olur?”
+& haddesenâ, haddesenâ, an, an, an, an
+^ أن النبي صلى الله عليه وسلم مر
+
+@ Bir kadının bir kadını eliyle bozması (bekâretini gidermesi) hakkında söyledikleri: Bu konuda ona ne gerekir?
+
+17469 | Hüşeym → Mugîre → İbrâhîm | İbrâhîm’den: Bir adamın yanında bir yetim kız vardı; onunla birlikte yemeğinde bulunurdu. Karısı, (adamın) onunla kendi üzerine evlenmesinden korktu. Adam bir yolculuğa çıktı. Karısı, (kıza karşı) kadınlardan yardım istedi; onlar kızı onun için tuttular, o da eliyle kızın bekâretini bozdu. Adam geldi ve onu sofrasında aramaya başladı. Karısına: “Falancaya ne oldu da eskiden bulunduğu gibi yemeğimde bulunmuyor?” dedi. (Karısı): “Falancayı bırak” dedi. “Ona ne oldu?” dedi. Bunun üzerine ona (zina) iftirasında bulundu. (Adam) gidip yanına girdi ve: “Sana ne oldu? Durumun nedir?” dedi. (Kız) ağlamaktan başka bir şey yapmıyordu. “Bana haber ver” dedi; o da ona haber verdi. (Adam) Ali’ye (radıyallâhu anh) gidip bunu ona anlattı. (Ali) adamın karısına ve kadınlara (haber) gönderip onlara sordu. Çok geçmeden itiraf ettiler. (Ali) Hasan’a: “Bu konuda hüküm ver” dedi. Hasan şöyle dedi: “Ona iftira edene had, ukr da ona ve (kızı) tutanlara (gerekir) görüşündeyim.” Ali de: “Develere un öğütmek yüklenseydi öğütürlerdi” dedi. (Râvi) dedi ki: O gün hiçbir deve öğütmüyordu.
+& haddesenâ, an, an
+^ أن رجلا كانت
+
+17470 | Hüşeym b. Beşîr → İsmâîl → Şa‘bî | Şa‘bî’den: Dört câriye bir araya geldi. Biri: “O erkektir” dedi; diğeri: “O kadındır” dedi; üçüncüsü: “Ben, kadın olduğunu iddia edenin babasıyım” dedi; dördüncüsü: “Ben, erkek olduğunu iddia edenin babasıyım” dedi. Erkeğin babası olduğunu iddia eden, kadının babası olduğunu iddia edenden (kızı) istedi; o da onu evlendirdi. Erkek olduğunu iddia eden de evlendirdiği câriyeyi bozdu. Abdülmelik b. Mervân’a davalaştılar. (Abdülmelik) onun mehrini dördünün üzerine yükledi; kadın olduğunu iddia edenin payını kaldırdı, çünkü o kendini tutmuştu. (Şa‘bî) dedi ki: Bunu Abdullah b. Mugaffel el-Müzenî’ye zikrettim. Şöyle dedi: “Bu işi ben üstlenmiş olsaydım, mehri ancak onu bozanın üzerine görürdüm.”
+& haddesenâ, an, an
+^ أن جوار أربعا
+
+17471 | İbn Fudayl → Haccâc → Hakem → İbrâhîm | İbrâhîm’den: Bir kadın bir câriyenin bekâretini parmağıyla bozdu ve: “O zina etti” dedi. (Mesele) Ali’ye götürüldü. (Ali) ona ukr ödetti ve ona iftira ettiği için seksen (değnek) vurdu.
+& haddesenâ, an, an, an
+^ " أن امرأة افتضت
+
+17472 | Ebû Dâvûd et-Tayâlisî → Hammâd b. Seleme → Ebû Bişr → Şa‘bî | Şa‘bî’den: Şam’da bazı kadınlar vardı; işaretleştiler, baktılar ve bez parçasıyla oynadılar. Biri diğerine bindi, diğerini yardı (metinde böyle) ve bekâretini giderdi. Bu, Abdülmelik b. Mervân’a götürüldü. (Abdülmelik) bunu Fedâle b. Ubeyd’e ve Kabîsa b. Züeyb’e sordu. Dediler ki: “Diyet onların üzerinedir; birinin payı kaldırılır.” İbn Mugaffel ise: “Onun (metin bu kısımda bozuktur) görür” dedi. Şa‘bî de dedi ki: Ben de bunu görüyorum; ona ukru da vardır.
+& haddesenâ, an, an, an
+% Arapçada “يرى من نطفها إلى باجستها” yazılıdır.
+^ أن نسوة كن
+
+17473 | İsmâîl b. Uleyye → Ubeyd → Bekr → Şüreyh | Bekr’den: İki câriye hamamda idi. Biri diğerini itti ve (diğerinin) bekâreti bozuldu. Şüreyh ona (lehine) şöyle hükmetti: “Onun (iten kızın) üzerine onun mehrinin benzeri vardır.”
+& haddesenâ, an, an, kâle
+^ أن جاريتين كانتا
+
+@ İki kız kardeşle evlenen, (sonra) her birinin karısı diğerinin yanına sokulan iki adam hakkında söyledikleri
+
+17474 | Hüşeym → Mugîre → İbrâhîm | İbrâhîm’den: O, iki kız kardeşle evlenen, her birinin yanına diğerinin karısı sokulan iki adam hakkında şöyle dedi: “İki (kadına) mehir vardır; iki koca da onları aldatan kimseye rücû eder.”
+& haddesenâ, an, an
+^ أنه قال في رجلين
+
+17475 | Hüşeym → Muhammed b. Sâlim → Şa‘bî → Ali | Ali’den: O, bunu söyledi.
+& haddesenâ, an, an, enne
+^ قال: ذلك
+
+17476 | Hüşeym → Yûnus → Hasan | Hasan’dan: O da bunu söyledi.
+& haddesenâ, an, an
+^ أنه قال: ذلك أيضا
+
+17477 | Ali b. Müshir → Saîd → Katâde → Hılâs | Hılâs’tan: İki kardeş iki kız kardeşle evlendi; bunun karısı şunun yanına, şunun karısı da bunun yanına sokuldu. Bu, Ali’ye götürüldü. (Ali) her birini kendi sahibine geri verdi ve kocasına, iddeti bitinceye kadar ona yaklaşmamasını emretti. Her birine, kendisiyle birleşmesi sebebiyle onunla ilişkiye girenin üzerine mehir koydu; onun çeyizini ve tazminatı da onu evlendirenin üzerine yükledi.
+& haddesenâ, an, an, an
+^ «تزوج أخوان
+
+@ Fahişenin kazancı hakkında söyledikleri; onu yasaklayanlar
+
+17478 | İbn Uyeyne → Zührî → Ebû Bekir → İbn Mes‘ûd | İbn Mes‘ûd’dan: Nebî ﷺ fahişenin kazancını yasakladı.
+& haddesenâ, an, an, an
+% Arapçada sened böyle yazılıdır: “عن أبي بكر، عن ابن مسعود” (metinde böyle).
+^ أن النبي صلى الله عليه وسلم «نهى عن مهر
+
+17479 | Affân → Ebân el-Attâr → Yahyâ b. Ebî Kesîr → İbrâhîm b. Kâriz → Sâib b. Yezîd → Râfi‘ b. Hadîc | Râfi‘ b. Hadîc’ten: Nebî ﷺ şöyle buyurdu: “Hacamatçının kazancı kötüdür, fahişenin kazancı kötüdür.”
+& haddesenâ, haddesenâ, haddesenî, an, an, an
+^ أن النبي صلى الله عليه وسلم قال
+
+17480 | Şebâbe → Şu‘be → Avn b. Ebî Cuhayfe → babası | Avn b. Ebî Cuhayfe’nin babası dedi ki: “Resûlullah ﷺ fahişenin kazancını yasakladı.”
+& haddesenâ, an, an, an
+^ قال: «نهى رسول الله
+
+17481 | Fadl b. Dükeyn → Abdülcebbâr b. Abbâs → Avn b. Ebî Cuhayfe → babası | Avn b. Ebî Cuhayfe’nin babası dedi ki: “Resûlullah ﷺ fahişenin kazancını yasakladı.”
+& haddesenâ, an, an, an
+^ قال: «نهى رسول الله
+
+17482 | Ebû Muâviye → A‘meş → Ebû Süfyân → Câbir | Câbir’den, “Kim onları zorlarsa, şüphesiz Allah, onların zorlanmalarından sonra bağışlayan, merhamet edendir” (Nûr 24/33) sözü hakkında, şöyle dedi: “Abdullah b. Übey İbn Selûl câriyesine: ‘Git, bize fuhuşla bir şey kazan’ derdi. Bunun üzerine Allah teâlâ şunu indirdi: ‘Dünya hayatının geçici menfaatini elde etmek için, iffetli kalmak isteyen câriyelerinizi fuhşa zorlamayın. Kim onları zorlarsa, şüphesiz Allah, onların zorlanmalarından sonra bağışlayan, merhamet edendir.’ (Nûr 24/33)”
+& haddesenâ, an, an, an
+^ في قوله: {ومن
+
+17483 | Ebû Hâlid el-Ahmer → A‘meş → İbrâhîm | İbrâhîm dedi ki: Fahişenin ücreti gibi bir ve iki dirhem karşılığında evlenmeyi hoş görmezlerdi.
+& haddesenâ, an, an
+^ قال: كانوا «يكرهون
+
+17484 | Ali b. Hâşim → İbn Ebî Leylâ → Atâ → Ebû Hüreyre | Ebû Hüreyre’den: Nebî (aleyhisselâm) fahişenin kazancını yasakladı.
+& haddesenâ, an, an, an
+^ أن النبي عليه السلام «نهى
+
+@ Câriye ve hür kadınla tek akitte evlenen adam hakkında söyledikleri
+
+17485 | Muâz → Eş‘as → Hasan | Hasan’dan, câriye ve hür kadınla tek akitte evlenen adam hakkında, şöyle dedi: “Onunla câriyenin arası ayrılır.” Ya da (şöyle): İki kız kardeşle tek akitte evlenen adam hakkında, şöyle dedi: “İkisinin arası ayrılır.”
+& haddesenâ, an, an
+^ في رجل تزوج أمة
+
+17486 | Hafs b. Gıyâs → Ebû Hanîfe → Hammâd → İbrâhîm | İbrâhîm dedi ki: “Hür bir kadın ve câriye ile tek akitte evlenirse, ikisinin de nikâhı fâsid olur.”
+& haddesenâ, an, an, an
+^ قال: «إذا تزوج حرة
+
+@ Bir kadınla evlenip gerdeğe giren, sonra (onu geride bırakıp) ölen, sonra da onun süt kız kardeşi olduğuna dair delil ortaya çıkan adam hakkında söyledikleri
+
+17487 | Abde b. Süleymân → Saîd → Katâde → Hasan | Hasan’dan, bir kadınla evlenen, sonra onunla gerdeğe giren, sonra ölen, sonra da onun süt kız kardeşi olduğuna dair delil ortaya çıkan adam hakkında, şöyle dedi: “Ona mehir vardır, ona miras yoktur.”
+& haddesenâ, an, an, an
+^ في رجل تزوج امرأة، ثم
+
+@ Kadının velisi olup onunla evlenmek isteyen adam hakkında söyledikleri: Ne yapar?
+
+17488 | Hafs b. Gıyâs → Haccâc → Rükeyn | Rükeyn’den: Mugîre b. Şu‘be, velisi olduğu bir kadına talip oldu; onunla beraber kendisi gibi (başka) veliler de vardı. Onun velilerinden birine, onu kendisiyle evlendirmesini emretti.
+& haddesenâ, an, an
+^ أن المغيرة بن شعبة
+
+17489 | Muâz b. Muâz → Eş‘as → Hasan | Hasan dedi ki: “Kadının velisi onun izniyle onunla kendisi evlenmek isterse, onun işini bir adama devreder, sonra âdil şahitlerin şahitliğiyle onunla evlenir.”
+& haddesenâ, an, an
+^ قال: «إذا أراد ولي
+
+@ Zorlananın nikâhı hakkında
+
+17490 | Hafs → Âsım → İbn Sîrîn → Şüreyh | Şüreyh’ten: O, zorlananın nikâhını geçerli saymazdı.
+& haddesenâ, an, an, an
+^ «أنه كان لا يجيز
+
+17491 | Yahyâ b. Yemân → Süfyân → Leys → Mücâhid | Mücâhid dedi ki: “Zorlanan için nikâh yoktur.”
+& haddesenâ, an, an, an
+^ قال: «لا نكاح
+
+@ Mehrin peşin kısmında ihtilaf eden erkek ve kadın
+
+17492 | Abdüla‘lâ → Saîd → Katâde | Abdüla‘lâ dedi ki: Bir kadınla peşin ya da vadeli (mehir) üzerine evlenip onunla gerdeğe giren, (kadının da) peşinden kendisine (bir şey) ödemediğini (metinde böyle) iddia ettiği adam (hakkında) soruldu. (Abdüla‘lâ) dedi ki: Saîd bize Katâde’den rivayet etti; o şöyle derdi: “Peşin (mehir) konusunda, ‘Onun üzerinde şu kadar kaldı’ (iddiasının) delili kadının üzerinedir; (adamın) onunla gerdeğe girmesi onu (borçtan) beri kılmıştır.”
+& haddesenâ, haddesenâ, an
+^ أنه كان يقول
+
+17493 | Abdüla‘lâ → Saîd → Katâde → Hasan; ayrıca Abdüla‘lâ → Saîd → Matar → Hasan | Hasan’dan: O şöyle derdi: “Delil adamın üzerinedir.”
+& haddesenâ, an, an, an; haddesenâ, an, an, an
+^ أنه كان يقول: «المخرج
+
+@ Karısı ya da câriyesi olup onun çocuğu hakkında şüpheye düşen adam hakkında: Ne yapar?
+
+17494 | İsmâîl b. Uleyye → Humeyd → Enes | Enes’ten: O, bir çocuğu hakkında şüpheye düştü ve kendisi için kâiflerin çağrılmasını emretti.
+& haddesenâ, an, an
+^ «أنه شك في
+
+17495 | Ebû Bekir b. Ayyâş → Eslem el-Minkarî → Ubeydullah b. Ubeyd b. Umeyr | Ubeydullah b. Ubeyd b. Umeyr dedi ki: Abdurrahmân b. Avf, istibrâ etmeden önce kendisiyle ilişkiye girmiş olduğu bir câriyeyi sattı. Onu satın alanın yanında (câriyede) hamilelik ortaya çıktı. (Satın alan) onu Ömer’e dava etti. Ömer: “Onunla ilişkiye giriyor muydun?” dedi. “Evet” dedi. “Onu istibrâ etmeden önce mi sattın?” dedi. “Evet” dedi. “Sen buna lâyık değildin” dedi. Kâifleri çağırdı; ona baktılar ve onu ona kattılar. (Râvi) dedi ki: Ondan (o çocuktan) onun pek çok (torunu) doğdu; onu bununla ayıplamadılar.
+& haddesenâ, an, an
+^ قال: باع عبد الرحمن
+
+17496 | Dahhâk b. Mahled → Osman b. el-Esved → Atâ | Atâ’dan, çocuğu hakkında şüpheye düşen adam hakkında, şöyle dedi: “Ona emret de ona yemin ettirsin.” Ömer b. el-Hattâb da şöyle demiştir: “Kim bir câriyeyle ilişkiye girdiğini ya da onunla birleştiğini ikrar ederse onun çocuğunu ona katarız.” (Osman dedi ki:) İkrime b. Hâlid’e sordum; o da: “Ona emret de ona yemin ettirsin” dedi.
+& haddesenâ, an, an
+^ في الرجل يشك
+
+17497 | Yezîd b. Hârûn → Saîd b. Ebî Arûbe → Katâde → Recâ b. Hayve → Kabîsa b. Züeyb → Ömer | Ömer dedi ki: “Onları koruyun ya da korumayın; onlardan bir kadın sizden birinin yatağında doğurmaz ki onu ona katmayayım” –câriyeleri kastediyor–.
+& haddesenâ, haddesenâ, an, an, an, kâle
+^ «حصنوهن أو لا
+
+@ Zekeriyle oynayan adam hakkında söyledikleri
+
+17498 | Süfyân b. Uyeyne → Ammâr → Ebû Müslim → Ebû İmrân → Ebû Yahyâ | Ebû Yahyâ dedi ki: Bir adamın İbn Abbâs’a sorduğunu gördüm: “Ey İbn Abbâs, ben inzal edinceye kadar zekerimle oynayan bir adamım” dedi. İbn Abbâs şöyle dedi: “Öf, öf! O zinadan hayırlıdır; câriyeleri nikâhlamak ise ondan hayırlıdır.”
+& haddesenâ, an, an, an, an
+^ قال: رأيت رجلا
+
+17499 | Vekî‘ → Atâ b. Kudâme → İkrime → İbn Abbâs | İbn Abbâs dedi ki: İbn Ömer’e onu, yani istimnâyı (hadhada) sordular. Şöyle dedi: “Bu, kendi kendisiyle (zina) yapandır.”
+& haddesenâ, an, an, an
+^ قال: سئل ابن عمر
