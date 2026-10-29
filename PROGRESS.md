@@ -7,6 +7,7 @@ Her oturum: önce `SPEC.md`, sonra bu dosya. Bitince burayı güncelle (kitap, s
 | Kitap | Standart | Durum | Not |
 |---|---|---|---|
 | Sünen-i Ebî Dâvûd (`sunan/`) | isnad standardı (SPEC) | **tamamlandı** — 40/40 bölüm, 5275 madde (2026-10-29) | `dogrula.py`: 0 hata, 106 uyarı (aşağıda) |
+| eş-Şerîa (`seria/`) | isnad standardı (SPEC) | **tamamlandı** — 17/17 bölüm, 2169 madde (2026-10-29) | `dogrula.py`: 0 hata, 427 uyarı |
 | Müsned (`musned/`) | eski biçim (4 bölüm, 561/1380 çevrili) | **baştan yapılacak**, Sünen standardıyla | Şuayb el-Arnaût neşri, Şâmile 25794; ziyade işaretleri (1/2/3) korunur; `c[0]` müellif kararı aşağıda |
 | Diğer kitaplıklar | eski biçim (`info` yok ya da kısmi) | daha sonra standarda getirilecek | `CLAUDE.md` “Kaynaklar” |
 

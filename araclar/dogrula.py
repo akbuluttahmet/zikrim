@@ -19,9 +19,10 @@ R = Path(__file__).resolve().parents[1]
 RAVI = R / 'araclar' / 'ravi' / 'ravi.json'
 
 # Zincirin başındaki müellif (c[0]). Yeni kitaplık eklenince buraya yazılır.
-MUELLIF = {'sunan': 'Ebû Dâvûd', 'musned': 'Ahmed b. Hanbel'}
+MUELLIF = {'sunan': 'Ebû Dâvûd', 'musned': 'Ahmed b. Hanbel', 'seria': 'el-Âcurrî'}
 # Müellifin metin içi notlarının Arapça ve Türkçe kalıbı (sayıları eşleşmeli)
 MUELLIF_NOT = {'sunan': (r'قال أبو داود', r'Ebû Dâvûd (?:dedi|der|şöyle)'),
+               'seria': (r'قال محمد بن الحسين', r'(?:Âcurrî|Muhammed b\. el-Hüseyn) (?:dedi|der|şöyle)'),
                'musned': (r'قال عبد الله', r'Abdullah (?:dedi|der|şöyle)')}
 
 SIGALAR = {'haddesenâ', 'haddesenî', 'ahberanâ', 'ahberanî', 'enbe’enâ', 'semi‘tü', 'semi‘a', 'an', 'enne', 'kâle',

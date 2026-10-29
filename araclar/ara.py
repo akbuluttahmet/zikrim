@@ -16,7 +16,13 @@ def ar_norm(a):
 libs, H, AR = [], [], []
 for li, v in enumerate(LIBS):
     if v == 'usul':
-        u = json.loads(subprocess.check_output(['node', '-e', "const s=require('fs').readFileSync(process.argv[1],'utf8');eval(s.replace(/const /g,'var '));console.log(JSON.stringify({t:USUL,a:USUL_AR}))", R + 'usul.js']))
+        try:
+            u = json.loads(subprocess.check_output(['node', '-e', "const s=require('fs').readFileSync(process.argv[1],'utf8');eval(s.replace(/const /g,'var '));console.log(JSON.stringify({t:USUL,a:USUL_AR}))", R + 'usul.js']))
+        except Exception:
+            usul_src = open(R + 'usul.js', encoding='utf8').read()
+            m_t = re.search(r'const\s+USUL\s*=\s*(\[\s*\[.*?\]\s*\]);', usul_src, re.DOTALL)
+            m_a = re.search(r'const\s+USUL_AR\s*=\s*(\{.*?\});', usul_src, re.DOTALL)
+            u = {'t': eval(m_t.group(1)), 'a': {str(k): v for k, v in eval(m_a.group(1)).items()}}
         libs.append([v, ['Usûlü’s-Sünne']])
         for n, baslik, t in u['t']:
             H.append([li, 0, n, t, '']); AR.append(ar_norm(u['a'].get(str(n), '')))
