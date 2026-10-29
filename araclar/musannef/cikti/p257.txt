@@ -130,8 +130,8 @@
 & haddesenâ, an, an, an
 ^ قال: «جر القميص
 
-24842 | Yezîd → İsmâîl → Şuayb b. Yesâr | Şuayb b. Yesâr dedi ki: İkrime’nin yanında gömleği ve izârı sürümeyi andılar. O da şöyle dedi: “Vallahi o, kötü ve daha kötüdür.”
-& haddesenâ, ahberanâ, an
+24842 | Yezîd → İsmâîl → Şuayb b. Yesâr → İkrime | Şuayb b. Yesâr dedi ki: İkrime’nin yanında gömleği ve izârı sürümeyi andılar. O da şöyle dedi: “Vallahi o, kötü ve daha kötüdür.”
+& haddesenâ, ahberanâ, an, kâle
 ^ قال: ذكروا عند
 
 24843 | İbn Mehdî → Süfyân → Ebû Hâşim → Tâvûs | Tâvûs’tan: Onun gömleği izârın üstünde, ridâsı da gömleğin üstündeydi.

@@ -19,8 +19,8 @@
 % Vâsıl, İbn Uyeyne’nin mevlâsıdır.
 ^ قال: إن الله
 
-24876 | Zeyd b. el-Hubâb → Ebû Halde | Ebû Halde dedi ki: Ebü’l-Âliye’yi üzerinde bir şalvarla gördüm. Ona “Evde şalvarla ne işin var?” dedim. Dedi ki: “O, erkeklerin giyimindendir.”
-& haddesenâ, an
+24876 | Zeyd b. el-Hubâb → Ebû Halde → Ebü’l-Âliye | Ebû Halde dedi ki: Ebü’l-Âliye’yi üzerinde bir şalvarla gördüm. Ona “Evde şalvarla ne işin var?” dedim. Dedi ki: “O, erkeklerin giyimindendir.”
+& haddesenâ, an, kâle
 ^ قال: رأيت أبا العالية
 
 @ İsraf ya da kibir sana bulaşmadığı sürece dilediğini giy, diyenler
@@ -263,8 +263,8 @@
 
 @ Kişinin ayakta nalın giymesi hakkında
 
-24932 | Muâz → İbn Avn | İbn Avn dedi ki: Muhammed’in yanında kişinin ayakta nalın giymesi anıldı. Dedi ki: “Bunda bir sakınca bilmiyorum.”
-& haddesenâ, an
+24932 | Muâz → İbn Avn → Muhammed | İbn Avn dedi ki: Muhammed’in yanında kişinin ayakta nalın giymesi anıldı. Dedi ki: “Bunda bir sakınca bilmiyorum.”
+& haddesenâ, an, kâle
 ^ قال: ذكر عند
 
 24933 | Ubeydullah b. Mûsâ → Ukbe | Ukbe dedi ki: “İbrâhîm’i ayakta iken ayaklarını nalınlarına sokarken gördüm.”

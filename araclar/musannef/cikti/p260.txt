@@ -43,8 +43,8 @@
 & haddesenâ, an
 ^ قال: «رأيت نافع
 
-25020 | İbn Uleyye → İbn Avn | İbn Avn dedi ki: Muhammed’e siyahla boyanmayı sorarlardı. O da “Bunda bir sakınca bilmiyorum” derdi.
-& haddesenâ, an
+25020 | İbn Uleyye → İbn Avn → Muhammed | İbn Avn dedi ki: Muhammed’e siyahla boyanmayı sorarlardı. O da “Bunda bir sakınca bilmiyorum” derdi.
+& haddesenâ, an, kâle
 ^ قال: كانوا يسألون
 
 25021 | Vekî‘ ve İbn Mehdî → Süfyân → Sa‘d b. İbrâhîm → Ebû Seleme | Ebû Seleme’den: O, siyahla boyanırdı.
@@ -55,8 +55,8 @@
 & haddesenâ, an, an, an
 ^ قال: «لا بأس
 
-25023 | İbn Nümeyr → İsrâîl → Abdüla‘lâ | Abdüla‘lâ dedi ki: İbnü’l-Hanefiyye’ye vesme ile boyanmayı sordum. Dedi ki: “O, biz ehl-i beytin boyasıdır.”
-& haddesenâ, an, an
+25023 | İbn Nümeyr → İsrâîl → Abdüla‘lâ → İbnü’l-Hanefiyye | Abdüla‘lâ dedi ki: İbnü’l-Hanefiyye’ye vesme ile boyanmayı sordum. Dedi ki: “O, biz ehl-i beytin boyasıdır.”
+& haddesenâ, an, an, kâle
 ^ قال: سألت ابن
 
 25024 | Hafs → Muhammed b. İshâk | Muhammed b. İshâk dedi ki: “Ebû Ca‘fer üçte iki kına ve üçte bir vesme ile boyanırdı.”
@@ -90,8 +90,8 @@
 % Maddede ikinci bir rivayet birleşik.
 ^ أنه كره الخضاب
 
-25031 | Mülâzim b. Amr → Mûsâ b. Necde → dedesi Zeyd b. Abdurrahmân | Zeyd b. Abdurrahmân dedi ki: Ebû Hüreyre’ye “Vesme ile boyanma hakkında ne düşünüyorsun?” diye sordum. Dedi ki: “Onunla boyanan cennetin kokusunu bulamaz.”
-& haddesenâ, an, an
+25031 | Mülâzim b. Amr → Mûsâ b. Necde → dedesi Zeyd b. Abdurrahmân → Ebû Hüreyre | Zeyd b. Abdurrahmân dedi ki: Ebû Hüreyre’ye “Vesme ile boyanma hakkında ne düşünüyorsun?” diye sordum. Dedi ki: “Onunla boyanan cennetin kokusunu bulamaz.”
+& haddesenâ, an, an, kâle
 ^ قال: سألت أبا
 
 25032 | Yahyâ b. Âdem → Hammâd b. Zeyd → Eyyûb → Saîd b. Cübeyr | Eyyûb dedi ki: Saîd b. Cübeyr’i, kendisine vesme ile boyanma sorulmuşken işittim; onu hoş görmedi ve şöyle dedi: “Allah kulun yüzüne nur giydirir, o da sonra onu siyahla mı söndürür?”

@@ -225,9 +225,8 @@
 & haddesenâ, an, an
 ^ في السن ترجف
 
-27032 | Hüşeym → Câbir → Şa‘bî | Şa‘bî dedi ki: “Diş kararır ya da sararırsa onda onun diyeti vardır.”
+27032 | Hişâm → Câbir → Şa‘bî | Şa‘bî dedi ki: “Diş kararır ya da sararırsa onda onun diyeti vardır.”
 & haddesenâ, an, an
-% Arapçada ad “هشام” diye yazılıdır (metinde böyle).
 ^ قال: «إذا اسودت
 
 27033 | Zeyd b. el-Hubâb → Leys → Zührî | Zührî dedi ki: “Diş kararırsa onun diyeti tamamlanmış olur.”

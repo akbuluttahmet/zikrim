@@ -190,3 +190,8 @@
 - 24623 nüsha senedi. 24341 keler hadisi önceki babın sonunda (bab sırası kaynağa göre). 24435 Ebû Bekir'in metin içi notu çevrildi. 24698 “أمر رجلا” harfiyen (“emretti”, metinde böyle; “مر” olabilir).
 - Sened (notlu): 24340, 24395, 24396 (“هشام”), 24474, 24489, 24500, 24594 “ابن معاوية”, 24728.
 - Bozuk/şüpheli (notlu): 24301, 24305, 24371, 24374, 24378, 24384, 24430, 24482, 24494, 24512, 24530, 24557, 24576, 24590, 24675, 24723, 24732.
+
+## k13 Büyû‘ sonu (p240–p246, 23040–23413) / k16 Akîka başı (p247, 24231–)
+- Sened: 23042 “حدثنا أبو بكر قال: وشريك” (öncesi düşmüş), 23318 hoca düşmüş, 23344 sened yok (“حدثنا وكان القاسم، وسالم”); ad: 23108, 23152 “زائد”, 23311–23312 “هشام”.
+- 23078 Hasan b. Sâlih'in sözü soru olarak çevrildi (Arapçada soru kalıbı yok) — bakılmalı. 23405–23407 nüshada 23282, 23136, 23160'ın tekrarı. 23366 başlıksız bab. 24231 nüsha senedi.
+- Bozuk/şüpheli (notlu): 23079, 23086, 23095, 23101, 23109, 23115, 23131, 23136, 23143, 23144, 23145, 23159, 23163, 23199, 23253, 23288, 23307, 23337, 23348, 23378, 23394, 23409, 24235.
