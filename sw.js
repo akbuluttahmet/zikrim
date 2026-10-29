@@ -1,5 +1,5 @@
 // Güncelleme yaptığında bu sürüm adını artır
-const CACHE = 'zikrim-v189';
+const CACHE = 'zikrim-v190';
 const ASSETS = ['./', './index.html', './style.css', './fikih.js', './usul.js', './hadis.js', './ara-worker.js', './script.js', './manifest.webmanifest', './icon.svg', './apple-touch-icon.png', './icon-192.png', './icon-512.png', './gunun.json', './fonts/amiri-400.woff2', './fonts/amiri-700.woff2'];
 
 self.addEventListener('install', event => {
@@ -28,7 +28,7 @@ self.addEventListener('fetch', event => {
   }
   // Akış havuzu büyük (≈2 MB sıkıştırılmış): önbellekte varsa oradan, yoksa bir kez indirilir. Her yayında CACHE adı
   // değiştiği için eski önbellek silinir ve yeni sürüm ilk açılışta indirilir.
-  if (/\/(akis|ara|ara-ar)\.json$/.test(new URL(req.url).pathname)) {
+  if (/\/(akis|ara|ara-ar|ravi)\.json$/.test(new URL(req.url).pathname)) {
     event.respondWith(caches.open(CACHE).then(async cache => (await cache.match(req, {ignoreSearch: true})) || fetch(req).then(res => { if (res && res.ok) cache.put(req, res.clone()); return res; })));
     return;
   }

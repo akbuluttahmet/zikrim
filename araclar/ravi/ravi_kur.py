@@ -1,7 +1,7 @@
 """Râvi veritabanını kurar / günceller.
 
 Kaynak: isnad standardına uyan kitaplıkların `tr/*.json` verisi (varsayılan: sunan).
-Çıktı: araclar/ravi/ravi.json
+Çıktı: araclar/ravi/ravi.json (araç veritabanı) ve ravi.json (uygulamanın râvi sayfası)
 
 Veritabanı yalnız metinden türetilir: her râvi, zincirlerde yazıldığı adla
 (sened satırındaki biçimle) bir kayıttır. Dışarıdan kimlik bilgisi eklenmez
@@ -85,7 +85,7 @@ def kur(kitapliklar):
     kenar = collections.Counter()          # (ogrenci, siga, hoca) → sayı
     for lib in kitapliklar:
         idx = json.load(open(R / lib / 'index.json', encoding='utf-8'))
-        for b in idx:
+        for bi, b in enumerate(idx):
             if not b.get('t'):
                 continue
             d = json.load(open(R / lib / 'tr' / b['f'], encoding='utf-8'))
@@ -116,7 +116,7 @@ def kur(kitapliklar):
                                     gorulen.add(key)
                                     r['sayi'] += 1
                                     r['kitaplik'][lib] = r['kitaplik'].get(lib, 0) + 1
-                                    r['hadisler'].setdefault(lib, []).append(no)
+                                    r['hadisler'].setdefault(lib, []).append([bi, no])
                                     rolu = 'hoca' if i == 1 else ('son' if i == len(adlar) - 1 else 'ara')
                                     r['rol'][rolu] += 1
                                 siga = sigalar[i - 1]
@@ -149,6 +149,12 @@ def kur(kitapliklar):
         'kenar': kenarlar,
     }
     OUT.write_text(json.dumps(out, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
+    # Uygulama dosyası (repo kökü ravi.json): râvi sayfası için sıkı biçim
+    # r[ad] = [arapça biçimler, hadis sayısı, {hoca: n}, {öğrenci: n}, {kitaplık: [[kitap sırası, no], …]}]
+    app = {'r': {ad: [r['ar'], r['sayi'], r['hocalari'], r['ogrencileri'], r['hadisler']] for ad, r in out['ravi'].items()},
+           't': out['temel'], 'm': out['muellif'],
+           'x': sorted(ad for ad, r in out['ravi'].items() if r['tur'] != 'ad')}  # akrabalık/belirsiz: râvi sayfası açılmaz
+    (R / 'ravi.json').write_text(json.dumps(app, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
     return out
 
 
