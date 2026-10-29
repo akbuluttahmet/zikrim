@@ -77,7 +77,7 @@
 
 16213 | Îsâ b. Yûnus → Mekhûl | Mekhûl dedi ki: “İkisinden hangisi bir kadının (nikâh) akdine sahip olursa (kadın) ötekine haram olmuştur.”
 & haddesenâ, an
-^ قال: «أيما ملك
+^ قال: «أيهما ملك
 
 16214 | Ebû Dâvûd → Ebû Hurre → Hasan | Hasan’dan, bir kadınla evlenip onunla gerdeğe girmeden onu boşayan adam hakkında: Babası onunla evlenebilir mi? (Bunu) hoş görmedi ve (şunu söyledi:) Allah teâlâ “oğullarınızın eşleri” (Nisâ 4/23) buyurdu.
 & haddesenâ, an, an
@@ -266,5 +266,5 @@
 
 16258 | Ebû Muâviye → Haccâc → Meymûn → İbn Ömer | İbn Ömer’den: Ona, kız kardeş olan iki câriyesi olup birisiyle ilişkiye giren adam soruldu: Ötekiyle ilişkiye girer mi? (Râvi) dedi ki: İbn Ömer dedi ki: “İlişkiye girdiği (câriye) onun mülkünde kaldıkça ötekiyle ilişkiye girmez.” Ebû Bekir b. Ayyâş bize Abdülazîz b. Rufey‘den rivayet etti; dedi ki: İbnü’l-Hanefiyye’ye yanında iki câriye bulunan adamı sordum: İkisiyle ilişkiye girer mi? Dedi ki: “Onları bir âyet helâl kıldı, bir âyet haram kıldı.” Sonra İbnü’l-Müseyyeb’e geldim; o da Muhammed’in sözünün benzerini söyledi. Sonra İbn Münebbih’e sordum; dedi ki: “Şahitlik ederim ki Allah’ın Mûsâ’ya indirdiği (kitapta) şu vardır: İki kız kardeşi bir araya getiren lânetlenmiştir.” Dedi ki: Bize iki hür ile iki köle arasında bir ayrım yapmadı. Dedi ki: İbnü’l-Müseyyeb’e dönüp ona haber verdim. “Allahü ekber” dedi.
 & haddesenâ, an, an, an
-% Maddede ikinci bir rivayet birleşik.
+% Maddede ikinci bir rivayet birleşik (sonraki parçada “16259 -” işareti bab satırı olarak kalmış).
 ^ أنه سئل عن رجل

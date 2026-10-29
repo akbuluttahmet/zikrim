@@ -94,7 +94,7 @@
 
 @ Bedevinin muhâcir kadınla evlenmesini hoş görmeyenler
 
-17344 | Muhammed b. Fudayl → Yezîd b. Ebî Ziyâd → Zeyd b. Vehb | Zeyd b. Vehb dedi ki: Ömer bize şunu yazdı: “Bedevi, muhâcir kadını hicret yurdundan çıkarmak için nikâhlamaz (metinde böyle).”
+17344 | Muhammed b. Fudayl → Yezîd b. Ebî Ziyâd → Zeyd b. Vehb | Zeyd b. Vehb dedi ki: Ömer bize şunu yazdı: “Bedevi, muhâcir kadını hicret yurdundan çıkarıncaya kadar nikâhlamaz (metinde böyle).”
 & haddesenâ, an, an
 ^ قال: كتب إلينا
 
@@ -106,7 +106,7 @@
 & haddesenâ, an, an
 ^ «أنه كره أن يتزوج الأعرابي المهاجرة ليخرجها
 
-17347 | Abîde b. Humeyd → Rükeyn → babası | Rükeyn’in babası dedi ki: Manzûr b. Sayyâr, Hâlid’e (kızını) istedi; ikisi de hac ya da umre yapıyorlardı. (Hâlid): “Olur, döndüğünüzde seni nikâhlarım” dedi. (Kızın) ana-baba bir kardeşi onun yanına çıktı ve onu dayısının oğluna nikâhladı. (Manzûr) geldi; (ona): “Nikâhlandı” denildi (metinde böyle). Babası çok şiddetli öfkelendi ve şöyle dedi: “Bu nikâhtan Allah’a kaçarım. Ben Ömer’i şöyle derken işittim: ‘Muhâcir kadınları bedeviler nikâhlamaz.’”
+17347 | Abîde b. Humeyd → Rükeyn → babası | Rükeyn’in babası dedi ki: Manzûr b. Sayyâr, Hâlid’e (kızını) istedi; ikisi de hac ya da umre yapıyorlardı. (Hâlid): “Olur, döndüğünüzde seni nikâhlarım” dedi. (Kızın) ana-baba bir kardeşi onun yanına çıktı ve onu dayısının oğluna nikâhladı. (Hâlid) geldi ve: “Nikâhlandı” dedi. Babası çok şiddetli öfkelendi ve şöyle dedi: “Bu nikâhtan Allah’a kaçarım. Ben Ömer’i şöyle derken işittim: ‘Muhâcir kadınları bedeviler nikâhlamaz.’”
 & haddesenâ, an, an
 ^ قال: خطب منظور
 
@@ -166,7 +166,7 @@
 & haddesenâ, an, an
 ^ قال: سألت أبا سلمة
 
-17361 | İbn Uleyye → Muhammed b. Amr → Râfi‘ b. Hadîc’in bir oğlu | Râfi‘ b. Hadîc’in bir oğlundan: Râfi‘ b. Hadîc kızını kardeşinin oğlu Rifâa b. Hadîc’e (metinde böyle) evlendirdi; onu, kendisinin ümmü veledlerinden biri, onu kendisine nikâhladığı (oğlanın) babasının annesinden başka biri (metinde böyle) emzirmişti.
+17361 | İbn Uleyye → Muhammed b. Amr → Râfi‘ b. Hadîc’in bir oğlu | Râfi‘ b. Hadîc’in bir oğlundan: Râfi‘ b. Hadîc kızını kardeşinin oğlu Rifâa b. Hadîc’e evlendirdi; onu, kendisinin bir ümmü veledi, onu kendisine nikâhladığı (oğlanın) babasının annesinden başka (bir kadın) emzirmişti.
 & haddesenâ, haddesenî, enne
 ^ أن رافع بن خديج،
 
@@ -196,7 +196,7 @@
 & haddesenâ, an, an
 ^ أن النبي صلى الله عليه وسلم فرق
 
-17368 | Yezîd b. Hârûn → Abbâd b. Mansûr → İkrime → İbn Abbâs | İbn Abbâs’tan: Nebî ﷺ ikisinin arasını ayırdı; (kocanın) ona yiyecek ve nafaka (borcu) olmadığına hükmetti (metinde böyle).
+17368 | Yezîd b. Hârûn → Abbâd b. Mansûr → İkrime → İbn Abbâs | İbn Abbâs’tan: Nebî ﷺ ikisinin arasını ayırdı; onun üzerine yiyecek ve nafaka olmadığına hükmetti.
 & haddesenâ, an, an, an
 ^ أن النبي صلى الله عليه وسلم «فرق
 
@@ -266,7 +266,7 @@
 
 @ Erkeğe mehir veren kadın hakkında söyledikleri
 
-17384 | Îsâ b. Yûnus → Evzâî → Yahyâ b. Ebî Kesîr | Yahyâ b. Ebî Kesîr’den: Ali, mehrin kendi üzerine olması, ayrılık ve cinsî birleşmenin de kendi elinde olması şartıyla bir adamla evlenen bir kadın hakkında fetva verdi. Ali şöyle dedi: “Sünnete aykırı davrandın ve işi ehli olmayana verdin. Mehir senin üzerinedir (metinde böyle); cinsî birleşme ve ayrılık senin elindedir (metinde böyle). Sünnet budur.”
+17384 | Îsâ b. Yûnus → Evzâî → Yahyâ b. Ebî Kesîr | Yahyâ b. Ebî Kesîr’den: Ali, mehrin kendi üzerine olması, ayrılık ve cinsî birleşmenin de kendi elinde olması şartıyla bir adamla evlenen bir kadın hakkında fetva verdi. Ali şöyle dedi: “Sünnete aykırı davrandın ve işi ehli olmayana verdin. Mehir senin üzerinedir; cinsî birleşme ve ayrılık senin elindedir. Sünnet budur.”
 & haddesenâ, an, an
 ^ أن عليا، أفتى
 

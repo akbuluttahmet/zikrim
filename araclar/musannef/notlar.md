@@ -117,3 +117,9 @@
 - 18229 “حدثنا أبو داود قال:” (öneksiz; Ebû Dâvûd ilk halka). 18297 nüsha senedi. 18442, 18448 öneksiz.
 - Sened (notlu): 17997 “ابن عفان”, 18029, 18097 (Cerîr ve Îsâ tek kutu), 18137, 18251 (iki yol), 18256 (“عن الحسن، عن أبيه”, notsuz), 18399 (iki yol), 18438.
 - Bozuk/şüpheli (notlu): 18016, 18103, 18226, 18288, 18414, 18436, 18496, 18505, 18507. Başlıksız bablar: 18109, 18446, 18506.
+
+## k08 Hac (p117–p124, 14697–15139 civarı)
+- İkinci rivayet birleşik: 14749, 14954 (14750, 14955 başlıksız bab, maddesi yok). 14727 nüsha senedi. 14924 metni yok (yalnız “قال: حدثنا”). 15107 Saîd'in sözü kesilip yeni rivayet başlıyor.
+- 14883 zincir tek sıra ama metinde “أنهما” — tahvîl olabilir, bakılmalı.
+- Sened (notlu): 14746, 14785, 14796 (hoca yok), 14798 “عمرو بن ذر”, 14835, 14838, 15023, 15114 (yollar), 15127 (kâle), 15136 “البصير بن عدي”.
+- Bozuk/şüpheli (notlu): 14701, 14704, 14705, 14707, 14732, 14786, 14816, 14819, 14820, 14870, 14871, 14880, 14920, 14991, 15027, 15092, 15111, 15133.
