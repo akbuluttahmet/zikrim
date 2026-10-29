@@ -1,6 +1,6 @@
 # İlerleme ve açık işler
 
-Her oturum: önce `SPEC.md`, sonra bu dosya. Bitince burayı güncelle (kitap, son numara, açık sorunlar). Bu dosya kısa kalır; uzun notlar `araclar/sunan/notlar.md` gibi kitaba özel dosyalara gider.
+Her oturum: önce `SPEC.md`, sonra bu dosya. Bitince burayı güncelle (kitap, son numara, açık sorunlar). Bu dosya kısa kalır; uzun notlar `araclar/sunan/notlar.md` gibi kitaba özel dosyalara, Ahmet'in kendisinin bakacağı kararlar `GOZDEN.md`'ye gider.
 
 ## Durum
 

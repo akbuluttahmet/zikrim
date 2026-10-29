@@ -2,7 +2,7 @@
 
 Bu repoda çalışan her oturum (Claude Code, başka sohbetler) bu kurallara uyar. Kurallar Ahmet'indir; değiştirmeden önce ona sor.
 
-**Hadis çevirisi yapan oturum önce `SPEC.md`'yi (isnad/çeviri şartnamesi, örnekler, oturum akışı) ve `PROGRESS.md`'yi (durum, açık işler) okur.** Râvi veritabanı `araclar/ravi/ravi.json`, yayımlanmış verinin denetimi `python3 araclar/dogrula.py <kitaplık> --ravi`.
+**Hadis çevirisi yapan oturum önce `SPEC.md`'yi (isnad/çeviri şartnamesi, örnekler, oturum akışı) ve `PROGRESS.md`'yi (durum, açık işler) okur.** Ahmet'in kendisinin bakması gereken yerler (çeviri eksiği, dinî/metin kararları, aracın karar veremediği maddeler) `GOZDEN.md`'ye eklenir; oturum oraya yalnız ekler, maddeyi Ahmet kapatır. Râvi veritabanı `araclar/ravi/ravi.json`, yayımlanmış verinin denetimi `python3 araclar/dogrula.py <kitaplık> --ravi`.
 
 ## Uygulama
 
