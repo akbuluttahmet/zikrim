@@ -66,8 +66,22 @@ Bu repoda çalışan her oturum (Claude Code, başka sohbetler) bu kurallara uya
 
 - Şâmile 1726: Muhammed Muhyiddin Abdülhamîd tahkiki, el-Mektebetü’l-Asriyye, Sayda–Beyrut, 4 cilt. OpenITI `0275AbuDawudSijistani.Sunan.Shamela0001726-ara1`.
 - Veri `sunan/index.json` ve `sunan/tr/sNN.json` içindedir; Ebû Dâvûd’un Risâle ilâ ehli Mekke’sinden ayrı kitap olarak görünür. Neşrin 40 ana bölümü ve 1–5274 numaraları korunur; çevrilmeyen bölümlerde `t: 0` olur.
+- 2026-10-29’da önceki çeviri kaldırıldı; Sünen baştan, yukarıdaki isnad standardıyla (temiz sened, tahvîl yolları, râvi paneli `info`) çevriliyor. Bölümler tamamlandıkça açılır.
 - Çeviri durumu `index.json` dosyasındaki `t` alanlarıdır. Ebû Dâvûd’un metindeki sözleri, rivayet farkları ve alternatif senedler korunur. OpenITI’nin sayfa devamlarında tekrarladığı numaralar aynı hadiste birleştirilir; `ms…` ve sayfa işaretleri metne alınmaz. Modern `[حكم الألباني]` hüküm satırları çıkarılır; aralarındaki Ebû Dâvûd notları korunur. Numarasız deve yaşları açıklaması 1590.1 anahtarıyla ayrı müellif metnidir; 5274 hadis yanında bu metin de toplam madde sayısına girer. Sayfa sonuna bölünmüş bab başlıkları tamamlanır; maddesi olmayan üst başlık bir sonraki baba “—” ile bağlanır.
 - `python3 araclar/sunan.py KAYNAK --ceviri CEVIRI` kaynağı mevcut çevirilerle derler. Çeviri dosyası `N | sened | metin` satırlarıdır. JSONL girdisi için `--ceviri-jsonl DOSYA…` kullanılır; her satır `{n, sened, metin, bab_ar, bab_tr}` nesnesidir. Kaynak numaraları ve Arapça başlık eşleşmesi doğrulanır, yeni başlıklar `sunan/basliklar.json` içinde korunur. `--sirali` yeni çevirilerin yalnız baştan itibaren kesintisiz tamamlanan kısmını ekler; önceden yayımlanan İlim bölümü korunur. Kaynağın tam 40 bölüm ve sıralı 5274 hadis içermesi denetlenir. Bütün girdiler doğrulanmadan mevcut verilere dokunulmaz. Sonra normal kontrol ve havuz yenileme iş akışı uygulanır.
+
+## İsnad standardı (Sünen’le kuruldu; yeni ve yeniden çevrilen bütün kitaplarda uygulanır)
+
+- **Sened (2. alan) temizdir:** yalnız râvi adları ve `→`. Parantez yalnız metnin kendi açıklaması içindir (“يعني ابن محمد” → `Abdülazîz (b. Muhammed)`). Râvi notları ve lafız kayıtları sened satırına yazılmaz; râvi panelinin `n` notlarına gider.
+- Arapça zincirdeki her râvi aynı sırayla yazılır; düşürülmez, eklenmez, dışarıdan kimlik bilgisiyle tamamlanmaz (“حماد” → `Hammâd`). Belirsiz râvi: `bir adam`, `bir şeyh`, `X ya da Y`. `أبيه` → `babası`, `جده` → `dedesi`.
+- Merfû hadiste zincir sahâbîyle biter (Resûlullah ﷺ zincire yazılmaz), mürselde tâbiîyle, mevkûf/maktû‘da sözü söyleyenle.
+- **Tahvîl (ح):** her yol `; ayrıca ` ile ayrılmış TAM bir zincirdir (birleşme noktasından sonraki ortak kısım her yolda tekrar yazılır).
+- **Râvi paneli (5. alan, `info`):** `{c: [...], n: [...]}`.
+  - `c`: müellif ile başlayan `[isim, sîga, isim, sîga, …]`; tahvîlde zincirler dizisi `[[…], […]]` (sened satırındaki yollarla bire bir). Sîga, soldaki râvinin sağdakinden hangi lafızla aldığıdır.
+  - Sîgalar (yalnız bunlar, Arapçada ne yazıyorsa): haddesenâ (حدثنا/ثنا/نا), haddesenî, ahberanâ (أخبرنا/أنا), ahberanî, enbe’enâ, semi‘tü, semi‘a, an, enne, kâle, haddesehû, haddesehüm, ahberahû, ahberahüm. Anlamları `script.js` → `SIGA`.
+  - `n`: senedin içindeki râvi notları ve lafız kayıtları, Türkçe ve aynen (“Lafız Müsedded’indir.”, “İbn Hanbel, Atâ hakkında: ‘Onu iyi anlayamadım’ dedi.”). Yorum ve dışarıdan bilgi yok.
+- Uygulamada panel (`rvChains`) zinciri dikey çizer; tahvîlde her yolu ayrı, ortak kısmı “Yollar burada birleşir” başlığıyla bir kez gösterir. Akış ilk yolu çizer, altına “+ bir yoldan daha” yazar.
+- Sünen çeviri kılavuzu, isim sözlüğü ve denetim aracı oturum dosyalarındadır (kilavuz.md, sozluk.tsv, denetle.py, derle.py); Sünen bitince `araclar/sunan/` altına alınacak.
 
 ## Veri biçimi
 
