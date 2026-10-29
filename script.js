@@ -2503,7 +2503,10 @@ function update() {
     const box = cardsEl.querySelector(`[data-id="${CSS.escape(z.id)}"]`);
     if (!box) continue;
     box.classList.toggle('done', ok);
-    box.querySelector('.count-pill').textContent = `${ok ? '✓ ' : ''}${fmt(c)} / ${fmt(z.target)}`;
+    // Kartta sayı yazılmaz; ilerleme çubuktan görünür, tamamlanınca “Tamamladım” çıkar
+    const pill = box.querySelector('.count-pill');
+    pill.textContent = ok ? '✓ Tamamladım' : '';
+    pill.hidden = !ok;
     box.querySelector('.bar span').style.width = Math.min(100, c / z.target * 100) + '%';
     box.querySelector('.minus').disabled = c === 0;
   }
