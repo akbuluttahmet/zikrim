@@ -118,10 +118,54 @@ async function rows({ids, ts, ar}) {
     return {i, n: h[2], field, html};
   });
 }
+
+/* AI için bağımsız, salt okunur kaynak seçimi. D.h metinleri mevcut
+   kütüphane arama indeksinden gelir; ağdan yeni bir dinî kaynak eklenmez. */
+const AI_STOP = new Set(['ve','veya','ile','için','nasıl','nedir','ne','niçin','neden','hangi','göre','hakkında','bir','bu','şu','olan','olarak','mı','mi','mu','mü','da','de','ki','ile','bana','bunun','olur','olmalı','hükmü','hüküm','var','kaç','kim','den','dan','ise','anlat','açıkla','açıklaması','kaynak','hadis','hadisi']);
+async function aiSources({q}) {
+  await load();
+  const words = [...new Set(foldTr(String(q || '')).replace(/[^a-z0-9\s]/g, ' ').split(/\s+/).filter(w => w.length >= 3 && !AI_STOP.has(w)))].slice(0, 12);
+  if (!words.length) return [];
+  const candidates = [];
+  for (let i = 0; i < D.h.length; i++) {
+    const tr = TR[i] || '';
+    if (!tr) continue;
+    let hits = 0, first = -1, score = 0;
+    for (const w of words) {
+      const at = tr.indexOf(w);
+      if (at !== -1) {
+        hits++; score += 3 + (at < 160 ? 1 : 0);
+        if (first === -1 || at < first) first = at;
+      }
+    }
+    if (!hits) continue;
+    score += hits * hits * 2;
+    if (hits === words.length) score += 5;
+    if (candidates.length < 32 || score > candidates[candidates.length - 1].score) {
+      candidates.push({i, score, hits, first});
+      candidates.sort((a,b) => b.score - a.score || a.i - b.i);
+      if (candidates.length > 32) candidates.pop();
+    }
+  }
+  const minHits = words.length >= 3 ? 2 : 1;
+  let picked = candidates.filter(c => c.hits >= minHits).slice(0, 7);
+  // İki anahtar kelimeyi aynı kaynakta bulamıyorsak yalnız tek kelimelik
+  // zayıf eşleşmelerle uydurma cevap ürettirmeyiz.
+  if (!picked.length && words.length === 1) picked = candidates.slice(0, 5);
+  return picked.map(c => {
+    const h = D.h[c.i], lib = D.libs[h[0]];
+    const text = String(h[3] || '');
+    const start = Math.max(0, c.first - 220), end = Math.min(text.length, start + 1400);
+    return {id: String(c.i), v: lib[0], b: h[1], n: h[2],
+      label: lib[0] === 'usul' ? 'Usûlü’s-Sünne' : lib[0],
+      book: lib[1][h[1]] || '', excerpt: (start ? '… ' : '') + text.slice(start, end) + (end < text.length ? ' …' : '')};
+  });
+}
+
 self.onmessage = async e => {
   const {id, type} = e.data;
   try {
-    const res = type === 'q' ? await search(e.data) : type === 'rows' ? await rows(e.data) : (await load(), true);
+    const res = type === 'q' ? await search(e.data) : type === 'rows' ? await rows(e.data) : type === 'ai' ? await aiSources(e.data) : (await load(), true);
     self.postMessage({id, ok: true, res});
   } catch (err) { self.postMessage({id, ok: false, err: String(err && err.message || err)}); }
 };
