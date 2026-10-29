@@ -185,3 +185,8 @@
 - Metinde rakam: 20242 “25”, 20495 senedde “27”.
 - Sened (notlu): 20168, 20300 “ابن هشام”, 20345, 20438 “مسهر”, 20510 “شيبان بن سلمة”, 20576, 20623, 20628.
 - Bozuk/şüpheli (notlu): 20155, 20279, 20457, 20511 (eksik), 20542, 20545, 20618, 20622.
+
+## k16 Akîka (p248–p255, 24290–24740 civarı)
+- 24623 nüsha senedi. 24341 keler hadisi önceki babın sonunda (bab sırası kaynağa göre). 24435 Ebû Bekir'in metin içi notu çevrildi. 24698 “أمر رجلا” harfiyen (“emretti”, metinde böyle; “مر” olabilir).
+- Sened (notlu): 24340, 24395, 24396 (“هشام”), 24474, 24489, 24500, 24594 “ابن معاوية”, 24728.
+- Bozuk/şüpheli (notlu): 24301, 24305, 24371, 24374, 24378, 24384, 24430, 24482, 24494, 24512, 24530, 24557, 24576, 24590, 24675, 24723, 24732.

@@ -1,0 +1,292 @@
+@ Hırsızlık yapan, içki içen ve adam öldüren kişi hakkında
+
+28130 | Muhammed b. Bekr → İbn Cüreyc → Atâ | İbn Cüreyc dedi ki: Atâ şöyle derdi: “Eğer hırsızlık yapar, içki içer, sonra adam öldürürse o (ceza) öldürmedir; (eli) kesilmez, (içki) haddi de vurulmaz.”
+& haddesenâ, an, kâle
+^ قال: كان عطاء، يقول
+
+28131 | Muhammed b. Bekr → İbn Cüreyc → İbn Ebî Müleyke | İbn Cüreyc dedi ki: İbn Ebî Müleyke’yi şöyle derken işittim: “Ona hadler uygulanır, sonra öldürülür.”
+& haddesenâ, an, semi‘tü
+^ يقول: «يقام عليه الحدود
+
+28132 | Muhammed b. Bişr → Saîd b. Ebî Arûbe → Katâde → Hasan | Hasan dedi ki: “Ona hadler uygulanır, sonra öldürülür.”
+& haddesenâ, haddesenâ, an, an
+^ قال: «تقام عليه الحدود
+
+28133 | Muhammed b. Bişr → Saîd → Ebû Ma‘şer → İbrâhîm | İbrâhîm dedi ki: “İçlerinde öldürme bulunan hadler olursa, öldürme bunların hepsini kapsar.”
+& haddesenâ, haddesenâ, an, an
+^ قال: «إذا كانت حدود
+
+@ Eli kesilen hırsızdan çaldığı şeyin (bedelinin) istenmesi hakkında
+
+28134 | İbn İdrîs → Şeybânî → Şa‘bî | Şa‘bî dedi ki: “Adam hırsızlık yapar ve eli kesilir.” Dedi ki: “Yanında (çaldığı) şeyin aynısı bulunmadıkça ona bir şey yoktur.”
+& haddesenâ, an, an
+^ قال: «الرجل يسرق
+
+28135 | Hüşeym → Şeybânî → Şa‘bî | Şa‘bî hırsız hakkında dedi ki: “Eğer çalınan şey yanında aynen bulunursa ondan alınır ve eli kesilir. Eğer onu tüketmişse eli kesilir ve ona tazmin yoktur.” Hammâd ise dedi ki: “Ondan bunun (bedeli) istenir.”
+& haddesenâ, an, an
+^ قال في السارق: «إن
+
+28136 | Hafs → Şeybânî → Şa‘bî; ayrıca Hafs → Eş‘as → İbn Sîrîn | Şa‘bî ve İbn Sîrîn dediler ki: “Eli kesildiğinde, (çaldığı) şeyin aynısı bulunmadıkça ona bir şey yoktur.”
+& haddesenâ, an, an; haddesenâ, an, an
+^ قالا: «ليس عليه شيء
+
+28137 | Hüşeym → Mugîre → İbrâhîm; ayrıca Hüşeym → Eş‘as → İbn Sîrîn | (İbrâhîm ve İbn Sîrîn’den) bunun benzeri (rivayet edildi).
+& haddesenâ, an, an; haddesenâ, an, an
+^ مثله
+
+28138 | Dahhâk b. Mahled → İbn Cüreyc → Atâ | Atâ dedi ki: “Hırsıza, sağ eli kesildikten sonra tazmin ödetilmez; ancak çalınan şey aynen bulunursa ondan alınır.”
+& haddesenâ, an, an
+^ قال: «لا يغرم السارق
+
+28139 | Sehl b. Yûsuf → Amr → Hasan | Hasan’dan: “O, hırsıza, (eli) kesildikten sonra tazmin ödetirdi.”
+& haddesenâ, an, an
+^ «أنه كان يضمن
+
+28140 | Ebû Hâlid → Kureyş b. Hayyân el-İclî → Matar el-Verrâk | Matar el-Verrâk dedi ki: Saîd b. Cübeyr’e, bir şey çalıp eli kesilen adam soruldu: Çaldığı şeyi tazmin eder mi? Dedi ki: “Ceza olarak kesme yeter.”
+& haddesenâ, an, an
+% Ebû Hâlid, el-Ahmer değildir.
+^ قال: سئل سعيد بن جبير
+
+@ Hırsızlık yapan kaçak köle hakkında: Ona ne yapılır?
+
+28141 | İbnü’l-Mübârek → Ma‘mer → Zührî | Zührî dedi ki: Ömer b. Abdülazîz’in yanına girdim. Bana hırsızlık yapan kaçak kölenin (elinin) kesilip kesilmeyeceğini sordu. “Bu hususta bana bir şey ulaşmadı” dedim. Medine’ye geldiğimde Sâlim b. Abdullah ile karşılaştım; bana şunu haber verdi: “Abdullah b. Ömer, hırsızlık yapan kaçak bir kölesinin elini kesti.”
+& haddesenâ, an, an
+^ قال: دخلت على عمر
+
+28142 | Hafs → Haccâc → Nâfi‘ → İbn Ömer | İbn Ömer, hırsızlık yapan kaçak köle hakkında dedi ki: “(Eli) kesilir.”
+& haddesenâ, an, an, an
+^ في العبد الآبق يسرق
+
+28143 | Vekî‘ → İsrâîl → Câbir → Âmir | Âmir dedi ki: “(Eli) kesilir.”
+& haddesenâ, an, an, an
+^ قال: «يقطع»
+
+28144 | Fadl b. Dükeyn → Hasan b. Sâlih → İbrâhîm b. Âmir | İbrâhîm b. Âmir’den: Ömer b. Abdülazîz bunu Urve’ye sordu; o da: “(Eli) kesilir” dedi.
+& haddesenâ, an, an
+^ أن عمر بن عبد العزيز، سأل
+
+28145 | Esved b. Âmir → Hammâd b. Seleme → Yahyâ b. Saîd | Yahyâ b. Saîd’den: Ömer b. Abdülazîz ile Kâsım dediler ki: “Kaçak köle hırsızlık yaparsa (eli) kesilir.”
+& haddesenâ, an, an
+^ أن عمر بن عبد العزيز، والقاسم
+
+28146 | Mahbûb el-Kavârîrî → Süfyân → Hâlid el-Hazzâ → Hasan | Hasan’dan: Ona hırsızlık yapan kaçak köle soruldu: Eli kesilir mi? Dedi ki: “Evet.”
+& haddesenâ, an, an, an
+^ سئل عن العبد
+
+@ Kaçaklığı sırasında hırsızlık yaparsa (eli) kesilmez diyenler
+
+28147 | Yahyâ b. Saîd → Süfyân → Amr → Mücâhid → İbn Abbâs | İbn Abbâs dedi ki: “Kaçak köle, kaçaklığı sırasında hırsızlık yaparsa (eli) kesilmez.”
+& haddesenâ, an, an, an, an
+^ قال: «لا يقطع العبد
+
+28148 | Vekî‘ → İbn Ebî Zi’b → Zührî | Zührî dedi ki: Osman ve Mervân: “(Eli) kesilmez” derlerdi.
+& haddesenâ, an, an
+^ قال: كان عثمان
+
+28149 | Hammâd b. Hâlid → İbn Ebî Zi’b → Zührî | Zührî’den: Osman, Ömer b. Abdülazîz ve Mervân, “hırsızlık yaptığında kaçak kölenin (elini) kesmezlerdi.”
+& haddesenâ, an, an
+^ أن عثمان، وعمر
+
+28150 | İbn İdrîs → Ubeydullah ve Yahyâ → Nâfi‘ | Nâfi‘ dedi ki: İbn Ömer’in bir kölesi hırsızlık yaptı. (İbn Ömer) onu Saîd b. el-Âs’a gönderdi ve: “Bu, hırsızlık yaptı” dedi. Dedi ki: “Öyleyse onu kes.” Dedi ki: “Kaçak köle(nin eli) kesilmez.”
+& haddesenâ, an, an
+^ قال: سرق عبد
+
+28151 | Ubeydullah → Hanzala → Sâlim → Âişe | Âişe dedi ki: “Ona kesme yoktur.”
+& haddesenâ, an, an, an
+^ قالت: «ليس عليه قطع»
+
+@ Hırsızlık yapan ya da hadlik suç işleyen çocuk hakkında
+
+28152 | Şerîk → Ebû Hasîn → Abdullah | Abdullah dedi ki: Osman’a hırsızlık yapmış bir çocuk getirildi. Dedi ki: “İzarının altına bakın, (kılları) bitmiş mi?”
+& haddesenâ, an, an
+^ قال: أتي عثمان بغلام
+
+28153 | Vekî‘ → Süfyân ve Mesrûk → Ebû Hasîn → Abdullah b. Ubeyd b. Umeyr → Osman | (Osman’dan) bunun benzeri (rivayet edildi).
+& haddesenâ, an, an, an, an
+% Arapçada ad böyle yazılıdır: “ومسروق” (metinde böyle).
+^ بمثله
+
+28154 | İbn Uleyye → İsmâîl b. Ümeyye → Yahyâ | Yahyâ dedi ki: Bizden bir çocuk, bir şiirde bir kadınla (ilişkisi olduğunu) iddia etti. Ömer’e götürüldü. (Ömer) onun hakkında şüpheye düştü ve onun (kıllarının) bitmiş olduğunu görmedi. Dedi ki: “(Kıllarının) bitmiş olduğunu görseydim sana celde vururdum” ya da “sana had uygulardım.”
+& haddesenâ, an, an
+^ قال: ابتهر غلام
+
+28155 | Mervân b. Muâviye → Humeyd → Enes | Enes’ten: “Ebû Bekir’e hırsızlık yapmış bir çocuk getirildi. Bulûğa erdiği belli olmadı. Onu karışla ölçtü, bir parmak boğumu eksik geldi. Onu bıraktı ve elini kesmedi.”
+& haddesenâ, an, an
+^ «أن أبا بكر أتي
+
+28156 | Zeyd b. el-Hubâb → Hammâd b. Seleme → Katâde → Hılâs → Ali | Ali dedi ki: “Çocuk bulûğa erdiğinde.” (metinde böyle)
+& haddesenâ, an, an, an, an
+^ قال: «إذا بلغ الغلام»
+
+28157 | Muhammed b. Bekr → İbn Cüreyc → İbn Ebî Müleyke | İbn Ebî Müleyke dedi ki: İbnü’z-Zübeyr’e, Ömer b. Ebî Rebîa’nın hırsızlık yapmış bir kölesi getirildi. Emretti, karışla ölçüldü; o, küçük bir hizmetçiydi. Altı karışa ulaştı; bunun üzerine elini kesti.
+& haddesenâ, an, an
+^ قال: أتي ابن الزبير
+
+28158 | İbn Mehdî → Hemmâm → Katâde | Katâde’den: “Ömer b. Abdülazîz ile Hasan, çocuk bulûğa ermedikçe ona had uygulamazlardı.”
+& haddesenâ, an, an
+^ «أن عمر بن عبد العزيز، والحسن
+
+28159 | Muhammed b. Bekr → İbn Cüreyc → Atâ | Atâ, hırsızlık yapan çocuk hakkında dedi ki: “Bulûğa ermedikçe ona kesme yoktur.” Amr b. Dînâr da dedi ki: “Ona kesme gerektiğini görmüyorum.”
+& haddesenâ, an, an
+^ في الصبي يسرق
+
+28160 | Fadl b. Dükeyn → Hasan → Mansûr → İbrâhîm | İbrâhîm dedi ki: “Akıl erdirmedikçe (eli) kesilmez.” Bulûğa ermeyi kastediyor.
+& haddesenâ, an, an, an
+^ قال: «لا يقطع حتى يعقل»
+
+28161 | Muhammed b. Bekr → İbn Cüreyc → Süleymân b. Mûsâ | Süleymân b. Mûsâ dedi ki: “Bulûğa ermemiş kimseye had de kısas da yoktur.”
+& haddesenâ, an, an
+^ قال: «لا حد ولا قود
+
+28162 | Abde b. Süleymân → Yahyâ → Süleymân b. Yesâr | Süleymân b. Yesâr dedi ki: “Ömer’e hırsızlık yapmış bir çocuk getirildi. Emretti, karışla ölçüldü; altı karıştan bir parmak boğumu eksik bulundu. Onu bıraktı. Bu yüzden çocuğa Nümeyle adı verildi.”
+& haddesenâ, an, an
+^ قال: «أتي عمر بغلام
+
+@ Hadlik suç işleyen kız çocuğu hakkında gelenler
+
+28163 | Vekî‘ → Mis‘ar → Kâsım | Kâsım dedi ki: “Abdullah’a, hırsızlık yapmış, henüz hayız görmemiş bir kız getirildi; onun elini kesmedi.”
+& haddesenâ, an, an
+^ قال: «أتي عبد الله بجارية
+
+28164 | Abde b. Süleymân → Saîd → Ebû Ma‘şer → İbrâhîm | İbrâhîm, evlendirilip kendisiyle gerdeğe girilen, sonra hayâsızlık yapan kız hakkında dedi ki: “Hayız görmedikçe ona had yoktur.”
+& haddesenâ, an, an, an
+^ قال في الجارية تزوج
+
+28165 | Gunder → Şu‘be → Hakem | Hakem dedi ki: “Kız, hayız görmedikçe ona had yoktur.”
+& haddesenâ, an, an
+^ قال: «ليس على الجارية حد حتى تحيض»
+
+28166 | Abdüla‘lâ ve Ma‘mer → Zührî | Zührî dedi ki: “Kız, hayız görmedikçe ya da yaşıtları hayız görmedikçe ona had yoktur.”
+& haddesenâ, an
+% Arapçada ad böyle yazılıdır: “عبد الأعلى، ومعمر” (metinde böyle).
+^ قال: «ليس على الجارية حد حتى تحيض أو
+
+28167 | Yezîd b. Hârûn → Cüveybir → Dahhâk | Dahhâk dedi ki: “Kız, hayız görmedikçe ya da yaşıtları hayız görmedikçe ona had yoktur.”
+& haddesenâ, an, an
+^ قال: «ليس على الجارية حد حتى تحيض أو
+
+28168 | Yezîd b. Hârûn → Yahyâ b. Saîd → Ebû Bekir b. Amr b. Hazm | Ebû Bekir b. Amr b. Hazm’dan: “Ona bulûğa ermemiş bir kız getirildi. (Kız) bir oğlan çocuğunu alıp öldürmüş ve üzerindekini saklamıştı. Onun büyüklerin hilesi gibi bir hile yaptığını görünce emretti ve (kız) öldürüldü.”
+& haddesenâ, an, an
+^ «أنه أتي بجارية
+
+@ Çocuğa haddi gerekli kılan şey hakkında gelenler
+
+28169 | Îsâ b. Yûnus → Ebû Bekir → Mekhûl | Ebû Bekir dedi ki: Mekhûl’ü şöyle derken işittim: “Çocuk on beş yaşına ulaşınca şahitliği geçerli olur ve ona hadler gerekir.”
+& haddesenâ, an, semi‘tü
+^ يقول: «إذا بلغ الغلام
+
+@ Defalarca hırsızlık yapan, zina eden ve içki içen adam hakkında: Ona ne gerekir?
+
+28170 | Cerîr → Mugîre → İbrâhîm | İbrâhîm dedi ki: “Defalarca hırsızlık yaparsa yalnız bir el kesilir. Defalarca içki içerse ve defalarca zina iftirasında bulunursa ona yalnız bir had vardır.”
+& haddesenâ, an, an
+^ قال: «إذا سرق مرارا،
+
+28171 | Sehl b. Yûsuf → Amr → Hasan | Hasan, bir kadınla ya da kadınlardan daha fazlasıyla birden çok kez zina etmişken yakalanan adam hakkında dedi ki: “Ona bir had vardır. Defalarca hırsızlık yapmışken yakalanan hırsız da böyledir.”
+& haddesenâ, an, an
+^ في الرجل يؤخذ
+
+28172 | Hafs → Eş‘as → İbn Sîrîn | İbn Sîrîn dedi ki: (Şöyle) derdi ya da (şöyle) denirdi: “Adam ayrı ayrı (kişilerden) hırsızlık yapar, sonra (eli) birisi için kesilirse, bu hepsi için olur.”
+& haddesenâ, an, an
+^ قال: كان يقول أو يقال
+
+28173 | Abdüssamed b. Abdülvâris → Hişâm ed-Destüvâî → Hammâd | Hammâd dedi ki: “Defalarca hırsızlık yapar da ancak sonra onu yakalayabilirlerse yalnız bir el kesilir.”
+& haddesenâ, an, an
+^ قال: «إذا سرق مرارا، فلم
+
+28174 | İbn İdrîs → Eş‘as → İbn Sîrîn | İbn Sîrîn dedi ki: “Ayrı ayrı (kişilerden) hırsızlık yapar da bazıları için (eli) kesilirse, yeni bir hırsızlık yapmadıkça artık kesilmez.”
+& haddesenâ, an, an
+^ قال: «إذا سرق من شتى فقطع
+
+28175 | Ömer → İbn Cüreyc → Atâ | Atâ dedi ki: “Hırsızlık yapar, sonra (yine) hırsızlık yapar, sonra (hâkime) getirilirse bir had (vardır). Zinada da böyledir.”
+& haddesenâ, an, an
+^ قال: «إذا سرق ثم سرق
+
+28176 | Muhammed b. Bekr → İbn Cüreyc → İbn Şihâb | İbn Cüreyc dedi ki: İbn Şihâb, hırsızlık yapan, sonra aleyhine daha önce de defalarca hırsızlık yaptığına şahitlik edilen ve cezasından (bir şeyi) itiraf eden adam hakkında dedi ki: “Eli kesilir.” İbn Şihâb, zina eden ve aleyhine şahitlik edilen ya da bunu itiraf eden adam hakkında da dedi ki: “Ona bir had uygulanır.”
+& haddesenâ, an, kâle
+^ قال: قال ابن شهاب
+
+@ Had gerektiren bir şeyi ikrar eden köle hakkında: Bu onun aleyhine geçerli olur mu?
+
+28177 | Hüşeym → Ebû Hurre → Hasan | Hasan dedi ki: “Kölenin, kendisine uygulanacak bir haddi ikrarı geçerlidir. Boynunun gitmesine sebep olacak ne ikrar ederse o ise geçerli değildir.”
+& haddesenâ, an, an
+^ قال: «يجوز إقرار العبد
+
+28178 | İbn Ayyâş → A‘meş → Ebû İshâk | Ebû İshâk’tan: “Bir köle Şüreyh’in yanında hırsızlığı ikrar etti; (Şüreyh) onun elini kesmedi.”
+& haddesenâ, an, an
+^ «أن عبدا أقر
+
+28179 | Vekî‘ → Süfyân → Câbir ve Ubeydullah b. Mûsâ → Şa‘bî | Şa‘bî dedi ki: “Hırsızlığı ikrar eden köleye kesme yoktur.”
+& haddesenâ, an, an, an
+^ أنه، قال: «ليس على العبد
+
+28180 | Dahhâk b. Mahled → İbn Cüreyc → Süleymân b. Mûsâ | Süleymân b. Mûsâ dedi ki: “Kölenin itirafı geçerli değildir.”
+& haddesenâ, an, an
+^ قال: «لا يجوز اعتراف
+
+28181 | Vekî‘ → İsrâîl → Câbir → Ebü’d-Duhâ ve Şa‘bî | Ebü’d-Duhâ ve Şa‘bî dediler ki: “Köleye itirafla had uygulanmaz; ancak delille (uygulanır).”
+& haddesenâ, an, an, an
+^ قالا: «لا يقام على العبد
+
+28182 | Muâz → Eş‘as → Hasan | Hasan’dan: O şöyle derdi: “Kölenin kendi aleyhine ikrarı, cana varan (bir şeyde) olursa, hata yoluyla da kasıt yoluyla da geçerli değildir.”
+& haddesenâ, an, an
+^ أنه كان يقول: «لا يجوز
+
+28183 | Yezîd b. Hârûn → Ebû Mâlik el-Eşcaî → Hürmüz’ün ailesi ve kabile halkı → Hürmüz | Hürmüz’den: Ali’ye geldi ve: “Ben hadlik bir suç işledim” dedi. (Ali): “Allah’a tövbe et ve (bunu) ört” dedi. “Ey mü’minlerin emîri, beni temizle” dedi. (Ali) dedi ki: “Ey Kanber, ona haddi vur; fakat o kendi kendine had vurdurur, seni durdurursa dur.” O, bir köleydi.
+& haddesenâ, an, haddesenî, an
+^ أنه أتى عليا
+
+@ Hırsızlıkta yakalanırsa (eli) kesilir mi kesilmez mi, söyledikleri
+
+28184 | Hüşeym → Ebû Bişr → Yûsuf b. Mâhek | Yûsuf b. Mâhek’ten: Mekke ehlinden birinin kölesi, Safvân b. Ümeyye’nin bir ridâsını çaldı. (Safvân) onu Nebî’ye ﷺ getirdi; (Nebî) elinin kesilmesini emretti. (Safvân): “Ey Allah’ın Resûlü, benim elbisem yüzünden mi onun elini kesiyorsun?” dedi. Buyurdu ki: “Bana getirmeden önce (affetseydin) ya!”
+& haddesenâ, an, an
+^ أن عبدا لبعض
+
+28185 | Abdürrahîm b. Süleymân → Abdülmelik b. Ebî Süleymân → Atâ | Atâ, hırsızlık yapan köle hakkında dedi ki: “(Eli) kesilir.”
+& haddesenâ, an, an
+^ في العبد يسرق، قال
+
+28186 | Muhammed b. Bekr → İbn Cüreyc → Ebû Bekir b. Abdullah → Ebü’z-Zinâd → Abdullah b. Âmir | Abdullah b. Âmir’den: Ebû Bekir “hırsızlık yapan bir kölenin elini kesti.”
+& haddesenâ, an, ahberanî, an, ahberahû
+^ أن أبا بكر: «قطع
+
+@ Bir adamın aleyhine zina hususunda şahitlik eden ve adil oldukları tespit edilemeyen dört kişi hakkında
+
+28187 | Hişâm → İsmâîl → Şa‘bî | Şa‘bî, bir adamın aleyhine zina hususunda şahitlik eden ve içlerinden biri adil olmayan dört kişi hakkında dedi ki: “Onlardan had kaldırılır; çünkü onlar dört kişidir.”
+& haddesenâ, an, an
+^ في أربعة شهدوا
+
+28188 | İbn Fudayl → Eş‘as → Şa‘bî | Şa‘bî dedi ki: “Dört kişi zina hususunda şahitlik eder, sonra adil olmadıkları anlaşılırsa onlara celde vurmam.”
+& haddesenâ, an, an
+^ قال: «إذا شهد أربعة
+
+28189 | Muhammed b. Abdullah el-Ensârî → Eş‘as → Hasan | Hasan dedi ki: “Dört kişi bir adamın aleyhine zina hususunda şahitlik eder de adil oldukları tespit edilemezse onlardan had kaldırılır ve hiçbirine celde vurulmaz.”
+& haddesenâ, an, an
+^ قال: «إذا شهدوا أربعة
+
+@ Hırsızlığı ikrar eden adam hakkında: Kaç kez geri çevrilir?
+
+28190 | Ebü’l-Ahvas → A‘meş → Kâsım b. Abdurrahmân → babası | Kâsım b. Abdurrahmân’ın babası dedi ki: Ali’nin yanında oturuyordum. Bir adam geldi ve: “Ey mü’minlerin emîri, ben hırsızlık yaptım” dedi. (Ali) onu azarladı. Sonra ikinci kez geldi ve: “Ben hırsızlık yaptım” dedi. Ali ona: “Kendi aleyhine iki şahitlikte bulundun” dedi. (Babası) dedi ki: Emretti ve eli kesildi. Onu asılı gördüm; boynunda (asılı) demek istiyor.
+& haddesenâ, an, an, an
+^ قال: كنت قاعدا
+
+28191 | Humeyd b. Abdurrahmân → Hasan b. Sâlih → Gâlib Ebü’l-Hüzeyl → Sübey‘ Ebû Sâlim | Gâlib Ebü’l-Hüzeyl dedi ki: Sübey‘ Ebû Sâlim’i şöyle derken işittim: Hasan b. Ali’nin yanında bulundum; hırsızlığı ikrar eden bir adam getirildi. Hasan ona: “Belki onu kapıp kaçırmışsındır” dedi; “Hayır” desin diye. Sonunda onun yanında iki ya da üç kez ikrar etti; emretti ve (eli) kesildi.
+& haddesenâ, an, an, semi‘tü
+^ يقول: شهدت الحسن
+
+28192 | Muhammed b. Bekr → İbn Cüreyc → Atâ | İbn Cüreyc dedi ki: Atâ’ya: “Bir adam, kendi aleyhine bir kez hırsızlık yaptığına şahitlik etti” dedim. Dedi ki: “(Bu) ona yeter.”
+& haddesenâ, an, kâle
+^ قال: قلت لعطاء
+
+@ Bir topluluğun hepsine birden zina iftirasında bulunan adam hakkında
+
+28193 | İbn İdrîs → Şeybânî → Şa‘bî; ayrıca İbn İdrîs → Hişâm → Hasan | Şa‘bî ve Hasan dediler ki: “Bir topluluğa hep birlikte zina iftirasında bulunursa bir had vurulur. Ayrı ayrı iftirada bulunursa her biri için bir had vurulur.”
+& haddesenâ, an, an; haddesenâ, an, an
+^ أنهما قالا
+
+28194 | Abdüla‘lâ → Yûnus → Hasan | Hasan, bir topluluğun hepsine birden zina iftirasında bulunan adam hakkında (dedi ki): “Her biri için bir had vurulur.”
+& haddesenâ, an, an
+^ في الرجل يقذف القوم جميعا
+
+28195 | Abde b. Süleymân → Saîd → Ebû Ma‘şer → İbrâhîm | İbrâhîm, bir topluluğa onlar bir aradayken tek bir iftirayla zina iftirasında bulunan adam hakkında dedi ki: “Ona bir had vardır.” Katâde ise Hasan’dan (şunu nakletti): Onlardan her adam için bir had (vardır).
+& haddesenâ, an, an, an
+^ في الرجل يقذف القوم مجتمعين
