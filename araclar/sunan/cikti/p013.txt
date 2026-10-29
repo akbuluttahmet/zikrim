@@ -1,0 +1,275 @@
+@ Tekbiri tam yapma babı
+837 | Muhammed b. Beşşâr ve İbnü’l-Müsennâ → Ebû Dâvûd → Şu‘be → Hasan b. İmrân → İbn Abdurrahmân b. Ebzâ → babası | İbn Abdurrahmân b. Ebzâ’nın babasından: Kendisi Resûlullah ﷺ ile namaz kıldı; (Resûlullah) tekbiri tam yapmazdı. Ebû Dâvûd dedi ki: Bunun manası şudur: Başını rükûdan kaldırıp secde etmek istediğinde tekbir almaz, secdeden kalktığında da tekbir almazdı. Ebû Dâvûd dedi ki: (Hasan b. İmrân) Ebû Abdullah el-Askalânî’dir.
+& haddesenâ, haddesenâ, haddesenâ, an, an, an
+% İbn Beşşâr, Hasan b. İmrân için “eş-Şâmî” dedi.
+^ صلى مع رسول الله صلى الله
+@ Dizlerin ellerden önce nasıl konulacağı babı
+838 | Hasan b. Ali ve Hüseyin b. Îsâ → Yezîd b. Hârûn → Şerîk → Âsım b. Küleyb → babası → Vâil b. Hucr | Vâil b. Hucr dedi ki: Nebî’yi ﷺ gördüm; secde ettiğinde dizlerini ellerinden önce koyar, kalktığında da ellerini dizlerinden önce kaldırırdı.
+& haddesenâ, haddesenâ, ahberanâ, an, an, an
+^ «رأيت النبي صلى الله عليه
+839 | Muhammed b. Ma‘mer → Haccâc b. Minhâl → Hemmâm → Muhammed b. Cuhâde → Abdülcebbâr b. Vâil → babası | Abdülcebbâr b. Vâil’in babası, Nebî’nin ﷺ namazı hakkındaki hadisi zikretti; dedi ki: Secde ettiğinde, avuçları yere değmeden önce dizleri yere değdi. Hemmâm dedi ki: Bana Şakîk de rivayet etti; dedi ki: Bana Âsım b. Küleyb, babasından, o da Nebî’den ﷺ bunun benzerini rivayet etti. İkisinden birinin hadisinde —en kuvvetli kanaatim, Muhammed b. Cuhâde’nin hadisinde olduğudur—: “Kalktığında dizleri üzerine kalkar ve uyluğuna dayanırdı” (sözü vardır).
+& haddesenâ, haddesenâ, haddesenâ, haddesenâ, an, an
+^ أن النبي صلى الله عليه
+840 | Saîd b. Mansûr → Abdülazîz b. Muhammed → Muhammed b. Abdullah b. Hasan → Ebü’z-Zinâd → A‘rec → Ebû Hüreyre | Ebû Hüreyre dedi ki: Resûlullah ﷺ şöyle buyurdu: “Biriniz secde ettiğinde devenin çöktüğü gibi çökmesin; ellerini dizlerinden önce koysun.”
+& haddesenâ, haddesenâ, haddesenî, an, an, an
+^ قال رسول الله صلى الله عليه
+841 | Kuteybe b. Saîd → Abdullah b. Nâfi‘ → Muhammed b. Abdullah b. Hasan → Ebü’z-Zinâd → A‘rec → Ebû Hüreyre | Ebû Hüreyre dedi ki: Resûlullah ﷺ şöyle buyurdu: “Biriniz namazında kalkışıp da erkek devenin çöktüğü gibi mi çöküyor?”
+& haddesenâ, haddesenâ, an, an, an, an
+^ قال رسول الله صلى الله عليه
+@ Tek rekâtlarda (secdeden) kalkış babı
+842 | Müsedded → İsmâîl (b. İbrâhîm) → Eyyûb → Ebû Kılâbe → Ebû Süleymân Mâlik b. el-Huveyris | Ebû Kılâbe dedi ki: Ebû Süleymân Mâlik b. el-Huveyris mescidimize, yanımıza geldi ve dedi ki: “Vallahi ben size namaz kıldırıyorum; namaz kılmak istediğim için değil, fakat Resûlullah’ı ﷺ nasıl namaz kılarken gördüysem size göstermek istiyorum.” (Eyyûb) dedi ki: Ebû Kılâbe’ye: “Nasıl kıldı?” dedim. Dedi ki: “Şu şeyhimizin —yani imamları Amr b. Seleme’nin— namazı gibi.” (Ebû Kılâbe) onun, birinci rekâtta son secdeden başını kaldırdığında oturduğunu, sonra kalktığını zikretti.
+& haddesenâ, haddesenâ, an, an, kâle
+^ جاءنا أبو سليمان مالك بن الحويرث
+843 | Ziyâd b. Eyyûb → İsmâîl → Eyyûb → Ebû Kılâbe → Ebû Süleymân Mâlik b. el-Huveyris | Ebû Kılâbe dedi ki: Ebû Süleymân Mâlik b. el-Huveyris mescidimize, yanımıza geldi ve dedi ki: “Vallahi ben namaz kılıyorum; namaz kılmak istediğim için değil, fakat Resûlullah’ı ﷺ nasıl namaz kılarken gördüysem size göstermek istiyorum.” Dedi ki: Birinci rekâtta son secdeden başını kaldırdığında oturdu.
+& haddesenâ, haddesenâ, an, an, kâle
+^ جاءنا أبو سليمان مالك بن الحويرث
+844 | Müsedded → Hüşeym → Hâlid → Ebû Kılâbe → Mâlik b. el-Huveyris | Mâlik b. el-Huveyris’ten: Nebî’yi ﷺ, namazının tek (rekâtında) olduğunda, dosdoğru oturmadıkça kalkmazken gördü.
+& haddesenâ, haddesenâ, an, an, an
+^ رأى النبي صلى الله عليه وسلم
+@ İki secde arasında ik‘â babı
+845 | Yahyâ b. Maîn → Haccâc b. Muhammed → İbn Cüreyc → Ebü’z-Zübeyr → Tâvûs → İbn Abbâs | Tâvûs dedi ki: İbn Abbâs’a secdede ayaklar üzerine ik‘â hakkında (sorduk); “O sünnettir” dedi. Dedik ki: “Biz onu kişi için bir kabalık sayıyoruz.” İbn Abbâs: “O, Peygamberinin ﷺ sünnetidir” dedi.
+& haddesenâ, haddesenâ, an, ahberanî, semi‘a, kâle
+^ قلنا لابن عباس: في الإقعاء
+@ Rükûdan başını kaldırınca söylenecek söz babı
+846 | Muhammed b. Îsâ → Abdullah b. Nümeyr ve Ebû Muâviye ve Vekî‘ ve Muhammed b. Ubeyd → A‘meş → Ubeyd b. el-Hasan → Abdullah b. Ebî Evfâ | Abdullah b. Ebî Evfâ dedi ki: Resûlullah ﷺ başını rükûdan kaldırdığında şöyle derdi: “Allah kendisine hamdedeni işitti. Allah’ım! Rabbimiz! Göklerin dolusu, yerin dolusu ve bundan sonra dilediğin şeyin dolusu hamd sanadır.” Ebû Dâvûd dedi ki: Süfyân es-Sevrî ve Şu‘be b. el-Haccâc, Ubeyd Ebü’l-Hasan’dan (rivayet ettiler); bu hadiste “rükûdan sonra” (ifadesi) yoktur. Süfyân dedi ki: Daha sonra şeyh Ubeyd Ebü’l-Hasan ile karşılaştık; bu hadiste “rükûdan sonra” demedi. Ebû Dâvûd dedi ki: Bunu Şu‘be, Ebû Isme’den, o A‘meş’ten, o da Ubeyd’den rivayet etti ve “rükûdan sonra” dedi.
+& haddesenâ, haddesenâ, an, an, semi‘tü
+^ كان رسول الله صلى الله عليه
+847 | Müemmel b. el-Fadl el-Harrânî → Velîd → Saîd b. Abdülazîz → Atıyye b. Kays → Kaz‘a b. Yahyâ → Ebû Saîd el-Hudrî; ayrıca Mahmûd b. Hâlid → Ebû Müshir → Saîd b. Abdülazîz → Atıyye b. Kays → Kaz‘a b. Yahyâ → Ebû Saîd el-Hudrî; ayrıca İbnü’s-Serh → Bişr b. Bekr → Saîd b. Abdülazîz → Atıyye b. Kays → Kaz‘a b. Yahyâ → Ebû Saîd el-Hudrî; ayrıca Muhammed b. Mus‘ab → Abdullah b. Yûsuf → Saîd b. Abdülazîz → Atıyye b. Kays → Kaz‘a b. Yahyâ → Ebû Saîd el-Hudrî | Ebû Saîd el-Hudrî’den: Resûlullah ﷺ “Allah kendisine hamdedeni işitti” dediğinde şöyle derdi: “Allah’ım! Rabbimiz! Göğün dolusu —Müemmel: ‘Göklerin dolusu ve yerin dolusu’ dedi— ve bundan sonra dilediğin şeyin dolusu hamd sanadır. Ey övgüye ve yüceliğe lâyık olan! (Bu,) kulun söylediğinin en lâyık olanıdır; hepimiz de sana kuluz. Senin verdiğine engel olacak yoktur —Mahmûd: ‘Senin engellediğini verecek de yoktur’ sözünü ekledi; sonra (hepsi) ittifak ettiler—. Servet sahibine, senin katında serveti fayda vermez.” Bişr ise “Rabbimiz! Hamd sanadır” dedi; “Allah’ım” demedi. Mahmûd da “Allah’ım” demedi; “Rabbimiz! Hamd de sanadır” dedi.
+& haddesenâ, haddesenâ, an, an, an, an; haddesenâ, haddesenâ, an, an, an, an; haddesenâ, haddesenâ, an, an, an, an; haddesenâ, haddesenâ, an, an, an, an
+^ أن رسول الله صلى الله عليه
+848 | Abdullah b. Mesleme → Mâlik → Sümey → Ebû Sâlih es-Semmân → Ebû Hüreyre | Ebû Hüreyre’den: Resûlullah ﷺ şöyle buyurdu: “İmam ‘Allah kendisine hamdedeni işitti’ dediğinde, siz ‘Allah’ım! Rabbimiz! Hamd sanadır’ deyin. Çünkü kimin sözü meleklerin sözüne denk gelirse, geçmiş günahları bağışlanır.”
+& haddesenâ, an, an, an, an
+^ أن رسول الله صلى الله عليه
+849 | Bişr b. Ammâr → Esbât → Mutarrif → Âmir | Âmir dedi ki: “İmamın arkasındaki cemaat ‘Allah kendisine hamdedeni işitti’ demez; fakat ‘Rabbimiz! Hamd sanadır’ derler.”
+& haddesenâ, haddesenâ, an, an
+^ لا يقول القوم خلف الإمام
+@ İki secde arasında dua babı
+850 | Muhammed b. Mes‘ûd → Zeyd b. el-Hubâb → Kâmil Ebü’l-Alâ → Habîb b. Ebî Sâbit → Saîd b. Cübeyr → İbn Abbâs | İbn Abbâs’tan: Nebî ﷺ iki secde arasında şöyle derdi: “Allah’ım! Beni bağışla, bana merhamet et, bana âfiyet ver, beni hidayete erdir ve beni rızıklandır.”
+& haddesenâ, haddesenâ, haddesenâ, haddesenî, an, an
+^ أن النبي صلى الله عليه
+@ Kadınların, erkeklerle birlikte (namazda) olduklarında başlarını secdeden kaldırmaları babı
+851 | Muhammed b. el-Mütevekkil el-Askalânî → Abdürrezzâk → Ma‘mer → Abdullah b. Müslim → Esmâ bt. Ebî Bekir’in bir mevlâsı → Esmâ bt. Ebî Bekir | Esmâ bt. Ebî Bekir dedi ki: Resûlullah’ı ﷺ şöyle buyururken işittim: “Sizden (kadınlardan) Allah’a ve âhiret gününe iman eden, erkekler başlarını kaldırmadıkça başını kaldırmasın; erkeklerin avret yerlerinden bir şey görmeleri hoş görülmediği için.”
+& haddesenâ, haddesenâ, enbe’enâ, an, an, an
+% Abdullah b. Müslim, Zührî’nin kardeşidir.
+^ سمعت رسول الله صلى الله عليه
+@ Rükûdan kalkınca ve iki secde arasında uzun durma babı
+852 | Hafs b. Ömer → Şu‘be → Hakem → İbn Ebî Leylâ → Berâ | Berâ’dan: Resûlullah’ın ﷺ secdesi, rükûu, oturuşu ve iki secde arası (süre bakımından) birbirine yakındı.
+& haddesenâ, haddesenâ, an, an, an
+^ أن رسول الله صلى الله عليه
+853 | Mûsâ b. İsmâîl → Hammâd → Sâbit ve Humeyd → Enes b. Mâlik | Enes b. Mâlik dedi ki: “Tam olmakla birlikte, namazı Resûlullah’ınkinden ﷺ daha kısa olan hiçbir adamın arkasında namaz kılmadım. Resûlullah ﷺ ‘Allah kendisine hamdedeni işitti’ dediğinde, biz ‘Yanıldı’ diyecek kadar ayakta dururdu; sonra tekbir alır ve secde ederdi. İki secde arasında da biz ‘Yanıldı’ diyecek kadar otururdu.”
+& haddesenâ, haddesenâ, ahberanâ, an
+^ ما صليت خلف رجل أوجز
+854 | Müsedded ve Ebû Kâmil → Ebû Avâne → Hilâl b. Ebî Humeyd → Abdurrahmân b. Ebî Leylâ → Berâ b. Âzib | Berâ b. Âzib dedi ki: “Namazda Muhammed’i ﷺ —Ebû Kâmil’in rivayetinde: Resûlullah’ı ﷺ— gözetledim. Kıyamını rükûu gibi; secdesini ve rükûdaki doğrulmasını secdesi gibi; iki secde arasındaki oturuşunu ve selâm ile (namazdan) ayrılma arasındaki secdesini (de) birbirine yakın buldum.” Ebû Dâvûd dedi ki: Müsedded dedi ki: “Rükûu ve iki rekât arasındaki doğrulması, sonra secdesi, sonra iki secde arasındaki oturuşu, sonra secdesi, sonra selâm ile (namazdan) ayrılma arasındaki oturuşu birbirine yakındı.”
+& haddesenâ, haddesenâ, an, an, an
+% Birinin hadisi ötekininkine girmiştir.
+^ رمقت محمدا صلى الله عليه
+@ Rükû ve secdede belini doğrultmayanın namazı babı
+855 | Hafs b. Ömer en-Nemerî → Şu‘be → Süleymân → Umâre b. Umeyr → Ebû Ma‘mer → Ebû Mes‘ûd el-Bedrî | Ebû Mes‘ûd el-Bedrî dedi ki: Resûlullah ﷺ şöyle buyurdu: “Kişi rükûda ve secdede belini doğrultmadıkça namazı yeterli olmaz.”
+& haddesenâ, haddesenâ, an, an, an, an
+^ قال رسول الله صلى الله عليه
+856 | Ka‘nebî → Enes (b. İyâz) → Ubeydullah → Saîd b. Ebî Saîd el-Makburî → Ebû Hüreyre; ayrıca İbnü’l-Müsennâ → Yahyâ b. Saîd → Ubeydullah → Saîd b. Ebî Saîd → babası → Ebû Hüreyre | Ebû Hüreyre’den: Resûlullah ﷺ mescide girdi. Bir adam da girip namaz kıldı; sonra gelip Resûlullah’a ﷺ selâm verdi. Resûlullah ﷺ onun selâmını aldı ve: “Dön, namaz kıl; çünkü sen namaz kılmadın” buyurdu. Adam dönüp daha önce kıldığı gibi namaz kıldı. Sonra Nebî’ye ﷺ gelip ona selâm verdi. Resûlullah ﷺ ona: “Selâm senin de üzerine olsun” dedi; sonra: “Dön, namaz kıl; çünkü sen namaz kılmadın” buyurdu. Bunu üç defa yaptı. Bunun üzerine adam: “Seni hak ile gönderene yemin ederim ki, bundan daha güzelini bilmiyorum; bana öğret” dedi. (Resûlullah) buyurdu ki: “Namaza kalktığında tekbir al; sonra Kur’ân’dan sana kolay geleni oku; sonra rükûda tam yerleşinceye kadar rükû et; sonra dosdoğru doğruluncaya kadar (başını) kaldır; sonra secdede tam yerleşinceye kadar secde et; sonra oturuşta tam yerleşinceye kadar otur. Sonra namazının tamamında bunu yap.” Ka‘nebî “Saîd b. Ebî Saîd el-Makburî’den, o da Ebû Hüreyre’den” dedi ve (hadisin) sonunda şöyle dedi: “Bunu yaptığında namazın tamam olmuştur. Bundan bir şey eksiltirsen, ancak namazından eksiltmiş olursun.” Bu rivayette şöyle de dedi: “Namaza kalktığında abdesti tam al.”
+& haddesenâ, haddesenâ, an, an, an; haddesenâ, haddesenî, an, haddesenî, an, an
+% Lafız İbnü’l-Müsennâ’nındır.
+^ أن رسول الله صلى الله عليه
+857 | Mûsâ b. İsmâîl → Hammâd → İshâk b. Abdullah b. Ebî Talha → Ali b. Yahyâ b. Hallâd → amcası | Ali b. Yahyâ b. Hallâd’ın amcasından: Bir adam mescide girdi. (Râvi) buna yakınını zikretti; bu rivayette şöyle dedi: Nebî ﷺ şöyle buyurdu: “İnsanlardan hiçbirinin namazı, abdest alıp abdest suyunu —yani yerlerine— koymadıkça tamam olmaz. Sonra tekbir alır, Allah’a (celle ve azze) hamdeder, O’nu över ve Kur’ân’dan kolay geleni okur. Sonra ‘Allâhu ekber’ der, sonra eklemleri yerine oturuncaya kadar rükû eder. Sonra dosdoğru doğruluncaya kadar ‘Allah kendisine hamdedeni işitti’ der. Sonra ‘Allâhu ekber’ der, sonra eklemleri yerine oturuncaya kadar secde eder. Sonra ‘Allâhu ekber’ der ve dosdoğru oturuncaya kadar başını kaldırır. Sonra ‘Allâhu ekber’ der, sonra eklemleri yerine oturuncaya kadar secde eder. Sonra başını kaldırıp tekbir alır. Bunu yaptığında namazı tamam olmuştur.”
+& haddesenâ, haddesenâ, an, an, an
+^ أن رجلا دخل المسجد، فذكر نحوه
+858 | Hasan b. Ali → Hişâm b. Abdülmelik ve Haccâc b. Minhâl → Hemmâm → İshâk b. Abdullah b. Ebî Talha → Ali b. Yahyâ b. Hallâd → babası → amcası Rifâa b. Râfi‘ | Rifâa b. Râfi‘den bunun manası (rivayet edildi). Dedi ki: Resûlullah ﷺ şöyle buyurdu: “Sizden birinin namazı, Allah’ın (azze ve celle) kendisine emrettiği gibi abdesti tam almadıkça tamam olmaz: Yüzünü ve dirseklere kadar ellerini yıkar, başını ve topuklara kadar ayaklarını mesheder. Sonra Allah’ı (azze ve celle) tekbir eder ve O’na hamdeder. Sonra Kur’ân’dan kendisine izin verilen ve kolay geleni okur.” (Râvi) Hammâd’ın hadisine yakınını zikretti; dedi ki: “Sonra tekbir alır ve secde eder; yüzünü —Hemmâm dedi ki: Bazen de ‘alnını’ dedi— yere yerleştirir; ta ki eklemleri yerine oturup gevşer. Sonra tekbir alır, oturağı üzerinde dosdoğru oturur ve belini doğrultur.” Namazı bu şekilde, bitinceye kadar dört rekât olarak anlattı: “Sizden birinin namazı, bunu yapmadıkça tamam olmaz.”
+& haddesenâ, haddesenâ, haddesenâ, haddesenâ, an, an, an
+^ بمعناه، قال: فقال رسول الله
+859 | Vehb b. Bakıyye → Hâlid → Muhammed (b. Amr) → Ali b. Yahyâ b. Hallâd → babası → Rifâa b. Râfi‘ | Rifâa b. Râfi‘den bu kıssa (rivayet edildi). (Nebî) şöyle dedi: “Kalkıp kıbleye yöneldiğinde tekbir al; sonra Ümmü’l-Kur’ân’ı ve Allah’ın okumanı dilediği kadarını oku. Rükû ettiğinde avuçlarını dizlerinin üzerine koy ve sırtını uzat.” Şöyle de dedi: “Secde ettiğinde secdene iyice yerleş; (başını) kaldırdığında da sol uyluğunun üzerine otur.”
+& haddesenâ, an, an, an, an, an
+^ بهذه القصة -، قال
+860 | Müemmel b. Hişâm → İsmâîl → Muhammed b. İshâk → Ali b. Yahyâ b. Hallâd b. Râfi‘ → babası → amcası Rifâa b. Râfi‘ | Rifâa b. Râfi‘den, Nebî’den ﷺ bu kıssa (rivayet edildi). Buyurdu ki: “Namazında kalktığında Allah teâlâya tekbir al; sonra Kur’ân’dan sana kolay geleni oku.” Bu rivayette şöyle de dedi: “Namazın ortasında oturduğunda tam yerleş, sol uyluğunu (yere) ser, sonra teşehhüd et. Sonra kalktığında da namazını bitirinceye kadar bunun gibi (yap).”
+& haddesenâ, haddesenâ, an, haddesenî, an, an
+^ عن النبي صلى الله عليه وسلم - بهذه
+861 | Abbâd b. Mûsâ el-Huttalî → İsmâîl (b. Ca‘fer) → Yahyâ b. Ali b. Yahyâ b. Hallâd b. Râfi‘ ez-Zürakî → babası → dedesi → Rifâa b. Râfi‘ | Rifâa b. Râfi‘den: (Râvi) Resûlullah ﷺ hakkındaki bu hadisi anlattı; bu rivayette şöyle dedi: “Allah’ın (celle ve azze) sana emrettiği gibi abdest al; sonra şehâdet getir, kamet getir, sonra tekbir al. Yanında Kur’ân varsa onu oku; yoksa Allah’a hamdet, O’nu tekbir et ve O’nu tehlîl et.” Bu rivayette şöyle de dedi: “Ondan bir şey eksiltirsen, namazından eksiltmiş olursun.”
+& haddesenâ, haddesenâ, ahberanî, an, an, an
+^ أن رسول الله صلى الله عليه
+862 | Ebü’l-Velîd et-Tayâlisî → Leys → Yezîd b. Ebî Habîb → Ca‘fer b. el-Hakem → Temîm b. Mahmûd → Abdurrahmân b. Şibl; ayrıca Kuteybe → Leys → Ca‘fer b. Abdullah el-Ensârî → Temîm b. Mahmûd → Abdurrahmân b. Şibl | Abdurrahmân b. Şibl dedi ki: Resûlullah ﷺ karganın gagalaması gibi (secde etmeyi), yırtıcı hayvanın (kollarını) yere sermesi gibi sermeyi ve kişinin, devenin (bir yeri) yurt edinmesi gibi mescidde bir yeri (kendine) yurt edinmesini yasakladı.
+& haddesenâ, haddesenâ, an, an, an, an; haddesenâ, haddesenâ, an, an, an
+% Lafız Kuteybe’nindir.
+^ «نهى رسول الله صلى الله
+863 | Züheyr b. Harb → Cerîr → Atâ b. es-Sâib → Sâlim el-Berrâd → Ukbe b. Amr el-Ensârî Ebû Mes‘ûd | Sâlim el-Berrâd dedi ki: Ukbe b. Amr el-Ensârî Ebû Mes‘ûd’a geldik ve ona: “Bize Resûlullah’ın ﷺ namazını anlat” dedik. Mescidde önümüzde ayağa kalktı ve tekbir aldı. Rükû ettiğinde ellerini dizlerinin üzerine koydu, parmaklarını bunun aşağısına yerleştirdi ve dirseklerini (yanlarından) açtı; nihayet vücudunun her yeri yerine oturdu. Sonra “Allah kendisine hamdedeni işitti” dedi ve vücudunun her yeri yerine oturuncaya kadar ayakta durdu. Sonra tekbir alıp secde etti ve avuçlarını yere koydu; sonra dirseklerini (yanlarından) açtı, nihayet vücudunun her yeri yerine oturdu. Sonra başını kaldırıp oturdu, nihayet vücudunun her yeri yerine oturdu. Sonra yine aynı şekilde yaptı. Sonra bu rekât gibi dört rekât kılarak namazını kıldı. Sonra şöyle dedi: “Resûlullah’ı ﷺ işte böyle namaz kılarken gördük.”
+& haddesenâ, haddesenâ, an, an, kâle
+^ أتينا عقبة بن عمرو الأنصاري
+@ Nebî’nin ﷺ “Sahibinin tamamlamadığı her namaz, onun nafilesinden tamamlanır” sözü babı
+864 | Ya‘kûb b. İbrâhîm → İsmâîl → Yûnus → Hasan → Enes b. Hakîm ed-Dabbî → Ebû Hüreyre | Enes b. Hakîm ed-Dabbî’den: Ziyâd’dan —ya da İbn Ziyâd’dan— korktu ve Medine’ye geldi; orada Ebû Hüreyre ile karşılaştı. (Enes) dedi ki: (Ebû Hüreyre) bana nesebimi sordu, ben de ona nesebimi söyledim. “Ey genç! Sana bir hadis anlatayım mı?” dedi. “Evet, Allah sana rahmet etsin” dedim. —Yûnus dedi ki: Zannederim onu Nebî’den ﷺ (rivayet ederek) zikretti.— (Ebû Hüreyre) dedi ki: “Kıyamet günü insanların amellerinden ilk hesaba çekilecekleri şey namazdır.” Dedi ki: “Rabbimiz (celle ve azze), daha iyi bildiği hâlde meleklerine şöyle der: ‘Kulumun namazına bakın; onu tam mı kıldı, yoksa eksik mi bıraktı?’ Tam ise ona tam olarak yazılır. Ondan bir şey eksiltmişse: ‘Bakın, kulumun nafilesi var mı?’ der. Nafilesi varsa: ‘Kulumun farzını nafilesinden tamamlayın’ der. Sonra ameller bu şekilde alınır.”
+& haddesenâ, haddesenâ, haddesenâ, an, an, kâle
+^ خاف من زياد، أو ابن
+865 | Mûsâ b. İsmâîl → Hammâd → Humeyd → Hasan → Benî Selît’ten bir adam → Ebû Hüreyre | Ebû Hüreyre, Nebî’den ﷺ buna yakınını (rivayet etti).
+& haddesenâ, haddesenâ, an, an, an, an
+^ عن النبي صلى الله عليه وسلم بنحوه
+866 | Mûsâ b. İsmâîl → Hammâd → Dâvûd b. Ebî Hind → Zürâre b. Evfâ → Temîm ed-Dârî | Temîm ed-Dârî, Nebî’den ﷺ bu manada (rivayet etti). Şöyle dedi: “Sonra zekât da böyledir. Sonra ameller buna göre alınır.”
+& haddesenâ, haddesenâ, an, an, an
+^ عن النبي صلى الله عليه وسلم بهذا
+@ Rükû ve secde bablarının tafsîli — Elleri dizler üzerine koyma babı
+867 | Hafs b. Ömer → Şu‘be → Ebû Ya‘fûr → Mus‘ab b. Sa‘d → babası | Mus‘ab b. Sa‘d dedi ki: Babamın yanında namaz kıldım; ellerimi dizlerimin arasına koydum. Beni bundan men etti. Tekrar yaptım; şöyle dedi: “Bunu yapma; biz bunu yapardık, bundan men edildik ve ellerimizi dizlerin üzerine koymakla emrolunduk.” Ebû Dâvûd dedi ki: (Ebû Ya‘fûr’un) adı Vakdân’dır.
+& haddesenâ, haddesenâ, an, an, kâle
+^ صليت إلى جنب أبي، فجعلت
+868 | Muhammed b. Abdullah b. Nümeyr → Ebû Muâviye → A‘meş → İbrâhîm → Alkame ve Esved → Abdullah | Abdullah dedi ki: “Biriniz rükû ettiğinde kollarını uyluklarının üzerine sersin ve avuçlarını birbirine bitiştirsin. Resûlullah’ın ﷺ parmaklarının birbirine girmesine bakıyor gibiyim.”
+& haddesenâ, haddesenâ, haddesenâ, an, an, an
+^ «إذا ركع أحدكم فليفرش
+@ Kişinin rükûunda ve secdesinde söyleyeceği söz babı
+869 | Rebî‘ b. Nâfi‘ Ebû Tevbe ve Mûsâ b. İsmâîl → İbnü’l-Mübârek → Mûsâ → amcası → Ukbe b. Âmir | Ukbe b. Âmir dedi ki: “Büyük Rabbinin adını tesbih et” (Vâkıa 56/74) âyeti inince Resûlullah ﷺ: “Bunu rükûunuzda (söyleyin)” buyurdu. “Yüce Rabbinin adını tesbih et” (A‘lâ 87/1) âyeti inince de: “Bunu secdenizde (söyleyin)” buyurdu.
+& haddesenâ, haddesenâ, an, an, an
+% Rivayetleri mana bakımından aynıdır.
+% Ebû Seleme, Mûsâ için “Mûsâ b. Eyyûb” dedi.
+^ لما نزلت: {فسبح باسم
+870 | Ahmed b. Yûnus → Leys (b. Sa‘d) → Eyyûb b. Mûsâ ya da Mûsâ b. Eyyûb → kavminden bir adam → Ukbe b. Âmir | Ukbe b. Âmir’den bunun manası (rivayet edildi). (Râvi) şunu ekledi: Dedi ki: Resûlullah ﷺ rükû ettiğinde üç defa “Büyük Rabbimi hamdiyle tesbih ederim”, secde ettiğinde de üç defa “Yüce Rabbimi hamdiyle tesbih ederim” derdi. Ebû Dâvûd dedi ki: Bu ziyadenin mahfuz olmamasından endişe ediyoruz. Ebû Dâvûd dedi ki: Bu iki hadisin —Rebî‘in hadisi ile Ahmed b. Yûnus’un hadisinin— isnadında Mısırlılar teferrüd etmiştir.
+& haddesenâ, haddesenâ, an, an, an
+^ بمعناه زاد، قال
+871 | Hafs b. Ömer → Şu‘be → Süleymân → Sa‘d b. Ubeyde → Müstevrid → Sıla b. Züfer → Huzeyfe | Şu‘be dedi ki: Süleymân’a: “Korkutucu bir âyete rastladığımda namazda dua edeyim mi?” dedim. Bunun üzerine bana (şunu) rivayet etti: Huzeyfe’den: Kendisi Nebî ﷺ ile namaz kıldı. (Nebî) rükûunda “Büyük Rabbimi tesbih ederim”, secdesinde “Yüce Rabbimi tesbih ederim” derdi. Bir rahmet âyetine rastladığında mutlaka orada durup (Allah’tan) isterdi; bir azap âyetine rastladığında da mutlaka orada durup (Allah’a) sığınırdı.
+& haddesenâ, haddesenâ, haddesenî, an, an, an, an
+^ صلى مع النبي صلى الله عليه
+872 | Müslim b. İbrâhîm → Hişâm → Katâde → Mutarrif → Âişe | Âişe’den: Nebî ﷺ rükûunda ve secdesinde: “Meleklerin ve Rûh’un Rabbi pek münezzeh, pek mukaddestir” derdi.
+& haddesenâ, haddesenâ, haddesenâ, an, an
+^ أن النبي صلى الله عليه
+873 | Ahmed b. Sâlih → İbn Vehb → Muâviye b. Sâlih → Amr b. Kays → Âsım b. Humeyd → Avf b. Mâlik el-Eşca‘î | Avf b. Mâlik el-Eşca‘î dedi ki: Bir gece Resûlullah ﷺ ile birlikte (namaza) kalktım. Kalkıp Bakara sûresini okudu; bir rahmet âyetine rastlamadı ki durup (Allah’tan) istemesin; bir azap âyetine rastlamadı ki durup (Allah’a) sığınmasın. Dedi ki: Sonra kıyamı kadar rükû etti; rükûunda: “Ceberût, melekût, kibriyâ ve azamet sahibini tesbih ederim” diyordu. Sonra kıyamı kadar secde etti; sonra secdesinde de bunun gibi söyledi. Sonra kalkıp Âl-i İmrân’ı okudu; sonra birer birer sûreler okudu.
+& haddesenâ, haddesenâ, haddesenâ, an, an, an
+^ قمت مع رسول الله صلى
+874 | Ebü’l-Velîd et-Tayâlisî ve Ali b. el-Ca‘d → Şu‘be → Amr b. Mürre → Ebû Hamza → Benî Abs’tan bir adam → Huzeyfe | Huzeyfe’den: Resûlullah’ı ﷺ geceleyin namaz kılarken gördü. (Resûlullah): “Allâhu ekber —üç defa—, melekût, ceberût, kibriyâ ve azamet sahibi (Allah)” diyordu. Sonra (namaza) başlayıp Bakara’yı okudu. Sonra rükû etti; rükûu kıyamına yakındı. Rükûunda: “Büyük Rabbimi tesbih ederim, büyük Rabbimi tesbih ederim” diyordu. Sonra başını rükûdan kaldırdı; kıyamı rükûuna yakındı; “Hamd Rabbimedir” diyordu. Sonra secde etti; secdesi kıyamına yakındı. Secdesinde: “Yüce Rabbimi tesbih ederim” diyordu. Sonra başını secdeden kaldırdı; iki secde arasında secdesine yakın (bir süre) oturuyordu ve: “Rabbim! Beni bağışla, Rabbim! Beni bağışla” diyordu. Dört rekât kıldı; onlarda Bakara’yı, Âl-i İmrân’ı, Nisâ’yı, Mâide’yi ya da En‘âm’ı okudu. Şu‘be şüphe etti.
+& haddesenâ, haddesenâ, an, an, an, an
+% Ebû Hamza, Ensâr’ın mevlâsıdır.
+^ رأى رسول الله صلى الله
+@ Rükûda ve secdede dua hakkında babı
+875 | Ahmed b. Sâlih ve Ahmed b. Amr b. es-Serh ve Muhammed b. Seleme → İbn Vehb → Amr (b. el-Hâris) → Umâre b. Gaziyye → Sümey → Ebû Sâlih Zekvân → Ebû Hüreyre | Ebû Hüreyre’den: Resûlullah ﷺ şöyle buyurdu: “Kulun Rabbine en yakın olduğu an, secdede olduğu hâldir. Öyleyse duayı çoğaltın.”
+& haddesenâ, haddesenâ, ahberanâ, an, an, semi‘a, an
+% Sümey, Ebû Bekir’in mevlâsıdır.
+^ أن رسول الله صلى الله عليه
+876 | Müsedded → Süfyân → Süleymân b. Suheym → İbrâhîm b. Abdullah b. Ma‘bed → babası → İbn Abbâs | İbn Abbâs’tan: İnsanlar Ebû Bekir’in arkasında saf saf dururlarken Nebî ﷺ perdeyi açtı ve şöyle buyurdu: “Ey insanlar! Nübüvvetin müjdeleyicilerinden, müslümanın gördüğü ya da onun için gösterilen sâlih rüyadan başka bir şey kalmadı. Ben rükûda ya da secdede (Kur’ân) okumaktan men edildim. Rükûda Rabbi tazim edin; secdede ise duada gayret edin; (duanızın) kabul edilmesi lâyıktır.”
+& haddesenâ, haddesenâ, an, an, an, an
+^ أن النبي صلى الله عليه
+877 | Osman b. Ebî Şeybe → Cerîr → Mansûr → Ebü’d-Duhâ → Mesrûk → Âişe | Âişe dedi ki: Resûlullah ﷺ rükûunda ve secdesinde sıkça şöyle derdi: “Allah’ım! Rabbimiz! Seni hamdinle tesbih ederim. Allah’ım! Beni bağışla.” (Bununla) Kur’ân’ın (emrini) yerine getiriyordu.
+& haddesenâ, haddesenâ, an, an, an, an
+^ كان رسول الله صلى الله عليه
+878 | Ahmed b. Sâlih → İbn Vehb → Yahyâ b. Eyyûb → Umâre b. Gaziyye → Sümey → Ebû Sâlih → Ebû Hüreyre; ayrıca Ahmed b. es-Serh → İbn Vehb → Yahyâ b. Eyyûb → Umâre b. Gaziyye → Sümey → Ebû Sâlih → Ebû Hüreyre | Ebû Hüreyre’den: Nebî ﷺ secdesinde şöyle derdi: “Allah’ım! Günahımın hepsini; küçüğünü ve büyüğünü, ilkini ve sonunu bağışla.” İbnü’s-Serh “açığını ve gizlisini” (sözünü) ekledi.
+& haddesenâ, haddesenâ, ahberanî, an, an, an, an; haddesenâ, ahberanâ, ahberanî, an, an, an, an
+% Sümey, Ebû Bekir’in mevlâsıdır.
+^ أن النبي صلى الله عليه
+879 | Muhammed b. Süleymân el-Enbârî → Abde → Ubeydullah → Muhammed b. Yahyâ b. Habbân → Abdurrahmân el-A‘rec → Ebû Hüreyre → Âişe | Âişe (radıyallâhu anhâ) dedi ki: Bir gece Resûlullah’ı ﷺ (yatakta) bulamadım. Mescidi (elimle) yokladım; bir de baktım ki secdede, ayakları dikilmiş hâlde şöyle diyor: “Gazabından rızana, cezandan affına sığınırım; senden sana sığınırım. Sana olan övgüyü sayamam; sen kendini övdüğün gibisin.”
+& haddesenâ, haddesenâ, an, an, an, an, an
+^ فقدت رسول الله صلى الله
+@ Namazda dua babı
+880 | Amr b. Osman → Bakıyye → Şuayb → Zührî → Urve → Âişe | Âişe’den: Resûlullah ﷺ namazında şöyle dua ederdi: “Allah’ım! Kabir azabından sana sığınırım; Mesîh Deccâl’in fitnesinden sana sığınırım; hayatın ve ölümün fitnesinden sana sığınırım. Allah’ım! Günahtan ve borçtan sana sığınırım.” Biri ona: “Borçtan ne kadar çok sığınıyorsun!” dedi. Buyurdu ki: “Kişi borçlandığında konuşur da yalan söyler, söz verir de sözünden döner.”
+& haddesenâ, haddesenâ, haddesenâ, an, an, ahberahû
+^ أن رسول الله صلى الله عليه
+881 | Müsedded → Abdullah b. Dâvûd → İbn Ebî Leylâ → Sâbit el-Bünânî → Abdurrahmân b. Ebî Leylâ → babası | Abdurrahmân b. Ebî Leylâ’nın babası dedi ki: Bir nafile namazda Resûlullah’ın ﷺ yanında namaz kıldım; onu şöyle derken işittim: “Ateşten Allah’a sığınırım. Vay ateş ehlinin hâline!”
+& haddesenâ, haddesenâ, an, an, an, an
+^ صليت إلى جنب رسول الله
+882 | Ahmed b. Sâlih → Abdullah b. Vehb → Yûnus → İbn Şihâb → Ebû Seleme b. Abdurrahmân → Ebû Hüreyre | Ebû Hüreyre dedi ki: Resûlullah ﷺ namaza kalktı, biz de onunla birlikte kalktık. Bir bedevî namazda: “Allah’ım! Bana ve Muhammed’e merhamet et; bizimle birlikte başka hiç kimseye merhamet etme” dedi. Resûlullah ﷺ selâm verince bedevîye: “Geniş olanı daralttın” buyurdu; Allah’ın (azze ve celle) rahmetini kastediyordu.
+& haddesenâ, haddesenâ, ahberanî, an, an, enne
+^ قام رسول الله صلى الله
+883 | Züheyr b. Harb → Vekî‘ → İsrâîl → Ebû İshâk → Müslim el-Batîn → Saîd b. Cübeyr → İbn Abbâs | İbn Abbâs’tan: Nebî ﷺ “Yüce Rabbinin adını tesbih et” (A‘lâ 87/1) âyetini okuduğunda: “Yüce Rabbimi tesbih ederim” derdi. Ebû Dâvûd dedi ki: Bu hadiste Vekî‘e muhalefet edildi. Bunu Ebû Vekî‘ ve Şu‘be, Ebû İshâk’tan, o Saîd b. Cübeyr’den, o da İbn Abbâs’tan mevkûf olarak rivayet ettiler.
+& haddesenâ, haddesenâ, an, an, an, an, an
+^ أن النبي صلى الله عليه
+884 | Muhammed b. el-Müsennâ → Muhammed b. Ca‘fer → Şu‘be → Mûsâ b. Ebî Âişe → bir adam | Mûsâ b. Ebî Âişe dedi ki: Bir adam evinin damında namaz kılardı. “Bunun ölüleri diriltmeye gücü yetmez mi?” (Kıyâme 75/40) âyetini okuduğunda “Seni tesbih ederim” der ve ağlardı. Ona bunu sordular; “Bunu Resûlullah’tan ﷺ işittim” dedi. Ebû Dâvûd dedi ki: Ahmed dedi ki: Farz namazda Kur’ân’da bulunan (dua) ile dua etmek hoşuma gider.
+& haddesenâ, haddesenâ, haddesenâ, an, kâle
+^ كان رجل يصلي فوق بيته
+@ Rükû ve secdenin miktarı babı
+885 | Müsedded → Hâlid b. Abdullah → Saîd el-Cüreyrî → Sa‘dî → babası ya da amcası | Sa‘dî’nin babası ya da amcası dedi ki: “Namazında Nebî’yi ﷺ gözetledim; rükûunda ve secdesinde üç defa ‘Allah’ı hamdiyle tesbih ederim’ diyecek kadar yerleşip dururdu.”
+& haddesenâ, haddesenâ, haddesenâ, an, an
+^ رمقت النبي صلى الله عليه
+886 | Abdülmelik b. Mervân el-Ahvâzî → Ebû Âmir ve Ebû Dâvûd → İbn Ebî Zi’b → İshâk b. Yezîd el-Hüzelî → Avn b. Abdullah → Abdullah b. Mes‘ûd | Abdullah b. Mes‘ûd dedi ki: Resûlullah ﷺ şöyle buyurdu: “Biriniz rükû ettiğinde üç defa ‘Büyük Rabbimi tesbih ederim’ desin; bu, onun en azıdır. Secde ettiğinde de üç defa ‘Yüce Rabbimi tesbih ederim’ desin; bu da onun en azıdır.” Ebû Dâvûd dedi ki: Bu mürseldir; Avn, Abdullah’a yetişmedi.
+& haddesenâ, haddesenâ, an, an, an, an
+^ قال رسول الله صلى الله عليه
+887 | Abdullah b. Muhammed ez-Zührî → Süfyân → İsmâîl b. Ümeyye → bir bedevî → Ebû Hüreyre | Ebû Hüreyre dedi ki: Resûlullah ﷺ şöyle buyurdu: “Sizden kim ‘Ve’t-tîni ve’z-zeytûn’u okur ve sonuna, ‘Allah hâkimlerin en hâkimi değil midir?’ (Tîn 95/8) âyetine varırsa, ‘Evet, ben de buna şahitlik edenlerdenim’ desin. Kim ‘Lâ uksimu bi-yevmi’l-kıyâmeh’i okur ve ‘Bunun ölüleri diriltmeye gücü yetmez mi?’ (Kıyâme 75/40) âyetine varırsa, ‘Evet’ desin. Kim ‘Ve’l-mürselât’ı okur ve ‘Artık bundan sonra hangi söze inanacaklar?’ (Mürselât 77/50) âyetine ulaşırsa, ‘Allah’a iman ettik’ desin.” İsmâîl dedi ki: (Hadisi) o bedevî adama tekrar ettirmeye, (doğru hatırlıyor mu diye) bakmaya kalkıştım; şöyle dedi: “Ey kardeşimin oğlu! Onu ezberlemediğimi mi sanıyorsun? Andolsun altmış defa hacca gittim; bunların her birinde, üzerinde hacca gittiğim deveyi bilirim.”
+& haddesenâ, haddesenâ, haddesenî, semi‘tü, semi‘tü
+^ قال رسول الله صلى الله عليه
+888 | Ahmed b. Sâlih ve İbn Râfi‘ → Abdullah b. İbrâhîm b. Ömer b. Keysân → babası → Vehb b. Mânûs → Saîd b. Cübeyr → Enes b. Mâlik | Enes b. Mâlik dedi ki: Resûlullah’tan ﷺ sonra, namazı Resûlullah’ın ﷺ namazına bu gençten —yani Ömer b. Abdülazîz’den— daha çok benzeyen hiç kimsenin arkasında namaz kılmadım. Dedi ki: Rükûunda on tesbih, secdesinde on tesbih (miktarı) tahmin ettik. Ebû Dâvûd dedi ki: Ahmed b. Sâlih dedi ki: Ona (Abdullah b. İbrâhîm’e): “Mânûs mu, Mâbûs mu?” dedim. Dedi ki: “Abdürrezzâk ‘Mâbûs’ der; benim ezberimde ise ‘Mânûs’tur.” Bu, İbn Râfi‘in lafzıdır. Ahmed “Saîd b. Cübeyr’den, o Enes b. Mâlik’ten” dedi.
+& haddesenâ, haddesenâ, haddesenî, an, semi‘tü, semi‘tü
+^ ما صليت وراء أحد بعد
+@ Secde azaları babı
+889 | Müsedded ve Süleymân b. Harb → Hammâd b. Zeyd → Amr b. Dînâr → Tâvûs → İbn Abbâs | İbn Abbâs’tan: Nebî ﷺ “Emrolundum” buyurdu. Hammâd ise (şöyle) dedi: “Peygamberiniz ﷺ yedi (aza) üzerine secde etmekle, saçı ve elbiseyi toplamamakla emrolundu.”
+& haddesenâ, haddesenâ, an, an, an
+^ عن النبي صلى الله عليه
+890 | Muhammed b. Kesîr → Şu‘be → Amr b. Dînâr → Tâvûs → İbn Abbâs | İbn Abbâs’tan: Nebî ﷺ “Emrolundum” buyurdu. (Râvi) bazen de şöyle dedi: “Peygamberiniz ﷺ yedi aza üzerine secde etmekle emrolundu.”
+& haddesenâ, ahberanâ, an, an, an
+^ عن النبي صلى الله عليه
+891 | Kuteybe b. Saîd → Bekr (b. Mudar) → İbnü’l-Hâdî → Muhammed b. İbrâhîm → Âmir b. Sa‘d → Abbâs b. Abdülmuttalib | Abbâs b. Abdülmuttalib’den: Resûlullah’ı ﷺ şöyle buyururken işitti: “Kul secde ettiğinde onunla birlikte yedi aza secde eder: Yüzü, iki avucu, iki dizi ve iki ayağı.”
+& haddesenâ, haddesenâ, an, an, an, an
+^ سمع رسول الله صلى الله عليه
+892 | Ahmed b. Hanbel → İsmâîl (b. İbrâhîm) → Eyyûb → Nâfi‘ → İbn Ömer | İbn Ömer’den, merfû olarak: “Şüphesiz eller de yüzün secde ettiği gibi secde eder. Biriniz yüzünü (yere) koyduğunda ellerini de koysun; onu kaldırdığında onları da kaldırsın.”
+& haddesenâ, haddesenâ, an, an, an
+^ رفعه قال: «إن اليدين
+@ İmama secdede iken yetişen kişinin ne yapacağı hakkında babı
+893 | Muhammed b. Yahyâ b. Fâris → Saîd b. el-Hakem → Nâfi‘ b. Yezîd → Yahyâ b. Ebî Süleymân → Zeyd b. Ebi’l-Attâb ve İbnü’l-Makburî → Ebû Hüreyre | Ebû Hüreyre dedi ki: Resûlullah ﷺ şöyle buyurdu: “Biz secdede iken namaza geldiğinizde siz de secde edin; onu bir şey (rekât) saymayın. Kim rekâta yetişirse namaza yetişmiş olur.”
+& haddesenâ, haddesehüm, ahberanâ, haddesenî, an, an
+^ قال رسول الله صلى الله عليه
+@ Burun ve alın üzerine secde babı
+894 | İbnü’l-Müsennâ → Safvân b. Îsâ → Ma‘mer → Yahyâ b. Ebî Kesîr → Ebû Seleme → Ebû Saîd el-Hudrî | Ebû Saîd el-Hudrî’den: Resûlullah’ın ﷺ alnında ve burnunun ucunda, insanlara kıldırdığı bir namazdan (kalma) çamur izi görüldü.
+& haddesenâ, haddesenâ, haddesenâ, an, an, an
+^ أن رسول الله صلى الله عليه
+895 | Muhammed b. Yahyâ → Abdürrezzâk → Ma‘mer | (Ma‘mer’den) buna yakını (rivayet edildi).
+& haddesenâ, haddesenâ, an
+^ نحوه
+@ Secdenin niteliği babı
+896 | Rebî‘ b. Nâfi‘ Ebû Tevbe → Şerîk → Ebû İshâk → Berâ b. Âzib | Ebû İshâk dedi ki: Berâ b. Âzib bize (secdeyi) tarif etti: Ellerini (yere) koydu, dizlerine dayandı, kalçasını kaldırdı ve: “Resûlullah ﷺ işte böyle secde ederdi” dedi.
+& haddesenâ, haddesenâ, an, kâle
+^ وصف لنا البراء بن عازب
+897 | Müslim b. İbrâhîm → Şu‘be → Katâde → Enes | Enes’ten: Nebî ﷺ şöyle buyurdu: “Secdede itidalli olun; hiçbiriniz kollarını köpeğin sermesi gibi (yere) sermesin.”
+& haddesenâ, haddesenâ, an, an
+^ أن النبي صلى الله عليه
+898 | Kuteybe → Süfyân → Ubeydullah b. Abdullah → amcası Yezîd b. el-Esam → Meymûne | Meymûne’den: Nebî ﷺ secde ettiğinde kollarını (yanlarından) öyle açardı ki, bir kuzu altından geçmek istese geçerdi.
+& haddesenâ, haddesenâ, an, an, an
+^ أن النبي صلى الله عليه
+899 | Abdullah b. Muhammed en-Nüfeylî → Züheyr → Ebû İshâk → Temîmî → İbn Abbâs | İbn Abbâs dedi ki: Nebî’ye ﷺ arkasından geldim; koltuk altlarının beyazlığını gördüm. (Secdede) kollarını açmış, ellerini (yanlarından) ayırmıştı.
+& haddesenâ, haddesenâ, haddesenâ, an, an
+% Temîmî, tefsir rivayet eden kişidir.
+^ «أتيت النبي صلى الله عليه
+900 | Müslim b. İbrâhîm → Abbâd b. Râşid → Hasan → Ahmer b. Cez’ | Resûlullah’ın ﷺ sahâbîsi Ahmer b. Cez’den: Resûlullah ﷺ secde ettiğinde pazularını yanlarından öyle uzaklaştırırdı ki, ona acıyacak hâle gelirdik.
+& haddesenâ, haddesenâ, haddesenâ, haddesenâ
+^ أن رسول الله صلى الله عليه
+901 | Abdülmelik b. Şuayb b. el-Leys → İbn Vehb → Leys → Derrâc → İbn Huceyre → Ebû Hüreyre | Ebû Hüreyre’den: Nebî ﷺ şöyle buyurdu: “Biriniz secde ettiğinde ellerini köpeğin sermesi gibi (yere) sermesin; uyluklarını da birbirine bitiştirsin.”
+& haddesenâ, haddesenâ, haddesenâ, an, an, an
+^ أن النبي صلى الله عليه
+@ Zaruret hâlinde bu konudaki ruhsat babı
+902 | Kuteybe b. Saîd → Leys → İbn Aclân → Sümey → Ebû Sâlih → Ebû Hüreyre | Ebû Hüreyre dedi ki: Nebî’nin ﷺ ashâbı, (kollarını yanlarından) açtıklarında secdenin kendilerine verdiği meşakkatten şikâyet ettiler. (Nebî): “Dizlerden yardım alın” buyurdu.
+& haddesenâ, haddesenâ, an, an, an, an
+^ اشتكى أصحاب النبي صلى الله
+@ Eli böğre koyma ve ik‘â hakkında babı
+903 | Hennâd b. es-Serî → Vekî‘ → Saîd b. Ziyâd → Ziyâd b. Subeyh el-Hanefî → İbn Ömer | Ziyâd b. Subeyh el-Hanefî dedi ki: İbn Ömer’in yanında namaz kıldım; elimi böğrüme koydum. Namazı bitirince: “Bu, namazda çarmıh (duruşu)dur; Resûlullah ﷺ bunu yasaklardı” dedi.
+& haddesenâ, an, an, an, kâle
+^ صليت إلى جنب ابن عمر
+@ Namazda ağlama babı
+904 | Abdurrahmân b. Muhammed b. Sellâm → Yezîd (b. Hârûn) → Hammâd (b. Seleme) → Sâbit → Mutarrif → babası | Mutarrif’in babası dedi ki: Resûlullah’ı ﷺ namaz kılarken gördüm; ağlamaktan dolayı göğsünde değirmenin uğultusu gibi bir uğultu vardı ﷺ.
+& haddesenî, haddesenâ, ahberanâ, an, an, an
+^ «رأيت رسول الله صلى الله عليه
+@ Namazda vesvesenin ve iç konuşmasının mekruhluğu babı
+905 | Ahmed b. Muhammed b. Hanbel → Abdülmelik b. Amr → Hişâm (b. Sa‘d) → Zeyd b. Eslem → Atâ b. Yesâr → Zeyd b. Hâlid el-Cühenî | Zeyd b. Hâlid el-Cühenî’den: Nebî ﷺ şöyle buyurdu: “Kim abdest alıp abdestini güzel alır, sonra içlerinde dalgınlığa düşmeden iki rekât namaz kılarsa, geçmiş günahları bağışlanır.”
+& haddesenâ, haddesenâ, haddesenâ, an, an, an
+^ أن النبي صلى الله عليه
+906 | Osman b. Ebî Şeybe → Zeyd b. el-Hubâb → Muâviye b. Sâlih → Rebîa b. Yezîd → Ebû İdrîs el-Havlânî → Cübeyr b. Nüfeyr el-Hadramî → Ukbe b. Âmir el-Cühenî | Ukbe b. Âmir el-Cühenî’den: Resûlullah ﷺ şöyle buyurdu: “Abdest alıp abdestini güzel alan ve kalbiyle ve yüzüyle onlara yönelerek iki rekât namaz kılan hiç kimse yoktur ki ona cennet vâcip olmasın.”
+& haddesenâ, haddesenâ, haddesenâ, an, an, an, an
+^ أن رسول الله صلى الله عليه
+@ Namazda imama (unuttuğunu) hatırlatma babı
+907 | Muhammed b. el-Alâ ve Süleymân b. Abdurrahmân ed-Dımaşkî → Mervân b. Muâviye → Yahyâ el-Kâhilî → Misver b. Yezîd el-Esedî el-Mâlikî | Misver b. Yezîd el-Esedî el-Mâlikî’den: Resûlullah ﷺ —Yahyâ dedi ki: Bazen de “Resûlullah’ın ﷺ yanında bulundum” dedi— namazda (Kur’ân) okurken bir şeyi okumadan bıraktı. Bir adam ona: “Ey Allah’ın Resûlü! Şu şu âyeti bıraktın” dedi. Resûlullah ﷺ: “Onu bana hatırlatsaydın ya!” buyurdu. Süleymân kendi rivayetinde dedi ki: (Adam) dedi ki: “Onun neshedildiğini sanmıştım.” Süleymân şöyle de dedi: (Râvi) dedi ki: Bana Yahyâ b. Kesîr el-Ezdî rivayet etti; dedi ki: Bize Misver b. Yezîd el-Esedî el-Mâlikî rivayet etti. Bize Yezîd b. Muhammed ed-Dımaşkî, ona Hişâm b. İsmâîl, ona Muhammed b. Şuayb rivayet etti; ona Abdullah b. el-Alâ b. Zebr haber verdi; o Sâlim b. Abdullah’tan, o da Abdullah b. Ömer’den (rivayet etti): Nebî ﷺ bir namaz kıldı; onda (Kur’ân) okudu ve (okuyuşu) ona karıştı. (Namazdan) ayrılınca Übey’e: “Bizimle birlikte namaz kıldın mı?” dedi. “Evet” dedi. (Nebî): “Öyleyse (bana hatırlatmaktan) seni ne alıkoydu?” buyurdu.
+& haddesenâ, ahberanâ, an, an
+^ أن رسول الله صلى الله عليه
+@ Telkinde bulunmanın yasaklanması babı
+908 | Abdülvehhâb b. Necde → Muhammed b. Yûsuf el-Firyâbî → Yûnus b. Ebî İshâk → Ebû İshâk → Hâris → Ali | Ali (radıyallâhu anh) dedi ki: Resûlullah ﷺ şöyle buyurdu: “Ey Ali! Namazda imama (okumasını) hatırlatma.” Ebû Dâvûd dedi ki: Ebû İshâk, Hâris’ten ancak dört hadis işitmiştir; bu onlardan değildir.
+& haddesenâ, haddesenâ, an, an, an, an
+^ قال رسول الله صلى الله عليه
+@ Namazda etrafa bakma babı
+909 | Ahmed b. Sâlih → İbn Vehb → Yûnus → İbn Şihâb → Ebü’l-Ahvas → Ebû Zer | Ebû Zer dedi ki: Resûlullah ﷺ şöyle buyurdu: “Kul namazında olduğu sürece, etrafa bakmadıkça Allah (azze ve celle) ona yönelmeye devam eder. Etrafa bakınca (Allah) ondan yüz çevirir.”
+& haddesenâ, haddesenâ, ahberanî, an, semi‘tü, kâle
+% İbn Şihâb: “Ebü’l-Ahvas’ı, Saîd b. el-Müseyyeb’in meclisinde bize (hadis) anlatırken işittim” dedi.
+^ قال رسول الله صلى الله عليه
+910 | Müsedded → Ebü’l-Ahvas → Eş‘as (b. Süleym) → babası → Mesrûk → Âişe | Âişe (radıyallâhu anhâ) dedi ki: Resûlullah’a ﷺ kişinin namazda etrafa bakmasını sordum. Buyurdu ki: “O ancak şeytanın kulun namazından kaptığı bir kapıştır.”
+& haddesenâ, haddesenâ, an, an, an, an
+^ سألت رسول الله صلى الله
+@ Burun üzerine secde babı
+911 | Müemmel b. el-Fadl → Îsâ → Ma‘mer → Yahyâ b. Ebî Kesîr → Ebû Seleme → Ebû Saîd el-Hudrî | Ebû Saîd el-Hudrî’den: Resûlullah’ın ﷺ alnında ve burnunun ucunda, insanlara kıldırdığı bir namazdan (kalma) çamur izi görüldü. Ebû Ali dedi ki: Bu hadisi Ebû Dâvûd dördüncü arzda okumadı.
+& haddesenâ, haddesenâ, an, an, an, an
+^ أن رسول الله صلى الله عليه
+@ Namazda bakış babı
+912 | Müsedded → Ebû Muâviye → A‘meş → Müseyyeb b. Râfi‘ → Temîm b. Tarafe et-Tâî → Câbir b. Semüre; ayrıca Osman b. Ebî Şeybe → Cerîr → A‘meş → Müseyyeb b. Râfi‘ → Temîm b. Tarafe et-Tâî → Câbir b. Semüre | Câbir b. Semüre’den —Osman’ın rivayetinde:— dedi ki: Resûlullah ﷺ mescide girdi; orada ellerini göğe kaldırmış hâlde namaz kılan insanlar gördü. —Sonra ikisi(nin rivayeti) birleşti.— (Resûlullah) buyurdu ki: “Gözlerini göğe —Müsedded: ‘namazda’ dedi— diken adamlar ya mutlaka (bundan) vazgeçecekler ya da gözleri kendilerine geri dönmeyecek!”
+& haddesenâ, haddesenâ, an, an, an, an; haddesenâ, haddesenâ, an, an, an, an
+% Hadis, Osman’ın Cerîr’den rivayetinin lafzıyladır; o daha eksiksizdir.
+^ قال عثمان: - قال: دخل
+913 | Müsedded → Yahyâ → Saîd b. Ebî Arûbe → Katâde → Enes b. Mâlik | Enes b. Mâlik dedi ki: Resûlullah ﷺ şöyle buyurdu: “Namazlarında gözlerini (yukarı) kaldıran bazı topluluklara ne oluyor!” Bu konudaki sözü sertleşti ve şöyle buyurdu: “Ya bundan mutlaka vazgeçerler ya da gözleri mutlaka kapılıp alınır!”
+& haddesenâ, haddesenâ, an, an, haddesehüm
+^ قال رسول الله صلى الله عليه
+914 | Osman b. Ebî Şeybe → Süfyân b. Uyeyne → Zührî → Urve → Âişe | Âişe dedi ki: Resûlullah ﷺ desenli bir hamîsa içinde namaz kıldı ve şöyle buyurdu: “Bunun desenleri beni meşgul etti. Bunu Ebû Cehm’e götürün ve bana onun enbicâniyyesini getirin.”
+& haddesenâ, haddesenâ, an, an, an
+^ صلى رسول الله صلى الله عليه

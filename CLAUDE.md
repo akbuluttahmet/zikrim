@@ -66,22 +66,27 @@ Bu repoda çalışan her oturum (Claude Code, başka sohbetler) bu kurallara uya
 
 - Şâmile 1726: Muhammed Muhyiddin Abdülhamîd tahkiki, el-Mektebetü’l-Asriyye, Sayda–Beyrut, 4 cilt. OpenITI `0275AbuDawudSijistani.Sunan.Shamela0001726-ara1`.
 - Veri `sunan/index.json` ve `sunan/tr/sNN.json` içindedir; Ebû Dâvûd’un Risâle ilâ ehli Mekke’sinden ayrı kitap olarak görünür. Neşrin 40 ana bölümü ve 1–5274 numaraları korunur; çevrilmeyen bölümlerde `t: 0` olur.
-- 2026-10-29’da önceki çeviri kaldırıldı; Sünen baştan, yukarıdaki isnad standardıyla (temiz sened, tahvîl yolları, râvi paneli `info`) çevriliyor. Bölümler tamamlandıkça açılır.
+- 2026-10-29’da önceki çeviri kaldırıldı; Sünen baştan, aşağıdaki isnad standardıyla (temiz sened, tahvîl yolları, râvi paneli `info`) çevrildi. Her parça çevrildikten sonra ayrı bir gözle sened bakımından gözden geçirildi.
+- Araçlar `araclar/sunan/` altındadır: `kilavuz.md` (çeviri kılavuzu), `gozden.md` (sened gözden geçirme görevi), `sozluk.tsv` (isim sözlüğü), `denetle.py` (parça denetimi), `derle.py` (çıktıları `sunan/tr`’ye derler), `duzelt.py`, `son_gecis.py`, `isim_birlik.py` (biçim birliği). Çeviri dosyası satırları: `@ bab`, `N | sened | metin`, `& sîgalar` (zincirler `;` ile), `% râvi notu`, `^ metnin Arapçada başladığı ilk kelimeler`.
+- **Dijital nüshanın bilinen bozuklukları** (asıl neşirde tamdır; `derle.py` → `AR_GENEL`/`AR_OZEL` Arapçayı düzeltir, Türkçe zaten doğrudur): ﷲ bitişik harfi dönüşümde düştüğü için “الله” eksik kalmış (صلى عليه وسلم, رضي عنه, يا رسول، , عبد بن X …); “عارية” kelimesi “عور/عمق” olmuş (1657, 3041, 3562–3566). Arapça değişince `info.k` yeniden hesaplanır.
 - Çeviri durumu `index.json` dosyasındaki `t` alanlarıdır. Ebû Dâvûd’un metindeki sözleri, rivayet farkları ve alternatif senedler korunur. OpenITI’nin sayfa devamlarında tekrarladığı numaralar aynı hadiste birleştirilir; `ms…` ve sayfa işaretleri metne alınmaz. Modern `[حكم الألباني]` hüküm satırları çıkarılır; aralarındaki Ebû Dâvûd notları korunur. Numarasız deve yaşları açıklaması 1590.1 anahtarıyla ayrı müellif metnidir; 5274 hadis yanında bu metin de toplam madde sayısına girer. Sayfa sonuna bölünmüş bab başlıkları tamamlanır; maddesi olmayan üst başlık bir sonraki baba “—” ile bağlanır.
 - `python3 araclar/sunan.py KAYNAK --ceviri CEVIRI` kaynağı mevcut çevirilerle derler. Çeviri dosyası `N | sened | metin` satırlarıdır. JSONL girdisi için `--ceviri-jsonl DOSYA…` kullanılır; her satır `{n, sened, metin, bab_ar, bab_tr}` nesnesidir. Kaynak numaraları ve Arapça başlık eşleşmesi doğrulanır, yeni başlıklar `sunan/basliklar.json` içinde korunur. `--sirali` yeni çevirilerin yalnız baştan itibaren kesintisiz tamamlanan kısmını ekler; önceden yayımlanan İlim bölümü korunur. Kaynağın tam 40 bölüm ve sıralı 5274 hadis içermesi denetlenir. Bütün girdiler doğrulanmadan mevcut verilere dokunulmaz. Sonra normal kontrol ve havuz yenileme iş akışı uygulanır.
 
 ## İsnad standardı (Sünen’le kuruldu; yeni ve yeniden çevrilen bütün kitaplarda uygulanır)
 
 - **Sened (2. alan) temizdir:** yalnız râvi adları ve `→`. Parantez yalnız metnin kendi açıklaması içindir (“يعني ابن محمد” → `Abdülazîz (b. Muhammed)`). Râvi notları ve lafız kayıtları sened satırına yazılmaz; râvi panelinin `n` notlarına gider.
-- Arapça zincirdeki her râvi aynı sırayla yazılır; düşürülmez, eklenmez, dışarıdan kimlik bilgisiyle tamamlanmaz (“حماد” → `Hammâd`). Belirsiz râvi: `bir adam`, `bir şeyh`, `X ya da Y`. `أبيه` → `babası`, `جده` → `dedesi`.
+- Arapça zincirdeki her râvi aynı sırayla yazılır; düşürülmez, eklenmez, dışarıdan kimlik bilgisiyle tamamlanmaz (“حماد” → `Hammâd`). Belirsiz râvi: `bir adam`, `bir şeyh`, `X ya da Y`. Sened satırında saygı ifadesi yazılmaz (metinde kalır).
+- Akrabalık sened satırında hep üçüncü şahısla ve bir önceki halkaya göre yazılır: `أبيه`/`حدثني أبي` → `babası`, `جده`/`جدي` → `dedesi`, `عمي` → `amcası` (babam/dedem yazılmaz). Önceki halkanın akrabası değilse kimin olduğu açık yazılır: `Abdülcebbâr’ın babası`.
 - Merfû hadiste zincir sahâbîyle biter (Resûlullah ﷺ zincire yazılmaz), mürselde tâbiîyle, mevkûf/maktû‘da sözü söyleyenle.
+- Anlatı biçimindeki rivayetlerde, aktarılan sözün ya da olayın KAYNAĞI olan kişi (soruyu cevaplayan, Resûlullah’tan nakleden, kendi yaptığını anlatan) Arapçada açık sîga olmasa da zincirin sonuna `kâle` ile yazılır. Yalnız anlatının kahramanı olan kişi (soru soran, olayda adı geçen) zincire yazılmaz.
 - **Tahvîl (ح):** her yol `; ayrıca ` ile ayrılmış TAM bir zincirdir (birleşme noktasından sonraki ortak kısım her yolda tekrar yazılır).
 - **Râvi paneli (5. alan, `info`):** `{c: [...], n: [...]}`.
   - `c`: müellif ile başlayan `[isim, sîga, isim, sîga, …]`; tahvîlde zincirler dizisi `[[…], […]]` (sened satırındaki yollarla bire bir). Sîga, soldaki râvinin sağdakinden hangi lafızla aldığıdır.
-  - Sîgalar (yalnız bunlar, Arapçada ne yazıyorsa): haddesenâ (حدثنا/ثنا/نا), haddesenî, ahberanâ (أخبرنا/أنا), ahberanî, enbe’enâ, semi‘tü, semi‘a, an, enne, kâle, haddesehû, haddesehüm, ahberahû, ahberahüm. Anlamları `script.js` → `SIGA`.
+  - Sîgalar (yalnız bunlar, Arapçada ne yazıyorsa): haddesenâ (حدثنا/ثنا/نا), haddesenî, ahberanâ (أخبرنا/أنا), ahberanî, enbe’enâ, semi‘tü, semi‘a, an, enne, kâle, haddesehû, haddesehüm, ahberahû, ahberahüm, kara’tü (قرأت على), kurie (قرئ على), unbi’tü (أُنبئت/حُدِّثت/بلغني). Anlamları `script.js` → `SIGA`.
   - `n`: senedin içindeki râvi notları ve lafız kayıtları, Türkçe ve aynen (“Lafız Müsedded’indir.”, “İbn Hanbel, Atâ hakkında: ‘Onu iyi anlayamadım’ dedi.”). Yorum ve dışarıdan bilgi yok.
+  - `k`: Arapça metinde metnin (matn) başladığı karakter konumu; uygulama Arapça kutuda senedi ince, metni kalın bu konumdan ayırır (yoksa `arSplit` tahmini kullanılır).
 - Uygulamada panel (`rvChains`) zinciri dikey çizer; tahvîlde her yolu ayrı, ortak kısmı “Yollar burada birleşir” başlığıyla bir kez gösterir. Akış ilk yolu çizer, altına “+ bir yoldan daha” yazar.
-- Sünen çeviri kılavuzu, isim sözlüğü ve denetim aracı oturum dosyalarındadır (kilavuz.md, sozluk.tsv, denetle.py, derle.py); Sünen bitince `araclar/sunan/` altına alınacak.
+- Sünen çeviri kılavuzu, isim sözlüğü ve denetim araçları `araclar/sunan/` altındadır; başka bir kitap bu standarda getirilirken oradan uyarlanır.
 
 ## Veri biçimi
 

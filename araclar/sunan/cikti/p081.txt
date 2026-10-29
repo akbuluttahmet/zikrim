@@ -1,0 +1,301 @@
+@ Kişinin bir ayağını diğerinin üzerine koyması hakkında babı
+4866 | Nüfeylî → Mâlik → İbn Şihâb → Abbâd b. Temîm → amcası; ayrıca Ka‘nebî → Mâlik → İbn Şihâb → Abbâd b. Temîm → amcası | Abbâd b. Temîm’in amcasından: Kendisi Resûlullah’ı ﷺ —Ka‘nebî “mescidde” dedi— bir ayağını diğerinin üzerine koymuş hâlde sırtüstü uzanmış olarak gördü.
+& haddesenâ, haddesenâ, an, an, an; haddesenâ, an, an, an, an
+^ رأى رسول الله صلى الله عليه وسلم مستلقيا
+4867 | Ka‘nebî → Mâlik → İbn Şihâb → Saîd b. el-Müseyyeb → Ömer b. el-Hattâb ve Osman b. Affân | Saîd b. el-Müseyyeb’den: Ömer b. el-Hattâb ve Osman b. Affân bunu yaparlardı.
+& haddesenâ, an, an, an, enne
+^ «كانا يفعلان ذلك»
+@ Konuşulan sözü başkasına aktarma hakkında babı
+4868 | Ebû Bekir b. Ebî Şeybe → Yahyâ b. Âdem → İbn Ebî Zi’b → Abdurrahmân b. Atâ → Abdülmelik b. Câbir b. Atîk → Câbir b. Abdullah | Câbir b. Abdullah dedi ki: Resûlullah ﷺ şöyle buyurdu: “Adam bir söz söyler, sonra (etrafına) bakınırsa, o (söz) bir emanettir.”
+& haddesenâ, haddesenâ, haddesenâ, an, an, an
+^ قال رسول الله صلى الله عليه وسلم: «إذا حدث
+4869 | Ahmed b. Sâlih → Abdullah b. Nâfi‘ → İbn Ebî Zi’b → Câbir b. Abdullah’ın kardeşinin oğlu → Câbir b. Abdullah | Câbir b. Abdullah dedi ki: Resûlullah ﷺ şöyle buyurdu: “Meclisler emanete bağlıdır; ancak üç meclis müstesna: Haram bir kanın dökülmesi, haram bir ferc ya da haksız yere bir malın kesilip alınması (için kurulan meclis).”
+& haddesenâ, kara’tü, ahberanî, an, an
+^ قال رسول الله صلى الله عليه وسلم: " المجالس بالأمانة
+4870 | Muhammed b. el-Alâ ve İbrâhîm b. Mûsâ er-Râzî → Ebû Üsâme → Ömer → Abdurrahmân b. Sa‘d → Ebû Saîd el-Hudrî | Ebû Saîd el-Hudrî dedi ki: Resûlullah ﷺ şöyle buyurdu: “Kıyamet günü Allah katında emanetin en büyüğü (şudur): Adam karısıyla birleşir, (karısı da) onunla birleşir; sonra (adam) onun sırrını yayar.”
+& haddesenâ, ahberanâ, an, an, semi‘tü
+% İbrâhîm dedi ki: O, Ömer b. Hamza b. Abdullah el-Umerî’dir.
+^ قال رسول الله صلى الله عليه وسلم: «إن أعظم الأمانة
+@ Söz taşıyan kimse hakkında babı
+4871 | Müsedded ve Ebû Bekir b. Ebî Şeybe → Ebû Muâviye → A‘meş → İbrâhîm → Hemmâm → Huzeyfe | Huzeyfe dedi ki: Resûlullah ﷺ şöyle buyurdu: “Söz taşıyan cennete giremez.”
+& haddesenâ, haddesenâ, an, an, an, an
+^ قال رسول الله صلى الله عليه وسلم: «لا يدخل الجنة
+@ İki yüzlü kimse hakkında babı
+4872 | Müsedded → Süfyân → Ebü’z-Zinâd → A‘rec → Ebû Hüreyre | Ebû Hüreyre’den: Nebî ﷺ şöyle buyurdu: “İnsanların en kötülerinden biri, şunlara bir yüzle, bunlara bir yüzle gelen iki yüzlüdür.”
+& haddesenâ, haddesenâ, an, an, an
+^ أن النبي صلى الله عليه وسلم قال: «من شر
+4873 | Ebû Bekir b. Ebî Şeybe → Şerîk → Rükeyn b. er-Rebî‘ → Nuaym b. Hanzala → Ammâr | Ammâr dedi ki: Resûlullah ﷺ şöyle buyurdu: “Dünyada iki yüzü olan kimsenin kıyamet günü ateşten iki dili olur.”
+& haddesenâ, haddesenâ, an, an, an
+^ قال رسول الله صلى الله عليه وسلم: «من كان له
+@ Gıybet hakkında babı
+4874 | Abdullah b. Mesleme el-Ka‘nebî → Abdülazîz (b. Muhammed) → Alâ → babası → Ebû Hüreyre | Ebû Hüreyre’den: “Ey Allah’ın Resûlü! Gıybet nedir?” denildi. Buyurdu ki: “Kardeşini hoşlanmayacağı bir şeyle anmandır.” “Söylediğim şey kardeşimde varsa ne dersin?” denildi. Buyurdu ki: “Söylediğin şey onda varsa onu gıybet etmiş olursun; söylediğin şey onda yoksa ona iftira etmiş olursun.”
+& haddesenâ, haddesenâ, an, an, an
+^ قيل يا رسول الله ما الغيبة؟
+4875 | Müsedded → Yahyâ → Süfyân → Ali b. el-Akmer → Ebû Huzeyfe → Âişe | Âişe dedi ki: Nebî’ye ﷺ: “Safiyye’nin şöyle şöyle olması sana yeter” dedim —Müsedded’den başkası: “Kısa olmasını kastediyordu” dedi—. Bunun üzerine buyurdu ki: “Öyle bir söz söyledin ki, deniz suyuna karıştırılsa onu bozardı.” (Âişe) dedi ki: Ona bir insanı taklit ettim; buyurdu ki: “Karşılığında bana şu kadar şu kadar (mal) verilse bile bir insanı taklit etmeyi sevmem.”
+& haddesenâ, haddesenâ, an, haddesenî, an, an
+^ قلت للنبي صلى الله عليه وسلم: حسبك
+4876 | Muhammed b. Avf → Ebü’l-Yemân → Şuayb → Abdullah b. Ebî Hüseyin → Nevfel b. Müsâhik → Saîd b. Zeyd | Saîd b. Zeyd’den: Nebî ﷺ şöyle buyurdu: “Ribânın en ağırlarından biri, haksız yere Müslümanın ırzı hakkında ileri gitmektir.”
+& haddesenâ, haddesenâ, haddesenâ, haddesenâ, haddesenâ, an
+^ عن النبي صلى الله عليه وسلم قال: «إن من أربى
+4877 | Ca‘fer b. Müsâfir → Amr b. Ebî Seleme → Züheyr → Alâ b. Abdurrahmân → babası → Ebû Hüreyre | Ebû Hüreyre dedi ki: Resûlullah ﷺ şöyle buyurdu: “Büyük günahların en büyüklerinden biri, kişinin haksız yere Müslüman bir adamın ırzı hakkında ileri gitmesidir. Bir sövmeye karşılık iki sövmek de büyük günahlardandır.”
+& haddesenâ, haddesenâ, haddesenâ, an, an, an
+^ قال رسول الله صلى الله عليه وسلم: «إن من أكبر
+4878 | İbnü’l-Musaffâ → Bakıyye ve Ebü’l-Mugîre → Safvân → Râşid b. Sa‘d ve Abdurrahmân b. Cübeyr → Enes b. Mâlik | Enes b. Mâlik dedi ki: Resûlullah ﷺ şöyle buyurdu: “(Göğe) yükseltildiğimde, bakırdan tırnakları olan, (onlarla) yüzlerini ve göğüslerini tırmalayan bir topluluğun yanından geçtim. ‘Ey Cibrîl! Bunlar kim?’ dedim. Dedi ki: ‘Bunlar insanların etlerini yiyen ve ırzlarına dil uzatanlardır.’” Ebû Dâvûd dedi ki: Bunu bize Yahyâ b. Osman, Bakıyye’den rivayet etti; onda Enes yoktur.
+& haddesenâ, haddesenâ, haddesenâ, haddesenî, an
+^ قال رسول الله صلى الله عليه وسلم: " لما عرج
+4879 | Îsâ b. Ebî Îsâ es-Seylahînî → Ebü’l-Mugîre | (Ebü’l-Mugîre’den), İbnü’l-Musaffâ’nın dediği gibi (bu hadis rivayet edildi).
+& haddesenâ, an
+^ كما قال ابن المصفى
+4880 | Osman b. Ebî Şeybe → Esved b. Âmir → Ebû Bekir b. Ayyâş → A‘meş → Saîd b. Abdullah b. Cüreyc → Ebû Berze el-Eslemî | Ebû Berze el-Eslemî dedi ki: Resûlullah ﷺ şöyle buyurdu: “Ey diliyle iman edip de iman kalbine girmemiş olanlar topluluğu! Müslümanları gıybet etmeyin, ayıplarının peşine düşmeyin. Çünkü kim onların ayıplarının peşine düşerse Allah da onun ayıbının peşine düşer; Allah kimin ayıbının peşine düşerse onu evinin içinde rezil eder.”
+& haddesenâ, haddesenâ, haddesenâ, an, an, an
+^ قال رسول الله صلى الله عليه وسلم: «يا معشر
+4881 | Hayve b. Şüreyh el-Mısrî → Bakıyye → İbn Sevbân → babası → Mekhûl → Vakkâs b. Rebîa → Müstevrid | Müstevrid’den: Nebî ﷺ şöyle buyurdu: “Kim Müslüman bir adam sebebiyle bir lokma yerse, Allah ona cehennemden onun benzerini yedirir. Kim Müslüman bir adam sebebiyle bir elbise giydirilirse, Allah ona cehennemden onun benzerini giydirir. Kim bir adam sebebiyle duyurma ve gösteriş makamına kalkarsa, Allah da kıyamet günü onu duyurma ve gösteriş makamına diker.”
+& haddesenâ, haddesenâ, an, an, an, an, haddesehû
+^ أن النبي صلى الله عليه وسلم قال: «من أكل
+4882 | Vâsıl b. Abdüla‘lâ → Esbât b. Muhammed → Hişâm b. Sa‘d → Zeyd b. Eslem → Ebû Sâlih → Ebû Hüreyre | Ebû Hüreyre dedi ki: Resûlullah ﷺ şöyle buyurdu: “Müslümanın her şeyi Müslümana haramdır: Malı, ırzı ve kanı. Kişiye kötülük olarak Müslüman kardeşini hor görmesi yeter.”
+& haddesenâ, haddesenâ, an, an, an, an
+^ قال رسول الله صلى الله عليه وسلم: «كل المسلم
+@ Bir Müslümandan gıybeti savan kimse babı
+4883 | Abdullah b. Muhammed b. Esmâ b. Ubeyd → İbnü’l-Mübârek → Yahyâ b. Eyyûb → Abdullah b. Süleymân → İsmâîl b. Yahyâ el-Meâfirî → Sehl b. Muâz b. Enes el-Cühenî → babası | Sehl b. Muâz b. Enes el-Cühenî’nin babasından: Nebî ﷺ şöyle buyurdu: “Kim bir mü’mini bir münafıktan korursa —(râvi) sanırım şöyle dedi:— Allah, kıyamet günü onun etini cehennem ateşinden koruyacak bir melek gönderir. Kim de bir Müslümanı, onu kusurlu göstermek isteyerek bir şeyle itham ederse, Allah onu, söylediğinden çıkıncaya kadar cehennem köprüsü üzerinde hapseder.”
+& haddesenâ, haddesenâ, an, an, an, an, an
+^ عن النبي صلى الله عليه وسلم، قال: " من حمى
+4884 | İshâk b. es-Sabbâh → İbn Ebî Meryem → Leys → Yahyâ b. Süleym → İsmâîl b. Beşîr → Câbir b. Abdullah ve Ebû Talha b. Sehl el-Ensârî | Câbir b. Abdullah ve Ebû Talha b. Sehl el-Ensârî dediler ki: Resûlullah ﷺ şöyle buyurdu: “Saygınlığının çiğnendiği ve ırzından eksiltildiği bir yerde Müslüman bir kimseyi yardımsız bırakan hiç kimse yoktur ki, Allah da onu, yardımını sevdiği bir yerde yardımsız bırakmasın. Irzından eksiltildiği ve saygınlığı çiğnendiği bir yerde bir Müslümana yardım eden hiç kimse yoktur ki, Allah da ona, yardımını sevdiği bir yerde yardım etmesin.” Yahyâ dedi ki: Bunu bana Ubeydullah b. Abdullah b. Ömer ve Ukbe b. Şeddâd da rivayet etti. Ebû Dâvûd dedi ki: Bu Yahyâ b. Süleym, Nebî’nin ﷺ mevlâsı İbn Zeyd’dir. İsmâîl b. Beşîr de Benî Megâle’nin mevlâsıdır. Ukbe’nin yerine “Utbe b. Şeddâd” da denildi.
+& haddesenâ, haddesenâ, ahberanâ, haddesenî, semi‘a, semi‘tü
+^ قال رسول الله صلى الله عليه وسلم: «ما من امرئ
+@ Hakkında gıybet olmayan kimse babı
+4885 | Ali b. Nasr → Abdüssamed b. Abdülvâris → babası → Cüreyrî → Ebû Abdullah el-Cüşemî → Cündeb | Cündeb dedi ki: Bir bedevî geldi, devesini çöktürüp bağladı. Sonra mescide girip Resûlullah’ın ﷺ arkasında namaz kıldı. Resûlullah ﷺ selâm verince devesinin yanına gelip onu çözdü, sonra bindi, sonra yüksek sesle: “Allah’ım! Bana ve Muhammed’e merhamet et; rahmetimize kimseyi ortak etme!” dedi. Resûlullah ﷺ şöyle buyurdu: “Ne dersiniz, o mu daha şaşkın, yoksa devesi mi? Onun ne dediğini işitmediniz mi?” “Evet (işittik)” dediler.
+& haddesenâ, ahberanâ, haddesenî, haddesenâ, an, haddesenâ
+% Abdüssamed bunu kitabından rivayet etti.
+^ جاء أعرابي فأناخ راحلته
+@ Kendisini gıybet eden kimseyi helâl eden kişi hakkında gelen rivayetler babı
+4886 | Muhammed b. Ubeyd → İbn Sevr → Ma‘mer → Katâde | Katâde dedi ki: “Biriniz Ebû Daygam —ya da Damdam; İbn Ubeyd şüphe etti— gibi olmaktan âciz mi? O, sabaha çıktığında: ‘Allah’ım! Ben ırzımı kullarına sadaka olarak verdim’ derdi.”
+& haddesenâ, haddesenâ, an, an
+^ " أيعجز أحدكم أن يكون مثل
+4887 | Mûsâ b. İsmâîl → Hammâd → Sâbit → Abdurrahmân b. Aclân | Abdurrahmân b. Aclân dedi ki: Resûlullah ﷺ şöyle buyurdu: “Biriniz Ebû Damdam gibi olmaktan âciz mi?” “Ebû Damdam kimdir?” dediler. Buyurdu ki: “Sizden öncekiler arasında bir adamdı.” (Râvi) bunun manasını (rivayet etti); şöyle dedi: “(O): ‘Irzım, bana sövene (bağış olsun)’ (derdi).” Ebû Dâvûd dedi ki: Bunu Hâşim b. el-Kâsım rivayet etti; o, Muhammed b. Abdullah el-Ammî’den, o da Sâbit’ten rivayet etti; (Sâbit) dedi ki: Bize Enes, Nebî’den ﷺ bunun manasını rivayet etti. Ebû Dâvûd dedi ki: Hammâd’ın hadisi daha sahihtir.
+& haddesenâ, haddesenâ, an, an
+^ قال رسول الله صلى الله عليه وسلم: «أيعجز أحدكم
+@ Tecessüsün yasaklanması hakkında babı
+4888 | Îsâ b. Muhammed er-Remlî ve İbn Avf → Firyâbî → Süfyân → Sevr → Râşid b. Sa‘d → Muâviye | Muâviye dedi ki: Resûlullah’ı ﷺ şöyle buyururken işittim: “Sen insanların ayıplarının peşine düşersen onları bozarsın ya da neredeyse bozarsın.” Bunun üzerine Ebü’d-Derdâ dedi ki: “(Bu), Muâviye’nin Resûlullah’tan işittiği bir sözdür; Allah teâlâ onu bununla faydalandırdı.”
+& haddesenâ, haddesenâ, an, an, an, an
+% Lafız İbn Avf’ındır.
+^ سمعت رسول الله صلى الله عليه وسلم يقول: «إنك
+4889 | Saîd b. Amr el-Hadramî → İsmâîl b. Ayyâş → Damdam b. Zür‘a → Şüreyh b. Ubeyd → Cübeyr b. Nüfeyr ve Kesîr b. Mürre ve Amr b. el-Esved ve Mikdâm b. Ma‘dîkerib ve Ebû Ümâme | Cübeyr b. Nüfeyr, Kesîr b. Mürre, Amr b. el-Esved, Mikdâm b. Ma‘dîkerib ve Ebû Ümâme’den: Nebî ﷺ şöyle buyurdu: “Emir, insanlar hakkında şüphe (sebebi) ararsa onları bozar.”
+& haddesenâ, haddesenâ, haddesenâ, an, an
+^ عن النبي صلى الله عليه وسلم قال: «إن الأمير
+4890 | Ebû Bekir b. Ebî Şeybe → Ebû Muâviye → A‘meş → Zeyd b. Vehb → İbn Mes‘ûd | Zeyd b. Vehb dedi ki: İbn Mes‘ûd’a (bir adam) getirildi ve: “Bu falandır; sakalından içki damlıyor” denildi. Abdullah dedi ki: “Biz tecessüsten men edildik; fakat bize bir şey açığa çıkarsa onunla hesaba çekeriz.”
+& haddesenâ, haddesenâ, an, an, kâle
+^ أتي ابن مسعود فقيل هذا
+@ Müslümanın (ayıbını) örtme hakkında babı
+4891 | Müslim b. İbrâhîm → Abdullah b. el-Mübârek → İbrâhîm b. Neşît → Ka‘b b. Alkame → Ebü’l-Heysem → Ukbe b. Âmir | Ukbe b. Âmir’den: Nebî ﷺ şöyle buyurdu: “Kim bir ayıp görüp onu örterse, diri diri gömülmüş bir kız çocuğunu diriltmiş gibi olur.”
+& haddesenâ, haddesenâ, an, an, an, an
+^ عن النبي صلى الله عليه وسلم، قال: «من رأى
+4892 | Muhammed b. Yahyâ → İbn Ebî Meryem → Leys → İbrâhîm b. Neşît → Ka‘b b. Alkame → Ebü’l-Heysem → Duhayn → Ukbe b. Âmir | Ukbe b. Âmir’in kâtibi Duhayn dedi ki: İçki içen komşularımız vardı. Onları men ettim, fakat vazgeçmediler. Ukbe b. Âmir’e: “Bu komşularımız içki içiyorlar; onları men ettim ama vazgeçmediler. Onlar için zabıtayı çağıracağım” dedim. “Onları bırak” dedi. Sonra bir kez daha Ukbe’ye döndüm ve: “Komşularımız içki içmekten vazgeçmemekte direttiler; onlar için zabıtayı çağıracağım” dedim. Dedi ki: “Yazık sana! Onları bırak; çünkü ben Resûlullah’ı ﷺ işittim…” ve Müslim’in hadisinin manasını zikretti. Ebû Dâvûd dedi ki: Hâşim b. el-Kâsım, Leys’ten bu hadiste şöyle dedi: “(Ukbe:) ‘Yapma; fakat onlara öğüt ver ve onları tehdit et’ dedi.”
+& haddesenâ, haddesenâ, ahberanâ, haddesenî, an, semi‘a, semi‘a, kâle
+^ كان لنا جيران يشربون الخمر
+@ Kardeşlik babı
+4893 | Kuteybe b. Saîd → Leys → Ukayl → Zührî → Sâlim → babası | Sâlim’in babasından: Nebî ﷺ şöyle buyurdu: “Müslüman, Müslümanın kardeşidir; ona zulmetmez, onu (düşmana) teslim etmez. Kim kardeşinin ihtiyacını görmeye çalışırsa, Allah da onun ihtiyacını görür. Kim bir Müslümandan bir sıkıntıyı giderirse, Allah da bu sebeple ondan kıyamet günü sıkıntılarından bir sıkıntıyı giderir. Kim bir Müslümanı örterse, Allah da kıyamet günü onu örter.”
+& haddesenâ, haddesenâ, an, an, an, an
+^ عن النبي صلى الله عليه وسلم، قال: «المسلم
+@ Birbirine söven iki kişi babı
+4894 | Abdullah b. Mesleme → Abdülazîz (b. Muhammed) → Alâ → babası → Ebû Hüreyre | Ebû Hüreyre’den: Resûlullah ﷺ şöyle buyurdu: “Birbirine söven iki kişinin söyledikleri(nin vebali), mazlum (haddi) aşmadıkça, ikisinden başlatanın üzerinedir.”
+& haddesenâ, haddesenâ, an, an, an
+^ أن رسول الله صلى الله عليه وسلم، قال: «المستبان
+@ Tevazu hakkında babı
+4895 | Ahmed b. Hafs → babası → İbrâhîm b. Tahmân → Haccâc → Katâde → Yezîd b. Abdullah → İyâz b. Himâr | İyâz b. Himâr dedi ki: Resûlullah ﷺ şöyle buyurdu: “Allah bana, tevazu göstermenizi vahyetti; öyle ki kimse kimseye haddini aşmasın, kimse kimseye karşı övünmesin.”
+& haddesenâ, haddesenî, haddesenî, an, an, an, an
+^ قال رسول الله صلى الله عليه وسلم: «إن الله أوحى
+@ Karşılık vererek hakkını alma hakkında babı
+4896 | Îsâ b. Hammâd → Leys → Saîd el-Makburî → Beşîr b. el-Muharrar → Saîd b. el-Müseyyeb | Saîd b. el-Müseyyeb dedi ki: Resûlullah ﷺ ashâbıyla birlikte otururken bir adam Ebû Bekir’e dil uzattı ve ona eziyet etti. Ebû Bekir ona karşı sustu. Sonra ikinci kez eziyet etti; Ebû Bekir yine ona karşı sustu. Sonra üçüncü kez eziyet etti; bu sefer Ebû Bekir ona karşılık verdi. Ebû Bekir karşılık verince Resûlullah kalktı. Ebû Bekir: “Bana gücendin mi, ey Allah’ın Resûlü?” dedi. Resûlullah ﷺ şöyle buyurdu: “Gökten bir melek indi, sana söylediklerinde onu yalanlıyordu. Sen karşılık verince şeytan (araya) düştü. Şeytan düştüğü zaman da oturacak değildim.”
+& haddesenâ, ahberanâ, an, an, an
+^ بينما رسول الله صلى الله عليه وسلم جالس
+4897 | Abdüla‘lâ b. Hammâd → Süfyân → İbn Aclân → Saîd b. Ebî Saîd → Ebû Hüreyre | Ebû Hüreyre’den: Bir adam Ebû Bekir’e sövüyordu… ve (râvi) buna yakınını aktardı. Ebû Dâvûd dedi ki: Safvân b. Îsâ da bunu İbn Aclân’dan, Süfyân’ın dediği gibi rivayet etti.
+& haddesenâ, haddesenâ, an, an, an
+^ أن رجلا كان يسب أبا بكر
+4898 | Ubeydullah b. Muâz → babası → İbn Avn → Ali b. Zeyd b. Cüd‘ân → Ümmü Muhammed → Ümmü’l-mü’minîn; ayrıca Ubeydullah b. Ömer b. Meysere → Muâz b. Muâz → İbn Avn → Ali b. Zeyd b. Cüd‘ân → Ümmü Muhammed → Ümmü’l-mü’minîn | İbn Avn dedi ki: (Şu âyetteki) karşılık vermeyi soruyordum: “Zulme uğradıktan sonra hakkını alanlara gelince, onların aleyhine bir yol yoktur.” (Şûrâ 42/41) Bana Ali b. Zeyd b. Cüd‘ân, Ümmü Muhammed’den rivayet etti; (Ümmü Muhammed) dedi ki: Ümmü’l-mü’minîn dedi ki: Yanımızda Zeyneb bt. Cahş varken Resûlullah ﷺ yanıma girdi. Eliyle bir şey yapmaya başladı. Ben de elimle (ona) işaret ettim; sonunda ona Zeyneb’i fark ettirdim, o da (elini) çekti. Zeyneb, Âişe’nin (radıyallâhu anhâ) üzerine yürümeye başladı. (Nebî) onu men etti, fakat vazgeçmedi. Bunun üzerine Âişe’ye: “Ona sen de söv” buyurdu. (Âişe) ona sövdü ve ona galip geldi. Zeyneb, Ali’ye (radıyallâhu anh) gidip: “Âişe (radıyallâhu anhâ) size dil uzattı ve şöyle şöyle yaptı” dedi. Fâtıma geldi; (Nebî) ona: “O, babanın sevgilisidir; Kâbe’nin Rabbine andolsun” buyurdu. (Fâtıma) dönüp gitti ve onlara: “Ona şöyle şöyle dedim, o da bana şöyle şöyle dedi” dedi. (Râvi) dedi ki: Ali (radıyallâhu anh) Nebî’ye ﷺ gelip bu konuda onunla konuştu.
+& haddesenâ, haddesenâ, haddesenâ, haddesenî, an, kâle; haddesenâ, haddesenâ, haddesenâ, haddesenî, an, kâle
+% Rivayetleri mana bakımından aynıdır.
+% Ümmü Muhammed, (Ali b. Zeyd’in) babasının karısıdır.
+% İbn Avn dedi ki: Onun Ümmü’l-mü’minîn’in yanına girip çıktığını söylediler.
+^ دخل علي رسول الله صلى الله عليه وسلم وعندنا
+@ Ölülere sövmenin yasaklanması hakkında babı
+4899 | Züheyr b. Harb → Vekî‘ → Hişâm b. Urve → babası → Âişe | Âişe (radıyallâhu anhâ) dedi ki: Resûlullah ﷺ şöyle buyurdu: “Arkadaşınız öldüğünde onu bırakın, ona dil uzatmayın.”
+& haddesenâ, haddesenâ, haddesenâ, an, an
+^ قال رسول الله صلى الله عليه وسلم: «إذا مات
+4900 | Muhammed b. el-Alâ → Muâviye b. Hişâm → İmrân b. Enes el-Mekkî → Atâ → İbn Ömer | İbn Ömer dedi ki: Resûlullah ﷺ şöyle buyurdu: “Ölülerinizin iyiliklerini anın, kötülüklerinden (söz etmekten) kaçının.”
+& haddesenâ, ahberanâ, an, an, an
+^ قال رسول الله صلى الله عليه وسلم: «اذكروا محاسن
+@ Haddi aşmanın yasaklanması hakkında babı
+4901 | Muhammed b. es-Sabbâh b. Süfyân → Ali b. Sâbit → İkrime b. Ammâr → Damdam b. Cevs → Ebû Hüreyre | Ebû Hüreyre dedi ki: Resûlullah’ı ﷺ şöyle buyururken işittim: “İsrâiloğullarında birbiriyle kardeş olmuş iki adam vardı. Biri günah işler, diğeri ise ibadette gayret gösterirdi. Gayretli olan, diğerini durmadan günah üzerinde görür ve: ‘Vazgeç!’ derdi. Bir gün onu bir günah üzerinde buldu ve ona: ‘Vazgeç!’ dedi. (Öteki): ‘Beni Rabbimle baş başa bırak! Sen başıma gözcü olarak mı gönderildin?’ dedi. (Gayretli olan): ‘Allah’a yemin olsun ki Allah seni bağışlamaz’ —ya da: ‘Allah seni cennete koymaz’— dedi. Bunun üzerine ikisinin ruhları kabzedildi ve âlemlerin Rabbinin huzurunda bir araya geldiler. (Allah) bu gayretliye: ‘Sen beni biliyor muydun? Yoksa elimdekine güç mü yetiriyordun?’ dedi. Günahkâra: ‘Git, rahmetimle cennete gir’ dedi. Diğeri için de: ‘Onu ateşe götürün’ dedi.” Ebû Hüreyre dedi ki: Nefsim elinde olana yemin olsun ki o, dünyasını ve âhiretini helâk eden bir söz söyledi.
+& haddesenâ, ahberanâ, an, haddesenî, kâle
+^ سمعت رسول الله صلى الله عليه وسلم يقول: " كان رجلان
+4902 | Osman b. Ebî Şeybe → İbn Uleyye → Uyeyne b. Abdurrahmân → babası → Ebû Bekre | Ebû Bekre dedi ki: Resûlullah ﷺ şöyle buyurdu: “Allah teâlânın, sahibi için âhirette sakladığı (azapla) birlikte dünyada da cezasını acele vermesine, haddi aşmaktan ve akrabalık bağını koparmaktan daha lâyık hiçbir günah yoktur.”
+& haddesenâ, haddesenâ, an, an, an
+^ قال رسول الله صلى الله عليه وسلم: «ما من ذنب
+@ Haset hakkında babı
+4903 | Osman b. Sâlih el-Bağdâdî → Ebû Âmir (Abdülmelik b. Amr) → Süleymân b. Bilâl → İbrâhîm b. Ebî Esîd → dedesi → Ebû Hüreyre | Ebû Hüreyre’den: Nebî ﷺ şöyle buyurdu: “Hasetten sakının! Çünkü haset, ateşin odunu —ya da: otu— yediği gibi iyilikleri yer.”
+& haddesenâ, haddesenâ, haddesenâ, an, an, an
+^ أن النبي صلى الله عليه وسلم قال: " إياكم
+4904 | Ahmed b. Sâlih → Abdullah b. Vehb → Saîd b. Abdurrahmân b. Ebi’l-Amyâ → Sehl b. Ebî Ümâme → Enes b. Mâlik | Sehl b. Ebî Ümâme’den: Kendisi ve babası, Ömer b. Abdülazîz’in Medine emiri olduğu zamanda Medine’de Enes b. Mâlik’in yanına girdiler. Bir de baktılar ki, sanki yolcu namazı ya da ona yakın, hafif ve kısa bir namaz kılıyor. Selâm verince babam: “Allah sana rahmet etsin! Bu namaz hakkında ne dersin; farz namaz mı, yoksa nafile olarak kıldığın bir şey mi?” dedi. (Enes): “Bu farz namazdır; bu, Resûlullah’ın ﷺ namazıdır. Unuttuğum bir şey dışında (ondan) şaşmadım” dedi. Sonra dedi ki: Resûlullah ﷺ şöyle buyururdu: “Kendinize sıkı davranmayın ki size de sıkı davranılmasın. Çünkü bir topluluk kendilerine sıkı davrandı, Allah da onlara sıkı davrandı. İşte manastırlarda ve yurtlarda (bulunanlar) onların kalıntılarıdır: ‘Uydurdukları ruhbanlığı ise biz onlara yazmadık.’ (Hadîd 57/27)” Sonra ertesi gün sabah erkenden gelip: “Binip bakmaz ve ibret almaz mısın?” dedi. (Babam): “Evet” dedi. Hep birlikte bindiler. Bir de baktılar ki ahalisi yok olmuş, geçip gitmiş ve tükenmiş, çatıları üstüne çökmüş yurtlar. (Enes): “Bu yurtları tanıyor musun?” dedi. Ben: “Onları ve ahalisini ne iyi tanırım!” dedim. (Enes dedi ki:) “Bunlar, haddi aşmanın ve hasedin helâk ettiği bir topluluğun yurtlarıdır. Haset iyiliklerin nurunu söndürür; haddi aşmak da bunu ya doğrular ya yalanlar. Göz zina eder; el, ayak, beden ve dil de (zina eder); ferc ise bunu ya doğrular ya yalanlar.”
+& haddesenâ, haddesenâ, ahberanî, haddesehû, kâle
+^ دخل هو وأبوه على أنس
+@ Lanet hakkında babı
+4905 | Ahmed b. Sâlih → Yahyâ b. Hassân → Velîd b. Rebâh → Nemrân → Ümmü’d-Derdâ → Ebü’d-Derdâ | Ebü’d-Derdâ dedi ki: Resûlullah ﷺ şöyle buyurdu: “Kul bir şeye lanet ettiğinde lanet göğe yükselir; göğün kapıları ona kapanır. Sonra yere iner; yerin kapıları da ona kapanır. Sonra sağa sola gider; bir geçit bulamayınca lanet edilene döner. O buna lâyıksa (ona isabet eder); değilse söyleyenine döner.” Ebû Dâvûd dedi ki: Mervân b. Muhammed dedi ki: O, Rebâh b. el-Velîd’dir. (Mervân) ondan işitmiştir ve Yahyâ b. Hassân’ın bunda yanıldığını zikretti.
+& haddesenâ, haddesenâ, haddesenâ, semi‘tü, an, semi‘tü
+^ قال رسول الله صلى الله عليه وسلم: «إن العبد
+4906 | Müslim b. İbrâhîm → Hişâm → Katâde → Hasan → Semüre b. Cündeb | Semüre b. Cündeb’den: Nebî ﷺ şöyle buyurdu: “Birbirinize Allah’ın lanetiyle, Allah’ın gazabıyla ve ateşle lanet etmeyin.”
+& haddesenâ, haddesenâ, haddesenâ, an, an
+^ عن النبي صلى الله عليه وسلم، قال: «لا تلاعنوا
+4907 | Hârûn b. Zeyd b. Ebi’z-Zerkâ → babası → Hişâm b. Sa‘d → Ebû Hâzim ve Zeyd b. Eslem → Ümmü’d-Derdâ → Ebü’d-Derdâ | Ümmü’d-Derdâ dedi ki: Ebü’d-Derdâ’yı işittim; dedi ki: Resûlullah’ı ﷺ şöyle buyururken işittim: “Çok lanet edenler şefaatçi de olmazlar, şahit de olmazlar.”
+& haddesenâ, haddesenâ, haddesenâ, an, enne, semi‘tü
+^ سمعت رسول الله صلى الله عليه وسلم يقول: «لا يكون
+4908 | Müslim b. İbrâhîm → Ebân → Katâde → Ebü’l-Âliye; ayrıca Zeyd b. Ahzem et-Tâî → Bişr b. Ömer → Ebân b. Yezîd el-Attâr → Katâde → Ebü’l-Âliye → İbn Abbâs | Ebü’l-Âliye’den —Zeyd’in rivayetinde: İbn Abbâs’tan—: Bir adam rüzgâra lanet etti —Müslim ise: “Nebî ﷺ zamanında rüzgâr bir adamın ridâsını çekiştirdi, o da ona lanet etti” dedi—. Bunun üzerine Nebî ﷺ şöyle buyurdu: “Ona lanet etme; çünkü o emir altındadır. Kim lanete lâyık olmayan bir şeye lanet ederse, lanet kendisine döner.”
+& haddesenâ, haddesenâ, haddesenâ, an; haddesenâ, haddesenâ, haddesenâ, haddesenâ, an, an
+% Zeyd “İbn Abbâs’tan” dedi.
+^ أن رجلا لعن الريح
+@ Kendisine zulmedene beddua eden kimse hakkında babı
+4909 | İbn Muâz → babası → Süfyân → Habîb → Atâ → Âişe | Âişe’den (radıyallâhu anhâ): Onun bir şeyi çalındı; (çalana) beddua etmeye başladı. Resûlullah ﷺ ona: “Onun (yükünü) hafifletme!” buyurdu.
+& haddesenâ, haddesenâ, haddesenâ, an, an, an
+^ سرق لها شيء فجعلت تدعو
+@ Müslüman kardeşine küsen kimse hakkında babı
+4910 | Abdullah b. Mesleme → Mâlik → İbn Şihâb → Enes b. Mâlik | Enes b. Mâlik’ten: Nebî ﷺ şöyle buyurdu: “Birbirinize buğzetmeyin, birbirinizi kıskanmayın, birbirinize sırt çevirmeyin; ey Allah’ın kulları, kardeşler olun. Bir Müslümanın kardeşine üç geceden fazla küsmesi helâl olmaz.”
+& haddesenâ, an, an, an
+^ أن النبي صلى الله عليه وسلم، قال: «لا تباغضوا
+4911 | Abdullah b. Mesleme → Mâlik → İbn Şihâb → Atâ b. Yezîd el-Leysî → Ebû Eyyûb el-Ensârî | Ebû Eyyûb el-Ensârî’den: Resûlullah ﷺ şöyle buyurdu: “Bir Müslümanın kardeşine üç günden fazla küsmesi helâl olmaz; karşılaşırlar, bu yüz çevirir, o yüz çevirir. İkisinin hayırlısı selâmla başlayandır.”
+& haddesenâ, an, an, an, an
+^ أن رسول الله صلى الله عليه وسلم قال: «لا يحل
+4912 | Ubeydullah b. Ömer b. Meysere ve Ahmed b. Saîd es-Serahsî → Ebû Âmir → Muhammed b. Hilâl → babası → Ebû Hüreyre | Ebû Hüreyre’den: Nebî ﷺ şöyle buyurdu: “Bir mü’minin bir mü’mine üç (gün)den fazla küsmesi helâl olmaz. Üç (gün) geçince onunla karşılaşsın ve ona selâm versin. Selâmını alırsa ikisi ecirde ortak olmuş olurlar. Selâmını almazsa, günahla dönmüş olur.” Ahmed şunu ekledi: “Selâm veren de küslükten çıkmış olur.”
+& haddesenâ, ahberahüm, haddesenâ, haddesenî, an
+^ أن النبي صلى الله عليه وسلم قال: «لا يحل
+4913 | Muhammed b. el-Müsennâ → Muhammed b. Hâlid İbn Asme → Abdullah b. el-Münîb (el-Medenî) → Hişâm b. Urve → Urve → Âişe | Âişe’den (radıyallâhu anhâ): Resûlullah ﷺ şöyle buyurdu: “Bir Müslümanın bir Müslümana üç (gün)den fazla küsmesi olmaz. Onunla karşılaştığında ona üç defa selâm verir de her seferinde (öteki) selâmını almazsa, onun günahını yüklenmiş olur.”
+& haddesenâ, haddesenâ, haddesenâ, ahberanî, an, an
+^ أن رسول الله صلى الله عليه وسلم، قال: لا يكون
+4914 | Muhammed b. es-Sabbâh el-Bezzâz → Yezîd b. Hârûn → Süfyân es-Sevrî → Mansûr → Ebû Hâzim → Ebû Hüreyre | Ebû Hüreyre dedi ki: Resûlullah ﷺ şöyle buyurdu: “Bir Müslümanın kardeşine üç (gün)den fazla küsmesi helâl olmaz. Kim üç (gün)den fazla küser de (bu hâlde) ölürse cehenneme girer.”
+& haddesenâ, haddesenâ, ahberanâ, an, an, an
+^ قال رسول الله صلى الله عليه وسلم: «لا يحل لمسلم
+4915 | İbnü’s-Serh → İbn Vehb → Hayve → Ebû Osman el-Velîd b. Ebi’l-Velîd → İmrân b. Ebî Enes → Ebû Hırâş es-Sülemî | Ebû Hırâş es-Sülemî’den: Resûlullah’ı ﷺ şöyle buyururken işitti: “Kim kardeşine bir yıl küserse, bu onun kanını dökmesi gibidir.”
+& haddesenâ, haddesenâ, an, an, an, an
+^ سمع رسول الله صلى الله عليه وسلم، يقول
+4916 | Müsedded → Ebû Avâne → Süheyl b. Ebî Sâlih → babası → Ebû Hüreyre | Ebû Hüreyre’den: Nebî ﷺ şöyle buyurdu: “Cennetin kapıları her pazartesi ve perşembe günü açılır. O iki günde Allah’a hiçbir şeyi ortak koşmayan her kul bağışlanır; ancak kardeşiyle arasında kin bulunan kimse müstesna. ‘Bu ikisini barışıncaya kadar bekletin’ denilir.” Ebû Dâvûd dedi ki: Nebî ﷺ hanımlarından bazılarına kırk gün küstü. İbn Ömer de bir oğluna ölünceye kadar küstü. Ebû Dâvûd dedi ki: “Küslük Allah için olursa bu (yasak)tan hiçbir şey sayılmaz.” Ömer b. Abdülazîz de bir adamdan yüzünü örttü.
+& haddesenâ, haddesenâ, an, an, an
+^ عن النبي صلى الله عليه وسلم، قال: " تفتح
+@ Zan hakkında babı
+4917 | Abdullah b. Mesleme → Mâlik → Ebü’z-Zinâd → A‘rec → Ebû Hüreyre | Ebû Hüreyre’den: Resûlullah ﷺ şöyle buyurdu: “Zandan sakının; çünkü zan sözlerin en yalanıdır. Birbirinizin haberlerini kollamayın, birbirinizin gizli (kusurlarını) araştırmayın.”
+& haddesenâ, an, an, an, an
+^ أن رسول الله صلى الله عليه وسلم، قال: «إياكم
+@ Nasihat ve (kardeşini) koruyup gözetme hakkında babı
+4918 | Rebî‘ b. Süleymân el-Müezzin → İbn Vehb → Süleymân (b. Bilâl) → Kesîr b. Zeyd → Velîd b. Rebâh → Ebû Hüreyre | Ebû Hüreyre’den: Resûlullah ﷺ şöyle buyurdu: “Mü’min, mü’minin aynasıdır. Mü’min, mü’minin kardeşidir; onun kaybını önler ve onu arkasından korur.”
+& haddesenâ, haddesenâ, an, an, an, an
+^ عن رسول الله صلى الله عليه وسلم قال: «المؤمن
+@ Arayı düzeltme hakkında babı
+4919 | Muhammed b. el-Alâ → Ebû Muâviye → A‘meş → Amr b. Mürre → Sâlim → Ümmü’d-Derdâ → Ebü’d-Derdâ | Ebü’d-Derdâ dedi ki: Resûlullah ﷺ şöyle buyurdu: “Size oruç, namaz ve sadaka derecesinden daha faziletli olanı haber vereyim mi?” “Evet, ey Allah’ın Resûlü” dediler. Buyurdu ki: “Arayı düzeltmektir. Aranın bozulması ise kazıyıp yok edicidir.”
+& haddesenâ, haddesenâ, an, an, an, an, an
+^ قال رسول الله صلى الله عليه وسلم: «ألا أخبركم
+4920 | Nasr b. Ali → Süfyân → Zührî → Humeyd b. Abdurrahmân → annesi; ayrıca Müsedded → İsmâîl → Ma‘mer → Zührî → Humeyd b. Abdurrahmân → annesi; ayrıca Ahmed b. Muhammed b. Şebbûye el-Mervezî → Abdürrezzâk → Ma‘mer → Zührî → Humeyd b. Abdurrahmân → annesi | Humeyd b. Abdurrahmân’ın annesinden: Nebî ﷺ şöyle buyurdu: “(İki kişinin arasını) düzeltmek için ikisi arasında söz taşıyan yalan söylemiş olmaz.” Ahmed b. Muhammed ve Müsedded ise şöyle dediler: “İnsanların arasını düzeltip de hayır söyleyen ya da hayır (söz) taşıyan yalancı değildir.”
+& haddesenâ, ahberanâ, an, an, an; haddesenâ, haddesenâ, ahberanâ, an, an, an; haddesenâ, haddesenâ, ahberanâ, an, an, an
+^ أن النبي صلى الله عليه وسلم، قال: «لم يكذب
+4921 | Rebî‘ b. Süleymân el-Cîzî → Ebü’l-Esved → Nâfi‘ (b. Yezîd) → İbnü’l-Hâdî → Abdülvehhâb b. Ebî Bekir → İbn Şihâb → Humeyd b. Abdurrahmân → annesi Ümmü Külsûm bt. Ukbe | Ümmü Külsûm bt. Ukbe dedi ki: Resûlullah’ın ﷺ yalanın hiçbir türüne ruhsat verdiğini işitmedim; ancak üç (durum) müstesna. Resûlullah ﷺ şöyle buyururdu: “Şunları yalancı saymam: İnsanların arasını düzelten, yalnız düzeltmeyi kastederek söz söyleyen adam; savaşta söz söyleyen adam; karısıyla konuşan adam ve kocasıyla konuşan kadın.”
+& haddesenâ, haddesenâ, an, an, haddesehû, an, an, an
+^ ما سمعت رسول الله صلى الله عليه وسلم يرخص
+@ Şarkı söylemenin yasaklanması hakkında babı
+4922 | Müsedded → Bişr → Hâlid b. Zekvân → Rubeyyi‘ bt. Muavviz İbn Afrâ | Rubeyyi‘ bt. Muavviz İbn Afrâ dedi ki: Gerdeğe girdiğim sabah Resûlullah ﷺ gelip yanıma girdi ve senin benim yanımda oturduğun gibi yatağımın üzerine oturdu. Küçük kızlar defleriyle çalmaya ve babalarımdan Bedir günü öldürülenlere ağıt yakmaya başladılar. Nihayet içlerinden biri: “Aramızda yarın olacak şeyi bilen bir peygamber var” dedi. Bunun üzerine (Resûlullah): “Bunu bırak, söylediğin şeyi söyle” buyurdu.
+& haddesenâ, haddesenâ, an, an
+^ جاء رسول الله صلى الله عليه وسلم فدخل
+4923 | Hasan b. Ali → Abdürrezzâk → Ma‘mer → Sâbit → Enes | Enes dedi ki: Resûlullah ﷺ Medine’ye gelince, Habeşliler onun gelişine sevinerek oyun oynadılar; mızraklarıyla oynadılar.
+& haddesenâ, haddesenâ, ahberanâ, an, an
+^ «لما قدم رسول الله صلى الله
+@ Şarkı söylemenin ve kaval çalmanın mekruhluğu babı
+4924 | Ahmed b. Ubeydullah el-Gudânî → Velîd b. Müslim → Saîd b. Abdülazîz → Süleymân b. Mûsâ → Nâfi‘ → İbn Ömer | Nâfi‘ dedi ki: İbn Ömer bir kaval (sesi) işitti. (Nâfi‘) dedi ki: Parmaklarını kulaklarına koydu, yoldan uzaklaştı ve bana: “Ey Nâfi‘! Bir şey işitiyor musun?” dedi. “Hayır” dedim. (Nâfi‘) dedi ki: Parmaklarını kulaklarından kaldırdı ve: “Nebî ﷺ ile beraberdim; buna benzer bir şey işitti ve bunun gibi yaptı” dedi. Ebû Ali el-Lü’lüî dedi ki: Ebû Dâvûd’u şöyle derken işittim: Bu münker bir hadistir.
+& haddesenâ, haddesenâ, haddesenâ, an, an, kâle
+^ سمع ابن عمر، مزمارا
+4925 | Mahmûd b. Hâlid → babası → Mut‘im b. el-Mikdâm → Nâfi‘ → İbn Ömer | Nâfi‘ dedi ki: İbn Ömer’in terkisindeydim; kaval çalan bir çobanın yanından geçti. (Râvi) buna yakınını zikretti. Ebû Dâvûd dedi ki: Mut‘im ile Nâfi‘ arasına Süleymân b. Mûsâ sokuldu.
+& haddesenâ, haddesenâ, haddesenâ, haddesenâ, kâle
+^ كنت ردف ابن عمر إذ
+4926 | Ahmed b. İbrâhîm → Abdullah b. Ca‘fer er-Rakkî → Ebü’l-Melîh → Meymûn → Nâfi‘ → İbn Ömer | Nâfi‘ dedi ki: İbn Ömer ile beraberdik; bir kaval çalanın sesini işitti. (Râvi) buna yakınını zikretti. Ebû Dâvûd dedi ki: Bu, bunların en münkeridir.
+& haddesenâ, haddesenâ, haddesenâ, an, an, kâle
+^ كنا مع ابن عمر فسمع
+4927 | Müslim b. İbrâhîm → Sellâm b. Miskîn → bir şeyh → Ebû Vâil → Abdullah | Bir düğün yemeğinde Ebû Vâil’in yanında bulunan bir şeyhten: (Orada bulunanlar) oynamaya, eğlenmeye ve şarkı söylemeye başladılar. Ebû Vâil (oturuşunda dizlerine sardığı) bağı çözdü ve dedi ki: Abdullah’ı şöyle derken işittim: Resûlullah’ı ﷺ şöyle buyururken işittim: “Şarkı, kalpte nifak bitirir.”
+& haddesenâ, haddesenâ, an, kâle, semi‘tü
+^ فجعلوا يلعبون يتلعبون، يغنون
+@ Muhannesler hakkındaki hüküm babı
+4928 | Hârûn b. Abdullah ve Muhammed b. el-Alâ → Ebû Üsâme → Mufaddal b. Yûnus → Evzâî → Ebû Yesâr el-Kureşî → Ebû Hâşim → Ebû Hüreyre | Ebû Hüreyre’den: Nebî’ye ﷺ, ellerini ve ayaklarını kınayla boyamış bir muhannes getirildi. Nebî ﷺ: “Bunun nesi var?” buyurdu. “Ey Allah’ın Resûlü! Kadınlara benzemeye çalışıyor” denildi. Onun hakkında emir verdi de Nakî‘e sürüldü. “Ey Allah’ın Resûlü! Onu öldürmeyelim mi?” dediler. Buyurdu ki: “Ben namaz kılanları öldürmekten men edildim.” Ebû Üsâme dedi ki: Nakî‘, Medine’nin bir tarafında (bir yer)dir; Bakî‘ değildir.
+& haddesenâ, ahberahüm, an, an, an, an, an
+^ أن النبي صلى الله عليه وسلم أتي بمخنث
+4929 | Ebû Bekir b. Ebî Şeybe → Vekî‘ → Hişâm (b. Urve) → babası → Zeyneb bt. Ümmi Seleme → Ümmü Seleme | Ümmü Seleme’den: Nebî ﷺ onun yanına girdi. Yanında bir muhannes vardı; (muhannes) onun kardeşi Abdullah’a: “Allah yarın Tâif’i fethederse sana, dört ile gelip sekiz ile giden bir kadını göstereceğim” diyordu. Nebî ﷺ: “Bunları evlerinizden çıkarın” buyurdu. Ebû Dâvûd dedi ki: (Bu) kadının karnında dört boğum vardı.
+& haddesenâ, haddesenâ, an, an, an, an
+^ أن النبي صلى الله عليه وسلم دخل عليها
+4930 | Müslim b. İbrâhîm → Hişâm → Yahyâ → İkrime → İbn Abbâs | İbn Abbâs’tan: Nebî ﷺ erkeklerden kadınlara benzeyenlere ve kadınlardan erkeklere benzeyenlere lanet etti ve: “Onları evlerinizden çıkarın; falanı ve falanı da çıkarın” buyurdu —muhannesleri kastediyor—.
+& haddesenâ, haddesenâ, an, an, an
+^ أن النبي صلى الله عليه وسلم لعن المخنثين
+@ Oyuncak bebeklerle oynama hakkında babı
+4931 | Müsedded → Hammâd → Hişâm b. Urve → babası → Âişe | Âişe dedi ki: Bebeklerle oynardım. Bazen yanımda kızlar varken Resûlullah ﷺ yanıma girerdi. O girince onlar çıkar, o çıkınca girerlerdi.
+& haddesenâ, haddesenâ, an, an, an
+^ «كنت ألعب بالبنات
+4932 | Muhammed b. Avf → Saîd b. Ebî Meryem → Yahyâ b. Eyyûb → Umâre b. Gaziyye → Muhammed b. İbrâhîm → Ebû Seleme b. Abdurrahmân → Âişe | Âişe (radıyallâhu anhâ) dedi ki: Resûlullah ﷺ Tebük —ya da Hayber— gazvesinden geldi. (Âişe’nin) odasının bölmesinde bir perde vardı. Bir rüzgâr esip perdenin bir tarafını Âişe’nin oyuncak bebeklerinden açtı. (Resûlullah): “Bu nedir ey Âişe?” dedi. “Bebeklerim” dedi. Onların arasında yamalardan iki kanadı olan bir at gördü ve: “Ortalarında gördüğüm bu şey nedir?” dedi. “At” dedi. “Üzerindeki bu nedir?” dedi. “İki kanat” dedi. “İki kanatlı at mı?” dedi. “Süleymân’ın kanatlı atları olduğunu işitmedin mi?” dedi. (Âişe) dedi ki: Bunun üzerine azı dişlerini görünceye kadar güldü.
+& haddesenâ, haddesenâ, ahberanâ, haddesenî, haddesehû, an, an
+^ قدم رسول الله صلى الله عليه وسلم من غزوة
+@ Salıncak hakkında babı
+4933 | Mûsâ b. İsmâîl → Hammâd → Hişâm b. Urve → babası → Âişe; ayrıca Bişr b. Hâlid → Ebû Üsâme → Hişâm b. Urve → babası → Âişe | Âişe dedi ki: Resûlullah ﷺ ben yedi ya da altı yaşında iken benimle evlendi. Medine’ye geldiğimizde kadınlar geldi —Bişr: “Ümmü Rûmân bana geldi” dedi—; ben bir salıncağın üzerindeydim. Beni götürdüler, hazırladılar ve süslediler. Sonra Resûlullah’a ﷺ getirildim; ben dokuz yaşında iken benimle gerdeğe girdi. Beni kapıda durdurdu; ben de “Hıh hıh” dedim —Ebû Dâvûd dedi ki: Yani soluk soluğa kaldım—. Sonra bir eve sokuldum; orada Ensâr’dan kadınlar vardı. “Hayır ve bereket üzere (olsun)” dediler. (İki râviden) birinin hadisi diğerininkine girmiştir.
+& haddesenâ, haddesenâ, haddesenâ, an, an; haddesenâ, haddesenâ, haddesenâ, an, an
+^ إن رسول الله صلى الله عليه وسلم: " تزوجني
+4934 | İbrâhîm b. Saîd → Ebû Üsâme | (Ebû Üsâme’den) bunun benzeri (rivayet edildi). (Bu rivayette) dedi ki: “Hayırlı bir talih üzere (olsun).” Beni onlara teslim etti; başımı yıkadılar ve beni hazırladılar. Kuşluk vakti Resûlullah’tan ﷺ başkası beni ansızın şaşırtmadı; beni ona teslim ettiler.
+& haddesenâ, haddesenâ
+^ مثله، قال: على خير طائر
+4935 | Mûsâ b. İsmâîl → Hammâd → Hişâm b. Urve → Urve → Âişe | Âişe (radıyallâhu anhâ) dedi ki: Medine’ye geldiğimizde, ben bir salıncakta oynarken kadınlar bana geldi; saçlarım omuzlarıma kadar uzanmıştı. Beni götürdüler, hazırladılar ve süslediler. Sonra beni Resûlullah’a ﷺ getirdiler; ben dokuz yaşında iken benimle gerdeğe girdi.
+& haddesenâ, haddesenâ, ahberanâ, an, an
+^ «فلما قدمنا المدينة جاءني
+4936 | Bişr b. Hâlid → Ebû Üsâme → Hişâm b. Urve | (Hişâm b. Urve’den) aynı senedle bu hadis (rivayet edildi). (Âişe) dedi ki: “Ben salıncağın üzerindeydim, yanımda arkadaşlarım vardı. Beni bir eve soktular; orada Ensâr’dan kadınlar vardı. ‘Hayır ve bereket üzere (olsun)’ dediler.”
+& haddesenâ, ahberanâ, haddesenâ
+^ بإسناده في هذا الحديث
+4937 | Ubeydullah b. Muâz → babası → Muhammed (b. Amr) → Yahyâ (b. Abdurrahmân b. Hâtıb) → Âişe | Âişe (radıyallâhu anhâ) dedi ki: “Medine’ye geldik ve Benî Hâris b. el-Hazrec’e konakladık. Allah’a yemin ederim ki, iki hurma ağacı arasında(ki) bir salıncağın üzerindeydim; annem gelip beni indirdi. Kısacık saçlarım vardı.” Ve hadisi aktardı.
+& haddesenâ, haddesenâ, haddesenâ, an, kâle
+^ فقدمنا المدينة فنزلنا في بني
+@ Nerd oynamanın yasaklanması hakkında babı
+4938 | Abdullah b. Mesleme → Mâlik → Mûsâ b. Meysere → Saîd b. Ebî Hind → Ebû Mûsâ el-Eş‘arî | Ebû Mûsâ el-Eş‘arî’den: Resûlullah ﷺ şöyle buyurdu: “Kim nerd oynarsa Allah’a ve Resûlüne isyan etmiş olur.”
+& haddesenâ, an, an, an, an
+^ أن رسول الله صلى الله عليه وسلم، قال: «من لعب
+4939 | Müsedded → Yahyâ → Süfyân → Alkame b. Mersed → Süleymân b. Büreyde → babası | Süleymân b. Büreyde’nin babasından: Nebî ﷺ şöyle buyurdu: “Kim nerdşîr oynarsa, sanki elini domuz etine ve kanına batırmış gibidir.”
+& haddesenâ, haddesenâ, an, an, an, an
+^ عن النبي صلى الله عليه وسلم، قال: «من لعب
+@ Güvercinle oynama hakkında babı
+4940 | Mûsâ b. İsmâîl → Hammâd → Muhammed b. Amr → Ebû Seleme → Ebû Hüreyre | Ebû Hüreyre’den: Resûlullah ﷺ bir güvercinin peşine düşmüş bir adam gördü ve: “Bir şeytan, dişi bir şeytanın peşinde” buyurdu.
+& haddesenâ, haddesenâ, an, an, an
+^ أن رسول الله صلى الله عليه وسلم: رأى رجلا
+@ Merhamet hakkında babı
+4941 | Ebû Bekir b. Ebî Şeybe ve Müsedded → Süfyân → Amr → Ebû Kâbûs → Abdullah b. Amr | Abdullah b. Amr, (sözü) Nebî’ye ﷺ ulaştırarak (rivayet etti): “Merhamet edenlere Rahmân merhamet eder. Yeryüzündekilere merhamet edin ki gökte olan da size merhamet etsin.” Müsedded “Abdullah b. Amr’ın mevlâsı” demedi; “Nebî ﷺ buyurdu” dedi.
+& haddesenâ, haddesenâ, an, an, an
+% Rivayetleri mana bakımından aynıdır.
+% Ebû Kâbûs, Abdullah b. Amr’ın mevlâsıdır.
+^ يبلغ به النبي صلى الله عليه وسلم
+4942 | Hafs b. Ömer → Şu‘be → Mansûr → Ebû Osman → Ebû Hüreyre; ayrıca İbn Kesîr → Şu‘be → Mansûr → Ebû Osman → Ebû Hüreyre | Ebû Hüreyre dedi ki: Doğru sözlü ve doğruluğu tasdik edilmiş Ebü’l-Kâsım’ı ﷺ, bu odanın sahibini, şöyle buyururken işittim: “Merhamet ancak bedbaht olandan çekip alınır.”
+& haddesenâ, haddesenâ, kâle, an, an; haddesenâ, ahberanâ, kâle, an, an
+% Şu‘be dedi ki: Mansûr bana (bunu) yazdı.
+% İbn Kesîr kendi rivayetinde (Şu‘be’nin şöyle dediğini) söyledi: “Onu (Mansûr’a) okudum ve: ‘Bana Mansûr rivayet etti, diyeyim mi?’ dedim. (Mansûr): ‘Onu bana okuduğunda sana onu rivayet etmiş olurum’ dedi.” Sonra ikisi (Hafs ve İbn Kesîr) birleştiler.
+% Ebû Osman, Mugîre b. Şu‘be’nin mevlâsıdır.
+^ سمعت أبا القاسم الصادق، المصدوق
+4943 | Ebû Bekir b. Ebî Şeybe ve İbnü’s-Serh → Süfyân → İbn Ebî Necîh → İbn Âmir → Abdullah b. Amr | Abdullah b. Amr bunu (Nebî’ye) ulaştırarak rivayet ediyor —İbnü’s-Serh ise “Nebî’den ﷺ” dedi—; (Nebî) şöyle buyurdu: “Küçüğümüze merhamet etmeyen ve büyüğümüzün hakkını bilmeyen bizden değildir.”
+& haddesenâ, haddesenâ, an, an, an
+^ يرويه قال: ابن السرح - عن النبي
+@ Nasihat hakkında babı
+4944 | Ahmed b. Yûnus → Züheyr → Süheyl b. Ebî Sâlih → Atâ b. Yezîd → Temîm ed-Dârî | Temîm ed-Dârî dedi ki: Resûlullah ﷺ şöyle buyurdu: “Şüphesiz din nasihattir. Şüphesiz din nasihattir. Şüphesiz din nasihattir.” “Kimin için, ey Allah’ın Resûlü?” dediler. Buyurdu ki: “Allah için, Kitabı için, Resûlü için, mü’minlerin imamları ve onların geneli için —ya da: Müslümanların imamları ve onların geneli için—.”
+& haddesenâ, haddesenâ, haddesenâ, an, an
+^ قال رسول الله صلى الله عليه وسلم: «إن الدين النصيحة
+4945 | Amr b. Avn → Hâlid → Yûnus → Amr b. Saîd → Ebû Zür‘a b. Amr b. Cerîr → Cerîr | Cerîr dedi ki: “Resûlullah’a ﷺ, dinleyip itaat etmek ve her Müslümanın iyiliğini istemek üzere biat ettim.” (Râvi) dedi ki: “(Cerîr) bir şey sattığında ya da satın aldığında” —dedi ki— “(şöyle derdi): ‘Bilmiş ol ki, senden aldığımız şey bize, sana verdiğimizden daha sevimlidir; artık (dilediğini) seç.’”
+& haddesenâ, haddesenâ, an, an, an, an
+^ «بايعت رسول الله صلى الله
+@ Müslümana yardım hakkında babı
+4946 | Ebû Bekir b. Ebî Şeybe ve Osman b. Ebî Şeybe → Ebû Muâviye → A‘meş → Ebû Sâlih → Ebû Hüreyre; ayrıca Osman b. Ebî Şeybe → Cerîr er-Râzî → A‘meş → Ebû Sâlih → Ebû Hüreyre; ayrıca Vâsıl b. Abdüla‘lâ → Esbât → A‘meş → Ebû Sâlih → Ebû Hüreyre | Ebû Hüreyre’den: Nebî ﷺ şöyle buyurdu: “Kim bir Müslümandan dünya sıkıntılarından bir sıkıntıyı giderirse, Allah da ondan kıyamet günü sıkıntılarından bir sıkıntıyı giderir. Kim darda kalan birine kolaylık gösterirse, Allah da ona dünyada ve âhirette kolaylık gösterir. Kim bir Müslümanın (ayıbını) örterse, Allah da onun (ayıbını) dünyada ve âhirette örter. Kul, kardeşinin yardımında olduğu sürece Allah da kulun yardımındadır.” Ebû Dâvûd dedi ki: Osman, Ebû Muâviye’den (rivayetinde) “Kim darda kalan birine kolaylık gösterirse” (sözünü) zikretmedi.
+& haddesenâ, haddesenâ, an, an, an; haddesenâ, haddesenâ, an, an, an; haddesenâ, haddesenâ, an, unbi’tü, an
+% Rivayetleri mana bakımından aynıdır.
+% Osman, Ebû Muâviye ile birlikte Cerîr er-Râzî’yi de zikretti.
+% Vâsıl’ın rivayetinde (A‘meş) “Ebû Sâlih’ten bana rivayet edildi” dedi; sonra (râviler) birleştiler.
+^ عن النبي صلى الله عليه وسلم قال: «من نفس
+4947 | Muhammed b. Kesîr → Süfyân → Ebû Mâlik el-Eşca‘î → Rib‘î b. Hırâş → Huzeyfe | Huzeyfe dedi ki: Nebiniz ﷺ şöyle buyurdu: “Her iyilik sadakadır.”
+& haddesenâ, ahberanâ, an, an, an
+^ قال نبيكم صلى الله عليه وسلم: «كل
+@ İsimleri değiştirme hakkında babı
+4948 | Amr b. Avn → Hüşeym → Dâvûd b. Amr → Abdullah b. Ebî Zekeriyyâ → Ebü’d-Derdâ; ayrıca Müsedded → Hüşeym → Dâvûd b. Amr → Abdullah b. Ebî Zekeriyyâ → Ebü’d-Derdâ | Ebü’d-Derdâ dedi ki: Resûlullah ﷺ şöyle buyurdu: “Siz kıyamet günü kendi isimlerinizle ve babalarınızın isimleriyle çağrılacaksınız. Öyleyse isimlerinizi güzel koyun.” Ebû Dâvûd dedi ki: İbn Ebî Zekeriyyâ, Ebü’d-Derdâ’ya yetişmedi.
+& haddesenâ, ahberanâ, an, an, an; haddesenâ, haddesenâ, an, an, an
+^ قال رسول الله صلى الله عليه وسلم: «إنكم تدعون
+4949 | İbrâhîm b. Ziyâd Sebelân → Abbâd b. Abbâd → Ubeydullah → Nâfi‘ → İbn Ömer | İbn Ömer dedi ki: Resûlullah ﷺ şöyle buyurdu: “Allah teâlâya en sevimli isimler Abdullah ve Abdurrahmân’dır.”
+& haddesenâ, haddesenâ, an, an, an
+^ قال رسول الله صلى الله عليه وسلم: «أحب الأسماء

@@ -1,0 +1,992 @@
+# Sünen-i Ebî Dâvûd isim sözlüğü. Biçim: Arapça<TAB>Türkçe. Arapçadaki i‘rab hâli (أبو/أبي/أبا) ne olursa olsun Türkçe yalın hâl yazılır: Ebû Hüreyre.
+# HARF-İ TARİF: Ad tek başına ya da adın ilk öğesi olarak geçiyorsa harf-i tarif yazılmaz (Zührî, A‘meş, Ka‘nebî, Hasan b. Ali, Leys b. Sa‘d, Mugîre b. Şu‘be, Velîd, Hakem). Ad içinde, “b.”den ya da künyeden sonra ve nisbe olarak gelirse el- yazılır ve sesine uyar (Abdullah b. Mesleme el-Ka‘nebî, Saîd b. el-Müseyyeb, Urve b. ez-Zübeyr, Ebû Tevbe er-Rebî‘ b. Nâfi‘, Hennâd b. es-Serî).
+# KÜNYE: Ebû … ; harf-i tarifli künye Ebü’l-/Ebü’z-/Ebü’d- … (Ebü’z-Zübeyr, Ebü’l-Ahvas). “b. Ebî …” korunur (Osman b. Ebî Şeybe); harf-i tarifliyse b. Ebi’l-/Ebi’z- … (Sâlim b. Ebi’l-Ca‘d, Abdurrahmân b. Ebi’z-Zinâd). Kadın künyesi Ümmü … (Ümmü Seleme), tamlamada Ümmi … (Zeyneb bt. Ümmi Seleme).
+# İBN / BİNT: ibn → b. (adlar arasında); ad İbn ile başlıyorsa İbn …, harf-i tarifliyse İbnü’l-/İbnü’s- … (İbnü’l-Mübârek, İbnü’s-Serh); bint → bt. (Safiyye bt. Şeybe). Anaya nisbet edilen “ابن” İbn/İbnü’l- olarak kalır (Muhammed İbnü’l-Hanefiyye).
+# UZATMA: yalnız â î û (ā ī ū kullanılmaz; Kâsım, Ya‘kûb, Dımaşkî, Vakkâs, Akîl, Şakîk). Hece sonundaki hemze ’ (İbn Ebî Zi’b); uzun ünlüden sonraki son hemze yazılmaz (Atâ, Alâ, Berâ, Ebü’d-Derdâ).
+# ‘AYN: yalnız hece sonunda ve kelime sonunda ‘ yazılır (Şu‘be, Ma‘mer, Ca‘fer, Mis‘ar, Sa‘d, Nâfi‘, Vekî‘, Rebî‘); kelime başında ve iki ünlü arasında yazılmaz (Ali, Ömer, Saîd, Muâviye, Muâz, Ubâde, Rebîa, Yahyâ b. Maîn, İbn Lehîa).
+# HARFLER: ث → s (Sâbit, Hâris, Leys, Eş‘as); ذ ve ظ → z (Ebû Zer, Zabyân); ض → d (Fadl, Fudayl, Dahhâk, Damre; yerleşik istisna İyâz); ص → s, ط → t, ق → k, ح ve خ → h; غ → g (Mugîre, Gâlib, Gıyâs, Mugaffel), hece sonunda ğ (Miğvel, Ağar); و → v (Vekî‘, Avf); ة → e (Seleme, Hayve), kalın sessizden sonra a (Talha, Hamza, Ebû Nadra).
+# YERLEŞİK TÜRKÇE BİÇİMLER (tek karar): Osman (Osmân değil), Saîd (Sa‘îd değil), İsmâîl (İsmâil değil), Abdullah, Ubeydullah, Abdurrahmân, Abdürrahîm, Abdürrezzâk, Abdülazîz, Abdüla‘lâ, Süfyân, Süleymân, Ömer, Ali, Hasan (Hasen değil), Hüseyin (Hüseyn değil; حصين ise Husayn), künyede Ebû Bekir / b. Ebî Bekir ama ad olarak بكر → Bekr (Bekr b. Abdullah, Bişr b. Bekr), Âişe, Ebû Hüreyre, Ebû Zer, İbn Abbâs, İbn Ömer.
+# SAYGI İFADELERİ: Arapçada varsa çevrilir, yoksa eklenmez: رضي الله عنه → (radıyallâhu anh), رضي الله عنها → (radıyallâhu anhâ), عليه السلام → (aleyhisselâm).
+# SENED KELİMELERİ: أبيه babası, أبيها babası, أمه annesi, جده dedesi, عمه amcası, جدي dedesi, عمي amcası (sened satırında akrabalık hep üçüncü şahıs); kimin babası olduğu ancak gerektiğinde parantezle: babası (Ebû Hüreyre). مولى → mevlâ (… mevlâsı). أبي tek başına bağlama göre “babam” ya da “Ebû …” olduğundan sözlükte yoktur.
+# AYRIMLAR: عبيدة = Abîde (Abîde es-Selmânî, Abîde b. Humeyd); أبو عبيدة, سعد بن عبيدة = Ubeyde. عبيد Ubeyd, عبيد الله Ubeydullah. مسلمة Mesleme, سلمة Seleme. حنيف Huneyf, حنين Huneyn. بشير بن يسار Büşeyr; بشير بن نهيك Beşîr. حصين Husayn, أبو حصين Ebû Hasîn, حسين Hüseyin. موسى بن علي بن رباح = Mûsâ b. Ulayy.
+أبيه	babası
+أبيها	babası
+أمه	annesi
+جده	dedesi
+عمه	amcası
+جدي	dedesi
+عمي	amcam
+مولى	mevlâ
+أخيه	kardeşi
+جدته	ninesi
+خاله	dayısı
+عمته	halası
+رجل	bir adam
+رجلا	bir adam
+امرأة	bir kadın
+شيخ	bir şeyh
+رجل من بني عامر	Benî Âmir’den bir adam
+أبيه سليمان بن سمرة	babası Süleymân b. Semüre
+مسدد	Müsedded
+مسدد بن مسرهد	Müsedded b. Müserhed
+أبي هريرة	Ebû Hüreyre
+أبو هريرة	Ebû Hüreyre
+أبا هريرة	Ebû Hüreyre
+سفيان	Süfyân
+ابن عباس	İbn Abbâs
+موسى بن إسماعيل	Mûsâ b. İsmâîl
+أبو سلمة موسى بن إسماعيل	Ebû Seleme Mûsâ b. İsmâîl
+حماد	Hammâd
+مالك	Mâlik
+مالك بن أنس	Mâlik b. Enes
+الزهري	Zührî
+شعبة	Şu‘be
+عثمان بن أبي شيبة	Osman b. Ebî Şeybe
+عائشة	Âişe
+عائشة رضي الله عنها	Âişe (radıyallâhu anhâ)
+قتادة	Katâde
+يحيى	Yahyâ
+داود	Dâvûd
+ابن وهب	İbn Vehb
+نافع	Nâfi‘
+ابن عمر	İbn Ömer
+أحمد بن حنبل	Ahmed b. Hanbel
+أحمد بن محمد بن حنبل	Ahmed b. Muhammed b. Hanbel
+ابن شهاب	İbn Şihâb
+الأعمش	A‘meş
+سليمان الأعمش	Süleymân el-A‘meş
+القعنبي	Ka‘nebî
+عبد الرزاق	Abdürrezzâk
+معمر	Ma‘mer
+عكرمة	İkrime
+أحمد بن صالح	Ahmed b. Sâlih
+قتيبة بن سعيد	Kuteybe b. Saîd
+قتيبة بن سعيد الثقفي	Kuteybe b. Saîd es-Sekafî
+قتيبة	Kuteybe
+ابن جريج	İbn Cüreyc
+أنس بن مالك	Enes b. Mâlik
+أنس	Enes
+أيوب	Eyyûb
+أيوب السختياني	Eyyûb es-Sahtiyânî
+محمد بن كثير	Muhammed b. Kesîr
+محمد بن كثير العبدي	Muhammed b. Kesîr el-Abdî
+الحسن بن علي	Hasan b. Ali
+محمد بن إسحاق	Muhammed b. İshâk
+عبد الله بن مسلمة	Abdullah b. Mesleme
+عبد الله بن مسلمة القعنبي	Abdullah b. Mesleme el-Ka‘nebî
+يونس	Yûnus
+جابر بن عبد الله	Câbir b. Abdullah
+جابر	Câbir
+جرير	Cerîr
+وكيع	Vekî‘
+وكيع بن الجراح	Vekî‘ b. el-Cerrâh
+زهير	Züheyr
+الليث	Leys
+ليث	Leys
+الليث بن سعد	Leys b. Sa‘d
+هشام بن عروة	Hişâm b. Urve
+الحسن	Hasan
+خالد	Hâlid
+أبي سلمة	Ebû Seleme
+أبو سلمة	Ebû Seleme
+أبي سلمة بن عبد الرحمن	Ebû Seleme b. Abdurrahmân
+أبو سلمة بن عبد الرحمن	Ebû Seleme b. Abdurrahmân
+عروة	Urve
+عروة بن الزبير	Urve b. ez-Zübeyr
+مسلم بن إبراهيم	Müslim b. İbrâhîm
+عبيد الله	Ubeydullah
+عمرو بن شعيب	Amr b. Şuayb
+يحيى بن سعيد	Yahyâ b. Saîd
+منصور	Mansûr
+منصور بن المعتمر	Mansûr b. el-Mu‘temir
+أبي سعيد الخدري	Ebû Saîd el-Hudrî
+أبا سعيد الخدري	Ebû Saîd el-Hudrî
+أبي سعيد	Ebû Saîd
+محمد بن العلاء	Muhammed b. el-Alâ
+أبو معاوية	Ebû Muâviye
+حفص بن عمر	Hafs b. Ömer
+حفص بن عمر النمري	Hafs b. Ömer en-Nemerî
+أحمد بن يونس	Ahmed b. Yûnus
+أحمد بن عبد الله بن يونس	Ahmed b. Abdullah b. Yûnus
+سعيد بن جبير	Saîd b. Cübeyr
+أبي إسحاق	Ebû İshâk
+أبو إسحاق	Ebû İshâk
+أبو إسحاق الفزاري	Ebû İshâk el-Fezârî
+هشام	Hişâm
+إسماعيل	İsmâîl
+هشيم	Hüşeym
+عطاء	Atâ
+عبد الله بن محمد النفيلي	Abdullah b. Muhammed en-Nüfeylî
+النفيلي	Nüfeylî
+ابن نفيل	İbn Nüfeyl
+سعيد	Saîd
+إبراهيم	İbrâhîm
+محمد	Muhammed
+حماد بن زيد	Hammâd b. Zeyd
+حماد بن سلمة	Hammâd b. Seleme
+همام	Hemmâm
+همام بن منبه	Hemmâm b. Münebbih
+الوليد	Velîd
+أبو عوانة	Ebû Avâne
+أبي عوانة	Ebû Avâne
+أبي صالح	Ebû Sâlih
+أبي صالح السمان	Ebû Sâlih es-Semmân
+أبو صالح محبوب بن موسى	Ebû Sâlih Mahbûb b. Mûsâ
+عبد الله بن عمر	Abdullah b. Ömer
+عبد الله بن عمرو	Abdullah b. Amr
+عبد الله بن عمرو بن العاص	Abdullah b. Amr b. el-Âs
+سليمان بن حرب	Süleymân b. Harb
+عبد الله	Abdullah
+محمد بن يحيى بن فارس	Muhammed b. Yahyâ b. Fâris
+محمد بن يحيى بن فارس الذهلي	Muhammed b. Yahyâ b. Fâris ez-Zühlî
+أبي الزبير	Ebü’z-Zübeyr
+أبو الزبير	Ebü’z-Zübeyr
+أبي الزبير المكي	Ebü’z-Zübeyr el-Mekkî
+شريك	Şerîk
+شريك بن عبد الله بن أبي نمر	Şerîk b. Abdullah b. Ebî Nemir
+ثابت	Sâbit
+ثابت البناني	Sâbit el-Bünânî
+محمد بن المثنى	Muhammed b. el-Müsennâ
+ابن المثنى	İbnü’l-Müsennâ
+الأوزاعي	Evzâî
+محمد بن بشار	Muhammed b. Beşşâr
+ابن بشار	İbn Beşşâr
+مجاهد	Mücâhid
+محمد بن عيسى	Muhammed b. Îsâ
+محمد بن عيسى بن الطباع	Muhammed b. Îsâ b. et-Tabbâ‘
+هارون بن عبد الله	Hârûn b. Abdullah
+عمرو	Amr
+سعيد بن المسيب	Saîd b. el-Müseyyeb
+ابن المسيب	İbnü’l-Müseyyeb
+نصر بن علي	Nasr b. Ali
+محمد بن عبيد	Muhammed b. Ubeyd
+محمد بن عبيد المحاربي	Muhammed b. Ubeyd el-Muhâribî
+يزيد بن هارون	Yezîd b. Hârûn
+الشعبي	Şa‘bî
+أبان	Ebân
+أبان بن صالح	Ebân b. Sâlih
+وهب بن بقية	Vehb b. Bakıyye
+أبو أسامة	Ebû Üsâme
+عبد الوارث	Abdülvâris
+عبد الوارث بن سعيد	Abdülvâris b. Saîd
+سعيد بن منصور	Saîd b. Mansûr
+محمد بن سلمة	Muhammed b. Seleme
+محمد بن سلمة المرادي	Muhammed b. Seleme el-Murâdî
+أبي قلابة	Ebû Kılâbe
+أبو الوليد الطيالسي	Ebü’l-Velîd et-Tayâlisî
+أبو الوليد	Ebü’l-Velîd
+أبو بكر بن أبي شيبة	Ebû Bekir b. Ebî Şeybe
+سماك	Simâk
+سماك بن حرب	Simâk b. Harb
+هناد بن السري	Hennâd b. es-Serî
+هناد	Hennâd
+ابن السرح	İbnü’s-Serh
+أحمد بن عمرو بن السرح	Ahmed b. Amr b. es-Serh
+إسرائيل	İsrâîl
+عبد الله بن وهب	Abdullah b. Vehb
+عمرو بن عون	Amr b. Avn
+ابن أبي ذئب	İbn Ebî Zi’b
+سالم	Sâlim
+سالم بن عبد الله	Sâlim b. Abdullah
+سالم بن أبي الجعد	Sâlim b. Ebi’l-Ca‘d
+ابن المبارك	İbnü’l-Mübârek
+عبد الله بن المبارك	Abdullah b. el-Mübârek
+عبيد الله بن معاذ	Ubeydullah b. Muâz
+ابن معاذ	İbn Muâz
+يزيد بن أبي حبيب	Yezîd b. Ebî Habîb
+عمرو بن دينار	Amr b. Dînâr
+عيسى بن يونس	Îsâ b. Yûnus
+عيسى	Îsâ
+أبي الزناد	Ebü’z-Zinâd
+ابن أبي الزناد	İbn Ebi’z-Zinâd
+عبد الرحمن بن أبي الزناد	Abdurrahmân b. Ebi’z-Zinâd
+زيد بن أسلم	Zeyd b. Eslem
+أبو عاصم	Ebû Âsım
+أم سلمة	Ümmü Seleme
+يزيد بن زريع	Yezîd b. Zürey‘
+الأعرج	A‘rec
+عبد الرحمن الأعرج	Abdurrahmân el-A‘rec
+حميد الأعرج	Humeyd el-A‘rec
+بقية	Bakıyye
+بقية بن الوليد	Bakıyye b. el-Velîd
+زهير بن حرب	Züheyr b. Harb
+زهير بن محمد	Züheyr b. Muhammed
+ابن عجلان	İbn Aclân
+محمد بن عجلان	Muhammed b. Aclân
+حميد	Humeyd
+سليمان بن داود المهري	Süleymân b. Dâvûd el-Mehrî
+سليمان بن داود العتكي	Süleymân b. Dâvûd el-Atekî
+سليمان بن داود	Süleymân b. Dâvûd
+وهيب	Vüheyb
+ابن إسحاق	İbn İshâk
+يحيى بن أبي كثير	Yahyâ b. Ebî Kesîr
+محمد بن سليمان الأنباري	Muhammed b. Süleymân el-Enbârî
+عبد العزيز	Abdülazîz
+عبد العزيز بن محمد	Abdülazîz b. Muhammed
+محمود بن خالد	Mahmûd b. Hâlid
+محمود بن خالد الدمشقي	Mahmûd b. Hâlid ed-Dımaşkî
+محمود بن خالد السلمي	Mahmûd b. Hâlid es-Sülemî
+الحكم	Hakem
+الحكم بن أبان	Hakem b. Ebân
+الحكم بن عتيبة	Hakem b. Uteybe
+محمد بن عمرو	Muhammed b. Amr
+محمد بن عمرو الرازي	Muhammed b. Amr er-Râzî
+محمد بن عمرو بن عطاء	Muhammed b. Amr b. Atâ
+محمد بن عمرو بن حلحلة	Muhammed b. Amr b. Halhale
+إبراهيم بن موسى الرازي	İbrâhîm b. Mûsâ er-Râzî
+إبراهيم بن موسى	İbrâhîm b. Mûsâ
+عطاء بن يسار	Atâ b. Yesâr
+عبد الله بن بريدة	Abdullah b. Büreyde
+ابن بريدة	İbn Büreyde
+بكر	Bekr
+بكر بن عبد الله	Bekr b. Abdullah
+بكر بن سوادة	Bekr b. Sevâde
+علي رضي الله عنه	Ali (radıyallâhu anh)
+علي عليه السلام	Ali (aleyhisselâm)
+علي	Ali
+علي بن أبي طالب	Ali b. Ebî Tâlib
+علي بن أبي طالب رضي الله عنه	Ali b. Ebî Tâlib (radıyallâhu anh)
+يزيد	Yezîd
+محمد بن جعفر	Muhammed b. Ca‘fer
+محمد بن جعفر بن الزبير	Muhammed b. Ca‘fer b. ez-Zübeyr
+محمد بن جعفر بن زياد	Muhammed b. Ca‘fer b. Ziyâd
+عبد الأعلى	Abdüla‘lâ
+عبد الأعلى بن حماد	Abdüla‘lâ b. Hammâd
+سليمان	Süleymân
+عاصم	Âsım
+أبو كامل	Ebû Kâmil
+أبو الأحوص	Ebü’l-Ahvas
+أبي الأحوص	Ebü’l-Ahvas
+عمرو بن مرة	Amr b. Mürre
+عمرو بن عثمان	Amr b. Osman
+عمرو بن عثمان الحمصي	Amr b. Osman el-Hımsî
+سفيان بن عيينة	Süfyân b. Uyeyne
+ابن عيينة	İbn Uyeyne
+طاوس	Tâvûs
+ابن طاوس	İbn Tâvûs
+حجاج	Haccâc
+الحجاج	Haccâc
+حجاج بن محمد	Haccâc b. Muhammed
+حجاج بن أبي يعقوب	Haccâc b. Ebî Ya‘kûb
+حجاج بن منهال	Haccâc b. Minhâl
+عبد الرحمن	Abdurrahmân
+عمران بن حصين	İmrân b. Husayn
+عمران	İmrân
+عمران القطان	İmrân el-Kattân
+عامر	Âmir
+سهيل بن أبي صالح	Süheyl b. Ebî Sâlih
+سهيل	Süheyl
+ابن إدريس	İbn İdrîs
+عبد الله بن إدريس	Abdullah b. İdrîs
+أبي بردة	Ebû Bürde
+عبد الرحمن بن أبي ليلى	Abdurrahmân b. Ebî Leylâ
+ابن أبي ليلى	İbn Ebî Leylâ
+أبي وائل	Ebû Vâil
+الأسود	Esved
+الأسود بن قيس	Esved b. Kays
+أسود بن عامر	Esved b. Âmir
+يحيى بن معين	Yahyâ b. Maîn
+خالد الحذاء	Hâlid el-Hazzâ
+موسى	Mûsâ
+محمد بن الصباح البزاز	Muhammed b. es-Sabbâh el-Bezzâz
+محمد بن الصباح بن سفيان	Muhammed b. es-Sabbâh b. Süfyân
+ابن أبي فديك	İbn Ebî Füdeyk
+جابر بن سمرة	Câbir b. Semüre
+أبي موسى	Ebû Mûsâ
+أبي موسى الأشعري	Ebû Mûsâ el-Eş‘arî
+عبيد الله بن عمر بن ميسرة	Ubeydullah b. Ömer b. Meysere
+عبيد الله بن عمر	Ubeydullah b. Ömer
+معاوية بن صالح	Muâviye b. Sâlih
+يحيى بن أيوب	Yahyâ b. Eyyûb
+محمد بن سيرين	Muhammed b. Sîrîn
+ابن سيرين	İbn Sîrîn
+أبي ذر	Ebû Zer
+مسروق	Mesrûk
+يزيد النحوي	Yezîd en-Nahvî
+عبد الواحد بن زياد	Abdülvâhid b. Ziyâd
+عبد الواحد	Abdülvâhid
+زائدة	Zâide
+المعتمر	Mu‘temir
+معتمر	Mu‘temir
+مطرف	Mutarrif
+عمرو بن الحارث	Amr b. el-Hâris
+الوليد بن مسلم	Velîd b. Müslim
+الوليد بن كثير	Velîd b. Kesîr
+الوليد بن رباح	Velîd b. Rebâh
+هشام بن سعد	Hişâm b. Sa‘d
+معاوية	Muâviye
+معاوية بن أبي سفيان	Muâviye b. Ebî Süfyân
+البراء بن عازب	Berâ b. Âzib
+البراء	Berâ
+جعفر	Ca‘fer
+مخلد بن خالد	Mahled b. Hâlid
+القاسم	Kâsım
+القاسم بن محمد	Kâsım b. Muhammed
+القاسم بن ربيعة	Kâsım b. Rebîa
+القاسم بن عبد الرحمن	Kâsım b. Abdurrahmân
+عبد الرحمن بن مهدي	Abdurrahmân b. Mehdî
+يعقوب	Ya‘kûb
+يعقوب بن إبراهيم	Ya‘kûb b. İbrâhîm
+يعقوب بن إبراهيم بن سعد	Ya‘kûb b. İbrâhîm b. Sa‘d
+أبي نضرة	Ebû Nadra
+مكحول	Mekhûl
+علقمة	Alkame
+علقمة بن مرثد	Alkame b. Mersed
+علقمة بن وائل	Alkame b. Vâil
+يحيى بن آدم	Yahyâ b. Âdem
+كريب	Küreyb
+سمرة بن جندب	Semüre b. Cündeb
+سمرة	Semüre
+علي بن حسين	Ali b. Hüseyin
+علي بن حسين بن واقد	Ali b. Hüseyin b. Vâkıd
+علي بن الحسين بن واقد	Ali b. el-Hüseyin b. Vâkıd
+عبد الله بن مسعود	Abdullah b. Mes‘ûd
+ابن مسعود	İbn Mes‘ûd
+مسعر	Mis‘ar
+أبو داود	Ebû Dâvûd
+عبد الله بن داود	Abdullah b. Dâvûd
+محمد بن المنكدر	Muhammed b. el-Münkedir
+ابن المنكدر	İbnü’l-Münkedir
+سليمان بن يسار	Süleymân b. Yesâr
+عطاء بن السائب	Atâ b. es-Sâib
+سعيد بن أبي سعيد	Saîd b. Ebî Saîd
+سعيد بن أبي سعيد المقبري	Saîd b. Ebî Saîd el-Makburî
+سعيد المقبري	Saîd el-Makburî
+المقبري	Makburî
+محمد بن إبراهيم	Muhammed b. İbrâhîm
+محمد بن إبراهيم التيمي	Muhammed b. İbrâhîm et-Teymî
+موسى بن عقبة	Mûsâ b. Ukbe
+حصين	Husayn
+حبيب بن أبي ثابت	Habîb b. Ebî Sâbit
+أسامة بن زيد	Üsâme b. Zeyd
+أسامة بن زيد الليثي	Üsâme b. Zeyd el-Leysî
+أسامة	Üsâme
+يزيد بن أبي زياد	Yezîd b. Ebî Ziyâd
+ابن لهيعة	İbn Lehîa
+عبدة	Abde
+عبدة بن عبد الله	Abde b. Abdullah
+بشر	Bişr
+عاصم بن كليب	Âsım b. Küleyb
+حذيفة	Huzeyfe
+حيوة بن شريح	Hayve b. Şüreyh
+حيوة بن شريح الحضرمي	Hayve b. Şüreyh el-Hadramî
+حيوة	Hayve
+عقبة بن عامر	Ukbe b. Âmir
+عقبة بن عامر الجهني	Ukbe b. Âmir el-Cühenî
+عمرة	Amre
+عمرة بنت عبد الرحمن	Amre bt. Abdurrahmân
+ابن أبي عدي	İbn Ebî Adî
+سلمة بن كهيل	Seleme b. Küheyl
+أحمد بن إبراهيم	Ahmed b. İbrâhîm
+أبي بشر	Ebû Bişr
+عقيل	Ukayl
+عبيد الله بن عبد الله	Ubeydullah b. Abdullah
+عبيد الله بن عبد الله بن عتبة	Ubeydullah b. Abdullah b. Utbe
+أبي بن كعب	Übey b. Ka‘b
+عطاء بن أبي رباح	Atâ b. Ebî Rebâh
+عمر	Ömer
+عمر رضي الله عنه	Ömer (radıyallâhu anh)
+عمر بن الخطاب	Ömer b. el-Hattâb
+عبد الله بن يزيد	Abdullah b. Yezîd
+عبد الوهاب بن نجدة	Abdülvehhâb b. Necde
+عبد الوهاب	Abdülvehhâb
+عبد الله بن عباس	Abdullah b. Abbâs
+الجريري	Cüreyrî
+سعيد الجريري	Saîd el-Cüreyrî
+ابن أبي زائدة	İbn Ebî Zâide
+معاذ بن هشام	Muâz b. Hişâm
+معاذ بن جبل	Muâz b. Cebel
+معاذ	Muâz
+أبي حازم	Ebû Hâzim
+أحمد بن سعيد الهمداني	Ahmed b. Saîd el-Hemdânî
+مروان	Mervân
+مروان بن معاوية	Mervân b. Muâviye
+عنبسة	Anbese
+عنبسة بن خالد	Anbese b. Hâlid
+سلمة	Seleme
+أبو أحمد	Ebû Ahmed
+أبو أحمد الزبيري	Ebû Ahmed ez-Zübeyrî
+إبراهيم بن طهمان	İbrâhîm b. Tahmân
+سليمان بن بلال	Süleymân b. Bilâl
+أحمد بن محمد المروزي	Ahmed b. Muhammed el-Mervezî
+أحمد بن محمد بن ثابت المروزي	Ahmed b. Muhammed b. Sâbit el-Mervezî
+أحمد بن محمد بن ثابت	Ahmed b. Muhammed b. Sâbit
+أحمد بن محمد	Ahmed b. Muhammed
+المغيرة بن شعبة	Mugîre b. Şu‘be
+المغيرة	Mugîre
+مغيرة	Mugîre
+حفص	Hafs
+حفص بن غياث	Hafs b. Gıyâs
+أبو توبة الربيع بن نافع	Ebû Tevbe er-Rebî‘ b. Nâfi‘
+الربيع بن نافع أبو توبة	Rebî‘ b. Nâfi‘ Ebû Tevbe
+الربيع بن نافع	Rebî‘ b. Nâfi‘
+أبو توبة	Ebû Tevbe
+أبي أمامة	Ebû Ümâme
+أبي أمامة بن سهل	Ebû Ümâme b. Sehl
+أبي أمامة بن سهل بن حنيف	Ebû Ümâme b. Sehl b. Huneyf
+ابن أبي نجيح	İbn Ebî Necîh
+عبد الله بن دينار	Abdullah b. Dînâr
+النعمان بن بشير	Nu‘mân b. Beşîr
+أبي قتادة	Ebû Katâde
+عثمان بن عمر	Osman b. Ömer
+عثمان	Osman
+عثمان بن أبي سليمان	Osman b. Ebî Süleymân
+عثمان بن حكيم	Osman b. Hakîm
+هلال بن يساف	Hilâl b. Yesâf
+زيد	Zeyd
+يونس بن يزيد	Yûnus b. Yezîd
+يحيى بن يعمر	Yahyâ b. Ya‘mer
+زيد بن الحباب	Zeyd b. el-Hubâb
+عاصم الأحول	Âsım el-Ahvel
+سهل بن سعد	Sehl b. Sa‘d
+سهل بن سعد الساعدي	Sehl b. Sa‘d es-Sâidî
+عبد الرحمن بن القاسم	Abdurrahmân b. el-Kâsım
+زياد بن أيوب	Ziyâd b. Eyyûb
+أبي الدرداء	Ebü’d-Derdâ
+أم الدرداء	Ümmü’d-Derdâ
+عبادة بن الصامت	Ubâde b. es-Sâmit
+شيبان	Şeybân
+شيبان بن فروخ	Şeybân b. Ferrûh
+إبراهيم بن سعد	İbrâhîm b. Sa‘d
+ابن نمير	İbn Nümeyr
+عبد الله بن نمير	Abdullah b. Nümeyr
+محمد بن عبد الله بن نمير	Muhammed b. Abdullah b. Nümeyr
+سعيد بن أبي أيوب	Saîd b. Ebî Eyyûb
+عمرو بن مرزوق	Amr b. Merzûk
+محمد بن يحيى بن حبان	Muhammed b. Yahyâ b. Habbân
+إسحاق بن عبد الله بن أبي طلحة	İshâk b. Abdullah b. Ebî Talha
+بشر بن المفضل	Bişr b. el-Mufaddal
+محمد بن رافع	Muhammed b. Râfi‘
+جرير بن حازم	Cerîr b. Hâzim
+جرير بن عبد الحميد	Cerîr b. Abdülhamîd
+أبي رافع	Ebû Râfi‘
+إسماعيل بن إبراهيم	İsmâîl b. İbrâhîm
+أم عطية	Ümmü Atıyye
+هشام بن عمار	Hişâm b. Ammâr
+محمد بن فضيل	Muhammed b. Fudayl
+ابن فضيل	İbn Fudayl
+هارون بن زيد بن أبي الزرقاء	Hârûn b. Zeyd b. Ebi’z-Zerkâ
+حسين المعلم	Hüseyin el-Muallim
+إسماعيل بن أمية	İsmâîl b. Ümeyye
+حميد بن هلال	Humeyd b. Hilâl
+ابن أبي مليكة	İbn Ebî Müleyke
+عبد الله بن أبي مليكة	Abdullah b. Ebî Müleyke
+الفريابي	Firyâbî
+وهب بن جرير	Vehb b. Cerîr
+عكرمة بن عمار	İkrime b. Ammâr
+عكرمة بن خالد	İkrime b. Hâlid
+العلاء بن عبد الرحمن	Alâ b. Abdurrahmân
+العلاء بن الحارث	Alâ b. el-Hâris
+العلاء	Alâ
+ابن العلاء	İbnü’l-Alâ
+ثور	Sevr
+ثور بن يزيد	Sevr b. Yezîd
+ابن ثور	İbn Sevr
+محمد بن ثور	Muhammed b. Sevr
+محمد بن عوف الطائي	Muhammed b. Avf et-Tâî
+محمد بن عوف	Muhammed b. Avf
+علي بن زيد	Ali b. Zeyd
+عمار بن ياسر	Ammâr b. Yâsir
+عمار بن رزيق	Ammâr b. Ruzeyk
+بهز بن حكيم	Behz b. Hakîm
+ثوبان	Sevbân
+ابن ثوبان	İbn Sevbân
+يعلى بن عطاء	Ya‘lâ b. Atâ
+يعلى	Ya‘lâ
+أبي عثمان	Ebû Osman
+أبي عثمان النهدي	Ebû Osman en-Nehdî
+شقيق	Şakîk
+أبي بكرة	Ebû Bekre
+مقسم	Miksem
+يوسف بن موسى	Yûsuf b. Mûsâ
+محمد بن داود بن سفيان	Muhammed b. Dâvûd b. Süfyân
+حاتم بن إسماعيل	Hâtim b. İsmâîl
+حاتم	Hâtim
+عبيد بن عمير	Ubeyd b. Umeyr
+عبيد	Ubeyd
+أبو خالد	Ebû Hâlid
+أبو خالد الأحمر	Ebû Hâlid el-Ahmer
+أبي خالد الدالاني	Ebû Hâlid ed-Dâlânî
+بسر بن سعيد	Büsr b. Saîd
+عوف	Avf
+عوف بن مالك	Avf b. Mâlik
+عوف بن مالك الأشجعي	Avf b. Mâlik el-Eşcaî
+محمد بن المتوكل العسقلاني	Muhammed b. el-Mütevekkil el-Askalânî
+سعيد بن أبي عروبة	Saîd b. Ebî Arûbe
+ابن أبي عروبة	İbn Ebî Arûbe
+يحيى بن خلف	Yahyâ b. Halef
+يحيى بن حسان	Yahyâ b. Hassân
+روح	Ravh
+أبو بكر	Ebû Bekir
+أبو بكر بن عياش	Ebû Bekir b. Ayyâş
+أبي بكر بن عبد الرحمن	Ebû Bekir b. Abdurrahmân
+زيد بن خالد الجهني	Zeyd b. Hâlid el-Cühenî
+صفية بنت شيبة	Safiyye bt. Şeybe
+صفية	Safiyye
+مؤمل بن الفضل الحراني	Müemmel b. el-Fadl el-Harrânî
+مؤمل بن الفضل	Müemmel b. el-Fadl
+مؤمل بن هشام	Müemmel b. Hişâm
+مؤمل	Müemmel
+شهر بن حوشب	Şehr b. Havşeb
+جبير بن نفير	Cübeyr b. Nüfeyr
+جبير بن مطعم	Cübeyr b. Mut‘im
+الزبيدي	Zübeydî
+ابن الهاد	İbnü’l-Hâd
+يزيد بن الهاد	Yezîd b. el-Hâd
+يزيد بن عبد الله بن الهاد	Yezîd b. Abdullah b. el-Hâd
+سعد بن إبراهيم	Sa‘d b. İbrâhîm
+زيد بن ثابت	Zeyd b. Sâbit
+إسماعيل بن أبي خالد	İsmâîl b. Ebî Hâlid
+ربيعة بن أبي عبد الرحمن	Rebîa b. Ebî Abdurrahmân
+ربيعة	Rebîa
+ربيعة بن يزيد	Rebîa b. Yezîd
+المسعودي	Mes‘ûdî
+قيس	Kays
+قيس بن سعد	Kays b. Sa‘d
+قيس بن طلق	Kays b. Talk
+شعيب	Şuayb
+شعيب بن أبي حمزة	Şuayb b. Ebî Hamza
+سعد بن عبيدة	Sa‘d b. Ubeyde
+أبو عامر	Ebû Âmir
+أحمد بن منيع	Ahmed b. Menî‘
+ابن أبي مريم	İbn Ebî Meryem
+ابن علية	İbn Uleyye
+حميد بن عبد الرحمن	Humeyd b. Abdurrahmân
+عطاء بن يزيد الليثي	Atâ b. Yezîd el-Leysî
+عطاء بن يزيد	Atâ b. Yezîd
+عطاء الخراساني	Atâ el-Horasânî
+هاشم بن القاسم	Hâşim b. el-Kâsım
+زرارة بن أوفى	Zürâre b. Evfâ
+عبد العزيز بن يحيى الحراني	Abdülazîz b. Yahyâ el-Harrânî
+أبو المغيرة	Ebü’l-Mugîre
+إسحاق بن إسماعيل	İshâk b. İsmâîl
+إسحاق بن إسماعيل الطالقاني	İshâk b. İsmâîl et-Tâlekânî
+محمد بن بشر	Muhammed b. Bişr
+حميد بن مسعدة	Humeyd b. Mes‘ade
+سفيان الثوري	Süfyân es-Sevrî
+الثوري	Sevrî
+سفيان بن سعيد	Süfyân b. Saîd
+سفيان بن حسين	Süfyân b. Hüseyin
+عبد الله بن أبي بكر	Abdullah b. Ebî Bekir
+أبي النضر	Ebü’n-Nadr
+أبو النضر	Ebü’n-Nadr
+النضر بن أنس	Nadr b. Enes
+حميد الطويل	Humeyd et-Tavîl
+خصيف	Husayf
+الشيباني	Şeybânî
+عدي بن ثابت	Adî b. Sâbit
+عدي بن حاتم	Adî b. Hâtim
+صالح	Sâlih
+صالح بن كيسان	Sâlih b. Keysân
+جعفر بن مسافر	Ca‘fer b. Müsâfir
+جعفر بن مسافر التنيسي	Ca‘fer b. Müsâfir et-Tinnîsî
+بكير	Bükeyr
+بكير بن عبد الله بن الأشج	Bükeyr b. Abdullah b. el-Eşecc
+بكير بن الأشج	Bükeyr b. el-Eşecc
+حسان بن عطية	Hassân b. Atıyye
+زكريا	Zekeriyyâ
+سمي	Sümey
+هشام بن حسان	Hişâm b. Hassân
+داود بن أبي هند	Dâvûd b. Ebî Hind
+رافع بن خديج	Râfi‘ b. Hadîc
+رافع	Râfi‘
+يونس بن عبيد	Yûnus b. Ubeyd
+عباس العنبري	Abbâs el-Anberî
+سليمان بن موسى	Süleymân b. Mûsâ
+سليمان بن موسى أبو داود	Süleymân b. Mûsâ Ebû Dâvûd
+أبي سفيان	Ebû Süfyân
+عبيد الله بن أبي رافع	Ubeydullah b. Ebî Râfi‘
+ابن جابر	İbn Câbir
+أحمد بن أبي شعيب الحراني	Ahmed b. Ebî Şuayb el-Harrânî
+أحمد بن أبي شعيب	Ahmed b. Ebî Şuayb
+عبد الصمد	Abdüssamed
+عبد الصمد بن عبد الوارث	Abdüssamed b. Abdülvâris
+عبد العزيز بن صهيب	Abdülazîz b. Suheyb
+زيد بن أرقم	Zeyd b. Erkam
+معاوية بن هشام	Muâviye b. Hişâm
+عبيد الله بن موسى	Ubeydullah b. Mûsâ
+ميمونة	Meymûne
+عيسى بن حماد	Îsâ b. Hammâd
+عبد الملك بن عمرو	Abdülmelik b. Amr
+عبد الملك بن شعيب بن الليث	Abdülmelik b. Şuayb b. el-Leys
+عبد الملك بن شعيب	Abdülmelik b. Şuayb
+عبد الملك	Abdülmelik
+عبد الملك بن عمير	Abdülmelik b. Umeyr
+عبد الملك بن أبي سليمان	Abdülmelik b. Ebî Süleymân
+محمد بن شعيب	Muhammed b. Şuayb
+عبد الله بن شقيق	Abdullah b. Şakîk
+سعيد بن عبد العزيز	Saîd b. Abdülazîz
+عمارة بن غزية	Umâre b. Gaziyye
+عمارة بن عمير	Umâre b. Umeyr
+عمارة	Umâre
+حسين	Hüseyin
+الحسين	Hüseyin
+حسين بن علي	Hüseyin b. Ali
+محارب بن دثار	Muhârib b. Disâr
+خالد بن الحارث	Hâlid b. el-Hâris
+ابن كثير	İbn Kesîr
+محمد بن جحادة	Muhammed b. Cuhâde
+وائل بن حجر	Vâil b. Hucr
+إسحاق	İshâk
+عباس بن عبد العظيم	Abbâs b. Abdülazîm
+العباس بن عبد العظيم	Abbâs b. Abdülazîm
+محمد بن المصفى	Muhammed b. el-Musaffâ
+ابن المصفى	İbnü’l-Musaffâ
+عبد العزيز بن رفيع	Abdülazîz b. Rufey‘
+عاصم بن ضمرة	Âsım b. Damre
+إسماعيل بن عياش	İsmâîl b. Ayyâş
+ابن عياش	İbn Ayyâş
+خالد بن معدان	Hâlid b. Ma‘dân
+بشير بن يسار	Büşeyr b. Yesâr
+ربعي بن حراش	Rib‘î b. Hırâş
+ربعي	Rib‘î
+عبد الله بن مغفل	Abdullah b. Mugaffel
+عبد الله بن أبي قتادة	Abdullah b. Ebî Katâde
+أبي المليح	Ebü’l-Melîh
+أبو المليح	Ebü’l-Melîh
+أبو نعيم	Ebû Nuaym
+عبد الله بن محمد بن عقيل	Abdullah b. Muhammed b. Akîl
+طلحة	Talha
+طلحة بن يحيى	Talha b. Yahyâ
+طلحة بن مصرف	Talha b. Musarrif
+عقبة بن مكرم	Ukbe b. Mükrem
+أبي زرعة بن عمرو بن جرير	Ebû Zür‘a b. Amr b. Cerîr
+أبي زرعة	Ebû Zür‘a
+حبيب	Habîb
+حبيب المعلم	Habîb el-Muallim
+حبيب بن سالم	Habîb b. Sâlim
+أبي العالية	Ebü’l-Âliye
+الهيثم بن حميد	Heysem b. Humeyd
+محمد بن إسماعيل	Muhammed b. İsmâîl
+عمرو بن أبي عمرو	Amr b. Ebî Amr
+الأشعث	Eş‘as
+أشعث	Eş‘as
+عبيدة	Abîde
+عفان	Affân
+جعفر بن برقان	Ca‘fer b. Burkân
+سليمان التيمي	Süleymân et-Teymî
+إبراهيم التيمي	İbrâhîm et-Teymî
+مجالد	Mücâlid
+أبي عبيدة	Ebû Ubeyde
+أحمد بن عبدة	Ahmed b. Abde
+أحمد بن عبدة الضبي	Ahmed b. Abde ed-Dabbî
+يحيى بن موسى البلخي	Yahyâ b. Mûsâ el-Belhî
+عبد الله بن جعفر	Abdullah b. Ca‘fer
+عبد الرحمن بن جبير بن نفير	Abdurrahmân b. Cübeyr b. Nüfeyr
+عبد الرحمن بن جبير	Abdurrahmân b. Cübeyr
+عبيد الله بن أبي جعفر	Ubeydullah b. Ebî Ca‘fer
+الفضل بن دكين	Fadl b. Dükeyn
+الفضل بن موسى	Fadl b. Mûsâ
+عبد الله بن الحارث	Abdullah b. el-Hâris
+صفوان	Safvân
+صفوان بن عيسى	Safvân b. Îsâ
+صفوان بن سليم	Safvân b. Süleym
+صفوان بن عمرو	Safvân b. Amr
+صفوان بن يعلى	Safvân b. Ya‘lâ
+أبي الطفيل	Ebü’t-Tufeyl
+بشر بن عمر	Bişr b. Ömer
+بشر بن بكر	Bişr b. Bekr
+مسلم	Müslim
+مسلم البطين	Müslim el-Batîn
+سعد	Sa‘d
+حامد بن يحيى	Hâmid b. Yahyâ
+ابن عون	İbn Avn
+أبي الخير	Ebü’l-Hayr
+عبد الله بن الجراح	Abdullah b. el-Cerrâh
+عبد الرحمن بن يزيد	Abdurrahmân b. Yezîd
+عبد الرحمن بن يزيد بن جابر	Abdurrahmân b. Yezîd b. Câbir
+القعقاع بن حكيم	Ka‘kâ‘ b. Hakîm
+عمرو بن يحيى	Amr b. Yahyâ
+عمرو بن يحيى المازني	Amr b. Yahyâ el-Mâzinî
+إسماعيل بن جعفر	İsmâîl b. Ca‘fer
+محمد بن حاتم بن بزيع	Muhammed b. Hâtim b. Bezî‘
+راشد بن سعد	Râşid b. Sa‘d
+محمد بن حرب	Muhammed b. Harb
+شريح بن عبيد	Şüreyh b. Ubeyd
+شريح	Şüreyh
+عبد الرحمن بن الأسود	Abdurrahmân b. el-Esved
+علي بن مسهر	Ali b. Müshir
+إبراهيم بن مهاجر	İbrâhîm b. Muhâcir
+محمد بن مهاجر	Muhammed b. Muhâcir
+علي بن سهل الرملي	Ali b. Sehl er-Remlî
+محمد بن المنهال	Muhammed b. el-Minhâl
+نصر بن عاصم الأنطاكي	Nasr b. Âsım el-Antâkî
+نصر بن عاصم	Nasr b. Âsım
+حفصة	Hafsa
+حفصة بنت سيرين	Hafsa bt. Sîrîn
+عبد الله بن الزبير	Abdullah b. ez-Zübeyr
+أسماء بنت أبي بكر	Esmâ bt. Ebî Bekir
+محمد بن قدامة بن أعين	Muhammed b. Kudâme b. A‘yen
+داود بن رشيد	Dâvûd b. Rüşeyd
+داود بن الحصين	Dâvûd b. el-Husayn
+بديل	Büdeyl
+بديل بن ميسرة	Büdeyl b. Meysere
+يوسف بن ماهك	Yûsuf b. Mâhek
+يوسف بن عبد الله بن سلام	Yûsuf b. Abdullah b. Selâm
+محمد بن مسلم	Muhammed b. Müslim
+سهل بن أبي حثمة	Sehl b. Ebî Hasme
+بشير بن نهيك	Beşîr b. Nehîk
+عبد الرحمن بن إسحاق	Abdurrahmân b. İshâk
+عبد الله بن أبي أوفى	Abdullah b. Ebî Evfâ
+عامر بن سعد	Âmir b. Sa‘d
+عامر بن سعد بن أبي وقاص	Âmir b. Sa‘d b. Ebî Vakkâs
+سعد بن أبي وقاص	Sa‘d b. Ebî Vakkâs
+عامر بن عبد الله بن الزبير	Âmir b. Abdullah b. ez-Zübeyr
+كعب بن عجرة	Ka‘b b. Ucre
+كعب بن مالك	Ka‘b b. Mâlik
+كعب بن علقمة	Ka‘b b. Alkame
+ابن كعب بن مالك	İbn Ka‘b b. Mâlik
+عبد الرحمن بن كعب بن مالك	Abdurrahmân b. Ka‘b b. Mâlik
+إسماعيل بن زكريا	İsmâîl b. Zekeriyyâ
+محمد بن عبد الرحمن	Muhammed b. Abdurrahmân
+سعيد بن سليمان	Saîd b. Süleymân
+الحسن بن الصباح	Hasan b. es-Sabbâh
+محمد بن بكر	Muhammed b. Bekr
+ضمضم	Damdam
+عمرو بن ميمون	Amr b. Meymûn
+الربيع بن سليمان المؤذن	Rebî‘ b. Süleymân el-Müezzin
+المسور بن مخرمة	Misver b. Mahreme
+سليمان بن كثير	Süleymân b. Kesîr
+بحير	Bahîr
+زيد بن وهب	Zeyd b. Vehb
+المفضل	Mufaddal
+عبد الرحمن بن زياد	Abdurrahmân b. Ziyâd
+عباد بن تميم	Abbâd b. Temîm
+عبد الله بن عيسى	Abdullah b. Îsâ
+أبي يحيى	Ebû Yahyâ
+فطر	Fıtr
+عبد الله بن العلاء	Abdullah b. el-Alâ
+واصل	Vâsıl
+واصل بن عبد الأعلى	Vâsıl b. Abdüla‘lâ
+يحيى بن أبي بكير	Yahyâ b. Ebî Bükeyr
+عبد السلام بن مطهر	Abdüsselâm b. Mutahhar
+عبد السلام بن حرب	Abdüsselâm b. Harb
+عبد الله بن نافع	Abdullah b. Nâfi‘
+عمرو بن سليم الزرقي	Amr b. Süleym ez-Zürakî
+خالد بن يزيد	Hâlid b. Yezîd
+عباد بن عباد	Abbâd b. Abbâd
+عباد بن العوام	Abbâd b. el-Avvâm
+عباد بن موسى	Abbâd b. Mûsâ
+عباد بن موسى الختلي	Abbâd b. Mûsâ el-Huttalî
+مسكين	Miskîn
+أبي العلاء	Ebü’l-Alâ
+زياد	Ziyâd
+زياد بن علاقة	Ziyâd b. İlâka
+أبي جعفر	Ebû Ca‘fer
+أبو جعفر الرازي	Ebû Ca‘fer er-Râzî
+علي بن الأقمر	Ali b. el-Akmer
+فليح	Füleyh
+عاصم بن عبيد الله	Âsım b. Ubeydullah
+الزبير	Zübeyr
+أسباط	Esbât
+محمد بن يحيى	Muhammed b. Yahyâ
+يونس بن أبي إسحاق	Yûnus b. Ebî İshâk
+عبد الله بن سعيد	Abdullah b. Saîd
+عبد الله بن سعيد الكندي	Abdullah b. Saîd el-Kindî
+يحيى بن زكريا	Yahyâ b. Zekeriyyâ
+يحيى بن زكريا بن أبي زائدة	Yahyâ b. Zekeriyyâ b. Ebî Zâide
+أبي المهلب	Ebü’l-Mühelleb
+السائب بن يزيد	Sâib b. Yezîd
+عبد الحميد بن جعفر	Abdülhamîd b. Ca‘fer
+عبد الحميد	Abdülhamîd
+عبد الله بن أبي قيس	Abdullah b. Ebî Kays
+وهب بن منبه	Vehb b. Münebbih
+وهب	Vehb
+عبيد الله بن الأخنس	Ubeydullah b. el-Ahnes
+سليمان بن عبد الرحمن الدمشقي	Süleymân b. Abdurrahmân ed-Dımaşkî
+عبد الله بن عثمان بن خثيم	Abdullah b. Osman b. Huseym
+عبد الرحمن بن أبي بكرة	Abdurrahmân b. Ebî Bekre
+محمد بن خالد	Muhammed b. Hâlid
+قبيصة بن ذؤيب	Kabîsa b. Züeyb
+محمد بن راشد	Muhammed b. Râşid
+فاطمة بنت قيس	Fâtıma bt. Kays
+فاطمة بنت المنذر	Fâtıma bt. el-Münzir
+الحسن بن عمرو	Hasan b. Amr
+الحسن بن مسلم	Hasan b. Müslim
+الحسن بن عبيد الله	Hasan b. Ubeydullah
+سلمان	Selmân
+أبي أيوب	Ebû Eyyûb
+المسيب بن رافع	Müseyyeb b. Râfi‘
+عياش بن عباس القتباني	Ayyâş b. Abbâs el-Kıtbânî
+محمد بن عبد الله	Muhammed b. Abdullah
+محمد بن عبد الله الأنصاري	Muhammed b. Abdullah el-Ensârî
+محمد بن عبد الله الخزاعي	Muhammed b. Abdullah el-Huzâî
+المقدام بن شريح	Mikdâm b. Şüreyh
+المقدام بن معدي كرب	Mikdâm b. Ma‘dîkerib
+سعد بن هشام	Sa‘d b. Hişâm
+أبي رزين	Ebû Rezîn
+عبد خير	Abd Hayr
+المنهال بن عمرو	Minhâl b. Amr
+حريز	Harîz
+حريز بن عثمان	Harîz b. Osman
+يحيى بن سليم	Yahyâ b. Süleym
+أبي عبد الرحمن الحبلي	Ebû Abdurrahmân el-Hubulî
+أبي عبد الرحمن السلمي	Ebû Abdurrahmân es-Sülemî
+أبي عبد الرحمن	Ebû Abdurrahmân
+سليمان بن بريدة	Süleymân b. Büreyde
+هارون بن معروف	Hârûn b. Ma‘rûf
+عبادة بن نسي	Ubâde b. Nüsey
+زاذان	Zâzân
+أيوب بن موسى	Eyyûb b. Mûsâ
+أحمد بن أبي سريج الرازي	Ahmed b. Ebî Süreyc er-Râzî
+جعفر بن ربيعة	Ca‘fer b. Rebîa
+جعفر بن محمد	Ca‘fer b. Muhammed
+جعفر بن سليمان	Ca‘fer b. Süleymân
+جعفر بن سعد بن سمرة بن جندب	Ca‘fer b. Sa‘d b. Semüre b. Cündeb
+عمرو بن العاص	Amr b. el-Âs
+يزيد بن خالد الرملي	Yezîd b. Hâlid er-Remlî
+يزيد بن خالد بن موهب الرملي	Yezîd b. Hâlid b. Mevheb er-Remlî
+عبد الرحمن بن أبي سعيد الخدري	Abdurrahmân b. Ebî Saîd el-Hudrî
+أبو مسهر	Ebû Müshir
+خيثمة	Hayseme
+عبد الله بن الصامت	Abdullah b. es-Sâmit
+عبد الله بن رباح الأنصاري	Abdullah b. Rebâh el-Ensârî
+عبد الله بن رباح	Abdullah b. Rebâh
+خبيب بن سليمان	Hubeyb b. Süleymân
+خبيب بن عبد الرحمن	Hubeyb b. Abdurrahmân
+عياض بن عبد الله	İyâz b. Abdullah
+أبي عياض	Ebû İyâz
+نافع بن عمر	Nâfi‘ b. Ömer
+نافع بن جبير	Nâfi‘ b. Cübeyr
+نافع بن يزيد	Nâfi‘ b. Yezîd
+عبد العزيز بن أبي رواد	Abdülazîz b. Ebî Revvâd
+عبد العزيز بن عمر	Abdülazîz b. Ömer
+عبد العزيز بن عمر بن عبد العزيز	Abdülazîz b. Ömer b. Abdülazîz
+شبابة	Şebâbe
+أبي حصين	Ebû Hasîn
+عبد الله بن محمد الزهري	Abdullah b. Muhammed ez-Zührî
+عبد الله بن محمد	Abdullah b. Muhammed
+جابر بن زيد	Câbir b. Zeyd
+عبد الرحيم بن سليمان	Abdürrahîm b. Süleymân
+عبد الجبار بن وائل	Abdülcebbâr b. Vâil
+أبو بدر	Ebû Bedr
+محمد بن معمر	Muhammed b. Ma‘mer
+طلق بن غنام	Talk b. Gannâm
+عبد الرحمن بن إبراهيم	Abdurrahmân b. İbrâhîm
+عبد الرحمن بن إبراهيم الدمشقي	Abdurrahmân b. İbrâhîm ed-Dımaşkî
+مصعب بن سعد	Mus‘ab b. Sa‘d
+مصعب بن شيبة	Mus‘ab b. Şeybe
+أبي الضحى	Ebü’d-Duhâ
+خالد بن عبد الله	Hâlid b. Abdullah
+أبي إدريس الخولاني	Ebû İdrîs el-Havlânî
+عبد الله بن عبد الله	Abdullah b. Abdullah
+تميم بن المنتصر	Temîm b. el-Muntasır
+محمد بن عبد العزيز بن أبي رزمة	Muhammed b. Abdülazîz b. Ebî Rizme
+المطلب	Muttalib
+يزيد بن خمير	Yezîd b. Humeyr
+يحيى بن عباد	Yahyâ b. Abbâd
+زيد بن أبي أنيسة	Zeyd b. Ebî Üneyse
+ميمون بن مهران	Meymûn b. Mihrân
+علي بن بحر	Ali b. Bahr
+عبيد الله بن أبي يزيد	Ubeydullah b. Ebî Yezîd
+عبيد الله بن مقسم	Ubeydullah b. Miksem
+هشام بن يوسف	Hişâm b. Yûsuf
+هشام بن زيد	Hişâm b. Zeyd
+سلمة بن المحبق	Seleme b. el-Muhabbik
+سلمة بن الأكوع	Seleme b. el-Ekva‘
+فضالة بن عبيد	Fadâle b. Ubeyd
+ضمرة	Damre
+موسى بن مروان الرقي	Mûsâ b. Mervân er-Rakkî
+موسى بن علي بن رباح	Mûsâ b. Ulayy b. Rebâh
+إياس بن سلمة	İyâs b. Seleme
+يحيى بن حمزة	Yahyâ b. Hamza
+أبي ثعلبة الخشني	Ebû Sa‘lebe el-Huşenî
+سعيد بن زيد	Saîd b. Zeyd
+عبد الله بن مرة	Abdullah b. Mürre
+أبو شهاب	Ebû Şihâb
+سعيد بن جمهان	Saîd b. Cumhân
+أبي رمثة	Ebû Rimse
+أبي معشر	Ebû Ma‘şer
+يحيى بن أبي عمرو السيباني	Yahyâ b. Ebî Amr es-Seybânî
+إبراهيم بن خالد	İbrâhîm b. Hâlid
+غيلان بن جرير	Gaylân b. Cerîr
+غيلان	Gaylân
+كثير	Kesîr
+محمد ابن الحنفية	Muhammed İbnü’l-Hanefiyye
+أبي مريم	Ebû Meryem
+أبي علقمة	Ebû Alkame
+الربيع بنت معوذ ابن عفراء	Rubeyyi‘ bt. Muavviz İbn Afrâ
+إسماعيل بن كثير	İsmâîl b. Kesîr
+إسماعيل بن رجاء	İsmâîl b. Recâ
+عاصم بن لقيط بن صبرة	Âsım b. Lakît b. Sabire
+عاصم بن بهدلة	Âsım b. Behdele
+هدبة بن خالد	Hüdbe b. Hâlid
+علي بن عياش	Ali b. Ayyâş
+الأغر	Ağar
+أبي المتوكل	Ebü’l-Mütevekkil
+حماد بن خالد الخياط	Hammâd b. Hâlid el-Hayyât
+عائشة بنت طلحة	Âişe bt. Talha
+معاذة	Muâze
+عمرو بن أبي قيس	Amr b. Ebî Kays
+أبي مالك	Ebû Mâlik
+أبي مالك الأشجعي	Ebû Mâlik el-Eşcaî
+سعيد بن أبي هلال	Saîd b. Ebî Hilâl
+أبي حرب بن أبي الأسود	Ebû Harb b. Ebi’l-Esved
+صدقة بن خالد	Sadaka b. Hâlid
+ابن محيريز	İbn Muhayrîz
+إبراهيم بن مهدي	İbrâhîm b. Mehdî
+بلال	Bilâl
+أبي الشعثاء	Ebü’ş-Şa‘sâ
+هارون بن عباد الأزدي	Hârûn b. Abbâd el-Ezdî
+إسحاق بن يوسف	İshâk b. Yûsuf
+يحيى بن الحارث	Yahyâ b. el-Hâris
+عبد الرحمن بن حرملة	Abdurrahmân b. Harmele
+محمد بن زياد	Muhammed b. Ziyâd
+المختار بن فلفل	Muhtâr b. Fülfül
+سليمان الأحول	Süleymân el-Ahvel
+عبد الله بن السائب	Abdullah b. es-Sâib
+علي بن المبارك	Ali b. el-Mübârek
+عبد الله بن شداد	Abdullah b. Şeddâd
+أبي الزاهرية	Ebü’z-Zâhiriyye
+أبي مسعود	Ebû Mes‘ûd
+أبو الأشهب	Ebü’l-Eşheb
+عمر بن يونس	Ömer b. Yûnus
+أبي الجوزاء	Ebü’l-Cevzâ
+يحيى بن حبيب	Yahyâ b. Habîb
+الحارث	Hâris
+سهل ابن الحنظلية	Sehl İbnü’l-Hanzaliyye
+معاوية بن الحكم السلمي	Muâviye b. el-Hakem es-Sülemî
+معاوية بن قرة	Muâviye b. Kurre
+إبراهيم بن الحسن المصيصي	İbrâhîm b. el-Hasan el-Massîsî
+إبراهيم بن عبد الله بن حنين	İbrâhîm b. Abdullah b. Huneyn
+أبي الأشعث الصنعاني	Ebü’l-Eş‘as es-San‘ânî
+أبي الخليل	Ebü’l-Halîl
+عبد ربه	Abdürabbih
+عبد ربه بن سعيد	Abdürabbih b. Saîd
+ابن أبي خلف	İbn Ebî Halef
+الربيع بن أنس	Rebî‘ b. Enes
+العباس بن الوليد بن مزيد	Abbâs b. el-Velîd b. Mezyed
+عبد الرحمن بن سمرة	Abdurrahmân b. Semüre
+أبو معمر عبد الله بن عمرو	Ebû Ma‘mer Abdullah b. Amr
+أم حبيبة	Ümmü Habîbe
+يحيى بن عقيل	Yahyâ b. Ukayl
+مخرمة بن سليمان	Mahreme b. Süleymân
+مالك بن مغول	Mâlik b. Miğvel
+مالك بن أوس بن الحدثان	Mâlik b. Evs b. el-Hadesân
+عراك بن مالك	Irâk b. Mâlik
+يزيد بن عبد الله بن قسيط	Yezîd b. Abdullah b. Kusayt
+أبو صخر	Ebû Sahr
+أبو اليمان	Ebü’l-Yemân
+مكي بن إبراهيم	Mekkî b. İbrâhîm
+أبي أسماء	Ebû Esmâ
+سويد بن غفلة	Süveyd b. Gafele
+محمد بن عبد الرحيم	Muhammed b. Abdürrahîm
+أبي حيان التيمي	Ebû Hayyân et-Teymî
+نبيه بن وهب	Nübeyh b. Vehb
+مطر	Matar
+سليمان بن المغيرة	Süleymân b. el-Mugîre
+معقل بن يسار	Ma‘kıl b. Yesâr
+زينب بنت أم سلمة	Zeyneb bt. Ümmi Seleme
+حنش الصنعاني	Haneş es-San‘ânî
+عبد الرحمن بن الحارث	Abdurrahmân b. el-Hâris
+أبو عمرو	Ebû Amr
+أبي ظبيان	Ebû Zabyân
+عبد الله بن أبي السفر	Abdullah b. Ebi’s-Sefer
+سهل بن بكار	Sehl b. Bekkâr
+محمد بن أبي يحيى	Muhammed b. Ebî Yahyâ
+حكيم بن حزام	Hakîm b. Hizâm
+جنادة بن أبي أمية	Cünâde b. Ebî Ümeyye
+أبي هاشم	Ebû Hâşim
+عبد الله بن بسر	Abdullah b. Büsr
+عطية العوفي	Atıyye el-Avfî
+أبو تميلة	Ebû Tümeyle
