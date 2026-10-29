@@ -104,7 +104,6 @@
 
 20293 | Vekî‘ → Süfyân | Ebû Bekir dedi ki: Vekî‘i şöyle derken işittim: Süfyân dedi ki: “Kölenin şahitliği caiz değildir.” Ebû Bekir dedi ki: Bu, Vekî‘in de görüşüdür.
 & semi‘tü, kâle
-% Bu maddede “حدثنا” yoktur; İbn Ebî Şeybe “قال أبو بكر: سمعت وكيعا” diye başlar.
 ^ «لا تجوز
 
 20294 | Vekî‘ → Hasan b. Sâlih → Mansûr → Mücâhid | Mücâhid dedi ki: “Onu bir dirhem üzerine (bile) geçerli kılmayın.”
@@ -156,9 +155,9 @@
 & haddesenâ, an, an
 ^ «أن النبي
 
-20305 | Mu‘temir b. Süleymân → İbn Ebi’l-Hakem → ninesi → amcası Ebû Râfi‘ b. Amr el-Gıfârî | Ebû Râfi‘ b. Amr el-Gıfârî dedi ki: Ben çocukken Ensâr’ın hurma ağaçlarını taşlardım. Nebî’ye (aleyhisselâm): “Burada hurmalarımızı taşlayan bir çocuk var” denildi. Beni Nebî’ye ﷺ getirdiler. Dedi ki: “Ey çocuk, hurma ağaçlarını niçin taşlıyorsun?” Dedim ki: “Yiyorum.” Dedi ki: “Hurma ağaçlarını taşlama; dibine düşenden ye.” Sonra başımı meshetti ve dedi ki: “Allah’ım, karnını doyur.”
+20305 | Mu‘temir b. Süleymân → İbn Ebi’l-Hakem → ninesi → Ebû Râfi‘ b. Amr el-Gıfârî | Ebû Râfi‘ b. Amr el-Gıfârî dedi ki: Ben çocukken Ensâr’ın hurma ağaçlarını taşlardım. Nebî’ye (aleyhisselâm): “Burada hurmalarımızı taşlayan bir çocuk var” denildi. Beni Nebî’ye ﷺ getirdiler. Dedi ki: “Ey çocuk, hurma ağaçlarını niçin taşlıyorsun?” Dedim ki: “Yiyorum.” Dedi ki: “Hurma ağaçlarını taşlama; dibine düşenden ye.” Sonra başımı meshetti ve dedi ki: “Allah’ım, karnını doyur.”
 & haddesenâ, semi‘tü, haddesenî, an
-% Ebû Râfi‘ b. Amr el-Gıfârî, Arapçada “عمي” (amcam) diye geçer; ninenin amcasıdır (metinde böyle).
+% İbn Ebi’l-Hakem, Ebû Râfi‘ b. Amr el-Gıfârî hakkında: “amcam”.
 ^ قال: كنت وأنا
 
 20306 | İbn Ebî Zâide → Muhammed b. İshâk → Amr b. Şuayb → babası → dedesi | Amr b. Şuayb’ın dedesi dedi ki: Müzeyne’den bir adamı, Nebî’ye (aleyhisselâm) kabukları içindeyken meyveleri sorarken işittim. Dedi ki: “Kim ağzıyla yer de eteğine bir şey almazsa ona bir şey yoktur.”
@@ -194,9 +193,8 @@
 & haddesenâ, an, an, an
 ^ قال: سافرت في
 
-20314 | Abdullah b. İdrîs → Husayn → Zer → İbrâhîm | Zer dedi ki: “Onunla (İbrâhîm’le) birlikte sefere çıkardım; meyvelerden yerdi.”
+20314 | Abdullah b. İdrîs → Husayn → Zer → İbrâhîm | İbrâhîm dedi ki: “Onunla birlikte sefere çıkardım; meyvelerden yerdi.”
 & haddesenâ, an, an, an
-% Arapçada sözün sahibi “إبراهيم، قال” diye geçer; “كنت أسافر معه” ifadesi Zer’in sözü olarak okunmuştur (metinde böyle).
 ^ قال: «كنت أسافر
 
 20315 | Vekî‘ → Hişâm b. Sa‘d → Amr b. Şuayb | Amr b. Şuayb dedi ki: Resûlullah ﷺ buyurdu: “Kim bir bahçenin yanından geçerse yesin, taşımasın.”
@@ -217,7 +215,6 @@
 
 20319 | Vekî‘ → Şu‘be → Ebû İmrân el-Cevnî → Cündeb el-Becelî | Cündeb el-Becelî dedi ki: “Resûlullah’ın ﷺ ashâbıyla birlikte gazveye çıkardık; onların yaptığı gibi yapardık. Meyveden alırdık, yerli kâfiri (rehber olarak) alırdık; bize köyden köye yol gösterirdi; evlerinde onlara ortak olmaksızın.”
 & kâle, haddesenâ, an, semi‘tü
-% Bu maddede “حدثنا” yoktur; Arapça “وكيع قال: نا شعبة” diye başlar.
 ^ يقول: «كنا نغزو
 
 20320 | Gunder → Şu‘be → Hammâd | Şu‘be dedi ki: Hammâd’a meyveden yiyen yolcuyu sordum. Dedi ki: “Emîrler onlara zulmettiklerinde yemesi bana daha sevimlidir.” Hakem’e de sordum; dedi ki: “Ye.”
