@@ -215,4 +215,5 @@
 
 24395 | Hişâm → Yûnus → İbn Sîrîn | İbn Sîrîn’den: Eş‘arî’ye içinde keler (vezeğ) ölmüş yağ soruldu. Dedi ki: “Onu satın, ama onu bir Müslümana satmayın.”
 & haddesenâ, an, an
+% Arapçada ad böyle yazılıdır: “هشام” (metinde böyle).
 ^ أن الأشعري سئل
