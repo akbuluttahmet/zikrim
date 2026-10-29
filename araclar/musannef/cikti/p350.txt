@@ -1,0 +1,243 @@
+@ Ganimetten câriye satın alan adam hakkında söyledikleri
+
+32959 | Hüşeym → Husayn | Husayn’dan: Bir adam Kâdisiye günü fey’den bir câriye satın aldı. Câriye ona yanında bulunan bir ziynet getirdi. Adam Sa‘d b. Ebî Vakkâs’a gelip ona haber verdi. O da: “Onu Müslümanların ganimetlerine koy” dedi.
+& haddesenâ, an
+^ أن رجلا، اشترى
+
+32960 | Ebü’l-Ahvas → Ebû İshâk → Muhammed b. Zeyd | Muhammed b. Zeyd dedi ki: “Humustan bir câriye satın aldım ve yanında on beş dinar buldum. Onu Abdurrahmân b. Hâlid b. el-Velîd’e getirdim. ‘O senindir’ dedi.”
+& haddesenâ, an, an
+^ قال: " اشتريت جارية
+
+32961 | Ebû Bekir b. Ayyâş → Şeybânî → Şa‘bî | Şa‘bî’den, ganimetten esir bir kadın satın alıp yanında gümüş bulan adam hakkında: “Onu geri verir” dedi.
+& haddesenâ, an, an
+^ في الرجل اشترى
+
+@ Ganimeti artırmayla satmak hakkında söyledikleri
+
+32962 | İbn Uyeyne → İbn Ebî Necîh → Mücâhid | Mücâhid dedi ki: “Artırmayla satışta sakınca yoktur; humuslar böyle satılırdı.”
+& haddesenâ, an, an
+^ قال: «لا بأس
+
+32963 | İsmâîl b. Ayyâş → Amr b. Muhâcir | Amr b. Muhâcir’den: Ömer b. Abdülazîz, Umeyre b. Zeyd el-Filistînî’yi esirleri artırmayla satması için gönderdi.
+& haddesenâ, an
+^ أن عمر بن عبد العزيز، بعث
+
+32964 | Hafs b. Gıyâs → Eş‘as → Hasan ve İbn Sîrîn | Hasan ve İbn Sîrîn’den: İkisi, mirasların ve ganimetlerin satışı dışında artırmayla satışı hoş görmediler.
+& haddesenâ, an, an
+^ أنهما كرها بيع
+
+32965 | Adî b. Yûnus ve Mu‘temir b. Süleymân → Ahdar b. Aclân → Ebû Bekir el-Hanefî → Enes b. Mâlik | Enes b. Mâlik’ten: Nebî ﷺ bir semer keçesini ve bir kadehi artırmayla sattı. Ancak Mu‘temir: “Enes b. Mâlik’ten, o Ensâr’dan bir adamdan, o Nebî’den ﷺ” dedi.
+& haddesenâ, an, an, an
+% Arapçada ad böyle yazılıdır: “عدي بن يونس” (metinde böyle).
+^ أن النبي صلى الله عليه وسلم، باع
+
+32966 | Fadl b. Dükeyn → Hammâd b. Seleme → Ebû Ca‘fer el-Hatmî | Ebû Ca‘fer el-Hatmî’den: Mugîre b. Şu‘be ganimetleri artırmayla sattı.
+& haddesenâ, an, an
+^ أن المغيرة بن شعبة، باع
+
+32967 | Vekî‘ → Hizâm b. Hişâm → babası | Hizâm b. Hişâm’ın babası dedi ki: “Ömer’in sadaka develerinden bazı develeri artırmayla sattığına şahit oldum.”
+& haddesenâ, haddesenâ, an
+^ قال: «شهدت عمر
+
+32968 | Vekî‘ → Süfyân → Yûnus → İbn Sîrîn | İbn Sîrîn dedi ki: “Müzâyede satışında sakınca yoktur.”
+& haddesenâ, an, an, an
+^ قال: «لا بأس
+
+32969 | Hâtim b. Verdân → Bürd → Mekhûl | Mekhûl’den: O, ortakların kendi aralarındaki (satış) dışında artırmayla satışı hoş görmezdi.
+& haddesenâ, an, an
+^ أنه كان يكره
+
+32970 | Cerîr → Mugîre → Hammâd | Hammâd dedi ki: “Artırmayla satışta sakınca yoktur: Satın almak istediğinde pazarlıkta (fiyatı) artırmaktır.”
+& haddesenâ, an, an
+^ قال: " لا بأس
+
+32971 | Vekî‘ → Süfyân → bir kimse → Mücâhid ve Atâ | Süfyân, Mücâhid ve Atâ’yı şöyle derken işiten birinden (rivayet etti): “Artırmayla satışta sakınca yoktur.”
+& haddesenâ, an, an, semi‘a
+^ يقولان: «لا بأس
+
+@ Fethedilen toprağın taksimi ve nasıl olduğu hakkında söyledikleri
+
+32972 | Hişâm b. Ali → A‘meş → Ebû İshâk → İbn Mudarrib | İbn Mudarrib dedi ki: “Ömer Sevâd’ı Kûfe halkı arasında taksim etti; onlardan her adama üç çiftçi düştü.” Ömer ona: “Onlardan sonra bunlar için kim olacak?” dedi ve onları bıraktı.
+& haddesenâ, an, an, an
+^ قال: «قسم عمر
+
+32973 | İbn Fudayl → Beyân → Kays | Kays dedi ki: Becîle’nin Sevâd’ın dörtte biri vardı. Ömer dedi ki: “Ben sorumlu tutulacak bir taksim edici olmasaydım, size taksim edilen şey üzerinde kalmaya devam ederdiniz.”
+& haddesenâ, an, an
+^ قال: " كان لبجيلة
+
+32974 | İbn Fudayl → Yahyâ b. Saîd → Büşeyr b. Yesâr → Nebî’nin ﷺ ashâbından bir adam | Nebî’nin ﷺ ashâbından bir adamdan: Nebî ﷺ Hayber’e galip gelip Hayber Resûlullah’ın ﷺ ve Müslümanların olunca, onlar onun işlenmesinde zayıf kaldılar ve onu, çıkan ürünün yarısı kendilerine ait olmak üzere işlemeleri için yahudilere verdiler. Resûlullah ﷺ onu otuz altı paya taksim etti; her pay yüz paydı. Resûlullah ﷺ bütün bunun yarısını ayırdı; o yarıda Müslümanların payları ve onlarla birlikte Resûlullah’ın ﷺ payı vardı. Diğer yarıyı da kendisine gelen heyetler, işler ve insanların başına gelen musibetler için ayırdı.
+& haddesenâ, an, an, an
+^ أن النبي صلى الله عليه وسلم، حين
+
+32975 | Vekî‘ → Süfyân → Habîb b. Ebî Sâbit → Ebû Vâil → Ömer | Ebû Vâil dedi ki: Ömer dedi ki: “Eğer hayatta kalırsam zenginlerin malının fazlasını alıp muhâcirlerin fakirleri arasında taksim edeceğim.”
+& haddesenâ, haddesenâ, an, an, kâle
+^ قال: قال عمر:
+
+32976 | Vekî‘ → Süfyân → Vâsıl el-Ahdeb → Ebû Vâil → Şeybe b. Osman | Ebû Vâil dedi ki: “Şeybe b. Osman’ın yanına oturdum. Bana dedi ki: Ömer b. el-Hattâb senin bu oturduğun yere oturdu.” Bana şöyle dedi: “Kâbe’de sarı (altın) ve beyaz (gümüş) hiçbir şey bırakmayıp hepsini insanlar arasında taksim etmeyi düşündüm.” (Şeybe) dedi ki: Ona: “Bu sana ait değildir; iki arkadaşın senden önce geçti ve bunu yapmadılar” dedim. O da: “Onlar, kendilerine uyulmaya (herkesten) daha büyüktür” dedi.
+& haddesenâ, haddesenâ, an, an, kâle
+^ قال: " جلست إلى
+
+32977 | İbn İdrîs → Mâlik b. Enes → Zeyd b. Eslem → Eslem → Ömer | Eslem dedi ki: Ömer’i şöyle derken işittim: “Ömer’in nefsi elinde olana yemin olsun ki, insanların sonrakilerinin hiçbir şeysiz bırakılması (endişesi) olmasaydı, Müslümanlara kâfirlerin kasabalarından fethedilen her kasabayı, Resûlullah’ın ﷺ Hayber’i paylara ayırdığı gibi paylara ayırırdım. Fakat onun, onlara akıp giden bir gelir olmasını istedim ve insanların sonrakilerinin hiçbir şeysiz bırakılmasını hoş görmedim.”
+& haddesenâ, an, an, an, semi‘tü
+^ يقول: «والذي نفس
+
+32978 | Vekî‘ → Muhammed b. Abdullah eş-Şuaysî → Leys Ebü’l-Mütevekkil → Mâlik b. Evs b. el-Hadesân → Ömer b. el-Hattâb | Mâlik b. Evs b. el-Hadesân dedi ki: Ömer b. el-Hattâb’ı şöyle derken işittim: “Müslümanlardan, memlûk köle dışında, bu fey’de payı olmayan hiç kimse yoktur. Eğer hayatta kalırsam, Sana dağlarındaki çobana bu fey’den payı mutlaka ulaşacaktır.”
+& haddesenâ, haddesenâ, an, an, semi‘tü
+^ يقول: «ما من
+
+32979 | İbn Uyeyne → Amr b. Dînâr → Zührî → Mâlik b. Evs b. el-Hadesân → Ömer | Ömer dedi ki: “Benî Nadîr mevlâsının (metinde böyle) malları, Allah’ın Resûlü’ne fey’ olarak verdiği, Müslümanların üzerine at ve deve sürmedikleri mallardandı. Bu yüzden yalnız Nebî’ye ﷺ aitti. Ondan bir yıllık nafakayı ayırır, kalanını da Allah yolunda hazırlık olarak binek hayvanlarına ve silaha harcardı.”
+& haddesenâ, an, an, an, an
+^ قال: «كانت أموال
+
+32980 | Vekî‘ → Hişâm b. Sa‘d → Zeyd b. Eslem → babası | Zeyd b. Eslem’in babası dedi ki: Ömer b. el-Hattâb’a Celûlâ ganimetlerinden, içinde altın ve gümüş bulunan ganimetler getirildi. Onları insanlar arasında taksim etmeye başladı. Abdurrahmân denilen bir oğlu geldi ve: “Ey Mü’minlerin emîri, bana bir yüzük giydir” dedi. (Ömer): “Annene git, sana bir yudum kavut şerbeti içirsin” dedi. (Eslem) dedi ki: Allah’a yemin olsun ki ona hiçbir şey vermedi.
+& haddesenâ, haddesenâ, an, an
+^ قال: " أتي عمر
+
+32981 | Affân → Abdülvâhid → Ebû Bekir → Ebû Hanzala b. Nuaym | Ebû Hanzala b. Nuaym yazdı ki: Sa‘d Ömer’e şöyle yazdı: “Biz, ehli bizimle savaşmayan bir toprak aldık.” (Ebû Hanzala) dedi ki: Ömer ona şöyle yazdı: “Dilerseniz onu aranızda taksim edin, taksim edin; dilerseniz onu bırakın da ehli onu imar etsin ve sonra aranıza girenin de onda payı olsun. Çünkü ben, onun ve suyunun üzerinde çekişip birbirinizi öldürmenizden korkuyorum.” Sa‘d ona, Müslümanların görüşlerinin senin görüşüne tâbi olduğu üzerinde ittifak ettiklerini yazdı. O da ona, köleleri Müslümanlardan bir adamdan hamile kalan bir kadına geri vermelerini yazdı (metinde böyle).
+& haddesenâ, haddesenâ, haddesenâ, kâle
+^ أن سعدا كتب
+
+@ Havraların, kiliselerin ve ateşgedelerin yıkılması hakkında söyledikleri
+
+32982 | Mu‘temir b. Süleymân → babası → Haneş → İkrime → İbn Abbâs | İkrime dedi ki: İbn Abbâs’a: “Acemlerin, Müslümanların şehirlerinde bina ya da havra yapmaları (hakları) var mıdır?” denildi. Şöyle dedi: “Arapların şehir hâline getirdiği her şehirde Acemlerin bina yapmaları (hakları) yoktur” —ya da “havra” dedi— “Orada çan çalmayın, orada şarap içmeyin, orada domuz edinmeyin ya da onu oraya sokmayın. Acemlerin şehir hâline getirdiği, Allah’ın Araplara fethettiği ve yani onların hükmüne teslim oldukları her şehirde ise ahidlerindeki şey Acemlerindir. Arapların üzerine de Acemlere karşı ahidlerini yerine getirmeleri ve onları güçlerinin üstünde bir şeyle yükümlü tutmamaları (borcu) vardır.”
+& haddesenâ, an, an, an, kâle
+^ قال: قيل لابن
+
+32983 | Hafs b. Gıyâs → Übey b. Abdullah | Übey b. Abdullah dedi ki: “Bize Ömer b. Abdülazîz’in mektubu geldi: Üzerinde sulh yapılmış hiçbir havra, kilise ve ateşgede yıkılmasın.”
+& haddesenâ, an
+^ قال: " جاءنا كتاب
+
+32984 | Abdullah b. Nümeyr → Abdülmelik → Atâ | Atâ’dan: Ona kiliselerin yıkılıp yıkılmayacağı soruldu. “Hayır, ancak onlardan Harre’de olanlar (yıkılır)” dedi.
+& haddesenâ, an, an
+^ أنه سئل عن
+
+32985 | Sehl b. Yûsuf → Amr → Hasan | Hasan’dan: O, Müslümanların şehirlerinde havraların bırakılmasını hoş görmezdi.
+& haddesenâ, an, an
+^ أنه كان يكره
+
+32986 | Abdüla‘lâ → Avf → Hasan | Hasan dedi ki: “Şehirlerin dışında kendileriyle ateşler ve putlar arasında serbest bırakılmak üzere sulh yapıldı.”
+& haddesenâ, an, an
+^ قال: «قد صولحوا
+
+32987 | Îsâ b. Yûnus → Evzâî → İbn Sürâka | İbn Sürâka’dan: Ebû Ubeyde b. el-Cerrâh, Deyr Tabâyâ halkına şöyle yazdı: “Ben sizi kanlarınız, mallarınız ve kiliselerinizin yıkılması hususunda emân altına aldım.”
+& haddesenâ, an, haddesenî
+^ أن أبا عبيدة
+
+32988 | Affân → Hammâd b. Seleme → Habîb b. eş-Şehîd → Muhammed b. Sîrîn | Muhammed b. Sîrîn’den: O, Fars halkına kırılmadık put, söndürülmedik ateş bırakmazdı.
+& haddesenâ, haddesenâ, an, an
+^ أنه كان لا
+
+32989 | Abdüla‘lâ → Avf | Avf dedi ki: “Abdullah b. Ubeyd b. Ma‘mer’e, Basra’da ateşgede yapan bir Mecûsî getirildiğine şahit oldum; onun boynunu vurdu.”
+& haddesenâ, an
+^ قال: «شهدت عبد
+
+@ Yahudilerle hristiyanların bir şehirde Müslümanlarla bir arada bulunmayacağını söyleyenler
+
+32990 | İbn Uyeyne → Süleymân el-Ahvel → Saîd b. Cübeyr → İbn Abbâs | İbn Abbâs’tan, (sözü Nebî’ye) ref‘ ederek: “Müşrikleri Arap yarımadasından çıkarın” dedi.
+& haddesenâ, an, an, an
+^ رفعه قال: «أخرجوا
+
+32991 | Vekî‘ → İbrâhîm b. Meymûn → İshâk b. Sa‘d b. Semüre b. Cündeb → babası → Ebû Ubeyde b. el-Cerrâh | Ebû Ubeyde b. el-Cerrâh’tan: Resûlullah’ın ﷺ konuştuğu son söz şunu söylemesiydi: “Yahudileri Hicaz toprağından, Necrân halkını da Arap yarımadasından çıkarın.”
+& haddesenâ, an, an, an, an
+^ " إن آخر كلام
+
+32992 | Abde b. Süleymân → Ubeydullah → Nâfi‘ → İbn Ömer → Ömer | İbn Ömer dedi ki: Ömer dedi ki: “Yahudiler ve hristiyanlar Medine’de, mallarını satacakları kadar üç (gün)den fazla bırakılmasınlar.” Ve dedi ki: “Arap yarımadasında iki din bir araya gelmez.”
+& haddesenâ, an, an, an, kâle
+^ قال: قال عمر:
+
+32993 | Şerîk → Leys → Tâvûs → İbn Abbâs | İbn Abbâs dedi ki: “Müslüman olmadıkça yahudilerle ve hristiyanlarla birlikte oturmayın.”
+& haddesenâ, an, an, an
+^ قال: «لا تساكنوا
+
+32994 | Yezîd b. Hârûn → İbn Ebî Zi’b | İbn Ebî Zi’b’den: O, Ömer b. Abdülazîz’in hilâfetinde zimmet ehlini Medine’den çıkardığına ve onların kölelerini Müslümanlara sattığına şahit oldu.
+& haddesenâ, an
+^ أنه شهد عمر
+
+32995 | Ebû Muâviye → Haccâc → Ebü’z-Zübeyr → Câbir | Câbir dedi ki: Resûlullah ﷺ buyurdu: “Eğer hayatta kalırsam müşrikleri Arap yarımadasından mutlaka çıkaracağım.” Ömer (halife) olunca onları çıkardı.
+& haddesenâ, haddesenâ, an, an
+^ قال: قال رسول
+
+32996 | Îsâ b. Yûnus → İbn Cüreyc → Ebü’z-Zübeyr → Câbir b. Abdullah | Ebü’z-Zübeyr dedi ki: Câbir b. Abdullah’a: “Mecûsîler Harem’e girer mi?” dedik. “Zimmet ehlimiz ise evet” dedi.
+& haddesenâ, an, an, kâle
+^ قال: قلنا لجابر
+
+32997 | Vekî‘ → İsmâîl → Kays | Kays dedi ki: Nebî ﷺ bir ordu gönderdi, sonra buyurdu: “Dikkat edin! Ben, bir müşrikle birlikte ikamet eden her Müslümandan uzağım. Onların ateşleri birbirini görmesin.”
+& haddesenâ, an, an
+^ قال: بعث النبي
+
+@ Zimmet ehlinin boyunlarının mühürlenmesi hakkında söyledikleri
+
+32998 | Abdürrahîm b. Süleymân → Ubeydullah → Nâfi‘ → Eslem | Eslem’den: Ömer onların, yani zimmet ehlinin boyunlarına mühür vururdu.
+& haddesenâ, an, an, an
+% Senedde Eslem için: “Ömer’in mevlâsı”.
+^ أن عمر، كان
+
+32999 | Kesîr b. Hişâm → Ca‘fer b. Burkân → Meymûn b. Mihrân | Meymûn b. Mihrân dedi ki: “Ömer, Huzeyfe b. el-Yemân’ı ve İbn Huneyf’i gönderdi; onlar cizyeyi Sevâd halkı üzerine taksim ettiler.” Sonra şöyle dediler: “Sevâd halkından gelmeyen ve boynuna mühür vurmadığımız kimseden zimmet (güvencesi) kalkmıştır.”
+& haddesenâ, an, haddesenâ
+^ قال: «بعث عمر
+
+@ Bir ata (Allah yolunda) bindirilen, sonra ona ihtiyaç duyan adam hakkında söyledikleri: Onu satar mı?
+
+33000 | Mu‘temir b. Süleymân → Ebü’l-Müniyye → Hasan | Ebü’l-Müniyye dedi ki: Yemâme halkından bir adam Allah yolunda bir at vasiyet etti. Bir amcamın oğlu geldi. Ben: “Ona kardeşimi bindireyim, çünkü kardeşim sâlih bir adamdır” dedim. O: “Hasan’a sorayım” dedi. Hasan’a sordu; (Hasan): “Ona bir adamı bindir; onda kimseyi kayırma” dedi. (Ebü’l-Müniyye) dedi ki: Hasan’a: “Ya ona muhtaç olursa?” dedim. “Onu askerlerden (birine) satsın; bu mevâlîye vermesin, yoksa onlardan biri onu ailesine nafaka olarak bırakır” dedi.
+& haddesenâ, an, kâle
+^ قال: " أوصى رجل
+
+@ Harp diyarından gelen adama ne yapılır?
+
+33001 | Dahhâk b. Mahled → İbn Cüreyc → Atâ | Atâ’dan, harp ehlinden gelen adam hakkında: “Ya onu (yanında) yerleşik kılar ya da onu güvenli yerine ulaştırır” dedi.
+& haddesenâ, an, an
+^ في الرجل يأتي
+
+@ Harp diyarında evlenen adam
+
+33002 | Dahhâk b. Mahled → Eş‘as → Hasan | Hasan’dan: O, adamın harp topraklarında evlenip çocuğunu onların arasında bırakmasını hoş görmezdi.
+& haddesenâ, an, an
+^ أنه كان يكره
+
+@ Harp diyarında bulunan kimse hakkında söyledikleri: Onun hakkındaki hüküm nedir?
+
+33003 | Muhammed b. Bekr → İbn Cüreyc → Atâ | İbn Cüreyc dedi ki: Atâ’ya, şirk ehli arasında yakalanan ve “Size karşı onlara yardım etmeyi istemedim” diyen zimmet ehlinden adam soruldu; onlar da ona, onlara gelmemesini şart koşmuşlardı. (Atâ) onu, ancak delille öldürmeyi hoş görmedi. (İbn Cüreyc) dedi ki: O sırada ilim ehlinden biri Atâ’ya: “Üzerine olan şeylerden tek bir şeyi bozarsa sulhu bozmuş olur” dedi.
+& haddesenâ, an, kâle
+^ " سئل عطاء عن
+
+33004 | Vekî‘ → Süfyân → Hişâm → Hasan | Hasan’dan, ahdi bozan zimmet ehli hakkında: Çocuklarına bir şey yoktur.
+& haddesenâ, an, an, an
+^ في أهل الذمة
+
+@ Fey’de evliye bekârdan fazla verilmesi hakkında söyledikleri
+
+33005 | Ma‘mer b. Bişr → İbn Mübârek → Safvân b. Amr → Abdurrahmân b. Cübeyr b. Nüfeyr → babası → Avf b. Mâlik | Avf b. Mâlik dedi ki: “Nebî ﷺ fey’ geldiğinde onu aynı gün taksim eder, evliye iki pay, bekâra bir pay verirdi.”
+& haddesenâ, haddesenâ, ahberanâ, an, an, an
+^ قال: «كان النبي
+
+@ Posta ulağı bulup ulak gönderen valiler hakkında söyledikleri
+
+33006 | İsmâîl İbn Uleyye → Sadaka b. Yesâr → Kâsım | Kâsım dedi ki: “Nebî ﷺ posta ulağı gönderirdi.”
+& haddesenâ, an, an
+^ قال: «كان النبي
+
+33007 | Vekî‘ → Talha b. Yahyâ | Talha b. Yahyâ’dan: Ömer b. Abdülazîz posta ulağı gönderirdi. Bir mevlâsı, izni olmadan bir adamı posta (hayvanına) bindirdi. (Talha) dedi ki: Onu çağırdı ve: “Ona kıymet biçinceye kadar evlenmesin (metinde böyle), sonra onu beytülmâle koyarız” dedi.
+& haddesenâ, an
+^ أن عمر بن عبد العزيز، كان
+
+33008 | Vekî‘ → Hişâm → Yahyâ b. Ebî Kesîr | Yahyâ b. Ebî Kesîr’den: Nebî ﷺ emîrlerine şöyle buyurdu: “Bana bir posta ulağı gönderdiğinizde onu yüzü güzel, adı güzel olarak gönderin.”
+& haddesenâ, an, an
+^ " أن النبي صلى الله عليه وسلم قال
+
+33009 | Ubeydullah → İsrâîl → Ebû İshâk → babası | Ebû İshâk’ın babasından: Muâviye, Abdurrahmân b. Hâlid’e: “Cerîr’i posta (hayvanı) üzerinde bana gönder” diye yazdı; o da onu gönderdi.
+& haddesenâ, an, an, an
+^ أن معاوية، كتب
+
+@ Mızraklar ve onları edinmek hakkında zikredilen şeyler hakkında söyledikleri
+
+33010 | Îsâ b. Yûnus → Evzâî → Saîd b. Cebele → Tâvûs | Tâvûs’tan: Nebî ﷺ buyurdu: “Allah beni kıyametin önünde kılıçla gönderdi; rızkımı mızrağımın gölgesinin altında kıldı; zilleti ve küçüklüğü bana muhalefet edenin üzerine kıldı. Kim bir kavme benzerse o onlardandır.”
+& haddesenâ, an, an, an
+^ أن النبي صلى الله عليه وسلم قال
+
+33011 | Vekî‘ → Süfyân → Evzâî → Saîd b. Cebele → Tâvûs | Tâvûs dedi ki: Resûlullah ﷺ buyurdu, sonra bunun benzerini zikretti.
+& haddesenâ, haddesenâ, an, an, an
+^ قال: قال رسول
+
+33012 | Vekî‘ → Süfyân → Ebû İshâk → Ebü’l-Halîl → Ali | Ali dedi ki: “Mugîre b. Şu‘be, Nebî ﷺ ile birlikte gazâya çıktığında yanında bir mızrak taşırdı; dönünce, kendisine taşınsın diye onu atardı.” Ali ona: “Bunu mutlaka Nebî’ye ﷺ anlatacağım” dedi. O da: “Yapma, çünkü yaparsan hiçbir kayıp eşya kaldırılmaz” dedi.
+& haddesenâ, haddesenâ, an, an, an
+^ قال: «كان المغيرة
