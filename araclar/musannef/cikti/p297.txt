@@ -36,8 +36,8 @@
 & haddesenâ, an, an, kâle
 ^ قال: قال ابن مسعود
 
-28649 | Şerîk → Leys; ayrıca Şerîk → Câbir → Âmir | Âmir dedi ki: “Hadleri mescidlerde uygulamayı hoş görmezlerdi.”
-& haddesenâ, an; haddesenâ, an, an
+28649 | Şerîk → Leys → Âmir; ayrıca Şerîk → Câbir → Âmir | Âmir dedi ki: “Hadleri mescidlerde uygulamayı hoş görmezlerdi.”
+& haddesenâ, an, an; haddesenâ, an, an
 ^ قال: «كانوا يكرهون
 
 28650 | Yahyâ b. Saîd → İbn Cüreyc → Atâ | Atâ’dan: O, mescidlerde celde vurmayı hoş görmedi ya da hoş görmezdi.
@@ -48,7 +48,7 @@
 & haddesenâ, an, an, an
 ^ رفعه، قال
 
-28652 | Vekî‘ → İsmâîl → Îsâ b. Ebî Azze → Şa‘bî | Îsâ b. Ebî Azze, Şa‘bî’den (naklen) dedi ki: “Onun, bir gömlek içinde bir adama iftira eden (bir başka) adama vurduğuna şahit oldum; onu mescidde dövmedi.”
+28652 | Vekî‘ → İsmâîl → Îsâ b. Ebî Azze → Şa‘bî | Îsâ b. Ebî Azze, Şa‘bî hakkında dedi ki: “Ona şahit oldum; bir adama iftira eden bir adama gömlek içinde vurdu, onu mescidde dövmedi.”
 & haddesenâ, an, an, an
 ^ قال: «شهدته
 
@@ -150,7 +150,7 @@
 & haddesenâ, an, an, an
 ^ أنه دعا جلادا
 
-28675 | Hafs → İbn Ebî Leylâ → Adî b. Sâbit → Mühâcir b. Umeyre → Ali | Mühâcir b. Umeyre, Ali’den (naklen) dedi ki: (Ali’ye) sarhoş olan ya da bir haddi gerektiren bir adam getirildi. (Ali) şöyle dedi: “Vur, her uzva hakkını ver; yüzden ve tenasül uzuvlarından sakın.”
+28675 | Hafs → İbn Ebî Leylâ → Adî b. Sâbit → Mühâcir b. Umeyre → Ali | Ali’den: (Ona) sarhoş olan ya da bir haddi gerektiren bir adam getirildi. Şöyle dedi: “Vur, her uzva hakkını ver; yüzden ve tenasül uzuvlarından sakın.”
 & haddesenâ, an, an, an, an
 ^ قال: أتي برجل سكران
 
@@ -188,7 +188,7 @@
 & haddesenâ, an, semi‘tü
 ^ كان يؤمر بالسوط
 
-28684 | Ebü’l-Ahvas → Ebü’l-Hâris et-Teymî → Ebû Mâcid → Abdullah | Abdullah’tan: O, bir kamçı istedi ve ucundaki düğümü dövdü; nihayet ona (uygun) hâle getirildi ve onu hafifletti (metinde böyle). Bir cellat çağırdı ve: “Celde vur” dedi.
+28684 | Ebü’l-Ahvas → Ebü’l-Hâris et-Teymî → Ebû Mâcid → Abdullah | Abdullah’tan: O, bir kamçı istedi ve ucundaki düğümü dövdü; nihayet ona (uygun) hâle getirildi (metinde böyle) ve onunla (hafifçe) vurdu. Bir cellat çağırdı ve: “Celde vur” dedi.
 & haddesenâ, an, an, an
 ^ أنه دعا بسوط
 

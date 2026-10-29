@@ -317,5 +317,5 @@
 
 28269 | Muhammed b. Bekr → İbn Cüreyc → Abdürabbih b. Ebî Ümeyye b. el-Hâris → Hâris b. Abdullah b. Ebî Rebîa ve Abdurrahmân b. Sâbit | Hâris b. Abdullah b. Ebî Rebîa ve Abdurrahmân b. Sâbit’ten: “Nebî’ye ﷺ hırsızlık yapmış bir köle getirildi; elini kesti. Sonra ikinci kez (getirildi), ayağını kesti. Sonra getirildi, elini kesti. Sonra getirildi, ayağını kesti.”
 & haddesenâ, an, ahberanî, an
-% Arapçada: “Hâris ona rivayet etti (haddesehû), Abdurrahmân b. Sâbit de yine ona rivayet etti (haddesehû).”
+% Hâris ona (Abdürabbih’e) rivayet etti; Abdurrahmân b. Sâbit de yine ona rivayet etti.
 ^ «أن النبي صلى الله عليه وسلم أتي بعبد
