@@ -18,7 +18,7 @@ Her oturum: önce `SPEC.md`, sonra bu dosya. Bitince burayı güncelle (kitap, s
 | el-Buhârî (`buhari/`) | isnad standardı (SPEC) | **tamamlandı** — 2/2 kitap, 307 madde (2026-10-29) | `dogrula.py`: 0 hata, 25 uyarı (22 metin başı, 1 kısa) |
 | el-İbâne (`ibane/`) | isnad standardı (SPEC) | **sürüyor** — 1/22 bölüm (i01), 146 madde (2026-10-29) | `dogrula.py`: 0 hata, 10 uyarı |
 | Ebû Dâvûd (`ebudavud/`), Harb (`harb/`), el-Berbehârî (`berbehari/`) | isnad standardı (SPEC) | **tamamlandı** — 243 madde (2026-10-29) | `dogrula.py`: 0 hata, 1 uyarı (berbehari ﷺ) |
-| Müsned (`musned/`) | eski biçim (4 bölüm, 561/1380 çevrili) | **baştan yapılacak**, Sünen standardıyla | Şuayb el-Arnaût neşri, Şâmile 25794; ziyade işaretleri (1/2/3) korunur; `c[0]` müellif kararı aşağıda |
+| Müsned (`musned/`) | isnad standardı (SPEC) | **sürüyor** — m001 tamamlandı (1–81, 81/81), m002 p006–p012 (82–207) çevrildi; toplam 207/1380 madde (2026-10-29) | `dogrula.py` (1–207): 0 hata, 0 kısa, 0 sîga; m002–m003 bölüm bitene kadar korundu |
 | el-Musannef (`musannef/`) | eski biçim (17/40 kitap, 16 352 madde; sened var, panel yok) | daha sonra standarda getirilecek | `CLAUDE.md` “Kaynaklar” |
 
 ## Araçlar (hazır)
@@ -61,6 +61,7 @@ Hepsi: `python3 araclar/dogrula.py <kitaplık> --hepsi`. Sayılar yukarıdaki ta
 
 ## Günlük
 
+- 2026-10-29 — Müsned (`musned/`): `araclar/musned/` kuruldu; Ebû Bekir Müsnedi (`m001.json`, 1–81) tamamen derlendi ve Ömer Müsnedi (`m002`, `p006–p012`, 82–207) çevrilerek toplam 207 madde `dogrula.py` (0 hata) ile doğrulandı.
 - 2026-10-29 — `dogrula.py` “çeviri kısa olabilir” oranı harekesiz ve nüsha/müellif öneği düşülmüş Arapçaya göre (eşik 0,75 aynı; sadık çevirilerde medyan ≈1,3). Müsned 143 → 1, 12 kitaplık 17 → 6 uyarı.
 - 2026-10-29 — Sîga düzeltmesi: 14:18'deki toplu dönüştürmede (`standarda_getir.py`) sîgalar Türkçe zincire sırayla sayılarak verilmişti; Türkçe sened Abdullah → babası önekini atmış maddelerde (Fezâil'in tamamına yakını, Zühd ve Buhârî'nin bir kısmı) sîgalar bir-iki halka kaymış, Fezâil'de 614 Abdullah ziyâdesi `c[0]` = Ahmed b. Hanbel yazılmış, `k` birçok yerde erken kalmıştı. `araclar/siga_hizala.py` yazıldı: sîgalar ve `k` Arapça isnaddan yeniden eşlendi (12 kitaplıkta 5 550 panel değişti; dogrula "sîga sayısı uyuşmuyor" 2 037 → 78). `dogrula.py`: `ONEK` tablosu (sayımdan düşülür), harekesiz sayım, `قثنا` haddesenâ sayılır. Tablodaki satırlara uyarı sayıları yazıldı; `standarda_getir.py` tek kullanımlık olarak işaretlendi.
 - 2026-10-29 — Musannef ve Müsned dışındaki tüm kitaplıklar (`ibnebiseybe`, `ahmed`, `zuhd`, `fezail`, `acurri`, `hallal`, `safii`, `buhari`, `ebudavud`, `harb`, `ibane`, `berbehari` — `sunan` ve `seria` ile birlikte 14 kitaplık, 16 983 madde) `SPEC.md` isnad ve râvi paneli standardına getirildi (`dogrula.py --ravi`: 0 hata); `ravi.json` ve râvi sayfası güncellendi (16 151 râvi, 37 496 sîgalı kenar).
