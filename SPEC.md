@@ -49,6 +49,7 @@ Kısaca: **tam, aslına sadık, yorumsuz** çeviri; **temiz sened** (yalnız adl
 - `n`: senedin içindeki râvi notları ve lafız kayıtları, Türkçe ve aynen: `Lafız Müsedded’indir.` · `Rivayetleri mana bakımından aynıdır.` · `İbn Hanbel, Atâ hakkında: “Onu iyi anlayamadım” dedi.` Yorum ve dışarıdan bilgi yok. Râvi farkı metnin içindeyse (`قال عثمان: … وقال مسدد: …`) metinde çevrilir.
 - `k`: Arapça metinde metnin (matn) başladığı karakter konumu; uygulama senedi ince, metni kalın gösterir. `قال أبو داود` notu senedin ortasındaysa metnin sonuna `Ebû Dâvûd dedi ki: …` yazılır.
 - Anlamlar `script.js` → `SIGA`; panel çizimi `rvChains`.
+- Standarda getirilmemiş (eski biçim) kitaplarda `info` `null`dır ve sened satırı temiz değildir; `dogrula.py` bunları hata diye sayar, standarda geçiş sırası `PROGRESS.md`'dedir.
 
 ## 4. Metin (3. alan) ve bab
 

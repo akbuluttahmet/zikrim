@@ -19,7 +19,7 @@ OUT = Path(__file__).parent / 'ravi.json'
 SOZLUK = R / 'araclar' / 'sunan' / 'sozluk.tsv'
 
 # Kitaplık → zincirin başındaki müellif adı (c[0]).
-MUELLIF = {'sunan': 'Ebû Dâvûd', 'musned': 'Ahmed b. Hanbel', 'seria': 'Âcurrî'}
+MUELLIF = {'sunan': 'Ebû Dâvûd', 'musned': 'Ahmed b. Hanbel', 'seria': 'el-Âcurrî'}
 
 BELIRSIZ = re.compile(r'^(bir |Basralı |Kûfeli |Medineli |Şamlı |.*ashâbından|.*arkadaşlarından|.*den bir |.*dan bir )|ya da|yahut', re.I)
 AKRABA = {'Babam', 'babam', 'dedem', 'amcam', 'babası', 'dedesi', 'annesi', 'amcası', 'kardeşi', 'ninesi', 'dayısı', 'halası', 'teyzesi', 'oğlu', 'kızı', 'mevlâsı'}

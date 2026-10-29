@@ -34,7 +34,11 @@ SENED_NOT = re.compile(r'\((?:[^)]*?)(?:dedi|lafz|“|”|rivayet)[^)]*\)')
 YASAK = re.compile(r'rivayet edildiğine göre\)|\(şöyle rivayet etti\)')
 # Sened satırında saygı ifadesi yazılmaz; yalnız tanımlayıcı râvi etiketinin içindeki
 # “Nebî’nin ﷺ ashâbından biri” / “Resûlullah ﷺ ile …” kalıbı serbesttir.
-SAYGI_SENED = re.compile(r'radıyallâhu|aleyhisselâm|rahmetullâhi|\(رحمه الله\)|(?:^|[^’\w])(?!Nebî|Resûlullah|Muhammed)\S+\s+ﷺ')
+SAYGI_SENED = re.compile(r'radıyallâhu|aleyhisselâm|rahmetullâhi|rahimehullah|rahimehallâh|rahimehümullah|\(رحمه الله\)|(?:^|[^’\w])(?!Nebî|Resûlullah|Muhammed)\S+\s+ﷺ')
+# Sened satırı yalnız ad ve ok: “(yine)”, “(metinde böyle)”, yer/zaman notu, ad sonunda “—”, yol ayracından sonra ok dışı metin
+SENED_KIRLI = re.compile(r'\((?:yine|metinde böyle|metin [^)]*bozuk|[^)]*’d[ae]\b[^)]*)\)|—\s*(?:→|$|;)|;(?!\s*ayrıca\s)')
+# Merfû hadiste zincir sahâbîyle biter; Nebî/Resûlullah zincire yazılmaz (tanımlayıcı etiket hariç: “Nebî’nin ﷺ ashâbından biri”)
+SON_NEBI = re.compile(r'(?:^|→\s*)(?:Nebî|Resûlullah|Allah Resûlü|Peygamber)\s*ﷺ?\s*$')
 SIGA_AR = {
     'an': r'(?<![ء-ي])عن(?![ء-ي])',
     'haddesenâ': r'(?<![ء-ي])(?:و?حدثنا|و?ثنا|(?<=[\s،,:])نا)(?![ء-ي])',
@@ -109,6 +113,10 @@ def madde_denetle(rp, lib, dosya, h, ravi, bab_i):
             rp.h('senedde not kalmış', yer, sened[:80])
         if SAYGI_SENED.search(sened):
             rp.h('senedde saygı ifadesi', yer, sened[:80])
+        if SENED_KIRLI.search(sened):
+            rp.h('senedde not kalmış', yer, sened[:80])
+        if any(SON_NEBI.search(y) for y in sened.split('; ayrıca ')):
+            rp.h('zincir Nebî ile bitiyor', yer, sened[:80])
         if '(aynı sened)' in sened or 'aynı sened' in sened:
             rp.h('senedde sahte halka', yer, sened[:80])
         if muellif and yollar and yollar[0] and yollar[0][0] == muellif:

@@ -10,7 +10,9 @@ for v in ['musannef', 'ibnebiseybe', 'musned', 'ahmed', 'zuhd', 'fezail', 'berbe
         d = json.load(open(f'{R}{v}/tr/' + b['f']))
         nums = [h[0] for bb in d['babs'] for h in bb['h']]
         p = []
-        if v in ('musannef', 'musned', 'sunan') and len(nums) != b['t']: p.append(f"index t={b['t']} ama dosyada {len(nums)}")
+        # t = dosyadaki bütün maddeler (kesirli "Numarasız rivayet / ara metin" dâhil); uygulama ilerlemeyi buna göre hesaplar
+        if len(nums) != b['t']: p.append(f"index t={b['t']} ama dosyada {len(nums)}")
+        if b['t'] > b['n']: p.append(f"index t={b['t']} > n={b['n']}")
         dup = [n for n, c in collections.Counter(nums).items() if c > 1]
         if dup: p.append(f'tekrar no: {dup[:5]}')
         out = [n for n in nums if not b['from'] <= n < b['to'] + 1]

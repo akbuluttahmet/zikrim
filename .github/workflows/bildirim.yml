@@ -15,6 +15,9 @@ on:
         options: [deneme, sabah, aksam]
         default: deneme
 
+permissions:
+  contents: read
+
 concurrency:
   group: bildirim
   cancel-in-progress: false

@@ -1,1 +1,5 @@
-[{"f":"e01.json","tr":"Halku Âdem ve vilâdetü’n-Nebî ﷺ","n":76,"from":1,"to":76,"t":76},{"f":"e02.json","tr":"Kitâbü’l-Îmân","n":140,"from":0,"to":139,"t":140},{"f":"e03.json","tr":"Kitâbü’l-Edeb","n":422,"b":90,"from":0,"to":421,"t":422}]
+[
+{"f": "e01.json", "tr": "Halku Âdem ve vilâdetü’n-Nebî ﷺ", "n": 76, "from": 1, "to": 76, "t": 76},
+{"f": "e02.json", "tr": "Kitâbü’l-Îmân", "n": 140, "from": 0, "to": 139, "t": 140},
+{"f": "e03.json", "tr": "Kitâbü’l-Edeb", "n": 426, "b": 90, "from": 0, "to": 421, "t": 426}
+]

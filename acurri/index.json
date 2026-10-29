@@ -1,1 +1,14 @@
-[{"f":"a01.json","tr":"Ahlâku Ehli’l-Kur’ân","n":90,"from":0,"to":90,"t":90},{"f":"a02.json","tr":"el-Erbaûn (Kırk Hadis)","n":45,"from":0,"to":45,"t":45},{"f":"a03.json","tr":"Mes’eletü’t-tâifîn","n":15,"b":2,"from":0,"to":14,"t":15},{"f":"a04.json","tr":"Edebü’n-nüfûs","n":20,"b":3,"from":0,"to":19,"t":20},{"f":"a05.json","tr":"Fazlu kıyâmi’l-leyl ve’t-teheccüd","n":49,"from":0,"to":48,"t":49},{"f":"a06.json","tr":"Tahrîmü’n-nerd ve’ş-şıtranc ve’l-melâhî","n":70,"b":8,"from":0,"to":69,"t":70},{"f":"a07.json","tr":"Zemmü’l-livât","n":55,"b":18,"from":0,"to":54,"t":55},{"f":"a08.json","tr":"Ahbâru Ömer b. Abdilazîz","n":39,"b":2,"from":1,"to":39,"t":39},{"f":"a09.json","tr":"el-Gurabâ","n":59,"b":5,"from":1,"to":63,"t":59},{"f":"a10.json","tr":"el-Fevâidü’l-müntehabe","n":124,"from":0,"to":123,"t":124},{"f":"a11.json","tr":"Farzu talebi’l-ilm","n":71,"b":9,"from":0,"to":70,"t":71},{"f":"a12.json","tr":"Ahlâku’l-ulemâ","n":116,"b":12,"from":1,"to":116,"t":116}]
+[
+{"f": "a01.json", "tr": "Ahlâku Ehli’l-Kur’ân", "n": 107, "from": 0, "to": 90, "t": 107},
+{"f": "a02.json", "tr": "el-Erbaûn (Kırk Hadis)", "n": 46, "from": 0, "to": 45, "t": 46},
+{"f": "a03.json", "tr": "Mes’eletü’t-tâifîn", "n": 18, "b": 2, "from": 0, "to": 14, "t": 18},
+{"f": "a04.json", "tr": "Edebü’n-nüfûs", "n": 21, "b": 3, "from": 0, "to": 19, "t": 21},
+{"f": "a05.json", "tr": "Fazlu kıyâmi’l-leyl ve’t-teheccüd", "n": 59, "from": 0, "to": 48, "t": 59},
+{"f": "a06.json", "tr": "Tahrîmü’n-nerd ve’ş-şıtranc ve’l-melâhî", "n": 75, "b": 8, "from": 0, "to": 69, "t": 75},
+{"f": "a07.json", "tr": "Zemmü’l-livât", "n": 59, "b": 18, "from": 0, "to": 54, "t": 59},
+{"f": "a08.json", "tr": "Ahbâru Ömer b. Abdilazîz", "n": 39, "b": 2, "from": 1, "to": 39, "t": 39},
+{"f": "a09.json", "tr": "el-Gurabâ", "n": 61, "b": 5, "from": 1, "to": 63, "t": 61},
+{"f": "a10.json", "tr": "el-Fevâidü’l-müntehabe", "n": 124, "from": 0, "to": 123, "t": 124},
+{"f": "a11.json", "tr": "Farzu talebi’l-ilm", "n": 100, "b": 9, "from": 0, "to": 70, "t": 100},
+{"f": "a12.json", "tr": "Ahlâku’l-ulemâ", "n": 116, "b": 12, "from": 1, "to": 116, "t": 116}
+]

@@ -2357,7 +2357,7 @@ const SHELVES = [
     {v: 'buhari', b: 0, ar: 'رفع اليدين في الصلاة', t: 'Ref‘u’l-yedeyn', who: 'el-Buhârî', bo: '194', d: 256, col: '#3f6b5e', done: true},
     {v: 'buhari', b: 1, ar: 'القراءة خلف الإمام', t: 'el-Kırâe halfe’l-imâm', who: 'el-Buhârî', bo: '194', d: 256, col: '#6b5a3a', done: true}]},
   {c: 'III. ASIR', books: [
-    {v: 'sunan', ar: 'سنن أبي داود', t: 'Sünen-i Ebî Dâvûd', who: 'Ebû Dâvûd', bo: '202', d: 275, col: '#39645b'},
+    {v: 'sunan', ar: 'سنن أبي داود', t: 'Sünen-i Ebî Dâvûd', who: 'Ebû Dâvûd', bo: '202', d: 275, col: '#39645b', done: true},
     {v: 'harb', b: 0, ar: 'إجماع السلف في الاعتقاد', t: 'İcmâu’s-selef fi’l-i‘tikâd', who: 'Harb el-Kirmânî', d: 280, col: '#5e3f3a', done: true},
     {v: 'ebudavud', b: 0, ar: 'رسالة أبي داود إلى أهل مكة', t: 'Risâle ilâ ehli Mekke', who: 'Ebû Dâvûd', bo: '202', d: 275, col: '#5a6b7a', done: true},
     {v: 'berbehari', ar: 'شرح السنة', t: 'Şerhu’s-Sünne', who: 'el-Berbehârî', bo: '233?', d: 329, col: '#6b4f7a', done: true},
@@ -2811,7 +2811,6 @@ function renderFocus() {
   $('#fArabic').hidden = !z.arabic;
   $('#fCount').textContent = fmt(c);
   // Hedef sayısı yoktur: ortada yalnız çekilen sayı; halka “Tamamladım” işaretlenince dolar
-  $('#fTarget').hidden = true;
   const ok = isDone(z.id);
   $('#fDone').textContent = ok ? '✓ Tamamladım' : '';
   const ring = $('#fRing');
@@ -3392,7 +3391,7 @@ searchEl.addEventListener('input', () => { $('#araAll').hidden = !(searchEl.valu
    râviler hakkında dışarıdan bilgi yoktur. Arama sayfası gibi tam ekran açılır, geri tuşuyla kapanır. */
 const RAVI = {el: $('#raviPage'), title: $('#raviTitle'), body: $('#raviBody'), open: false, pushed: false, data: null, p: null, skip: new Set(), after: null, stack: []};
 const RAVI_AKRABA = /^(babası|dedesi|annesi|amcası|kardeşi|ninesi|dayısı|halası|teyzesi)(\b|$)/;
-const RAVI_MUELLIF = new Set(['Ebû Dâvûd', 'Ahmed b. Hanbel', 'Abdullah b. Ahmed']);
+const RAVI_MUELLIF = new Set(['Ebû Dâvûd', 'Ahmed b. Hanbel', 'Abdullah b. Ahmed', 'el-Âcurrî']);
 const raviLoad = () => RAVI.p || (RAVI.p = fetch('ravi.json').then(r => { if (!r.ok) throw new Error('ravi.json'); return r.json(); }).then(D => { RAVI.data = D; RAVI.skip = new Set(D.x || []); return D; }).catch(e => { RAVI.p = null; throw e; }));
 raviLoad().catch(() => {});
 function raviOpen(name) {

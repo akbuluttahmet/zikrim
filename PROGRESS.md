@@ -7,15 +7,15 @@ Her oturum: önce `SPEC.md`, sonra bu dosya. Bitince burayı güncelle (kitap, s
 | Kitap | Standart | Durum | Not |
 |---|---|---|---|
 | Sünen-i Ebî Dâvûd (`sunan/`) | isnad standardı (SPEC) | **tamamlandı** — 40/40 bölüm, 5275 madde (2026-10-29) | `dogrula.py`: 0 hata, 106 uyarı (aşağıda) |
-| eş-Şerîa (`seria/`) | isnad standardı (SPEC) | **tamamlandı** — 17/17 bölüm, 2169 madde (2026-10-29) | `dogrula.py`: 0 hata, 427 uyarı |
+| eş-Şerîa (`seria/`) | isnad standardı (SPEC) | **tamamlandı** — 17/17 bölüm, 2169 madde (2026-10-29) | `dogrula.py`: 0 hata, 423 uyarı (sened temizliği 2026-10-29) |
 | Müsned (`musned/`) | eski biçim (4 bölüm, 561/1380 çevrili) | **baştan yapılacak**, Sünen standardıyla | Şuayb el-Arnaût neşri, Şâmile 25794; ziyade işaretleri (1/2/3) korunur; `c[0]` müellif kararı aşağıda |
 | Diğer kitaplıklar | eski biçim (`info` yok ya da kısmi) | daha sonra standarda getirilecek | `CLAUDE.md` “Kaynaklar” |
 
 ## Araçlar (hazır)
 
 - `SPEC.md` — şartname (format, sîga sözlüğü, şema, 5 örnek, oturum akışı).
-- `araclar/ravi/ravi_kur.py` → `araclar/ravi/ravi.json` + `ravi.json` — bütün kitaplıklardan 16 226 râvi kaydı (Sünen sîgalı, ötekiler sened satırından sîgasız; 2026-10-29). Her derlemeden sonra `python3 araclar/ravi/ravi_kur.py` ile yenilenir.
-- `araclar/dogrula.py <kitaplık> [--ravi] [--hepsi] [--json rapor.json]` — yayımlanmış verinin şartname denetimi. Hata = yayımlanmaz; uyarı = göz listesi.
+- `araclar/ravi/ravi_kur.py` → `araclar/ravi/ravi.json` + `ravi.json` — bütün kitaplıklardan 16 260 râvi kaydı (Sünen sîgalı, ötekiler sened satırından sîgasız; 2026-10-29). Her derlemeden sonra `python3 araclar/ravi/ravi_kur.py` ile yenilenir.
+- `araclar/dogrula.py <kitaplık> [--ravi] [--hepsi] [--json rapor.json]` — yayımlanmış verinin şartname denetimi. Hata = yayımlanmaz; uyarı = göz listesi. Sened satırında `(yine)`, `(metinde böyle)`, yer/zaman notu, ad sonunda `—`, `; ayrıca` dışı `;`, `rahimehullah` ve zincir sonunda Nebî/Resûlullah da hatadır (2026-10-29).
 - `araclar/sunan/` — çalışma dosyası araçları (`denetle.py`, `derle.py`), kılavuz, sözlük.
 
 ## Sünen — gözle bakılacak uyarılar (dogrula.py, 2026-10-29)
@@ -38,6 +38,8 @@ Hepsi: `python3 araclar/dogrula.py sunan --hepsi`
 Râvi sayfası ve `dogrula.py` yalnız `info.c` zinciri olan kitapları görür; eski biçimdeki kitaplar (sened satırında notlar, saygı ifadeleri, nüsha zinciri) standarda getirildikçe `araclar/ravi/ravi_kur.py` ve `dogrula.py` `MUELLIF` listesine eklenir. Sıra (öneri): 1) Müsned (baştan, en büyük kazanç), 2) Musannef (16 352 madde; sened var, panel yok → sened temizlenir, `&` sîga satırı Arapçadan üretilir), 3) ez-Zühd ve Fezâil (sened başındaki “(Ahmed …)” nüsha notları `n`'ye), 4) eş-Şerîa, el-İbâne, el-Âcurrî, 5) küçük kitaplar. Her kitapta: `kilavuz.md` uyarlanır → parti → `denetle.py` → derle → `dogrula.py --ravi` 0 hata → `ravi_kur.py` yenilenir → yayın.
 
 ## Günlük
+
+- 2026-10-29 — Genel denetim: sw.js çevrimdışı hatası ve ayrı veri önbelleği, bildirimde Sünen adı, Âcurrî ad birliği, `index.json` `t/n` kesirli maddeleri sayar (6 kitaplık), `dogrula.py` yeni sened denetimleri + eş-Şerîa sened temizliği, 427 “ﷺ’e” ek düzeltmesi (Musannef), README yeniden yazıldı, ölü CSS silindi, manifest kısayolları.
 
 - 2026-10-29 — Geri dönüş çubuğu: kitaba dışarıdan gelince üstte “‹ geldiği yer” çubuğu.
 - 2026-10-29 — Râvi sayfası bütün kitaplıkları kapsıyor; yeni düzen (özet kutuları, kitap pilleri, katlanır listeler).
