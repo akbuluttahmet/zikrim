@@ -55,7 +55,7 @@ function sourcesFor(index, ids, question) {
     const i = Number(id), h = index.h[i];
     if (!Array.isArray(h)) continue;
     const lib = index.libs[h[0]];
-    if (!Array.isArray(lib) || !Array.isArray(lib[1])) continue;
+    if (!Array.isArray(lib) || !lib[1] || typeof lib[1] !== 'object') continue;
     const text = String(h[3] || '');
     const flat = fold(text);
     const matches = words.filter(w => flat.includes(w));
