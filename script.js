@@ -3474,9 +3474,9 @@ async function raviRender(name) {
   }
   if (rol) {
     const parts = [];
-    if (rol.hoca) parts.push(`${fmt(rol.hoca)} rivayette müellifin doğrudan hocası`);
-    if (rol.ara) parts.push(`${fmt(rol.ara)} rivayette ara halka`);
-    if (rol.son) parts.push(`${fmt(rol.son)} rivayette senedin son halkası`);
+    if (rol.hoca) parts.push(`${fmt(rol.hoca)} senedde müellifin doğrudan rivayet aldığı kişi`);
+    if (rol.ara) parts.push(`${fmt(rol.ara)} senedde ara halka`);
+    if (rol.son) parts.push(`${fmt(rol.son)} senedde son halka`);
     if (parts.length) head.append(el('p', 'ravi-n', parts.join(' · ')));
   }
   const fam = (D.t[name] || []).filter(x => x !== name && D.r[x]);

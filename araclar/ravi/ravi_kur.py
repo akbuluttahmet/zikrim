@@ -51,7 +51,7 @@ def parcala(ad):
 
 # Eski biçimdeki (panelsiz) kitapların sened satırını standarda yaklaştırır: notlar, saygı ifadeleri,
 # “—yani …—” açıklamaları atılır; baştaki harf-i tarif kaldırılır (ez-Zührî → Zührî); Resûlullah ﷺ halkası düşer.
-NOT_PAREN = re.compile(r'radıyallâhu|rahimehull|rahimehall|aleyhisselâm|yani|kendi|metin|mürsel|isnad|ayrıca|okuyarak|yılında|Mescid|bize|bana|dedi|lafız|lafz|;', re.I)
+NOT_PAREN = re.compile(r'zann|sanır|galiba|şüphe|radıyallâhu|rahimehull|rahimehall|aleyhisselâm|yani|kendi|metin|mürsel|isnad|ayrıca|okuyarak|yılında|Mescid|bize|bana|dedi|lafız|lafz|;', re.I)
 TARIF = re.compile(r'^(?:el|er|es|eş|ez|ed|en|et|ey)-(?=[A-ZÂÎÛÇŞĞİÖÜ])')
 KISI_SIFIR = re.compile(r'^(Resûlullah|Nebî|Peygamber)\b')
 KANAAT = re.compile(r'\(([^)]*)\)')
