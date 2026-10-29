@@ -134,7 +134,7 @@
 
 @ Mekke’de iken umre yapmak isteyen kişi hakkında: Nereden umre yapar?
 
-12939 | İbn Uyeyne → Amr b. Evs → Abdurrahmân b. Ebî Bekir | Abdurrahmân b. Ebî Bekir’den: Resûlullah ﷺ ona, Âişe’yi bineğinin arkasına alıp ona Ten‘îm’den umre yaptırmasını emretti.
+12939 | İbn Uyeyne → Amr b. Evs → Abdullah b. Ebî Bekir | Abdullah b. Ebî Bekir’den: Resûlullah ﷺ ona, Âişe’yi bineğinin arkasına alıp ona Ten‘îm’den umre yaptırmasını emretti.
 & haddesenâ, an, an
 % Arapçada ad böyle yazılıdır: “عبد الله بن أبي بكر” (metinde böyle).
 ^ «أن رسول الله صلى الله عليه وسلم أمره

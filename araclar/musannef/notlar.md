@@ -93,3 +93,9 @@
 - 11260 “معاذ بن عون” tek ad bırakıldı (Muâz b. Avn; muhtemelen “Muâz, İbn Avn'dan” — bakılmalı).
 - Sened (Arapçadaki gibi, notlu): 10851, 10883 “جرير، عن عبد الحميد”, 10886, 11001, 11051 “ابن مليكة”, 11083, 11084, 11169/11039 “ابن مفضل/ابن مغفل”, 11285 “حجاج بن فضيل”, 11185, 11228, 11271 “نوير”, 11275, 11295, 11310, 11329 (iki yol olarak yazıldı).
 - Bozuk/şüpheli (notlu): 10909, 10917, 10936, 10999, 11091, 11118, 11198, 11240, 11247, 11279, 11292 (yarım), 11301, 11308, 11340. 11059 başlıksız bab.
+
+## k08 Hac (p085–p092, 12638–13181 civarı)
+- 12638 nüsha senedi (Abdullah b. Yûnus → Bakî b. Mahled) notta. 12860 ikinci rivayet birleşik; “B: 12861 -” başlıksız bab, 12861 maddesi yok.
+- 12939 Arapçada “عبد الله بن أبي بكر” (çevirmen Abdurrahmân yazmıştı, Arapçaya döndürüldü).
+- Sened (Arapçadaki gibi, notlu): 12698, 12786, 12787, 12801, 12842, 12869, 12944, 12986, 12988, 13026; 12967 Osman → Resûlullah sîgası kâle. 13005 senedsiz (İbn Ebî Şeybe'nin sözü). 13018 sorulanın adı yok.
+- Bozuk/şüpheli (notlu): 12650, 12741, 12747, 12809, 12812, 12854, 12859, 12882, 12885, 12905, 12932, 12934, 12968, 12992, 13058, 13066, 13078, 13085, 13086, 13099.
