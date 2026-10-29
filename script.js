@@ -332,7 +332,18 @@ for (const z of DEFAULTS) {
 }
 const REMOVED_V13 = new Set(['ya_fettah']);
 for (let i = DEFAULTS.length - 1; i >= 0; i--) if (REMOVED_V13.has(DEFAULTS[i].id)) DEFAULTS.splice(i, 1);
-const CATALOG = 13;
+// v14: Dua ve âyetlerin başındaki besmele kaldırıldı (v11'in tersi; kullanıcı isteği). Sûrelerde (İhlâs, Felak, Nâs) kalır.
+// Yama önceki son değerlerden üretilir; kullanıcının kendi değiştirdiği alanlara dokunulmaz.
+const unBesmele = (t, b) => t && t.startsWith(b + ' ') ? t.slice(b.length + 1) : t;
+for (const id of BESMELE_IDS) {
+  const z = DEFAULTS.find(x => x.id === id);
+  if (!z || !z.arabic || !z.arabic.startsWith(BESMELE_AR + ' ')) continue;
+  const from = {arabic: z.arabic, translit: z.translit, meaning: z.meaning};
+  const to = {arabic: unBesmele(z.arabic, BESMELE_AR), translit: unBesmele(z.translit, BESMELE_TR), meaning: unBesmele(z.meaning, BESMELE_ME)};
+  PATCHES_V3.push({v: 14, id, from, to});
+  Object.assign(z, to);
+}
+const CATALOG = 14;
 
 const KEY = 'zikrim-v2';
 const OLD_KEY = 'zikrim-v1';
