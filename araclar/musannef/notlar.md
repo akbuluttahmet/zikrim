@@ -29,3 +29,9 @@
 - Bozuk (notlu): 31433 (yarım “إلا أن”), 31565, 31466, 31637 (“في بنيهم”, “ورقا”; mesele iki kez geçer; anne adı yok ama anneye üçte bir).
 - (metinde böyle): 31420, 31430, 31457, 31479, 31557, 31581, 31638 (soru Âmir'e, cevap Şüreyh).
 - 31499 sondaki tek “قال” atıldı (31500'e ait olabilir). 31498 “حدثنا أبو بكر عن ابن جريج” — arada hoca yok, sened İbn Cüreyc'le başlar.
+
+## k01 Tahârât (p009–p016, 598–1139)
+- Bozuk (notlu): 627, 790, 803; 862 çifte olumsuzluk (metinde böyle).
+- Sened sorunları (Arapçadaki gibi, notlu): 788 Ebû Ca‘fer iki kez; 852 başta hoca yok (Mugîre'den başlar); 853 “حدثنا أبو بكر، عن أبي حيان” arada hoca yok; 904 “أيوب بن محمد”; 936 “أبو علية”; 957 “عن زيد، عن خالد الجهني”; 969 “حدثنا محمد، عن بشر”; 1019 “معاذ”; 1073 “عن عطاء، عن الحكم، وعن المقسم”.
+- Metne giren “حدثنا أبو بكر قال:” kayıtları: 947, 956, 1016, 1059. 948 başı eksik (947'nin tekrarı) ve sonunda ikinci rivayet birleşik. 1035'te Bakî b. Mahled nüsha senedi.
+- Başlıksız bablar: 880, 897, 934, 960, 967, 1067.
