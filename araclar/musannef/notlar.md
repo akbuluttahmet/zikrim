@@ -215,3 +215,9 @@
 - Eksik metin: 28156, 28365 (yalnız soru). Okunamayan: 28500, 28545.
 - Sened (notlu): 28153, 28166, 28208, 28309, 28420/28423, 28478, 28602.
 - Bozuk/şüpheli (notlu): 28083, 28129, 28286, 28288, 28299, 28313, 28348, 28352, 28370, 28373, 28443, 28460, 28627, 28640.
+
+## k18 Diyât (p273–p280, 27270–27800 civarı)
+- Hoca düşmüş/öneğe ad karışmış: 27323, 27658 (“حدثنا أبو بكر عن مغيرة”), 27376, 27648. 27468 işitilen adı yok. Başlıksız bablar: 27310, 27490.
+- 27731 ikinci alıntıya Arapçada âyet işareti yok; Tâhâ 20/82 yeri verildi — onay bekliyor. 27666 tahvîl, Âmir'in sözü Ali'ninkiyle birleşik.
+- Sened (notlu): 27474 “ابن أبي عروة”, 27645 “حدثنا شريح”, 27659 “غندر بن سليمان”, 27773. “وعن” iki yol: 27280, 27438, 27448, 27480, 27487, 27506, 27559, 27665.
+- Bozuk/şüpheli (notlu): 27325, 27573, 27577, 27581, 27630, 27653, 27731, 27741.
