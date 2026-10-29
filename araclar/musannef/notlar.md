@@ -45,3 +45,8 @@
 - Bozuk/şüpheli (notlu): 8886, 8900, 8933 (yarım), 8937, 8965, 8973, 8988, 9052, 9053, 9163, 9181, 9185, 9218, 9242, 9281, 9382, 9403, 9406.
 - Sened (Arapçadaki gibi): 8966 “محمد بن محمد بن بشر”, 9201 “نعس بن الوليد”, 9291, 9334 “هشام، عن عروة، عن أبيه”, 9346 yalnız İbn Nümeyr, 9381, 9387; 9257 ve 9271 iki yol (tahvîl gibi yazıldı); 9297 “Basralılardan bir grup ve Hasan”.
 - 9366 sonunda ikinci rivayet birleşik. 9073 başlıksız bab. 9151 yalnız “رضي الله”.
+
+## k01 Tahârât (p001–p008, 1–597)
+- Bozuk/şüpheli (notlu): 81 (okunamayan yer), 95, 125, 145, 257, 427 (sened–metin uyumsuz), 398 “قال عطاء، عن الوضوء” (anlama göre çevrildi, notlu — bakılmalı).
+- Sened (Arapçadaki gibi, notlu): 102 “أمامة”, 229 “أبي المغيرة بن شعبة”, 550 “Ebû Nümeyr”, 253 sened ortasında “حدثنا أبو بكر قال:”, 278 “حدثنا أبو بكر عن مغيرة” (hoca düşmüş), 410 “حدثت عن هشيم” (unbi’tü), 537.
+- 456 başlıksız bab; 377 neşrin köşeli parantezi korundu.
