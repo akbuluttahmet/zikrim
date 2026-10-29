@@ -37,6 +37,7 @@ MUELLIF = {
     'leys': 'Leys b. Sa‘d',
     # Zührî kitaplığı: cüzü rivayet eden İbrâhîm el-Hemedânî'nin kitap başındaki rivayetleri onun adıyla; Zührî'nin metni senedsiz
     'zuhri': ('ez-Zührî', 'İbrâhîm b. el-Hüseyin el-Hemedânî'),
+    'hemmam': 'Hemmâm b. Münebbih',
 }
 # Müellifin metin içi notlarının Arapça ve Türkçe kalıbı (sayıları eşleşmeli)
 MUELLIF_NOT = {'sunan': (r'قال أبو داود', r'Ebû Dâvûd (?:dedi|der|şöyle)'),
@@ -210,10 +211,11 @@ def madde_denetle(rp, lib, dosya, h, ravi, bab_i):
         k = info.get('k')
         if k is None:
             rp.u('k yok', yer)
-        elif not isinstance(k, int) or not 0 < k < len(ar):
+        elif not isinstance(k, int) or not 0 <= k < len(ar):
             rp.h('k aralık dışı', yer, f'k={k}, uzunluk {len(ar)}')
         else:
-            if ar[k - 1] not in ' «"،,:.؟)(\n':
+            # k = 0: Arapçada isnad metni yok (Sahîfetü Hemmâm gibi; zincir nüsha senedinden gelir)
+            if k and ar[k - 1] not in ' «"،,:.؟)(\n':
                 rp.u('k kelime ortasında', yer, repr(ar[max(0, k - 8):k + 8]))
             isnad, _ = onek_dus(lib, HAREKE.sub('', ar[:k]))
             # tahvîl

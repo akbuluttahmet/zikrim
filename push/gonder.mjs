@@ -31,7 +31,7 @@ const subs = parseSubs(PUSH_SUBS).filter(x => x && x.endpoint && x.keys);
 if (!subs.length) { console.error('PUSH_SUBS içinde geçerli abonelik bulunamadı.'); process.exit(1); }
 
 // Bildirimin altına, ana sayfadaki “Rivayetler” havuzundan (gunun.json) kısa bir rivayet
-const LIB_NAMES = {sunan: 'Sünen-i Ebî Dâvûd', musannef: 'el-Musannef', ibnebiseybe: 'İbn Ebî Şeybe', musned: 'el-Müsned', usul: 'Usûlü’s-Sünne', ahmed: 'İmam Ahmed', zuhd: 'ez-Zühd', fezail: 'Fezâilü’s-sahâbe', berbehari: 'Şerhu’s-Sünne', acurri: 'el-Âcurrî', seria: 'eş-Şerîa', hallal: 'el-Hallâl', safii: 'eş-Şâfiî', buhari: 'el-Buhârî', ebudavud: 'Ebû Dâvûd', harb: 'Harb el-Kirmânî', ibane: 'el-İbâne', leys: 'Leys b. Sa‘d', zuhri: 'ez-Zührî'};
+const LIB_NAMES = {sunan: 'Sünen-i Ebî Dâvûd', musannef: 'el-Musannef', ibnebiseybe: 'İbn Ebî Şeybe', musned: 'el-Müsned', usul: 'Usûlü’s-Sünne', ahmed: 'İmam Ahmed', zuhd: 'ez-Zühd', fezail: 'Fezâilü’s-sahâbe', berbehari: 'Şerhu’s-Sünne', acurri: 'el-Âcurrî', seria: 'eş-Şerîa', hallal: 'el-Hallâl', safii: 'eş-Şâfiî', buhari: 'el-Buhârî', ebudavud: 'Ebû Dâvûd', harb: 'Harb el-Kirmânî', ibane: 'el-İbâne', leys: 'Leys b. Sa‘d', zuhri: 'ez-Zührî', hemmam: 'Hemmâm b. Münebbih'};
 function rivayet() {
   try {
     const d = JSON.parse(readFileSync(new URL('../gunun.json', import.meta.url), 'utf8'));
