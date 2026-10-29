@@ -129,10 +129,27 @@ def kur(kitapliklar):
                                 # öğrencisi: bir önceki kutu (müellif dahil)
                                 for ogr in parcala(adlar[i - 1]):
                                     r['ogrencileri'][ogr] = r['ogrencileri'].get(ogr, 0) + 1
-    # ad eşleşmesi için temel → kayıtlar
+    # ad eşleşmesi için temel → kayıtlar (araç veritabanı; aynı kişi anlamına gelmez)
     temeller = collections.defaultdict(list)
     for ad, r in ravi.items():
         temeller[r['temel']].append(ad)
+    # Aynı adın kısa/tam yazımları: parantez açıldığında biri ötekinin başlangıcıysa ve kısa olan zaten
+    # kimliği belirleyen bir öğe (b./bt./İbn/künye devamı) taşıyorsa. “Muhammed” ile “Muhammed (b. Amr)”,
+    # “Muhammed (b. Amr)” ile “Muhammed (b. Seleme)” bağlanmaz: farklı kişiler olabilir.
+    def acik(ad):
+        return re.sub(r'\s+', ' ', ad.replace('(', '').replace(')', '')).strip()
+    def kimlikli(ad):
+        return bool(re.search(r'\bb\.|\bbt\.|^İbn |^Ebû |^Ebü’|^Ümmü ', ad)) and len(ad.split()) >= 3
+    ayni = {}
+    for t, grup in temeller.items():
+        if len(grup) < 2:
+            continue
+        ac = {ad: acik(ad) for ad in grup}
+        for a in grup:
+            es = [b for b in grup if b != a and (
+                (ac[b].startswith(ac[a] + ' ') and kimlikli(ac[a])) or (ac[a].startswith(ac[b] + ' ') and kimlikli(ac[b])))]
+            if es:
+                ayni[a] = sorted(es, key=lambda x: -ravi[x]['sayi'])
         r['hocalari'] = dict(sorted(r['hocalari'].items(), key=lambda x: -x[1]))
         r['ogrencileri'] = dict(sorted(r['ogrencileri'].items(), key=lambda x: -x[1]))
         r['sigalar'] = dict(sorted(r['sigalar'].items(), key=lambda x: -x[1]))
@@ -146,13 +163,14 @@ def kur(kitapliklar):
         'kenar_sayisi': len(kenarlar),
         'ravi': dict(sorted(ravi.items(), key=lambda x: (-x[1]['sayi'], x[0]))),
         'temel': {t: v for t, v in sorted(temeller.items()) if len(v) > 1},
+        'ayni': ayni,
         'kenar': kenarlar,
     }
     OUT.write_text(json.dumps(out, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
     # Uygulama dosyası (repo kökü ravi.json): râvi sayfası için sıkı biçim
-    # r[ad] = [arapça biçimler, hadis sayısı, {hoca: n}, {öğrenci: n}, {kitaplık: [[kitap sırası, no], …]}]
+    # t[ad] = aynı adın kısa/tam yazımları (yalnız kimliği belirli olanlar); r[ad] = [arapça biçimler, hadis sayısı, {hoca: n}, {öğrenci: n}, {kitaplık: [[kitap sırası, no], …]}]
     app = {'r': {ad: [r['ar'], r['sayi'], r['hocalari'], r['ogrencileri'], r['hadisler']] for ad, r in out['ravi'].items()},
-           't': out['temel'], 'm': out['muellif'],
+           't': out['ayni'], 'm': out['muellif'],
            'x': sorted(ad for ad, r in out['ravi'].items() if r['tur'] != 'ad')}  # akrabalık/belirsiz: râvi sayfası açılmaz
     (R / 'ravi.json').write_text(json.dumps(app, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
     return out

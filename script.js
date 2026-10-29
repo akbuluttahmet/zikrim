@@ -3374,7 +3374,7 @@ searchEl.addEventListener('input', () => { $('#araAll').hidden = !(searchEl.valu
 
 /* ---------- Râvi sayfası ----------
    ravi.json (araclar/ravi/ravi_kur.py üretir): r[ad] = [Arapça biçimler, hadis sayısı, {hocası: n}, {öğrencisi: n}, {kitaplık: [[kitap, no], …]}];
-   t = aynı temel adın yazımları; x = râvi sayfası açılmayan tanımlar (akrabalık, belirsiz). Yalnız metindeki zincirlerden türetilir;
+   t = aynı adın kısa/tam yazımları (biri ötekinin başlangıcı, kimliği belirli olanlar); x = râvi sayfası açılmayan tanımlar (akrabalık, belirsiz). Yalnız metindeki zincirlerden türetilir;
    râviler hakkında dışarıdan bilgi yoktur. Arama sayfası gibi tam ekran açılır, geri tuşuyla kapanır. */
 const RAVI = {el: $('#raviPage'), title: $('#raviTitle'), body: $('#raviBody'), open: false, pushed: false, data: null, p: null, skip: new Set(), after: null, stack: []};
 const RAVI_AKRABA = /^(babası|dedesi|annesi|amcası|kardeşi|ninesi|dayısı|halası|teyzesi)(\b|$)/;
@@ -3438,9 +3438,10 @@ async function raviRender(name) {
   if (ar && ar.length) { const p = el('p', 'ravi-ar', ar.join(' · ')); p.lang = 'ar'; p.dir = 'rtl'; head.append(p); }
   const libs = Object.keys(hadisler);
   head.append(el('p', 'ravi-n', `${fmt(sayi)} rivayetin senedinde geçiyor` + (libs.length ? ' · ' + libs.map(v => LIB_NAMES[v] || v).join(', ') : '')));
-  const temel = name.replace(/\s*\(.*?\)/g, '').trim();
-  const fam = (D.t[temel] || []).filter(x => x !== name);
-  if (fam.length) { const p = el('div', 'ravi-fam'); p.append(el('span', 'ravi-fam-h', 'Zincirlerde başka yazımları: ')); for (const x of fam) p.append(raviChip(x, D.r[x] ? D.r[x][1] : 0)); head.append(p); }
+  // Aynı adın kısa/tam yazımları (ravi_kur.py: biri ötekinin başlangıcı ve kimliği belirli): “Abdullah b. Mesleme” ↔ “Abdullah b. Mesleme (el-Ka‘nebî)”.
+  // Yalnız “Muhammed” gibi çıplak adlar ve farklı babalar bağlanmaz; yine de aynı kişi olmayabilir.
+  const fam = (D.t[name] || []).filter(x => x !== name && D.r[x]);
+  if (fam.length) { const p = el('div', 'ravi-fam'); p.append(el('span', 'ravi-fam-h', 'Bu adın kısa ya da tam yazımları (aynı kişi olmayabilir): ')); for (const x of fam) p.append(raviChip(x, D.r[x][1])); head.append(p); }
   head.append(el('p', 'ravi-by', 'Yalnızca kütüphanedeki eserlerin kendi senedlerinden; râvi hakkında dışarıdan bilgi ya da hüküm eklenmemiştir. Aynı ad farklı kişilere ait olabilir.'));
   RAVI.body.append(head);
   const h1 = raviChips('Hocaları', hocalar), h2 = raviChips('Öğrencileri', ogrenciler);
