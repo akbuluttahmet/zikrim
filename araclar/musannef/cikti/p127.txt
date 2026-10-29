@@ -1,0 +1,305 @@
+@ İhramlı iken onu öldürdüğünde söyledikleri
+
+15285 | Abde → Sâid b. Müslim → Şa‘bî | Şa‘bî’den, keneyi öldüren ihramlı hakkında, dedi ki: “Bir avuç yiyecek yedirir: buğday, un ya da hurma.”
+& haddesenâ, an, an
+^ في المحرم يقتل
+
+15286 | Gunder → Şu‘be → Ebû Seleme → İkrime | Ebû Seleme dedi ki: İkrime’yi, bir (küçük) kene öldüren ihramlı hakkında (şöyle derken) işittim: “Bir lokma ekmek sadaka verir.”
+& haddesenâ, an, an, semi‘tü
+^ قال: «يتصدق بكسرة»
+
+@ Avın kasıtlısı ile yanlışlıklası birdir diyenler
+
+15287 | Vekî‘ → Süfyân → Mansûr → İbrâhîm | İbrâhîm dedi ki: “Yanlışlıkla da kasten de (olsa) aleyhine hüküm verilir.”
+& haddesenâ, an, an, an
+^ قال: «يحكم عليه
+
+15288 | Vekî‘ → Süfyân → İbn Cüreyc → Atâ | Atâ dedi ki: “Yanlışlıkla da kasten de (olsa) aleyhine hüküm verilir.”
+& haddesenâ, an, an, an
+^ قال: «يحكم عليه
+
+15289 | Vekî‘ → A‘meş → Ömer b. Mürre → Saîd b. Cübeyr | Saîd b. Cübeyr dedi ki: “Ceza ancak kasıtlıda konuldu; fakat sakınsınlar diye yanlışlıklada da onlara ağırlaştırıldı.”
+& haddesenâ, an, an, an
+% Arapçada ad böyle yazılıdır: “عمر بن مرة” (metinde böyle).
+^ قال: «إنما جعل
+
+15290 | Cerîr → Mugîre → İbrâhîm | İbrâhîm dedi ki: “Avda kasıtlı ile yanlışlıkla birdir; aleyhine hüküm verilir.”
+& haddesenâ, an, an
+^ قال: «العمد والخطأ
+
+15291 | Vekî‘ → Süfyân → Câbir → Hakem → Ömer | Hakem’den: Ömer’e yanlışlıkla ve kasten (öldürme) hakkında yazılmıştı (metinde böyle).
+& haddesenâ, an, an, an, enne
+^ «كان كتب إليه
+
+15292 | Mahbûb el-Kavârîrî → İbrâhîm b. Tahmân → Câbir → Hakem → Ömer | (Ömer’den) bunun benzeri (rivayet edildi).
+& haddesenâ, an, an, an, an
+^ مثله
+
+15293 | İbn Uleyye → Eyyûb → Mücâhid | Eyyûb dedi ki: Mücâhid’den bana haber verildi ki o şöyle dedi: “Avı kasten vurana hüküm verilmez; ancak yanlışlıkla vurana hüküm verilir.” Tâvûs’tan da bana haber verildi ki o şöyle dedi: “Onu yanlışlıkla vurana hüküm verilmez; ancak kasten vurana hüküm verilir.”
+& haddesenâ, an, unbi’tü
+^ أنه قال: «لا يحكم
+
+15294 | İbn Yemân → Süfyân → Câbir → Sâlim, Kâsım, Atâ, Tâvûs ve Mücâhid | Sâlim, Kâsım, Atâ, Tâvûs ve Mücâhid dediler ki: “Çekirgelere ve bağırtlaklara yanlışlıkla isabet ederse aleyhine hüküm verilmez; kasten isabet ederse aleyhine hüküm verilir.”
+& haddesenâ, an, an, an
+^ قالوا: «إذا أصاب
+
+15295 | İbn Uleyye → Hüseyin → Katâde → Ebû Müzeyne → İbn Abbâs | İbn Abbâs dedi ki: “Yanlışlıkta ona bir şey yoktur.”
+& haddesenâ, an, an, an, an
+^ قال: «ليس عليه
+
+15296 | Hafs → İbn Cüreyc → Atâ | Atâ dedi ki: “Avda yanlışlıkla ve kasıtlı birdir; ikisinde de hüküm verilir.”
+& haddesenâ, an, an
+^ قال: «الخطأ والعمد
+
+15297 | Vekî‘ → Süfyân → Hasan | Hasan dedi ki: “Yanlışlıkla da kasten de (olsa) aleyhine hüküm verilir.”
+& haddesenâ, an, an
+^ قال: «يحكم عليه
+
+@ Minâ’ya erken gider diyenler
+
+15298 | Yahyâ b. Yemân → Hişâm | Hişâm dedi ki: Hasan’ı insanlardan bir gün önce Minâ’ya erken giderken gördüm; Hişâm’ı da erken giderken gördüm.
+& haddesenâ, an
+^ قال: رأيت الحسن
+
+15299 | Yahyâ → Haccâc → Atâ | Haccâc dedi ki: Atâ’ya terviyeden bir gün önce Minâ’ya erken gitmeyi sordum; bunda bir sakınca görmedi.
+& haddesenâ, an, kâle
+^ قال: سألت عطاء
+
+15300 | Vekî‘ → Ebân b. Abdullah → Atâ | Ebân b. Abdullah dedi ki: Atâ’ya sordum, bunun benzerini söyledi.
+& haddesenâ, an, kâle
+^ قال: سألت عطاء
+
+@ Cemre taşlarını yıkamak hakkında
+
+15301 | Ma‘n b. Îsâ → Hâlid b. Ebî Bekir | Hâlid b. Ebî Bekir dedi ki: “Sâlim ile ve Ubeydullah b. Abdullah ile birlikte dolaşırdım; onların cemre taşlarını yıkadıklarını görmedim.”
+& haddesenâ, an
+^ قال: «كنت أطوف
+
+15302 | Abdürrezzâk → Ma‘mer → Zührî | Ma‘mer dedi ki: Zührî’ye “Cemre taşlarını yıkayayım mı?” diye sordum. Dedi ki: “Hayır, ancak üzerinde pislik olursa.”
+& haddesenâ, an, kâle
+^ قال: سألت الزهري
+
+15303 | el-Akadî Abdülmelik b. Amr → Eflah → Kâsım | Eflah dedi ki: Kâsım cemre taşlarını yıkardı (metinde böyle); onu olduğu gibi alır ve onunla atardı.
+& haddesenâ, an, kâle
+^ قال: كان القاسم
+
+15304 | İbn Mehdî → Müverri‘ b. Mûsâ → bir şeyh → Saîd b. Cübeyr | Müverri‘ b. Mûsâ dedi ki: Bir şeyhi, Saîd b. Cübeyr’i cemre taşlarını yıkarken gördüğünü anlatırken işittim.
+& haddesenâ, an, semi‘tü, kâle
+% Arapçada “قالت” (dişil) yazılıdır (metinde böyle).
+^ قالت: سمعت شيخا
+
+15305 | Îsâ b. Yûnus → İbn Cüreyc → Atâ | İbn Cüreyc dedi ki: Atâ’ya sordum, dedi ki: “Onu yıkama.”
+& haddesenâ, an, kâle
+^ قال: سألت عطاء
+
+15306 | Vekî‘ → Zem‘a → İbn Tâvûs → babası | İbn Tâvûs’un babasından: O, cemre taşlarını yıkardı.
+& haddesenâ, an, an, an
+^ «أنه كان يغسل
+
+@ Cemre atmayı unutan adam hakkında: onu kaza mı eder yoksa kan mı akıtır
+
+15307 | Ma‘n b. Îsâ → İbn Ebî Zi’b → Zührî → Ebân b. Osman | Ebân b. Osman dedi ki: “Vallahi namaz kaza edilir; cemre atmak nasıl kaza edilmez?”
+& haddesenâ, an, an, an
+^ قال: «والله إن
+
+@ Bineği onu ayağa kaldırdığında telbiye eder diyenler
+
+15308 | İbn Fudayl → Abdülmelik → Ebû Ca‘fer | Ebû Ca‘fer dedi ki: “Nebî ﷺ Beydâ’da bir dişi deve istedi ve ona bindi; bineği onu ayağa kaldırınca telbiye getirdi.”
+& haddesenâ, an, an
+^ قال: «دعا النبي
+
+15309 | Ma‘n → Hâlid b. Ebî Bekir | Hâlid b. Ebî Bekir dedi ki: “Kâsım b. Muhammed’i, Zülhuleyfe mescidinin avlusunda bineği onu ayağa kaldırdığında telbiye getirirken gördüm.”
+& haddesenâ, an
+^ قال: «رأيت القاسم
+
+15310 | Ma‘n → Hâlid | Hâlid’den: O, Sâlim’i bunun benzerini yaparken gördü.
+& haddesenâ, an
+^ أنه رأى سالما
+
+15311 | Vekî‘ → Hişâm b. Urve → babası | Hişâm b. Urve’nin babasından: Nebî ﷺ Zülhuleyfe mescidinde namaz kıldı; mescidin avlusunda bineği onunla doğrulunca telbiye getirdi.
+& haddesenâ, an, an
+^ «أن النبي صلى الله عليه وسلم صلى في مسجد
+
+15312 | Ebû Hâlid → Yahyâ b. Saîd → Nâfi‘ → İbn Ömer | Nâfi‘ dedi ki: “İbn Ömer, bineği onu ayağa kaldırdığında telbiye getirirdi. Âişe ise Beydâ’ya varıncaya kadar telbiye getirmezdi.”
+& haddesenâ, an, an, an
+^ قال: «كان إذا انبعثت
+
+15313 | Vekî‘ → A‘meş → Hayseme | Hayseme dedi ki: Devesi onunla ayakta doğrulduğunda telbiyeyi severlerdi.
+& haddesenâ, an, an
+^ كان يحبون التلبية
+
+15314 | Humeyd → Hüseyin → İsmâîl b. Ebî Hâlid → Recâ → Alkame | Recâ’dan: Alkame bineğin üzerine oturduğunda telbiyeye başlardı; (binek) o telbiye ederken ayağa kalkardı.
+& haddesenâ, an, an, an, enne
+^ «كان إذا جلس
+
+15315 | Ali b. Müshir → Ubeydullah b. Ömer → Nâfi‘ → İbn Ömer | İbn Ömer dedi ki: “Resûlullah ﷺ ayağını üzengiye koyup bineği onunla ayağa kalktığında Zülhuleyfe’den telbiye getirirdi.”
+& haddesenâ, an, an, an
+^ قال: «كان رسول
+
+@ Cemreleri gece atanlar ve bunu hoş görmeyenler
+
+15316 | Ebû Üsâme → Hişâm → Hasan | Hasan’dan: O, cemrelerin gece atılmasını hoş görmedi.
+& haddesenâ, an, an
+^ «أنه كره أن
+
+15317 | Vekî‘ → Süfyân → Hişâm b. Urve → babası | Hişâm b. Urve’nin babasından: O, cemreleri gece atmayı hoş görmedi.
+& haddesenâ, an, an, an
+^ أنه «كره رمي
+
+15318 | Muhammed b. Ubeyd → Ubeydullah b. Ömer → Nâfi‘ | Nâfi‘den: Abdullah b. Ömer’in bir oğlunun nikâhı altında bulunan Ümmü Seleme bintü’l-Muhtâr, Müzdelife’de doğum (sancısına) tuttu; Safiyye de onunla birlikte geride kaldı. O gece ve ertesi gün doğurmadı; sonra ikisi geceleyin Minâ’ya geldiler ve cemreyi attılar. Abdullah bunu onlara karşı yadırgamadı, onlara bir şey kaza etmelerini de emretmedi.
+& haddesenâ, an, an
+^ عن أم سلمة ابنة
+
+15319 | İbn İdrîs → Hişâm → Hasan | Hasan dedi ki: “Cemreler gece atılmaz.”
+& haddesenâ, an, an
+^ قال: «لا ترمى
+
+@ Gece atmaya ruhsat verenler
+
+15320 | Ebû Hâlid → İbn Cüreyc → İbn Sâbit | İbn Sâbit dedi ki: “Resûlullah’ın ﷺ ashâbı hacı olarak gelirler, binek hayvanlarını (otlamaya) bırakırlar, sonra gelip gece atarlardı.”
+& haddesenâ, an, an
+^ قال: «كان أصحاب
+
+15321 | Ebû Hâlid → İbn Cüreyc → Amr | Amr dedi ki: “Nebî’nin ﷺ eşlerinden birini, güneş batmışken ya da batmamışken (cemre) atarken gören biri bana haber verdi.”
+& haddesenâ, an, an
+^ قال: «أخبرني من
+
+15322 | Mu‘temir → Leys → Atâ ve Tâvûs | Atâ ve Tâvûs dedi ki: “Kiraya (hayvan) veren bir çoban bulamazsa ve adam uyuyorsa (metinde böyle), ikisi cemreleri gece atarlar.”
+& haddesenâ, an, an
+^ قال: «الكري إذا
+
+15323 | Hammâd b. Hâlid → İbn Ebî Zi’b → Zührî | Zührî dedi ki: “Çobanlar gece atarlar ve (Minâ’da) gecelemezler.”
+& haddesenâ, an, an
+^ قال: «الرعاء يرمون
+
+@ Müzdelife’den ayrılma vakti hakkında
+
+15324 | Hâtim b. İsmâîl → Ca‘fer → babası → Câbir | Câbir’den: Nebî ﷺ Müzdelife’de (metinde böyle) iyice ağarıncaya kadar durmaya devam etti; sonra güneş doğmadan önce ayrıldı.
+& haddesenâ, an, an, an
+^ «أن النبي صلى الله عليه وسلم لم يزل
+
+15325 | İbn Uyeyne → Muhammed b. el-Münkedir → Saîd b. Abdurrahmân b. Yerbû‘ → Cübeyr b. el-Huveyris → Ebû Bekir | Cübeyr b. el-Huveyris, Ebû Bekir’i bir tepenin üzerinde dururken şöyle derken işitti: “Ey insanlar, sabahlayın! Ey insanlar, sabahlayın!” Sonra ayrıldı. Sanki onun, devesini değneğiyle dürterken açılmış uyluğuna bakıyorum.
+& haddesenâ, an, semi‘a, an, semi‘a
+^ وهو واقف على
+
+15326 | İbn Uyeyne → Amr b. Dînâr → Ebü’ş-Şa‘sâ | Ebü’ş-Şa‘sâ dedi ki: “Müzdelife’den ayrılma vakti, sabah namazını ağarmada kılan topluluğun namazı kadar (bir süredir); develerin ayaklarının basacağı yerleri gördüğü zaman.”
+& haddesenâ, an, an
+^ قال: «وقت الدفعة
+
+15327 | Süfyân b. Uyeyne → İbn Tâvûs → babası | İbn Tâvûs’un babası dedi ki: “Cahiliye ehli Arafat’tan güneş batmadan önce ayrılırlardı. Allah bunu geciktirdi, şunu öne aldı: Arefe’den (ayrılışı) güneşin batışına geciktirdi, Müzdelife’den (ayrılışı) güneşin doğuşundan önceye aldı.”
+& haddesenâ, an, an
+^ قال: «كان أهل الجاهلية
+
+15328 | Vekî‘ → Umerî → Nâfi‘ | Nâfi‘ dedi ki: İbnü’z-Zübeyr Cem‘de durdu ve yerinde kaldı. İbn Ömer dedi ki: “Güneşin doğuşu mu bekleniyor? Cahiliyenin işini mi (yapıyorsun)?” İbn Ömer ayrıldı, insanlar da onun ayrılışıyla ayrıldılar.
+& haddesenâ, an, an
+^ قال: وقف ابن الزبير
+
+15329 | Vekî‘ → Süfyân → Ebû İshâk → Abdurrahmân b. Yezîd | Abdurrahmân b. Yezîd’den: Abdullah, sabah namazını ağarmada kılanların namazı kadar (bir sürede) Cem‘den ayrıldı.
+& haddesenâ, an, an, an
+^ أن عبد الله «أفاض
+
+15330 | İbn Nümeyr ve Yezîd b. Hârûn → Yahyâ b. Saîd → Kâsım → İbnü’z-Zübeyr | Kâsım dedi ki: İbnü’z-Zübeyr’i şöyle derken işittim: “Haccın sünnetindendir ki (kişi) namaz kılar, sonra fecir parladığında sabahı kıldıktan sonra Müzdelife’de durur; ağarınca ayrılır.”
+& haddesenâ, an, an, semi‘tü
+^ يقول: «إن من سنة
+
+15331 | Yahyâ → İbn Cüreyc → İbn Tâvûs → babası | İbn Tâvûs’un babası dedi ki: “Güneş doğmadan önce.”
+& haddesenâ, an, an, an
+^ قال: «قبل طلوع
+
+15332 | Yahyâ b. Saîd → İbn Cüreyc → Nâfi‘ → İbn Ömer | İbn Ömer dedi ki: “Sabah namazı kadar (bir süre); ne acele edilmiş ne geciktirilmiş.”
+& haddesenâ, an, an, an
+^ قال: «كقدر صلاة
+
+@ Tavafta zikir hakkında
+
+15333 | İbn Uyeyne → Ubeydullah b. Ebî Ziyâd → Kâsım → Âişe | Âişe dedi ki: “Beyt’i tavaf ve Safâ ile Merve arasında sa‘y ancak Allah’ın zikrini ikame etmek için konulmuştur.”
+& haddesenâ, an, an, an
+^ قالت: «إنما جعل
+
+15334 | Vekî‘ → Süfyân → Ubeydullah b. Ebî Ziyâd → Kâsım → Âişe | (Âişe’den), Nebî’den ﷺ bunun benzeri (rivayet edildi).
+& haddesenâ, an, an, an, an
+^ عن النبي صلى الله عليه وسلم بمثله
+
+@ Cemre taşları hakkında, bu konuda gelenler
+
+15335 | İbn Uyeyne → Süleymân b. Ebi’l-Mugîre el-Absî → İbn Ebî Nu‘m → Ebû Saîd el-Hudrî | Ebû Saîd el-Hudrî dedi ki: “Cemre taşlarından kabul edilen kaldırılır.”
+& haddesenâ, an, an, an
+^ قال: «ما يقبل
+
+15336 | İbn Uyeyne → Fıtr → Ebü’t-Tufeyl → İbn Abbâs | Ebü’t-Tufeyl dedi ki: İbn Abbâs’a dedim ki: “Cahiliyede ve İslâm’da (cemre) atıldı mı?” (metinde böyle) Dedi ki: “Ondan kabul edilen kaldırılır; yoksa o, Sebîr (dağın)dan daha büyük olurdu.”
+& haddesenâ, an, an, kâle
+^ قال: قلت لابن عباس
+
+@ Vâcib bir hedy sürüp de (hedy) helak olan hakkında: ondan yer mi?
+
+15337 | Gunder → Şu‘be → Hakem → Saîd b. Cübeyr | Saîd b. Cübeyr’den: O, vâcib hedy hakkında: “Ondan yemez, ona bir ceza (gerekir)” dedi. Nâfile hakkında da: “Ondan yenir” dedi.
+& haddesenâ, an, an, an
+^ أنه قال في الهدي
+
+15338 | İbn Nümeyr → Abdülmelik → Atâ | Atâ’dan, bir kurbanlık deve sürüp de devesi helak olan adam hakkında, dedi ki: “Yer, yedirir ve sadaka verir; çünkü ona bedel (gerekir).”
+& haddesenâ, an, an
+^ في رجل ساق
+
+15339 | Ebû Muâviye → Eş‘as → Şa‘bî → Abdullah | Abdullah dedi ki: “Vâcib bir hedy sürer de (hedy) helak olursa yer, yedirir; ona bedel (gerekir).”
+& haddesenâ, an, an, an
+^ قال: «إذا ساق
+
+15340 | Vekî‘ → Şu‘be → Hakem → Saîd b. Cübeyr | Saîd b. Cübeyr dedi ki: “Hedy helak olursa, vâcib de olsa ye ve bedelini ver.”
+& haddesenâ, an, an, an
+^ قال: «كل وأبدل
+
+15341 | İbn Uleyye → Ebü’t-Teyyâh → Mûsâ b. Seleme → İbn Abbâs | İbn Abbâs’tan: Resûlullah ﷺ bir adamla on sekiz kurbanlık deve gönderdi ve onlar hakkında ona emrini verdi. (Adam) gitti, sonra dönüp ona dedi ki: “Onlardan biri bize (yorulup) çökerse ne dersin?” Buyurdu ki: “Onu boğazla, sonra nalınını (gerdanlığını) onun kanına batır ve onu yan tarafına koy. Ondan ne sen ne de yol arkadaşlarından biri yesin.”
+& haddesenâ, an, an, an
+^ أن رسول الله صلى الله عليه وسلم بعث
+
+15342 | Vekî‘ → Hişâm → babası → Nâciye el-Huzâî | Nâciye el-Huzâî dedi ki: “Ey Allah’ın Resûlü, kurbanlık develerden helak olanı ne yapayım?” dedim. Buyurdu ki: “Onu boğazla, nalınını onun kanına batır ve insanlarla onu baş başa bırak, onu yesinler.”
+& haddesenâ, an, an, an
+^ قال: قلت: يا رسول
+
+15343 | Muhammed b. Beşîr → Saîd b. Ebî Arûbe → Katâde → Sinân → İbn Abbâs → Züeyb el-Huzâî | İbn Abbâs’tan: Züeyb el-Huzâî rivayet etti ki: Nebî ﷺ kurbanlık develeri onunla gönderir ve şöyle buyururdu: “Onlardan biri helak olur da ölmesinden korkarsan onu boğazla, sonra nalınını onun kanına batır, sonra onu yan tarafına vur ve ondan yol arkadaşlarından hiç kimseye yedirme.”
+& haddesenâ, haddesenâ, an, an, an, enne
+^ أن النبي صلى الله عليه وسلم كان يبعث
+
+@ Nâfile hedyden yemeye ruhsat verenler
+
+15344 | Abde → Ubeydullah b. Ömer → Nâfi‘ | Nâfi‘ dedi ki: Abdullah benimle nâfile olarak bir kurbanlık deve gönderdi; yolda helak oldu. Onu boğazladım, ondan bir kısmını sadaka verdim, bir kısmıyla da ona döndüm. O da yedi ve bedel vermedi.
+& haddesenâ, an, an
+^ قال: بعث معي
+
+15345 | Ebû Muâviye → Eş‘as → Şa‘bî → Abdullah | Abdullah dedi ki: “Nâfile bir hedy sürer de helak olursa?” Dedi ki: “Ye, yedir; sana bedel (gerekmez).”
+& haddesenâ, an, an, an
+^ قال: " إذا ساق
+
+15346 | Vekî‘ → Süfyân → İbn Cüreyc → Atâ | Atâ dedi ki: “Nâfileden, temettu‘dan, ihsâr hedyinden ve adaktan, (adarken bir şey) belirtmediğinde, ye.”
+& haddesenâ, an, an, an
+^ قال: «كل من التطوع
+
+15347 | Vekî‘ → Şerîk → Sâlim → Saîd b. Cübeyr | Saîd b. Cübeyr dedi ki: “Nâfileden ve temettu‘dan yenir.”
+& haddesenâ, an, an, an
+^ قال: «يؤكل من
+
+@ Nâfile olarak tavafa başlayan adam hakkında
+
+15348 | Vekî‘ → Rebî‘ → Kays b. Sa‘d → İbn Abbâs | İbn Abbâs dedi ki: “Nâfile olarak sadaka, namaz, oruç ve tavaf: dilerse tamamlar, dilerse keser.”
+& haddesenâ, an, an, an
+^ قال: «الصدقة تطوعا
+
+15349 | Abdürrahîm → İsmâîl → Hasan, Katâde ve İbn Sîrîn | Hasan, Katâde ve İbn Sîrîn’den, nâfile olarak tavafa başlayıp sonra onu kesen adam hakkında, dediler ki: “Tavafını kaza eder.”
+& haddesenâ, an, an
+^ في الرجل يفتتح
+
+15350 | Cerîr → Mugîre → İbrâhîm | İbrâhîm dedi ki: “Sen Beyt’i tavaf ederken farz bir namaz (vakti) gelirse tavafını kes, sonra namaz kıl, sonra tavafından kalanı kaza et.”
+& haddesenâ, an, an
+^ قال: «إذا حضرت
+
+15351 | Cerîr → Leys → Atâ, Tâvûs ve Mücâhid | Atâ, Tâvûs ve Mücâhid dediler ki: “Dilersen kalanı kaza et, dilersen baştan başla.”
+& haddesenâ, an, an
+^ قالوا: «إن شئت
+
+15352 | Vekî‘ → Hanzala → Sâlim | Sâlim’den: O, Safâ ile Merve arasında (sa‘y için) dolaşıyordu; namaza kamet getirildi, namaz kıldı, sonra Safâ ile Merve’ye dönüp kalanı tamamladı.
+& haddesenâ, an, an
+^ «أنه كان يطوف
+
+15353 | İbn Nümeyr → Abdülmelik → Mekke halkından bir şeyh | Mekke halkından bir şeyh dedi ki: İbn Ömer’i tavaf ederken gördüm; namaza kamet getirilmişti; namaza girdi, namazı bitirince tavafının üzerine bina etti.
+& haddesenâ, an, an
+^ قال: رأيت ابن عمر

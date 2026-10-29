@@ -1,0 +1,309 @@
+@ İhramlının deve kuşu yumurtasına isabet etmesi hakkında
+
+15213 | İbn Nümeyr → Talha b. Ubeydullah → Tâvûs | Talha b. Ubeydullah dedi ki: Tâvûs’a ihramlının isabet ettiği keklik yumurtasını sordum. Dedi ki: “Onda kıymeti (vardır).”
+& haddesenâ, an, kâle
+^ قال: سألت طاوسا
+
+15214 | Hafs → Eş‘as → İbn Sîrîn | İbn Sîrîn’den: O, ihramlı bir adamın ihramsız birine işaret ettiği deve kuşu yumurtası hakkında şöyle dedi: “Bir gün oruç ya da bir miskini doyurmak.”
+& haddesenâ, an, an
+^ أنه قال في بيض
+
+15215 | Vekî‘ → İbn Leylâ → Atâ → İbn Abbâs | İbn Abbâs dedi ki: “Her iki yumurtada bir dirhem, her yumurtada yarım dirhem (vardır).”
+& haddesenâ, an, an, an
+% Arapçada ad böyle yazılıdır: “ابن ليلى” (metinde böyle).
+^ قال: «في كل بيضتين
+
+15216 | Abdüsselâm → Haccâc → Ebü’z-Zübeyr → Câbir → Ömer | Ömer’den: O dedi ki: “Yumurtada onun kıymeti (vardır).”
+& haddesenâ, an, an, an, an
+^ أنه قال: «في البيض
+
+15217 | Abde → İbn Ebî Arûbe → Matar el-Verrâk → Muâviye b. Kurre | Muâviye b. Kurre’den: Bir adam devesine deve kuşu yumurtalarını çiğnetti ve Ali’ye sordu. (Ali) dedi ki: “Her yumurta için sana devenin ‘sırâb’ı ya da devenin ‘hibn’i (metin bu kısımda bozuktur) (gerekir).” (Adam) Resûlullah’a ﷺ gidip ona (Ali’nin) dediğini haber verdi. Buyurdu ki: “O, işittiğini söyledi. Her yumurta için sana bir gün oruç ya da bir miskini doyurmak (gerekir).”
+& haddesenâ, an, an, an
+^ أن رجلا أوطأ
+
+15218 | Ebû Hâlid el-Ahmer → Dâvûd → Şa‘bî | Şa‘bî dedi ki: “Bedeli.”
+& haddesenâ, an, an
+^ قال: «ثمنه»
+
+15219 | Ebû Hâlid → Eş‘as → Muhammed | Muhammed dedi ki: “Bir gün oruç ya da bir miskini doyurmak.”
+& haddesenâ, an, an
+^ قال: «صيام يوم
+
+15220 | Abde → Saîd → Katâde → Lâhık b. Humeyd → Ebû Ubeyde → İbn Mes‘ûd | Ebû Ubeyde’den: İbn Mes‘ûd bu hususta dedi ki: “Her yumurta için sana bir gün oruç ya da bir miskin yemeği (gerekir).”
+& haddesenâ, an, an, an, an, enne
+^ قال في ذلك
+
+15221 | Gunder → Şu‘be → Hakem | Şu‘be dedi ki: Hakem’e Harem güvercininin yumurtası soruldu. Dedi ki: “Onun yumurtasında bir müd yiyecek (vardır).”
+& haddesenâ, an, kâle
+^ قال: سئل الحكم
+
+@ Kurbanlık develerin yerine (konan) hakkında
+
+15222 | Zeyd b. el-Hubâb → Hammâd b. Seleme → Eyyûb es-Sahtiyânî → İkrime | İkrime’den: Bir adam ona gelip, kurbanlık devesinin yavrusunu kesen bir adamı sordu. Dedi ki: “Ona bir kan (kurban gerekir).”
+& haddesenâ, an, an, an
+% Nüsha senedi: Ebû Muhammed Abdullah b. Yûnus → Ebû Abdurrahmân (İbn Mahled) → Ebû Bekir Abdullah b. Muhammed b. Ebî Şeybe.
+^ أن رجلا جاء إليه
+
+15223 | Ebü’l-Hasan → Hammâd b. Seleme → Abdülkerîm → Mücâhid | Mücâhid dedi ki: “Ona bir kan (kurban gerekir).”
+& haddesenâ, an, an, an
+^ قال: «عليه دم»
+
+15224 | Yahyâ b. Saîd → Hişâm → Hasan | Hasan’dan, doğuran kurbanlık deve hakkında, dedi ki: “(Yavruyu) onun üzerine yükler; eğer onu keser ve yerse, yerine bir koç keser.”
+& haddesenâ, an, an
+^ في البدنة تنتج
+
+15225 | Yahyâ b. Saîd → Ubeydullah → Nâfi‘ → İbn Ömer | İbn Ömer’den: O, kurbanlık devenin yavrusunu onun üzerine yüklerdi.
+& haddesenâ, an, an, an
+^ «أنه كان يحمل
+
+15226 | Hafs → İbn Cüreyc → Atâ | Atâ dedi ki: “Kurbanlık devenin yavrusu annesiyle birlikte boğazlanır.”
+& haddesenâ, an, an
+^ قال: «ولد البدنة
+
+15227 | Hafs → İbn Cüreyc → Atâ; ayrıca Hafs → Fudayl → Mugîre → İbrâhîm | İbrâhîm’den (ve Atâ’dan): (İbrâhîm) şöyle derdi: “Kurbanlık deve kesildiğinde yavrusu da onunla birlikte kesilir.”
+& haddesenâ, an, an; haddesenâ, an, an, an
+^ قال: كان يقول
+
+15228 | İbn Nümeyr → Abdülmelik → Atâ | Atâ’dan, kurbanlık devesini sürüp götüren, devenin yolda doğurduğu ve (yavruyu) taşıyamayan adam hakkında, dedi ki: “Ona dilediğini yapar; Mekke’ye girince de yerine bir koç keser.”
+& haddesenâ, an, an
+^ في رجل ساق
+
+@ Arafat’ta imamdan önce ayrılan adam hakkında
+
+15229 | İbn Ebî Zâide → İbn Cüreyc → Atâ | İbn Cüreyc dedi ki: Atâ’ya dedim ki: “(Kişi) imamdan önce Arafat’taki bir duruş yerinden ayrılır mı?” Dedi ki: “Hayır.”
+& haddesenâ, an, kâle
+^ قال: قلت لعطاء
+
+15230 | Vekî‘ → Süfyân → Ebû Huseym → Yûsuf b. Mâhek → İbn Ömer | İbn Ömer’den: O, imamdan önce (Arafat’tan) ayrıldı.
+& haddesenâ, an, an, an, an
+^ «أنه دفع قبل
+
+15231 | Vekî‘ → İsrâîl → İbrâhîm b. Abdüla‘lâ → Mücâhid | İbrâhîm b. Abdüla‘lâ dedi ki: Bir arkadaşımız imamdan önce (Arafat’tan) ayrıldı. Mücâhid’e sordum, dedi ki: “Bir kan akıtır.”
+& haddesenâ, an, an, kâle
+^ قال: أفاض صاحب
+
+15232 | Hafs → Eş‘as → Hasan | Hasan dedi ki: “İmamdan önce ayrılırsa ona bir kan (kurban gerekir).”
+& haddesenâ, an, an
+^ قال: «إذا أفاض
+
+@ Cem‘e (Müzdelife’ye) uğrayıp orada konaklamazsa kan akıtır diyenler
+
+15233 | Selâm Ebü’l-Ahvas → Mugîre → İbrâhîm | İbrâhîm’den, orada bir duruş yeri olduğunu düşünmeyerek Cem‘e uğrayıp Minâ’ya varan adam hakkında, dedi ki: “Bunun için bir kan akıtır.”
+& haddesenâ, an, an
+^ في رجل مر
+
+15234 | Abdüsselâm → Mugîre → İbrâhîm | İbrâhîm’den, Cem‘de gecelemeyi bilmeyen kimse hakkında, dedi ki: “Bir kan akıtır.”
+& haddesenâ, an, an
+^ في من جهل
+
+15235 | Hafs → Yahyâ b. Saîd → Atâ | Yahyâ b. Saîd dedi ki: Atâ’yı şöyle derken işittim: “Kim Cem‘den sıkıştırılıp da orada konaklamazsa bunun için bir kan akıtır.”
+& haddesenâ, an, semi‘tü
+^ قال: سمعته يقول
+
+15236 | İbn Mehdî → Süfyân → İbn Ebi’s-Sefer → Şa‘bî | Şa‘bî dedi ki: “Kim Cem‘de durmazsa onu umre yapar.”
+& haddesenâ, an, an, an
+^ قال: «من لم يقف
+
+15237 | Sehl b. Yûsuf → Amr → Hasan | Hasan dedi ki: “Kim Cem‘de durmazsa onun haccı yoktur; gelecek yıl hacceder.”
+& haddesenâ, an, an
+^ قال: «من لم يقف
+
+@ İhramlı oldukları hâlde bir avda ortak olan topluluk hakkında
+
+15238 | Hafs → Haccâc → Hammâd → İbrâhîm | İbrâhîm dedi ki: “Tek bir ceza (gerekir).”
+& haddesenâ, an, an, an
+^ قال: «جزاء واحد»
+
+15239 | Hafs → Haccâc → Hakem → Şa‘bî | Şa‘bî dedi ki: “Tek bir ceza (gerekir).”
+& haddesenâ, an, an, an
+^ قال: «جزاء واحد»
+
+15240 | Hafs → Haccâc → Hakem | Hakem dedi ki: “Ortak olurlar da arkadaşları onun fidyesini vermezse bütün fidye ona (gerekir).”
+& haddesenâ, an, an
+^ قال: «إن اشتركوا
+
+15241 | Abdüsselâm → Leys → Atâ, Tâvûs ve Mücâhid | Atâ, Tâvûs ve Mücâhid dediler ki: “Tek bir ceza (gerekir).” Mücâhid de dedi ki: “Ondan yerlerse her birine bir ceza (gerekir).”
+& haddesenâ, an, an
+^ قالوا: «جزاء واحد»
+
+15242 | Abdüsselâm → Sâlim → Saîd | Saîd dedi ki: “Onlardan her birine bir ceza (gerekir).”
+& haddesenâ, an, an
+^ قال: «على كل واحد
+
+15243 | Cerîr → Mugîre ve İbn Şübrume → Şa‘bî | Şa‘bî dedi ki: “Ortak olduklarında onlardan her birine bir ceza (gerekir).”
+& haddesenâ, an, an
+^ قال: «إذا اشتركوا
+
+15244 | Cerîr → Leys → Atâ | Atâ dedi ki: “Ondan yerlerse ikisinden her birine bir ceza, yemezlerse ikisine tek bir ceza (gerekir).”
+& haddesenâ, an, an
+^ قال: «إن أكلا
+
+15245 | Hafs → Haccâc → Ebû Ca‘fer ve Atâ | Haccâc dedi ki: Ebû Ca‘fer ile Atâ’ya, ihramlı oldukları hâlde bir avda ortak olan topluluğu sordum; (her biri) dedi ki: “Tek bir ceza (gerekir).”
+& haddesenâ, an, kâle
+^ قال: سألت أبا جعفر
+
+15246 | Ebû Bekir b. Ayyâş → Leys → Atâ | Atâ dedi ki: “İki adam bir avda ortak olursa tek bir keffâret (gerekir); eğer yerlerse ikisinden her birine bir ceza (gerekir).”
+& haddesenâ, an, an
+^ قال: «إذا اشترك
+
+15247 | Hafs → İbn Cüreyc → kendisine rivayet eden biri → İbn Ömer | İbn Ömer’den: Ona, bir av öldüren yaya bir topluluk soruldu. Dedi ki: “Onlara tek bir ceza (gerekir).”
+& haddesenâ, an, an, an
+^ أنه سئل عن
+
+15248 | Abdüla‘lâ → Ma‘mer → Zührî | Ma‘mer dedi ki: (Zührî) şöyle derdi: “İki kişi bir ava isabet ederse ikisine tek bir hüküm (gerekir).”
+& haddesenâ, an, an
+^ قال: كان يقول
+
+15249 | İbn Uyeyne → İbn Şübrume → Şa‘bî | Şa‘bî dedi ki: “Onlardan her insana bir ceza (gerekir).” Hammâd ise dedi ki: “İkisine tek bir ceza yeter.” (İbn Şübrume) dedi ki: Şa‘bî’nin dediğini Hâris’e haber verdim; dedi ki: “Söz, Hammâd’ın dediğidir.”
+& haddesenâ, an, an
+^ قال: «على كل إنسان
+
+@ Avın her şeyinde hüküm (gerekir) diyenler
+
+15250 | Abdüla‘lâ → Ma‘mer → Zührî | Zührî dedi ki: “Avın her şeyinde adalet sahibi (iki kişinin) hükmü (gerekir).”
+& haddesenâ, an, an
+^ قال: «في كل شيء
+
+15251 | İbn Ebî Utbe → babası → Hammâd | Hammâd dedi ki: “İhramlının avladığı her avda adalet sahibi (iki kişinin) hükmü (gerekir).”
+& haddesenâ, an, an
+^ قال: «كل شيء
+
+@ Minâ’da (kurban) kesip iki rek‘at kılmayanlar
+
+15252 | Hafs → Haccâc → Nâfi‘ → İbn Ömer | İbn Ömer’den: O, Minâ’da (kurban) keser, iki rek‘at kılmazdı.
+& haddesenâ, an, an, an
+^ «أنه كان يذبح
+
+15253 | Hafs → Leys → Atâ | Leys (dedi ki): Atâ’ya sordum; dedim ki: “Abdülkerîm Minâ’da bana ‘Namaz kılmadan kesme’ dedi.” Dedi ki: “Bu Minâ ehline (gerekli) değildir; o ancak âfâk ehline (gerekir).” Mücâhid’e de sordum, bana bunun benzerini söyledi.
+& haddesenâ, an, kâle
+^ سألت عطاء قلت
+
+15254 | Hafs → Abdülmelik → Atâ | Abdülmelik dedi ki: Atâ’ya sordum; dedim ki: “Biri bana ‘Kesmeden önce iki rek‘atı kıl’ dedi.” Dedi ki: “Bu Minâ ehline (gerekli) değildir; onların namazı ancak Cem‘deki duruşlarıdır.”
+& haddesenâ, an, kâle
+^ قال: سألت عطاء
+
+15255 | Vekî‘ → Süfyân → Câbir → Mücâhid, Tâvûs, Atâ, Sâlim ve Kâsım | Mücâhid, Tâvûs, Atâ, Sâlim ve Kâsım dediler ki: “Kurban günü Minâ’da namaz yoktur.”
+& haddesenâ, an, an, an
+^ قالوا: «لا صلاة
+
+15256 | Humeyd → Kays → Câbir → Talha b. Abdullah → İbrâhîm ve Abdurrahmân b. el-Esved | İbrâhîm ve Abdurrahmân b. el-Esved’den: İkisi bir gün Minâ’da, kurban günü, kurban kesmeden önce iki rek‘at kıldılar. Ebû Bekir bize dedi ki: Abdülvehhâb es-Sekafî bize Müsennâ’dan, o Amr b. Saîd’den, o Saîd b. el-Müseyyeb’den rivayet etti; dedi ki: “İki rek‘at, kurban kesecek olana kesmeden önce vâcibtir; kesmeyecek olanın da onlarda hazır bulunması gerekir.” Bunlardan önce ne Ramazan bayramında ne de Kurban bayramında secde edilmeyeceğini (namaz kılınmayacağını) ileri sürdü.
+& haddesenâ, an, an, an, an
+% Maddede ikinci bir rivayet birleşik.
+^ «أنهما صليا يوما
+
+@ Teşrîk günleri yeme ve içme günleridir diyenler
+
+15258 | Abdüla‘lâ → Muhammed b. İshâk → Hakîm b. Hakîm → Mes‘ûd b. el-Hakem → annesi | Mes‘ûd b. el-Hakem’in annesi dedi ki: Sanki Resûlullah’ın ﷺ katırı üzerinde şöyle derken Ali’ye bakıyorum: “Bunlar oruç günleri değildir; bunlar yeme ve içme günleridir.”
+& haddesenâ, an, an, an, an
+^ قالت: كأني أنظر
+
+15259 | Selâm → İbrâhîm → Ebü’ş-Şa‘sâ | Ebü’ş-Şa‘sâ dedi ki: Minâ’da Abdullah b. Ömer ile oturuyorduk; bize yemek getirildi. Oğullarından biri kenara çekilip “Ben oruçluyum” dedi. (İbn Ömer) dedi ki: “Ye, çünkü bunlar yeme ve içme günleridir.” (Ebü’ş-Şa‘sâ) dedi ki: O da orucunu açtı.
+& haddesenâ, an, an
+^ قال: كنا جلوسا
+
+15260 | İbn Uleyye → Yûnus → Hasan | Hasan dedi ki: “Teşrîk günleri yemek ve zikir günleridir.”
+& haddesenâ, an, an
+^ قال: «أيام التشريق
+
+15261 | Hafs ve Cerîr → Hasan b. Ubeydullah → İbrâhîm → Mesrûk | Hasan b. Ubeydullah dedi ki: İbrâhîm’e teşrîk günlerinde oruç tutmayı sordum; dedi ki: Mesrûk dedi ki: “Onlar yeme ve içme günleridir.”
+& haddesenâ, an, kâle, kâle
+^ قال: " سألت إبراهيم
+
+15262 | Hâtim b. İsmâîl → Ca‘fer → babası | Ca‘fer’in babasından: Nebî ﷺ Büdeyl b. Verkâ el-Huzâî’yi boz bir deve üzerinde, Minâ günlerinin yeme ve içme günleri olduğunu ilan etmek üzere gönderdi.
+& haddesenâ, an, an
+^ «إن النبي صلى الله عليه وسلم بعث
+
+15263 | İbn Fudayl → Leys → Amr b. Dînâr → Ensâr’dan, Resûlullah’ın ﷺ ashâbından bir adam | Amr b. Dînâr dedi ki: Ensâr’dan, Resûlullah’ın ﷺ ashâbından bir adam bana rivayet etti; dedi ki: Nebî (aleyhisselâm) teşrîk günlerinde beni gönderdi ve insanlar arasında “Bunların yeme ve içme günleri olduğunu” ilan etmemi emretti.
+& haddesenâ, an, an, haddesenî
+^ قال: بعثني النبي
+
+15264 | Vekî‘ → Süfyân → Habîb b. Ebî Sâbit → Nâfi‘ b. Cübeyr → Bişr b. Suhaym | Bişr b. Suhaym’dan: Nebî ﷺ teşrîk günlerinde hutbe verip buyurdu: “Cennete ancak mü’min bir nefis girer. Bu günler yeme ve içme günleridir.”
+& haddesenâ, an, an, an, an
+^ أن النبي صلى الله عليه وسلم خطب
+
+15265 | Vekî‘ → Mûsâ b. Ubeyde → Münzir b. Cehm → Ömer b. Halde el-Ensârî → annesi | Ömer b. Halde el-Ensârî’nin annesi dedi ki: Resûlullah ﷺ teşrîk günlerinde Ali’yi, “Bunların yeme, içme ve (eşlerle) birleşme günleri olduğunu” ilan etmek üzere gönderdi.
+& haddesenâ, an, an, an, an
+^ قالت: " بعث رسول
+
+15266 | Abde → Abdülmelik | Abdülmelik dedi ki: “Minâ’da teşrîk günlerinde oruç tutardık; sonra bundan nehyedildik.”
+& haddesenâ, an
+^ قال: «كنا نصوم
+
+15267 | İbn Mehdî → Süfyân → Abdullah b. Ebî Bekir ve Sâlim → Süleymân b. Yesâr → Abdullah b. Huzâfe | Abdullah b. Huzâfe’den: Nebî ﷺ ona, teşrîk günlerinde, bunların yeme ve içme günleri olduğunu ilan etmesini emretti.
+& haddesenâ, an, an, an, an
+^ «أن النبي صلى الله عليه وسلم أمره
+
+15268 | Abdürrahîm b. Süleymân → Muhammed b. Amr → Ebû Seleme → Ebû Hüreyre | Ebû Hüreyre dedi ki: Resûlullah ﷺ buyurdu: “Teşrîk günleri yeme ve içme günleridir.”
+& haddesenâ, an, an, an
+^ قال: قال رسول الله
+
+15269 | Vekî‘ → Abdüla‘lâ → Hişâm → Muhammed → Ebü’l-Melîh | Ebü’l-Melîh dedi ki: “Teşrîk günleri yeme ve içme günleridir.”
+& haddesenâ, an, an, an, an
+^ قال: «أيام التشريق
+
+15270 | Vekî‘ → Mûsâ b. Ulayy → annesi → Utbe b. Âmir | Utbe b. Âmir dedi ki: Resûlullah ﷺ buyurdu: “Arefe günü, kurban günü ve teşrîk günleri İslâm ehlinin bayramıdır; bunlar yeme ve içme günleridir.”
+& an, an, an, an
+% Arapçada ad böyle yazılıdır: “عتبة بن عامر” (metinde böyle).
+^ قال: قال رسول الله
+
+@ Devesinin kenelerini ayıklayan ihramlı hakkında, ona bir şey gerekir mi
+
+15271 | Vekî‘ → Abdülhamîd b. Ca‘fer → kendisine Îsâ denilen bir adam → Ali | Ali’den: O, ihramlıya devesinin kenelerini ayıklamasına ruhsat verdi.
+& haddesenâ, an, an, enne
+^ «رخص للمحرم أن
+
+15272 | Vekî‘ → Süfyân → Abdülkerîm → Mücâhid ya da İkrime → İbn Abbâs | İbn Abbâs dedi ki: “İhramlının devesinin kenelerini ayıklamasında sakınca yoktur.”
+& haddesenâ, an, an, an, an
+^ قال: «لا بأس أن
+
+15273 | Vekî‘ → Süfyân → Mansûr → İbrâhîm | İbrâhîm dedi ki: “İhramlının devesinin kenelerini ayıklamasında sakınca yoktur.”
+& haddesenâ, an, an, an
+^ قال: «لا بأس أن
+
+15274 | Abbâd → Yahyâ b. Saîd → Muhammed b. İbrâhîm → Rebîa b. Abdullah b. el-Hüdeyr | Rebîa b. Abdullah b. el-Hüdeyr dedi ki: “Ömer b. el-Hattâb’ı Sukyâ’da ihramlı iken devesinin kenelerini ayıklarken ve onları çamura koyarken gördüm.”
+& haddesenâ, an, an, an
+^ قال: «رأيت عمر
+
+15275 | Hafs → Haccâc → Atâ | Haccâc dedi ki: Atâ’ya, devesinin kenelerini ayıklayan ve ondan kurtları atan adamı sordum. Dedi ki: “Kenelerini ayıkla, (küçük) kenelerini (de) ayıkla ve kurtları devenden at.”
+& haddesenâ, an, kâle
+^ قال: سألت عطاء
+
+15276 | Selâm → Alâ b. el-Müseyyeb → Atâ | Alâ b. el-Müseyyeb dedi ki: Bir adam Atâ’ya dedi ki: “İhramlı iken devemin kenelerini ayıklayayım mı?” Dedi ki: “Evet, İbn Ömer bunu yaptı.”
+& haddesenâ, an, kâle
+^ قال: قال رجل
+
+15277 | Vekî‘ → Hammâd b. Ebi’d-Derdâ → Mücâhid | Mücâhid’e, devesinin kenelerini ayıklayan ihramlı soruldu; dedi ki: “Sakıncası yoktur.”
+& haddesenâ, an, kâle
+% Arapçada ad böyle yazılıdır: “حماد بن أبي الدرداء” (metinde böyle).
+^ سئل: مجاهد عن
+
+15278 | Vekî‘ → Eflah → Kâsım | Kâsım’dan: O, devesinin kenelerini ayıklamayı hoş görmedi.
+& haddesenâ, an, an
+^ «أنه كره أن
+
+15279 | İbn Nümeyr → Yahyâ b. Saîd → İkrime | İkrime’den: O, devenin kenelerini ayıklamayı hoş görmüyordu (metinde böyle); bunun üzerine İbn Abbâs “Onu boğazla” dedi. (İkrime) dedi ki: O da onu boğazladı. (İbn Abbâs) dedi ki: “Onun derisinde kaç kene ya da hamnâne öldürdün?”
+& haddesenâ, an, an
+^ أنه يكره أن
+
+15280 | Süfyân b. Uyeyne → Ömer → Ebü’ş-Şa‘sâ | Ebü’ş-Şa‘sâ’dan: “İhramlı devesinin kenelerini ayıklar ve onu katranla sıvar.”
+& haddesenâ, an, an
+% Arapçada ad böyle yazılıdır: “عمر” (metinde böyle).
+^ «المحرم يقرد بعيره
+
+15281 | İbn Uyeyne ve Yezîd b. Hârûn → Yahyâ b. Saîd → İkrime → İbn Abbâs | İbn Abbâs dedi ki: “Onda sakınca yoktur.”
+& haddesenâ, an, an, an
+^ قال: «لا بأس به»
+
+15282 | Ravh b. Ubâde → Zekeriyyâ b. İshâk → Ebü’z-Zübeyr → Câbir b. Abdullah | Ebü’z-Zübeyr’den: O, Câbir b. Abdullah’ı şöyle derken işitti: “İhramlının devesinin kenelerini ayıklamasında sakınca yoktur.”
+& haddesenâ, an, haddesenâ, semi‘a
+^ يقول: «لا بأس أن
+
+@ İhramlı iken onu öldürdüğünde söyledikleri
+
+15283 | Hâtim b. İsmâîl → İbn Harmele → İbn Saîd | İbn Harmele dedi ki: İhramlı iken bir kene ya da bir hantab (metinde böyle) öldürdüm. İbn Saîd dedi ki: “Bir hurma sadaka ver.” Dedi ki: “Bir hurma ondan hayırlıdır.”
+& haddesenâ, an, kâle
+^ قال: قتلت قرادا
+
+15284 | İbn Nümeyr → Ubeydullah → Kâsım | Ubeydullah’tan: Kâsım dedi ki: Bir adama ihramlının isabet ettiği keneyi sordum. Dedi ki: “Bir hurma keneden hayırlıdır; hatta yarım hurma, hatta bir çekirdek keneden hayırlıdır.”
+& haddesenâ, an, an
+^ قال: سألت رجلا

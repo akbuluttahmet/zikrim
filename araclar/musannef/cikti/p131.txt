@@ -1,0 +1,320 @@
+@ Kişi sa‘y yerinde ne der
+
+15572 | Ebû Hâlid → Hâlid → Haccâc → Ebû İshâk → Hasan → İbn Ömer | İbn Ömer’den: O, bunu yapardı.
+& haddesenâ, an, an, an, an, an
+^ أنه كان يفعله
+
+@ Mekke’ye gece girmeye ruhsat verenler ve gündüz (girilir) diyenler
+
+15573 | Ebû Üsâme → Hişâm → Hasan | Hasan’dan: O, Mekke’ye gece girmede bir sakınca görmezdi.
+& haddesenâ, an, an
+^ " أنه كان لا
+
+15574 | Cerîr → Mugîre → İbrâhîm | İbrâhîm dedi ki: “Mekke’ye gece ya da gündüz girmen sana zarar vermez.”
+& haddesenâ, an, an
+^ قال: «لا يضرك
+
+15575 | Vekî‘ → Eflah | Eflah dedi ki: “Kâsım ile birlikte Mekke’ye gece girdim.”
+& haddesenâ, an
+^ قال: «دخلت مكة
+
+15576 | Cerîr → Atâ b. es-Sâib → İbrâhîm | İbrâhîm dedi ki: “Kûfe’den gece çıkmayı, Mekke’ye de gündüz girmeyi severlerdi.”
+& haddesenâ, an, an
+^ قال: «كانوا يحبون
+
+15577 | Vekî‘ → Süfyân → Mansûr → İbrâhîm → Alkame | Alkame’den: O, Mekke’ye gece girdi.
+& haddesenâ, an, an, an, an
+^ «أنه دخل مكة
+
+15578 | Vekî‘ → Umerî → Nâfi‘ → İbn Ömer | İbn Ömer’den: O, Mekke’ye gündüz girdi.
+& haddesenâ, an, an, an
+^ «أنه دخل مكة
+
+15579 | Vekî‘ → Süfyân → Sâlim | Sâlim dedi ki: “Saîd b. Cübeyr ile birlikte Mekke’ye gece girdim.”
+& haddesenâ, an, an
+^ قال: «دخلت مع
+
+15580 | Vekî‘ → İsrâîl → Câbir → Abdurrahmân b. el-Esved | Abdurrahmân b. el-Esved’den: Ziyâd Mekke’ye gece girerdi.
+& haddesenâ, an, an, an
+^ أن زيادا «كان
+
+15581 | Yezîd b. Hârûn → Humeyd | Humeyd dedi ki: Tâvûs’a Mekke’ye gece giren bir adamı sordum; dedi ki: “O, zahmetsiz ganimet değil mi?” Kâsım ile Atâ’ya bunu sordum; onda bir sakınca görmediler.
+& haddesenâ, an
+^ قال: سألت طاوسا
+
+15582 | Ya‘lâ b. Hakîm | Ya‘lâ b. Hakîm’den: Saîd b. Cübeyr Mekke’ye gece geldi ve tavaf etti; onun (geldiğini) bilmedik. Ömer b. Abdülazîz de bunu yaptı.
+& haddesenâ
+% Arapçada “أبو بكر قال: وحدثني يعلى بن حكيم” diye yazılıdır (metinde böyle).
+^ أن سعيد بن جبير
+
+15583 | Yahyâ b. Saîd → İbn Cüreyc → Muhammed b. Abbâd → Abdullah b. es-Sâib | Abdullah b. es-Sâib dedi ki: “Ramazan’da insanlara namaz kıldırıyordum. Ben namaz kıldırırken mescidin kapısında Ömer’in tekbirini işittim; umre yapmak üzere gelmişti. Girdi ve arkamda namaz kıldı.”
+& haddesenâ, an, an, an
+^ قال: «كنت أصلي
+
+15584 | İbn İdrîs → İbn Cüreyc → İbn Müzâhim → Abdülazîz b. Abdullah b. Hâlid b. Esîd → Muharriş el-Ka‘bî | Muharriş el-Ka‘bî’den: Resûlullah ﷺ Ci‘râne’den umre yaptı, sonra Ci‘râne’de gecelemiş biri gibi sabahladı. Güneş zevale erince Serif vadisinin içinde (yola) çıktı, nihayet ana yola ulaştı.
+& haddesenâ, an, an, an, an
+^ " أن رسول الله صلى الله عليه وسلم اعتمر
+
+15585 | İbn Mehdî → Sâlih b. Ebi’l-Ahdar → kendisine Hâlid denilen, el-Ahdar’dan bir adam → onların bir mevlâtı → onun ninesi | (Ninesinden): Hasan ve Hüseyin Mekke’ye gece geldiler, tavaf ettiler, sonra çıktılar.
+& haddesenâ, an, an, an, an
+% Arapçada “عن رجل الأخضر يقال له خالد” diye yazılıdır (metinde böyle).
+^ أن الحسن والحسين
+
+15586 | İbn Uyeyne → İsmâîl b. Ümeyye → Müzâhim b. Ebî Müzâhim → Abdülazîz b. Abdullah b. Hâlid b. Esîd → Muharriş | Muharriş’ten: Nebî ﷺ Ci‘râne’den umre yaptı, sonra gecelemiş biri gibi oraya döndü. (Muharriş) dedi ki: Onun sırtını sanki bir gümüş külçesi gibi gördüm.
+& haddesenâ, an, an, an, an
+% Arapçanın sonunda “[الحج: 36]” işareti var (metinde böyle).
+^ " أن النبي صلى الله عليه وسلم اعتمر
+
+@ Allah teâlâ’nın “Onlardan yiyin, kanaatkâr (fakire) de yedirin” (Hac 22/36) sözü hakkında
+
+15587 | Ebü’l-Ahvas → Mansûr → İbrâhîm ya da Mücâhid | İbrâhîm ya da Mücâhid dedi ki: “Kâni‘, kendisine gönderilene kanaat edendir; mu‘ter de sana görünüp senden isteyendir.”
+& haddesenâ, an, an
+^ قال: «القانع الذي
+
+15588 | Hafs → Âsım → İbn Ömer’i işiten biri → İbn Ömer | Âsım dedi ki: İbn Ömer’i Minâ’da iken şu âyeti okurken işiten biri bana rivayet etti: “Onlardan yiyin, kanaatkâra ve (isteyerek) gelene yedirin” (Hac 22/36). (O kişi) dedi ki: (İbn Ömer) yanındaki bir kölesine dedi ki: “İşte bu, verdiğime kanaat eden kâni‘dir.”
+& haddesenâ, an, haddesenî, semi‘a
+^ قال: قال لغلام
+
+15589 | İbn Fudayl → Husayf → Mücâhid | Mücâhid dedi ki: “Kâni‘, Mekke ehlidir; mu‘ter, sana gelip senden isteyendir.”
+& haddesenâ, an, an
+^ قال: «القانع أهل
+
+15590 | İbn Uleyye → Yûnus → Hasan | Hasan dedi ki: “Kâni‘, sana kanaat edendir (metinde böyle); mu‘ter, sana gelip kendini sana gösteren fakat senden istemeyendir.”
+& haddesenâ, an, an
+^ قال: «القانع الذي
+
+15591 | İbn Uyeyne → İbn Ebî Necîh → Mücâhid | Mücâhid dedi ki: “Kâni‘, isteyendir; mu‘ter, kurbanlık develerdir (metinde böyle).”
+& haddesenâ, an, an
+^ قال: «القانع السائل
+
+@ Harem’de iken ava atış yapan adam hakkında
+
+15592 | Muhammed b. Yezîd → Eyyûb Ebü’l-Alâ → Katâde | Katâde’den, Harem’de iken Harem dışında (hıll) bir ava atış yapan ya da kendisi hıllde iken av Harem’de olan adam hakkında, dedi ki: “Ona onun fidyesi (gerekir).”
+& haddesenâ, an, an
+^ في رجل رمى
+
+15593 | Muhammed b. Ca‘fer → Eş‘as → Hasan | Hasan’dan: Ona, Harem’de iken bir ava atış yapan, (av) Harem’den çıkıp ölen adam soruldu; “Tazmin eder” dedi. Hıllde ona atış yapar, sonra (av) Harem’e girip ölürse “Tazmin etmez” dedi.
+& haddesenâ, an, an
+^ سئل عن الرجل
+
+15594 | Muhammed b. Ca‘fer → Şu‘be → Hammâd | Hammâd’dan, hıllde bir ava atış yapan, (av) Harem’e düşüp ölen adam hakkında, dedi ki: “Onu yememesi bana daha hoş gelir.”
+& haddesenâ, an, an
+^ في رجل رمى
+
+15595 | Ca‘fer → İbn Cüreyc → Atâ | Atâ dedi ki: “Av hıllde vurulur, sonra Harem’e girip ölürse” dedi ki: “Harem’de öldüğü için yenmez; hıllde vurulduğu için de diyeti ödenmez.”
+& haddesenâ, an, an
+^ قال: " إذا أصيب
+
+15596 | Ebû Hâlid → Haccâc → Atâ; ayrıca Ebû Hâlid → Eş‘as → Ebü’z-Zübeyr → Câbir | Câbir dedi ki: “Hıllde atış yapar da Harem’de isabet ederse keffâret verir; hıllde atış yapar da hıllde isabet ederse keffâret verir.” (metinde böyle)
+& haddesenâ, an, an; haddesenâ, an, an, an
+^ قال: «إذا رمى
+
+@ İhrama girerken gusül hakkında
+
+15597 | Ebû Muâviye → A‘meş → İbrâhîm | İbrâhîm dedi ki: “Alkame ile birlikte Mekke’ye çıktım; oraya girinceye kadar gusül etmedi.”
+& haddesenâ, an, an
+^ قال: «خرجت مع
+
+15598 | Ali b. Hâşim → İsmâîl → Hasan | Hasan dedi ki: “İhramlı dilerse gusül eder, dilerse etmez.”
+& haddesenâ, an, an
+^ قال: «إن شاء
+
+15599 | İbn Fudayl → Süfyân et-Temmâr → Ebû Sâlih | Ebû Sâlih dedi ki: “İhrama girerken gusül eder ve iki rek‘at kılar.”
+& haddesenâ, an, an
+^ قال: «يغتسل عند
+
+15600 | Ebû Nuaym → Süfyân → Ebü’z-Zübeyr → Adî → İbrâhîm | İbrâhîm dedi ki: “İhrama girmek istediklerinde gusül ederlerdi.”
+& haddesenâ, an, an, an, an
+^ قال: «كانوا إذا
+
+15601 | Ebû Nuaym → Rebî‘ → Atâ | Atâ’dan: O, ihrama girerken ve Mekke’ye girdiğinde gusül ederdi.
+& haddesenâ, an, an
+^ «أنه كان يغتسل
+
+15602 | Vekî‘ → Süfyân → Mansûr → İbrâhîm | İbrâhîm dedi ki: “İhrama girmek istediklerinde gusül etmeyi müstehap görürler.”
+& haddesenâ, an, an, an
+^ قال: «يستحبون إذا
+
+15603 | Ebû Üsâme → Ubeydullah → Nâfi‘ → İbn Ömer | İbn Ömer’den: O, fitne yılında gömleğini çıkardı, sonra telbiye getirdi ve gusül etmedi.
+& haddesenâ, an, an, an
+^ «أنه نزع قميصه
+
+15604 | Sehl b. Yûsuf → Humeyd → Bekr b. Abdullah el-Müzenî | Bekr b. Abdullah el-Müzenî dedi ki: “Kişinin ihrama girmek istediğinde gusül etmesi sünnettendir.”
+& haddesenâ, an, an
+^ قال: «من السنة
+
+15605 | Yahyâ b. Saîd → Ya‘kûb b. Kays → Saîd b. Cübeyr | Saîd b. Cübeyr dedi ki: “İhrama girdiğinde gusül et.”
+& haddesenâ, an, an
+^ قال: «إذا أحرمت
+
+15606 | Yahyâ b. Saîd → İbn Kays → Saîd b. Cübeyr → İbn Tâvûs → babası | İbn Tâvûs’un babasından: O, ihrama girerken guslü bırakmaz ve bunu emrederdi.
+& haddesenâ, an, an, an, an
+^ «أنه كان لا
+
+15607 | Hafs → İbn Cüreyc → Nâfi‘ | İbn Cüreyc dedi ki: Nâfi‘e sordum: “İbn Ömer ihrama girerken gusül eder miydi?” Dedi ki: “Bazen gusül eder, bazen abdest alırdı.”
+& haddesenâ, an, kâle
+^ قال: سألت نافعا
+
+@ Mekke’ye girdiğinde, girmeden önce gusül hakkında
+
+15608 | Vekî‘ → Eflah → Kâsım | Kâsım’dan: O, Mekke’ye girdiğinde gusül etti.
+& haddesenâ, an, an
+^ " أنه اغتسل حين
+
+15609 | Cerîr → Yezîd → Abdurrahmân b. Ebî Leylâ | Abdurrahmân b. Ebî Leylâ dedi ki: “Gusül, Mekke’ye giriş günüdür.”
+& haddesenâ, an, an
+^ قال: «الغسل يوم
+
+15610 | Cerîr → Atâ b. es-Sâib → İbrâhîm | İbrâhîm dedi ki: Alkame, Esved ve arkadaşlarımız Meymûn kuyusuna vardıklarında ondan gusül eder ve elbiselerinden giyerlerdi.
+& haddesenâ, an, an
+^ قال: كان علقمة
+
+15611 | İbn Fudayl → Yahyâ b. Saîd → Nâfi‘ | Nâfi‘ dedi ki: İbn Ömer, ne hacda ne umrede Zû Tuvâ’da gusül etmedikçe Mekke’ye girmezdi.
+& haddesenâ, an, an
+^ قال: كان ابن عمر
+
+15612 | Abde → Ubeydullah b. Ömer → Nâfi‘ → İbn Ömer | İbn Ömer’den: O, Mekke’ye girdiğinde gusül eder ve onlara bunu emrederdi.
+& haddesenâ, an, an, an
+^ «أنه كان يغتسل
+
+@ Cemreyi attığında Minâ’daki ağırlıklarına dönenler
+
+15613 | Cerîr → Atâ b. es-Sâib | Atâ b. es-Sâib dedi ki: Abdurrahmân b. el-Esved dönüş günü cemreleri atar, sonra Minâ’daki ağırlıklarına dönerdi.
+& haddesenâ, an
+^ قال: كان عبد الرحمن
+
+15614 | Esbât → Ebû Bekir el-Hüzelî → Zührî | Ebû Bekir el-Hüzelî dedi ki: Zührî’ye dedim ki: “Kişinin Akabe cemresini atıp sonra konak yerine dönmesi, sonra Mekke’ye gitmesi (caiz) mi?” Dedi ki: “Cemreyi attıklarında konak yerlerine dönmezlerdi. Bir adam bir ihtiyaç, bir mal ya da bir iş için konak yerine dönerse, inşallah bunda bir sakınca olmamasını umarım.”
+& haddesenâ, an, kâle
+^ قال: قلت للزهري
+
+@ İhramlının isabet ettiği keler hakkında
+
+15615 | İbn Uleyye → İbn Ebî Necîh → Mücâhid → Abdullah | Abdullah’tan, ihramlının isabet ettiği keler hakkında: “Bir tas yiyecek.”
+& haddesenâ, an, an, an
+^ في الضب يصيبه
+
+15616 | Selâm → Muhârik → Târık | Târık dedi ki: Hacı olarak çıktık; yolun bir yerine geldiğimizde bizden bir adam bir keleri (devesine) çiğnetip öldürdü; o ihramlıydı. Hakkında hüküm versin diye Ömer b. el-Hattâb’a geldi. Ömer ona dedi ki: “Benimle birlikte hüküm ver.” İkisi onun hakkında, suyu ve ağacı bir araya getirmiş (otlayıp su içmeye başlamış) bir oğlak hükmettiler. Sonra Ömer dedi ki: “‘Ona sizden adalet sahibi iki kişi hükmeder.’” (Mâide 5/95)
+& haddesenâ, an, an
+^ قال: خرجنا حجاجا
+
+15617 | Esbât → Mutarrif → Atâ | Atâ dedi ki: “Kelerde bir koyun (vardır).”
+& haddesenâ, an, an
+^ قال: «في الضب
+
+@ İhramlının öldürdüğü sırtlan hakkında
+
+15618 | Yezîd b. Hârûn → İbn Avn → Ebü’z-Zübeyr → Câbir | Câbir’den: Ömer sırtlan hakkında bir koç hükmetti.
+& haddesenâ, an, an, an
+^ أن عمر، «قضى
+
+15619 | Şebâbe b. el-Kâz → Nâfi‘ → İbn Ömer | İbn Ömer dedi ki: “Kim ihramlı iken bir sırtlan öldürürse ona fidye (gerekir).”
+& haddesenâ, an, an
+% Arapçada ad böyle yazılıdır: “شبابة بن القاز” (metinde böyle).
+^ قال: «من قتل
+
+15620 | İbn Nümeyr → Haccâc → İbn Ebî Necîh → Mücâhid → Ali | Ali’den, sırtlan hakkında: “İhramlıya saldırırsa onu öldürsün; ona saldırmadan önce öldürürse ona yaşı ilerlemiş bir koyun (gerekir).”
+& haddesenâ, an, an, an, an
+^ «في الضبع إذا
+
+15621 | Abdüsselâm → Ebû Ferve → Atâ | Atâ dedi ki: “Sırtlan Harem’de öldürülür.”
+& haddesenâ, an, an
+^ قال: «يقتل الضبع
+
+15622 | Vekî‘ → Cerîr b. Hâzim → Abdullah b. Ubeyd b. Umeyr → İbn Ammâr → Câbir b. Abdullah | Câbir b. Abdullah’tan: Nebî ﷺ sırtlanı avdan saydı ve ihramlı ona isabet ettiğinde onda bir koç (cezası) koydu.
+& haddesenâ, an, an, an, an
+^ «أن النبي صلى الله عليه وسلم جعل
+
+@ Çekirge öldüren ihramlı hakkında
+
+15623 | Vekî‘ → İmrân b. Hudeyr → İkrime | İkrime’den, bir çekirgeye isabet eden ihramlı hakkında, dedi ki: “Bir lokma ekmek sadaka verir.”
+& haddesenâ, an, an
+^ في المحرم أصاب
+
+15624 | İbn Ebî Zâide → İbn Cüreyc → Atâ | Atâ’dan, çekirge hakkında: “Bir avuç ya da bir lokma.”
+& haddesenâ, an, an
+^ " في الجرادة: قبضة
+
+15625 | İbn Fudayl → Yezîd b. İbrâhîm → Ka‘b | Ka‘b’dan: Yanından bir çekirge geçti; onu kamçısıyla vurdu, aldı ve kızarttı. Ona (bir şey) söylediler; dedi ki: “Bu bir hatadır; ben bu hususta kendi aleyhime bir dirhem hükmediyorum.” Ömer’e geldi; (Ömer) dedi ki: “Siz Hıms halkı, en çok şeyiniz dirhemdir. Bir hurma bir çekirgeden hayırlıdır.”
+& haddesenâ, an, an
+^ أنه مرت به
+
+15626 | Ebû Muâviye → A‘meş → İbrâhîm → Esved → Ömer | (Ömer’den) bunun benzeri ya da buna yakını (rivayet edildi).
+& haddesenâ, an, an, an, an
+^ بمثله أو نحوه
+
+15627 | Abdülvehhâb es-Sekafî → Şuayb → Ali b. Abdullah el-Bârikî | Ali b. Abdullah el-Bârikî dedi ki: Abdullah b. Ömer çekirge hakkında şöyle derdi: “Bir avuç yiyecek.”
+& haddesenâ, an, an
+^ قال: كان عبد الله
+
+15628 | Vekî‘ → İsmâîl → Câbir → Muhammed b. Ali, Atâ, Muhammed, Mücâhid ve Tâvûs | Muhammed b. Ali, Atâ, Muhammed, Mücâhid ve Tâvûs’tan: Onlar cırcır böcekleri, bağırtlaklar, çekirge ve karıncalar hakkında dediler ki: “Onu kasten öldürürse bir şey yedirir; yanlışlıkla olursa ona bir şey yoktur.” Âmir ve Abdullah b. el-Esved ise dediler ki: “Yanlışlıkla da kasten de olsa bir şey yedirir.”
+& haddesenâ, an, an, an
+% Arapçada “عن محمد بن علي، عن عطاء، ومحمد، ومجاهد، وطاوس” diye yazılıdır (metinde böyle).
+^ أنهم قالوا في
+
+15629 | Abde → Muhammed b. Amr → Ebû Seleme | Ebû Seleme’den: Bir ihramlı bir çekirgeye isabet etti; Abdullah b. Ömer ile başka bir adam onun hakkında hüküm verdiler. Biri ona bir hurma, öteki bir çekirge (metinde böyle) hükmetti.
+& haddesenâ, an, an
+^ أن محرما أصاب
+
+15630 | Hafs → Ca‘fer → Kâsım → İbn Abbâs | Kâsım dedi ki: İbn Abbâs’a çekirgeye isabet eden ihramlı soruldu; dedi ki: “Bir hurma bir çekirgeden hayırlıdır.”
+& haddesenâ, an, an, kâle
+^ قال: سئل ابن عباس
+
+15631 | Humeyd → Hasan → Ukayl → Dahhâk | Dahhâk’tan, çekirge, benzeri ve ondan küçüğü hakkında: “Bir avuç yiyecek.”
+& haddesenâ, an, an, an
+^ «في الجرادة ونحوها
+
+15632 | Hammâd b. Hâlid → İbn Ebî Zi’b → Zührî → Saîd b. el-Müseyyeb | Saîd b. el-Müseyyeb dedi ki: “Bir avuç yiyecek.”
+& haddesenâ, an, an, an
+^ قال: «قبضة من
+
+@ İhramlının öldürdüğü bit hakkında
+
+15633 | Vekî‘ → İbn Ebî Leylâ → Hakem → Saîd b. Cübeyr | Saîd b. Cübeyr’den, biti öldüren ihramlı hakkında, dedi ki: “Bir şey sadaka verir.”
+& haddesenâ, an, an, an
+^ قال: يتصدق بشيء
+
+15634 | Muhammed b. Yezîd → Eyyûb Ebü’l-Alâ → Katâde ve Ebû Hâşim | Katâde ve Ebû Hâşim dediler ki: “Bir şey sadaka verir.”
+& haddesenâ, an, an
+% Arapçada ad böyle yazılıdır: “أبي الهاشم” (metinde böyle).
+^ قالا: «يتصدق بشيء»
+
+15635 | Vekî‘ → Şu‘be → Hurr b. Sayyâh → İbn Amr | Hurr b. Sayyâh dedi ki: İbn Amr’ı, kendisine biti öldüren ihramlı sorulduğunda şöyle derken işittim: “Bir lokma ekmek ya da bir avuç yiyecek sadaka verir.”
+& haddesenâ, an, an, semi‘tü
+% Arapçanın sonunda “[الحج: 25]” işareti var (metinde böyle).
+^ سئل عن المحرم
+
+@ Allah teâlâ’nın “Orada oturan da dışarıdan gelen de eşittir” (Hac 22/25) sözü hakkında
+
+15636 | Hafs → Abdullah b. Müslim → Saîd b. Cübeyr | Saîd b. Cübeyr’den, “Orada oturan da dışarıdan gelen de eşittir” (Hac 22/25) sözü hakkında, dedi ki: “Allah’ın yarattıkları orada eşittir.”
+& haddesenâ, an, an
+^ في قوله: {سواء
+
+15637 | Cerîr → Mansûr → Mücâhid | Mücâhid dedi ki: “Mekke ehli ve başkaları konak yerlerinde eşittir.”
+& haddesenâ, an, an
+^ قال: «أهل مكة
+
+15638 | İbn Fudayl → Yezîd b. Sâbit | Yezîd b. Sâbit’ten, “Orada oturan da dışarıdan gelen de eşittir” (Hac 22/25) hakkında, dedi ki: “Hacdan (için) gelen dışarıdaki ile orada ikamet edenler konak yerlerinde eşittir; diledikleri yere konaklarlar; (ama) hiç kimse evinden çıkarılmaz.”
+& haddesenâ, an
+^ قال: «البادي الذي
+
+15639 | İbn Ebî Adî → Eş‘as → Hasan | Hasan dedi ki: “Onun ehli ve başkası onlarda (metinde böyle) eşittir.”
+& haddesenâ, an, an
+^ قال: «أهله وغيره
+
+@ Muhassir vadisinde (bineği) hızlandırmak hakkında
+
+15640 | Vekî‘ → Mis‘ar → Sa‘d b. İbrâhîm | Sa‘d b. İbrâhîm’den: Âişe Muhassir vadisinde hızlanırdı.
+& haddesenâ, an, an
+^ " أن عائشة كانت
+
+15641 | Vekî‘ → Mûsâ b. Ubeyde → Yezîd b. Abdurrahmân | Yezîd b. Abdurrahmân’dan: İbn Ömer Muhassir vadisine geldiğinde bineğine vurdu.
+& haddesenâ, an, an
+^ أن ابن عمر «لما
+
+15642 | Vekî‘ → A‘meş → Umâre → Abdurrahmân b. Yezîd | Abdurrahmân b. Yezîd’den: Abdullah b. Mes‘ûd Muhassir vadisinde (bineğini) hızlandırdı.
+& haddesenâ, an, an, an
+^ «أن عبد الله بن
+
+15643 | İbn Fudayl → İsmâîl → Atâ → İbn Abbâs | İbn Abbâs’tan: O, Muhassir vadisinde (bineği) hızlandırmada bir sakınca görmedi; Arafat dağlarında ise bunu hoş görmedi.
+& haddesenâ, an, an, an
+^ «أنه لم ير

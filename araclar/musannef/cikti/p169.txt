@@ -1,0 +1,241 @@
+@ Zorlananın talakını geçerli görenler
+
+18046 | İbn İdrîs → Husayn → Şa‘bî | Şa‘bî’den: Âzat ya da talak işlerinden bir işe zorlanan adam hakkında dedi ki: “Onu sultan zorlarsa geçerli olur; onu hırsızlar zorlarsa geçerli olmaz.”
+& haddesenâ, an, an
+^ في الرجل يكره
+
+@ İki karısı olan, birine dışarı çıkmayı yasaklayan, yasaklanmayan çıkınca “Filâne, çıktın, sen boşsun” diyen adam hakkında
+
+18047 | Hüşeym → Yûnus → Hasan | Hasan’dan: İki karısı olan, birine dışarı çıkmayı yasaklayan, yasaklanmayan çıkınca onu çıkmasını yasakladığı (kadın) sanıp “Filâne, çıktın, sen boşsun” diyen adam hakkında dedi ki: “Kastettiği ve niyet ettiği boş olur.”
+& haddesenâ, an, an
+^ في رجل له امرأتان
+
+18048 | Hüşeym → Mugîre → İbrâhîm | İbrâhîm dedi ki: “İkisi birden boş olur: Kastettiği, onun adını anması sebebiyle boş olur; bu da ona ‘Sen boşsun’ demesi sebebiyle boş olur.”
+& haddesenâ, an, an
+^ " تطلقان جميعا
+
+18049 | Abdüla‘lâ → Ma‘mer → Zührî | Zührî’den: Karısına “Dışarı çıkarsan boşsun” diyen, sonra bir kadının onun elbiselerini ödünç alıp giydiği, kocasının da onu kapıdan çıkarken görüp “Yaptın, sen boşsun” dediği adam hakkında dedi ki: “Talakı kendi karısına vâki olur.”
+& haddesenâ, an, an
+^ في رجل قال لامرأته: إن خرجت
+
+18050 | Ömer → İbn Cüreyc → Atâ | İbn Cüreyc dedi ki: Atâ’yı şöyle derken işittim: “Bir adam karısı için onun dışarı çıkmayacağına dair yemin etse, sonra onun başka bir karısı çıksa da ona ‘Bu senin karın’ denilse, o da onu öteki sanıp boşasa” Atâ dedi ki: “Bir şey değildir.”
+& haddesenâ, an, an
+^ " إن حلف رجل
+
+18051 | Muhammed b. Yezîd → Ebü’l-Alâ → Katâde | Katâde’den: İki karısı olan, birisi dışarı çıkınca “Bu kim?” diyen, “Filâne” denilince “O boştur” diyen, (çıkan da) adı anılmayan (kadın) olan adam hakkında dedi ki: “Talak ikisine birden vâki olmuştur.”
+& haddesenâ, an, an
+^ في رجل كانت له امرأتان فخرجت
+
+18052 | Şerîk → Câbir → Âmir | Âmir’den: İki karısı ya da iki cariyesi olan, birini çağırıp “Sen boşsun” deyince ötekinin ona cevap verdiği adam hakkında dedi ki: “Adını andığı boş olur. Eğer (bunu) kölesi için (söylediyse) bunun benzeridir.”
+& haddesenâ, an, an
+^ في رجل كانت له امرأتان أو
+
+@ Karısına “Ailene katıl” diyen adam hakkında söyledikleri
+
+18053 | Muhammed b. Ebî Adî → Eş‘as → Hasan | Hasan’dan: Karısına “Ailene katıl” diyen adam hakkında dedi ki: “(Hüküm) niyetine göredir.”
+& haddesenâ, an, an
+^ في رجل قال لامرأته: الحقي
+
+18054 | Şerîk → Câbir → Âmir | Âmir’den: Karısına “Ailene katıl” diyen adam hakkında dedi ki: “Öfke hâlinde talaka niyet etmedikçe bir şey değildir.”
+& haddesenâ, an, an
+^ في الرجل يقول لامرأته: الحقي
+
+18055 | Ebû Dâvûd et-Tayâlisî → Hişâm → Katâde → İkrime | İkrime dedi ki: “(Adam) ‘Ailene katıl’ derse —dedi ki— bu bir (talak)tır.” Katâde ise dedi ki: “Ben bunu bir şey saymam.”
+& haddesenâ, an, an, an
+^ " إذا قال: الحقي
+
+18056 | Abdullah b. İdrîs → Şu‘be → Hakem ve Hammâd | Şu‘be dedi ki: Hakem’e ve Hammâd’a, talaka niyet ederek karısına “Çık, ailene katıl” diyen adamı sordum. İkisi dediler ki: “Bu bir (talak)tır; o, ona dönmeye en hak sahibidir.”
+& haddesenâ, an, kâle
+^ عن رجل قال لامرأته: اخرجي الحقي
+
+@ Karısını yarım talakla boşayan adam hakkında söyledikleri
+
+18057 | Cerîr b. Abdülhamîd → Mugîre → Hâris el-Uklî | Hâris el-Uklî’den: Dört karısı olan ve onlara “Aranızda üç talak vardır” diyen adam hakkında dedi ki: “Her biri ondan üç talakla ayrıldı.” Yarım talakla boşayan adam hakkında da dedi ki: “Bu tam bir talaktır.”
+& haddesenâ, an, an
+^ في رجل له أربع نسوة، فقال لهن: بينكن ثلاث
+
+18058 | Hüşeym → Mansûr → Hasan | Hasan’dan: Dört karısı olan ve onlara “Aranızda bir talak vardır” diyen adam hakkında dedi ki: “Her biri için bir talak vardır.”
+& haddesenâ, an, an
+^ في رجل كان له أربع نسوة
+
+18059 | Ebû Isâm Ravvâd b. Cerrâh → Evzâî → Ömer b. Abdülazîz | Evzâî dedi ki: Ömer b. Abdülazîz’e “Adam karısını yarım talakla boşuyor” denildi. Dedi ki: “Bu bir talaktır.”
+& haddesenâ, an, kâle
+^ الرجل يطلق امرأته نصف
+
+18060 | İbn Mehdî → Hammâd b. Seleme → Hammâd ve Katâde | Hammâd ve Katâde’den: Dört karısı olan ve onlara “Aranızda bir talak vardır” diyen adam hakkında dedi ki: “Her birinin üzerine bir talak vardır.”
+& haddesenâ, an, an
+^ في رجل كن له أربع
+
+18061 | Vekî‘ → Süfyân → bir adam → Şa‘bî | Şa‘bî dedi ki: “(Adam) ‘Sen yarım ya da üçte bir talakla boşsun’ derse bu bir talaktır.”
+& haddesenâ, an, an, an
+^ " إذا قال: أنت طالق نصفا
+
+@ İçinden karısını boşamayı geçiren adam hakkında
+
+18062 | Ali b. Müshir ve Abde b. Süleymân → Saîd → Katâde → Zürâre b. Evfâ → Ebû Hüreyre | Ebû Hüreyre dedi ki: Resûlullah ﷺ buyurdu: “Allah, ümmetimin içinden geçirdiği şeyleri, onu söylemedikçe ya da onunla amel etmedikçe bağışlamıştır.”
+& haddesenâ, an, an, an, an
+^ قال رسول الله
+
+18063 | Hafs b. Gıyâs → İbn Ebî Arûbe → Katâde → İbn Sîrîn ve Hasan | İbn Sîrîn ve Hasan’dan, ikisi dediler ki: “Talakı içinden geçirmek bir şey değildir.” İbn Sîrîn dedi ki: “Hiç sormasaydı benim için daha sevimli olurdu.”
+& haddesenâ, an, an, an
+^ أنهما قالا: «حديث
+
+18064 | Abdurrahmân b. Mehdî → Cerîr b. Hâzim → İsmâîl b. Âdem → Muhammed b. Sîrîn | İsmâîl b. Âdem dedi ki: Muhammed b. Sîrîn’e talakı içinden geçiren adamı sordum. Dedi ki: “İçinden geçirmek bir şey değildir.”
+& haddesenâ, an, an, kâle
+^ عن الرجل يحدث نفسه
+
+18065 | Hafs → Abdülmelik → Saîd b. Cübeyr | (Saîd b. Cübeyr’den) bunun benzeri (rivayet edildi).
+& haddesenâ, an, an
+^ مثله
+
+18066 | Vekî‘ → Süfyân → İbn Cüreyc → Amr b. Dînâr → Câbir b. Zeyd; ayrıca Vekî‘ → Süfyân → İbn Cüreyc → Atâ | Câbir b. Zeyd ve Atâ dediler ki: “Bir şey değildir.”
+& haddesenâ, an, an, an, an; haddesenâ, an, an, an
+^ قالا: «ليس بشيء»
+
+18067 | Ömer → İbn Cüreyc → Atâ; ayrıca Ömer → İbn Cüreyc → Amr → Câbir b. Zeyd | (Atâ’dan ve Câbir b. Zeyd’den) buna yakını (rivayet edildi).
+& haddesenâ, an, an; haddesenâ, an, an, an
+^ بنحوه
+
+18068 | Vekî‘ → İsrâîl → Câbir → Âmir | Âmir dedi ki: “(Adam) içinden talakı ya da âzatı geçirirse bir şey değildir.”
+& haddesenâ, an, an, an
+^ «إذا حدثت نفسه
+
+@ Karısının işini bir adamın eline veren, onun da boşadığı adam hakkında söyledikleri; onun hakkında ne dediler?
+
+18069 | Cerîr b. Abdülhamîd → Mugîre → İbrâhîm | İbrâhîm dedi ki: “Adam karısının işini başkasının eline verirse, o ne kadar boşarsa boşasın bu bir bâin (talak)tır.”
+& haddesenâ, an, an
+^ «إذا جعل الرجل
+
+18070 | Abdüla‘lâ → Yûnus → Hasan | Hasan’dan: Karısının işini bir adamın eline veren adam hakkında dedi ki: “O, (adamın) dediği gibidir.”
+& haddesenâ, an, an
+^ في الرجل يجعل أمر امرأته بيد رجل، قال
+
+18071 | İbn Nümeyr → Abdülmelik → Atâ | Atâ’dan: Bir adama “Git, benim yerime filâneyi boşa” diyen adam hakkında dedi ki: “Bu geçerlidir; eğer boşarsa geçerli olur.”
+& haddesenâ, an, an
+^ في الرجل يقول للرجل
+
+18072 | İbn Dükeyn → Zekeriyyâ → Âmir | Zekeriyyâ dedi ki: Âmir’e, karısının işini başka bir adamın eline veren, o adamın da onu üç talakla boşadığı bir adam soruldu. Dedi ki: “Bu birdir; o, onun işini ancak bir defa onun eline vermiştir.”
+& haddesenâ, an, kâle
+^ عن رجل جعل أمر امرأته بيد رجل آخر
+
+18073 | Gunder → Şu‘be → Hammâd | Hammâd dedi ki: “Adam karısının işini bir adamın eline verir, o da boşarsa bu bir bâin (talak)tır.”
+& haddesenâ, an, an
+^ «إذا جعل الرجل
+
+18074 | Kesîr b. Hişâm → Ca‘fer b. Burkân → Ma‘mer → Zührî | Ca‘fer b. Burkân dedi ki: Ma‘mer’i, Zührî’den karısının talakını onun kendi eline, ya da kardeşinin, ya da babasının ya da herhangi birinin eline veren adam hakkında şunu anarken işittim: Söz, (onun) dediğidir: “Eğer onu bir talakla boşarsa birdir; iki talakla boşarsa ikidir; üç talakla boşarsa üçtür.”
+& haddesenâ, an, semi‘tü, an
+^ في الرجل يجعل طلاق امرأته
+
+@ Karısının işini onun eline veren, onun da kendini boşadığı adam hakkında söyledikleri
+
+18075 | Ebû Muâviye → A‘meş → İbrâhîm → Mesrûk | Mesrûk dedi ki: Bir adam Ömer’e gelip “Karımın işini onun eline verdim, o da kendini üç talakla boşadı” dedi. Ömer, Abdullah’a “Ne dersin?” dedi. Abdullah “Bunu bir (talak) görüyorum; o, ona daha çok sahiptir” dedi. Ömer de “Ben de öyle görüyorum” dedi.
+& haddesenâ, an, an, an
+^ جاء رجل إلى عمر
+
+18076 | Hafs b. Gıyâs → Ca‘fer → babası → Ebân b. Osman → Zeyd b. Sâbit | Zeyd b. Sâbit’ten, dedi ki: Karısına “Bu kapının eşiğini geçersen işin senin elindedir” diyen, onun da (eşiği) geçip kendini çok sayıda talakla boşadığı adam hakkında Zeyd dedi ki: “Bu birdir.”
+& haddesenâ, an, an, an, an
+^ أنه قال: " في رجل
+
+18077 | İbn Uleyye → Eyyûb → Gaylân b. Cerîr → Ebü’l-Halâl el-Atekî → Osman | Ebü’l-Halâl el-Atekî’den: O, Osman’ın yanına heyet olarak gitti. Dedi ki: “Karısının işini onun eline veren bir adam (ne olur)?” dedim. (Osman) dedi ki: “Onun işi onun elindedir.”
+& haddesenâ, an, an, an, kâle
+^ أنه وفد إلى عثمان
+
+18078 | Vekî‘ → Ebû Talha → Şeddâd → Gaylân b. Cerîr → Ebü’l-Halâl → Osman | Ebü’l-Halâl dedi ki: Osman’a, karısının işini onun eline veren adamı sordum. Dedi ki: “Hüküm, (kadının) hükmettiğidir.”
+& haddesenâ, an, an, an, an, kâle
+^ عن رجل جعل أمر امرأته بيدها، قال: «القضاء
+
+18079 | İbn Ebî Zâide ve Ali b. Hâşim → İbn Ebî Leylâ → Hakem → Miksem → İbn Abbâs | İbn Abbâs dedi ki: “Hüküm, (kadının) hükmettiğidir.”
+& haddesenâ, an, an, an, an
+^ «القضاء ما قضت»
+
+18080 | Abdüla‘lâ → Saîd → Katâde → Fudâle b. Ubeyd; ayrıca Abdüla‘lâ → Saîd → Katâde → Abdürabbih → Ebû İyâz | Fudâle b. Ubeyd’den ve Ebû İyâz’dan: “Hüküm, (kadının) hükmettiğidir.”
+& haddesenâ, an, an, an; haddesenâ, an, an, an, an
+^ «القضاء ما قضت»
+
+18081 | Vekî‘ → Hişâm → Katâde → İbnü’l-Müseyyeb | İbnü’l-Müseyyeb dedi ki: “Hüküm, (kadının) hükmettiğidir.”
+& haddesenâ, an, an, an
+^ «القضاء ما قضت»
+
+18082 | Humeyd b. Abdurrahmân → Hasan → Mücâlid → Şa‘bî | Şa‘bî’den: Karısının işini onun eline veren adam hakkında dedi ki: “Hüküm, (kadının) hükmettiğidir.”
+& haddesenâ, an, an, an
+^ في رجل جعل أمر امرأته بيدها، قال
+
+18083 | Yahyâ b. Saîd → Abdullah → Nâfi‘ → İbn Ömer | İbn Ömer’den: Karısının işini onun eline veren adam hakkında dedi ki: “Hüküm, (kadının) hükmettiğidir.”
+& haddesenâ, an, an, an
+^ في الرجل يجعل أمر امرأته بيدها
+
+18084 | Abdülvehhâb es-Sekafî → Berd → Mekhûl ve Zührî | Mekhûl ve Zührî dediler ki: “Hüküm, (kadının) hükmettiğidir.”
+& haddesenâ, an, an
+^ قالا: «القضاء
+
+18085 | Gunder → Şu‘be → Hakem | Şu‘be dedi ki: Hakem’e “(Kadın) ‘Kendimi üç talakla boşadım’ dedi” dedim. Dedi ki: “Ondan üç talakla ayrılmıştır”; yani (adam) onun işini onun eline verdiğinde.
+& haddesenâ, an, kâle
+^ قالت: قد طلقت
+
+18086 | İbn Uyeyne → Mansûr → İbrâhîm → Alkame → Abdullah | Abdullah’tan: Bir adam karısının işini onun eline verdi, o da kendini üç talakla boşadı. (Abdullah) “Bu birdir” dedi. Sonra Ömer’le karşılaştı; (Ömer) “Ne güzel gördün” dedi.
+& haddesenâ, an, an, an, an
+^ أن رجلا جعل
+
+18087 | İbn Adî → Bişr | Bişr’den —o zaman bize anlattı—: Ömer b. Abdülazîz, Benî Temîm’den karısının işini onun eline veren bir adam hakkında yazdı, dedi ki: “Eğer (kadın) işi ona geri verirse bir şey yoktur. Eğer kendini boşarsa bu birdir ve o, ona en hak sahibidir.”
+& haddesenâ, an
+^ أن عمر بن عبد العزيز، كتب
+
+@ Karısının işini onun eline verdiğinde (kadının) “Sen üç talakla boşsun” demesi hakkında söyledikleri
+
+18088 | Cerîr b. Abdülhamîd → Mansûr → İbn Abbâs | İbn Abbâs’tan: Karısına “İşin senin elindedir” diyen, onun da “Sen üç talakla boşsun” dediği adam hakkında İbn Abbâs dedi ki: “Allah onun yıldızını hataya düşürsün! ‘Ben üç talakla boşum’ deseydi dediği gibi olurdu.”
+& haddesenâ, an, an
+^ في رجل قال لامرأته: أمرك بيدك
+
+18089 | Cerîr → Mansûr → İbrâhîm | Mansûr dedi ki: Bunu İbrâhîm’e andım. Dedi ki: “Birdir; ‘Seni boşadım’ ya da ‘Kendimi boşadım’ dese, bu bir (talak)tır; o, ona daha çok sahiptir.”
+& haddesenâ, an, kâle
+^ ذكرته لإبراهيم
+
+18090 | İbn Uyeyne → Amr → Atâ → İbn Abbâs | İbn Abbâs dedi ki: “Allah onun yıldızını hataya düşürsün!”
+& haddesenâ, an, an, an
+^ «خطأ الله نوأها»
+
+18091 | Abdullah b. Nümeyr → A‘meş → Habîb → Saîd b. Cübeyr → İbn Abbâs | İbn Abbâs’tan: Karısının işini onun eline veren, onun da “Sen üç talakla boşsun” dediği adam hakkında dedi ki: “Allah onun yıldızını hataya düşürsün!”
+& haddesenâ, an, an, an, an
+^ في رجل جعل أمر امرأته بيدها، فقالت
+
+18092 | Muhammed b. Bişr el-Abdî → Zekeriyyâ b. Ebî Zâide → Mansûr → İbrâhîm → Alkame | Alkame dedi ki: Abdullah b. Mes‘ûd’un yanındaydım. Bir adam ona gelip dedi ki: “Ey Ebû Abdurrahmân, benimle ailem arasında insanlar arasında olan bazı şeyler oldu. O ‘Senin elindeki iş benim elimde olsaydı ne yapacağımı bilirdin’ dedi. Ben de ona ‘O senin elinde’ dedim. O da ‘Ben de seni üç talakla boşadım’ dedi.” Abdullah dedi ki: “Bu tek bir talaktır; sen ona en hak sahibisin.” (Adam) dedi ki: Bunu Ömer’e andım. Dedi ki: “Bundan başka bir şey söyleseydin isabet etmediğini düşünürdüm.”
+& haddesenâ, haddesenâ, haddesenâ, haddesenî, an
+^ كنت عند عبد الله
+
+@ Karısını seçimde serbest bırakan, onun da kendisini ya da kendi nefsini seçtiği adam hakkında söyledikleri
+
+18093 | Hafs b. Gıyâs → Şeybânî → Şa‘bî | Şa‘bî dedi ki: Abdullah dedi ki: “Adam karısını serbest bırakır, o da kendi nefsini seçerse bir bâin (talak)tır; kocasını seçerse bir şey yoktur.” Ali dedi ki: “Kendi nefsini seçerse bir bâin (talak)tır; kocasını seçerse birdir ve o, ona daha çok sahiptir.”
+& haddesenâ, an, an
+^ قال عبد الله
+
+18094 | Ali b. Müshir → İsmâîl → Şa‘bî → Mesrûk | Mesrûk dedi ki: Beni seçtikten sonra karımı bir kere mi, yüz kere mi, bin kere mi serbest bırakmışım, aldırmam. Âişe’ye gelip bunu ona sordum. Dedi ki: “Resûlullah ﷺ bizi serbest bıraktı, biz de onu seçtik; bu talak mıydı?”
+& haddesenâ, an, an, an
+^ ما أبالي خيرت
+
+18095 | Abdullah b. Mübârek → Yahyâ b. Bişr → İkrime | Yahyâ b. Bişr dedi ki: İkrime’yi şöyle anlatırken işittim: Ebü’d-Derdâ, Şam’dayken, karısını serbest bırakan, onun da kocasını seçtiği bir adam(ın meselesi) ona getirildi. Dedi ki: “Bir şey değildir.” (İkrime) dedi ki: İbn Abbâs da bununla fetva verirdi; Ebân b. Osman da Medine’de bununla hükmetti.
+& haddesenâ, an, semi‘tü
+^ أن أبا الدرداء
+
+18096 | Abdullah b. İdrîs → Mûsâ b. Müslim → Mücâhid → Ali | Ali dedi ki: “Adam karısının işini boynundan çıkarırsa —(kadın) onu seçse bile— bir (talak)tır.”
+& haddesenâ, an, an, kâle
+^ «إذا خلع الرجل
+
+18097 | Vekî‘ → Cerîr b. Hâzim ve Îsâ b. Âsım → Zâzân → Ali | Zâzân dedi ki: Ali’nin yanında oturuyorduk; ona seçimde serbest bırakma soruldu. Dedi ki: “Bunu bana Mü’minlerin emîri Ömer sordu. Ben ‘Kendi nefsini seçerse bir bâin (talak)tır; kocasını seçerse birdir ve o, ona en hak sahibidir’ dedim. O ise ‘Dediğin gibi değil’ dedi: ‘Kendi nefsini seçerse birdir; kocasını seçerse bir şey yoktur ve o, ona en hak sahibidir.’ Mü’minlerin emîrine uymaktan başka çare bulamadım. (İşi) üstlenip fercler (nikâh) hakkında (meseleler) bana getirilince bildiğim şeye döndüm.” Ona denildi ki: “İkinizin cemaat içindeki görüşü, ayrılık içindeki senin görüşünden bize daha sevimlidir.” Ali güldü ve dedi ki: “Haberiniz olsun, o, Zeyd b. Sâbit’e haber gönderip ona sordu; o da ‘Kendi nefsini seçerse üçtür; kocasını seçerse bir bâin (talak)tır’ dedi.”
+& haddesenâ, an, an, kâle
+^ كنا جلوسا عند علي
+
+18098 | Abbâd b. el-Avvâm → Abdülmelik → Atâ | Atâ’dan: Karısına “Seç” diyen adam hakkında: “Kendi nefsini seçerse birdir; kocasını seçerse bir şey yoktur.”
+& haddesenâ, an, an
+^ في الرجل يقول لامرأته: اختاري
+
+18099 | Hafs → Eş‘as → Hakem → İbn Ebî Leylâ → Zeyd b. Sâbit | Zeyd b. Sâbit dedi ki: “Kendi nefsini seçerse üçtür; kocasını seçerse birdir.”
+& haddesenâ, an, an, an, an
+^ «إن اختارت نفسها فثلاث
+
+18100 | İbn Nümeyr → Süfyân → Ebü’z-Zinâd → Hârice b. Zeyd ve Ebân b. Osman → Zeyd b. Sâbit | Zeyd b. Sâbit dedi ki: “Kendi nefsini seçerse birdir ve o, ona daha çok sahiptir; kocasını seçerse bir şey yoktur.”
+& haddesenâ, an, an, an, an
+^ «إن اختارت نفسها فواحدة، وهو
+
+18101 | Ebû Muâviye → A‘meş → Müslim → Mesrûk → Âişe | Âişe dedi ki: “Resûlullah ﷺ bizi serbest bıraktı, biz de onu seçtik; bunu bize karşı bir şey saymadı.”
+& haddesenâ, an, an, an, an
+^ «خيرنا رسول الله
