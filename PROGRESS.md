@@ -19,7 +19,7 @@ Her oturum: önce `SPEC.md`, sonra bu dosya. Bitince burayı güncelle (kitap, s
 | el-İbâne (`ibane/`) | isnad standardı (SPEC) | **tamam** — 22/22 bölüm (i01–i22), 3134 madde (2026-10-29) | `dogrula.py`: 0 hata, 163 uyarı |
 | Ebû Dâvûd (`ebudavud/`), Harb (`harb/`), el-Berbehârî (`berbehari/`) | isnad standardı (SPEC) | **tamamlandı** — 243 madde (2026-10-29) | `dogrula.py`: 0 hata, 1 uyarı (berbehari ﷺ) |
 | Müsned (`musned/`) | isnad standardı (SPEC) | **sürüyor** — m001 tamamlandı (1–81, 81/81), m002 p006–p012 (82–207) çevrildi; toplam 207/1380 madde (2026-10-29) | `dogrula.py` (1–207): 0 hata, 0 kısa, 0 sîga; m002–m003 bölüm bitene kadar korundu |
-| el-Musannef (`musannef/`) | isnad standardı (SPEC) | **standarda geçti** — 24/38 kitap, 16 352 madde paneli (2026-10-29); yeni çeviri: Tahârât (2116), Sıyâm (935), Zekât (997), Cenâiz (1341), Hac (3253), Nikâh (1814), Talâk (1578), Büyû‘ (3454), Akîka (1071), Diyât (1348), Hudûd (969), Ferâiz (607), Fezâil (890) tamam — 37/38 kitap; kalan Siyer çevriliyor (`araclar/musannef/`, notlar `notlar.md`) | `dogrula.py`: 0 hata; 1365 metin başı (çoğu `babası`/`Benzeri`), 133 sîga, 104 k, 5 kısa uyarısı |
+| el-Musannef (`musannef/`) | isnad standardı (SPEC) | **tamamlandı** — 38/38 kitap, 37 914 madde (2026-10-30): eski 24 kitap panele geçirildi (16 352), kalan 14 kitap yeni çevrildi (21 562; OpenITI 9944 harekesiz Arapça) | `dogrula.py`: 0 hata, 1752 uyarı (1451 metin başı, 188 sîga, 104 k, 9 kısa); çevirmen notları `araclar/musannef/notlar.md` |
 | Leys b. Sa‘d (`leys/`) | isnad standardı (SPEC) | **tamamlandı** — 1/1 kitap (Fevâidü'l-Leys), 8 madde (2026-10-29) | `dogrula.py --ravi`: 0 hata, 0 uyarı; paneller elle |
 | ez-Zührî (`zuhri/`) | isnad standardı (SPEC) | **tamamlandı** — 2/2 kitap (en-Nâsih ve'l-mensûh 49, Tenzîlü'l-Kur’ân 118 madde) (2026-10-29) | `dogrula.py --ravi`: 0 hata, 0 uyarı; paneller elle |
 | Hemmâm b. Münebbih (`hemmam/`) | isnad standardı (SPEC) | **tamamlandı** — 1/1 kitap (es-Sahîfe), 140 madde (2026-10-29) | `dogrula.py --ravi`: 0 hata, 0 uyarı; `k = 0` (Arapçada isnad yok) |
@@ -52,7 +52,7 @@ Hepsi: `python3 araclar/dogrula.py sunan --hepsi`. Bakılacak tek tek maddeler (
 
 ## Standarda getirme — kalanlar
 
-Musannef ve Müsned dışındaki bütün kitaplıklar standarttadır (2026-10-29). Kalanlar: 1) **Müsned** — baştan çeviri (en büyük kazanç), yukarıdaki kararlarla; 2) **Musannef** (16 352 madde; sened var, panel yok) — sened temizlenir, `&` sîga satırı Arapçadan üretilir (`siga_hizala.py` uyarlanabilir). Her kitapta: `kilavuz.md` uyarlanır → parti → `denetle.py` → derle → `dogrula.py --ravi` 0 hata → `ravi_kur.py` yenilenir → yayın. Yeni kitaplıkta müellif adı `MUELLIF`/`RAVI_MUELLIF`'e, nüsha öneği varsa `ONEK`'e eklenir.
+Müsned dışındaki bütün kitaplıklar standarttadır (Musannef 2026-10-30'da tamamlandı). Kalan: **Müsned** — baştan çeviri, yukarıdaki kararlarla. Her kitapta: `kilavuz.md` uyarlanır → parti → `denetle.py` → derle → `dogrula.py --ravi` 0 hata → `ravi_kur.py` yenilenir → yayın. Yeni kitaplıkta müellif adı `MUELLIF`/`RAVI_MUELLIF`'e, nüsha öneği varsa `ONEK`'e eklenir.
 
 ## Eklenecek 9 erken dönem eseri — sıra önerisi
 
@@ -69,6 +69,8 @@ Hepsi: `python3 araclar/dogrula.py <kitaplık> --hepsi`. Sayılar yukarıdaki ta
 - Sîga eşlemesinin kendi raporu: `araclar/siga_hizala_rapor.md` (195 lafzı bulunamayan halka, 83 belirsiz hizalama).
 
 ## Günlük
+
+- 2026-10-30 — Musannef tamamlandı: çevrilmemiş 14 kitap (Tahârât, Sıyâm, Zekât, Cenâiz, Hac, Nikâh, Talâk, Büyû‘, Akîka, Diyât, Hudûd, Ferâiz, Fezâil, Siyer; 21 562 madde) `araclar/musannef/` iş akışıyla (kaynak_kur → hazirla → 365 parça → denetle → derle) SPEC standardında çevrildi ve kitap kitap yayımlandı. Çevirmenlerin şüpheli yer notları `araclar/musannef/notlar.md`; özet `GOZDEN.md`.
 
 - 2026-10-29 — Musannef râvi paneli standardına geçirildi: `standarda_getir.py musannef` (nüsha senedi → `n`), `siga_hizala.py musannef` (10 380 panel; 1 035 halka lafızsız, rapor oturum dosyasında), 9 sened hatası elle düzeltildi; `c[0] = İbn Ebî Şeybe` (`dogrula.py`, `ravi_kur.py` MUELLIF; ONEK `حدثنا أبو بكر قال:`). Kalan 14 kitabın kaynağı `araclar/musannef/kaynak.json` (OpenITI 9944, harekesiz).
 
