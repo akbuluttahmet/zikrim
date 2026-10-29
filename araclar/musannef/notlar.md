@@ -24,3 +24,8 @@
 - Başlıksız bablar: 1765, 1776, 1898, 1905. 1756: önceki bab başlığındaki âyet yeri maddeye kaymış, başlıkta verildi.
 - Şüpheli metin (notlu): 1913 “لا يكني”, 1968, 2054. 1695 “وكان يقول يعني بذلك قتادة” muğlak. 2110 “وضأته” öznesi belirsiz.
 - Ad yazımları (Arapçadaki gibi bırakıldı, notlu): 1878 “عبد الرحمن بن أبي بكر”, 1958 “يزيد الآني”, 2079 “موسى بن أبي زائدة”, 2089 “هشيم بن سعد”.
+
+## k26 Ferâiz (p312–p315, 31395–31638)
+- Bozuk (notlu): 31433 (yarım “إلا أن”), 31565, 31466, 31637 (“في بنيهم”, “ورقا”; mesele iki kez geçer; anne adı yok ama anneye üçte bir).
+- (metinde böyle): 31420, 31430, 31457, 31479, 31557, 31581, 31638 (soru Âmir'e, cevap Şüreyh).
+- 31499 sondaki tek “قال” atıldı (31500'e ait olabilir). 31498 “حدثنا أبو بكر عن ابن جريج” — arada hoca yok, sened İbn Cüreyc'le başlar.
