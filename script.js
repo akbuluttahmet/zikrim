@@ -1282,7 +1282,8 @@ function libItem(L, h) {
   let box = null;
   if (ar) {
     box = el('div', 'ar-box'); box.lang = 'ar'; box.dir = 'rtl';
-    const k = arSplit(ar);
+    // Sened/metin ayrımı: veride işaretliyse (info.k, metnin Arapçadaki başlangıcı) o, yoksa sezgi
+    const k = info && Number.isInteger(info.k) && info.k > 0 && info.k < ar.length ? info.k : arSplit(ar);
     if (k > 0) box.append(el('p', 'ar-isn', ar.slice(0, k).trim()));
     box.append(el('p', 'ar-mtn', ar.slice(k).trim()));
     box.append(ttsBtn('ar', '▶', () => [{el: box, text: prepAr(TTS.arSened ? ar : ar.slice(k))}], 'tts-i', 'Arapçasını sesli oku'));
