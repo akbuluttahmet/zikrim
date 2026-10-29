@@ -159,7 +159,7 @@
 & haddesenâ, an, an, enne; haddesenâ, an, an, enne
 ^ «كان يجيز الاعتراف
 
-23059 | Vekî‘ → Furât b. Ebî Bahr → babası → Şüreyh | Şüreyh — kendisine bir dilekçe sunulmuştu — dedi ki: “Ben yazıları okumam.”
+23059 | Vekî‘ → Furât b. Ebî Bahr → babası → Şüreyh | Şüreyh: Kendisine bir dilekçe sunuldu; o da: “Ben yazıları okumam” dedi.
 & haddesenâ, haddesenâ, an, kâle
 ^ رفعت إليه قصة
 
@@ -259,7 +259,7 @@
 
 @ Şahidin şahit üzerine şahitliği hakkında
 
-23078 | Yahyâ b. Âdem → Hasan b. Sâlih → Ca‘d b. Zekvân | Hasan b. Sâlih dedi ki: Ca‘d b. Zekvân’a dedim ki: Şüreyh’i, “İki şahit, iki şahit üzerine şahitlik ettiğinde şahidin şahit üzerine şahitliğini geçerli sayarım” derken gördün (mü)? (metinde böyle)
+23078 | Yahyâ b. Âdem → Hasan b. Sâlih → Ca‘d b. Zekvân | Hasan b. Sâlih dedi ki: Ca‘d b. Zekvân’a dedim ki: Şüreyh’i, “İki şahit, iki şahit üzerine şahitlik ettiğinde şahidin şahit üzerine şahitliğini geçerli sayarım” derken gördün mü?
 & haddesenâ, an, kâle
 ^ قال: قلت للجعد
 
