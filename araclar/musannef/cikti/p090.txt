@@ -1,0 +1,283 @@
+@ Muhrimin evlenmesini hoş görmeyenler
+
+12975 | Gunder → Şu‘be → İbrâhîm | İbrâhîm dedi ki: Yezîd b. Abdülmelik, Medine halkına evlenen muhrimi sormak üzere mektup yazdı. (Onlar) dedi ki: “İkisinin arası ayrılır.”
+& haddesenâ, an, an
+^ قال: كتب يزيد
+
+12976 | Vekî‘ → Kudâme b. Mûsâ | Kudâme b. Mûsâ dedi ki: Ben muhrim iken ailem beni evlendirdi. Saîd b. el-Müseyyeb’e (birini) gönderdik; şöyle dedi: “Muhrim nikâhlanmaz ve nikâhlamaz.”
+& haddesenâ, an
+^ قال: زوجني أهلي
+
+12977 | Vekî‘ → Hişâm b. Sa‘d → Atâ el-Horasânî → Saîd b. el-Müseyyeb | Atâ el-Horasânî dedi ki: Saîd b. el-Müseyyeb’e: “İkrime, ‘Nebî ﷺ muhrim iken evlendi’ diyor” dedim. Şöyle dedi: “Yanıldı.”
+& haddesenâ, an, an, kâle
+^ قال: قلت لسعيد
+
+12978 | Abdüla‘lâ → Ma‘mer → Zührî | Zührî dedi ki: “Muhrim evlendirmez ve evlenmez.”
+& haddesenâ, an, an
+^ قال: «المحرم لا
+
+@ Oruç tutmak isteyen temettu hacısı hakkında: Ne zaman oruç tutar?
+
+12979 | Süfyân b. Uyeyne → Amr → İkrime | İkrime dedi ki: “Temettu yapan ancak (Zilhicce’nin ilk) on (gününde) oruç tutar.”
+& haddesenâ, an, an
+^ قال: «لا يصوم
+
+12980 | İbn Uyeyne → İbn Ebî Necîh → Mücâhid | Mücâhid dedi ki: “Temettu yapan dilerse Şevvâl’den bir gün, dilerse Zilkade’den bir gün oruç tutar.” (İbn Ebî Necîh) dedi ki: Tâvûs ve Atâ da şöyle dedi: “Temettu yapan ancak (Zilhicce’nin ilk) on (gününde) oruç tutar.”
+& haddesenâ, an, an
+^ قال: «يصوم المتمتع
+
+12981 | Yahyâ b. Saîd el-Kattân → İbn Cüreyc → Nâfi‘ → İbn Ömer | İbn Ömer dedi ki: “Temettu yapan ancak muhrim iken oruç tutar; ondan ancak bu (oruç) kaza edilir (metinde böyle).” (Nâfi‘ dedi ki:) “Onları Şevvâl’de tutar mı?” dedim. “Hayır, ancak muhrim olarak” dedi.
+& haddesenâ, an, an, an
+^ قال: «لا يصوم
+
+12982 | Hafs b. Gıyâs → Leys → Tâvûs ve Atâ | Tâvûs ve Atâ dediler ki: “Üç (günü) ancak (Zilhicce’nin ilk) on (gününde) tutar.” Mücâhid de dedi ki: “Onu hac aylarında tutmasında sakınca yoktur.”
+& haddesenâ, an, an
+^ قالا: «لا يصوم
+
+@ Mekke’de orucu yetiştirememekten korkan kimse hakkında
+
+12983 | İsmâîl b. Uleyye → Eyyûb → İkrime | İkrime dedi ki: “Mekke’de orucu yetiştirememekten korkarsa yolda bir ya da iki gün oruç tutar.”
+& haddesenâ, an, an
+^ قال: «إن خشي
+
+12984 | İbn Ebî Adî → Eş‘as → Hasan | Eş‘as dedi ki: (Hasan) yolda olan kimse hakkında şöyle derdi: “Ancak Arefe günü varabileceğinden korkarsa, yolda üç gün oruç tutar.”
+& haddesenâ, an, kâle
+^ قال: كان يقول
+
+@ Orucu kaçıran temettu hacısı hakkında
+
+12985 | İsmâîl b. Uleyye → Eyyûb → İbn Abbâs | İbn Abbâs dedi ki: “Temettu yapan oruç tutmazsa ona kurban gerekir.”
+& haddesenâ, an, an
+^ قال: «إذا لم
+
+12986 | Hafs ve İbn Uleyye → Atâ ve Mücâhid | (Atâ ve Mücâhid) dediler ki: “Orucu kaçırırsa ona kurban gerekir.”
+& haddesenâ, an
+% Arapçada sened böyle yazılıdır: “ثنا حفص، وابن علية، عن عطاء، ومجاهد قالوا” (metinde böyle).
+^ قالوا: «إذا فاته
+
+12987 | İbn Ebî Zâide → Haccâc → Amr b. Şuayb → Saîd b. el-Müseyyeb | Saîd b. el-Müseyyeb’den: Temettu yapmış, (Zilhicce’nin ilk) on (gününde) orucu kaçırmış bir adam Ömer’e geldi. (Ömer) ona “Bir koyun kes” dedi. “Yanımda yok” dedi. “Kavmine sor” dedi. “Burada kavmimden kimse yok” dedi. (Ömer) “Ey Muaykīb, ona bir koyun bedeli ver” dedi.
+& haddesenâ, an, an, an
+^ أن رجلا أتى
+
+12988 | Ebü’l-Ahvas → Hafs ve Ebû Hâlid el-Ahmer → Haccâc → Amr → Saîd b. el-Müseyyeb → Ömer | (Ömer’den) buna yakını (rivayet edildi).
+& haddesenâ, haddesenâ, an, an, an, an
+% Arapçada sened böyle yazılıdır: “ثنا أبو الأحوص، ثنا حفص، وأبو خالد الأحمر” (metinde böyle).
+^ نحوا منه
+
+12989 | Hafs → Eş‘as → Hakem ve Hammâd → İbrâhîm | İbrâhîm dedi ki: “Elbisesini satsa bile kan (kurban) mutlaka gerekir.”
+& haddesenâ, an, an, an
+^ قال: «لا بد
+
+12990 | Vekî‘ → Şu‘be → Hakem | Hakem dedi ki: “Sadaka (dilenerek) alsa bile kan (kurban) mutlaka gerekir.”
+& haddesenâ, an, an
+^ قال: «لا بد
+
+12991 | Vekî‘ → Ebû Bişr → Saîd b. Cübeyr | Saîd b. Cübeyr dedi ki: “Elbisesini satsa bile kan (kurban) mutlaka gerekir.”
+& haddesenâ, an, an
+^ قال: «لا بد
+
+@ Oruca ruhsat verip ona kurban gerekmediğini görenler
+
+12992 | Hâtim b. İsmâîl → Ca‘fer → babası → Ali | Ali dedi ki: “(Zilhicce’nin ilk) on (gününde) orucu kaçırırsa, … (metin bu kısımda bozuktur) üç gün oruç tutar, döndüğünde de yedi (gün).”
+& haddesenâ, an, an, an
+^ قال: «إن فاته
+
+12993 | İbn Uleyye → Eyyûb → Nâfi‘ → İbn Ömer | İbn Ömer dedi ki: “Kim hacda üç günü kaçırırsa teşrik günlerinde oruç tutsun; çünkü onlar hacdandır.”
+& haddesenâ, an, an, an
+^ قال: «من فاته
+
+12994 | İbn Uyeyne → Zührî → Urve ya da Amre → Âişe | Âişe’den, dedi ki: “Temettu yapana, on (günde) oruç tutmamışsa teşrik günlerinde oruç tutmasına ruhsat verirdi.”
+& haddesenâ, an, an, an
+^ قالت: «كانت ترخص
+
+12995 | Abde b. Süleymân → İbn Ebî Arûbe → Katâde → Saîd b. Cübeyr | Saîd b. Cübeyr dedi ki: “Temettu yapan teşrik günlerinde orucu kaçırırsa üç (gün) yerine yemek yedirir, döndüğünde yedi (günü) tutar.”
+& haddesenâ, an, an, an
+^ قال: «المتمتع إذا
+
+12996 | Gunder → Şu‘be → Abdullah b. Îsâ → Zührî → Urve → Âişe; ayrıca Gunder → Şu‘be → Abdullah b. Îsâ → Zührî → Sâlim → İbn Ömer | Âişe ve İbn Ömer dediler ki: “Teşrik günlerinde oruç tutulmasına, kurbanlık bulamayan dışında (kimseye) ruhsat verilmedi.”
+& haddesenâ, an, semi‘tü, an, an; haddesenâ, an, semi‘tü, an, an
+% Şu‘be: “Onu (Abdullah b. Îsâ’yı) Zührî’den rivayet ederken işittim” dedi.
+^ قالا: «لم يرخص
+
+@ Yedi (günü) kaza ederken ayrı ayrı mı yoksa ardı ardına mı tutacağı hakkında
+
+12997 | Hafs → Haccâc → Atâ | Atâ dedi ki: “Döndüğünüzde yedi (gün)” (Bakara 2/196) (hakkında) dedi ki: “Dilerse onu yolda tutar, dilerse Mekke’de.”
+& haddesenâ, an, an
+^ قال: {وسبعة إذا
+
+12998 | Yahyâ b. Saîd el-Kattân → Hişâm → Hasan | Hasan’dan, yedi günün orucu hakkında. Dedi ki: “Dilerse yolda tutar, dilerse ailesine döndüğünde.”
+& haddesenâ, an, an
+^ في صيام السبعة
+
+12999 | İbn Fudayl → Leys → Mücâhid | Mücâhid dedi ki: “Yedi (günü) dilersen yolda, dilersen ailene döndüğünde tut; onları birbirinden ayırma.”
+& haddesenâ, an, an
+^ قال: «صم السبعة
+
+13000 | Cerîr → Mansûr → Mücâhid | Mücâhid dedi ki: “Dilerse yolda tutar, dilerse ailesine döner.”
+& haddesenâ, an, an
+^ قال: «إن شاء
+
+13001 | Vekî‘ → İbrâhîm b. Mersed → İbn Ebî Necîh → Tâvûs | Tâvûs’tan, “Döndüğünüzde yedi (gün)” (Bakara 2/196) (hakkında). Dedi ki: “Dilerse ayırır.”
+& haddesenâ, an, an, an
+^ {وسبعة إذا رجعتم}
+
+@ Ailesine döndüğünde oruç tutar diyenler
+
+13002 | Ebû Hâlid el-Ahmer → Yahyâ b. Saîd → Saîd b. el-Müseyyeb | Saîd b. el-Müseyyeb dedi ki: “Kim Şevvâl’de ya da Zilkade’de umre yapar, sonra haccedinceye kadar kalırsa o, temettu yapandır; ona kolayına gelen kurbanlık gerekir. Bulamayan ise üç gün, ailesine döndüğünde de yedi gün oruç tutar.”
+& haddesenâ, an, an
+^ قال: «من اعتمر
+
+13003 | Kesîr b. Hişâm → Ca‘fer b. Burkân → Nâfi‘ → İbn Ömer | İbn Ömer’den, dedi ki: “Temettu yapana bir büyükbaş, deve ya da sığır gerekli görürdü; bulamazsa üç gün, döndüğünde de yedi gün oruç.”
+& haddesenâ, an, an, an
+^ قال: «كان يرى
+
+13004 | Hafs b. Gıyâs → Yahyâ b. Saîd → Saîd b. el-Müseyyeb; ayrıca Hafs → Saîd → Nâfi‘ → İbn Ömer | (Saîd b. el-Müseyyeb’den ve İbn Ömer’den), hac aylarında umre yapıp sonra (memleketine) dönen, sonra hacceden adam hakkında bunun benzeri (rivayet edildi).
+& haddesenâ, an, an; haddesenâ, an, an, an
+^ مثله في الرجل
+
+13005 |  | Ebû Bekir dedi ki: “Kim hac aylarında umre yapar sonra (memleketine) dönerse temettu yapan değildir; o (temettu yapan), kalan ve dönmeyendir.”
+% Arapçada sened yoktur: “أبو بكر قال: «…»” (metinde böyle).
+
+13006 | Vekî‘ → Umerî → Nâfi‘ → İbn Ömer → Ömer | İbn Ömer dedi ki: Ömer dedi ki: “Hac aylarında umre yapar sonra kalırsa, temettu yapandır; dönerse temettu yapan değildir.”
+& haddesenâ, an, an, an, kâle
+^ «إذا اعتمر في
+
+13007 | Hafs → Leys → Atâ, Tâvûs ve Mücâhid | Atâ, Tâvûs ve Mücâhid dediler ki: “Hac aylarında çıkar, sonra kalırsa temettu yapandır.”
+& haddesenâ, an, an
+^ قالوا: «إن خرج
+
+13008 | Hafs → Eş‘as ve Abdülmelik → Atâ | Atâ dedi ki: “Kim hac aylarında umre yapar, sonra memleketine döner, sonra aynı yıl haccederse temettu yapan değildir. Temettu yapan ancak kalan ve dönmeyendir.”
+& haddesenâ, an, an
+^ قال: «من اعتمر
+
+13009 | Hüşeym → Mugîre → İbrâhîm | Mugîre dedi ki: İbrâhîm’e sordum; dedim ki: “Receb’de umre yapıp sonra haccedinceye kadar kalanlar temettu yapan mıdır?” Dedi ki: “Hayır. Temettu yapan ancak hac aylarında umre için telbiye getiren, sonra haccedinceye kadar kalandır; işte o temettu yapandır. Ona kurban gerekir, kurban bulamazsa da oruç.”
+& haddesenâ, an, kâle
+^ قال: سألت إبراهيم
+
+13010 | Hüşeym → Yahyâ b. Saîd → Saîd b. el-Müseyyeb | (Saîd b. el-Müseyyeb’den) bunun benzeri (rivayet edildi).
+& haddesenâ, an, an
+^ مثله
+
+13011 | Hüşeym → Ebû Bişr → Saîd b. Cübeyr | Saîd b. Cübeyr dedi ki: “Kalırsa ona kurban gerekir.”
+& haddesenâ, an, an
+^ قال: «إذا أقام
+
+@ Dönse bile o temettu yapandır diyenler
+
+13012 | Vekî‘ → Hişâm ed-Destüvâî → Katâde → Saîd b. el-Müseyyeb | Saîd b. el-Müseyyeb dedi ki: “Nebî’nin ﷺ ashâbı hac aylarında umre yapıp sonra o yıl haccetmediklerinde kurban göndermezlerdi.”
+& haddesenâ, an, an, an
+^ قال: «كان أصحاب
+
+13013 | İbn Mübârek → Süfyân → Hammâd b. Ebî Süleymân → Abdülkerîm → Yezîd el-Fakîr | Yezîd el-Fakîr’den: Kûfe halkından bir topluluk temettu yaptı, sonra Medine’ye çıktılar ve oradan hac (niyetiyle) geldiler. İbn Abbâs’a sordular; o şöyle dedi: “Onlar temettu yapanlardır.”
+& haddesenâ, an, an, an, an
+^ أن قوما من
+
+13014 | Hüşeym → Yûnus → Hasan | Hasan dedi ki: “Kim (haccettiği) yılda hac aylarında umre yaparsa temettu yapandır.”
+& haddesenâ, an, an
+^ قال: «من اعتمر
+
+@ Hacdan sonra umre hakkında
+
+13015 | İbn Uleyye → İbn Avn → İbrâhîm → Esved → Mü’minlerin annesi; ayrıca İbn Uleyye → İbn Avn → Kâsım → Mü’minlerin annesi | Mü’minlerin annesi dedi ki: “Ey Allah’ın Resûlü, insanlar iki ibadetle dönüyor, ben ise bir ibadetle dönüyorum” dedim. Buyurdu ki: “Bekle; temizlendiğinde Ten‘îm’e çık ve oradan telbiye getir. Sonra bizimle şu şu yerde buluş. Fakat o, yorgunluğun ölçüsündedir” —ya da “nafakan(ın ölçüsündedir)” dedi, ya da Resûlullah ﷺ nasıl dediyse—.
+& haddesenâ, an, an, an, an; haddesenâ, an, an, an
+^ قالت: قلت: يا
+
+13016 | İbn Uyeyne → Velîd b. Hişâm el-Muaytî → Ümmü’d-Derdâ | Velîd b. Hişâm el-Muaytî dedi ki: Ümmü’d-Derdâ’ya hacdan sonra umreyi sordum; bana onu (yapmamı) emretti.
+& haddesenâ, an, kâle
+^ قال: سألت أم
+
+13017 | Yahyâ b. Saîd → İbn Cüreyc → Ebü’z-Zübeyr → Câbir | Câbir’den: Ona teşrik günlerinde hacdan sonra umre soruldu; onda bir sakınca görmedi ve “Onda kurban yoktur” dedi.
+& haddesenâ, an, an, an
+^ أنه سئل عن
+
+13018 | İbn Fudayl → Leys → Mücâhid | Mücâhid dedi ki: (İbn Ömer’e) hacdan sonra umre soruldu; “O hiç yoktan hayırlıdır” dedi. Âişe’ye soruldu; “Nafaka ve meşakkat ölçüsündedir” dedi. Ali’ye soruldu; “O, zerre ağırlığından hayırlıdır” dedi.
+& haddesenâ, an, an
+% Arapçada ilk sorulanın adı yoktur: “سئل عن العمرة بعد الحج” (metinde böyle).
+^ قال: سئل عن
+
+13019 | Abde b. Süleymân → Yahyâ b. Saîd → Saîd b. el-Müseyyeb | Saîd b. el-Müseyyeb dedi ki: “Âişe Zilhicce’nin sonunda umre yapardı.”
+& haddesenâ, an, an
+^ قال: «كانت عائشة
+
+13020 | İbn Fudayl → Husayn → Saîd b. Cübeyr | Husayn dedi ki: Saîd b. Cübeyr’e hacdan altı gün sonra umreyi sordum. Şöyle dedi: “Dilersen umre yap.”
+& haddesenâ, an, kâle
+^ قال: سألت سعيد
+
+13021 | Humeyd b. Abdurrahmân er-Ruâsî → babası → Ca‘fer b. Necîh | Ca‘fer b. Necîh dedi ki: Bir adam Tâvûs’a sordu ve “İki günde acele ettim (Mina’dan ayrıldım); umre yapayım mı?” dedi. “Evet” dedi.
+& haddesenâ, an, an
+^ قال: سأل رجل
+
+@ Hacdan sonra umre yapmayı hoş görmeyenler
+
+13022 | Ebü’l-Ahvas → Ebû Ya‘fûr → İbn Ömer | Ebû Ya‘fûr dedi ki: İbn Ömer’e hacdan sonra umreyi sordum. Şöyle dedi: “Bazı insanlar bunu yapıyor. Zilhicce dışında umre yapmam bana Zilhicce’de umre yapmamdan daha sevimlidir.”
+& haddesenâ, an, kâle
+^ قال: سألت ابن
+
+13023 | Abdüsselâm b. Harb → Husayf → Atâ, Tâvûs ve Mücâhid | Atâ, Tâvûs ve Mücâhid dediler ki: “Ailenden başladığın umreden başka umre yoktur; (Mekke’den) dönüşten sonra da yoktur.” Saîd b. Cübeyr dedi ki: “Ailesinin mîkatına dönüp umre yaparsa, bunun umre olmasını umarım.”
+& haddesenâ, an, an
+^ قالوا: «لا عمرة
+
+13024 | Hafs → Leys → Atâ, Tâvûs ve Mücâhid | Atâ, Tâvûs ve Mücâhid’den: Onlar hacdan sonra umreyi hoş görmediler ve şöyle dediler: “Yetmez ve o (umre) de değildir.” Şöyle de dediler: “Beyt’i tavaf ve namaz daha faziletlidir.”
+& haddesenâ, an, an
+^ أنهم كرهوا العمرة
+
+@ Ramazan umresi ve onun hakkında gelenler
+
+13025 | Vekî‘ → A‘meş → Umâre b. Umeyr → Ebû Bekir b. Amr b. el-Hâris b. Hişâm | Ebû Bekir b. Amr b. el-Hâris b. Hişâm’dan: Ebû Ma‘kıl Nebî’ye ﷺ gelip “Ey Allah’ın Resûlü, Ümmü Ma‘kıl haccetmeyi üzerine borç kıldı, fakat bu ona kolay olmadı” dedi. (Nebî) “Ramazan’da umre yapar” buyurdu.
+& haddesenâ, an, an, an
+^ أن أبا معقل
+
+13026 | İbn Nümeyr → Muhammed b. İshâk → Îsâ b. Ma‘kıl → Ebû Ma‘kıl el-Esedî → Yûsuf b. Abdullah b. Selâm → ninesi Ümmü Ma‘kıl | Ümmü Ma‘kıl’dan: Nebî ﷺ şöyle buyurdu: “Ramazan’da umre yap; çünkü o bir hacdır.”
+& haddesenâ, an, an, an, an, an
+% Arapçada sened böyle yazılıdır: “عن محمد بن إسحاق، عم عيسى بن معقل عن أبي معقل الأسدي” (metinde böyle).
+^ أن النبي صلى الله عليه وسلم قال: «اعتمري
+
+13027 | İbn Uyeyne → Muhammed b. el-Münkedir → Yûsuf b. Selâm → Ensâr’dan bir adam | Ensâr’dan bir adam: Resûlullah ﷺ ona ve hanımına şöyle buyurdu: “Ramazan’da umre yapın; çünkü sizin için Ramazan’daki bir umre bir hacca denktir.”
+& haddesenâ, an, an, semi‘a
+^ إن رسول الله صلى الله عليه وسلم قال
+
+13028 | İbn Nümeyr → Ebû Muâviye → Haccâc → Atâ → İbn Abbâs | İbn Abbâs dedi ki: Resûlullah ﷺ buyurdu: “Ramazan’da bir umre bir hacca denktir.”
+& haddesenâ, haddesenâ, an, an, an
+^ قال: قال رسول الله
+
+13029 | Abdüla‘lâ → Dâvûd → Şa‘bî | Dâvûd dedi ki: Şa‘bî’ye sordum, dedim ki: “Bu büyük hacdır; küçük hac nedir?” Dedi ki: “Ramazan’da bir umre.”
+& haddesenâ, an, kâle
+^ قال: سألته قلت:
+
+13030 | Vekî‘ → Süfyân → İbn Huseym → Saîd b. Cübeyr ve Mücâhid | İbn Huseym dedi ki: “(Saîd b. Cübeyr ve Mücâhid) Ramazan ayında Ci‘râne’den umre yaparlardı.”
+& haddesenâ, an, an, an
+^ قال: «كان يعتمران
+
+13031 | İbn Nümeyr → Abdülmelik b. Ebî Süleymân | Abdülmelik b. Ebî Süleymân dedi ki: “Ben ve Atâ Ramazan’da çıktık ve Ci‘râne’den ihrama girdik.”
+& haddesenâ, an
+^ قال: «خرجت أنا
+
+13032 | İbn Nümeyr → Muhammed b. İshâk → Yahyâ b. Abbâd b. Abdullah b. ez-Zübeyr → Ebû Bekir b. Abdurrahmân | Ebû Bekir b. Abdurrahmân’dan: “Ancak Ramazan’da umre yapardı.”
+& haddesenâ, an, an, an
+^ «لا يعتمر إلا
+
+@ Hac aylarında umre
+
+13033 | Ebû Muâviye → A‘meş → Kays b. Müslim → Târık b. Şihâb | Târık b. Şihâb dedi ki: Abdurrahmân’a hac aylarında umre soruldu. Şöyle dedi: “Hac, bilinen aylardır; onlarda umre yoktur.”
+& haddesenâ, an, an, an
+^ قال: سئل عبد
+
+13034 | Cerîr → Mansûr → İbrâhîm | İbrâhîm dedi ki: Alkame’ye hac aylarında umre soruldu. Şöyle dedi: “Bunu yapan biri var mı?”
+& haddesenâ, an, an
+^ قال: سئل علقمة،
+
+13035 | Yezîd b. Hârûn → İbn Avn → Kâsım b. Muhammed | İbn Avn dedi ki: Kâsım b. Muhammed’e: “Ömer hac aylarında umreyi yasakladı” dedim. (Kâsım) da “Osman onu yasakladı” dedi.
+& haddesenâ, an, kâle
+^ قال: قلت للقاسم
+
+13036 | Vekî‘ → İbn Ebî Revvâd → Nâfi‘ → İbn Ömer | İbn Ömer dedi ki: “Haccınızla umrenizi birbirinden ayırın.”
+& haddesenâ, an, an, an
+^ قال: «افصلوا بين
+
+13037 | Vekî‘ → Yezîd → İbn Sîrîn | İbn Sîrîn dedi ki: “Hac ayları dışındaki umrenin daha faziletli olduğunda ihtilaf ettiklerini bilmiyorum.”
+& haddesenâ, an, an
+^ قال: «ما أعلمهم
+
+13038 | Yezîd b. Hârûn → İbn Avn → Kâsım | İbn Avn dedi ki: Kâsım’a hac aylarında umre soruldu. Şöyle dedi: “Onu tam görmezlerdi.”
+& haddesenâ, an, kâle
+^ قال: سئل القاسم،
