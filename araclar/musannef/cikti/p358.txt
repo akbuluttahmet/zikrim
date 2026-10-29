@@ -8,7 +8,7 @@
 & haddesenâ, an, an, an
 ^ «ما ظهر
 
-33364 | Vekî‘ → Süfyân → Simâk → Temîm b. Tarafe | Temîm b. Tarafe dedi ki: “Müslümanlar(ın düşmanı), Müslümanlardan bir adamın devesini ele geçirdi; onu düşmandan bir adam satın aldı (metinde böyle). Sahibi onunla Nebî’nin ﷺ huzurunda davalaştı ve delil getirdi. Nebî ﷺ, (adamın) onu düşmandan satın aldığı bedeli ona ödemesine, yoksa onunla deve arasını serbest bırakmasına hükmetti.”
+33364 | Vekî‘ → Süfyân → Simâk → Temîm b. Tarafe | Temîm b. Tarafe dedi ki: “Müslümanlar, Müslümanlardan bir adamın devesini ele geçirdi; onu düşmandan bir adam satın aldı (metinde böyle). Sahibi onunla Nebî’nin ﷺ huzurunda davalaştı ve delil getirdi. Nebî ﷺ, (adamın) onu düşmandan satın aldığı bedeli ona ödemesine, yoksa onunla deve arasını serbest bırakmasına hükmetti.”
 & haddesenâ, haddesenâ, an, an
 ^ «أصاب المسلمون
 
@@ -76,7 +76,7 @@
 & haddesenâ, an, an, an
 ^ سئلا عن الغزو
 
-33380 | Vekî‘ → Mâlik b. Miğvel → Talha b. Musarrif → Muhammed b. Abdurrahmân b. Yezîd en-Nehaî | Muhammed b. Abdurrahmân b. Yezîd en-Nehaî dedi ki: Babama: “Babacığım, Haccâc’ın emîrliğinde mi gazaya çıkıyorsun?” dedim. Şöyle dedi: “Oğulcağızım, Haccâc’a sizden daha çok buğzeden kavimlere yetiştim; onlar hiçbir hâlde cihadı bırakmazlardı. İnsanların cihad hakkındaki görüşü senin görüşün gibi olsaydı, haracı görmezdim (metinde böyle).” Itâveyi (haraç anlamında) kastediyordu.
+33380 | Vekî‘ → Mâlik b. Miğvel → Talha b. Musarrif → Muhammed b. Abdurrahmân b. Yezîd en-Nehaî | Muhammed b. Abdurrahmân b. Yezîd en-Nehaî dedi ki: Babama: “Babacığım, Haccâc’ın emîrliğinde mi gazaya çıkıyorsun?” dedim. Şöyle dedi: “Oğulcağızım, Haccâc’a sizden daha çok buğzeden kavimlere yetiştim; onlar hiçbir hâlde cihadı bırakmazlardı. İnsanların cihad hakkındaki görüşü senin görüşün gibi olsaydı, itâveyi görmezdim.” Bununla haracı kastediyordu.
 & haddesenâ, haddesenâ, an, an
 ^ قال: قلت لأبي
 
@@ -203,6 +203,6 @@
 
 @ Emanda ahde vefasızlık
 
-33408 | Vekî‘ b. el-Cerrâh → Şu‘be → Ebü’l-Feyd → Süleym b. Âmir → Amr b. Abese | Süleym b. Âmir dedi ki: Muâviye ile Rumlardan bir kavim arasında bir antlaşma vardı. Muâviye, (antlaşma süresi) bitince onlara baskın yapmak için onların topraklarında yürümeye çıktı. Bir de baktılar ki ordunun bir kenarında bir adam: “Vefa, ahde vefasızlık değil! Vefa, ahde vefasızlık değil!” diye sesleniyor. Bir de baktılar ki o, Amr b. Abese’dir. Dedi ki: Resûlullah’ı ﷺ şöyle derken işittim: “Kiminle bir kavim arasında bir antlaşma olursa, süresi geçinceye ya da onlara eşit şekilde (antlaşmayı bozduğunu) bildirinceye kadar antlaşmasını bozmasın ve onu çözmesin.”
+33408 | Vekî‘ b. el-Cerrâh → Şu‘be → Ebü’l-Feyd → Süleym b. Âmir → Amr b. Abese | Süleym b. Âmir dedi ki: Muâviye ile Rumlardan bir kavim arasında bir antlaşma vardı. Muâviye, onlar dağılsınlar da onlara baskın yapsın diye onların topraklarında yürümeye çıktı. Bir de baktılar ki ordunun bir kenarında bir adam: “Vefa, ahde vefasızlık değil! Vefa, ahde vefasızlık değil!” diye sesleniyor. Bir de baktılar ki o, Amr b. Abese’dir. Dedi ki: Resûlullah’ı ﷺ şöyle derken işittim: “Kiminle bir kavim arasında bir antlaşma olursa, süresi geçinceye ya da onlara eşit şekilde (antlaşmayı bozduğunu) bildirinceye kadar antlaşmasını bozmasın ve onu çözmesin.”
 & haddesenâ, haddesenâ, an, an, kâle
 ^ كان بين معاوية
