@@ -38,6 +38,7 @@ MUELLIF = {
     # Zührî kitaplığı: cüzü rivayet eden İbrâhîm el-Hemedânî'nin kitap başındaki rivayetleri onun adıyla; Zührî'nin metni senedsiz
     'zuhri': ('ez-Zührî', 'İbrâhîm b. el-Hüseyin el-Hemedânî'),
     'hemmam': 'Hemmâm b. Münebbih',
+    'ibnvehb': 'İbn Vehb',
 }
 # Müellifin metin içi notlarının Arapça ve Türkçe kalıbı (sayıları eşleşmeli)
 MUELLIF_NOT = {'sunan': (r'قال أبو داود', r'Ebû Dâvûd (?:dedi|der|şöyle)'),
@@ -77,6 +78,8 @@ ONEK = {
     # Fevâidü'l-Leys: kitabı rivayet eden nüsha zinciri (… → İbn Bükeyr / Îsâ b. Hammâd → الليث) düşülür, c[0] = Leys b. Sa‘d
     'leys': [(re.compile(r'^.*?(?:حدثني|حدثنا|ثنا|أخبرنا)\s+الليث(?:\s+بن\s+سعد)?' + _AY), None)],
     'zuhri': [(re.compile(r'^\s*وبه\s*[،,]?\s*'), None)],
+    # İbn Vehb: maddeler nüsha râvisinin “قال:” / “قال ابن وهب:” kaydıyla başlar
+    'ibnvehb': [(re.compile(r'^\s*(?:قال\s+ابن\s+وهب|قال)\s*[:،,]?\s*'), None)],
     'acurri': [(re.compile(r'^\s*(?:و?(?:حدثنا|ثنا|أخبرنا|أنا)\s+)(?:أبو بكر|محمد(?:\s+بن\s+الحسين)?)(?:\s+(?:بن\s+الحسين\s+)?الآجري)?' + _AY + r'(?=(?:و?(?:حدثنا|ثنا|أخبرنا|أنا|حدثني|أخبرني|قال)' + r'(?![ء-ي])))'), None)],
 }
 
