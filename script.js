@@ -2441,7 +2441,7 @@ function coverBtn(bk) {
    Âlimler ve kitapları SHELVES'ten derlenir; yeni kitap SHELVES'e eklenince kendiliğinden görünür. Yeni âlim gelirse ALIM_AR ve ALIM_INI'ye de yazılır.
    Son açılan âlim `zikrim-alim`'de; o âlimin kitabından geri dönülünce âlim sayfasına gelinir. */
 const ALIM_AR = {'İbn Ebî Şeybe': 'ابن أبي شيبة', 'Ahmed b. Hanbel': 'أحمد بن حنبل', 'el-Hallâl': 'الخلال', 'el-Berbehârî': 'البربهاري', 'el-Âcurrî': 'الآجري', 'eş-Şâfiî': 'الشافعي', 'el-Buhârî': 'البخاري', 'Ebû Dâvûd': 'أبو داود', 'Harb el-Kirmânî': 'حرب الكرماني', 'İbn Batta': 'ابن بطة'};
-const ALIM_INI = {'İbn Ebî Şeybe': 'ش', 'Ahmed b. Hanbel': 'أحمد', 'el-Hallâl': 'خ', 'el-Berbehârî': 'ب', 'el-Âcurrî': 'آ', 'eş-Şâfiî': 'شا', 'el-Buhârî': 'بخ', 'Ebû Dâvûd': 'د', 'Harb el-Kirmânî': 'حر', 'İbn Batta': 'بط'};
+const ALIM_INI = {'İbn Ebî Şeybe': 'ش', 'Ahmed b. Hanbel': 'أح', 'el-Hallâl': 'خ', 'el-Berbehârî': 'ب', 'el-Âcurrî': 'آ', 'eş-Şâfiî': 'شا', 'el-Buhârî': 'بخ', 'Ebû Dâvûd': 'د', 'Harb el-Kirmânî': 'حر', 'İbn Batta': 'بط'};
 let alimCur = store.get('zikrim-alim', '');
 let ALIMS = null;
 function alimList() {
@@ -2468,9 +2468,10 @@ function alimRow(al) {
   const b = el('button', 'alim-row');
   b.type = 'button';
   const txt = el('span', 'alim-txt');
-  txt.append(alimName(al), el('small', null, `${alimDates(al)} · ${al.books.length} kitap`));
+  // Arapça ad ayrı sütunda değil, Türkçe adın altında: dar ekranda “(رحمه الله)” alt satıra düşüp kart boyları farklılaşıyordu.
   const ar = el('span', 'alim-ar', al.ar); ar.lang = 'ar'; ar.dir = 'rtl';
-  b.append(alimAv(al, 'alim-av'), txt, ar, el('span', 'alim-chev', '›'));
+  txt.append(alimName(al), ar, el('small', null, `${alimDates(al)} · ${al.books.length} kitap`));
+  b.append(alimAv(al, 'alim-av'), txt, el('span', 'alim-chev', '›'));
   b.addEventListener('click', () => { alimCur = al.who; store.set('zikrim-alim', al.who); setView('alim'); });
   b.dataset.search = [al.who, al.ar, ...al.books.map(bk => bk.t + ' ' + bk.ar)].join(' ');
   return b;
