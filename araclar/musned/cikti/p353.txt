@@ -14,9 +14,9 @@
 & haddesenâ, haddesenâ, an, an
 ^ عن رسول الله
 
-6061 | Yûnus → Leys → Nâfi‘ | Nâfi‘’den: Abdullah, Resûlullah ﷺ zamanında hanımını hayızlı iken bir talakla boşadı. Ömer: “Ey Allah’ın Resûlü! Abdullah hanımını hayızlı iken bir talakla boşadı” dedi. “Resûlullah ﷺ ona, (hanımına) dönmesini ve temizleninceye kadar onu tutmasını, sonra yanında bir hayız daha görmesini, sonra hayzından temizleninceye kadar ona mühlet vermesini emretti. Eğer onu boşamak isterse, temizlendiği zaman onunla birleşmeden önce boşasın. İşte bu, Allah teâlânın kadınların kendisine göre boşanmasını emrettiği iddettir.” Abdullah’a bundan sorulduğunda onlardan birine şöyle derdi: “Sen hanımını bir ya da iki kez boşadıysan, şüphesiz Resûlullah ﷺ bana bunu emretti. Eğer onu üç (talakla) boşadıysan, senden başka bir kocayla evleninceye kadar sana haram olmuştur; hanımını boşaman hususunda sana emrettiği şeyde de Allah teâlâya isyan etmişsindir.”
-& haddesenâ, haddesenâ, an
-^ أن عبد الله طلق
+6061 | Yûnus → Leys → Nâfi‘ → Abdullah | Nâfi‘den: Abdullah, Resûlullah ﷺ zamanında hanımını hayızlı iken bir talakla boşadı. Ömer: “Ey Allah’ın Resûlü! Abdullah hanımını hayızlı iken bir talakla boşadı” dedi. “Resûlullah ﷺ ona, (hanımına) dönmesini ve temizleninceye kadar onu tutmasını, sonra yanında bir hayız daha görmesini, sonra hayzından temizleninceye kadar ona mühlet vermesini emretti. Eğer onu boşamak isterse, temizlendiği zaman onunla birleşmeden önce boşasın. İşte bu, Allah teâlânın kadınların kendisine göre boşanmasını emrettiği iddettir.” Abdullah’a bundan sorulduğunda onlardan birine şöyle derdi: “Sen hanımını bir ya da iki kez boşadıysan, şüphesiz Resûlullah ﷺ bana bunu emretti. Eğer onu üç (talakla) boşadıysan, senden başka bir kocayla evleninceye kadar sana haram olmuştur; hanımını boşaman hususunda sana emrettiği şeyde de Allah teâlâya isyan etmişsindir.”
+& haddesenâ, haddesenâ, an, enne
+^ طلق امرأته
 
 6062 | Yûnus → Leys → Nâfi‘ → Abdullah | Abdullah’tan, Resûlullah’tan ﷺ: Buyurdu ki: “Sizden biri adamı oturduğu yerden kaldırıp sonra oraya oturmasın.”
 & haddesenâ, haddesenâ, an, an
@@ -54,7 +54,7 @@
 & haddesenâ, haddesenâ, an, an, an
 ^ أن رسول الله
 
-6071 | Süleymân b. Hayyân Ebû Hâlid el-Ahmer → Ubeydullah (b. Ömer) → Nâfi‘ → İbn Ömer | İbn Ömer dedi ki: “Resûlullah’ı ﷺ bineği üzerinde namaz kılarken gördüm.” Nâfi‘’den de: İbn Ömer bineği üzerinde namaz kılardı.
+6071 | Süleymân b. Hayyân Ebû Hâlid el-Ahmer → Ubeydullah (b. Ömer) → Nâfi‘ → İbn Ömer | İbn Ömer dedi ki: “Resûlullah’ı ﷺ bineği üzerinde namaz kılarken gördüm.” Nâfi‘den de: İbn Ömer bineği üzerinde namaz kılardı.
 & haddesenâ, an, an, an
 ^ قال: " رأيت
 

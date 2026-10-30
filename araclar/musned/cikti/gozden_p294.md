@@ -1,0 +1,1 @@
+- Müsned 5006: Arapçada “فقال: نعم، كلا” (Evet, hayır) ifadesi soruya göre tutarsız görünüyor; birebir çevrildi, nüshaya bakılması iyi olur.
