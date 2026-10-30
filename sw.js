@@ -1,5 +1,5 @@
 // Güncelleme yaptığında bu sürüm adını artır
-const CACHE = 'zikrim-v261';
+const CACHE = 'zikrim-v262';
 // Büyük veri dosyaları (ara, ara-ar, akis, ravi; ≈70 MB açık) sürümsüz ayrı önbellekte durur: her yayında yeniden inmez,
 // yalnız sunucudaki ETag değişince (activate'te HEAD ile bakılır) hemen yeniden indirilir. Akış/Anasayfa (akis) ve râvi
 // sayfası (ravi) çevrimdışı da çalışsın diye WARM listesindekiler önbellekte yoksa activate'te indirilir; arama dosyaları
@@ -7,6 +7,10 @@ const CACHE = 'zikrim-v261';
 const DATA_CACHE = 'zikrim-data';
 const BIG = /\/(akis|ara|ara-ar|ravi)\.json$/;
 const WARM = ['./akis.json', './ravi.json'];
+// Kitap dosyaları (<kitaplık>/index.json, <kitaplık>/tr/*.json) da sürümsüz ayrı önbellekte durur. Eskiden sürümlü CACHE'teydi
+// ve her yayında silindiği için bir kez açılan kitap çevrimdışı açılmıyor, Akış'tan “kaydet / kitapta aç” çalışmıyordu.
+const BOOKS = 'zikrim-kitap';
+const BOOK = /\/[a-z]+\/(index\.json|tr\/[^/]+\.json)$/;
 const ASSETS = ['./', './index.html', './style.css', './fikih.js', './usul.js', './hadis.js', './ara-worker.js', './script.js', './manifest.webmanifest', './icon.svg', './apple-touch-icon.png', './icon-192.png', './icon-512.png', './fonts/amiri-400.woff2', './fonts/amiri-700.woff2'];
 
 // Depolama kotası dolduğunda cache.put fırlatır; önbelleğe yazılamasa da yanıt verilmeli.
@@ -49,10 +53,28 @@ async function dataCheck() {
   }
 }
 
+// Eski sürümlü önbelleklerde kalmış kitap dosyalarını silinmeden önce kalıcı kitap önbelleğine taşır (daha önce açılmış kitaplar kaybolmasın)
+async function bookMove(keys) {
+  try {
+    const dst = await caches.open(BOOKS);
+    for (const k of keys) {
+      if (k === CACHE || k === DATA_CACHE || k === BOOKS) continue;
+      const src = await caches.open(k);
+      for (const req of await src.keys()) {
+        if (!BOOK.test(new URL(req.url).pathname) || await dst.match(req, {ignoreSearch: true})) continue;
+        const res = await src.match(req);
+        if (res) await put(dst, req, res);
+      }
+    }
+  } catch {}
+  return keys;
+}
+
 self.addEventListener('activate', event => {
   event.waitUntil(
     caches.keys()
-      .then(keys => Promise.all(keys.filter(k => k !== CACHE && k !== DATA_CACHE).map(k => caches.delete(k))))
+      .then(bookMove)
+      .then(keys => Promise.all(keys.filter(k => k !== CACHE && k !== DATA_CACHE && k !== BOOKS).map(k => caches.delete(k))))
       .then(() => self.clients.claim())
       .then(dataCheck)
   );
@@ -63,7 +85,19 @@ self.addEventListener('fetch', event => {
   const req = event.request;
   if (req.method !== 'GET' || new URL(req.url).origin !== self.location.origin) return;
   const path = new URL(req.url).pathname;
-  // Kitap listeleri (index.json) ve günün rivayeti: önce ağ, çevrimdışıysa önbellek — yeni eklenen kitaplar hemen görünsün
+  // Kitap dosyaları: önbellekte varsa hemen oradan (arka planda yenilenir), yoksa ağdan indirilip yazılır.
+  // Kitap listesi (index.json) önce ağdan denenir ki yeni bölümler hemen görünsün; ağ yoksa önbellekten.
+  if (BOOK.test(path)) {
+    event.respondWith(caches.open(BOOKS).then(async cache => {
+      const hit = await cache.match(req, {ignoreSearch: true});
+      const network = fetch(req).then(res => { if (res && res.ok) event.waitUntil(put(cache, req, res.clone())); return res; });
+      if (/\/index\.json$/.test(path)) return network.catch(() => hit || Response.error());
+      event.waitUntil(network.catch(() => {}));
+      return hit || network.catch(() => Response.error());
+    }));
+    return;
+  }
+  // Ana dizindeki index.json ve günün rivayeti: önce ağ, çevrimdışıysa önbellek — yeni eklenen kitaplar hemen görünsün
   if (/\/(index|gunun)\.json$/.test(path)) {
     event.respondWith(caches.open(CACHE).then(cache => fetch(req).then(res => { if (res && res.ok) event.waitUntil(put(cache, req, res.clone())); return res; })
       .catch(async () => (await cache.match(req, {ignoreSearch: true})) || Response.error())));

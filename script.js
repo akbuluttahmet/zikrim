@@ -1180,7 +1180,7 @@ async function renderLib(L) {
     }
   } catch (e) {
     if (token !== L.token) return;
-    wrap.replaceChildren(el('p', 'empty', `${L.err} yüklenemedi. İnternet bağlantını kontrol edip tekrar dene (bir kez açılan bölümler sonra çevrimdışı da açılır).`));
+    wrap.replaceChildren(el('p', 'empty', `${L.err} yüklenemedi. İnternet bağlantını kontrol edip tekrar dene (bir kez açılan bölümler sonra çevrimdışı da açılır; hepsini önceden indirmek için Ayarlar → Kitapları çevrimdışı indir).`));
   }
   if (token === L.token && view === L.view) applyFilter();
 }
@@ -1793,17 +1793,26 @@ function dailyRandom() {
 }
 // Havuzdaki bir rivayetin kayıt anahtarı ve kaydet/çıkar işlemi (ana sayfa kartı ve akış ortak kullanır)
 const pickKey = ({v, b, n}) => v + ':' + (LIBS[v].bookKey ? b + ':' : '') + n;
-async function toggleSavePick({v, b, n}) {
-  const k = pickKey({v, b, n});
+// Kaydın tam hâli (Arapça, râvi paneli) kitap dosyasından alınır.
+async function pickFull({v, b, n}) {
+  const L = LIBS[v]; L.idx = L.idx || await libFetch(L, 'index.json');
+  const meta = L.idx[b]; const data = await libFetch(L, 'tr/' + meta.f);
+  for (const bb of data.babs) { const h = bb.h.find(x => x[0] === n); if (h) return {h, title: meta.tr}; }
+  return null;
+}
+async function toggleSavePick(p) {
+  const {v, b, n} = p;
+  const k = pickKey(p);
   if (isSaved(k)) RD.saved = RD.saved.filter(x => x.k !== k);
   else {
-    try {
-      const L = LIBS[v]; L.idx = L.idx || await libFetch(L, 'index.json');
-      const meta = L.idx[b]; const data = await libFetch(L, 'tr/' + meta.f);
-      let h = null; for (const bb of data.babs) { h = bb.h.find(x => x[0] === n); if (h) break; }
-      if (!h) return false;
-      RD.saved.unshift({k, at: Date.now(), v, b, h, title: meta.tr});
-    } catch (e) { toast('Kaydedilemedi; internet bağlantını kontrol et'); return false; }
+    let full = null;
+    try { full = await pickFull(p); } catch (e) {}
+    if (full) RD.saved.unshift({k, at: Date.now(), v, b, h: full.h, title: full.title});
+    else if (p.t) {
+      // Kitap dosyası inmemiş (çevrimdışı): Akış havuzundaki Türkçe metin ve senedle kaydedilir; internet gelince kayıt tamamlanır (savedFill)
+      const books = AKIS && AKIS[v] && AKIS[v].books;
+      RD.saved.unshift({k, at: Date.now(), v, b, h: [n, p.s || '', p.t], title: (books && books[b]) || '', lite: true});
+    } else { toast('Kaydedilemedi; internet bağlantını kontrol et'); return false; }
     toast('Kaydettiklerime eklendi', {label: 'Koleksiyona ekle', run: () => colOpen(k)});
   }
   store.set('zikrim-saved', RD.saved);
@@ -2545,7 +2554,25 @@ function coverProgress(bk, fill, pct) {
   };
   if (L.idx) go(L.idx); else libFetch(L, 'index.json').then(x => { L.idx = x; go(x); }).catch(() => { pct.textContent = ''; });
 }
+// Çevrimdışıyken kısa hâliyle kaydedilenleri (lite) internet varken kitap dosyasından tamamlar
+let savedFilling = false;
+async function savedFill() {
+  if (savedFilling || !navigator.onLine || !RD.saved.some(x => x.lite)) return;
+  savedFilling = true;
+  let changed = false;
+  for (const x of RD.saved.filter(y => y.lite && LIBS[y.v])) {
+    try {
+      const full = await pickFull({v: x.v, b: x.b, n: x.h[0]});
+      if (full) { x.h = full.h; x.title = full.title || x.title; delete x.lite; changed = true; }
+    } catch (e) { break; }
+  }
+  savedFilling = false;
+  if (changed) { store.set('zikrim-saved', RD.saved); if (view === 'kaydedilen') renderCards(); }
+}
+addEventListener('online', savedFill);
+setTimeout(savedFill, 3000);
 function renderSaved() {
+  savedFill();
   const head = el('div', 'mus-head');
   if (RD.colFilter && !RD.cols.includes(RD.colFilter)) RD.colFilter = '';
   const items = RD.colFilter ? RD.saved.filter(x => (x.c || []).includes(RD.colFilter)) : RD.saved;
@@ -3702,6 +3729,33 @@ function backupExtras() {
   }
   return ek;
 }
+// Bütün kitap dosyalarını önceden indirir; service worker bunları kalıcı kitap önbelleğine (zikrim-kitap) yazar
+$('#offlineBooks').addEventListener('click', async () => {
+  const btn = $('#offlineBooks'), info = $('#offlineInfo');
+  if (btn.disabled) return;
+  if (!navigator.onLine) { info.textContent = 'İnternet yok; bağlanınca tekrar dene.'; return; }
+  btn.disabled = true;
+  try { if (navigator.storage && navigator.storage.persist) await navigator.storage.persist(); } catch (e) {}
+  const files = [];
+  try {
+    for (const L of Object.values(LIBS)) {
+      L.idx = L.idx || await libFetch(L, 'index.json');
+      for (const m of L.idx) if (m && m.f) files.push(L.base + 'tr/' + m.f);
+    }
+  } catch (e) { info.textContent = 'Kitap listesi alınamadı; internet bağlantını kontrol et.'; btn.disabled = false; return; }
+  let done = 0, fail = 0, i = 0;
+  const one = async () => {
+    while (i < files.length) {
+      const u = files[i++];
+      try { const r = await fetch(u); if (!r.ok) throw 0; await r.arrayBuffer(); } catch (e) { fail++; }
+      done++; info.textContent = `İndiriliyor… ${done} / ${files.length}`;
+    }
+  };
+  await Promise.all([one(), one(), one(), one()]);
+  info.textContent = fail ? `${files.length - fail} dosya indi, ${fail} dosya inmedi; tekrar dokunarak tamamla.` : 'Bütün kitaplar indi; artık internetsiz de açılır.';
+  btn.disabled = false;
+  savedFill();
+});
 $('#exportData').addEventListener('click', async () => {
   const name = `sekine-yedek-${today}.json`;
   const blob = new Blob([JSON.stringify(Object.assign({}, S, {_yedek: 2, _tarih: new Date().toISOString(), _ek: backupExtras()}), null, 2)], {type: 'application/json'});
