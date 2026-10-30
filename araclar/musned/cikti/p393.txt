@@ -5,6 +5,7 @@
 6766 | Muhammed b. Ca‘fer → Şu‘be → Habîb → Ebü’l-Abbâs → Abdullah b. Amr; ayrıca Ravh → Şu‘be → Habîb b. Ebî Sâbit → Ebü’l-Abbâs eş-Şâir → Abdullah b. Amr | Abdullah b. Amr dedi ki: Resûlullah ﷺ şöyle buyurdu: “Ey Abdullah b. Amr! Sen bütün zamanı oruçla geçiriyorsun. Bütün zamanı oruçla geçirir ve geceleri namaz kılarsan bunun için göz çöker, nefis de bitkin düşer. Ebediyen oruç tutan oruç tutmuş olmaz. Aydan üç gün oruç tut; (bu) bütün zamanın orucudur.” Dedi ki: “Ben (daha fazlasına) güç yetiririm” dedim. Buyurdu ki: “Dâvûd’un orucunu tut; o bir gün oruç tutar, bir gün iftar ederdi. (Düşmanla) karşılaştığında da kaçmazdı.” Ravh ise: “nehisat lehü’n-nefs (nefis bunun için bitkin düşer)” dedi.
 & haddesenâ, haddesenâ, an, an, an; haddesenâ, haddesenâ, semi‘tü, semi‘tü, an
 % Ebü’l-Abbâs eş-Şâir, doğru sözlüydü.
+% Muhammed b. Ca‘fer’in yolunda: “Abdullah b. Amr’dan: Resûlullah ﷺ …”
 ^ قال: قال رسول الله صلى الله عليه وسلم: " يا
 
 6767 | Muhammed b. Ca‘fer → Şu‘be → Süleymân → Ebû Vâil → Mesrûk → Abdullah b. Amr | Abdullah b. Amr’dan, Nebî’den ﷺ, buyurdu ki: “Kur’ân’ı dört kişiden okumayı isteyin: Abdullah b. Mes‘ûd’dan, Ebû Huzeyfe’nin mevlâsı Sâlim’den, Muâz b. Cebel’den ve Übey b. Ka‘b’dan.” Dedi ki: (Abdullah b. Amr) dedi ki: “Resûlullah ﷺ ne çirkin söz söyleyen ne de çirkin sözü kendine huy edinen biriydi.” Dedi ki: Resûlullah ﷺ şöyle buyurdu: “Şüphesiz bana en sevimli olanınız, ahlâkça en güzel olanınızdır.”
@@ -44,9 +45,8 @@
 & haddesenâ, haddesenâ, an, an, an
 ^ أنه سأل
 
-6776 | İshâk b. Yûsuf → Süfyân → Hasan b. Amr → İbn Müslim → Abdullah b. Amr | Abdullah b. Amr’dan, Nebî’den ﷺ, buyurdu ki: “Ümmetimin, içlerinden zalime ‘Sen zalimsin’ demediklerini gördüğünde, artık onlardan (ümit) kesilmiştir.”
+6776 | İshâk b. Yûsuf → Süfyân → Hasan b. Amr → İbn Müslim → Abdullah b. Amr | Abdullah b. Amr’dan, Nebî’den ﷺ, buyurdu ki: “Ümmetimin, içlerinden zalime ‘Sen zalimsin’ demediklerini gördüğünde, artık onlardan (ümit) kesilmiştir.” [Abdullah b. Ahmed dedi ki:] (Bu hadis) babamın kitabında “Hasan b. Müslim’den” (şeklinde) idi; (babam) “Hasan”ın üzerini çizdi ve “İbn Müslim’den” dedi. O ancak Muhammed b. Müslim Ebü’z-Zübeyr’dir; Ezrak hata etti.
 & haddesenâ, haddesenâ, an, an, an
-% [Abdullah b. Ahmed dedi ki:] Babamın kitabında “Hasan b. Müslim’den” idi; “Hasan”ın üzerini çizdi ve “İbn Müslim’den” dedi. O ancak Muhammed b. Müslim Ebü’z-Zübeyr’dir; Ezrak hata etti.
 ^ عن النبي صلى الله عليه وسلم قال إذا
 
 6777 | Haccâc b. Muhammed → İbn Lehîa → Râşid b. Yahyâ → Ebû Abdurrahmân el-Hubulî → İbn Amr | İbn Amr dedi ki: “Ey Allah’ın Resûlü! Zikir meclislerinin ganimeti nedir?” dedim. Buyurdu ki: “Zikir meclislerinin ganimeti cennettir.”

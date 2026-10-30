@@ -1,0 +1,3 @@
+- Müsned 6768: Senedin ortasında "[قال عبد الله بن أحمد]: قال أبي، وابن نمير، قال: أخبرنا الأعمش" — ikinci yol İbn Numeyr → A‘meş olarak yazıldı, Ahmed'in İbn Numeyr'den aldığı lafız Arapçada olmadığı için sîga `kâle`; Ahmet baksın.
+- Müsned 6776: Arapçada harekesiz ve noktalamasız; Abdullah b. Ahmed'in senede dair notu (Hasan b. Müslim / İbn Müslim = Ebü'z-Zübeyr) metnin sonunda çevrildi.
+- Müsned 6779: Nüshada yalnız "حدثنا عبد الملك بن عمرو، قال: لعن رسول الله…" — senedin geri kalanı yok (önceki hadisin senedine atıf olabilir); sened yalnız Abdülmelik b. Amr yazıldı.
