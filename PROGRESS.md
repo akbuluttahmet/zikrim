@@ -73,6 +73,8 @@ Hepsi: `python3 araclar/dogrula.py <kitaplık> --hepsi`. Sayılar yukarıdaki ta
 
 ## Günlük
 
+- 2026-10-30 — Lâlekâî I. cüz, dört düzeltme: 61’de soruyu cevaplayan baba `kâle` ile durur (metin Mu‘temir’le başlar); 249’da kendi cevabını anlatan Abdürrezzâk’tır, İbrâhîm zincire girmez; 36’da «ولها» “ilgisini kesmesi” (metin bozuk değil); 102 ve 311 “Ebû Zur‘a”. Son halka, isnad sonundaki ada göre mekanik eklenmez: anlatıda sözün kaynağı (cevaplayan ya da kendi yaptığını anlatan) ayırt edilir.
+
 - 2026-10-30 — el-Lâlekâî I. cüz düzeltmesi (335 madde). Sened: sözü söyleyen zincirin sonuna alındı (17, 22, 23, 24, 29, 33, 36, 158, 225, 249, 254, 286, 315); 61’den yanlış “babası” halkası çıktı; metin başı 128, 159, 196, 198, 303. 296.1 → 297, 310’dan 311 ayrıldı, 181 tahvîl. 41, 135, 277 nüshada yok. `dogrula.py`: `أنبا` = enbe’enâ; Lâlekâî uyarı 65 → 40 (sîga 25 → 1), diğer kitaplıklar aynı (0 hata).
 
 - 2026-10-30 — el-Lâlekâî: Şerhu usûli i‘tikâdi Ehli’s-sünne (Şâmile 9200, Gâmidî, Dâru Taybe, 8. baskı; OpenITI 0418…9200) kitaplığı açıldı. Mukaddime ve I. cüz (l01–l08, 334 madde) çevrildi. l09–l38 index’te `t: 0`; Kerâmâtü’l-evliyâ numaraları 1’den yeniden başlar, bölüm adları “Kerâmât:” iledir. `ONEK` yok (her madde kendi `أخبرنا`sıyla başlar). `dogrula.py`: 0 hata, 65 uyarı (sîga uyarılarının çoğu `أنبا`nın sayılmamasından; 97 ve 158/226 tahvîlde yanlış alarm). Şüpheli yerler `GOZDEN.md`.
