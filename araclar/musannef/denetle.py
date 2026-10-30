@@ -10,7 +10,7 @@ SIGALAR = {
     'haddesenâ', 'haddesenî', 'ahberanâ', 'ahberanî', 'enbe’enâ',
     'semi‘tü', 'semi‘a', 'an', 'enne', 'kâle',
     'haddesehû', 'haddesehüm', 'ahberahû', 'ahberahüm',
-    'kara’tü', 'kurie', 'unbi’tü', 'ketebe ileyye',
+    'kara’tü', 'kurie', 'unbi’tü', 'ketebe ileyye', 'vecedtü',
 }
 SALAVAT = re.compile(r'صلى الله عليه وسلم|صلى الله عليه وآله وسلم|صلى عليه وسلم')
 BIRINCI_SAHIS = re.compile(r'(?:^|→\s*)(?:babam|dedem|amcam|annem|kardeşim|dayım|halam|ninem)\b')
