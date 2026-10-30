@@ -10,9 +10,8 @@
 & haddesenî, haddesenâ, haddesenâ, an, an, an
 ^ أنه بعث عامل
 
-1285 | Hüseyin b. Ali → Zâide → Simâk → Haneş → Ali | Ali dedi ki: Resûlullah ﷺ bana şöyle buyurdu: “Sana iki adam muhakeme olmak için gelirse, öbürünün ne dediğini işitmedikçe birincisi lehine hüküm verme; çünkü (o zaman) nasıl hüküm vereceğini göreceksin.”
-& haddesenâ, an, an, an, an
-% Ve bana Ebû Bekir b. Ebî Şeybe (de) rivayet etti; ikisi dediler ki: Bize Hüseyin b. Ali rivayet etti.
+1285 | babası ve Ebû Bekir b. Ebî Şeybe → Hüseyin b. Ali → Zâide → Simâk → Haneş → Ali | Ali dedi ki: Resûlullah ﷺ bana şöyle buyurdu: “Sana iki adam muhakeme olmak için gelirse, öbürünün ne dediğini işitmedikçe birincisi lehine hüküm verme; çünkü (o zaman) nasıl hüküm vereceğini göreceksin.”
+& haddesenî, haddesenâ, an, an, an, an
 ^ قال: قال لي رسول
 
 1286 | Osman b. Ebî Şeybe → Şerîk → Ebü’l-Hasnâ → Hakem → Haneş → Ali | Haneş dedi ki: Ali’yi (radıyallâhu anh) iki koç kurban ederken gördüm. Ona: “Bu nedir?” dedim. Dedi ki: “Resûlullah ﷺ bana, onun adına kurban etmemi vasiyet etti.”
