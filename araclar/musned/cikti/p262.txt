@@ -46,9 +46,9 @@
 & haddesenâ, haddesenâ, an, an, an, an
 ^ قال: قالت أم
 
-4442 | Muhammed b. İdrîs eş-Şâfiî → Saîd b. Sâlim (el-Kaddâh) → İbn Cüreyc → İsmâîl b. Ümeyye → Abdülmelik b. Umeyr → Ebû Ubeyde b. Abdullah b. Mes‘ûd → Abdullah b. Mes‘ûd | Abdülmelik b. Umeyr dedi ki: Ebû Ubeyde b. Abdullah b. Mes‘ûd’un yanında bulundum; ona bir malı alıp satmış iki adam geldi. Bu: “Şu şu fiyata aldım” dedi; öteki de: “Şu şu fiyata sattım” dedi. Ebû Ubeyde dedi ki: Abdullah b. Mes‘ûd’a böyle bir (dava) getirildi; şöyle dedi: Resûlullah’ın ﷺ yanında bulundum, ona böyle bir (dava) getirildi; “satıcıya yemin ettirilmesini, sonra alıcının muhayyer bırakılmasını emretti: Dilerse alır, dilerse bırakır.” (Abdullah dedi ki:) Babama okudum; dedi ki: Hişâm b. Yûsuf’tan bana haber verildi ki, alışveriş yapan iki kişi hakkında, İbn Cüreyc’in İsmâîl b. Ümeyye’den rivayet ettiği hadiste “Abdülmelik b. Ubeyde’den” (dedi). Babam dedi ki: Haccâc el-A‘ver “Abdülmelik b. Ubeyd” dedi.
-& haddesenî, ahberanâ, ahberanâ, enne, an, kâle, kâle
-% Abdullah: “Babama buradan okudum, o da bunu ikrar etti.”
+4442 | babası → Muhammed b. İdrîs eş-Şâfiî → Saîd b. Sâlim (el-Kaddâh) → İbn Cüreyc → İsmâîl b. Ümeyye → Abdülmelik b. Umeyr → Ebû Ubeyde b. Abdullah b. Mes‘ûd → Abdullah b. Mes‘ûd | Abdülmelik b. Umeyr dedi ki: Ebû Ubeyde b. Abdullah b. Mes‘ûd’un yanında bulundum; ona bir malı alıp satmış iki adam geldi. Bu: “Şu şu fiyata aldım” dedi; öteki de: “Şu şu fiyata sattım” dedi. Ebû Ubeyde dedi ki: Abdullah b. Mes‘ûd’a böyle bir (dava) getirildi; şöyle dedi: Resûlullah’ın ﷺ yanında bulundum, ona böyle bir (dava) getirildi; “satıcıya yemin ettirilmesini, sonra alıcının muhayyer bırakılmasını emretti: Dilerse alır, dilerse bırakır.” (Abdullah dedi ki:) Babama okudum; dedi ki: Hişâm b. Yûsuf’tan bana haber verildi ki, alışveriş yapan iki kişi hakkında, İbn Cüreyc’in İsmâîl b. Ümeyye’den rivayet ettiği hadiste “Abdülmelik b. Ubeyde’den” (dedi). Babam dedi ki: Haccâc el-A‘ver “Abdülmelik b. Ubeyd” dedi.
+& kara’tü, haddesenî, ahberanâ, ahberanâ, enne, an, kâle, kâle
+% Buradan okudum, o da bunu ikrar etti.
 % Saîd b. Sâlim için: “el-Kaddâh’ı kastediyor.”
 ^ أنه قال: حضرت
 
@@ -56,22 +56,18 @@
 & haddesenâ, ahberanâ, an, an
 ^ وليس فيه
 
-4444 | Yahyâ b. Saîd → İbn Aclân → Avn b. Abdullah → İbn Mes‘ûd | İbn Mes‘ûd dedi ki: Resûlullah’ı ﷺ şöyle buyururken işittim: “Alışveriş yapan iki kişi ihtilaf ettiğinde söz, satıcının dediğidir; alıcı da muhayyerdir.”
-& haddesenâ, an, haddesenî, an
-% Abdullah: “Babama okudum.”
+4444 | babası → Yahyâ b. Saîd → İbn Aclân → Avn b. Abdullah → İbn Mes‘ûd | İbn Mes‘ûd dedi ki: Resûlullah’ı ﷺ şöyle buyururken işittim: “Alışveriş yapan iki kişi ihtilaf ettiğinde söz, satıcının dediğidir; alıcı da muhayyerdir.”
+& kara’tü, haddesenâ, an, haddesenî, an
 ^ قال: سمعت رسول
 
-4445 | Vekî‘ → Mes‘ûdî → Kâsım → Abdullah b. Mes‘ûd | Abdullah b. Mes‘ûd dedi ki: Resûlullah ﷺ şöyle buyurdu: “Alışveriş yapan iki kişi ihtilaf eder ve aralarında bir delil bulunmazsa söz, malın sahibinin dediğidir; ya da (alışverişi) karşılıklı geri çevirirler.”
-& haddesenâ, an, an, an
-% Abdullah: “Babama okudum.”
+4445 | babası → Vekî‘ → Mes‘ûdî → Kâsım → Abdullah b. Mes‘ûd | Abdullah b. Mes‘ûd dedi ki: Resûlullah ﷺ şöyle buyurdu: “Alışveriş yapan iki kişi ihtilaf eder ve aralarında bir delil bulunmazsa söz, malın sahibinin dediğidir; ya da (alışverişi) karşılıklı geri çevirirler.”
+& kara’tü, haddesenâ, an, an, an
 ^ قال: قال رسول
 
-4446 | İbn Mehdî → Süfyân → Ma‘n → Kâsım → Abdullah | Abdullah’tan, Nebî’den ﷺ, buyurdu ki: “Alışveriş yapan iki kişi ihtilaf eder ve mal olduğu gibi duruyorsa söz, satıcının dediğidir; ya da (alışverişi) karşılıklı geri çevirirler.”
-& haddesenâ, haddesenâ, an, an, an
-% Abdullah: “Babama okudum.”
+4446 | babası → İbn Mehdî → Süfyân → Ma‘n → Kâsım → Abdullah | Abdullah’tan, Nebî’den ﷺ, buyurdu ki: “Alışveriş yapan iki kişi ihtilaf eder ve mal olduğu gibi duruyorsa söz, satıcının dediğidir; ya da (alışverişi) karşılıklı geri çevirirler.”
+& kara’tü, haddesenâ, haddesenâ, an, an, an
 ^ عن النبي
 
-4447 | Ömer b. Sa‘d Ebû Dâvûd → Süfyân → Ma‘n → Kâsım → Abdullah | Kâsım dedi ki: Abdullah ile Eş‘as ihtilaf ettiler. Biri: “Bu on (dirheme)” dedi; öteki: “Bu yirmi (dirheme)” dedi. (Eş‘as): “Benimle senin aranda bir adamı (hakem) kıl” dedi. (Abdullah) dedi ki: “Benimle kendin arasında sen (hakem) ol.” (Sonra) dedi ki: “Resûlullah’ın ﷺ hükmettiği şeyle hükmediyorum: ‘Alışveriş yapan iki kişi ihtilaf eder ve bir delil bulunmazsa söz, satıcının sözüdür; ya da alışverişi karşılıklı geri çevirirler.’” Abdullah b. Mes‘ûd’un (radıyallâhu anh) Müsnedi’nin sonu.
-& haddesenâ, haddesenâ, an, an, kâle
-% Abdullah: “Babama okudum.”
+4447 | babası → Ömer b. Sa‘d Ebû Dâvûd → Süfyân → Ma‘n → Kâsım → Abdullah | Kâsım dedi ki: Abdullah ile Eş‘as ihtilaf ettiler. Biri: “Bu on (dirheme)” dedi; öteki: “Bu yirmi (dirheme)” dedi. (Eş‘as): “Benimle senin aranda bir adamı (hakem) kıl” dedi. (Abdullah) dedi ki: “Benimle kendin arasında sen (hakem) ol.” (Sonra) dedi ki: “Resûlullah’ın ﷺ hükmettiği şeyle hükmediyorum: ‘Alışveriş yapan iki kişi ihtilaf eder ve bir delil bulunmazsa söz, satıcının sözüdür; ya da alışverişi karşılıklı geri çevirirler.’” Abdullah b. Mes‘ûd’un (radıyallâhu anh) Müsnedi’nin sonu.
+& kara’tü, haddesenâ, haddesenâ, an, an, kâle
 ^ قال: اختلف
