@@ -76,7 +76,8 @@ ilk_bab = sec[0]['bab_ar']
 out = []
 for x in sec:
     b = meta['tr'] if x['bab_ar'] == ilk_bab else x['bab_ar']
-    out.append({'n': x['n'], 'bab': b, 'ziyade': x['ziyade'], 'ar': temizle(x['ar'])})
+    # neşirde yalnız numara ve noktalar olan (metni bulunmayan) maddeler: Arapça '…'
+    out.append({'n': x['n'], 'bab': b, 'ziyade': x['ziyade'], 'ar': temizle(x['ar']) or '…'})
 
 S = json.loads((D / 'kaynak.json').read_text(encoding='utf-8'))
 while len(S) < si:
