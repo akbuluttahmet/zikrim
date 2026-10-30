@@ -1,0 +1,458 @@
+[
+ {
+  "g": [
+   "I. cüz"
+  ],
+  "f": "l01.json",
+  "tr": "Mukaddime ve sünnette imamlıkla tanınanlar",
+  "n": 11,
+  "from": 0,
+  "to": 0.8,
+  "t": 11,
+  "b": 2
+ },
+ {
+  "g": [
+   "I. cüz"
+  ],
+  "f": "l02.json",
+  "tr": "Sünneti korumanın sevabı",
+  "n": 62,
+  "from": 1,
+  "to": 63,
+  "t": 62,
+  "b": 1
+ },
+ {
+  "g": [
+   "I. cüz"
+  ],
+  "f": "l03.json",
+  "tr": "İttibâ âyetleri",
+  "n": 15,
+  "from": 64,
+  "to": 78,
+  "t": 15,
+  "b": 1
+ },
+ {
+  "g": [
+   "I. cüz"
+  ],
+  "f": "l04.json",
+  "tr": "Kitaba ve sünnete sarılmak",
+  "n": 58,
+  "from": 79,
+  "to": 137,
+  "t": 58,
+  "b": 1
+ },
+ {
+  "g": [
+   "I. cüz"
+  ],
+  "f": "l05.json",
+  "tr": "Cemaat ve sevâd-ı a‘zam",
+  "n": 38,
+  "from": 138,
+  "to": 175,
+  "t": 38,
+  "b": 1
+ },
+ {
+  "g": [
+   "I. cüz"
+  ],
+  "f": "l06.json",
+  "tr": "Bid‘at ehliyle münazara yasağı",
+  "n": 136,
+  "from": 176,
+  "to": 313,
+  "t": 136,
+  "b": 1
+ },
+ {
+  "g": [
+   "I. cüz"
+  ],
+  "f": "l07.json",
+  "tr": "Selef itikadı: Süfyân’dan Buhârî’ye",
+  "n": 9,
+  "from": 314,
+  "to": 320,
+  "t": 9,
+  "b": 7
+ },
+ {
+  "g": [
+   "I. cüz"
+  ],
+  "f": "l08.json",
+  "tr": "Selef itikadı: Ebû Zur‘a’dan Taberî’ye",
+  "n": 5,
+  "from": 321,
+  "to": 325,
+  "t": 5,
+  "b": 3
+ },
+ {
+  "g": [
+   "II. cüz"
+  ],
+  "f": "l09.json",
+  "tr": "Tevhid: Allah’ın birlenmesi, sıfatları ve isimleri",
+  "n": 24,
+  "from": 327,
+  "to": 353,
+  "t": 0,
+  "b": 1
+ },
+ {
+  "g": [
+   "II. cüz"
+  ],
+  "f": "l10.json",
+  "tr": "Kur’ân: Allah’ın kelâmı olduğu ve mahlûk olmadığı",
+  "n": 131,
+  "from": 354,
+  "to": 520,
+  "t": 0,
+  "b": 1
+ },
+ {
+  "g": [
+   "II. cüz"
+  ],
+  "f": "l11.json",
+  "tr": "Kur’ân: Kur’ân hakkında tevakkuf edenin tekfiri",
+  "n": 19,
+  "from": 521,
+  "to": 544,
+  "t": 0,
+  "b": 1
+ },
+ {
+  "g": [
+   "II. cüz"
+  ],
+  "f": "l12.json",
+  "tr": "Kur’ân: Allah’ın onu hakikaten söylediği",
+  "n": 61,
+  "from": 545,
+  "to": 614,
+  "t": 0,
+  "b": 1
+ },
+ {
+  "g": [
+   "II. cüz"
+  ],
+  "f": "l13.json",
+  "tr": "Kur’ân: Rüyada görülmesi ve mahlûk diyenlerin kötü rüyası",
+  "n": 14,
+  "from": 615,
+  "to": 629,
+  "t": 0,
+  "b": 1
+ },
+ {
+  "g": [
+   "III. cüz"
+  ],
+  "f": "l14.json",
+  "tr": "Kur’ân: Mahlûk sözünün çıkışı ve Ca‘d b. Dirhem",
+  "n": 45,
+  "from": 630,
+  "to": 676,
+  "t": 0,
+  "b": 1
+ },
+ {
+  "g": [
+   "III. cüz"
+  ],
+  "f": "l15.json",
+  "tr": "Sıfatlar: İlim, işitme, görme ve kudret",
+  "n": 126,
+  "from": 677,
+  "to": 813,
+  "t": 0,
+  "b": 1
+ },
+ {
+  "g": [
+   "III. cüz"
+  ],
+  "f": "l16.json",
+  "tr": "Sıfatlar: Mü’minlerin Rabbi görmesi",
+  "n": 85,
+  "from": 814,
+  "to": 908,
+  "t": 0,
+  "b": 1
+ },
+ {
+  "g": [
+   "III. cüz"
+  ],
+  "f": "l17.json",
+  "tr": "Sıfatlar: Nebî’nin ﷺ Rabbi kalbiyle görmesi",
+  "n": 21,
+  "from": 909,
+  "to": 930,
+  "t": 0,
+  "b": 1
+ },
+ {
+  "g": [
+   "III. cüz"
+  ],
+  "f": "l18.json",
+  "tr": "Sıfatlar: Müşebbihenin tekfiri ve fücûr-takvâ âyeti",
+  "n": 87,
+  "from": 931,
+  "to": 1021,
+  "t": 0,
+  "b": 1
+ },
+ {
+  "g": [
+   "IV. cüz"
+  ],
+  "f": "l19.json",
+  "tr": "Kader: İlham âyetinden kadere",
+  "n": 87,
+  "from": 1023,
+  "to": 1112,
+  "t": 0,
+  "b": 1
+ },
+ {
+  "g": [
+   "IV. cüz"
+  ],
+  "f": "l20.json",
+  "tr": "Kader: Kadere iman, Kaderiyye ve onlardan uzak durmak",
+  "n": 273,
+  "from": 1113,
+  "to": 1398,
+  "t": 0,
+  "b": 1
+ },
+ {
+  "g": [
+   "IV. cüz"
+  ],
+  "f": "l21.json",
+  "tr": "Nübüvvet: Ba‘s, vahiy, faziletler ve mûcizeler",
+  "n": 85,
+  "from": 1399,
+  "to": 1487,
+  "t": 0,
+  "b": 1
+ },
+ {
+  "g": [
+   "IV. cüz"
+  ],
+  "f": "l22.json",
+  "tr": "Îmân: Direkleri; dil, kalp ve azalar",
+  "n": 97,
+  "from": 1488,
+  "to": 1590,
+  "t": 0,
+  "b": 1
+ },
+ {
+  "g": [
+   "V. cüz"
+  ],
+  "f": "l23.json",
+  "tr": "Îmân: Şubeleri ve sayılan hasletler",
+  "n": 204,
+  "from": 1592,
+  "to": 1798,
+  "t": 0,
+  "b": 1
+ },
+ {
+  "g": [
+   "V. cüz"
+  ],
+  "f": "l24.json",
+  "tr": "Îmân: Mürcie’nin dalâleti ve ircânın çıkışı",
+  "n": 53,
+  "from": 1799,
+  "to": 1853,
+  "t": 0,
+  "b": 1
+ },
+ {
+  "g": [
+   "VI. cüz"
+  ],
+  "f": "l25.json",
+  "tr": "Îmân: Îmân bir övgüdür, büyük günahlar ve tövbe",
+  "n": 115,
+  "from": 1854,
+  "to": 1968,
+  "t": 0,
+  "b": 1
+ },
+ {
+  "g": [
+   "VI. cüz"
+  ],
+  "f": "l26.json",
+  "tr": "Âhiret: Büyük günahlar, şefaat ve makām-ı mahmûd",
+  "n": 126,
+  "from": 1969,
+  "to": 2098,
+  "t": 0,
+  "b": 1
+ },
+ {
+  "g": [
+   "VI. cüz"
+  ],
+  "f": "l27.json",
+  "tr": "Âhiret: Havz, kabir azabı ve ruhlar",
+  "n": 80,
+  "from": 2099,
+  "to": 2179,
+  "t": 0,
+  "b": 1
+ },
+ {
+  "g": [
+   "VI. cüz"
+  ],
+  "f": "l28.json",
+  "tr": "Âhiret: Cennet, cehennem, mîzan, sırat, rahmet ve rüzgâr",
+  "n": 99,
+  "from": 2180,
+  "to": 2278,
+  "t": 0,
+  "b": 1
+ },
+ {
+  "g": [
+   "VII. cüz"
+  ],
+  "f": "l29.json",
+  "tr": "Sihir, İblîs, Deccâl, imamlar, Havâric ve melekler",
+  "n": 39,
+  "from": 2279,
+  "to": 2318,
+  "t": 0,
+  "b": 1
+ },
+ {
+  "g": [
+   "VII. cüz"
+  ],
+  "f": "l30.json",
+  "tr": "Sahâbe: Onları sevmek, sövenin cezası ve Ebû Bekir",
+  "n": 117,
+  "from": 2319,
+  "to": 2435,
+  "t": 0,
+  "b": 1
+ },
+ {
+  "g": [
+   "VII. cüz"
+  ],
+  "f": "l31.json",
+  "tr": "Hilâfet: Ebû Bekir, Ömer ve Osman’ın bey‘ati",
+  "n": 122,
+  "from": 2436,
+  "to": 2557,
+  "t": 0,
+  "b": 1
+ },
+ {
+  "g": [
+   "VIII. cüz"
+  ],
+  "f": "l32.json",
+  "tr": "Sahâbe: Osman’ın faziletleri ve tafdil",
+  "n": 70,
+  "from": 2558,
+  "to": 2628,
+  "t": 0,
+  "b": 1
+ },
+ {
+  "g": [
+   "VIII. cüz"
+  ],
+  "f": "l33.json",
+  "tr": "Sahâbe: Ali’nin faziletleri, dört halife ve gulüv",
+  "n": 65,
+  "from": 2629,
+  "to": 2696,
+  "t": 0,
+  "b": 1
+ },
+ {
+  "g": [
+   "VIII. cüz"
+  ],
+  "f": "l34.json",
+  "tr": "Sahâbe: Aşere, Abbas, Hamza, ümmü’l-mü’minîn ve Muâviye",
+  "n": 100,
+  "from": 2697,
+  "to": 2800,
+  "t": 0,
+  "b": 1
+ },
+ {
+  "g": [
+   "VIII. cüz"
+  ],
+  "f": "l35.json",
+  "tr": "Râfıza: Sahâbeye sövenlerin kötülükleri",
+  "n": 21,
+  "from": 2801,
+  "to": 2823,
+  "t": 0,
+  "b": 1
+ },
+ {
+  "g": [
+   "Kerâmâtü’l-evliyâ"
+  ],
+  "f": "l36.json",
+  "tr": "Kerâmât: Kitap, Sünnet ve sahâbenin kerametleri",
+  "n": 60,
+  "from": 1,
+  "to": 60,
+  "t": 0,
+  "b": 1
+ },
+ {
+  "g": [
+   "Kerâmâtü’l-evliyâ"
+  ],
+  "f": "l37.json",
+  "tr": "Kerâmât: Sahâbe",
+  "n": 52,
+  "from": 61,
+  "to": 118,
+  "t": 0,
+  "b": 1
+ },
+ {
+  "g": [
+   "Kerâmâtü’l-evliyâ"
+  ],
+  "f": "l38.json",
+  "tr": "Kerâmât: Tâbiîn ve sonra gelenler",
+  "n": 109,
+  "from": 119,
+  "to": 231,
+  "t": 0,
+  "b": 1
+ }
+]

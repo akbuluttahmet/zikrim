@@ -8,7 +8,7 @@ Derleme adımı yoktur; düz HTML/CSS/JS. Çalışma kuralları `CLAUDE.md`, had
 
 - **Anasayfa** — Bütün kitaplıklardan rastgele rivayetler, zaman tüneli biçiminde; Kaydedilenler sekmesi ve koleksiyon etiketleri.
 - **Akış** — Tam ekran rivayet kartları, isnad zinciriyle; kitap filtresi, ☆ kaydet, 📖 kitapta aç, 📸 görüntü paylaş.
-- **Kütüphane** — Âlim → kitap düzeni: Musannef, Müsned, Sünen-i Ebî Dâvûd, ez-Zühd, Fezâilü’s-sahâbe, eş-Şerîa, el-İbâne, Şerhu’s-Sünne, İmam Ahmed’in risaleleri, el-Hallâl, el-Âcurrî, el-Buhârî, eş-Şâfiî, Ebû Dâvûd, Harb el-Kirmânî, Usûlü’s-Sünne; Kaydettiklerim ve Sözler. Rivayetlerde Arapça metin (Amiri yazı tipiyle) ve Türkçesi; isnad standardındaki kitaplarda her râvinin bir öncekinden hangi lafızla aldığını gösteren râvi paneli ve râvi sayfası.
+- **Kütüphane** — Âlim → kitap düzeni: Musannef, Müsned, Sünen-i Ebî Dâvûd, ez-Zühd, Fezâilü’s-sahâbe, eş-Şerîa, el-İbâne, el-Lâlekâî (Şerhu usûli’l-i‘tikâd), Şerhu’s-Sünne, İmam Ahmed’in risaleleri, el-Hallâl, el-Âcurrî, el-Buhârî, eş-Şâfiî, Ebû Dâvûd, Harb el-Kirmânî, Usûlü’s-Sünne; Kaydettiklerim ve Sözler. Rivayetlerde Arapça metin (Amiri yazı tipiyle) ve Türkçesi; isnad standardındaki kitaplarda her râvinin bir öncekinden hangi lafızla aldığını gösteren râvi paneli ve râvi sayfası.
 - **Zikir** — Genel · Sabah · Akşam bölümleri. Uygulama yalnızca kaç kez okunduğunu sayar; hedef sayı göstermez, “Tamamladım”ı kullanıcı işaretler. Odak modu (ekrana dokunarak sayma), −1 geri al, günlük sayaçlar ve son 7 gün. Kendi zikrini ekleyebilirsin.
 - **Profilim** — Okunan rivayet sayısı, günlük okuma hedefi, hedef zikirler, okumaya devam ettiklerin, kaydettiklerin, son 30 gün grafiği, yedek.
 - **Arama (🔍)** — Bütün kütüphanede Türkçe ve Arapça arama (metin / sened).

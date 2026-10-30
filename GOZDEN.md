@@ -31,6 +31,11 @@ Biçim: `- [ ] kitaplık no — mesele. Seçenekler. (tarih)`
 - [ ] **ahmed m10 (Suâlâtü Ebî Dâvûd), m07–m09** — zincirler nüsha râvisiyle başlıyor (`أنا الحسين نا أبو داود نا موسى…`) ama `c[0]` Ahmed b. Hanbel yazılmış; Ahmed bu zincirde yok. Seçenek: `c[0]` kitabın derleyicisi (Ebû Dâvûd / el-Merrûzî / Sâlih / el-Meymûnî) ya da nüsha râvisi; `dogrula.py` `MUELLIF['ahmed']` buna göre genişler. (2026-10-29)
 - [ ] **fezail 44 ve benzerleri ("metin son râviyle başlamıyor", ≈340)** — Arapça zincir `سمعت أبا جحيفة قال: سمعت عليا` ile Ali'ye kadar iniyor, sened Ebû Cuhayfe'de bitiyor; SPEC'e göre sözün kaynağı `kâle` ile zincire yazılmalı. Kitap kitap bakılacak (`dogrula.py <kitaplık> --hepsi`). (2026-10-29)
 - [ ] **fezail f01 2** — `وكان من الثقات` (Ebû Muhammed el-Hazzâz hakkında) senedden atılmış, `n`'ye de yazılmamış; dönüştürmede düşen bu tür sened içi notlar başka maddelerde de olabilir. (2026-10-29)
+- [ ] **lalekai 147** — «حديث ثابت» harekesiz. “Sâbit’in hadisi” diye çevrildi (izafet). “sâbit olan hadis” de okunabilir. (2026-10-30)
+- [ ] **lalekai 161** — Lafız «إلا فارق الجماعة» ile kesiliyor; arada «الصواب بشين معجمة». Aynen çevrildi, sonuna `(metinde böyle)`. (2026-10-30)
+- [ ] **lalekai 181** — OpenITI nüshasında matn yok; sened «حدثنا عمرو بن علي بن مقدم,» ile bitiyor. Metin “(metin bu kısımda bozuktur).” (2026-10-30)
+- [ ] **lalekai 296** — Aynı numarada iki rivayet yapışık. İkincisi (`أخبرنا علي بن محمد بن عمر…`) kendi senediyle 296.1. (2026-10-30)
+- [ ] **lalekai 128** — «وقال ابن الديلمي: سمعت ابن عمرو» önceki senedi tekrarlamaz. Zincir yalnız İbn ed-Deylemî → İbn Amr. (2026-10-30)
 
 ## 2. Çeviri eksik ya da kısa olabilir (oran = Türkçe/Arapça uzunluğu)
 

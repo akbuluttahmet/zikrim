@@ -43,6 +43,7 @@ MUELLIF = {
     'ukbe': ('Ahmed b. Hanbel', 'et-Taberânî', 'İbn Kutluboğa', 'İbn Mâce', 'Ebû Dâvûd', 'Müslim', 'en-Nesâî', 'Ebû Nuaym', 'et-Tahâvî', 'ed-Dârekutnî'),
     'ibnvehb': 'İbn Vehb',
     'musannef': 'İbn Ebî Şeybe',
+    'lalekai': 'el-Lâlekâî',
 }
 # Müellifin metin içi notlarının Arapça ve Türkçe kalıbı (sayıları eşleşmeli)
 MUELLIF_NOT = {'sunan': (r'قال أبو داود', r'Ebû Dâvûd (?:dedi|der|şöyle)'),
