@@ -28,18 +28,18 @@
 % Humeyd bu şeyhi iyilikle andı.
 ^ أَنَّهُ رَأَى عُثْمَانَ
 
-442 | Benî Hâşim’in mevlâsı Ebû Saîd → İbn Lehîa → Zühre b. Ma‘bed → Osman’ın mevlâsı Ebû Sâlih | Osman’ın mevlâsı Ebû Sâlih dedi ki: Osman’ı Minâ’da şöyle derken işittim: “Ey insanlar! Size Resûlullah’tan ﷺ işittiğim bir hadisi anlatıyorum; şöyle buyuruyordu: ‘Allah yolunda bir günlük ribât (nöbet), başka yerlerdeki bin günden daha faziletlidir; kişi nasıl dilerse öyle ribât yapsın.’ Tebliğ ettim mi?” “Evet” dediler. (Osman): “Allah’ım! Şahit ol” dedi.
-& haddesenâ, haddesenâ, haddesenâ, an
-^ أَنَّهُ حَدَّثَهُ
+442 | Benî Hâşim’in mevlâsı Ebû Saîd → İbn Lehîa → Zühre b. Ma‘bed → Osman’ın mevlâsı Ebû Sâlih → Osman | Osman’ı Minâ’da şöyle derken işittim: “Ey insanlar! Size Resûlullah’tan ﷺ işittiğim bir hadisi anlatıyorum; şöyle buyuruyordu: ‘Allah yolunda bir günlük ribât (nöbet), başka yerlerdeki bin günden daha faziletlidir; kişi nasıl dilerse öyle ribât yapsın.’ Tebliğ ettim mi?” “Evet” dediler. (Osman): “Allah’ım! Şahit ol” dedi.
+& haddesenâ, haddesenâ, haddesenâ, an, semi‘tü
+^ يَقُولُ بِمِنًى
 
 443 | Ebû Saîd → İkrime b. İbrâhîm el-Bâhilî → Abdullah b. Abdurrahmân b. Ebî Zübâb → babası → Osman b. Affân | Osman b. Affân Minâ’da dört rekât kıldı; insanlar bunu ona karşı yadırgadılar. Bunun üzerine şöyle dedi: “Ey insanlar! Ben geldiğimden beri Mekke’de evlendim. Ben de Resûlullah’ı ﷺ şöyle buyururken işittim: ‘Kim bir beldede evlenirse, mukimin namazını kılsın.’”
 & haddesenâ, haddesenâ, haddesenâ, an, enne
 % Ebû Saîd, Benî Hâşim’in mevlâsıdır.
 ^ صَلَّى بِمِنًى
 
-444 | Benî Hâşim’in mevlâsı Ebû Saîd → Abdullah b. Lehîa → Mûsâ b. Verdân → Saîd b. el-Müseyyeb | Saîd b. el-Müseyyeb’i şöyle derken işittim: Osman’ı minber üzerinde hutbe verirken işittim; şöyle diyordu: “Yahudilerden Benî Kaynukâ‘ denilen bir kabileden hurma satın alır, onu kârla satardım. Bu, Resûlullah’a ﷺ ulaştı; şöyle buyurdu: ‘Ey Osman! Satın aldığında ölçerek al, sattığında ölçerek ver.’”
-& haddesenâ, haddesenâ, haddesenâ, semi‘tü
-^ يَقُولُ: سَمِعْتُ عُثْمَانَ
+444 | Benî Hâşim’in mevlâsı Ebû Saîd → Abdullah b. Lehîa → Mûsâ b. Verdân → Saîd b. el-Müseyyeb → Osman | Osman’ı minber üzerinde hutbe verirken işittim; şöyle diyordu: “Yahudilerden Benî Kaynukâ‘ denilen bir kabileden hurma satın alır, onu kârla satardım. Bu, Resûlullah’a ﷺ ulaştı; şöyle buyurdu: ‘Ey Osman! Satın aldığında ölçerek al, sattığında ölçerek ver.’”
+& haddesenâ, haddesenâ, haddesenâ, semi‘tü, semi‘tü
+^ يَخْطُبُ عَلَى
 
 445 | Yahyâ b. İshâk → İbn Lehîa → Mûsâ b. Verdân → Saîd b. el-Müseyyeb → Osman b. Affân | (Osman b. Affân’dan) bunun benzerini zikretti.
 & haddesenâ, haddesenâ, haddesenâ, an, an
@@ -65,8 +65,8 @@
 & haddesenâ, haddesenâ, an, an
 ^ قَالَ: جَاءَ رَجُلٌ
 
-451 | Yahyâ b. Maîn ve Ziyâd b. Eyyûb → Sevvâr Ebû Umâre er-Remlî → Meserre b. Ma‘bed → Yezîd b. Ebî Kebşe → Mervân b. el-Hakem → Osman | Meserre b. Ma‘bed dedi ki: Yezîd b. Ebî Kebşe bize ikindiyi kıldırdı; namazından sonra bize dönüp şöyle dedi: “Ben Mervân b. el-Hakem ile namaz kıldım; o da bu iki secdenin benzerini yaptı. Sonra bize dönüp, Osman ile namaz kıldığını ve (onun) Nebî’den ﷺ (bunu) rivayet ettiğini bize bildirdi”; ve bunun benzerini, buna yakın olarak zikretti.
-& haddesenâ, haddesenâ, an, kâle, kâle, kâle
+451 | Yahyâ b. Maîn ve Ziyâd b. Eyyûb → Sevvâr Ebû Umâre er-Remlî → Meserre b. Ma‘bed | Meserre b. Ma‘bed dedi ki: Yezîd b. Ebî Kebşe bize ikindiyi kıldırdı; namazından sonra bize dönüp şöyle dedi: “Ben Mervân b. el-Hakem ile namaz kıldım; o da bu iki secdenin benzerini yaptı. Sonra bize dönüp, Osman ile namaz kıldığını ve (onun) Nebî’den ﷺ (bunu) rivayet ettiğini bize bildirdi”; ve bunun benzerini, buna yakın olarak zikretti.
+& haddesenâ, haddesenâ, an
 ^ قَالَ: صَلَّى بِنَا
 
 452 | İshâk b. Süleymân → Mugîre b. Müslim Ebû Seleme → Matar → Nâfi‘ → İbn Ömer → Osman | Osman kuşatılmışken arkadaşlarına yukarıdan baktı ve şöyle dedi: “Beni ne sebeple öldürüyorsunuz? Ben Resûlullah’ı ﷺ şöyle buyururken işittim: ‘Müslüman bir kişinin kanı ancak üç şeyden biriyle helal olur: Muhsan olduktan sonra zina eden adam, ona recm vardır; ya da kasten öldüren, ona kısas vardır; ya da Müslüman olduktan sonra dinden dönen, ona ölüm vardır.’ Vallahi ne câhiliyede ne de İslâm’da zina ettim, ne de birini öldürdüm ki ondan dolayı kendimden kısas aldırayım, ne de Müslüman olduğumdan beri dinden döndüm. Ben Allah’tan başka ilâh olmadığına ve Muhammed’in O’nun kulu ve resûlü olduğuna şahitlik ederim.”
