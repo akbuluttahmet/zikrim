@@ -19,6 +19,7 @@ meta = index[si - 1]
 lo, hi = meta['from'], meta['to']
 
 ZIY = {'*': 1, '•': 2, '°': 3}
+NUMARASI_DUSEN = {5632}  # '# حدثنا …' satırıyla başlayan, numarası düşmüş hadisler
 HEAD = re.compile(r'^### \|+ (.*)$')
 ITEM = re.compile(r'^# (\(?[*•°]\)?(?:\s*\(?[*•°]\)?)*)?\s*(\d+)\s*(?:ms\d+\s*)?(?:-|(?=حدثنا|حدثني|قال))\s*(.*)$')
 
@@ -52,6 +53,10 @@ for line in src.read_text(encoding='utf-8').splitlines():
         continue
     if cur is not None and line.startswith('~~'):
         cur['ar'] += ' ' + line[2:]
+    elif cur is not None and line.startswith('# ') and cur['n'] + 1 in NUMARASI_DUSEN and line[2:].startswith('حدثنا'):
+        # dijital nüshada numarası düşmüş hadis (neşirde numaralı): yeni madde
+        cur = {'n': cur['n'] + 1, 'bab_ar': bab, 'ziyade': 0, 'ar': line[2:]}
+        items.append(cur)
     elif cur is not None and line.startswith('# ') and not line.startswith('# |'):
         cur['ar'] += ' ' + line[2:]
 
