@@ -44,7 +44,7 @@ MUELLIF = {
 # Müellifin metin içi notlarının Arapça ve Türkçe kalıbı (sayıları eşleşmeli)
 MUELLIF_NOT = {'sunan': (r'قال أبو داود', r'Ebû Dâvûd (?:dedi|der|şöyle)'),
                'seria': (r'قال محمد بن الحسين', r'(?:Âcurrî|Muhammed b\. el-Hüseyn) (?:dedi|der|şöyle)'),
-               'musned': (r'قال عبد الله', r'Abdullah (?:dedi|der|şöyle)')}
+               'musned': (r'قال عبد الله(?!\s+بن)', r'Abdullah (?:dedi|der|şöyle)')}
 
 SIGALAR = {'haddesenâ', 'haddesenî', 'ahberanâ', 'ahberanî', 'enbe’enâ', 'semi‘tü', 'semi‘a', 'an', 'enne', 'kâle',
            'haddesehû', 'haddesehüm', 'ahberahû', 'ahberahüm', 'kara’tü', 'kurie', 'unbi’tü', 'ketebe ileyye', 'vecedtü'}

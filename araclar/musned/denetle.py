@@ -162,7 +162,7 @@ def denetle(name):
         tr_sal = metin.count('ﷺ') + sened.count('ﷺ') + sum(x.count('ﷺ') for x in notlar)
         if tr_sal < sal:
             errs.append(f'{n}: ﷺ eksik ({tr_sal}/{sal})')
-        ad = len(re.findall(r'قال عبد الله', ar))
+        ad = len(re.findall(r'قال عبد الله(?!\s+بن)', ar))
         td = len(re.findall(r'Abdullah (?:dedi|der|şöyle)', metin))
         if td < ad:
             errs.append(f'{n}: “Abdullah dedi ki” sayısı {td}, Arapçada {ad}')
