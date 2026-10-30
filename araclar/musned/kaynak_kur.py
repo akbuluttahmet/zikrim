@@ -20,7 +20,7 @@ lo, hi = meta['from'], meta['to']
 
 ZIY = {'*': 1, '•': 2, '°': 3}
 HEAD = re.compile(r'^### \|+ (.*)$')
-ITEM = re.compile(r'^# ([*•°](?:\s*[*•°])*)?\s*(\d+)\s*(?:ms\d+\s*)?-\s*(.*)$')
+ITEM = re.compile(r'^# ([*•°](?:\s*[*•°])*)?\s*(\d+)\s*(?:ms\d+\s*)?(?:-|(?=حدثنا|حدثني|قال))\s*(.*)$')
 
 
 def temizle(t):
@@ -44,6 +44,9 @@ for line in src.read_text(encoding='utf-8').splitlines():
     m = ITEM.match(line)
     if m:
         n = int(m.group(2))
+        # dijital nüshada düşen hane (22999'dan sonra '2300' = 23000)
+        if items and abs(n - items[-1]['n']) > 500 and n * 10 == items[-1]['n'] + 1:
+            n *= 10
         cur = {'n': n, 'bab_ar': bab, 'ziyade': max([ZIY[c] for c in (m.group(1) or '') if c in ZIY] or [0]), 'ar': m.group(3)}
         items.append(cur)
         continue
