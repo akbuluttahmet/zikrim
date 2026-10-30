@@ -48,7 +48,7 @@ def main():
         for p in parcalar:
             if 'no' not in p: bekleyen.append(p); continue
             n = p['no']
-            while bi + 1 < len(bolumler) and n >= int(bolumler[bi + 1][1]) and (son is None or n - son < 200):
+            while bi + 1 < len(bolumler) and n >= bolumler[bi + 1][1] and (son is None or n - son < 200):
                 bi += 1
             if son is None or abs(n - son) < 200: son = n
             res[bolumler[bi][0]] += bekleyen + [p]; bekleyen = []

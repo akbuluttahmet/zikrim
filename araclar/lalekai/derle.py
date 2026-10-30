@@ -26,6 +26,7 @@ MUELLIF = 'el-Lâlekâî'
 SIGALAR = {'haddesenâ', 'haddesenî', 'ahberanâ', 'ahberanî', 'enbe’enâ', 'semi‘tü', 'semi‘a', 'an', 'enne', 'kâle',
            'haddesehû', 'haddesehüm', 'ahberahû', 'ahberahüm', 'kara’tü', 'kurie', 'unbi’tü', 'ketebe ileyye', 'vecedtü'}
 TAHVIL_TR = 'Bu senedin metni bir sonraki rivayettedir (no. {}).'
+KERAMAT = 3000
 
 
 def ns(s):
@@ -211,6 +212,21 @@ def derle(ad, kuru=False):
         for x in b['h']:
             to = x[4].get('to')
             if to is not None and to not in nolar: hatalar.append(f'{x[0]}: :to {to} bu dosyada yok')
+    # Kerâmâtü’l-evliyâ (IX. cüz) numaraları 1'den yeniden başlar; Şerh'in numaralarıyla çakışmasın diye
+    # anahtar 3000 + N olur, uygulamada etiket “Kerâmât, no. N” (ara metinde “Ara metin”) görünür.
+    idx0 = json.load(open(os.path.join(REPO, 'lalekai', 'index.json'), encoding='utf-8'))
+    if any(x['f'] == ad + '.json' and x['g'][0] == 'Kerâmâtü’l-evliyâ' for x in idx0):
+        def kno(v):
+            w = round(v + KERAMAT, 4); return int(w) if w == int(w) else w
+        for b in out:
+            for x in b['h']:
+                n0 = x[0]
+                x[0] = kno(n0)
+                if 'l' not in x[4]: x[4]['l'] = f'Kerâmât, no. {n0}' if isinstance(n0, int) else 'Ara metin'
+                if 'to' in x[4]: x[4]['to'] = kno(x[4]['to'])
+                if x[4].get('l') == 'Tahvîl' and x[2].startswith('Bu senedin metni'):
+                    x[2] = TAHVIL_TR.format(f"Kerâmât {x[4]['to'] - KERAMAT}")
+        nolar = [kno(v) for v in nolar]
     if hatalar or kuru: return hatalar, uyarilar, out
     json.dump({'babs': out}, open(os.path.join(REPO, 'lalekai', 'tr', ad + '.json'), 'w', encoding='utf-8'),
               ensure_ascii=False, indent=1)
