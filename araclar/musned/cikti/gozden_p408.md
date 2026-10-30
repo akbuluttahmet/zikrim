@@ -1,0 +1,1 @@
+- Müsned 7047: dijital nüshada metin yok (yalnız “…”); madde senedsiz “… (metin bu kısımda bozuktur)” olarak bırakıldı, asıl neşirden tamamlanmalı.

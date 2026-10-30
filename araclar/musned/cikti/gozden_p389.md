@@ -1,0 +1,1 @@
+- Müsned 6706: Arapçada "حدثنا عبد الرحمن، قال همام: أخبرنا عن قتادة" (dizilişi alışılmadık; muhtemelen "قال: حدثنا همام، أخبرنا قتادة"); sened Abdurrahmân → Hemmâm → Katâde yazıldı, lafız otunda.

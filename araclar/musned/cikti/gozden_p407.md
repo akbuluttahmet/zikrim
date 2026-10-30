@@ -1,0 +1,1 @@
+- Müsned 7017: Arapçada “قالوا: الله يعني، ورسوله أعلم” — “يعني” yersiz görünüyor; çeviride “(metinde böyle)” notu düşüldü.

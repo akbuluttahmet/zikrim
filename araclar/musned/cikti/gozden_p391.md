@@ -1,0 +1,2 @@
+- Müsned 6729: "ليس لي من هذا الفيء هؤلاء هذه، إلا الخمس" — "هؤلاء هذه" kısmı nüshada böyle; "(metinde böyle)" notuyla çevrildi.
+- Müsned 6745: senedde neşrin köşeli eklemesi "[عن مجاهد]" var; Mücâhid zincire yazıldı.
