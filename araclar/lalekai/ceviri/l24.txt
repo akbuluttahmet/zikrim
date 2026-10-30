@@ -135,7 +135,7 @@
 @ İrcânın İslâm’da ne zaman ortaya çıktığı ve yayıldığı hakkında rivayet edilenlerin bağlamı
 @ar *
 1839 | Muhammed b. Ömer b. Muhammed b. Humeyd → Ahmed b. Abdullah el-Vekîl → Amr b. Ali → Ebû Dâvûd → Şu‘be → Zübeyd → Ebû Vâil | Zübeyd dedi ki: Mürcie ortaya çıkınca Ebû Vâil’e gittim; bana Nebî’den ﷺ rivayet etti; buyurdu ki: “Müslümana sövmek fâsıklıktır, onunla savaşmak küfürdür.” Şu‘be dedi ki: Bana Mansûr ile Süleymân da —ikisi Ebû Vâil’i Abdullah’tan, o da Nebî’den ﷺ rivayet ederken işittiler— rivayet etti; buyurdu ki: “Müslümana sövmek fâsıklıktır, onunla savaşmak küfürdür.” Şu‘be dedi ki: Bunu Hammâd’a andım; şöyle diyordu: “Ey Şu‘be! Sen bizdensin, ancak bir damla (metinde böyle).” Dedi ki: Ona dedim ki: “Zübeyd’i mi itham ediyorsun? Mansûr’u mu itham ediyorsun? A‘meş b. Süleymân’ı (metinde böyle) mı itham ediyorsun? Hepsi bana Ebû Vâil’den rivayet etti.” Dedi ki: “Hayır, fakat ben Ebû Vâil’i itham ediyorum.”
-& ahberanâ, ahberanâ, haddesenâ, haddesenâ, haddesenâ, haddesenâ, kâle
+& ahberanâ, ahberanâ, haddesenâ, haddesenâ, haddesenâ, haddesenâ, haddesenî
 ^ لما ظهرت
 1840 | Muhammed b. Ahmed → Osman b. Ahmed → Hanbel → Ebû Abdullah (Ahmed b. Hanbel) → Abdullah b. Meymûn Ebû Abdurrahmân er-Rakkî → Ebü’l-Melîh → Meymûn b. Mihrân | Ebü’l-Melîh dedi ki: (Kendisine) —yani Meymûn b. Mihrân’a— Mürcie’nin sözü soruldu. Dedi ki: “Ben ondan daha büyüğüm.”
 & ahberanâ, ahberanâ, haddesenâ, haddesenî, haddesenâ, ahberanâ, kâle
@@ -161,7 +161,7 @@
 1847 | Muhammed b. Ahmed → Osman → Hanbel → Ebû Abdullah Ahmed b. Hanbel → Abdullah b. Nümeyr → Süfyân | Süfyân Mürcie’yi andı ve dedi ki: “Sonradan çıkarılmış bir görüştür; insanları bundan başkası üzere buldum.”
 & ahberanâ, ahberanâ, haddesenâ, haddesenî, haddesenâ, semi‘tü
 ^ وذكر المرجئة
-1848 | Ubeydullah b. Ahmed → Hüseyin b. İsmâîl → Ahmed b. Muhammed b. Yahyâ b. Saîd → Müemmel b. İsmâîl → Hasan b. Vehb el-Cumahî | Hasan b. Vehb el-Cumahî dedi ki: “Abdülazîz b. Ebî Revvâd yanımıza geldi; o gün yirmi küsur yaşında bir gençti. Aramızda kırk ya da elli yıl kaldı; ircâdan hiçbir şeyle tanınmazdı. Sonunda oğlu Abdülmecîd yetişti ve onu ircâya soktu. (Abdülmecîd) İslâm’da doğmuş, babası için en uğursuz evlattı.”
+1848 | Ubeydullah b. Ahmed → Hüseyin b. İsmâîl → Ahmed b. Muhammed b. Yahyâ b. Saîd → Müemmel b. İsmâîl → Hasan b. Vehb el-Cumahî | Hasan b. Vehb el-Cumahî dedi ki: “Abdülazîz b. Ebî Revvâd yanımıza geldi; o gün yirmi küsur yaşında bir gençti. Aramızda kırk ya da elli yıl kaldı; ircâdan hiçbir şeyle tanınmazdı. Sonunda oğlu Abdülmecîd yetişti ve onu ircâya soktu. (Abdülmecîd), babası için İslâm’da doğmuş en uğursuz evlat oldu.”
 & ahberanâ, ahberanâ, haddesenâ, haddesenâ, an
 ^ قدم علينا
 1849 | Ubeydullah b. Ahmed → Hüseyin b. İsmâîl → Ahmed b. Muhammed b. Saîd → Müemmel (b. İsmâîl) → Muhammed b. Ali → Mâlik b. Enes | Muhammed b. Ali dedi ki: Mâlik b. Enes’i —yanında Abdülmecîd anılmıştı— şöyle derken işittim: “O, babasını ircâya sokandır.”
@@ -172,7 +172,7 @@
 1850 | Muhammed b. Abdurrahmân b. el-Abbâs → Ubeydullah b. Abdurrahmân es-Sükkerî → Zekeriyyâ b. Yahyâ → Asma‘î → Ebû Nevfel el-Hüzelî → babası | Babası dedi ki: Avn b. Abdullah b. Utbe b. Mes‘ûd, Medine ehlinin edebçe en üstünlerinden ve fıkıhça en ileri gelenlerindendi. Mürciî idi, sonra (bundan) döndü ve şu (şiiri) okudu: [Vâfir bahri] “Hiç şüphesiz ilk ayrıldığımız şey, Mürcielerin söylediğinden ayrılmamızdır. / ‘Zulüm ehlinden (biri de) mümindir’ dediler; oysa müminler zulmedenler değildir. / ‘Kanı helal olan bir mümin’ dediler; oysa müminlerin kanları haram kılınmıştır.”
 & ahberanâ, haddesenâ, haddesenâ, haddesenâ, haddesenâ, an
 ^ قال: " كان
-1851 | Ubeydullah b. Ahmed → Hüseyin b. İsmâîl → Muhammed b. Halef el-Mukri’ → Ebû Yahyâ el-Himmânî → Mis‘ar → Ebû Talk | Ebû Talk dedi ki: “Zaman ancak gecesi ve gündüzüdür; insanlar da ancak mümin ya da yalanlayıcıdır. / Eğer sen ancak mümin ya da yalanlayıcı olmazsan (metinde böyle), o hâlde ey insanların en ahmağı, sen (nereye) gidiyorsun?”
+1851 | Ubeydullah b. Ahmed → Hüseyin b. İsmâîl → Muhammed b. Halef el-Mukri’ → Ebû Yahyâ el-Himmânî → Mis‘ar → Ebû Talk | Ebû Talk dedi ki: “Zaman ancak gecesi ve gündüzüdür; insanlar da ancak mümin ya da yalanlayıcıdır. / Sen ancak mümin ya da yalanlayıcı olacaksan (metinde böyle), o hâlde ey insanların en ahmağı, (nereye) gidiyorsun?”
 & ahberanâ, ahberanâ, ahberanâ, haddesenâ, haddesenâ, kâle
 ^ وما الدهر
 1852 | Muhammed b. el-Hasan → Ali b. el-Hüseyin er-Râzî → Süleym b. Mansûr b. Âmir | Ali b. el-Hüseyin er-Râzî dedi ki: Süleym b. Mansûr b. Âmir’i şunu okurken işittim: [Remel bahri] “Ey ‘Ben müminim’ diyen! Îmân ancak söz ve ameldir. / İrcâ ancak sonradan çıkarılmış bir dindir; onu Cehm b. Safvân çığır olarak açtı, (kendine) mal etti. / Allah’ın dini dosdoğru bir dindir; onda oruç ve kılınan namaz vardır, / Zekât ve, düşmanlık ederek dine savaş açan ve öldüren kişiye karşı cihad vardır. / Görülürse namaz kılan, görülmezse kılmayan kimse îmânını tamamlamış değildir; / Ya da bir gün bir pisliğe düşüp de hayâsızlıktan ya da tembellikten guslü terk eden. / Bunun adı ikrar müminidir; hakikaten mümin değil, ‘hakikaten’ de denmez. / Ben ne Mürciîyim ne Harbî; hayır, Mu‘tezilînin görüşünü de benimsemem. / Benim görüşüm Süfyân’ın görüşüdür; Süfyân da fazl bir görüş üzerinde değildi (metinde böyle).”
