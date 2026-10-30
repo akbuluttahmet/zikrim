@@ -33,6 +33,7 @@ MUELLIF = {
     'buhari': 'el-Buhârî',
     'ebudavud': 'Ebû Dâvûd',
     'harb': 'Harb b. İsmâîl',
+    'darimi': 'ed-Dârimî',
     'ibane': 'İbn Batta',
     'leys': 'Leys b. Sa‘d',
     'zuhri': 'ez-Zührî',
@@ -260,7 +261,7 @@ def kur(kitapliklar):
 
 
 if __name__ == '__main__':
-    libs = sys.argv[1:] or ['sunan', 'musned', 'musannef', 'ibnebiseybe', 'ahmed', 'zuhd', 'fezail', 'acurri', 'seria', 'hallal', 'safii', 'buhari', 'ebudavud', 'harb', 'ibane', 'leys', 'zuhri', 'hemmam', 'ibnvehb']
+    libs = sys.argv[1:] or ['sunan', 'musned', 'musannef', 'ibnebiseybe', 'ahmed', 'zuhd', 'fezail', 'acurri', 'seria', 'hallal', 'safii', 'buhari', 'ebudavud', 'harb', 'ibane', 'darimi', 'leys', 'zuhri', 'hemmam', 'ibnvehb']
     o = kur(libs)
     turler = collections.Counter(r['tur'] for r in o['ravi'].values())
     arli = sum(1 for r in o['ravi'].values() if r['ar'])

@@ -12,7 +12,7 @@
 # Biçim: {kitaplık: {"books": [kitap adları], "babs": [bab başlıkları], "h": [[kitap sırası, no, metin, sened, bab sırası], …]}}
 import json, re, os, sys, math
 R = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..') + '/'
-LIBS = ['musned', 'musannef', 'ibnebiseybe', 'ahmed', 'zuhd', 'fezail', 'berbehari', 'seria', 'acurri', 'hallal', 'safii', 'buhari', 'ebudavud', 'harb', 'ibane', 'sunan', 'leys', 'zuhri', 'hemmam', 'ibnvehb']
+LIBS = ['musned', 'musannef', 'ibnebiseybe', 'ahmed', 'zuhd', 'fezail', 'berbehari', 'seria', 'acurri', 'hallal', 'safii', 'buhari', 'ebudavud', 'harb', 'darimi', 'ibane', 'sunan', 'leys', 'zuhri', 'hemmam', 'ibnvehb']
 GONDERME = re.compile(r'benzer|mislini|aynısın|bu hadis(i|in)? (zikretti|devam)|bunu söyle', re.I)
 
 def aday(v, h):
@@ -29,7 +29,7 @@ ALAN = 712
 KAR = {'ad': 40, 's': 18, 'm': 33, 'l': 35, 'kaynak': 37, 'bab': 41}       # satır başına karakter
 SATIR = {'ad': 17.55, 's': 29.45, 'm': 27.2, 'l': 25.28, 'kaynak': 18.125}  # satır yüksekliği (px)
 # Kaynak satırının (ör. “İbn Ebî Şeybe, el-Musannef, no. 123 · Kitâbü’l-…”) numara ve kitap adı dışındaki uzunluğu
-KAYNAK_EK = {'musned': 44, 'musannef': 35, 'ibnebiseybe': 39, 'ahmed': 73, 'zuhd': 48, 'fezail': 57, 'berbehari': 22, 'seria': 34, 'acurri': 42, 'hallal': 17, 'safii': 16, 'buhari': 17, 'ebudavud': 17, 'harb': 23, 'ibane': 44, 'sunan': 28, 'leys': 20, 'zuhri': 17, 'hemmam': 26, 'ibnvehb': 26}
+KAYNAK_EK = {'musned': 44, 'musannef': 35, 'ibnebiseybe': 39, 'ahmed': 73, 'zuhd': 48, 'fezail': 57, 'berbehari': 22, 'seria': 34, 'acurri': 42, 'hallal': 17, 'safii': 16, 'buhari': 17, 'ebudavud': 17, 'harb': 23, 'darimi': 17, 'ibane': 44, 'sunan': 28, 'leys': 20, 'zuhri': 17, 'hemmam': 26, 'ibnvehb': 26}
 def satir(n, kar): return max(1, math.ceil(n / kar))
 def yukseklik(v, n, t, sened, kitap, bab):
     h, parca = 46, 2                                           # dolgu; metin + kaynak

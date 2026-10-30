@@ -33,6 +33,7 @@ MUELLIF = {
     'buhari': 'el-Buhârî',
     'ebudavud': 'Ebû Dâvûd',
     'harb': 'Harb b. İsmâîl',
+    'darimi': 'ed-Dârimî',
     'ibane': 'İbn Batta',
     'leys': 'Leys b. Sa‘d',
     # Zührî kitaplığı: cüzü rivayet eden İbrâhîm el-Hemedânî'nin kitap başındaki rivayetleri onun adıyla; Zührî'nin metni senedsiz
@@ -44,7 +45,8 @@ MUELLIF = {
 # Müellifin metin içi notlarının Arapça ve Türkçe kalıbı (sayıları eşleşmeli)
 MUELLIF_NOT = {'sunan': (r'قال أبو داود', r'Ebû Dâvûd (?:dedi|der|şöyle)'),
                'seria': (r'قال محمد بن الحسين', r'(?:Âcurrî|Muhammed b\. el-Hüseyn) (?:dedi|der|şöyle)'),
-               'musned': (r'قال عبد الله(?!\s+بن)', r'Abdullah (?:dedi|der|şöyle)')}
+               'musned': (r'قال عبد الله(?!\s+بن)', r'Abdullah (?:dedi|der|şöyle)'),
+               'darimi': (r'قال أبو سعيد(?!\s+يعني)', r'Ebû Saîd(?:\s*\(rahimehullah\))? dedi ki')}
 
 SIGALAR = {'haddesenâ', 'haddesenî', 'ahberanâ', 'ahberanî', 'enbe’enâ', 'semi‘tü', 'semi‘a', 'an', 'enne', 'kâle',
            'haddesehû', 'haddesehüm', 'ahberahû', 'ahberahüm', 'kara’tü', 'kurie', 'unbi’tü', 'ketebe ileyye', 'vecedtü'}
