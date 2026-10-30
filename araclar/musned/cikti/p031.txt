@@ -15,8 +15,8 @@
 & haddesenî, haddesenâ, an, an, an, an
 ^ أَنَّ النَّبِيَّ
 
-529 | Hakem b. Mûsâ → Saîd b. Mesleme → İsmâîl b. Ümeyye → Mûsâ b. İmrân b. Mennâh → Ebân b. Osman | Ebân b. Osman’dan: Gelmekte olan bir cenaze gördü; onu görünce ayağa kalktı ve: “Osman’ı bunu yaparken gördüm; bana da Nebî’yi ﷺ bunu yaparken gördüğünü haber verdi” dedi.
-& haddesenâ, haddesenâ, an, an, an
+529 | Hakem b. Mûsâ → Saîd b. Mesleme → İsmâîl b. Ümeyye → Mûsâ b. İmrân b. Mennâh → Ebân b. Osman → Osman | Ebân b. Osman’dan: Gelmekte olan bir cenaze gördü; onu görünce ayağa kalktı ve: “Osman’ı bunu yaparken gördüm; bana da Nebî’yi ﷺ bunu yaparken gördüğünü haber verdi” dedi.
+& haddesenâ, haddesenâ, an, an, an, ahberanî
 ^ أَنَّهُ رَأَى جَنَازَةً
 
 530 | Ebû İbrâhîm et-Tercümânî → İsmâîl b. Ayyâş → İbn Ebî Ferve → Muhammed b. Yûsuf → Amr b. Osman b. Affân → babası | Babası dedi ki: Resûlullah ﷺ şöyle buyurdu: “Sabah uykusu rızkı engeller.”
@@ -27,7 +27,7 @@
 & haddesenî, haddesenâ, an, an
 ^ قَالَ: شَهِدْتُ عُثْمَانَ
 
-532 | Ebû Yahyâ el-Bezzâz Muhammed b. Abdürrahîm → Hasan b. Bişr b. Selm el-Kûfî → Abbâs b. el-Fadl el-Ensârî → Hişâm b. Ziyâd el-Kureşî → babası → Osman’ın mevlâsı Mihcen → Osman | Osman dedi ki: Resûlullah’ı ﷺ şöyle buyururken işittim: “Allah, kendi gölgesinden başka gölgenin bulunmadığı günde şu kulu gölgesinde gölgelendirmiştir: darda olana mühlet veren ya da borçluya (alacağını) bırakan.”
+532 | Ebû Yahyâ el-Bezzâz Muhammed b. Abdürrahîm → Hasan b. Bişr b. Selm el-Kûfî → Abbâs b. el-Fadl el-Ensârî → Hişâm b. Ziyâd el-Kureşî → babası → Osman’ın mevlâsı Mihcen → Osman | Osman dedi ki: Resûlullah’ı ﷺ şöyle buyururken işittim: “Allah, kendi gölgesinden başka gölgenin bulunmadığı günde bir kulu gölgesinde gölgelendirdi: darda olana mühlet veren ya da borçluya (alacağını) bırakan.”
 & haddesenî, haddesenâ, haddesenâ, an, an, an, an
 ^ قَالَ: سَمِعْتُ رَسُولَ
 
@@ -40,8 +40,8 @@
 & haddesenâ, an, haddesenî, an, an, an
 ^ عَنِ النَّبِيِّ
 
-535 | Muhammed b. Ebî Bekir el-Mukaddemî → Hammâd b. Zeyd → Eyyûb → Nâfi‘ → Nübeyh b. Vehb | Nübeyh b. Vehb dedi ki: Ömer b. Ubeydullah b. Ma‘mer beni gönderdi; o, oğlu için Şeybe b. Osman’ın kızına talip oluyordu. (Beni) Ebân b. Osman’a gönderdi; o hac mevsiminde (emîr) idi. (Ebân) dedi ki: “Dikkat edin, onu bir bedevî olarak görüyorum! İhramlı nikâhlanmaz ve (başkasını) nikâhlamaz. Bunu bana Osman, Nebî’den ﷺ haber verdi.” Nübeyh bana babasından da buna yakınını rivayet etti.
-& haddesenî, haddesenâ, an, an, haddesenî
+535 | Muhammed b. Ebî Bekir el-Mukaddemî → Hammâd b. Zeyd → Eyyûb → Nâfi‘ → Nübeyh b. Vehb → Ebân b. Osman → Osman | Nübeyh b. Vehb dedi ki: Ömer b. Ubeydullah b. Ma‘mer beni gönderdi; o, oğlu için Şeybe b. Osman’ın kızına talip oluyordu. (Beni) Ebân b. Osman’a gönderdi; o hac mevsiminin başındaydı. (Ebân) dedi ki: “Dikkat edin, onu bir bedevî olarak görüyorum! İhramlı nikâhlanmaz ve (başkasını) nikâhlamaz. Bunu bana Osman, Nebî’den ﷺ haber verdi.” Nübeyh bana babasından da buna yakınını rivayet etti.
+& haddesenî, haddesenâ, an, an, haddesenî, kâle, ahberanî
 ^ قَالَ: بَعَثَنِي
 
 536 | Muhammed b. Ebî Bekir → Züheyr b. İshâk → Dâvûd b. Ebî Hind → Ziyâd b. Abdullah → Ümmü Hilâl bt. Vekî‘ → Nâile bt. el-Ferâfısa | Nâile bt. el-Ferâfısa dedi ki: Mü’minlerin emîri Osman uyukladı ve daldı; sonra uyandı ve: “Bu topluluk beni mutlaka öldürecek!” dedi. “Asla, inşallah! (İş) o noktaya varmadı; senin raiyyetin senden (yalnızca) hoşnutluk istedi” dedim. Dedi ki: “Ben rüyamda Resûlullah’ı ﷺ, Ebû Bekir’i ve Ömer’i gördüm; ‘Bu gece iftarını bizim yanımızda açacaksın’ dediler.”

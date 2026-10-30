@@ -11,6 +11,7 @@ Bu kılavuz `SPEC.md` ve `araclar/sunan/kilavuz.md` kurallarını Müsned’e uy
    - `"حدثنا عبد الله، حدثني أبي"` öneği sened satırına yazılmaz; panelde yalnız `c[0]` olarak durur (`derle.py` → `muellif_sec` kendisi seçer).
    - **Abdullah’ın ziyâdesi (`ziyade` 2):** sened satırı Abdullah’ın hocasıyla başlar; `&` satırındaki ilk sîga Abdullah’ın ondan aldığı lafızdır (`حدثنا عبد الله، حدثني محمد بن عبد الملك` → sened `Muhammed b. Abdülmelik → …`, `& haddesenî, …`). Neşrin köşeli parantezi (`حدثنا [عبد الله، حدثني محمد بن] عبد الملك`) Arapçada aynen kalır, sened satırına yazılmaz.
    - **Vicâde (`ziyade` 3, `قال أبو عبد الرحمن: وجدت في كتاب أبي: حدثنا X …`):** sened satırı `babası → X → …`, `&` satırı `vecedtü, haddesenâ, …` (panel: `Abdullah b. Ahmed –vecedtü→ babası –haddesenâ→ X`). “Babamın el yazısıyla (بخط يده)” gibi ekler `%` notuna aynen. (`vecedtü` sîgası 2026-10-30'da Ahmet'in kararıyla SPEC'e eklendi.)
+   - **Babasıyla birlikte başka hoca (`حدثنا عبد الله، حدثني أبي وأبو خيثمة، قالا: …`):** `c[0] = Abdullah b. Ahmed`; sened satırı `babası ve Ebû Hayseme → …`, ilk sîga `haddesenî` (`derle.py` bunu tanır). Abdullah'ın iki hocası panelden düşürülmez. (2026-10-30)
    - Nüsha senedi (el-Katîî, İbnü’l-Müzhib, İbnü’l-Husayn) verilerde ayrı madde değildir (m001 1 numarayla başlar); hadis zincirlerine ve panel notlarına yazılmaz.
 2. **Ziyâde alanı (4. alan):**
    - Neşirdeki işarete göre korunur: `0` (işaretsiz), `1` (`*`), `2` (`•`, Abdullah ziyâdesi), `3` (`°`, vicâde).

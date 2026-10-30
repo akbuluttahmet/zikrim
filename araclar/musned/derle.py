@@ -29,6 +29,9 @@ def muellif_sec(ar, ziyade):
     if ziyade in (2, 3):
         return 'Abdullah b. Ahmed'
     arc = HAREKE.sub('', ar[:160])
+    # Babasıyla birlikte başka bir hocadan (حدثني أبي وأبو خيثمة): ilk kutu “babası ve X”, c[0] Abdullah
+    if re.match(r'^\s*(?:حدثنا|ثنا)\s+عبد الله\s*[،,]?\s*(?:حدثني|حدثنا|ثني|ثنا)\s+أبي\s*[،,]?\s*و', arc):
+        return 'Abdullah b. Ahmed'
     if re.match(r'^\s*(?:حدثنا|ثنا)\s+(?:أبو عبد الرحمن\s+)?عبد الله(?:\s+بن\s+أحمد(?:\s+بن\s+محمد\s+بن\s+حنبل)?)?\s*[،,]', arc):
         if not re.search(r'(?:حدثني|حدثنا|ثني|ثنا)\s+أبي\b', arc):
             return 'Abdullah b. Ahmed'
