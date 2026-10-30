@@ -1,0 +1,2 @@
+- Müsned 6885: Ma‘n b. Sa‘lebe el-Mâzinî’den sonra gelen “والحي بعد” ibaresi “Kabile (hâlâ) mevcuttur” diye okunup sened notuna yazıldı; okuma kesin değil.
+- Müsned 6886: Recez ve tavîl beyitleri satır satır çevrildi; şiir çevirisinin (özellikle “ذربة”, “لطت بالذنب”, “عيص مؤتشب”) gözden geçirilmesi iyi olur.

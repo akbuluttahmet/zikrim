@@ -1,0 +1,1 @@
+- Müsned 6832: Abdurrahmân b. Mehdî yolunun metni nüshada “بلغني أنك...” diye yarım kesilmiş; Türkçede de “Bana ulaştı ki sen…” diye yarım bırakıldı, tam metin Affân yolundan.
