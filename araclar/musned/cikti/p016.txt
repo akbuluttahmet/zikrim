@@ -24,9 +24,9 @@
 % Kays ya da İbn Kays, Cu‘fî’den bir adamdır.
 ^ فَذَكَرَ نَحْوَ
 
-268 | Affân → Hammâd b. Seleme → Sâbit → Enes | Enes’ten: Hafsa, Ömer b. el-Hattâb için feryat ederek ağlayınca (Ömer) şöyle dedi: “Ey Hafsa! Nebî’yi ﷺ ‘Kendisi için feryat edilerek ağlanan kimse azap görür’ buyururken işitmedin mi?” Dedi ki: Suheyb de feryat ederek ağladı; Ömer: “Ey Suheyb! Kendisi için feryat edilerek ağlanan kimsenin azap göreceğini bilmiyor musun?” dedi.
-& haddesenâ, haddesenâ, haddesenâ, an
-^ أَنَّ عُمَرَ بْنَ
+268 | Affân → Hammâd b. Seleme → Sâbit → Enes → Ömer b. el-Hattâb | Enes’ten: Hafsa, Ömer b. el-Hattâb için feryat ederek ağlayınca (Ömer) şöyle dedi: “Ey Hafsa! Nebî’yi ﷺ ‘Kendisi için feryat edilerek ağlanan kimse azap görür’ buyururken işitmedin mi?” Dedi ki: Suheyb de feryat ederek ağladı; Ömer: “Ey Suheyb! Kendisi için feryat edilerek ağlanan kimsenin azap göreceğini bilmiyor musun?” dedi.
+& haddesenâ, haddesenâ, haddesenâ, an, enne
+^ لَمَّا عَوَّلَتْ
 
 269 | Affân → Abdülvâhid → Yezîd er-Rişk → Muâze → Ümmü Amr bt. Abdullah → Abdullah b. ez-Zübeyr → Ömer b. el-Hattâb | Ömer b. el-Hattâb hutbe verirken şöyle dedi: Resûlullah ﷺ şöyle buyurdu: “Kim dünyada ipek giyerse âhirette ona (ipek) giydirilmez.”
 & haddesenâ, haddesenâ, haddesenâ, an, an, semi‘a, semi‘a
@@ -48,8 +48,8 @@
 & haddesenâ, haddesenâ, an, an, an
 ^ قَالَ: قَدِمْتُ عَلَى
 
-274 | Abdurrahmân → Süfyân → İbrâhîm b. Abdüla‘lâ → Süveyd b. Gafele | Süveyd b. Gafele dedi ki: Ömer’i Hacer’i öperken gördüm; şöyle diyordu: “Ben senin zarar da fayda da vermeyen bir taş olduğunu elbette biliyorum; fakat Ebü’l-Kâsım’ı ﷺ sana çok düşkün gördüm.”
-& haddesenâ, an, an, an
+274 | Abdurrahmân → Süfyân → İbrâhîm b. Abdüla‘lâ → Süveyd b. Gafele → Ömer | Süveyd b. Gafele dedi ki: Ömer’i Hacer’i öperken gördüm; şöyle diyordu: “Ben senin zarar da fayda da vermeyen bir taş olduğunu elbette biliyorum; fakat Ebü’l-Kâsım’ı ﷺ sana çok düşkün gördüm.”
+& haddesenâ, an, an, an, kâle
 ^ قَالَ: رَأَيْتُ عُمَرَ
 
 275 | Abdurrahmân → Süfyân → Ebû İshâk → Amr b. Meymûn → Ömer; ayrıca Abdürrezzâk → Süfyân → Ebû İshâk → Amr b. Meymûn → Ömer | Ömer dedi ki: Müşrikler, güneş Sebîr üzerine doğuncaya kadar Cem‘den ayrılmazlardı —Abdürrezzâk dedi ki: “Ey Sebîr! Aydınlan ki (koşup) gidelim” derlerdi—; yani: Nebî ﷺ onlara muhalefet etti ve güneş doğmadan önce (oradan) ayrıldı.

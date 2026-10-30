@@ -3,8 +3,8 @@
 ^ قَالَ رَسُولُ اللهِ
 
 299 | Muhammed b. Bişr → Hişâm b. Urve → babası → İbn Ömer → Ömer | İbn Ömer’den: Ömer’e: “Halife bırakmaz mısın?” denildi. Dedi ki: “Eğer (halife bırakmayı) terk edersem, benden daha hayırlı olan Resûlullah ﷺ da terk etti. Eğer halife bırakırsam, benden daha hayırlı olan Ebû Bekir de halife bıraktı.”
-& haddesenâ, haddesenâ, an, an, an
-^ أَنَّ عُمَرَ قِيلَ
+& haddesenâ, haddesenâ, an, an, enne
+^ قِيلَ لَهُ
 
 300 | Yezîd → Yahyâ b. Saîd → Muhammed b. İbrâhîm → Alkame b. Vakkâs el-Leysî → Ömer b. el-Hattâb | Ömer b. el-Hattâb insanlara hutbe verirken şöyle diyordu: “Resûlullah’ı ﷺ şöyle buyururken işittim: ‘Amel ancak niyetledir ve kişiye ancak niyet ettiği vardır. Kimin hicreti Allah’a ve Resûlü’ne ise, hicreti Allah’a ve Resûlü’nedir. Kimin hicreti de elde edeceği bir dünyalığa ya da evleneceği bir kadına ise, hicreti hicret ettiği şeyedir.’”
 & haddesenâ, ahberanâ, enne, semi‘a, semi‘a
@@ -34,12 +34,12 @@
 & haddesenâ, ahberanâ, an, an, an
 ^ قَالَ: سَأَلْتُ رَسُولَ
 
-307 | Yezîd → Verkâ → Abdüla‘lâ es-Sa‘lebî → Abdurrahmân b. Ebî Leylâ; ayrıca Ebü’n-Nadr → Verkâ → Abdüla‘lâ es-Sa‘lebî → Abdurrahmân b. Ebî Leylâ | Abdurrahmân b. Ebî Leylâ dedi ki: Berâ b. Âzib ile birlikteydim; Ömer b. el-Hattâb da Bakî‘de hilâle bakıyordu. Bir binekli geldi; Ömer onu karşılayıp: “Nereden geldin?” dedi. “Batıdan” dedi. “Hilâli gördün mü?” dedi. “Evet” dedi. Ömer: “Allâhu ekber! Müslümanlara (tek) bir adam yeter” dedi. Sonra Ömer kalkıp abdest aldı, mestleri üzerine meshetti, sonra akşam namazını kıldı; sonra: “Resûlullah’ı ﷺ böyle yaparken gördüm” dedi. Ebü’n-Nadr dedi ki: Üzerinde kolları dar bir cübbe vardı; elini onun altından çıkardı ve meshetti.
-& haddesenâ, ahberanâ, an, an; haddesenâ, haddesenâ, an, an
+307 | Yezîd → Verkâ → Abdüla‘lâ es-Sa‘lebî → Abdurrahmân b. Ebî Leylâ → Ömer b. el-Hattâb; ayrıca Ebü’n-Nadr → Verkâ → Abdüla‘lâ es-Sa‘lebî → Abdurrahmân b. Ebî Leylâ → Ömer b. el-Hattâb | Abdurrahmân b. Ebî Leylâ dedi ki: Berâ b. Âzib ile birlikteydim; Ömer b. el-Hattâb da Bakî‘de hilâle bakıyordu. Bir binekli geldi; Ömer onu karşılayıp: “Nereden geldin?” dedi. “Batıdan” dedi. “Hilâli gördün mü?” dedi. “Evet” dedi. Ömer: “Allâhu ekber! Müslümanlara (tek) bir adam yeter” dedi. Sonra Ömer kalkıp abdest aldı, mestleri üzerine meshetti, sonra akşam namazını kıldı; sonra: “Resûlullah’ı ﷺ böyle yaparken gördüm” dedi. Ebü’n-Nadr dedi ki: Üzerinde kolları dar bir cübbe vardı; elini onun altından çıkardı ve meshetti.
+& haddesenâ, ahberanâ, an, an, kâle; haddesenâ, haddesenâ, an, an, kâle
 ^ قَالَ: كُنْتُ مَعَ
 
-308 | Yezîd → Cerîr → Zübeyr b. el-Hirrît → Ebû Lebîd | Ebû Lebîd dedi ki: Tâhiye’den, kendisine Beyrah b. Esed denilen bir adam muhacir olarak çıktı. Resûlullah’ın ﷺ vefatından birkaç gün sonra Medine’ye geldi. Ömer onu gördü ve yabancı olduğunu anladı; ona: “Sen kimsin?” dedi. “Umân halkındanım” dedi. “Umân halkından mı?” dedi. “Evet” dedi. Dedi ki: Elinden tutup onu Ebû Bekir’in (radıyallâhu anh) yanına soktu ve: “Bu, Resûlullah’ı ﷺ şöyle buyururken işittiğim yerin halkındandır: ‘Ben, kendisine Umân denilen bir yer biliyorum ki deniz onun kıyısına çarpar. Orada Araplardan bir kabile vardır ki eğer elçim onlara gitse, ona ne bir ok ne de bir taş atarlar’” dedi.
-& haddesenâ, ahberanâ, ahberanâ, an
+308 | Yezîd → Cerîr → Zübeyr b. el-Hirrît → Ebû Lebîd → Ömer | Ebû Lebîd dedi ki: Tâhiye’den, kendisine Beyrah b. Esed denilen bir adam muhacir olarak çıktı. Resûlullah’ın ﷺ vefatından birkaç gün sonra Medine’ye geldi. Ömer onu gördü ve yabancı olduğunu anladı; ona: “Sen kimsin?” dedi. “Umân halkındanım” dedi. “Umân halkından mı?” dedi. “Evet” dedi. Dedi ki: Elinden tutup onu Ebû Bekir’in (radıyallâhu anh) yanına soktu ve: “Bu, Resûlullah’ı ﷺ şöyle buyururken işittiğim yerin halkındandır: ‘Ben, kendisine Umân denilen bir yer biliyorum ki deniz onun kıyısına çarpar. Orada Araplardan bir kabile vardır ki eğer elçim onlara gitse, ona ne bir ok ne de bir taş atarlar’” dedi.
+& haddesenâ, ahberanâ, ahberanâ, an, kâle
 ^ قَالَ: خَرَجَ رَجُلٌ
 
 309 | Yezîd → Âsım b. Muhammed → babası → İbn Ömer → Ömer | Ömer’den —dedi ki: Onu ancak merfû olarak rivayet ettiğini biliyorum— şöyle buyurdu: “Allah tebâreke ve teâlâ şöyle buyurur: Kim bana şöyle tevazu gösterirse —Yezîd avucunun içini yere doğru çevirdi ve onu yere yaklaştırdı— onu şöyle yükseltirim —avucunun içini göğe doğru çevirdi ve onu göğe doğru kaldırdı—.”
