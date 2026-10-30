@@ -1,0 +1,1 @@
+- Müsned 5731: Arapça “وفي موضع آخر قال: حدثنا حماد بن زيد” ile başlıyor; İmam Ahmed’in hocası (5730’daki Yûnus) bu yolda anılmadığından sened Hammâd b. Zeyd ile başlatıldı, ilk sîga haddesenâ; “başka bir yerde (şöyle) dedi” % notunda. Senedin böyle bırakılması onay ister.
