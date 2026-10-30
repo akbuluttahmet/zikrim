@@ -20,7 +20,7 @@ lo, hi = meta['from'], meta['to']
 
 ZIY = {'*': 1, '•': 2, '°': 3}
 HEAD = re.compile(r'^### \|+ (.*)$')
-ITEM = re.compile(r'^# ([*•°])?\s*(\d+)\s*(?:ms\d+\s*)?-\s*(.*)$')
+ITEM = re.compile(r'^# ([*•°](?:\s*[*•°])*)?\s*(\d+)\s*(?:ms\d+\s*)?-\s*(.*)$')
 
 
 def temizle(t):
@@ -44,7 +44,7 @@ for line in src.read_text(encoding='utf-8').splitlines():
     m = ITEM.match(line)
     if m:
         n = int(m.group(2))
-        cur = {'n': n, 'bab_ar': bab, 'ziyade': ZIY.get(m.group(1), 0), 'ar': m.group(3)}
+        cur = {'n': n, 'bab_ar': bab, 'ziyade': max([ZIY[c] for c in (m.group(1) or '') if c in ZIY] or [0]), 'ar': m.group(3)}
         items.append(cur)
         continue
     if cur is not None and line.startswith('~~'):
@@ -53,6 +53,14 @@ for line in src.read_text(encoding='utf-8').splitlines():
         cur['ar'] += ' ' + line[2:]
 
 sec = [x for x in items if lo <= x['n'] <= hi]
+# Dijital nüshanın sıra hataları: aynı numara iki kez geldiyse ve bir sonraki numara yoksa ikincisi o numaradır
+gorulen = {x['n'] for x in sec}
+for i in range(1, len(sec)):
+    a, b = sec[i - 1], sec[i]
+    if b['n'] == a['n'] and (a['n'] + 1) not in gorulen:
+        b['n'] = a['n'] + 1
+        gorulen.add(b['n'])
+        print(f"sıra düzeltmesi: ikinci {a['n']} → {b['n']}")
 nums = [x['n'] for x in sec]
 eksik = sorted(set(range(lo, hi + 1)) - set(nums))
 tekrar = sorted({n for n in nums if nums.count(n) > 1})
@@ -73,8 +81,13 @@ while len(S) < si:
 S[si - 1] = {'f': meta['f'], 'tr': meta['tr'], 'items': out}
 (D / 'kaynak.json').write_text(json.dumps(S, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')
 
-plan = [p for p in json.loads((D / 'plan.json').read_text(encoding='utf-8')) if p[1] != si]
-start = max(int(p[0][1:]) for p in plan) + 1
+plan_eski = json.loads((D / 'plan.json').read_text(encoding='utf-8'))
+mevcut = sorted(int(p[0][1:]) for p in plan_eski if p[1] == si)
+plan = [p for p in plan_eski if p[1] != si]
+# Bölüm daha önce parçalandıysa aynı parça adları korunur (çeviri dosyaları cikti/pNNN.txt bunlara bağlı)
+start = mevcut[0] if mevcut else max(int(p[0][1:]) for p in plan) + 1
+if mevcut and (len(out) + 17) // 18 != len(mevcut):
+    sys.exit(f'bölüm {si}: parça sayısı değişti ({len(mevcut)} → {(len(out) + 17) // 18}); elle bakılmalı')
 for k in range(0, len(out), 18):
     part = out[k:k + 18]
     name = f'p{start + k // 18:03d}'
