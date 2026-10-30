@@ -16,6 +16,7 @@ Her oturum: önce `SPEC.md`, sonra bu dosya. Bitince burayı güncelle (kitap, s
 | el-Hallâl (`hallal/`) | isnad standardı (SPEC) | **tamamlandı** — 7/7 kitap, 372 madde (2026-10-29) | `dogrula.py`: 0 hata, 38 uyarı (28 metin başı, 7 sîga) |
 | eş-Şâfiî (`safii/`) | isnad standardı (SPEC) | **tamamlandı** — 1/1 kitap, 547 madde (2026-10-29) | `dogrula.py`: 0 hata, 5 uyarı |
 | el-Buhârî (`buhari/`) | isnad standardı (SPEC) | **tamamlandı** — 3/3 kitap, 609 madde (2026-10-30): b03 Halku ef‘âli’l-ibâd, 302 madde | `dogrula.py --ravi`: 0 hata; nüshada numara yok, sırayla numaralandı; notlar `GOZDEN.md` |
+| Sahîh-i Buhârî (`sahih/`) | isnad standardı (SPEC) | **sürüyor** — 1/97 kitap: k01 Bed’ü’l-vahy, 9 madde (0, 0.1, 1–7) (2026-10-31). Sıradaki: Kitâbü’l-Îmân (k02, 8–58) | `dogrula.py --ravi`: 0 hata, 8 uyarı. Şâmile 1681 (735 Beykûniyye şerhidir). 3382 boş, atlandı |
 | ed-Dârimî (`darimi/`) | isnad standardı (SPEC) | **d01 tamam** — er-Red ale’l-Cehmiyye, 397 madde (2026-10-30). Sıradaki: Nakzu’d-Dârimî (d02) | `c[0]` = ed-Dârimî; 163, 253, 388 nüshada yok; notlar `GOZDEN.md` |
 | el-İbâne (`ibane/`) | isnad standardı (SPEC) | **tamam** — 22/22 bölüm (i01–i22), 3134 madde (2026-10-29) | `dogrula.py`: 0 hata, 163 uyarı |
 | Şerhu usûli’l-i‘tikâd (`lalekai/`) | isnad standardı (SPEC) | **II. cüz sürüyor** — mukaddime + l01–l11, 514 madde (2026-10-30). l10 Kur’ân 131 madde (354–520). l11 tevakkuf 21 madde (520.1–544; nüshada yok: 525, 534, 538, 539, 542). Sıradaki: l12 (545–) | `dogrula.py`: 0 hata, 13 uyarı (önceki 11 + l10 419 ve 453: سمعنا/يقول sîga sayımı). 520.1 ve 539.1 numarasız |
@@ -72,6 +73,8 @@ Hepsi: `python3 araclar/dogrula.py <kitaplık> --hepsi`. Sayılar yukarıdaki ta
 - Sîga eşlemesinin kendi raporu: `araclar/siga_hizala_rapor.md` (195 lafzı bulunamayan halka, 83 belirsiz hizalama).
 
 ## Günlük
+
+- 2026-10-31 — Sahîh-i Buhârî kitaplığı açıldı (`sahih/`). Şâmile 735 Beykûniyye şerhidir; kayıt 1681 (Züheyr, Dâru Tavki’n-Necât, Abdülbâkî numaraları). Buğâ mukaddimesi ve `[تعليق]` alınmadı; âyet parantezleri duruyor. Firebrî senedi bu nüshada yok. Kitâbü Bed’i’l-vahy (k01, 9 madde). `dogrula.py sahih --ravi`: 0 hata, 8 uyarı. Sıradaki: Îmân 8–. Şüpheli yerler `GOZDEN.md`.
 
 - 2026-10-30 — Lâlekâî II. cüz, l10 (Kur’ân, 131 madde, 354–520) ve l11 (tevakkuf, 21 madde, 520.1–544). l10’da 385 ve 500 senedindeki çöp adlar düzeltildi; 463, 465, 494 ve 510’un düşen zincirleri panele alındı. 520.1 Medine ehli (Hârûn el-Ferevî), 539.1 İbn Râhûye numarasız. Nüshada yok: 525, 534, 538, 539, 542. 535’in ikinci ad listesinin yüklemi nüshada yok. `dogrula.py`: 0 hata.
 

@@ -5,7 +5,7 @@
 import json, re, os
 R = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..') + '/'
 out = {}
-for v in ['musned', 'musannef', 'ibnebiseybe', 'ahmed', 'zuhd', 'fezail', 'berbehari', 'seria', 'acurri', 'hallal', 'safii', 'buhari', 'ebudavud', 'harb', 'darimi', 'ibane', 'sunan', 'leys', 'zuhri', 'hemmam', 'ukbe', 'ibnvehb', 'lalekai']:
+for v in ['musned', 'musannef', 'ibnebiseybe', 'ahmed', 'zuhd', 'fezail', 'berbehari', 'seria', 'acurri', 'hallal', 'safii', 'buhari', 'ebudavud', 'harb', 'darimi', 'ibane', 'sunan', 'leys', 'zuhri', 'hemmam', 'ukbe', 'ibnvehb', 'lalekai', 'sahih']:
     idx = json.load(open(f'{R}{v}/index.json', encoding='utf-8'))
     items = []
     for bi, b in enumerate(idx):

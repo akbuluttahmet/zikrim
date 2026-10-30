@@ -42,6 +42,7 @@ MUELLIF = {
     'ibnvehb': 'İbn Vehb',
     'ukbe': 'İbn Kutluboğa',
     'lalekai': 'el-Lâlekâî',
+    'sahih': 'el-Buhârî',
 }
 
 BELIRSIZ = re.compile(r'^(bir |Basralı |Kûfeli |Medineli |Şamlı |.*ashâbından|.*arkadaşlarından|.*den bir |.*dan bir )|ya da|yahut', re.I)
@@ -263,7 +264,7 @@ def kur(kitapliklar):
 
 
 if __name__ == '__main__':
-    libs = sys.argv[1:] or ['sunan', 'musned', 'musannef', 'ibnebiseybe', 'ahmed', 'zuhd', 'fezail', 'acurri', 'seria', 'hallal', 'safii', 'buhari', 'ebudavud', 'harb', 'ibane', 'darimi', 'leys', 'zuhri', 'hemmam', 'ibnvehb', 'ukbe', 'lalekai']
+    libs = sys.argv[1:] or ['sunan', 'musned', 'musannef', 'ibnebiseybe', 'ahmed', 'zuhd', 'fezail', 'acurri', 'seria', 'hallal', 'safii', 'buhari', 'ebudavud', 'harb', 'ibane', 'darimi', 'leys', 'zuhri', 'hemmam', 'ibnvehb', 'ukbe', 'lalekai', 'sahih']
     o = kur(libs)
     turler = collections.Counter(r['tur'] for r in o['ravi'].values())
     arli = sum(1 for r in o['ravi'].values() if r['ar'])

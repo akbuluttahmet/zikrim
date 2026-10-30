@@ -44,12 +44,14 @@ MUELLIF = {
     'ibnvehb': 'İbn Vehb',
     'musannef': 'İbn Ebî Şeybe',
     'lalekai': 'el-Lâlekâî',
+    'sahih': 'el-Buhârî',
 }
 # Müellifin metin içi notlarının Arapça ve Türkçe kalıbı (sayıları eşleşmeli)
 MUELLIF_NOT = {'sunan': (r'قال أبو داود', r'Ebû Dâvûd (?:dedi|der|şöyle)'),
                'seria': (r'قال محمد بن الحسين', r'(?:Âcurrî|Muhammed b\. el-Hüseyn) (?:dedi|der|şöyle)'),
                'musned': (r'قال عبد الله(?!\s+بن)', r'Abdullah (?:dedi|der|şöyle)'),
-               'darimi': (r'قال أبو سعيد(?!\s+يعني)', r'Ebû Saîd(?:\s*\(rahimehullah\))? dedi ki')}
+               'darimi': (r'قال أبو سعيد(?!\s+يعني)', r'Ebû Saîd(?:\s*\(rahimehullah\))? dedi ki'),
+               'sahih': (r'قال أبو عبد الله', r'Ebû Abdullah \(el-Buhârî\) dedi ki')}
 
 SIGALAR = {'haddesenâ', 'haddesenî', 'ahberanâ', 'ahberanî', 'enbe’enâ', 'semi‘tü', 'semi‘a', 'an', 'enne', 'kâle',
            'haddesehû', 'haddesehüm', 'ahberahû', 'ahberahüm', 'kara’tü', 'kurie', 'unbi’tü', 'ketebe ileyye', 'vecedtü'}
