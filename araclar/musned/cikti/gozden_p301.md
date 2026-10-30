@@ -1,0 +1,1 @@
+- Müsned 5139: Neşirde ayrı numaralı ama yalnız alternatif sened notu (Abdullah b. el-Velîd → Süfyân → Abdurrahmân b. Alkame); metni yok, 5138’e bağlı. Sened satırı boş bırakıldı, not metinde çevrildi.

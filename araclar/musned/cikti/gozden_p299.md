@@ -1,0 +1,1 @@
+- Müsned 5107, 5108: Arapçası sened içermiyor (“قال: وقال رسول الله…”), önceki maddenin (5106) senediyle devam ediyor; sened satırı boş bırakıldı.
