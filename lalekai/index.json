@@ -137,11 +137,11 @@
   ],
   "f": "l12.json",
   "tr": "Kur’ân: Allah’ın onu hakikaten söylediği",
-  "n": 61,
-  "from": 545,
+  "n": 70,
+  "from": 544.1,
   "to": 614,
-  "t": 0,
-  "b": 1
+  "t": 70,
+  "b": 9
  },
  {
   "g": [
@@ -232,9 +232,21 @@
    "IV. cüz"
   ],
   "f": "l20.json",
-  "tr": "Kader: Kadere iman, Kaderiyye ve onlardan uzak durmak",
-  "n": 273,
+  "tr": "Kader: Kaderiyye ve sahâbenin kader hakkındaki sözleri",
+  "n": 126,
   "from": 1113,
+  "to": 1244,
+  "t": 0,
+  "b": 1
+ },
+ {
+  "g": [
+   "IV. cüz"
+  ],
+  "f": "l20b.json",
+  "tr": "Kader: Tâbiînin sözleri ve Kaderiyye’nin hükmü",
+  "n": 147,
+  "from": 1245,
   "to": 1398,
   "t": 0,
   "b": 1
@@ -269,8 +281,20 @@
   ],
   "f": "l23.json",
   "tr": "Îmân: Şubeleri ve sayılan hasletler",
-  "n": 204,
+  "n": 107,
   "from": 1592,
+  "to": 1699,
+  "t": 0,
+  "b": 1
+ },
+ {
+  "g": [
+   "V. cüz"
+  ],
+  "f": "l23b.json",
+  "tr": "Îmân: Sahâbe ve tâbiînin sözleri, artıp eksilmesi",
+  "n": 97,
+  "from": 1700,
   "to": 1798,
   "t": 0,
   "b": 1
