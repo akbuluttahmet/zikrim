@@ -3754,30 +3754,63 @@ function backupExtras() {
   }
   return ek;
 }
-// Bütün kitap dosyalarını önceden indirir; service worker bunları kalıcı kitap önbelleğine (zikrim-kitap) yazar
+// Bütün kitap dosyalarını kalıcı kitap önbelleğine (zikrim-kitap, sw.js → BOOKS) yazar. Eskiden yalnız açılan bölümler
+// önbelleğe giriyordu; internetsizken hiç açılmamış bir bölüm “yüklenemedi” diyordu. Artık uygulama internet varken
+// eksik kitap dosyalarını arka planda kendiliğinden indirir (booksWarm); Ayarlar'daki düğme aynı işi ilerlemeyle yapar.
+// Dosyalar sayfanın kendisinden önbelleğe yazılır: service worker henüz sayfayı denetlemiyorsa da (ilk açılış) kaybolmaz.
+// Çevrilmemiş bölümlerin (t: 0) dosyası yoktur, listeye girmez (eskiden 404 alıp “inmedi” sayılıyordu).
+const BOOK_CACHE = 'zikrim-kitap';
+let booksBusy = null;
+async function booksDownload(prog, all = false) {
+  if (!('caches' in window)) return {total: 0, fail: 0, list: false};
+  const cache = await caches.open(BOOK_CACHE);
+  const abs = u => new URL(u, location.href).href;
+  const files = [];
+  let list = true;
+  for (const L of Object.values(LIBS)) {
+    try {
+      L.idx = L.idx || await libFetch(L, 'index.json');
+      if (!(await cache.match(abs(L.base + 'index.json'), {ignoreSearch: true}))) files.push(L.base + 'index.json');
+      for (const m of L.idx) if (m && m.f && m.t) files.push(L.base + 'tr/' + m.f);
+    } catch (e) { list = false; }
+  }
+  const todo = [];
+  for (const u of files) if (all || !(await cache.match(abs(u), {ignoreSearch: true}))) todo.push(u);
+  let done = 0, fail = 0, i = 0;
+  const one = async () => {
+    while (i < todo.length) {
+      const u = todo[i++];
+      try { const r = await fetch(u, {cache: 'no-cache'}); if (!r.ok) throw 0; await cache.put(abs(u), r); } catch (e) { fail++; }
+      done++; if (prog) prog(done, todo.length);
+    }
+  };
+  await Promise.all([one(), one(), one()]);
+  return {total: todo.length, fail, list};
+}
+// Arka planda, sessizce: internet varsa ve veri tasarrufu açık değilse, açılıştan biraz sonra ve internet geri gelince
+function booksWarm() {
+  if (booksBusy || !navigator.onLine || (navigator.connection && navigator.connection.saveData)) return;
+  booksBusy = (async () => {
+    try { if (navigator.storage && navigator.storage.persist) await navigator.storage.persist(); } catch (e) {}
+    try { await booksDownload(null); } catch (e) {}
+  })().finally(() => { booksBusy = null; });
+}
+setTimeout(booksWarm, 6000);
+addEventListener('online', () => setTimeout(booksWarm, 3000));
 $('#offlineBooks').addEventListener('click', async () => {
   const btn = $('#offlineBooks'), info = $('#offlineInfo');
   if (btn.disabled) return;
   if (!navigator.onLine) { info.textContent = 'İnternet yok; bağlanınca tekrar dene.'; return; }
   btn.disabled = true;
+  info.textContent = 'Hazırlanıyor…';
   try { if (navigator.storage && navigator.storage.persist) await navigator.storage.persist(); } catch (e) {}
-  const files = [];
-  try {
-    for (const L of Object.values(LIBS)) {
-      L.idx = L.idx || await libFetch(L, 'index.json');
-      for (const m of L.idx) if (m && m.f) files.push(L.base + 'tr/' + m.f);
-    }
-  } catch (e) { info.textContent = 'Kitap listesi alınamadı; internet bağlantını kontrol et.'; btn.disabled = false; return; }
-  let done = 0, fail = 0, i = 0;
-  const one = async () => {
-    while (i < files.length) {
-      const u = files[i++];
-      try { const r = await fetch(u); if (!r.ok) throw 0; await r.arrayBuffer(); } catch (e) { fail++; }
-      done++; info.textContent = `İndiriliyor… ${done} / ${files.length}`;
-    }
-  };
-  await Promise.all([one(), one(), one(), one()]);
-  info.textContent = fail ? `${files.length - fail} dosya indi, ${fail} dosya inmedi; tekrar dokunarak tamamla.` : 'Bütün kitaplar indi; artık internetsiz de açılır.';
+  try { if (booksBusy) await booksBusy; } catch (e) {}
+  let r;
+  try { r = await booksDownload((d, n) => { info.textContent = `İndiriliyor… ${d} / ${n}`; }); }
+  catch (e) { r = {total: 0, fail: 1, list: false}; }
+  info.textContent = !r.list ? 'Kitap listesinin bir kısmı alınamadı; internet bağlantını kontrol edip tekrar dene.'
+    : r.fail ? `${r.total - r.fail} dosya indi, ${r.fail} dosya inmedi; tekrar dokunarak tamamla.`
+    : 'Bütün kitaplar indirildi; artık internetsiz de açılır.';
   btn.disabled = false;
   savedFill();
 });

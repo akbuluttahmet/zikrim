@@ -1,5 +1,5 @@
 // Güncelleme yaptığında bu sürüm adını artır
-const CACHE = 'zikrim-v267';
+const CACHE = 'zikrim-v268';
 // Büyük veri dosyaları (ara, ara-ar, akis, ravi; ≈70 MB açık) sürümsüz ayrı önbellekte durur: her yayında yeniden inmez,
 // yalnız sunucudaki ETag değişince (activate'te HEAD ile bakılır) hemen yeniden indirilir. Akış/Anasayfa (akis) ve râvi
 // sayfası (ravi) çevrimdışı da çalışsın diye WARM listesindekiler önbellekte yoksa activate'te indirilir; arama dosyaları
@@ -91,7 +91,12 @@ self.addEventListener('fetch', event => {
     event.respondWith(caches.open(BOOKS).then(async cache => {
       const hit = await cache.match(req, {ignoreSearch: true});
       const network = fetch(req).then(res => { if (res && res.ok) event.waitUntil(put(cache, req, res.clone())); return res; });
-      if (/\/index\.json$/.test(path)) return network.catch(() => hit || Response.error());
+      // Zayıf bağlantıda ağ yanıtı hiç gelmeyebilir; önbellekte varsa 3,5 sn sonra oradan ver (ağ yanıtı gelince yine yazılır)
+      if (/\/index\.json$/.test(path)) {
+        if (!hit) return network.catch(() => Response.error());
+        event.waitUntil(network.catch(() => {}));
+        return Promise.race([network.catch(() => hit), new Promise(r => setTimeout(() => r(hit), 3500))]);
+      }
       event.waitUntil(network.catch(() => {}));
       return hit || network.catch(() => Response.error());
     }));
