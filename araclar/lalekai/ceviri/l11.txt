@@ -1,0 +1,89 @@
+# l11 — eski yayından dönüştürüldü (Grok), yeni düzenle tamamlanıyor
+@ Kur’ân’da, onun mahlûk olmadığı hususunda şüphe ile tevakkuf edenin tekfiri hakkında rivayet edilenlerin bağlamı
+@ar =< فروى عن
+520.1 | Hârûn b. Ebî Alkame el-Ferevî | Hârûn b. Ebî Alkame el-Ferevî dedi ki: Abdülmelik b. Abdülazîz el-Mâcişûn’u ve diğer âlimlerimizi şöyle derken işittim: “Kim Kur’ân’da şüphe ile tevakkuf ederse kâfirdir.” Dedi ki: Abdülmelik’i özellikle şöyle derken işittim: “Kim Kur’ân’da şüphe ile tevakkuf ederse, mahlûktur diyen gibidir.”
+& kâle
+^ قال: سمعت
+= فروى عن أهل المدينة هارون بن أبي علقمة الفروي قال: سمعت عبد الملك بن عبد العزيز الماجشون وغيره من علمائنا يقولون: من وقف في القرآن بالشك فهو كافر. قال: وسمعت عبد الملك خاصة يقول: من وقف في القرآن بالشك فهو مثل من قال مخلوق.
+:l Numarasız rivayet
+521 | Ebû Mus‘ab Ahmed b. Ebî Bekr | Ebû Mus‘ab Ahmed b. Ebî Bekr dedi ki: “Kim Kur’ân’da tevakkuf ederse kâfirdir.”
+& an
+% Medine ehli rivayetinin devamıdır.
+^ قال: من
+= وأبي مصعب أحمد بن أبي بكر قال: من وقف في القرآن فهو كافر.
+522 | Muhammed b. Müslim b. Vâre → Ebû Mus‘ab | Muhammed b. Müslim b. Vâre dedi ki: Ebû Mus‘ab bana dedi ki: “Kim Kur’ân mahlûktur derse kâfirdir. Kim ‘mahlûk mudur, değil midir, bilmem’ derse onun gibidir.” Sonra dedi ki: “Bilakis ondan daha kötüdür.” Mâlik’in mezhebini açığa vuran bir adamı andım ve “Tevakkufu açığa vurdu” dedim. Dedi ki: “Allah ona lânet etsin. Bizim mezhebimize bağlanıyor, oysa ondan berîdir.” Bunu Ahmed b. Hanbel’e andım. Hoşuna gitti ve sevindi.
+& kâle, kâle
+^ قال لي
+= وقال محمد بن مسلم بن وارة: قال لي أبو مصعب: من قال: القرآن مخلوق فهو كافر, ومن قال: لا أدري يعني مخلوق أو غير مخلوق فهو مثله. ثم قال: بل هو شر منه. فذكرت رجلا كان يظهر مذهب مالك فقلت: إنه أظهر الوقف. فقال: لعنه الله, ينتحل مذهبنا وهو بريء منه. فذكرت ذلك لأحمد بن حنبل فأعجبه وسر به.
+523 | Ebû Hâtim er-Râzî → Ebû Mus‘ab | Ebû Mus‘ab dedi ki: “Kur’ân hakkında ‘mahlûk mu, değil mi, bilmeyiz’ diyenler, bizce ‘mahlûktur’ diyenden daha kötüdür. Tövbeye çağrılırlar. Tövbe ederlerse ne âlâ; etmezlerse boyunlarını vururum.”
+& kâle, kâle
+^ قال أبو
+= وحكي عن أبي حاتم الرازي, قال أبو مصعب: هؤلاء الذين يقولون في القرآن لا ندري مخلوق أم غير مخلوق هم عندنا شر ممن يقول: مخلوق, يستتابون فإن تابوا وإلا ضربت أعناقهم.
+524 | Ali b. el-Furât el-Isbahânî → Ebû Mus‘ab; ayrıca Mus‘ab ez-Zübeyrî | Ebû Mus‘ab’dan bunun gibi; Ali b. el-Furât el-Isbahânî rivayet etti. Mus‘ab ez-Zübeyrî’ye Kur’ân hakkında ve “mahlûk değildir” demeyen kimse hakkında soruldu. Dedi ki: “Bunlar cahildir — ve onların hatası — ve ben onların zındık olmasından töhmet ederim.”
+& kâle, an; kâle
+^ أنه سئل
+= وكذلك روى عنه علي بن الفرات الأصبهاني وروي عن مصعب الزبيري أنه سئل عن القرآن, وعن من لا يقول غير مخلوق, فقال: هؤلاء جهال - وخطأهم - وإني لأتهمهم أن يكونوا زنادقة.
+526 | Ebû Hâtim → İbrâhîm b. el-Münzir el-Hizâmî | Ebû Hâtim dedi ki: İbrâhîm b. el-Münzir el-Hizâmî’ye soruldu. Denildi ki: Satın alınan bir köle Cehmî çıkarsa ne dersin? Dedi ki: “Bu, kendisi sebebiyle geri çevrilecek bir ayıptır.” Denildi ki: Vâkıfî çıkarsa? Dedi ki: “Kendisi sebebiyle geri çevrilecek daha kötüdür.”
+& kâle, kâle
+^ سئل إبراهيم
+= وقال أبو حاتم: سئل إبراهيم بن المنذر الحزامي فقيل: ما تقول في عبد اشتري فخرج جهميا؟ فقال: عيب يرد منه. قال: فإن خرج واقفيا؟ قال: شر يرد منه.
+527 | Abdullah b. Ebî Seleme el-Ömerî el-Medenî | Abdullah b. Ebî Seleme el-Ömerî el-Medenî’ye, “Kur’ân mahlûk değildir” diyen hakkında soruldu. Dedi ki: “Onun mahlûk olmadığını söylemeyen kimse, ‘mahlûktur’ demiş olur; ancak bunu kendisiyle örtündüğü bir örtü kılmıştır.”
+& an
+% Bağdat’a yerleşmişti.
+^ أنه سئل
+= وعن عبد الله بن أبي سلمة العمري المدني نزيل بغداد أنه سئل عن من قال: إن القرآن غير مخلوق, فقال: إن الذي لا يقول إنه غير مخلوق فهو يقول: مخلوق إلا أنه جعل هذه سترة يستتر بها.
+528 | Hârûn b. Mûsâ el-Ferevî | Hârûn b. Mûsâ el-Ferevî’ye Kur’ân’da tevakkuf eden hakkında soruldu. Dedi ki: “Mahlûktur diyen gibidir.”
+& an
+^ أنه سئل
+= عن هارون بن موسى الفروي أنه سئل عمن يقف في القرآن, فقال: مثل من يقول: مخلوق.
+529 | Hârûn b. Mûsâ el-Ferevî | Hârûn b. Mûsâ el-Ferevî’den: “Kim Kur’ân’da şüphe ile tevakkuf ederse kâfirdir. Kim şüphesiz tevakkuf ederse bid‘atçidir.”
+& an
+^ من وقف
+= وعنه: من وقف في القرآن بالشك فهو كافر, ومن وقف بغير شك فهو مبتدع.
+530 | Muhammed b. Yahyâ b. Ebî Ömer el-Adenî | Muhammed b. Yahyâ b. Ebî Ömer el-Adenî’den: “Kim Kur’ân mahlûktur derse kâfirdir. Kim tevakkuf ederse, mahlûktur diyenden daha kötüdür. Arkalarında namaz kılınmaz, kendileriyle nikâh kıyılmaz, kendileriyle konuşulmaz, cenazelerine katılınmaz, hastaları yoklanmaz.”
+& an
+^ من قال
+= وعن محمد بن يحيى بن أبي عمر العدني: من قال القرآن مخلوق فهو كافر, ومن وقف فهو شر ممن قال: مخلوق, لا يصلى خلفهم, ولا يناكحون, ولا يكلمون, ولا تشهد جنائزهم, ولا يعاد مرضاهم.
+531 | Ebû Zur‘a er-Râzî → el-Hasan b. Ali el-Hulvânî | Ebû Zur‘a er-Râzî dedi ki: el-Hasan b. Ali el-Hulvânî’ye denildi ki: “Bize, tevakkufu açığa vurduğun haberi geldi.” Bunu şiddetle inkâr etti ve dedi ki: “Kur’ân Allah’ın kelâmıdır, mahlûk değildir. Bundan başkası olur mu, yahut bir kimse bundan başkasını söyler mi? Bunda hiç şüphe etmedik. Şam’da vâkıfeden bir adam bana sordu; tevakkuf hakkında ruhsat vermemi istedi. Kabul etmedim.”
+& kâle, kâle
+^ قيل للحسن
+= وقال أبو زرعة الرازي: قيل للحسن بن علي الحلواني: إنا أخبرنا عنك أنك أظهرت الوقف. فأنكر ذلك إنكارا شديدا وقال: القرآن كلام الله غير مخلوق, وهل يكون غير ذا أو يقول أحد غير ذا؟ ما شككنا في ذا قط, وسألني رجل بالشام وكان من الواقفة فأحب أن أرخص في الوقف فأبيت.
+532 | Ebü’l-Velîd b. Ebi’l-Cârûd ve Muhammed b. Yezîd el-Mukrî ve el-Hasan b. İbrâhîm el-Beyâdî ve İbn Yûnus el-Medînî | Ebü’l-Velîd b. Ebi’l-Cârûd, Muhammed b. Yezîd el-Mukrî, el-Hasan b. İbrâhîm el-Beyâdî ve İbn Yûnus el-Medînî dediler ki: “Kâfirlerdir.”
+& an
+^ أنهم قالوا:
+= وعن أبي الوليد بن أبي الجارود, ومحمد بن يزيد المقرئ والحسن بن إبراهيم البياضي, وابن يونس المديني أنهم قالوا: كفار.
+533 | Yahyâ b. Selîm et-Tâifî | Yahyâ b. Selîm et-Tâifî’den: “Kim Kur’ân’da tevakkuf ederse Cehmîdir.” Bunu İbn Ebî Ömer el-Adenî ondan rivayet etti. Kûfe ehlinden Vekî‘ b. el-Cerrâh — Yahyâ b. Yahyâ en-Nîsâbûrî’nin ondan rivayeti —: “Kim Kur’ân’ın Allah’ın kelâmı olduğunda, yani mahlûk olmadığında şüphe ederse kâfirdir.”
+& an
+^ من وقف
+= وعن يحيى بن سليم الطائفي: من وقف في القرآن فهو جهمي. فيما روى عنه ابن أبي عمر العدني. ومن أهل الكوفة وكيع بن الجراح فيما روى عنه يحيى بن يحيى النيسابوري: من شك أن القرآن كلام الله يعني غير مخلوق فهو كافر.
+535 | Ebû Bekir b. Ebî Şeybe ve kardeşi Osman ve el-Hüseyin b. Ali b. el-Esved ve Ebû Hişâm er-Rifâî ve Ebû Saîd el-Eşecc ve İshâk b. Mûsâ el-Hatmî ve Muhammed b. Halef et-Teymî ve Hârûn b. İshâk el-Hemedânî | Ebû Bekir b. Ebî Şeybe ile kardeşi Osman, el-Hüseyin b. Ali b. el-Esved, Ebû Hişâm er-Rifâî, Ebû Saîd el-Eşecc, İshâk b. Mûsâ el-Hatmî, Muhammed b. Halef et-Teymî ve Hârûn b. İshâk el-Hemedânî dediler ki: “Kâfirdirler ve Cehmî’den daha kötüdür.” Muhammed b. Mukâtil el-Abbâdânî, el-Abbâs b. el-Velîd en-Nersî, Muhammed b. Ebî Safvân es-Sekafî, Abbâs b. Abdülazîm el-Anberî, Muhammed b. Beşşâr, Muhammed b. el-Müsennâ, Amr b. Ali, Muhammed b. Yahyâ b. Ebî Hazm el-Kutaî, Ebû Abdurrahmân en-Nahvî, el-Kâsım b. Ümeyye el-Hezzâ, el-Hasan b. Şâzân el-Vâsıtî, Mes‘ûd b. Müsebbih el-Vâsıtî, Muhammed b. Harb en-Nesâî, Muhammed b. Hâtim el-Cürcârâî — Hubey diye bilinir — ve Ahmed b. Sinân el-Vâsıtî’den de rivayet edildi.
+& an
+^ قالوا: كفار
+= وعن أبي بكر بن أبي شيبة وأخيه عثمان, والحسين بن علي بن الأسود, وأبي هشام الرفاعي, وأبي سعيد الأشج, وإسحاق بن موسى الخطمي, ومحمد بن خلف التيمي, وهارون بن إسحاق الهمذاني قالوا: كفار وشر من الجهمي. وعن محمد بن مقاتل العباداني, والعباس بن الوليد النرسي, ومحمد بن أبي صفوان الثقفي, وعباس بن عبد العظيم العنبري, ومحمد بن بشار, ومحمد بن المثنى, وعمرو بن علي, ومحمد بن يحيى بن أبي حزم القطعي, وأبي عبد الرحمن النحوي, والقاسم بن أمية الحذاء, والحسن بن شاذان الواسطي, ومسعود بن مسبح الواسطي, ومحمد بن حرب النسائي, ومحمد بن حاتم الجرجرائي المعروف بحبي, وأحمد بن سنان الواسطي.
+536 |  | Bağdat ehlinden ve onların arasında sayılanlar: Ubeydullah b. Ömer el-Kavârîrî, Yahyâ b. Eyyûb, Dâvûd b. Reşîd, Süveyd b. Saîd el-Enbârî, Ahmed b. Hanbel, Yahyâ b. Maîn, Ebû Hayseme Züheyr b. Harb, Ebû Ma‘mer İsmâîl b. İbrâhîm, Ebû Sevr İbrâhîm b. Hâlid el-Kelbî, Ya‘kûb b. İbrâhîm ed-Devrakî, Hârûn b. Abdullah el-Bezzâz, el-Abbâs b. Gâlib el-Verrâk, el-Hasan b. es-Sabbâh el-Bezzâr, Abdülvehhâb b. el-Hakem el-Verrâk, Mahfûz b. Ebî Tevbe, Ebû Neşît Muhammed b. Hârûn, Ahmed b. Mansûr, Abbâs b. Ebî Tâlib ve Süleymân b. Tevbe. Hepsi dedi ki: Kim Kur’ân’da tevakkuf ederse kâfirdir. Dediler ki: Cehmîdir.
+^ من وقف
++
+537 |  | Mısır ehlinden ve onların arasında sayılanlar: Nuaym b. Hammâd el-Mervezî, Ahmed b. Sâlih el-Mısrî, Müemmel b. İhâb er-Rub‘î el-Mekkî — Mısır’a yerleşmiş —, Ebû Ubeydullah Ahmed b. Abdurrahmân — Abdullah b. Vehb’in kardeşinin oğlu — ve er-Rebî‘ b. Süleymân el-Murâdî el-Mısrî. Şam ehlinden: Hişâm b. Ammâr, el-Müseyyeb b. Vâdıh, Muhammed b. Halef el-Askalânî, el-Kâsım b. Osman el-Cû‘î ve İbrâhîm b. Ya‘kûb el-Cûzcânî — Dımaşk’a yerleşmiş —. el-Cezîre ve sugûr ehlinden: Hâmid b. Yahyâ el-Belhî, Ebû Bekir Muhammed b. Yezîd el-Eslemî et-Tarsûsî, İbrâhîm b. Saîd el-Cevherî el-Bağdâdî — Rey’e yerleşmiş —, Saîd b. Rahme el-Massîsî, Ahmed b. Harb el-Mevsılî, Muhammed b. Eyyûb el-Isbahânî, Muhammed b. Cebele er-Râfikî, Zerkân b. Muhammed el-Bağdâdî — Tarsus’a yerleşmiş —, Ya‘kûb b. İbrâhîm el-Haşşâb, Ali b. Mûsâ el-Kazvînî — Tarsus’a yerleşmiş —, Ahmed b. Şerîk es-Siczî, Nasr b. Mansûr el-Massîsî ve Abdülazîz b. Ahmed b. Şebbûye. Dediler ki: Kim Kur’ân’ın mahlûk olduğunu iddia ederse azîm olan Allah’a kâfirdir. Kim “Kur’ân mahlûk mudur, değil midir, bilmem” derse, Rabbinin kelâmının mahlûk olmadığını bilinceye kadar dininde şüphe içindedir. Bu, iki sugûr ehlinden olanların lafzıdır. Kalanların lafzı bu manadadır.
+^ من زعم
++
++
+539.1 | İshâk b. İbrâhîm b. Mahled | Horasan ehlinden: İshâk b. İbrâhîm b. Mahled’e, “Kur’ân Allah’ın kelâmıdır” deyip tevakkuf eden adam hakkında soruldu. Dedi ki: “Bence o, mahlûktur diyenden daha kötüdür. Çünkü başkası ona uyar.” Harb b. İsmâîl el-Kirmânî’nin ondan rivayetidir. Ahmed b. Seleme’nin rivayetinde: “Kim tevakkuf ederse böyledir.” Onu büyük bir şeyle itham etti ve dedi ki: “O, saptıran bir sapıktır.”
+& kâle
+% İbn Râhûye diye bilinir.
+^ أنه سئل
+:l Numarasız rivayet
+540 | Muhammed b. Yahyâ ez-Zühlî | Muhammed b. Yahyâ ez-Zühlî’den: “Kim Kur’ân’da tevakkuf ederse, yeri Kur’ân’ın mahlûk olduğunu iddia edenin yeridir.” Ali b. Habîb el-Belhî, Abd b. Vehb el-Belhî, Muhammed b. Yahyâ el-Belhî, Abde b. Abdurrahîm el-Mervezî, Ebû Ca‘fer Muhammed b. Mihrân el-Cemmâl er-Râzî, Süleymân b. Ma‘bed el-Mervezî, Ahmed b. es-Sabbâh — İbn Ebî Şüreyh diye bilinir —, Muhammed b. Îsâ ed-Dâmeğânî, Hârûn b. Hayyân el-Kazvînî, Abdullah b. Ahmed b. Şebbûye, Ebû Husayn b. Yahyâ er-Râzî, İbrâhîm b. Yûsuf el-Belhî, Muhammed b. Fudayl el-Belhî el-Âbid, Ahmed b. Ya‘kûb el-Belhî, Ahmed b. Mansûr el-Mervezî, Ebû Hârûn Muhammed b. Hâlid b. Yezîd el-Hazzâz er-Râzî, Ma‘ân b. Muhammed b. Mahled en-Nesevî, Hâzim b. Yahyâ el-Hulvânî, Ahmed b. Abdullah eş-Şa‘rânî, Muhammed b. Dâvûd Ebû Nasr et-Teymî es-Simnânî, Mahmûd b. Hâlid el-Hânıkînî ve Harb b. İsmâîl el-Kirmânî’den de:
+& an
+^ من وقف
+= وعن محمد بن يحيى الذهلي: من وقف في القرآن فمحله محل من زعم أن القرآن مخلوق. وعن علي بن حبيب البلخي, وعبد بن وهب البلخي, ومحمد بن يحيى البلخي, وعبدة بن عبد الرحيم المروزي, وأبي جعفر محمد بن مهران الجمال الرازي, وسليمان بن معبد المروزي, وأحمد بن الصباح المعروف بابن أبي شريح, ومحمد بن عيسى الدامغاني, وهارون بن حيان القزويني, وعبد الله بن أحمد بن شبويه, وأبي حصين بن يحيى الرازي, وإبراهيم بن يوسف البلخي, ومحمد بن فضيل البلخي العابد, وأحمد بن يعقوب البلخي, وأحمد بن منصور المروزي, وأبي هارون محمد بن خالد بن يزيد الخزار الرازي, ومعان بن محمد بن مخلد النسوي, وخازم بن يحيى الحلواني, وأحمد بن عبد الله الشعراني, ومحمد بن داود أبي نصر التيمي السمناني, ومحمود بن خالد الخانقيني, وحرب بن إسماعيل الكرماني:
+541 |  | “Kim Kur’ân’da şüphe ederse kâfirdir ya da Cehmîdir.” Onlardan kimisi de “Cehmî’den daha kötüdür” dedi.
+^ -
+= إن من شك في القرآن فهو كافر أو جهمي. ومنهم من قال: شر من جهمي
+543 | Abdurrahmân b. Ebî Hâtim → el-Hasan b. Eyyûb el-Kazvînî → Hârûn b. Ebî Alkame el-Ferevî → Abdülmelik b. Abdülazîz el-Mâcişûn; ayrıca Abdurrahmân b. Ebî Hâtim → Ca‘fer b. Ahmed b. Îsâ er-Râzî → Ebû Mûsâ Hârûn b. Ebî Alkame → Abdülmelik b. Abdülazîz el-Mâcişûn | Abdülmelik b. Abdülazîz el-Mâcişûn ve diğer âlimlerimiz diyordu ki: “Kim Kur’ân’da şüphe ile tevakkuf ederse kâfirdir.” Diğer yolda Abdülmelik b. Abdülazîz el-Mâcişûn dedi ki: “Kim Kur’ân’da şüphe ile tevakkuf ederse, mahlûktur diyen gibidir.”
+& kâle, haddesenâ, haddesenâ, semi‘tü; kâle, haddesenâ, haddesenî, semi‘tü
+^ من وقف
+= ذكره عبد الرحمن بن أبي حاتم قال: ثنا الحسن بن أيوب القزويني قال: ثنا هارون بن أبي علقمة الفروي قال: سمعت عبد الملك بن عبد العزيز الماجشون وغيره من علمائنا يقولون: «من وقف في القرآن بالشك فهو كافر» وذكره عبد الرحمن قال: ثنا جعفر بن أحمد بن عيسى الرازي قال: حدثني أبو موسى هارون بن أبي علقمة قال: سمعت عبد الملك بن عبد العزيز الماجشون يقول: «من وقف في القرآن بالشك فهو مثل من قال مخلوق»
+544 | Ahmed b. Muhammed b. Urve → el-Hasan b. Ali b. Zekeriyyâ → Seleme b. Şebîb → Ahmed b. Hanbel | Ahmed b. Hanbel dedi ki: “Vâkıfînin küfründe şüphe etme.”
+& ahberanâ, haddesenâ, semi‘tü, semi‘tü
+^ الواقفي لا
+= أخبرنا أحمد بن محمد بن عروة قال: حدثنا الحسن بن علي بن زكريا قال: سمعت سلمة بن شبيب يقول: سمعت أحمد بن حنبل يقول: الواقفي لا تشك في كفره

@@ -58,10 +58,19 @@ class Akis:
     def tam(self, metin):
         self.bosluk()
         metin = ns(metin)
-        if not self.S.startswith(metin, self.i):
-            yer = self.S[self.i:self.i + 80]
-            raise ValueError(f'Arapça uyuşmuyor.\n  beklenen: {metin[:80]}\n  kaynakta: {yer}')
-        a = self.i; self.i += len(metin); return self.S[a:self.i]
+        if self.S.startswith(metin, self.i):
+            a = self.i; self.i += len(metin); return self.S[a:self.i]
+        # boşluk ve virgül farklarını yok sayarak eşle (eski yayınların Arapçası “ ,” yerine “,” yazabilir)
+        es = {'،': ',', '؛': ';'}
+        i, j, S = self.i, 0, self.S
+        while j < len(metin):
+            if metin[j] == ' ': j += 1; continue
+            while i < len(S) and S[i] == ' ': i += 1
+            if i >= len(S) or es.get(S[i], S[i]) != es.get(metin[j], metin[j]):
+                yer = self.S[self.i:self.i + 80]
+                raise ValueError(f'Arapça uyuşmuyor.\n  beklenen: {metin[:80]}\n  kaynakta: {yer}')
+            i += 1; j += 1
+        a = self.i; self.i = i; return self.S[a:i]
 
     def once(self, ifade):
         self.bosluk()
