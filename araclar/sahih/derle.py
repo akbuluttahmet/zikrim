@@ -141,11 +141,18 @@ def index_yaz(hazir):
         }
         if k['no'] in hazir:
             nums = [h[0] for b in hazir[k['no']] for h in b['h']]
+            tam = [x for x in nums if float(x).is_integer()]
             rec['t'] = len(nums)
-            rec['n'] = len(nums)
             rec['b'] = len(hazir[k['no']])
-            rec['from'] = min(nums)
-            rec['to'] = max(nums)
+            if len(tam) < len(hs):
+                # Kitap yarım: n, henüz çevrilmeyen hadisleri de sayar; ara metin eklenir.
+                rec['n'] = len(hs) + (len(nums) - len(tam))
+                rec['from'] = min(min(nums), min(hs))
+                rec['to'] = max(max(nums), max(hs))
+            else:
+                rec['n'] = len(nums)
+                rec['from'] = min(nums)
+                rec['to'] = max(nums)
         idx.append(rec)
     (ROOT / 'sahih' / 'index.json').write_text(
         json.dumps(idx, ensure_ascii=False, separators=(',', ':')), encoding='utf-8')

@@ -107,3 +107,6 @@ Toplu düzeltme (2026-10-29): bütün kitaplıklarda `Resûlullah ﷺ’e` biçi
 - [ ] **sahih 7** — الأريسيين “erîsîlerin” diye bırakıldı; çiftçi/reâyâ şerhi eklenmedi. (2026-10-31)
 - [ ] **sahih 3382** — Bu numarada yalnız sayfa işareti var, metin yok; madde açılmadı. (2026-10-31)
 - [ ] **sahih — âyet parantezleri** — Neşrin `[النساء: 163]` gibi köşeli âyet yerleri Arapçada bırakıldı. İstersen silinir. (2026-10-31)
+- [ ] **sahih 7.1** — Birinci babın tercemesine yapışık ikinci başlık («باب دعاؤكم إيمانكم») ayrı bab yapılmadı; ara metnin içindedir. Mücâhid’in «شرع لكم …» sözüne âyet yeri eklenmedi. (2026-10-31)
+- [ ] **sahih 25.1** — Âyet işareti `[الحجر: 93]`, alıntı Hicr 15/92-93. Türkçede 92-93 yazıldı. Köşeli parantezli «ومن يبتغ غير الإسلام» (26.1) nüshada sûre numarası yok; (Âl-i İmrân 3/85) eklendi. (2026-10-31)
+- [ ] **sahih 13, 15** — İkinci yoldaki «عن النبي» salâvatı metinde ikinci kez yazılmadı; `%` notunda bir ﷺ ile sayıldı. (2026-10-31)
