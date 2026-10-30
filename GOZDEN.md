@@ -33,7 +33,7 @@ Biçim: `- [ ] kitaplık no — mesele. Seçenekler. (tarih)`
 - [ ] **fezail f01 2** — `وكان من الثقات` (Ebû Muhammed el-Hazzâz hakkında) senedden atılmış, `n`'ye de yazılmamış; dönüştürmede düşen bu tür sened içi notlar başka maddelerde de olabilir. (2026-10-29)
 - [ ] **lalekai 147** — «حديث ثابت», 146’nın tahvîl zincirindeki Sâbit b. Muhammed’dir; “Sâbit’in hadisinde” doğru. Kapatma önerisi; maddeyi Ahmet kapatır. (2026-10-30)
 - [ ] **lalekai 161** — Muhakkik notu «الصواب بشين معجمة» Arapçadan ve çeviriden çıkarıldı; “(metinde böyle)” kalktı. Cümle: “Vallahi bir adam cemaatten bir karış ayrılırsa —uyluğunun yanında bir karış gösteriyordu— mutlaka cemaatten ayrılmış olur.” (2026-10-30)
-- [ ] **lalekai 181** — Arapçası senedle biter («…عمرو بن علي بن مقدم,»); matn 182 ile ortaktır. Etiket “Tahvîl”, metin “Tahvîl.” (2026-10-30)
+- [ ] **lalekai 181** — Arapçası senedle biter («…عمرو بن علي بن مقدم,»); matn 182’dedir (`info.to`: 182). Etiket “Tahvîl”. (2026-10-30)
 - [ ] **lalekai 296** — Aynı numaradaki ikinci rivayet (`أخبرنا علي بن محمد بن عمر…`) neşrin 297’si yapıldı; etiket “No. 297”. (2026-10-30)
 - [ ] **lalekai 128** — «وقال ابن الديلمي: سمعت ابن عمرو» önceki senedi tekrarlamaz. Zincir yalnız İbn ed-Deylemî → İbn Amr. (2026-10-30)
 

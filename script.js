@@ -1357,6 +1357,25 @@ function libItem(L, h) {
   const row = el('div', 'tr-row');
   row.append(tp, ttsBtn('tr', '▶', () => [TTS.trSened && sp ? {el: sp, text: prepTr('Sened: ' + sened)} : null, {el: tp, text: prepTr(metin)}], 'tts-i', 'Türkçesini sesli oku'));
   a.append(row);
+  if (info && info.to != null) {
+    const btn = el('button', 'chip-button', 'Metne git › No. ' + info.to);
+    btn.type = 'button';
+    btn.addEventListener('click', () => {
+      const id = 'h' + info.to;
+      const here = document.getElementById(id);
+      if (here && here.offsetParent !== null) { flashTo(id); return; }
+      const babs = document.querySelector('.mus-babs');
+      if (L.data && L.book != null && babs && !babs.hidden) {
+        const i = L.data.babs.findIndex(b => b.h.some(x => x[0] === info.to));
+        const d = i >= 0 ? babs.children[i] : null;
+        if (d && d.fill) { d.fill(); d.open = true; flashTo(id); return; }
+      }
+      const cur = L.idx && L.book != null ? L.idx[L.book] : null;
+      const bi = cur && info.to >= cur.from && info.to <= cur.to ? L.book : libBookOf(L, info.to);
+      if (bi >= 0) goTo(L.view, bi, info.to);
+    });
+    a.append(btn);
+  }
   if (info && ((info.c && info.c.length > 1) || (info.n && info.n.length))) {
     const d = el('details', 'rv');
     d.append(el('summary', null, 'Râviler ve isnad'));

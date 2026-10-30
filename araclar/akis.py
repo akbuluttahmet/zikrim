@@ -5,6 +5,7 @@
 # Seçim: kütüphanedeki BÜTÜN çevrilmiş rivayetler (merfû, mevkûf, maktû, âlim sözleri), şunlar hariç:
 #   - bozuk/eksik metin notu olanlar ("(metin … bozuktur)", "(metinde böyle)")
 #   - tek başına okununca anlamsız kalan göndermeler ("benzeri", "mislini", "aynısını", "bu hadisi zikretti", "bunu söylerdi") ve 40 karakterden kısa parçalar
+#   - tahvîl maddeleri (info.l == "Tahvîl" ya da info.to): metin sonraki rivayettedir; yönlendirme cümlesi 40 karakterden uzun olduğu için ayrıca dışlanır
 #   - nüsha senedi / giriş maddeleri (no. 0; ez-Zühd'de no. 1)
 #   - standart bir telefon ekranına (390×844, Akış kartı, isnad zinciriyle birlikte) sığmayanlar: sigar() aşağıda.
 #     Hesap, uygulamadaki kartın tarayıcıda ölçülen yüksekliklerine göre ayarlanmıştır. Uygulama ayrıca her kartı
@@ -17,6 +18,9 @@ GONDERME = re.compile(r'benzer|mislini|aynısın|bu hadis(i|in)? (zikretti|devam
 
 def aday(v, h):
     n, t = h[0], h[2]
+    info = h[4] if len(h) > 4 else None
+    if isinstance(info, dict) and (info.get('l') == 'Tahvîl' or info.get('to') is not None):
+        return False
     if not isinstance(t, str) or len(t) < 40: return False
     if '(metin' in t or GONDERME.search(t): return False
     if n == 0 or (v == 'zuhd' and n == 1): return False

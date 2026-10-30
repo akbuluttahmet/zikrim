@@ -1,7 +1,7 @@
 # Ana sayfadaki "Rivayetler" kartının havuzunu (gunun.json) yeniden üretir. Yeni kitap/bölüm çevrilince çalıştır:
 #   python3 araclar/gunun.py
 # Kaynak: kütüphanedeki bütün kitaplıklar (LIBS). Seçim: Nebî ﷺ'in sözünü aktaran ("buyurdu"), 80–450 karakter,
-# bozuk metin notu ve "benzeri" göndermesi olmayan rivayetler. Uygulama önce kitaplığı, sonra rivayeti rastgele seçer.
+# bozuk metin notu ve "benzeri" göndermesi olmayan rivayetler. Tahvîl maddeleri (info.l == "Tahvîl" ya da info.to) girmez. Uygulama önce kitaplığı, sonra rivayeti rastgele seçer.
 import json, re, os
 R = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..') + '/'
 out = {}
@@ -14,6 +14,9 @@ for v in ['musned', 'musannef', 'ibnebiseybe', 'ahmed', 'zuhd', 'fezail', 'berbe
         for bb in d['babs']:
             for h in bb['h']:
                 t = h[2]
+                info = h[4] if len(h) > 4 else None
+                if isinstance(info, dict) and (info.get('l') == 'Tahvîl' or info.get('to') is not None):
+                    continue
                 if 'ﷺ' in t and re.search(r'buyurdu|buyururken|buyurmuştur', t) and 80 <= len(t) <= 450 and '(metin' not in t and 'benzeri' not in t and 'mislini' not in t:
                     items.append([bi, h[0], t])
     if not items: continue

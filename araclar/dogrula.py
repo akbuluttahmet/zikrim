@@ -201,7 +201,7 @@ def madde_denetle(rp, lib, dosya, h, ravi, bab_i):
         rp.h('info türü', yer, type(info).__name__)
     if isinstance(info, dict):
         for k in info:
-            if k not in ('c', 'n', 'k', 'l'):
+            if k not in ('c', 'n', 'k', 'l', 'to'):
                 rp.u('info bilinmeyen anahtar', yer, k)
         for x in info.get('n') or []:
             if not isinstance(x, str) or not x.strip():
@@ -273,7 +273,10 @@ def madde_denetle(rp, lib, dosya, h, ravi, bab_i):
         son_temel = re.sub(r'\s*\(.*?\)', '', son).split(' ve ')[0].strip()
         ilk = metin[:80]
         anahtar = [w for w in re.split(r'[\s’]', son_temel) if len(w) > 2 and w not in ('Ebû', 'Ebü’l-', 'İbn', 'Ümmü', 'bir', 'adam')]
-        if son_siga != 'kâle' and anahtar and not any(w in ilk for w in anahtar) \
+        # info.to: metin sonraki maddede (tahvîl); son râviyle başlaması beklenmez.
+        if isinstance(info, dict) and info.get('to') is not None:
+            pass
+        elif son_siga != 'kâle' and anahtar and not any(w in ilk for w in anahtar) \
                 and not re.match(r'^(Aynı|Bu |Bunun|Buna|Onun|\(|Resûlullah|Nebî|Ebû Dâvûd)', metin):
             rp.u('metin son râviyle başlamıyor', yer, f'son: {son} · metin: {ilk[:50]}')
     # --- Arapça ↔ Türkçe sayımlar ---

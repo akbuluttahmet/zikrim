@@ -18,7 +18,7 @@ Her oturum: önce `SPEC.md`, sonra bu dosya. Bitince burayı güncelle (kitap, s
 | el-Buhârî (`buhari/`) | isnad standardı (SPEC) | **tamamlandı** — 3/3 kitap, 609 madde (2026-10-30): b03 Halku ef‘âli’l-ibâd, 302 madde | `dogrula.py --ravi`: 0 hata; nüshada numara yok, sırayla numaralandı; notlar `GOZDEN.md` |
 | ed-Dârimî (`darimi/`) | isnad standardı (SPEC) | **d01 tamam** — er-Red ale’l-Cehmiyye, 397 madde (2026-10-30). Sıradaki: Nakzu’d-Dârimî (d02) | `c[0]` = ed-Dârimî; 163, 253, 388 nüshada yok; notlar `GOZDEN.md` |
 | el-İbâne (`ibane/`) | isnad standardı (SPEC) | **tamam** — 22/22 bölüm (i01–i22), 3134 madde (2026-10-29) | `dogrula.py`: 0 hata, 163 uyarı |
-| Şerhu usûli’l-i‘tikâd (`lalekai/`) | isnad standardı (SPEC) | **I. cüz** — mukaddime + l01–l08, 335 madde (2026-10-30). Sıradaki: II. cüz (l09; index’te `t: 0`) | `dogrula.py`: 0 hata, 40 uyarı (33 metin başı, 3 k, 1 ﷺ, 1 kısa, 1 tek yol tahvîl, 1 sîga). Nüshada yok: 41, 135, 277. 297 ve 311 var; 181 tahvîl |
+| Şerhu usûli’l-i‘tikâd (`lalekai/`) | isnad standardı (SPEC) | **I. cüz** — mukaddime + l01–l08, 335 madde (2026-10-30). Sıradaki: II. cüz (l09; index’te `t: 0`) | `dogrula.py`: 0 hata, 10 uyarı (4 metin başı, 3 k, 1 ﷺ, 1 tek yol tahvîl, 1 sîga). Nüshada yok: 41, 135, 277. 297 ve 311 var; 31 tahvîl `info.to` ile metne gider |
 | Ebû Dâvûd (`ebudavud/`), Harb (`harb/`), el-Berbehârî (`berbehari/`) | isnad standardı (SPEC) | **tamamlandı** — 243 madde (2026-10-29) | `dogrula.py`: 0 hata, 1 uyarı (berbehari ﷺ) |
 | Müsned (`musned/`) | isnad standardı (SPEC) | **sürüyor** — m001–m030 tamamlandı (1–7109): Hulefâ, Aşere, Aşere'den sonrakiler, Ehl-i beyt, Benî Hâşim, İbn Abbâs, İbn Mes‘ûd, İbn Ömer, Abdullah b. Amr, Ebû Rimse (2026-10-30). Sıradaki: Ebû Hüreyre (7110–10984; neşirde başında metinsiz numaralar var, birkaç bölüme bölünmeli) — `index.json`'a bölüm ekle, `kaynak_kur.py <OpenITI> <bölüm>` | `dogrula.py --ravi`: 0 hata; çevirmen notları `GOZDEN.md` |
 | el-Musannef (`musannef/`) | isnad standardı (SPEC) | **tamamlandı** — 38/38 kitap, 37 914 madde (2026-10-30): eski 24 kitap panele geçirildi (16 352), kalan 14 kitap yeni çevrildi (21 562; OpenITI 9944 harekesiz Arapça) | `dogrula.py`: 0 hata, 1752 uyarı (1451 metin başı, 188 sîga, 104 k, 9 kısa); çevirmen notları `araclar/musannef/notlar.md` |
@@ -72,6 +72,8 @@ Hepsi: `python3 araclar/dogrula.py <kitaplık> --hepsi`. Sayılar yukarıdaki ta
 - Sîga eşlemesinin kendi raporu: `araclar/siga_hizala_rapor.md` (195 lafzı bulunamayan halka, 83 belirsiz hizalama).
 
 ## Günlük
+
+- 2026-10-30 — Lâlekâî tahvîl maddeleri (31) metne yönlendirildi: `info.to`, “Bu senedin metni bir sonraki rivayettedir (no. N).”, “Metne git › No. N”. Art arda: 1 ve 2 → 3, 92 ve 93 → 94, 145 ve 146 → 147. Hepsi aynı babda; GOZDEN’e yeni madde yok. `dogrula.py` Lâlekâî 40 → 10 uyarı (metin başı 33 → 4, kısa 1 → 0); diğer kitaplıklar aynı (toplam 3578 → 3548, 0 hata).
 
 - 2026-10-30 — Lâlekâî I. cüz, dört düzeltme: 61’de soruyu cevaplayan baba `kâle` ile durur (metin Mu‘temir’le başlar); 249’da kendi cevabını anlatan Abdürrezzâk’tır, İbrâhîm zincire girmez; 36’da «ولها» “ilgisini kesmesi” (metin bozuk değil); 102 ve 311 “Ebû Zur‘a”. Son halka, isnad sonundaki ada göre mekanik eklenmez: anlatıda sözün kaynağı (cevaplayan ya da kendi yaptığını anlatan) ayırt edilir.
 
