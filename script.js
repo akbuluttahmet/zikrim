@@ -694,9 +694,9 @@ const QUOTES = [
 /* ---------- Kartlar ---------- */
 const cardsEl = $('#cards');
 const MSET = new Set(MORNING), ESET = new Set(EVENING);
-const VIEWS = {main: 'Sekîne', anasayfa: 'Anasayfa', akis: 'Akış', sabah: '☀︎ Sabah Zikirleri', aksam: '☾ Akşam Zikirleri', genel: '📿 Genel Zikirler', selef: '📜 Sözler', profil: 'Profilim', fikih: '⚖️ Hanbelî Fıkhı', musannef: '📚 Musannef', ibnebiseybe: '📚 İbn Ebî Şeybe', musned: '📗 Müsned', usul: '📘 Usûlü’s-Sünne', ahmed: '📘 İmam Ahmed', zuhd: '📘 ez-Zühd', fezail: '📘 Fezâilü’s-sahâbe', berbehari: '📕 Şerhu’s-Sünne', acurri: '📙 el-Âcurrî', seria: '📙 eş-Şerîa', hallal: '📗 el-Hallâl', safii: '📘 eş-Şâfiî', buhari: '📗 el-Buhârî', ebudavud: '📙 Ebû Dâvûd', harb: '📕 Harb el-Kirmânî', darimi: '📕 ed-Dârimî', ibane: '📕 el-İbâne', sunan: '📗 Sünen-i Ebî Dâvûd', leys: '📘 Leys b. Sa‘d', zuhri: '📘 ez-Zührî', hemmam: '📗 Hemmâm b. Münebbih', ibnvehb: '📗 İbn Vehb', kutuphane: '📚 Kütüphane', alim: '📚 Âlim', kaydedilen: '☆ Kaydettiklerim'};
-const LIB_CHILD = new Set(['musannef', 'ibnebiseybe', 'musned', 'usul', 'ahmed', 'zuhd', 'fezail', 'berbehari', 'acurri', 'seria', 'hallal', 'safii', 'buhari', 'ebudavud', 'harb', 'darimi', 'ibane', 'sunan', 'leys', 'zuhri', 'hemmam', 'ibnvehb', 'kaydedilen', 'alim', 'selef']);
-const READ_VIEWS = new Set(['anasayfa', 'akis', 'selef', 'profil', 'fikih', 'musannef', 'ibnebiseybe', 'musned', 'usul', 'ahmed', 'zuhd', 'fezail', 'berbehari', 'acurri', 'seria', 'hallal', 'safii', 'buhari', 'ebudavud', 'harb', 'darimi', 'ibane', 'sunan', 'leys', 'zuhri', 'hemmam', 'ibnvehb', 'kutuphane', 'kaydedilen', 'alim']);
+const VIEWS = {main: 'Sekîne', anasayfa: 'Anasayfa', akis: 'Akış', sabah: '☀︎ Sabah Zikirleri', aksam: '☾ Akşam Zikirleri', genel: '📿 Genel Zikirler', selef: '📜 Sözler', profil: 'Profilim', fikih: '⚖️ Hanbelî Fıkhı', musannef: '📚 Musannef', ibnebiseybe: '📚 İbn Ebî Şeybe', musned: '📗 Müsned', usul: '📘 Usûlü’s-Sünne', ahmed: '📘 İmam Ahmed', zuhd: '📘 ez-Zühd', fezail: '📘 Fezâilü’s-sahâbe', berbehari: '📕 Şerhu’s-Sünne', acurri: '📙 el-Âcurrî', seria: '📙 eş-Şerîa', hallal: '📗 el-Hallâl', safii: '📘 eş-Şâfiî', buhari: '📗 el-Buhârî', ebudavud: '📙 Ebû Dâvûd', harb: '📕 Harb el-Kirmânî', darimi: '📕 ed-Dârimî', ibane: '📕 el-İbâne', sunan: '📗 Sünen-i Ebî Dâvûd', leys: '📘 Leys b. Sa‘d', zuhri: '📘 ez-Zührî', hemmam: '📗 Hemmâm b. Münebbih', ukbe: '📗 Müsnedü Ukbe', ibnvehb: '📗 İbn Vehb', kutuphane: '📚 Kütüphane', alim: '📚 Âlim', kaydedilen: '☆ Kaydettiklerim'};
+const LIB_CHILD = new Set(['musannef', 'ibnebiseybe', 'musned', 'usul', 'ahmed', 'zuhd', 'fezail', 'berbehari', 'acurri', 'seria', 'hallal', 'safii', 'buhari', 'ebudavud', 'harb', 'darimi', 'ibane', 'sunan', 'leys', 'zuhri', 'hemmam', 'ukbe', 'ibnvehb', 'kaydedilen', 'alim', 'selef']);
+const READ_VIEWS = new Set(['anasayfa', 'akis', 'selef', 'profil', 'fikih', 'musannef', 'ibnebiseybe', 'musned', 'usul', 'ahmed', 'zuhd', 'fezail', 'berbehari', 'acurri', 'seria', 'hallal', 'safii', 'buhari', 'ebudavud', 'harb', 'darimi', 'ibane', 'sunan', 'leys', 'zuhri', 'hemmam', 'ukbe', 'ibnvehb', 'kutuphane', 'kaydedilen', 'alim']);
 let view = 'main';
 /* Alt sekmeler: her görünüm bir sekmeye aittir. Kökler: Zikir = ana sayfa, Kütüphane = âlimler (Sözler de Kütüphane'nin altındadır), Profilim = profil. */
 const TAB_ROOT = {zikir: 'main', anasayfa: 'anasayfa', akis: 'akis', kutuphane: 'kutuphane', profil: 'profil'};
@@ -1131,6 +1131,10 @@ LIBS.hemmam = {base: 'hemmam/', key: 'zikrim-hemmam', unit: 'kitap', item: 'hadi
   label: (n, h) => (h && h[4] && h[4].l) || (Number.isInteger(n) ? `No. ${n}` : 'Numarasız rivayet'),
   src: (n, m) => `Hemmâm b. Münebbih, es-Sahîfe${Number.isInteger(n) ? ', no. ' + n : ', no. ' + Math.floor(n) + ' sonrası'}`,
   note: 'Ebû Ukbe Hemmâm b. Münebbih es-San‘ânî (ö. 132), es-Sahîfe — Ebû Hüreyre’den (radıyallâhu anh) yazdığı, günümüze bütünüyle ulaşan en eski hadis sahîfesi; Türkçe çeviri ve Arapça metniyle. Çeviri ve Arapça metin el-Mektebetü’ş-Şâmile’deki nüshadan (no. 7776, Ali Hasan Abdülhamîd neşri, el-Mektebü’l-İslâmî / Dâru Ammâr) alınmıştır; hadis numaraları bu nüshaya göredir, 12 ile 13 arasındaki numarasız hadis 12’nin devamı olarak gösterilir. Bütün hadisler nüsha senedindeki tek zincirle (Abdürrezzâk → Ma‘mer → Hemmâm → Ebû Hüreyre) gelir; râvi panelinde Hemmâm → Ebû Hüreyre halkası gösterilir. Muhakkikin girişi ve notları alınmamıştır.'};
+LIBS.ukbe = {base: 'ukbe/', key: 'zikrim-ukbe', unit: 'kitap', item: 'hadis', ex: 40, err: 'Müsnedü Ukbe', nogo: true, bookKey: true,
+  label: (n, h) => (h && h[4] && h[4].l) || (Number.isInteger(n) ? `No. ${n}` : 'Ara metin'),
+  src: (n, m) => `Ukbe b. Âmir, Müsned${Number.isInteger(n) ? ', no. ' + n : ''}`,
+  note: 'Ukbe b. Âmir el-Cühenî (ö. 58), Müsnedü Ukbe b. Âmir — Zeynüddîn Kâsım b. Kutluboğa’nın (ö. 879) cem‘i; Türkçe çeviri ve Arapça metniyle. Çeviri ve Arapça metin el-Mektebetü’ş-Şâmile’deki nüshadan (no. 30774) alınmıştır; hadis numaraları bu nüshaya göredir (1–256). Müellifin mukaddimesi ayrıca çevrilmemiştir. Ahmed Müsnedi’nden alınanlarda râvi panelinin başı Ahmed b. Hanbel’dir; nüsha senedi mukaddimededir, zincire yazılmaz. Metin, sözü söyleyen râvinin adıyla başlar.'};
 LIBS.ibnvehb = {base: 'ibnvehb/', key: 'zikrim-ibnvehb', unit: 'bölüm', item: 'rivayet', ex: 30, err: 'İbn Vehb',
   label: (n, h) => (h && h[4] && h[4].l) || (Number.isInteger(n) ? `No. ${n}` : 'Numarasız rivayet'),
   src: n => `İbn Vehb, el-Câmi‘${Number.isInteger(n) ? ', no. ' + n : ', no. ' + Math.floor(n) + ' sonrası'}`,
@@ -1876,7 +1880,7 @@ function akisShuffled(D) {
 }
 const FEED = {all: null, pool: null, i: 0, y: 0, busy: false, filter: store.get('zikrim-akis-filtre', ''), tapCard: null, tapAt: 0};
 // Filtre etiketleri bu sırayla gösterilir (havuzda olmayan kitaplık atlanır)
-const FD_LIBS = [['musned', 'Müsned'], ['musannef', 'Musannef'], ['zuhd', 'Zühd'], ['fezail', 'Fezâil'], ['seria', 'eş-Şerîa'], ['acurri', 'el-Âcurrî'], ['ibnebiseybe', 'İbn Ebî Şeybe'], ['ahmed', 'İmam Ahmed'], ['hallal', 'el-Hallâl'], ['berbehari', 'Berbehârî'], ['safii', 'eş-Şâfiî'], ['buhari', 'el-Buhârî'], ['ebudavud', 'Ebû Dâvûd'], ['harb', 'Harb'], ['darimi', 'ed-Dârimî'], ['ibane', 'el-İbâne'], ['sunan', 'Sünen-i Ebî Dâvûd'], ['leys', 'Leys'], ['zuhri', 'ez-Zührî'], ['hemmam', 'Hemmâm'], ['ibnvehb', 'İbn Vehb']];
+const FD_LIBS = [['musned', 'Müsned'], ['musannef', 'Musannef'], ['zuhd', 'Zühd'], ['fezail', 'Fezâil'], ['seria', 'eş-Şerîa'], ['acurri', 'el-Âcurrî'], ['ibnebiseybe', 'İbn Ebî Şeybe'], ['ahmed', 'İmam Ahmed'], ['hallal', 'el-Hallâl'], ['berbehari', 'Berbehârî'], ['safii', 'eş-Şâfiî'], ['buhari', 'el-Buhârî'], ['ebudavud', 'Ebû Dâvûd'], ['harb', 'Harb'], ['darimi', 'ed-Dârimî'], ['ibane', 'el-İbâne'], ['sunan', 'Sünen-i Ebî Dâvûd'], ['leys', 'Leys'], ['zuhri', 'ez-Zührî'], ['hemmam', 'Hemmâm'], ['ukbe', 'Ukbe'], ['ibnvehb', 'İbn Vehb']];
 function feedShow(on) {
   if (!on) { if (!feedEl.hidden) { FEED.y = feedEl.scrollTop; feedEl.hidden = true; feedBarEl.hidden = true; } return; }
   feedEl.hidden = false; feedBarEl.hidden = false;
@@ -2369,8 +2373,10 @@ function goTo(v, b, n, ext = false, from = null) {
   renderCards();
   $('.list').scrollIntoView({block: 'start'});
 }
-const LIB_NAMES = {musannef: 'el-Musannef', ibnebiseybe: 'İbn Ebî Şeybe', musned: 'el-Müsned', usul: 'Usûlü’s-Sünne', ahmed: 'İmam Ahmed', zuhd: 'ez-Zühd', fezail: 'Fezâilü’s-sahâbe', berbehari: 'Şerhu’s-Sünne', acurri: 'el-Âcurrî', seria: 'eş-Şerîa', hallal: 'el-Hallâl', safii: 'eş-Şâfiî', buhari: 'el-Buhârî', ebudavud: 'Ebû Dâvûd', harb: 'Harb el-Kirmânî', darimi: 'ed-Dârimî', ibane: 'el-İbâne', sunan: 'Sünen-i Ebî Dâvûd', leys: 'Leys b. Sa‘d', zuhri: 'ez-Zührî', hemmam: 'Hemmâm b. Münebbih', ibnvehb: 'İbn Vehb'};
+const LIB_NAMES = {musannef: 'el-Musannef', ibnebiseybe: 'İbn Ebî Şeybe', musned: 'el-Müsned', usul: 'Usûlü’s-Sünne', ahmed: 'İmam Ahmed', zuhd: 'ez-Zühd', fezail: 'Fezâilü’s-sahâbe', berbehari: 'Şerhu’s-Sünne', acurri: 'el-Âcurrî', seria: 'eş-Şerîa', hallal: 'el-Hallâl', safii: 'eş-Şâfiî', buhari: 'el-Buhârî', ebudavud: 'Ebû Dâvûd', harb: 'Harb el-Kirmânî', darimi: 'ed-Dârimî', ibane: 'el-İbâne', sunan: 'Sünen-i Ebî Dâvûd', leys: 'Leys b. Sa‘d', zuhri: 'ez-Zührî', hemmam: 'Hemmâm b. Münebbih', ukbe: 'Müsnedü Ukbe b. Âmir', ibnvehb: 'İbn Vehb'};
 const SHELVES = [
+  {c: 'I. ASIR', books: [
+    {v: 'ukbe', b: 0, ar: 'مسند عقبة بن عامر', t: 'Müsnedü Ukbe b. Âmir', who: 'Ukbe b. Âmir', d: 58, col: '#6b5344', done: true}]},
   {c: 'II. ASIR', books: [
     {v: 'hemmam', b: 0, ar: 'صحيفة همام بن منبه', t: 'es-Sahîfe', who: 'Hemmâm b. Münebbih', bo: '40', d: 132, col: '#7a5a2e', done: true},
     {v: 'zuhri', b: 0, ar: 'الناسخ والمنسوخ', t: 'en-Nâsih ve’l-mensûh', who: 'ez-Zührî', bo: '58', d: 124, col: '#6b4a3f', done: true},
@@ -2467,8 +2473,8 @@ function coverBtn(bk) {
 /* ---------- Âlimler: Kütüphane'nin kökü âlim listesidir (vefat sırasıyla); âlime dokununca âlim sayfası ve kitapları açılır ----------
    Âlimler ve kitapları SHELVES'ten derlenir; yeni kitap SHELVES'e eklenince kendiliğinden görünür. Yeni âlim gelirse ALIM_AR ve ALIM_INI'ye de yazılır.
    Son açılan âlim `zikrim-alim`'de; o âlimin kitabından geri dönülünce âlim sayfasına gelinir. */
-const ALIM_AR = {'İbn Ebî Şeybe': 'ابن أبي شيبة', 'Ahmed b. Hanbel': 'أحمد بن حنبل', 'el-Hallâl': 'الخلال', 'el-Berbehârî': 'البربهاري', 'el-Âcurrî': 'الآجري', 'eş-Şâfiî': 'الشافعي', 'el-Buhârî': 'البخاري', 'Ebû Dâvûd': 'أبو داود', 'Harb el-Kirmânî': 'حرب الكرماني', 'ed-Dârimî': 'عثمان بن سعيد الدارمي', 'İbn Batta': 'ابن بطة', 'Leys b. Sa‘d': 'الليث بن سعد', 'ez-Zührî': 'الزهري', 'Hemmâm b. Münebbih': 'همام بن منبه', 'İbn Vehb': 'ابن وهب'};
-const ALIM_INI = {'İbn Ebî Şeybe': 'ش', 'Ahmed b. Hanbel': 'أح', 'el-Hallâl': 'خ', 'el-Berbehârî': 'ب', 'el-Âcurrî': 'آ', 'eş-Şâfiî': 'شا', 'el-Buhârî': 'بخ', 'Ebû Dâvûd': 'د', 'Harb el-Kirmânî': 'حر', 'ed-Dârimî': 'دا', 'İbn Batta': 'بط', 'Leys b. Sa‘d': 'ل', 'ez-Zührî': 'ز', 'Hemmâm b. Münebbih': 'هم', 'İbn Vehb': 'و'};
+const ALIM_AR = {'İbn Ebî Şeybe': 'ابن أبي شيبة', 'Ahmed b. Hanbel': 'أحمد بن حنبل', 'el-Hallâl': 'الخلال', 'el-Berbehârî': 'البربهاري', 'el-Âcurrî': 'الآجري', 'eş-Şâfiî': 'الشافعي', 'el-Buhârî': 'البخاري', 'Ebû Dâvûd': 'أبو داود', 'Harb el-Kirmânî': 'حرب الكرماني', 'ed-Dârimî': 'عثمان بن سعيد الدارمي', 'İbn Batta': 'ابن بطة', 'Leys b. Sa‘d': 'الليث بن سعد', 'ez-Zührî': 'الزهري', 'Hemmâm b. Münebbih': 'همام بن منبه', 'Ukbe b. Âmir': 'عقبة بن عامر', 'İbn Vehb': 'ابن وهب'};
+const ALIM_INI = {'İbn Ebî Şeybe': 'ش', 'Ahmed b. Hanbel': 'أح', 'el-Hallâl': 'خ', 'el-Berbehârî': 'ب', 'el-Âcurrî': 'آ', 'eş-Şâfiî': 'شا', 'el-Buhârî': 'بخ', 'Ebû Dâvûd': 'د', 'Harb el-Kirmânî': 'حر', 'ed-Dârimî': 'دا', 'İbn Batta': 'بط', 'Leys b. Sa‘d': 'ل', 'ez-Zührî': 'ز', 'Hemmâm b. Münebbih': 'هم', 'Ukbe b. Âmir': 'عق', 'İbn Vehb': 'و'};
 let alimCur = store.get('zikrim-alim', '');
 let ALIMS = null;
 function alimList() {
@@ -3426,7 +3432,7 @@ searchEl.addEventListener('input', () => { $('#araAll').hidden = !(searchEl.valu
    râviler hakkında dışarıdan bilgi yoktur. Arama sayfası gibi tam ekran açılır, geri tuşuyla kapanır. */
 const RAVI = {el: $('#raviPage'), title: $('#raviTitle'), body: $('#raviBody'), open: false, pushed: false, data: null, p: null, skip: new Set(), after: null, stack: []};
 const RAVI_AKRABA = /^(babası|dedesi|annesi|amcası|kardeşi|ninesi|dayısı|halası|teyzesi)(\b|$)/;
-const RAVI_MUELLIF = new Set(['Ebû Dâvûd', 'Ahmed b. Hanbel', 'Abdullah b. Ahmed', 'el-Âcurrî', 'Âcurrî', 'İbn Ebî Şeybe', 'el-Hallâl', 'Hallâl', 'eş-Şâfiî', 'Şâfiî', 'el-Buhârî', 'Buhârî', 'Harb b. İsmâîl', 'Harb el-Kirmânî', 'ed-Dârimî', 'İbn Batta', 'Leys b. Sa‘d', 'ez-Zührî', 'İbrâhîm b. el-Hüseyin el-Hemedânî', 'Hemmâm b. Münebbih', 'İbn Vehb']);
+const RAVI_MUELLIF = new Set(['Ebû Dâvûd', 'Ahmed b. Hanbel', 'Abdullah b. Ahmed', 'el-Âcurrî', 'Âcurrî', 'İbn Ebî Şeybe', 'el-Hallâl', 'Hallâl', 'eş-Şâfiî', 'Şâfiî', 'el-Buhârî', 'Buhârî', 'Harb b. İsmâîl', 'Harb el-Kirmânî', 'ed-Dârimî', 'İbn Batta', 'Leys b. Sa‘d', 'ez-Zührî', 'İbrâhîm b. el-Hüseyin el-Hemedânî', 'Hemmâm b. Münebbih', 'İbn Vehb', 'İbn Kutluboğa']);
 const raviLoad = () => RAVI.p || (RAVI.p = fetch('ravi.json').then(r => { if (!r.ok) throw new Error('ravi.json'); return r.json(); }).then(D => { RAVI.data = D; RAVI.skip = new Set(D.x || []); return D; }).catch(e => { RAVI.p = null; throw e; }));
 raviLoad().catch(() => {});
 function raviOpen(name) {

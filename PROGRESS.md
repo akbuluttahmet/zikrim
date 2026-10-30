@@ -24,8 +24,9 @@ Her oturum: önce `SPEC.md`, sonra bu dosya. Bitince burayı güncelle (kitap, s
 | Leys b. Sa‘d (`leys/`) | isnad standardı (SPEC) | **tamamlandı** — 1/1 kitap (Fevâidü'l-Leys), 8 madde (2026-10-29) | `dogrula.py --ravi`: 0 hata, 0 uyarı; paneller elle |
 | ez-Zührî (`zuhri/`) | isnad standardı (SPEC) | **tamamlandı** — 2/2 kitap (en-Nâsih ve'l-mensûh 49, Tenzîlü'l-Kur’ân 118 madde) (2026-10-29) | `dogrula.py --ravi`: 0 hata, 0 uyarı; paneller elle |
 | Hemmâm b. Münebbih (`hemmam/`) | isnad standardı (SPEC) | **tamamlandı** — 1/1 kitap (es-Sahîfe), 140 madde (2026-10-29) | `dogrula.py --ravi`: 0 hata, 0 uyarı; `k = 0` (Arapçada isnad yok) |
+| Müsnedü Ukbe b. Âmir (`ukbe/`) | isnad standardı (SPEC) | **tamamlandı** — 1/1 kitap, 256 madde (2026-10-30). Şâmile 30774, İbn Kutluboğa cem‘i | `dogrula.py`: 0 hata, 27 uyarı (25 ﷺ isnadda, 2 kısa). Metin son râviyle başlar. `ravi_kur.py` tam ağaçta bir sonraki derlemede |
 | İbn Vehb el-Câmi‘ (`ibnvehb/`) | isnad standardı (SPEC) | **tamamlandı** — 5/5 bölüm, 717 madde (2026-10-29) | `dogrula.py`: 0 hata; çeviri sözlükleri oturum dosyalarında |
-| **Diğer 5 erken dönem eseri** (Zeyd b. Sâbit, Ukbe b. Âmir, Râfi‘ b. Hadîc, Müsnedü'ş-Şâfiî, Hammâd b. Zeyd; Zührî'nin hadis cüzü) | isnad standardı (SPEC) | **başlanmadı** — kaynaklar kaydedildi (2026-10-29) | `CLAUDE.md` “Eklenecek erken dönem eserleri”; 3 eserin Şâmile numarası eksik (aşağıda) |
+| **Diğer 4 erken dönem eseri** (Zeyd b. Sâbit, Râfi‘ b. Hadîc, Müsnedü'ş-Şâfiî, Hammâd b. Zeyd; Zührî'nin hadis cüzü) | isnad standardı (SPEC) | **başlanmadı** — Ukbe bitti (2026-10-30) | `CLAUDE.md`; Şâmile numarası eksik olanlar `GOZDEN.md` |
 
 ## Araçlar (hazır)
 
@@ -57,7 +58,7 @@ Müsned dışındaki bütün kitaplıklar standarttadır (Musannef 2026-10-30'da
 
 ## Eklenecek 9 erken dönem eseri — sıra önerisi
 
-Küçükten büyüğe (OpenITI kelime sayısı): ~~Leys Fevâid~~ (bitti) → ~~Zührî Nâsih~~ (bitti) → ~~Sahîfetü Hemmâm~~ (bitti) → Ukbe Müsnedi (Şâmile 30774, boyut bilinmiyor) → ~~İbn Vehb el-Câmi‘~~ (bitti) → Müsnedü'ş-Şâfiî (≈86 000; `safii/` s02). Şâmile numarası bulunamayanlar (Zeyd Ferâiz, Râfi‘ Hadîs, Hammâd Cüz, Zührî hadis cüzü; Ahmet'in gönderdiği 1020 ve 367 başka kitaplar çıktı) Ahmet bağlantıyı verince sıraya girer (`GOZDEN.md`). Her kitapta Sünen iş akışı: `kilavuz.md` uyarlanır → parti → `denetle.py` → derle → `dogrula.py --ravi` 0 hata → `ravi_kur.py` → yayın.
+Küçükten büyüğe (OpenITI kelime sayısı): ~~Leys Fevâid~~ (bitti) → ~~Zührî Nâsih~~ (bitti) → ~~Sahîfetü Hemmâm~~ (bitti) → ~~Ukbe Müsnedi~~ (bitti, 256) → ~~İbn Vehb el-Câmi‘~~ (bitti) → Müsnedü'ş-Şâfiî (≈86 000; `safii/` s02). Şâmile numarası bulunamayanlar (Zeyd Ferâiz, Râfi‘ Hadîs, Hammâd Cüz, Zührî hadis cüzü) Ahmet bağlantıyı verince sıraya girer (`GOZDEN.md`). Her kitapta Sünen iş akışı: `kilavuz.md` uyarlanır → parti → `denetle.py` → derle → `dogrula.py --ravi` 0 hata → `ravi_kur.py` → yayın.
 
 ## 12 kitaplık — gözle bakılacak uyarılar (dogrula.py, 2026-10-29, sîga eşlemesinden sonra)
 
@@ -70,6 +71,8 @@ Hepsi: `python3 araclar/dogrula.py <kitaplık> --hepsi`. Sayılar yukarıdaki ta
 - Sîga eşlemesinin kendi raporu: `araclar/siga_hizala_rapor.md` (195 lafzı bulunamayan halka, 83 belirsiz hizalama).
 
 ## Günlük
+
+- 2026-10-30 — Müsnedü Ukbe b. Âmir (Şâmile 30774, İbn Kutluboğa cem‘i, `ukbe/`, 256 madde) eklendi. Metin son râvinin adıyla başlar (`dogrula.py`: 0 hata, 27 uyarı). Kütüphane, akış, günün rivayeti ve arama güncellendi. `ravi.json` tam derleme bekliyor (bütün kitaplıklar yerindeyken `ravi_kur.py`). Çevirmen notu: 36, 42, 43, 44, 50, 81, 104, 121, 139, 140, 143, 157, 170, 172, 185, 207, 215, 225, 232, 240, 246, 251 senedinde boş halka düşmüş olabilir; 239’un panel senedi bozuk, zincir metindedir (`GOZDEN.md`).
 
 - 2026-10-30 — el-Buhârî: Halku ef‘âli’l-ibâd (Şâmile 9697, b03) eklendi. OpenITI nüshasında “N -” yok; 302 madde sırayla numaralandı. `dogrula.py buhari --ravi`: 0 hata. Çevirmen notları `araclar/buhari/gozden/`, özet `GOZDEN.md`.
 

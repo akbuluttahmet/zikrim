@@ -39,6 +39,8 @@ MUELLIF = {
     # Zührî kitaplığı: cüzü rivayet eden İbrâhîm el-Hemedânî'nin kitap başındaki rivayetleri onun adıyla; Zührî'nin metni senedsiz
     'zuhri': ('ez-Zührî', 'İbrâhîm b. el-Hüseyin el-Hemedânî'),
     'hemmam': 'Hemmâm b. Münebbih',
+    # Müsnedü Ukbe: cem‘ İbn Kutluboğa’nındır; maddenin başı alındığı eserin müellifidir
+    'ukbe': ('Ahmed b. Hanbel', 'et-Taberânî', 'İbn Kutluboğa', 'İbn Mâce', 'Ebû Dâvûd', 'Müslim', 'en-Nesâî', 'Ebû Nuaym', 'et-Tahâvî', 'ed-Dârekutnî'),
     'ibnvehb': 'İbn Vehb',
     'musannef': 'İbn Ebî Şeybe',
 }
