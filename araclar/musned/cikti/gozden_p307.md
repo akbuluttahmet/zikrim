@@ -1,0 +1,1 @@
+- Müsned 5254: Arapça metin “قال عبد الرحمن: " نقص” ile yarım kalıyor; Abdurrahmân’ın lafız farkı nüshada eksik. Türkçede “Abdurrahmân dedi ki: “Eksilir”” diye yarım bırakıldı; neşirle karşılaştırılmalı.

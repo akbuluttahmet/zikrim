@@ -1,0 +1,1 @@
+- Müsned 4871: Senedde “عن أبيه يحيى” — “babası” zamiri Muhammed b. Yahyâ b. Habbân’a mı, aradaki “bir adam”a mı dönüyor, belirsiz; sened satırında “babası Yahyâ” yazıldı, metin “(Yahyâ’dan)” ile başlatıldı.

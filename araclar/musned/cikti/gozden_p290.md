@@ -1,0 +1,1 @@
+- Müsned 4951: Arapça “وحدثنا قبله” ile başlayan Ebû Hüreyre rivayeti İbn Ömer müsnedinin içinde; “فذكر الحديث” sonrasında anlamsız “فليجب” kalıntısı var (önceki maddeden taşmış olabilir). Çeviride “(metinde böyle)” ile bırakıldı; ayrıca “قبله” rivayet edenin kim olduğu metinde belirsiz, sened Hişâm ve İbn Avn ile başlatıldı.
