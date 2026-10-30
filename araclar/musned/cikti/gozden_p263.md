@@ -1,0 +1,1 @@
+- Müsned 4513: الإقران “(yerken) ikişer ikişer birleştirmek” diye çevrildi; metinde “hurma” geçmediği için eklenmedi. Uygun mu?

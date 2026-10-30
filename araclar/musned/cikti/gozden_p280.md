@@ -1,0 +1,1 @@
+- Müsned 4769: Arapçada tırnak dengesiz (“وقال ابن عمر فيها نماء الخلق ”” — açılış tırnağı yok); İbn Ömer’in sözü ayrı cümle olarak çevrildi.
