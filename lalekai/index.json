@@ -101,11 +101,11 @@
   ],
   "f": "l09.json",
   "tr": "Tevhid: Allah’ın birlenmesi, sıfatları ve isimleri",
-  "n": 24,
-  "from": 327,
+  "n": 27,
+  "from": 326.1,
   "to": 353,
-  "t": 0,
-  "b": 1
+  "t": 27,
+  "b": 2
  },
  {
   "g": [
@@ -116,8 +116,8 @@
   "n": 131,
   "from": 354,
   "to": 520,
-  "t": 0,
-  "b": 1
+  "t": 131,
+  "b": 25
  },
  {
   "g": [
@@ -125,11 +125,11 @@
   ],
   "f": "l11.json",
   "tr": "Kur’ân: Kur’ân hakkında tevakkuf edenin tekfiri",
-  "n": 19,
-  "from": 521,
+  "n": 21,
+  "from": 520.1,
   "to": 544,
-  "t": 0,
-  "b": 1
+  "t": 21,
+  "b": 4
  },
  {
   "g": [
