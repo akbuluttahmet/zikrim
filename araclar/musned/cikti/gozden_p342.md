@@ -1,0 +1,1 @@
+- Müsned 5862: Arapça metin “وبيع الكرم بالزبيب كيلا،” ile virgülle bitiyor; nüshada devamı düşmüş olabilir (çeviri metindeki kadarıyla yapıldı).

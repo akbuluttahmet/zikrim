@@ -28,9 +28,14 @@ def muellif_sec(ar, ziyade):
     """
     if ziyade in (2, 3):
         return 'Abdullah b. Ahmed'
-    arc = HAREKE.sub('', ar[:160])
+    arc = HAREKE.sub('', ar[:160]).replace('[', '').replace(']', '')
+    # “قال عبد الله بن أحمد: قرأت على أبي” biçimi (neşrin köşeli parantezli eklemesiyle)
+    arc = re.sub(r'^\s*قال\s*:?\s*عبد الله(?:\s+بن\s+أحمد)?\s*:\s*', 'قال: ', arc)
+    # İşaretsiz vicâde (قال: وجدت هذا الحديث في كتاب أبي …)
+    if re.match(r'^\s*(?:قال\s*:?\s*)?و?وجدت\s+(?:هذا\s+الحديث\s+)?في\s+كتاب\s+أبي', arc):
+        return 'Abdullah b. Ahmed'
     # Abdullah'ın babasına okuduğu rivayetler (قرأت على أبي، حدثك X): babası halkası kara’tü
-    if re.match(r'^\s*(?:(?:حدثنا|ثنا)\s+عبد الله\s*[،,]\s*)?(?:قال\s*:?\s*)?قرأت\s+على\s+أبي', arc):
+    if re.match(r'^\s*(?:(?:حدثنا|ثنا)\s+عبد الله\s*[،,]\s*)?(?:قال\s*:?\s*)?قرأت\s+على\s+أبي(?!\s*قرة)', arc):
         return 'Abdullah b. Ahmed'
     # Abdullah'ın künyesiyle başlayan kendi rivayetleri (قال أبو عبد الرحمن: حدثني …)
     if re.match(r'^\s*قال\s+أبو\s+عبد\s+الرحمن', arc):
