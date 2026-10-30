@@ -112,12 +112,24 @@
    "II. cüz"
   ],
   "f": "l10.json",
-  "tr": "Kur’ân: Allah’ın kelâmı olduğu ve mahlûk olmadığı",
+  "tr": "Kur’ân: Allah’ın kelâmı olduğu; sahâbe, tâbiîn ve fakihlerin icmâı",
   "n": 131,
   "from": 354,
   "to": 520,
   "t": 131,
   "b": 25
+ },
+ {
+  "g": [
+   "II. cüz"
+  ],
+  "f": "l10b.json",
+  "tr": "Kur’ân: İmamların sözleri ve mahlûk diyene fetva",
+  "n": 64,
+  "from": 453,
+  "to": 520,
+  "t": 0,
+  "b": 1
  },
  {
   "g": [
