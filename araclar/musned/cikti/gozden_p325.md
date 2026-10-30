@@ -1,0 +1,1 @@
+- Müsned 5570: “مؤذن العربان في مسجد بني هلال” — “العربان” okuması (Urbân) belirsiz; % notunda “Urbân’ın müezzini” yazıldı.
