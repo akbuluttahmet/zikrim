@@ -15,7 +15,7 @@ Her oturum: önce `SPEC.md`, sonra bu dosya. Bitince burayı güncelle (kitap, s
 | İbn Ebî Şeybe (`ibnebiseybe/`) | isnad standardı (SPEC) | **tamamlandı** — 2/2 kitap, 642 madde (2026-10-29) | `dogrula.py`: 0 hata, 26 uyarı (13 metin başı, 6 sîga, 5 ﷺ) |
 | el-Hallâl (`hallal/`) | isnad standardı (SPEC) | **tamamlandı** — 7/7 kitap, 372 madde (2026-10-29) | `dogrula.py`: 0 hata, 38 uyarı (28 metin başı, 7 sîga) |
 | eş-Şâfiî (`safii/`) | isnad standardı (SPEC) | **tamamlandı** — 1/1 kitap, 547 madde (2026-10-29) | `dogrula.py`: 0 hata, 5 uyarı |
-| el-Buhârî (`buhari/`) | isnad standardı (SPEC) | **tamamlandı** — 2/2 kitap, 307 madde (2026-10-29) | `dogrula.py`: 0 hata, 25 uyarı (22 metin başı, 1 kısa) |
+| el-Buhârî (`buhari/`) | isnad standardı (SPEC) | **tamamlandı** — 3/3 kitap, 609 madde (2026-10-30): b03 Halku ef‘âli’l-ibâd, 302 madde | `dogrula.py --ravi`: 0 hata; nüshada numara yok, sırayla numaralandı; notlar `GOZDEN.md` |
 | el-İbâne (`ibane/`) | isnad standardı (SPEC) | **tamam** — 22/22 bölüm (i01–i22), 3134 madde (2026-10-29) | `dogrula.py`: 0 hata, 163 uyarı |
 | Ebû Dâvûd (`ebudavud/`), Harb (`harb/`), el-Berbehârî (`berbehari/`) | isnad standardı (SPEC) | **tamamlandı** — 243 madde (2026-10-29) | `dogrula.py`: 0 hata, 1 uyarı (berbehari ﷺ) |
 | Müsned (`musned/`) | isnad standardı (SPEC) | **sürüyor** — m001–m028 tamamlandı (1–6476): Hulefâ, Aşere, Aşere'den sonrakiler, Ehl-i beyt, Benî Hâşim, İbn Abbâs, İbn Mes‘ûd, İbn Ömer (2026-10-30). Sıradaki: Abdullah b. Amr b. el-Âs (6477–) — `index.json`'a bölüm ekle, `kaynak_kur.py <OpenITI> <bölüm>` | `dogrula.py --ravi`: 0 hata; çevirmen notları `GOZDEN.md` |
@@ -69,6 +69,8 @@ Hepsi: `python3 araclar/dogrula.py <kitaplık> --hepsi`. Sayılar yukarıdaki ta
 - Sîga eşlemesinin kendi raporu: `araclar/siga_hizala_rapor.md` (195 lafzı bulunamayan halka, 83 belirsiz hizalama).
 
 ## Günlük
+
+- 2026-10-30 — el-Buhârî: Halku ef‘âli’l-ibâd (Şâmile 9697, b03) eklendi. OpenITI nüshasında “N -” yok; 302 madde sırayla numaralandı. `dogrula.py buhari --ravi`: 0 hata. Çevirmen notları `araclar/buhari/gozden/`, özet `GOZDEN.md`.
 
 - 2026-10-30 — Musannef tamamlandı: çevrilmemiş 14 kitap (Tahârât, Sıyâm, Zekât, Cenâiz, Hac, Nikâh, Talâk, Büyû‘, Akîka, Diyât, Hudûd, Ferâiz, Fezâil, Siyer; 21 562 madde) `araclar/musannef/` iş akışıyla (kaynak_kur → hazirla → 365 parça → denetle → derle) SPEC standardında çevrildi ve kitap kitap yayımlandı. Çevirmenlerin şüpheli yer notları `araclar/musannef/notlar.md`; özet `GOZDEN.md`.
 

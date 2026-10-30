@@ -1,1 +1,27 @@
-[{"f":"b01.json","tr":"Ref‘u’l-yedeyn fi’s-salât","n":117,"from":0,"to":118,"t":117},{"f":"b02.json","tr":"el-Kırâe halfe’l-imâm","n":190,"b":7,"from":1,"to":189,"t":190}]
+[
+ {
+  "f": "b01.json",
+  "tr": "Ref‘u’l-yedeyn fi’s-salât",
+  "n": 117,
+  "from": 0,
+  "to": 118,
+  "t": 117
+ },
+ {
+  "f": "b02.json",
+  "tr": "el-Kırâe halfe’l-imâm",
+  "n": 190,
+  "b": 7,
+  "from": 1,
+  "to": 189,
+  "t": 190
+ },
+ {
+  "f": "b03.json",
+  "tr": "Halku ef‘âli’l-ibâd",
+  "n": 302,
+  "from": 1,
+  "to": 302,
+  "t": 302
+ }
+]

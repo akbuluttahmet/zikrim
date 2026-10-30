@@ -1106,7 +1106,7 @@ LIBS.safii = {base: 'safii/', key: 'zikrim-safii', unit: 'kitap', item: 'madde',
 LIBS.buhari = {base: 'buhari/', key: 'zikrim-buhari', unit: 'kitap', item: 'rivayet', ex: 5, err: 'el-Buhârî', nogo: true, bookKey: true,
   label: (n, h) => (h && h[4] && h[4].l) || (n === 0 ? 'Mukaddime' : Number.isInteger(n) ? `No. ${n}` : 'Ara metin'),
   src: (n, m) => `el-Buhârî, ${m ? m.tr : ''}${n === 0 ? ', mukaddime' : Number.isInteger(n) ? ', no. ' + n : ''}`,
-  note: 'Ebû Abdullah Muhammed b. İsmâîl el-Buhârî (ö. 256) — Sahîh dışındaki kitapları, Türkçe çeviri ve Arapça metniyle. Çeviri ve Arapça metin el-Mektebetü’ş-Şâmile’deki nüshalardan alınmıştır; numaralar bu nüshalara göredir. “Ara metin” diye gösterilen kısımlar, rivayetlerin arasındaki Buhârî’nin kendi sözleridir. Kitaplar çevrildikçe sırayla eklenecek.'};
+  note: 'Ebû Abdullah Muhammed b. İsmâîl el-Buhârî (ö. 256) — Sahîh dışındaki kitapları, Türkçe çeviri ve Arapça metniyle. Çeviri ve Arapça metin el-Mektebetü’ş-Şâmile’deki nüshalardan alınmıştır; numaralar bu nüshalara göredir. Halku ef‘âli’l-ibâd (Şâmile 9697) nüshasında rivayet numarası yoktur; paragraflar sırayla numaralanmıştır. “Ara metin” diye gösterilen kısımlar, rivayetlerin arasındaki Buhârî’nin kendi sözleridir. Kitaplar çevrildikçe sırayla eklenecek.'};
 LIBS.ebudavud = {base: 'ebudavud/', key: 'zikrim-ebudavud', unit: 'kitap', item: 'rivayet', ex: 5, err: 'Ebû Dâvûd', nogo: true, bookKey: true,
   label: (n, h) => (h && h[4] && h[4].l) || (n === 0 ? 'Mukaddime' : Number.isInteger(n) ? `No. ${n}` : 'Ara metin'),
   src: (n, m) => `Ebû Dâvûd, ${m ? m.tr : ''}${n === 0 ? ', mukaddime' : Number.isInteger(n) ? ', no. ' + n : ''}`,
@@ -2392,7 +2392,8 @@ const SHELVES = [
     {v: 'zuhd', ar: 'الزهد', t: 'ez-Zühd', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#4f6a3c', done: true},
     {v: 'fezail', ar: 'فضائل الصحابة', t: 'Fezâilü’s-sahâbe', who: 'Ahmed b. Hanbel', bo: '164', d: 241, col: '#7a5530', done: true},
     {v: 'buhari', b: 0, ar: 'رفع اليدين في الصلاة', t: 'Ref‘u’l-yedeyn', who: 'el-Buhârî', bo: '194', d: 256, col: '#3f6b5e', done: true},
-    {v: 'buhari', b: 1, ar: 'القراءة خلف الإمام', t: 'el-Kırâe halfe’l-imâm', who: 'el-Buhârî', bo: '194', d: 256, col: '#6b5a3a', done: true}]},
+    {v: 'buhari', b: 1, ar: 'القراءة خلف الإمام', t: 'el-Kırâe halfe’l-imâm', who: 'el-Buhârî', bo: '194', d: 256, col: '#6b5a3a', done: true},
+    {v: 'buhari', b: 2, ar: 'خلق أفعال العباد', t: 'Halku ef‘âli’l-ibâd', who: 'el-Buhârî', bo: '194', d: 256, col: '#4a5e6b', done: true}]},
   {c: 'III. ASIR', books: [
     {v: 'sunan', ar: 'سنن أبي داود', t: 'Sünen-i Ebî Dâvûd', who: 'Ebû Dâvûd', bo: '202', d: 275, col: '#39645b', done: true},
     {v: 'harb', b: 0, ar: 'إجماع السلف في الاعتقاد', t: 'İcmâu’s-selef fi’l-i‘tikâd', who: 'Harb el-Kirmânî', d: 280, col: '#5e3f3a', done: true},
