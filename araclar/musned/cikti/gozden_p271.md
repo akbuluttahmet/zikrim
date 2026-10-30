@@ -1,0 +1,1 @@
+- Müsned 4601: “قال: وكيع السدوسي أبي البزري” ibaresi bozuk görünüyor (Vekî‘in Yezîd b. Utârid için “es-Sedûsî Ebü’l-Bezrî” dediği şeklinde okunup % notuna yazıldı); neşirle karşılaştırılmalı.

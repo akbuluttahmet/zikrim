@@ -1,0 +1,1 @@
+- Müsned 4577: Arapça “سمعت سفيان، قال إنه: نذر - يعني -” biçiminde; nezreden kişinin adı nüshada düşmüş görünüyor (sonradan “أن عمر نذر” ile anlaşılıyor). Sened yalnız “Süfyân” (semi‘tü) olarak yazıldı; neşirle karşılaştırılmalı.
