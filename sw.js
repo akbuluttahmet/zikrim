@@ -1,12 +1,17 @@
 // Güncelleme yaptığında bu sürüm adını artır
-const CACHE = 'zikrim-v247';
-// Büyük veri dosyaları (ara, ara-ar, akis, ravi; ≈45 MB) sürümsüz ayrı önbellekte durur: her yayında yeniden inmez,
-// yalnız sunucudaki ETag değişince (activate'te HEAD ile bakılır) silinir ve ilk kullanımda yeniden indirilir.
+const CACHE = 'zikrim-v248';
+// Büyük veri dosyaları (ara, ara-ar, akis, ravi; ≈70 MB açık) sürümsüz ayrı önbellekte durur: her yayında yeniden inmez,
+// yalnız sunucudaki ETag değişince (activate'te HEAD ile bakılır) hemen yeniden indirilir. Akış/Anasayfa (akis) ve râvi
+// sayfası (ravi) çevrimdışı da çalışsın diye WARM listesindekiler önbellekte yoksa activate'te indirilir; arama dosyaları
+// (ara, ara-ar) yalnız ilk aramada iner.
 const DATA_CACHE = 'zikrim-data';
 const BIG = /\/(akis|ara|ara-ar|ravi)\.json$/;
+const WARM = ['./akis.json', './ravi.json'];
 const ASSETS = ['./', './index.html', './style.css', './fikih.js', './usul.js', './hadis.js', './ara-worker.js', './script.js', './manifest.webmanifest', './icon.svg', './apple-touch-icon.png', './icon-192.png', './icon-512.png', './fonts/amiri-400.woff2', './fonts/amiri-700.woff2'];
 
-// Depolama kotası dolduğunda cache.put fırlatır; önbelleğe yazılamasa da yanıt verilmeli
+// Depolama kotası dolduğunda cache.put fırlatır; önbelleğe yazılamasa da yanıt verilmeli.
+// put gövdenin tamamı inene kadar sürer; çağıran yer bunu event.waitUntil ile beklemeli, yoksa tarayıcı boşta kalan
+// service worker'ı kapatınca büyük dosyalar yarım kalır ve hiç yazılmaz (akis.json çevrimdışı açılmıyordu).
 const put = (cache, req, res) => cache.put(req, res).catch(() => {});
 
 self.addEventListener('install', event => {
@@ -15,17 +20,32 @@ self.addEventListener('install', event => {
   self.skipWaiting();
 });
 
-// Büyük veri dosyalarından sunucuda değişmiş olanı önbellekten düşür (ETag karşılaştırması; ağ yoksa dokunulmaz)
+// Büyük dosyayı sunucudan indirip önbelleğe yazar (tamamlanana kadar bekler); ağ yoksa ya da yazılamazsa sessizce geçer
+async function dataPull(cache, url) {
+  try {
+    const res = await fetch(url, {cache: 'no-store'});
+    if (res && res.ok) await put(cache, url, res);
+  } catch {}
+}
+
+// Büyük veri dosyalarından sunucuda değişmiş olanı yeniden indir (ETag karşılaştırması; ağ yoksa dokunulmaz);
+// WARM listesindekiler önbellekte yoksa indir. activate'in waitUntil'i bunu bekler, worker kapanmaz.
 async function dataCheck() {
   const cache = await caches.open(DATA_CACHE);
+  const seen = new Set();
   for (const req of await cache.keys()) {
+    seen.add(new URL(req.url).pathname);
     try {
       const old = await cache.match(req);
       const etag = old && old.headers.get('etag');
       if (!etag) continue;
       const h = await fetch(req.url, {method: 'HEAD', cache: 'no-store'});
-      if (h.ok && h.headers.get('etag') && h.headers.get('etag') !== etag) await cache.delete(req);
+      if (h.ok && h.headers.get('etag') && h.headers.get('etag') !== etag) await dataPull(cache, req.url);
     } catch {}
+  }
+  for (const u of WARM) {
+    const url = new URL(u, self.location.href).href;
+    if (!seen.has(new URL(url).pathname)) await dataPull(cache, url);
   }
 }
 
@@ -45,20 +65,25 @@ self.addEventListener('fetch', event => {
   const path = new URL(req.url).pathname;
   // Kitap listeleri (index.json) ve günün rivayeti: önce ağ, çevrimdışıysa önbellek — yeni eklenen kitaplar hemen görünsün
   if (/\/(index|gunun)\.json$/.test(path)) {
-    event.respondWith(caches.open(CACHE).then(cache => fetch(req).then(res => { if (res && res.ok) put(cache, req, res.clone()); return res; })
+    event.respondWith(caches.open(CACHE).then(cache => fetch(req).then(res => { if (res && res.ok) event.waitUntil(put(cache, req, res.clone())); return res; })
       .catch(async () => (await cache.match(req, {ignoreSearch: true})) || Response.error())));
     return;
   }
-  // Büyük veri havuzları: önbellekte varsa oradan, yoksa bir kez indirilir (bkz. DATA_CACHE)
+  // Büyük veri havuzları: önbellekte varsa oradan, yoksa indirilir ve tamamı yazılana kadar worker açık tutulur (bkz. DATA_CACHE)
   if (BIG.test(path)) {
-    event.respondWith(caches.open(DATA_CACHE).then(async cache => (await cache.match(req, {ignoreSearch: true}))
-      || fetch(req).then(res => { if (res && res.ok) put(cache, req, res.clone()); return res; })));
+    event.respondWith(caches.open(DATA_CACHE).then(async cache => {
+      const hit = await cache.match(req, {ignoreSearch: true});
+      if (hit) return hit;
+      const res = await fetch(req);
+      if (res && res.ok) event.waitUntil(put(cache, req, res.clone()));
+      return res;
+    }));
     return;
   }
   event.respondWith(caches.open(CACHE).then(async cache => {
     const cached = await cache.match(req, {ignoreSearch: true});
     const network = fetch(req).then(res => {
-      if (res && res.ok) put(cache, req, res.clone());
+      if (res && res.ok) event.waitUntil(put(cache, req, res.clone()));
       return res;
     }).catch(async () => {
       if (cached) return cached;
