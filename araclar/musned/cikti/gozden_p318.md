@@ -1,1 +1,1 @@
-- Müsned 5452: Arapçada “أترونها للمنقين” (muhtemelen المتقين) ve “الخطاءون” okunuyor; “müttakîler (metinde böyle)” diye çevrildi, Ziyâd'ın “lahn” notu metinde.
+- Müsned 5452: dijital nüshada «للمنقين» yazılı; «للمتقين» okunup “müttakîler” diye çevrildi (Ziyâd’ın “lahn” dediği «الخطاءون»dur). Basılı neşirle karşılaştırılmalı.
