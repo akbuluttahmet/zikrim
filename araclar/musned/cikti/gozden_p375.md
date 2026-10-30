@@ -1,0 +1,2 @@
+- Müsned 6459: Senedde "حدثنا حماد، قال عبد الله: حدثنا نافع" kalıbı; Hammâd'ın Abdullah'tan aldığı lafız kâle, Abdullah'ın "Bize Nâfi‘ rivayet etti" sözü metin sonunda ayrıca çevrildi.
+- Müsned 6470: Arapçası "قال [عبد الله بن أحمد]: قرأت على أبي" ile başlıyor, kaynak.json'da ziyade 0; c[0] Abdullah b. Ahmed olmalı (derle.py muellif_sec bu kalıbı "قال: قرأت على أبي" biçiminde tanıyor, köşeli parantezli biçimi tanımayabilir).

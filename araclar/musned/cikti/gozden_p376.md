@@ -1,0 +1,2 @@
+- Müsned 6476: Vicâde ("وجدت هذا الحديث في كتاب أبي بخط يده") ama kaynak.json'da ziyade 0; Ahmet ziyade 3 mü olacağına baksın. İkinci yol (Atâ → Muhârib b. Disâr → İbn Ömer) senedde değil, metinde düzyazıyla çevrildi.
+- Müsned 6471–6475: "قال: قرأت على أبي" maddeleri, ziyade 0; c[0] Abdullah b. Ahmed (kara’tü).

@@ -1,0 +1,1 @@
+- Müsned 6400: Arapçada metni açan tırnak (" صليت …) kapanmıyor, Hâlid b. Mâlik'in sorusu ve cevabı içeride kalıyor; Türkçede tırnak kaldırıldı, sözler ayrıca tırnaklandı.
