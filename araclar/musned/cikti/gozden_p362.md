@@ -1,0 +1,2 @@
+- Müsned 6225: Arapçada 6225'in ardına bitişik "6225 م" maddesi var (Ya‘kûb → babası → İbn İshâk → Saîd el-Makburî → Ubeyd b. Cüreyc); 2229/3276 örneğindeki gibi metnin içinde "\n6225 m — …" olarak çevrildi, ayrı madde yapılmadı.
+- Müsned 6230: Arapçası yalnız "وقرأت على عبد الرحمن مالك، عن نافع أيضا" (6229'a eklenmiş ikinci yol); sened Nâfi‘de biter, metin "(Nâfi‘den) de (bu hadisi) okudum."

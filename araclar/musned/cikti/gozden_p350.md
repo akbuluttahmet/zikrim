@@ -1,0 +1,1 @@
+- Müsned 6020: Sened “حدثني ليث، حدثني ابن شهاب، ويونس قال: حدثنا ليث، عن ابن شهاب” biçiminde; “ويونس” İmam Ahmed’in ikinci hocası (Yûnus → Leys → İbn Şihâb) kabul edilip tahvîl olarak yazıldı. Bakılması iyi olur.

@@ -44,7 +44,6 @@
 
 4981 | Hişâm b. Saîd → Muâviye b. Sellâm → Yahyâ b. Ebî Kesîr → Ebû Seleme → Abdullah b. Ömer | Abdullah b. Ömer’den: (Ebû Seleme) onu şöyle derken işitti: Resûlullah’ı ﷺ şöyle buyururken işittim: “Ay yirmi dokuz (gün)dür.”
 & haddesenâ, haddesenâ, semi‘tü, enne, an
-% Ebû Seleme ona (Yahyâ’ya) haber verdi (أخبره).
 ^ أنه سمعه
 
 4982 | Ebû Ahmed ez-Zübeyrî → Süfyân → Mansûr → Abdurrahmân b. Sa‘d → İbn Ömer | Abdurrahmân b. Sa‘d dedi ki: İbn Ömer ile birlikteydim; bineği üzerinde şu tarafa, bu tarafa (dönerek) namaz kılıyordu. Ona (bunu) sordum; “Resûlullah’ı ﷺ böyle yaparken gördüm” dedi.
@@ -59,8 +58,9 @@
 & haddesenâ, haddesenî, haddesenî, an
 ^ أن رسول الله
 
-4985 | Attâb → Abdullah → Yûnus → Zührî → Hamza b. Abdullah → İbn Ömer; ayrıca Ali b. İshâk → Abdullah → Yûnus → Zührî → Hamza b. Abdullah → İbn Ömer | İbn Ömer dedi ki: Resûlullah ﷺ şöyle buyurdu: “Allah teâlâ bir kavme azap etmek istediğinde, azap içlerinde bulunan herkese isabet eder; sonra amellerine göre diriltilirler.” Ali kendi hadisinde dedi ki: (Zührî) dedi ki: Bana Hamza b. Abdullah b. Ömer rivayet etti ki o, İbn Ömer’i şöyle derken işitmiş.
-& haddesenâ, haddesenâ, ahberanâ, an, an, an; haddesenâ, ahberanâ, ahberanâ, an, an, an
+4985 | Attâb ve Ali b. İshâk → Abdullah → Yûnus → Zührî → Hamza b. Abdullah → İbn Ömer | İbn Ömer dedi ki: Resûlullah ﷺ şöyle buyurdu: “Allah teâlâ bir kavme azap etmek istediğinde, azap içlerinde bulunan herkese isabet eder; sonra amellerine göre diriltilirler.” Ali kendi hadisinde dedi ki: (Zührî) dedi ki: Bana Hamza b. Abdullah b. Ömer rivayet etti ki o, İbn Ömer’i şöyle derken işitmiş.
+& haddesenâ, haddesenâ, ahberanâ, an, an, an
+% Ali b. İshâk: “Bize Abdullah haber verdi” dedi.
 ^ قال: قال رسول
 
 4986 | Abdülvehhâb b. Abdülmecîd es-Sekafî → Eyyûb → Nâfi‘ → İbn Ömer | İbn Ömer dedi ki: “Resûlullah’ı ﷺ onu (rüknü) meshederken gördüğümden beri ne darlıkta ne bollukta rükne vardığımda onu meshetmeden geçmedim.”

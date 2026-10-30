@@ -20,7 +20,7 @@
 
 6296 | İbn Nümeyr → A‘meş → Mücâhid → Abdullah b. Ömer | Abdullah b. Ömer dedi ki: Resûlullah ﷺ şöyle buyurdu: “Kadınlara geceleyin mescidlere (gitmeleri için) izin verin.” Abdullah b. Ömer’in bir oğlu: “Vallahi onlara engel olacağız; onu ihtiyaçları için bir hile (bahanesi) edinirler” dedi. (İbn Ömer) dedi ki: “Allah sana şöyle şöyle yapsın! Ben ‘Resûlullah ﷺ buyurdu’ diyorum, sen ise ‘Onları bırakmayız’ diyorsun?!”
 & haddesenâ, haddesenâ, an, kâle
-^ قال: قال رسول
+^ قال رسول الله
 
 6297 | İbn Nümeyr → Ubeydullah → Nâfi‘ → İbn Ömer | İbn Ömer’den: “Resûlullah ﷺ ata iki pay, adama bir pay ayırdı.”
 & haddesenâ, haddesenâ, an, an
@@ -72,11 +72,3 @@
 6308 | Ya‘lâ → Fudayl (b. Gazvân) → Ebû Dihkâne → İbn Ömer | İbn Ömer dedi ki: Nebî’nin ﷺ yanında bazı insanlar vardı. Yanındaki hurmadan (getirmesi için) Bilâl’i çağırdı. (Bilâl) bir hurma getirdi; Resûlullah ﷺ onu yadırgadı ve: “Bu hurma nedir?” buyurdu. (Bilâl): “Yanımızda olan hurmadır; iki ölçeği bir ölçekle değiştirdik” dedi. Buyurdu ki: “Hurmamızı bize geri ver.”
 & haddesenâ, haddesenâ, an, an
 ^ قال: كان عند
-
-6309 | Muhammed b. Ubeyd → Ubeydullah b. Ömer b. Hafs → Ebû Bekir b. Sâlim → babası | Babasından: Resûlullah ﷺ şöyle buyurdu: “Bana yalan isnat edene ateşte bir ev inşa edilir.”
-& haddesenâ, haddesenâ, an, an
-^ أن رسول الله
-
-6310 | Muhammed b. Ubeyd → Ubeydullah → Nâfi‘ ve Sâlim → İbn Ömer | İbn Ömer’den: “Resûlullah ﷺ ehlî eşeklerin etlerini yemeyi yasakladı.”
-& haddesenâ, haddesenâ, an, an
-^ " أن رسول الله

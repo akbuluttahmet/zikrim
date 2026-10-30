@@ -1,0 +1,1 @@
+- Müsned 6207: Metin sonunda neşirde "كذا في الكتاب" var; "Kitapta böyledir." diye çevrildi (sened Haccâc → Zührî kısmına mı ait, metne mi, neşrin notu mu olduğu kontrol edilebilir).

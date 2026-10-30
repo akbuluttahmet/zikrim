@@ -1,0 +1,1 @@
+- Müsned 4911: Arapça “حدثناه ابن أبي شيبة” ile başlıyor; ardından gelen 4912 Abdullah b. Ahmed’in (قال أبو عبد الرحمن) rivayeti. 4911 de Abdullah’ın ziyâdesi gibi görünüyor ama Arapçada işaret yok; derle.py c[0]’ı Ahmed b. Hanbel seçecek. Ziyâde/müellif kararı gerekli.
