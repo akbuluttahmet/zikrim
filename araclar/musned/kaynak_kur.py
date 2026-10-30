@@ -27,7 +27,9 @@ def temizle(t):
     t = re.sub(r'PageV\d+P\d+', ' ', t)
     t = re.sub(r'\bms\d+\b', ' ', t)
     t = re.sub(r'\s*\(\d{1,2}\)', '', t)          # tahkik dipnot işareti
+    t = re.sub(r'\s*\.{4,}', '', t)                # neşrin noktalı ayırıcı satırı
     t = re.sub(r'\s+([،,:.؟])', r'\1', t)
+    t = re.sub(r'\s*\.{4,}', '', t)
     t = re.sub(r'\s+', ' ', t).strip()
     return t
 
