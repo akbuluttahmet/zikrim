@@ -14,8 +14,8 @@
 & haddesenâ, haddesenâ, an, an, an
 ^ عن النبي
 
-6913 | Muhammed b. Ca‘fer → Şu‘be → Sa‘d b. İbrâhîm → Benî Mahzûm’dan bir adam → amcası | Amcasından: Muâviye, Abdullah b. Amr’ın el-Vaht denilen bir arazisini almak istedi. (Abdullah) mevlâlarına emretti; onlar silahlarını kuşandılar ve savaşmak istediler. Dedi ki: Ona gelip: “Bu ne?” dedim. Dedi ki: “Ben Resûlullah’ı ﷺ şöyle buyururken işittim: ‘Bir zulme uğratılıp da savaşan ve öldürülen hiçbir müslüman yoktur ki şehid olarak öldürülmüş olmasın.’”
-& haddesenâ, haddesenâ, an, semi‘a, an
+6913 | Muhammed b. Ca‘fer → Şu‘be → Sa‘d b. İbrâhîm → Benî Mahzûm’dan bir adam → amcası → Abdullah b. Amr | Amcasından: Muâviye, Abdullah b. Amr’ın el-Vaht denilen bir arazisini almak istedi. (Abdullah) mevlâlarına emretti; onlar silahlarını kuşandılar ve savaşmak istediler. Dedi ki: Ona gelip: “Bu ne?” dedim. Dedi ki: “Ben Resûlullah’ı ﷺ şöyle buyururken işittim: ‘Bir zulme uğratılıp da savaşan ve öldürülen hiçbir müslüman yoktur ki şehid olarak öldürülmüş olmasın.’”
+& haddesenâ, haddesenâ, an, semi‘a, an, kâle
 ^ أن معاوية
 
 6914 | Muhammed b. Ca‘fer → Şu‘be → Sa‘d b. İbrâhîm → Hilâl b. Talha ya da Talha b. Hilâl → Abdullah b. Amr | Abdullah b. Amr şöyle diyordu: Resûlullah ﷺ bana: “Ey Abdullah b. Amr! Dehr orucu tut: her aydan üç gün” buyurdu. Dedi ki: Ve şu âyeti okudu: “Kim bir iyilikle gelirse ona onun on misli vardır” (En‘âm 6/160). Dedi ki: “Ben bundan fazlasına güç yetiririm” dedim. Buyurdu ki: “Dâvûd’un orucunu tut: Bir gün oruç tutar, bir gün tutmazdı.”
@@ -45,7 +45,7 @@
 
 6920 | Affân → Şu‘be → İbrâhîm b. Meymûn → Benî Hâris’ten bir adam → Eyyûb → Abdullah b. Amr | Abdullah b. Amr şöyle diyordu: “Kim ölümünden bir yıl önce tövbe ederse tövbesi kabul edilir; kim ölümünden bir ay önce tövbe ederse tövbesi kabul edilir”; nihayet “bir gün” dedi, nihayet “bir saat” dedi, nihayet “bir fevâk (kadar)” dedi. Dedi ki: Adam: “Ne dersin, eğer müşrik olup (sonra) müslüman olmuşsa?” dedi. (Abdullah) dedi ki: “Ben size ancak Resûlullah’tan ﷺ işittiğim gibi rivayet ediyorum; (o) şöyle buyuruyordu.”
 & haddesenâ, haddesenâ, ahberanî, semi‘tü, semi‘tü, semi‘tü
-% Benî Hâris’ten bir adam dedi ki: “Bizden Eyyûb denilen bir adamı işittim.”
+% Benî Hâris’ten bir adam, Eyyûb için: “Bizden Eyyûb denilen bir adam” dedi.
 ^ يقول: " من تاب
 
 6921 | Muhammed b. Bekr ve Abdürrezzâk → İbn Cüreyc → Amr b. Dînâr → Amr b. Evs → Abdullah b. Amr b. el-Âs; ayrıca Ravh → İbn Cüreyc → Amr b. Dînâr → Amr b. Evs → Abdullah b. Amr b. el-Âs | Abdullah b. Amr b. el-Âs’tan: Resûlullah ﷺ şöyle buyurdu: “Allah’a en sevimli oruç Dâvûd’un orucudur; o zamanın yarısını oruçlu geçirirdi. Allah’a en sevimli namaz da Dâvûd’un namazıdır; gecenin yarısını uyur, sonra kalkar, sonra son kısmını uyurdu; sonra gecenin yarısından sonra üçte birinde kalkardı.”
