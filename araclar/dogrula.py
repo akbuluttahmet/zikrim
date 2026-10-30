@@ -110,6 +110,7 @@ SIGA_AR = {
     'haddesenâ': r'(?<![ء-ي])(?:و?حدثنا|و?ثنا|قثنا|و?حدثكم|و?حدثك|(?<=[\s،,:])نا)(?![ء-ي])',
     'haddesenî': r'(?<![ء-ي])و?حدثت?ني(?![ء-ي])',
     'ahberanâ': r'(?<![ء-ي])(?:و?أخبرنا|و?أنا|و?أنبأنا)(?![ء-ي])',
+    'enbe’enâ': r'(?<![ء-ي])و?أنبا(?![ء-ي])',
     'ahberanî': r'(?<![ء-ي])و?أخبرت?ني(?![ء-ي])',
     'semi‘tü': r'(?<![ء-ي])سمعت(?![ء-ي])',
     'ketebe ileyye': r'(?<![ء-ي])و?كتب\s+إلي(?![ء-ي])',
@@ -246,11 +247,23 @@ def madde_denetle(rp, lib, dosya, h, ravi, bab_i):
                     kenar.add((adlar[j], s, adlar[j + 1]))
             # “قالا: حدثنا” gibi ortak lafızlar için (sîga, hoca) çifti bir kez sayılır
             say = collections.Counter(s for s, _ in {(s, hc) for _, s, hc in kenar})
+            anba_n = len(re.findall(SIGA_AR['enbe’enâ'], isnad))
             for s, pat in SIGA_AR.items():
                 a = len(re.findall(pat, isnad))
                 t = say.get(s, 0)
-                if s == 'ahberanâ':
-                    t += say.get('enbe’enâ', 0)
+                if s == 'enbe’enâ':
+                    # أنبا kısaltması. Panelde enbe’enâ yoksa (ahberanâ yazılmışsa) burada uyarılmaz.
+                    if t == 0 or a <= t:
+                        continue
+                elif s == 'ahberanâ':
+                    # أنبأنا ahberanâ kovasında kalır. أنبا enbe’enâ’dır.
+                    # Panel enbe’enâ ise bu kovaya katılmaz; panel ahberanâ ise
+                    # (eski kitaplar) yalnız farkı küçültüyorsa ahberanâ sayısına eklenir.
+                    if say.get('enbe’enâ', 0) == 0:
+                        if abs(a + anba_n - t) < abs(a - t):
+                            a += anba_n
+                    else:
+                        t += max(0, say.get('enbe’enâ', 0) - anba_n)
                 if abs(a - t) >= 2 and max(a, t) >= 2:
                     rp.u('sîga sayısı uyuşmuyor', yer, f'{s}: Arapça {a}, panel {t}')
         # son halka ↔ metnin başı (merfû/mevkûf için yumuşak denetim)
