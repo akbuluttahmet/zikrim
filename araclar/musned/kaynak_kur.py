@@ -21,7 +21,7 @@ lo, hi = meta['from'], meta['to']
 ZIY = {'*': 1, '•': 2, '°': 3}
 NUMARASI_DUSEN = {5632}  # '# حدثنا …' satırıyla başlayan, numarası düşmüş hadisler
 HEAD = re.compile(r'^### \|+ (.*)$')
-ITEM = re.compile(r'^# (\(?[*•°]\)?(?:\s*\(?[*•°]\)?)*)?\s*(\d+)\s*(?:ms\d+\s*)?(?:-|(?=حدثنا|حدثني|قال))\s*(.*)$')
+ITEM = re.compile(r'^# (\(?[*•°]\)?(?:\s*\(?[*•°]\)?)*)?\s*(\d+)\s*(?:\(\d{1,2}\)\s*)?(?:ms\d+\s*)?(?:-|(?=حدثنا|حدثني|قال))\s*(.*)$')
 
 
 def temizle(t):
@@ -41,6 +41,9 @@ for line in src.read_text(encoding='utf-8').splitlines():
     if h:
         bab = temizle(h.group(1))
         cur = None
+        continue
+    if re.match(r'^# \[?آخر (?:مسند|حديث)', line):
+        cur = None          # neşrin bölüm sonu kaydı (“آخر مسند …”), metne alınmaz
         continue
     m = ITEM.match(line)
     if m:
