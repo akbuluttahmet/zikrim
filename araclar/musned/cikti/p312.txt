@@ -67,6 +67,7 @@
 & haddesenâ, haddesenâ, ahberanâ, an, an
 ^ قال: قال رسول
 
-5347 | Attâb → Abdullah → Mûsâ b. Ukbe → Sâlim → Abdullah b. Ömer | Abdullah b. Ömer dedi ki: Resûlullah’ın ﷺ en çok ettiği yemin bu yemindi; şöyle derdi: “Hayır, kalpleri çeviren (Allah’a) andolsun.”
-& kâle, haddesenâ, ahberanâ, an, an
+5347 | Sâlim → Abdullah b. Ömer | Abdullah b. Ömer dedi ki: Resûlullah’ın ﷺ en çok ettiği yemin bu yemindi; şöyle derdi: “Hayır, kalpleri çeviren (Allah’a) andolsun.”
+& an, an
+% (Râvi) dedi ki: “Ve bize haber verdi.”
 ^ قال: أكثر

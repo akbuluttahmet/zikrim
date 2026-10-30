@@ -1,0 +1,1 @@
+- Müsned 5347: Arapça «قال: وأخبرنا عن سالم» ile başlıyor, Sâlim'den önceki râviler adlandırılmamış (5346'nın devamı). Sened yalnız Sâlim → İbn Ömer yazıldı, eksik halkalar dışarıdan tamamlanmadı.
