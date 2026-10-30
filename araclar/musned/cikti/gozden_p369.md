@@ -1,0 +1,1 @@
+- Müsned 6356: “قد استيقن نافع القائل قد استيقنت أنه أحدهما، وما أراه إلا” ibaresi nüshada karışık (söyleyen Nâfi‘ mi İbn Cüreyc mi belli değil); harfiyen çevrildi, “(metinde böyle)” notu kondu.
