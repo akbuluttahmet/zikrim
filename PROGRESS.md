@@ -9,7 +9,7 @@ Her oturum: önce `SPEC.md`, sonra bu dosya. Bitince burayı güncelle (kitap, s
 | Sünen-i Ebî Dâvûd (`sunan/`) | isnad standardı (SPEC) | **tamamlandı** — 40/40 bölüm, 5275 madde (2026-10-29) | `dogrula.py`: 0 hata, 106 uyarı (aşağıda) |
 | eş-Şerîa (`seria/`) | isnad standardı (SPEC) | **tamamlandı** — 17/17 bölüm, 2169 madde (2026-10-29) | `dogrula.py`: 0 hata, 419 uyarı (265 müellif notu, 83 metin başı, 61 sîga, 10 ﷺ) |
 | ez-Zühd (`zuhd/`) | isnad standardı (SPEC) | **tamamlandı** — 8/8 bölüm, 2375 madde (2026-10-29) | `dogrula.py`: 0 hata, 108 uyarı (68 metin başı, 32 ﷺ, 4 sîga, 4 k) |
-| ez-Zühd ve’r-Rekāik (`mubarek/`) | isnad standardı (SPEC) | **sürüyor** — 144/1604 madde derlendi (p001–p008, 6 bab) (2026-10-31). İbnü’l-Mübârek (ö. 181). Şâmile 13028. | `dogrula.py mubarek`: 0 hata, 1 uyarı |
+| ez-Zühd ve’r-Rekāik (`mubarek/`) | isnad standardı (SPEC) | **sürüyor** — 216/1604 madde derlendi (p001–p012, 10 bab) (2026-10-31). İbnü’l-Mübârek (ö. 181). Şâmile 13028. | `dogrula.py mubarek`: 0 hata, 3 uyarı |
 | Fezâilü’s-sahâbe (`fezail/`) | isnad standardı (SPEC) | **tamamlandı** — 9/9 bölüm, 1965 madde (2026-10-29) | `dogrula.py`: 0 hata, 154 uyarı (114 metin başı, 22 sîga, 16 k, 1 kısa) |
 | İmam Ahmed (`ahmed/`) | isnad standardı (SPEC) | **tamamlandı** — 9/9 kitap, 2117 madde (2026-10-29) | `dogrula.py`: 0 hata, 76 uyarı (51 metin başı, 14 sîga, 9 k, 2 kısa) |
 | el-Âcurrî (`acurri/`) | isnad standardı (SPEC) | **tamamlandı** — 12/12 kitap, 825 madde (2026-10-29) | `dogrula.py`: 0 hata, 62 uyarı (38 metin başı, 17 sîga, 5 k) |
@@ -74,6 +74,8 @@ Hepsi: `python3 araclar/dogrula.py <kitaplık> --hepsi`. Sayılar yukarıdaki ta
 - Sîga eşlemesinin kendi raporu: `araclar/siga_hizala_rapor.md` (195 lafzı bulunamayan halka, 83 belirsiz hizalama).
 
 ## Günlük
+
+- 2026-10-31 — ez-Zühd ve’r-Rekāik (İbnü’l-Mübârek, mubarek/) p009–p012 derlendi (madde 146–219, 72 yeni madde, toplam 216/1604, 10 bab). p010 179 cüz semâ kaydı ONEK’e işlendi. dogrula.py mubarek: 0 hata, 3 uyarı.
 
 - 2026-10-31 — Sahîh-i Buhârî k08 salât (202), k10 ezân (309), k15–k22, k26–k29, k31–k33. Toplam 29 kitap, 1603 madde. `dogrula.py sahih`: 0 hata, 193 uyarı. Sıradaki: k23 cenâiz.
 
