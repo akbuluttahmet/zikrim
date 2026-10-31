@@ -75,6 +75,8 @@ Hepsi: `python3 araclar/dogrula.py <kitaplık> --hepsi`. Sayılar yukarıdaki ta
 
 ## Günlük
 
+- 2026-10-31 — Sahîh kitap adları düz Türkçe (Kitâbü/Ebvâbu kalıbı kalktı). Liste: Güneş tutulması, Namazda yanılma, Cenaze, Zekât.
+
 - 2026-10-31 — Sahîh-i Buhârî k23 cenâiz (181), k24 zekât (147), k25 hac (288), k30 savm (139), k35 selem, k36 şüf‘a, k38 havâle, k48 rehin, k50 mükâteb, k71 akîka. Toplam 39 kitap, 2405 madde. `dogrula.py sahih`: 0 hata. Sıradaki: k34 büyû‘.
 
 - 2026-10-31 — ez-Zühd ve’r-Rekāik (İbnü’l-Mübârek, mubarek/) p013–p016 derlendi (madde 220–293, 72 yeni madde, toplam 288/1604, 15 bab). dogrula.py mubarek: 0 hata, 3 uyarı.
