@@ -1,0 +1,401 @@
+# l10b — II. cüz: Kur’ân hakkında imamların sözleri, şehirlere göre âlim listeleri, mahlûk diyene fetva (452.01–520)
+# Başlık parçalarındaki numarasız rivayetler 452.01–452.24 (453'ten önce; 452 l10'dadır).
+@ İbnü’l-Mübârek, Nadr b. Muhammed, Mûsâ b. A‘yen ve Abdullah b. İdrîs’in sözü
+@ar =< أخبرنا محمد بن عبد الرحمن بن العباس
+452.01 | Muhammed b. Abdurrahmân b. el-Abbâs → Abdullah b. Muhammed b. Abdülazîz el-Begavî → Mahmûd b. Gaylân → Ali b. el-Hasan b. Şakîk → İbnü’l-Mübârek | İbnü’l-Mübârek dedi ki: “Kur’ân Allah’ın kelâmıdır; ne yaratıcıdır ne de mahlûktur.”
+& ahberanâ, ahberanâ, haddesenâ, haddesenâ, an
+^ القرآن كلام الله ليس
+=< أخبرنا محمد بن الحسين الفارسي
+:l Numarasız rivayet
+452.02 | Muhammed b. el-Hüseyin el-Fârisî → Hüseyin b. İsmâîl → Hüseyin b. Şebîb → İbnü’l-Mübârek | Hüseyin b. Şebîb dedi ki: İbnü’l-Mübârek’i işittim; Tâhâ (sûresin)den otuz âyet okudu ve dedi ki: “Bunun mahlûk olduğunu iddia eden kâfirdir.”
+& ahberanâ, ahberanâ, semi‘tü, semi‘tü
+% Âmul’de.
+^ وقرأ ثلاثين
+=< أخبرنا أحمد بن عبيد قال: أخبرنا محمد بن الحسين قال: حدثنا ابن زهير
+:l Numarasız rivayet
+452.03 | Ahmed b. Ubeyd → Muhammed b. el-Hüseyin → İbn Züheyr → İbn Ebî Rizme → Ebü’l-Vezîr Muhammed b. A‘yen → Nadr b. Muhammed | Ebü’l-Vezîr Muhammed b. A‘yen dedi ki: Bir adam Nadr b. Muhammed’e Kur’ân’ı sordu. Nadr dedi ki: “Kim ‘Şüphesiz ben Allah’ım, benden başka ilâh yoktur; öyleyse bana ibadet et’ (Tâhâ 20/14) âyetinin mahlûk olduğunu söylerse kâfir olur.” Abdullah b. el-Mübârek’le karşılaştım ve ona haber verdim. Dedi ki: “Ebû Muhammed doğru söylemiş, Allah ona âfiyet versin. Allah bize mahlûk bir şeye ibadet etmemizi emredecek değildir.”
+& ahberanâ, ahberanâ, haddesenâ, haddesenâ, haddesenâ, kâle
+^ سأل رجل
+=< أخبرنا أحمد بن محمد بن أحمد بن مسلم
+:l Numarasız rivayet
+452.04 | Ahmed b. Muhammed b. Ahmed b. Müslim → Ahmed b. el-Hasan → Ebü’l-Leys (Yezîd b. Cehver) → Ebû Hayseme (Mus‘ab b. Saîd el-Massîsî) → İbnü’l-Mübârek ve Mûsâ b. A‘yen | İbnü’l-Mübârek ile Mûsâ b. A‘yen diyorlardı ki: “Kim ‘Kur’ân mahlûktur’ derse kâfirdir; Hürmüz’den daha kâfirdir.” Ebû Hayseme dedi ki: “Kim Allah’ın kelâmı olan Kur’ân’ın mahlûk olduğunu iddia ederse kâfirdir; onun küfründe şüphe eden de kâfirdir.”
+& ahberanâ, haddesenâ, haddesenâ, semi‘tü, semi‘tü
+^ من قال: القرآن مخلوق؛ فهو كافر أكفر
+=< أخبرنا أحمد بن عبيد قال: أخبرنا محمد بن الحسين قال: أخبرنا أحمد بن زهير
+:l Numarasız rivayet
+452.05 | Ahmed b. Ubeyd → Muhammed b. el-Hüseyin → Ahmed b. Züheyr → Yahyâ b. Yûsuf → Abdullah b. İdrîs; ayrıca Ali b. Muhammed b. Ahmed b. Bekr → Hasan b. Muhammed b. Osman → Ya‘kûb b. Süfyân → Ahmed b. İbrâhîm (ed-Devrakî) → Yahyâ b. Yûsuf Ebû Zekeriyyâ → Abdullah b. İdrîs | Yahyâ b. Yûsuf dedi ki: Mekke’ye geldik. Bir yol arkadaşım bana dedi ki: “Abdullah b. İdrîs’e gidip ona selam vermeye ne dersin?” “Olur” dedim. Ona gittik. Arkadaşım ona dedi ki: “Ey Ebû Muhammed! Bizim tarafımızda ‘Kur’ân mahlûktur’ diyen insanlar var.” Dedi ki: “Yahudilerden mi?” “Hayır” dedi. Dedi ki: “Hristiyanlardan mı?” “Hayır” dedi. Dedi ki: “Mecûsîlerden mi?” “Hayır” dedi. Dedi ki: “Öyleyse onlar kimdir?” Dedi ki: “Muvahhidlerden.” Dedi ki: “Yalan söylemişler; bunlar muvahhidlerden değildir, bunlar zındıklardır. Kim Kur’ân’ın mahlûk olduğunu iddia ederse Allah’ın mahlûk olduğunu iddia etmiş olur; kim de Allah’ın mahlûk olduğunu iddia ederse kâfir olur. Bunlar zındıklardır.”
+& ahberanâ, ahberanâ, ahberanâ, haddesenâ, kâle; ahberanâ, haddesenâ, haddesenâ, semi‘tü, haddesenâ, kâle
+^ قدمنا مكة
+:l Numarasız rivayet
+@ Vekî‘ b. el-Cerrâh, İsmâîl İbn Uleyye ve Bişr b. el-Mufaddal’ın sözü
+@ar =< أخبرنا محمد بن عبد الرحمن قال: أخبرنا عبد الله بن محمد البغوي
+452.06 | Muhammed b. Abdurrahmân → Abdullah b. Muhammed el-Begavî → Vehb b. Bakıyye Ebû Muhammed el-Vâsıtî → Vekî‘ | Vekî‘ diyordu ki: “Kim ‘Kur’ân mahlûktur’ derse kâfirdir.”
+& ahberanâ, ahberanâ, haddesenâ, semi‘tü
+^ من قال: القرآن مخلوق فهو كافر
+=< أخبرنا أحمد بن عبيد قال: أخبرنا محمد بن الحسين قال: حدثنا أحمد بن زهير قال: سمعت محمد بن يزيد
+:l Numarasız rivayet
+452.07 | Ahmed b. Ubeyd → Muhammed b. el-Hüseyin → Ahmed b. Züheyr → Muhammed b. Yezîd → Vekî‘ | Muhammed b. Yezîd dedi ki: Vekî‘e dedim ki: “Ey Ebû Süfyân! Senin yanında gördüğüm şu adam Kur’ân’ın mahlûk olduğunu iddia ediyor.” Vekî‘ dedi ki: “Kim Kur’ân’ın mahlûk olduğunu söylerse Kur’ân’ın muhdes olduğunu iddia etmiş olur; kim de Kur’ân’ın muhdes olduğunu iddia ederse kâfir olur.”
+& ahberanâ, ahberanâ, haddesenâ, semi‘tü, kâle
+^ قلت لوكيع
+=< أخبرنا الحسن بن عثمان قال: أخبرنا أحمد بن حمدان
+:l Numarasız rivayet
+452.08 | Hasan b. Osman → Ahmed b. Hamdân → Ahmed b. el-Hüseyin es-Sûfî → Abdüssamed Merdûye → İsmâîl İbn Uleyye | Abdüssamed Merdûye dedi ki: İsmâîl İbn Uleyye sözünden döndükten sonra yanında toplandık: ben, Hüşeym’in delikanlısı Ali, Ebü’l-Velîd Halef el-Cevherî, Ebû Kinâne el-A‘ver ve Muallâ’nın mevlâsı, Hüşeym’in arkadaşı Ebû Muhammed Mesrûr. Hüşeym’in delikanlısı Ali ona dedi ki: “Kur’ân meselesinde senden, insanlara ileteceğimiz bir şey işitmek isteriz.” Dedi ki: “Kur’ân Allah’ın kelâmıdır; Allah’tan olan hiçbir şey mahlûk değildir. Kim Allah’tan olan bir şeyin mahlûk olduğunu söylerse kâfir olur. Ben de o mecliste benden sâdır olandan Allah’a istiğfar ederim.”
+& ahberanâ, ahberanâ, haddesenâ, haddesenâ, kâle
+^ اجتمعنا
+=< أخبرنا علي بن محمد بن أحمد بن بكر قال: حدثنا الحسن بن محمد بن عثمان قال: حدثنا يعقوب بن سفيان قال: حدثنا محمد بن عبد الرحيم
+:l Numarasız rivayet
+452.09 | Ali b. Muhammed b. Ahmed b. Bekr → Hasan b. Muhammed b. Osman → Ya‘kûb b. Süfyân → Muhammed b. Abdürrahîm → Ali (b. el-Medînî) → Bişr b. el-Mufaddal | Ali dedi ki: Bişr b. el-Mufaddal her gün dört yüz rekât namaz kılar, bir gün oruç tutup bir gün açardı. Yanında Cehmiyyeden bir insan anıldı; dedi ki: “O kâfiri anma!”
+& ahberanâ, haddesenâ, haddesenâ, haddesenâ, semi‘tü, kâle
+^ كان بشر
+=< قول يحيى بن سعيد
+:l Numarasız rivayet
+@ Yahyâ b. Saîd, Abdurrahmân b. Mehdî, Muâz b. Muâz, Ebü’l-Velîd et-Tayâlisî, Abdullah b. Dâvûd el-Hureybî, İshâk b. Süleymân er-Râzî, Hasan el-Eşyeb, Şebâbe b. Sevvâr, Abdülazîz b. Ebân ve Muhammed b. Yezîd el-Vâsıtî’nin sözü
+@ar =< أخبرنا علي بن محمد بن أحمد بن بكر قال: حدثنا الحسن بن محمد بن عثمان قال: حدثنا يعقوب بن سفيان قال: سمعت أبا الوليد
+452.10 | Ali b. Muhammed b. Ahmed b. Bekr → Hasan b. Muhammed b. Osman → Ya‘kûb b. Süfyân → Ebü’l-Velîd Hişâm b. Abdülmelik → Yahyâ b. Saîd | Ebü’l-Velîd dedi ki: Yahyâ b. Saîd dedi ki: “Şuna şaşmıyor musun? ‘De ki: O Allah birdir’ (İhlâs 112/1) (sûresinin) mahlûk olduğunu söylüyorlar.” Ebü’l-Velîd dedi ki: “Kur’ân Allah’ın kelâmıdır; Kur’ân hakkında söz, Allah hakkında sözdür.” Ebü’l-Velîd dedi ki: “Kalbini Kur’ân’ın mahlûk olmadığına bağlamayan İslâm’dan çıkmıştır.”
+& ahberanâ, haddesenâ, haddesenâ, semi‘tü, kâle
+^ قال يحيى بن سعيد: أما
+=< أخبرنا محمد بن عبيد الله بن الحجاج قال: أخبرنا أحمد بن الحسن قال: حدثنا عبد الله بن أحمد قال: حدثني أحمد بن إبراهيم الدورقي
+:l Numarasız rivayet
+452.11 | Muhammed b. Ubeydullah b. el-Haccâc → Ahmed b. el-Hasan → Abdullah b. Ahmed → Ahmed b. İbrâhîm ed-Devrakî → Muhammed b. Sinân → İbn Mehdî | İbn Mehdî dedi ki: “Kur’ân Allah’ın kelâmıdır; ne yaratıcıdır ne de mahlûktur.”
+& ahberanâ, ahberanâ, haddesenâ, haddesenî, haddesenâ, an
+^ القرآن كلام الله ليس
+=< أخبرنا علي بن محمد بن أحمد بن بكر قال: أخبرنا الحسن
+:l Numarasız rivayet
+452.12 | Ali b. Muhammed b. Ahmed b. Bekr → Hasan b. Muhammed b. Osman → Ya‘kûb b. Süfyân → Abbâs b. Abdülazîm → Yahyâ b. Saîd → Muâz b. Muâz | Muâz b. Muâz diyordu ki: “Kim ‘Kur’ân mahlûktur’ derse, kendisinden başka ilâh olmayan Allah’a yemin olsun ki o zındıktır” —ya da: “zındıktır” dedi—.
+& ahberanâ, ahberanâ, haddesenâ, semi‘tü, haddesenî, semi‘tü
+^ من قال: القرآن مخلوق فهو والله
+=< أخبرنا محمد بن عمر بن محمد بن حميد
+:l Numarasız rivayet
+452.13 | Muhammed b. Ömer b. Muhammed b. Humeyd → Hüseyin b. İsmâîl → Ahmed b. Muhammed b. Yahyâ b. Saîd → babası → Muâz b. Muâz | Muâz b. Muâz dedi ki: “Kim ‘Kur’ân mahlûktur’ derse kâfirdir.”
+& ahberanâ, ahberanâ, haddesenâ, haddesenî, semi‘tü
+^ من قال: القرآن مخلوق فهو كافر
+=< أخبرنا محمد بن عبيد الله قال: أخبرنا أحمد بن الحسن قال: حدثنا عبد الله بن أحمد , حدثني أحمد بن إبراهيم قال: حدثني علي
+:l Numarasız rivayet
+452.14 | Muhammed b. Ubeydullah → Ahmed b. el-Hasan → Abdullah b. Ahmed → Ahmed b. İbrâhîm → Ali b. Ebi’r-Rebî‘ → Bişr b. el-Hâris → Abdullah b. Dâvûd | Bişr b. el-Hâris dedi ki: Abdullah b. Dâvûd’a Kur’ân’ı sordum. Dedi ki: “‘Azîz, Cebbâr’ (Haşr 59/23); bu mahlûk mu olur?”
+& ahberanâ, ahberanâ, haddesenâ, haddesenî, haddesenî, haddesenî, kâle
+^ سألت عبد الله بن داود
+=< أخبرنا محمد قال: حدثنا أحمد قال: حدثنا عبد الله بن أحمد قال: أخبرت
+:l Numarasız rivayet
+452.15 | Muhammed → Ahmed → Abdullah b. Ahmed → Muhriz b. Avn → Muhammed b. Yezîd el-Vâsıtî | Muhammed b. Yezîd el-Vâsıtî dedi ki: “O’nun ilmi O’nun kelâmıdır, kelâmı O’ndandır ve o mahlûk değildir.”
+& ahberanâ, haddesenâ, haddesenâ, unbi’tü, kâle
+^ علمه كلامه
+=< وأخبرنا محمد بن عبد الله قال: أخبرنا أحمد
+:l Numarasız rivayet
+452.16 | Muhammed b. Abdullah → Ahmed → Abdullah b. Ahmed → Ebû Abdullah es-Sülemî → Ebû Ya‘kûb el-Hazzâz İshâk b. Süleymân (er-Râzî) | Ebû Abdullah es-Sülemî dedi ki: Ebû Ya‘kûb el-Hazzâz İshâk b. Süleymân’a —yani er-Râzî’ye— Kur’ân’ı sordum. Dedi ki: “O, Allah’ın (azze ve celle) kelâmıdır ve mahlûk değildir.” Bana dedi ki: “Eğer ‘Kur’ân Allah’ın (azze ve celle) kelâmıdır’ deyip ‘mahlûktur’ da ‘mahlûk değildir’ de demezsek, bizimle bunlar —yani Cehmiyye— arasında bir ihtilaf kalmaz.” Bunu Ahmed b. Hanbel’e anlattım; Ahmed bana dedi ki: “Allah Ebû Ya‘kûb’a hayırla karşılık versin.”
+& ahberanâ, ahberanâ, haddesenâ, haddesenî, kâle
+^ سألت أبا يعقوب
+=< وأخبرنا محمد , أخبرنا أحمد قال: حدثنا عبد الله بن أحمد قال: حدثنا عبد الله بن إسحاق
+:l Numarasız rivayet
+452.17 | Muhammed → Ahmed → Abdullah b. Ahmed → Abdullah b. İshâk → Hasan b. Mûsâ el-Eşyeb | Hasan b. Mûsâ el-Eşyeb diyordu ki: “Kovulmuş şeytandan Allah’a sığınırım. ‘Rahmân ve Rahîm olan Allah’ın adıyla’ (Fâtiha 1/1). ‘Yalnız sana ibadet eder, yalnız senden yardım dileriz’ (Fâtiha 1/5).” Hasan dedi ki: “Bu mu mahlûk?”
+& ahberanâ, ahberanâ, haddesenâ, haddesenâ, semi‘tü
+^ أعوذ بالله
+=< أخبرنا أحمد بن عبيد قال: أخبرنا محمد بن الحسين قال: حدثنا أحمد بن زهير قال: حدثنا ابن أبي كريمة
+:l Numarasız rivayet
+452.18 | Ahmed b. Ubeyd → Muhammed b. el-Hüseyin → Ahmed b. Züheyr → İbn Ebî Kerîme → Şebâbe b. Sevvâr ve Abdülazîz el-Kureşî | Şebâbe b. Sevvâr ile Abdülazîz el-Kureşî diyorlardı ki: “Kur’ân Allah’ın kelâmıdır; onun mahlûk olduğunu iddia eden kâfirdir.”
+& ahberanâ, ahberanâ, haddesenâ, haddesenâ, semi‘tü
+^ القرآن كلام الله , من زعم
+:l Numarasız rivayet
+@ İsmâîl b. Ebî Üveys ve Yahyâ b. Yahyâ’nın sözü
+@ar =< أخبرنا محمد بن عبيد الله
+452.19 | Muhammed b. Ubeydullah → Ahmed b. el-Hasan → Abdullah → İshâk b. Behlûl → İbn Ebî Üveys | İbn Ebî Üveys diyordu ki: “Kur’ân Allah’ın (azze ve celle) kelâmıdır ve Allah’tandır; Allah’tan olan ise mahlûk değildir.”
+& ahberanâ, ahberanâ, haddesenâ, haddesenâ, semi‘tü
+^ القرآن كلام الله عز وجل ومن
+=< وأخبرنا محمد , أخبرنا أحمد
+:l Numarasız rivayet
+452.20 | Muhammed → Ahmed → Abdullah → Ebû Ahmed Mahmûd b. Gaylân → Yahyâ b. Yahyâ en-Nîsâbûrî | Yahyâ b. Yahyâ en-Nîsâbûrî dedi ki: “Kim Kur’ân’ın mahlûk olduğunu iddia ederse kâfir olur.”
+& ahberanâ, ahberanâ, haddesenâ, unbi’tü, an
+^ من زعم
+:l Numarasız rivayet
+@ Ahmed b. Hanbel, İshâk b. Râhûye, Ebû Sevr, Ebû Ubeyd, Yahyâ b. Maîn, Ali b. el-Medînî, Züheyr b. Harb, Ebû Bekir b. Ebî Şeybe, kardeşi Osman, Muhammed b. Süleymân Lüveyn ve Ebû Ma‘mer İsmâîl b. İbrâhîm el-Katîî’nin sözü
+@ar =< أخبرنا محمد بن عبد الرحمن
+452.21 | Muhammed b. Abdurrahmân → Abdullah b. Muhammed el-Begavî → İshâk b. İbrâhîm el-Begavî → Ahmed b. Hanbel; ayrıca Muhammed b. Ömer b. Muhammed b. Humeyd → Muhammed b. Mahled → İshâk (b. İbrâhîm) → Ahmed b. Hanbel | İshâk dedi ki: Ahmed b. Hanbel’i işittim; kendisine “Kur’ân mahlûktur” diyen soruldu, “Kâfir” dedi. İbn Menî‘ (şunu) ekledi: Kâf’ı fethalı okudu.
+& ahberanâ, ahberanâ, haddesenâ, semi‘tü; ahberanâ, ahberanâ, haddesenâ, semi‘tü
+% İshâk b. İbrâhîm el-Begavî, Ahmed b. Menî‘in amcasıdır.
+^ وسئل
+=< أخبرنا علي بن محمد بن إبراهيم الجوهري
+:l Numarasız rivayet
+452.22 | Ali b. Muhammed b. İbrâhîm el-Cevherî → Ebü’l-Kâsım Hasan b. Muhammed b. İdrîs → Hasan b. Eyyûb → Ahmed b. Hanbel | Hasan b. Eyyûb dedi ki: Ahmed b. Hanbel’e sordum: “Kur’ân hakkında ne dersin?” Dedi ki: “Allah’ın kelâmıdır, mahlûk değildir.” Dedim ki: “‘Mahlûktur’ diyen hakkında ne dersin?” Dedi ki: “Kâfirdir.” Dedim ki: “Onu neyle tekfir ettin?” Dedi ki: “Allah’ın kitabındaki âyetlerle: ‘Sana gelen ilimden sonra onların heveslerine uyarsan’ (Bakara 2/120) ve ‘Sana gelen ilimden sonra’ (Bakara 2/145). Kur’ân Allah’ın ilmidir; kim Allah’ın ilminin mahlûk olduğunu iddia ederse kâfir olur.”
+& ahberanâ, haddesenâ, haddesenâ, kâle
+^ سألت أحمد
+=< أخبرنا الحسن بن عثمان قال: أخبرنا عمر بن جعفر
+:l Numarasız rivayet
+452.23 | Hasan b. Osman → Ömer b. Ca‘fer → Ahmed → Ahmed b. el-Hasan et-Tirmizî → Ahmed b. Hanbel | Ahmed b. el-Hasan et-Tirmizî dedi ki: Ahmed b. Hanbel’e dedim ki: “İnsanlar Kur’ân meselesine daldılar; nasıl söyleyeyim?” Dedi ki: “Sen mahlûk değil misin?” “Evet” dedim. Dedi ki: “O hâlde senden olan sözün de mahlûktur.” “Evet” dedim. Dedi ki: “Kur’ân Allah’ın kelâmından değil mi?” “Evet” dedim. Dedi ki: “Ve Allah’ın kelâmı (değil mi)?” “Evet” dedim. Dedi ki: “Allah’tan olan bir şey mahlûk olur mu?”
+& ahberanâ, ahberanâ, haddesenâ, haddesenâ, kâle
+^ قلت لأحمد
+=< حدثنا أبو بكر محمد بن عمر الخطيب
+:l Numarasız rivayet
+452.24 | Ebû Bekir Muhammed b. Ömer el-Hatîb → Ebû Bekir Ahmed b. Ya‘kûb el-Karancelî → Ahmed b. Asram b. Huzeyme el-Mugaffelî → Hüseyin b. Hayyân → Ebû Ubeyd el-Kâsım b. Sellâm | Ebû Ubeyd el-Kâsım b. Sellâm diyordu ki: “Kim ‘Kur’ân mahlûktur’ derse, ‘Şüphesiz Allah üçün üçüncüsüdür’ (Mâide 5/73) diyenden daha kötüdür —Allah yücedir ve yücelerden yücedir—. Çünkü onlar bir şey ispat ediyorlar; bunlar ise manayı ispat etmiyorlar.”
+& haddesenâ, haddesenâ, haddesenâ, semi‘tü, semi‘tü
+^ من قال القرآن مخلوق فهو شر
+:l Numarasız rivayet
+453 | Ebû Ahmed Ubeydullah b. Muhammed b. Ahmed el-Fakîh → Ubeydullah b. Ahmed b. Kâmil en-Nahvî → Ebû Abdullah Muhammed b. Mahled b. Hafs el-Attâr → Muhammed b. Osman b. Ebî Şeybe → Ali b. el-Medînî | Ali b. el-Medînî, ölümünden iki ay önce diyordu ki: “Kur’ân Allah’ın kelâmıdır, mahlûk değildir. Kim ‘mahlûktur’ derse kâfirdir.”
+& kâle, vecedtü, haddesenâ, semi‘tü, semi‘tü
+^ القرآن كلام الله غير
+454 | Muhammed b. Ubeydullah b. el-Haccâc → Ahmed b. el-Hasan → Abdullah b. Ahmed → Abbâs b. Abdülazîm → Ebü’l-Velîd İsmâîl b. Uzre | Abbâs b. Abdülazîm dedi ki: Ali b. el-Medînî otururken Ebü’l-Velîd İsmâîl b. Uzre’yi şöyle derken işittim: “Kur’ân Allah’ın kelâmıdır; Allah’ın (azze ve celle) kelâmı ise mahlûk değildir.” Ali ona dedi ki: “Nasıl söyleyeceğimizi ancak senden öğreniyoruz.”
+& ahberanâ, ahberanâ, haddesenâ, haddesenâ, semi‘tü
+^ إن القرآن
+455 | Ahmed b. Ubeyd → Muhammed b. el-Hüseyin → Ahmed b. Züheyr → babası | Ahmed b. Züheyr dedi ki: Babamı sayamayacağım kadar çok şöyle derken işittim: “Kur’ân Allah’ın kelâmıdır, mahlûk değildir; bundan başkasını bilmeyiz.”
+& ahberanâ, ahberanâ, haddesenâ, semi‘tü
+^ القرآن كلام الله غير مخلوق , ولا
+456 | Ahmed b. Züheyr’in babası → Yahyâ b. Maîn | (Ahmed b. Züheyr dedi ki:) Babamı, Yahyâ b. Maîn’e sorarken de işittim; dedi ki: “Senin ‘Kur’ân Allah’ın kelâmıdır’ deyip sustuğunu, ‘mahlûktur’ da ‘mahlûk değildir’ de demediğini söylüyorlar?” Dedi ki: “Hayır.” Ona tekrar sordum; dedi ki: “Allah korusun! Kur’ân Allah’ın kelâmıdır, mahlûk değildir. Bundan başkasını söyleyenin üzerine Allah’ın laneti olsun.”
+& kâle, kâle
+^ وسأل يحيى
+457 | Muhammed b. Ubeydullah → Ahmed b. el-Hasan → Abdullah b. Ahmed → Ebû Bekir b. Ebî Şeybe | Abdullah b. Ahmed dedi ki: Ebû Bekir b. Ebî Şeybe’den işittim; arkadaşlarımızdan bir adam “Kur’ân Allah’ın kelâmıdır ve mahlûk değildir” dedi. Ebû Bekir dedi ki: “Bunu söylemeyen sapıktır, saptırıcıdır, bid‘atçidir.”
+& ahberanâ, ahberanâ, haddesenâ, semi‘tü
+^ وقال رجل
+458 | Abdullah → Osman b. Ebî Şeybe | Osman b. Ebî Şeybe diyordu ki: “Kur’ân Allah’ın kelâmıdır ve mahlûk değildir.”
+& kâle, semi‘tü
+^ القرآن كلام
+=< قال:
+459 | Osman | Osman bir başka sefer diyordu ki: “‘Kur’ân Allah’ın kelâmıdır ve mahlûk değildir’ demeyen, şu Cehmiyyeden daha kötüdür.”
+& kâle
+^ من لم يقل
+460 | Muhammed → Ahmed → Abdullah → Muhammed b. Süleymân Lüveyn | Muhammed b. Süleymân Lüveyn diyordu ki: “Kur’ân Allah’ın kelâmıdır, mahlûk değildir. ‘Kur’ân mahlûktur’ diyen kimseyi görmedim. Allah’a sığınırım!”
+& ahberanâ, haddesenâ, haddesenâ, semi‘tü
+^ القرآن كلام الله غير
+461 | Abdullah → Ebû Ma‘mer (İsmâîl b. İbrâhîm el-Hüzelî) | Ebû Ma‘mer diyordu ki: “Kur’ân Allah’ın kelâmıdır, mahlûk değildir. Onun mahlûk olmadığında şüphe eden Cehmîdir; hayır, bilakis Cehmîden daha kötüdür.”
+& kâle, semi‘tü
+^ القرآن كلام الله غير
+462 | Ebû Ma‘mer | Ebû Ma‘mer diyordu ki: “İnsanlara yetiştim; ‘Kur’ân Allah’ın kelâmıdır, mahlûk değildir’ diyorlardı.”
+& kâle
+^ أدركت
+@ el-Büveytî, el-Müzenî, er-Rebî‘ b. Süleymân, Muhammed b. İsmâîl el-Buhârî ve Sehl b. Abdullah et-Tüsterî’nin sözü
+@ar *
+463 | Muhammed b. Abdullah b. Nuaym → Ebû Muhammed Ca‘fer b. Muhammed b. el-Hâris → Ebû Zekeriyyâ Yahyâ b. Hayve → el-Müzenî | el-Müzenî diyordu ki: “Kur’ân Allah’ın kelâmıdır, mahlûk değildir.”
+& ahberanâ, semi‘tü, semi‘tü, semi‘tü
+% Muhammed b. Abdullah b. Nuaym’dan icâzetle.
+^ القرآن كلام
+464 | Hasan b. Ahmed el-Esedî → Ali b. Mehdî et-Taberî → Muhammed b. Hârûn b. Hafs → Abdüsselâm b. Şenkâr el-Mısrî → el-Müzenî | Abdüsselâm b. Şenkâr el-Mısrî dedi ki: el-Mahalle’den el-Müzenî’ye bir mektup geldi; “Yâsîn’in Rabbine andolsun, şunu yapmayacağım” deyip sonra onu yapan ve yeminini bozan bir adamı soruyordu. el-Müzenî dedi ki: “Ona bir şey gerekmez. ‘Yeminini bozmuştur’ diyen, Kur’ân mahlûktur demiş olur.”
+& ahberanâ, ahberanâ, haddesenâ, semi‘tü, kâle
+% Ali b. Mehdî et-Taberî’den icâzetle.
+^ جاء كتاب
+465 | Muhammed b. Abdullah b. Nuaym el-Hâfız → Ebû Muhammed el-Müzenî → Yûsuf b. Mûsâ → Ebû İbrâhîm el-Müzenî | Yûsuf b. Mûsâ dedi ki: Ebû İbrâhîm el-Müzenî’nin yanındaydık. Ben ve bazı arkadaşlarımız ona doğru ilerledik ve dedik ki: “Biz Horasanlı bir topluluğuz. Bizim tarafımızda ‘Kur’ân mahlûktur’ diyen bir topluluk türedi. Biz kelâma dalanlardan değiliz; bu meselede senden ancak dinimiz için ve yanımızdakiler için, onlara senden haber verelim diye fetva istiyoruz.” Sonra ondan yazdık; dedi ki: “Kur’ân Allah’ın kelâmıdır, mahlûk değildir. Kim ‘Kur’ân mahlûktur’ derse kâfirdir.”
+& ahberanâ, semi‘tü, semi‘tü, kâle
+% Muhammed b. Abdullah b. Nuaym el-Hâfız’dan icâzetle.
+^ كنا عند
+466 | Hüseyin b. Ahmed el-Esedî → Muhammed b. Bündâr ve Muhammed b. İshâk b. Bişr → Ebû Nuaym el-İsterâbâzî → er-Rebî‘ → el-Büveytî | Ebû Nuaym el-İsterâbâzî dedi ki: er-Rebî‘e: “el-Büveytî’yi ‘Kim Kur’ân mahlûktur derse kâfirdir’ derken işittin (mi)?” denildi. Ona —yani er-Rebî‘e— “Sen de bunu söylüyor musun?” denildi. Dedi ki: “Evet; bunu söylerim ve Allah’a onunla kulluk ederim.”
+& ahberanâ, haddesenâ, haddesenâ, kâle, semi‘tü
+^ قيل للربيع
+467 | Hüseyin → İbrâhîm b. Ahmed → Muhammed b. Yahyâ b. Âdem → er-Rebî‘ | Muhammed b. Yahyâ b. Âdem dedi ki: er-Rebî‘ bize dedi ki: “Ben derim ki: Kur’ân Allah’ın kelâmıdır, mahlûk değildir. Kim ‘Kur’ân mahlûktur’ derse kâfirdir.”
+& ahberanâ, haddesenâ, haddesenâ, kâle
+^ أقول
+468 | Ahmed b. Muhammed b. Hafs → Muhammed b. Ahmed b. Muhammed b. Seleme → Ebû Bişr Muhammed b. Ahmed b. Hâdır el-Absî → Muhammed b. Yûsuf b. Matar → Muhammed b. İsmâîl el-Buhârî | Muhammed b. Yûsuf b. Matar dedi ki: Muhammed b. İsmâîl el-Buhârî’ye sordum; dedi ki: “Kur’ân Allah’ın kelâmıdır, mahlûk değildir. Kim ‘mahlûktur’ derse kâfirdir.”
+& ahberanâ, ahberanâ, semi‘tü, semi‘tü, kâle
+^ سألت محمد
+469 | Muhammed b. İbrâhîm b. Muhammed b. Hârist en-Nüceyremî → Ebü’l-Kâsım Abdülcebbâr b. Şîrân b. Yezîd el-Abdî → Ebû Muhammed Sehl b. Abdullah | Ebû Muhammed Sehl b. Abdullah diyordu ki: “Kim ‘Kur’ân mahlûktur’ derse rubûbiyyeti inkâr eden bir kâfirdir; nimeti inkâr eden (bir kâfir) değil.”
+& ahberanâ, semi‘tü, semi‘tü
+% Abdülcebbâr b. Şîrân, Sehl b. Abdullah’ın arkadaşıdır.
+^ من قال
+@ Ebû Hanîfe, Ebû Yûsuf, Muhammed b. el-Hasan ve Mûsâ b. Süleymân el-Cûzcânî’nin sözü
+@ar *
+470 | Ebü’l-Hasan Ali b. Muhammed b. Ömer el-Fakîh er-Râzî → Ebû Bekir Muhammed b. Mihrûye er-Râzî → Muhammed b. Eyyûb → Muhammed b. Saîd b. Sâbık → Ebû Yûsuf el-Kâdî | Muhammed b. Saîd b. Sâbık dedi ki: Ebû Yûsuf el-Kâdî’yi işittim —ona “Kur’ân’ın yaratıldığını söyler misin?” demiştim—; dedi ki: “Hayır” —bunlara karşı çıkan biri gibi—; yani: “Ne Ebû Hanîfe ne de ben.”
+& semi‘tü, semi‘tü, semi‘tü, semi‘tü, semi‘tü
+% Ebü’l-Hasan: “(Muhammed b. Mihrûye) bunu, bir insanın taziyesine giderken yolda benimle birlikteyken söyledi” dedi.
+^ وقلت له
+471 | Ali b. Ömer b. İbrâhîm → Mükrem b. Ahmed → Ahmed b. Atıyye → Saîd b. Mansûr → İbnü’l-Mübârek | İbnü’l-Mübârek diyordu ki: “Vallahi Ebû Hanîfe, Kur’ân’ın yaratıldığını söyleyerek ve onu Allah’a din edinerek ölmedi.”
+& ahberanâ, haddesenâ, haddesenâ, haddesenâ, semi‘tü
+^ والله ما مات
+472 | Ali b. Ömer → Mükrem → Ahmed b. Atıyye → Muhammed b. Mukâtil → İbnü’l-Mübârek → Ebû Hanîfe | İbnü’l-Mübârek diyordu ki: Ebû Hanîfe’nin meclisinde Cehm anıldı. Dedi ki: “Ne diyor?” Dediler ki: “Kur’ân mahlûktur diyor.” Dedi ki: “‘Ağızlarından çıkan söz ne büyük oldu! Onlar yalandan başka bir şey söylemiyorlar’ (Kehf 18/5).”
+& ahberanâ, ahberanâ, haddesenâ, semi‘tü, semi‘tü, kâle
+^ ذكر جهم
+473 | Ali → Mükrem → Ahmed b. Atıyye → Beşşâr el-Haffâf → Ebû Yûsuf | Ebû Yûsuf diyordu ki: “Kim ‘Kur’ân mahlûktur’ derse onunla konuşmak haramdır, ondan ayrılmak farzdır.”
+& ahberanâ, ahberanâ, haddesenâ, semi‘tü, semi‘tü
+^ من قال
+474 | Ali → Mükrem → Ahmed b. Atıyye → Hasan b. Hammâd Seccâde → Muhammed b. el-Hasan | Hasan b. Hammâd Seccâde dedi ki: Bir adam Muhammed b. el-Hasan’a Kur’ân’ı, mahlûk olup olmadığını sordu. Dedi ki: “Kur’ân Allah’ın kelâmıdır; Allah’tan olan hiçbir şey mahlûk değildir.” Ebû Ali —yani Hasan b. Hammâd— dedi ki: “Bizim katımızda hak da budur.”
+& ahberanâ, ahberanâ, haddesenâ, semi‘tü, kâle
+^ سأل رجل
+475 | İsmâîl b. el-Hüseyin el-Buhârî → Ebû Muhammed Sehl b. Osman b. Saîd → Ahmed b. Hâlid ve Halîl b. el-Halîl → Ebû Abdullah b. Ebî Hafs → Ebû Isme Sa‘d b. Muâz ed-Devrakî → Ebû Süleymân el-Cûzcânî → Muhammed b. el-Hasan | Muhammed b. el-Hasan diyordu ki: “Kim ‘Kur’ân mahlûktur’ derse onun arkasında namaz kılmayın.”
+& semi‘tü, semi‘tü, haddesenâ, semi‘tü, semi‘tü, semi‘tü, semi‘tü
+% Arapça «قال: سمعت» ile başlar; “dedi” diyenin adı yazılmamıştır.
+% İsmâîl b. el-Hüseyin el-Buhârî, ez-Zâhid diye bilinir.
+% Rey’de.
+^ من قال
+476 | Abdurrahmân b. Ebî Hâtim → Yûsuf b. İshâk b. el-Haccâc → Ahmed b. el-Velîd → Kâsım b. Ebî Recâ → Ebû Süleymân el-Cûzcânî | Kâsım b. Ebî Recâ dedi ki: Ebû Süleymân el-Cûzcânî’nin yanındaydım; ona bir adam geldi ve dedi ki: “Bir belâ meselesi! Dün gece iki adamdan biri yemin edip ‘Kur’ân mahlûksa karısı kesin olarak üç talakla boş olsun’ dedi; öbürü de ‘Kur’ân mahlûk değilse karısı üç talakla boş olsun’ dedi.” Dedi ki: “Kur’ân mahlûk değilse karısının boş olacağına yemin edenin karısı ondan bâin olmuştur.”
+& kâle, haddesenâ, haddesenâ, haddesenâ, kâle
+^ كنت عند
+477 | Ahmed b. Abdullah → Ahmed b. Muhammed b. Muâviye → Ca‘fer b. Muhammed b. Hârûn b. Uzre → Hişâm b. Abdullah er-Râzî | Hişâm b. Abdullah er-Râzî diyordu ki: “Cehmiyyenin ebced’i, Kur’ân’ın mahlûk olduğunu iddia edendir.”
+& ahberanâ, ahberanâ, haddesenâ, semi‘tü
+^ أبو جاد
+@ Medine ehlinden, tâbiînin ikinci tabakasından “Kur’ân mahlûk değildir” diyen adamların zikri
+@ar *
+477.1 |  | Ali b. el-Hüseyin b. Ali b. Ebî Tâlib, oğlu Muhammed b. Ali b. el-Hüseyin; onlardan sonra Ca‘fer b. Muhammed b. Ali b. el-Hüseyin, onun oğlunun oğlu Ali b. Mûsâ b. Ca‘fer ve Abdullah b. Mûsâ b. Abdullah b. el-Hasan b. el-Hasan b. Ali b. Ebî Tâlib. Abbâs’ın soyundan: Ebû Ca‘fer Abdullah b. Muhammed b. Ali b. Abdullah b. el-Abbâs. Onun tabakasında: Ebû Abdullah Mâlik b. Enes.
+^ -
+:l Ara metin
+478 | İsmâîl b. Ebî Üveys | İsmâîl b. Ebî Üveys, Medine ehlinin icmâını nakletti; dedi ki: “Mâlik ve beldemizin âlimleri ‘Kur’ân Allah’tandır; Allah’tan olan hiçbir şey mahlûk değildir’ derlerdi.”
+& kâle
+^ قال: كان مالك
+=< وعلماء أهل المدينة في وقت
+479 |  | Mâlik b. Enes’in zamanında Medine ehlinin âlimleri: Muhammed b. Abdurrahmân b. Ebî Zi’b, Abdülazîz b. Ebî Seleme el-Mâcişûn, Ebû Bekir b. Ebî Sebre, İbrâhîm b. Sa‘d ez-Zührî, Saîd b. Abdurrahmân el-Cumahî, Hâtim b. İsmâîl, zâhid Abdullah b. Abdülazîz el-Ömerî, Ebû Damra Enes b. İyâz ve Muhammed b. İsmâîl b. Ebî Füdeyk. Sonra bunlardan sonra Mâlik’in, İbn Ebî Zi’b’in ve el-Mâcişûn’un ashâbı: Ma‘n b. Îsâ, Abdülmelik b. Abdülazîz b. Ebî Seleme el-Mâcişûn, İsmâîl b. Ebî Üveys, Ebû Mus‘ab Ahmed b. Ebî Bekr ez-Zührî, Mus‘ab b. Abdullah ez-Zübeyrî, İbrâhîm b. Hamza ez-Zübeyrî, İbrâhîm b. el-Münzir el-Hizâmî, Ya‘kûb b. Humeyd b. Kâsib, Hârûn b. Mûsâ el-Ferevî, Muhammed b. Ya‘kûb ez-Zübeyrî ve Yahyâ b. el-Mugîre el-Mahzûmî.\nHepsi dediler ki: “Kur’ân Allah’ın kelâmıdır, mahlûk değildir; kim ‘mahlûktur’ derse kâfirdir.”
+^ -
+480 | Yahyâ | Yahyâ dedi ki: “Âlimlerimizden, ‘Kur’ân Allah’ın kelâmıdır, mahlûk değildir; kim mahlûktur derse kâfirdir’ demeyen hiç kimseye yetişmedim.” İşte bu, Medine ehlinin icmâıdır.
+& kâle
+^ ما أدركت
+480.1 |  | Sonra bunlardan sonra, (bunu) bize nakledenler: Muhammed b. İsmâîl el-Buhârî, Ebû Zur‘a, Ebû Hâtim, Ebû Dâvûd ve Müslim. Mekke ehlinden ise Amr b. Dînâr’dan zikrettik; dedi ki: “Yetmiş yıldır şeyhlerimizi ‘Kur’ân Allah’ın kelâmıdır, mahlûk değildir’ derken işittim.” Amr b. Dînâr’ın yetiştiği sahâbe ve tâbiîni de daha önce zikrettik.\nSonra ondan sonra Süfyân b. Uyeyne; ondan, Fudayl b. İyâz’dan, Muhammed b. Müslim et-Tâifî’den ve Yahyâ b. Süleym et-Tâifî’den de böyle rivayet edildi.\nSonra onlardan sonra: Muhammed b. İdrîs eş-Şâfiî, Ebû Abdurrahmân Abdullah b. Yezîd el-Mukri’, Abdullah b. ez-Zübeyr el-Humeydî, Mekke’de mücâvir olan Saîd b. Mansûr el-Horasânî, Ahmed b. Muhammed el-Ezrakî, Muhammed b. Ebî Ömer el-Adenî, Abdullah b. İmrân el-Âbidî, Abdülcebbâr b. el-Alâ b. Abdülcebbâr el-Attâr, İsmâîl b. Sâlim el-Mekkî, Muhammed b. Zunbûr el-Mekkî, Muhammed b. Mansûr el-Cevvâz el-Huzâî, Ahmed b. Muhammed b. Abdullah b. el-Kâsım b. Ebî Bezze el-Mukri’, Ebû Ubeydullah Saîd b. Abdurrahmân el-Mahzûmî, eş-Şâfiî’nin arkadaşı fakih Ebü’l-Velîd b. el-Cârûd, Muhammed b. Abdullah b. Yezîd el-Mukri’, Seleme b. en-Nîsâbûrî (metinde böyle) ve Hasan b. Ali el-Hulvânî. Sonra bunların hepsinin ilmi, Medine ehli arasında zikri geçen imamlara varır. Kûfe ehline gelince, tâbiînden öncekiler: Süleymân b. Mihrân el-A‘meş ve Hammâd b. Ebî Süleymân.
+^ -
+:l Ara metin
++
++
+481 | Abdurrahmân b. Ebî Hâtim → Muhammed b. Ahmed b. Amr b. Îsâ → babası | Muhammed b. Ahmed b. Amr b. Îsâ’nın babası dedi ki: Mihne vaktinde Kûfe câmii mescidinde toplanan şeyhlerden daha seçkin şeyhlerin toplandığı bir meclis görmedim. İçinde mihne bulunan mektup onlara okundu. Ebû Nuaym dedi ki: “Sekiz yüz yetmiş küsur şeyhe yetiştim; A‘meş ve ondan aşağısı onlardandır. Bu sözü —yani Kur’ân’ın yaratıldığını— söyleyen hiçbir kimse görmedim; bu sözü konuşan herkes de zındıklıkla itham edilirdi.” Ahmed b. Yûnus kalktı, Ebû Nuaym’ın başını öptü ve dedi ki: “Allah seni İslâm adına hayırla mükâfatlandırsın.”
+& kâle, haddesenâ, semi‘tü
+^ ما رأيت مجلسا
+=< ومن الطبقة الأولى من الفقهاء
+482 |  | Fakihlerin ilk tabakasından: Muhammed b. Abdurrahmân b. Ebî Leylâ, Süfyân b. Saîd es-Sevrî, Nu‘mân b. Sâbit Ebû Hanîfe, Ebû Yûsuf Ya‘kûb b. İbrâhîm, Muhammed b. el-Hasan, Ebû Bekir b. Ayyâş, Abdüsselâm b. Harb, Abdullah b. İdrîs, Hafs b. Gıyâs, Yahyâ b. Zekeriyyâ b. Ebî Zâide, Ebû Muâviye Muhammed b. Hâzim ed-Darîr, Vekî‘ b. el-Cerrâh, Ebû Üsâme Hammâd b. Üsâme, Abde b. Süleymân el-Kilâbî, Abdullah b. Nümeyr, Ca‘fer b. Avn, Abdülhamîd el-Himmânî, Ubeyd’in iki oğlu Ya‘lâ ve Muhammed, Ebû Nuaym el-Fadl b. Dükeyn, Abdülazîz b. Ebân, Şücâ‘ b. el-Velîd, Hüseyin b. Ali el-Cu‘fî, Kabîsa b. Ukbe, Ahmed b. Abdullah b. Yûnus ve Ebû Gassân Mâlik b. İsmâîl en-Nehdî.\nİkinci tabakadan: Yahyâ b. Abdülhamîd el-Himmânî, Assâm b. Ali el-Âmirî, Osman b. Züfer, Ali b. Hakîm el-Evdî, Ebû Şeybe’nin iki oğlu Ebû Bekir ve Osman, Muhammed b. Abdullah b. Nümeyr, Ubeyd b. Yaîş, Hennâd b. es-Serî, Abdullah b. Ömer b. Muhammed b. Ebân el-Cu‘fî, Ebû Küreyb Muhammed b. el-Alâ el-Hemedânî, İshâk b. Mûsâ el-Ensârî, Yahyâ b. Talha el-Yerbû‘î, Ebû Saîd el-Eşecc, Ebû Hişâm er-Rifâî, Süfyân b. Vekî‘, Abdullah b. Ebî Ziyâd el-Katavânî, Ca‘fer b. Muhammed es-Sa‘lebî, İbrâhîm b. Ebî Bekir b. Ayyâş, Fadâle b. el-Fadl et-Tuhavî, Vâsıl b. Abdüla‘lâ, Ubeyd b. Esbât, İsmâîl b. Behrâm, Ahmed b. Cevvâs el-Hanefî Ebû Âsım, Hârûn b. Hâtim el-Mukri’, Hârûn b. İshâk el-Hemdânî, Hüseyin b. Ali b. el-Esved el-İclî, Muhammed b. Halef et-Teymî el-Mukri’, Zekeriyyâ b. Yahyâ b. Zekeriyyâ b. Ebî Zâide, Ebû Şeybe İbrâhîm b. Abdullah b. Ebî Şeybe ve Ahmed b. Hâzim b. Ebî Garaze.\nHepsi dediler ki: “Kur’ân Allah’ın kelâmıdır, mahlûk değildir; kim ‘mahlûktur’ derse kâfirdir.”
+^ -
+482.1 |  | Basra ehlinden, tâbiînden olanlar: Hasan’dan, Süleymân et-Teymî’den ve Eyyûb es-Sahtiyânî’den (bu söz) daha önce geçti. Onlardan sonra: Sellâm b. Ebî Mutî‘ ve Mübârek b. Fadâle; sonra Hammâd b. Zeyd, Hammâd b. Seleme, Ca‘fer b. Süleymân ed-Dubaî, Yezîd b. Zürey‘, Bişr b. el-Mufaddal, Mu‘temir b. Süleymân, İsmâîl İbn Uleyye, Abdülvehhâb es-Sekafî, Hâris b. Umeyr, Yahyâ b. Saîd el-Kattân, Muâz b. Muâz, Abdurrahmân b. Mehdî, Muhammed b. İbrâhîm b. Ebî Adî, Ebû Dâvûd et-Tayâlisî, Vehb b. Cerîr, Müemmel b. İsmâîl, Hammâd b. Mes‘ade, Abdullah b. Dâvûd el-Hureybî, Saîd b. Âmir ed-Dubaî, Muhammed b. Abdullah el-Ensârî, Ebû Âsım en-Nebîl, Yahyâ b. Kesîr el-Anberî, Abdülmelik b. Kureyb el-Asmaî ve Hişâm b. Abdülmelik Ebü’l-Velîd et-Tayâlisî.
+^ -
+:l Ara metin
+483 | Abdurrahmân b. Ebî Hâtim → Muhammed b. Yahyâ (b. Eyyûb er-Râzî) → Ebü’l-Velîd | Ebü’l-Velîd diyordu ki: “Rey’de de, Bağdat’ta da, Basra’da da ‘Kur’ân mahlûktur’ diyen bir adam tanımadım. Allah’tan âfiyet dilerim.”
+& kâle, haddesenâ, semi‘tü
+^ ما عرفت
+=< وسليمان بن حرب الواشحي
+484 |  | Süleymân b. Harb el-Vâşihî, Haccâc b. el-Minhâl el-Enmâtî, Ubeydullah b. Muhammed b. Âişe et-Teymî, Ebû Abdurrahmân Abdullah b. Hâni’ en-Nahvî ve Abdullah b. Ebî Bekr el-Atekî. Bunları izleyen tabakadan: Ebü’r-Rebî‘ ez-Zehrânî, Hüdbe b. Hâlid, Abdullah b. Muhammed b. Esmâ, Şeybân b. Ferrûh, Muhammed b. Mukâtil el-Abbâdânî, Abdüla‘lâ b. Hammâd en-Nersî, Abbâs b. el-Velîd en-Nersî, Abdullah b. Sevvâr el-Anberî, Ravh b. Abdülmü’min, İbrâhîm b. el-Hasan el-Allâf, Hasan b. Ali b. Râşid el-Vâsıtî, Fıtr b. Hammâd b. Vâkıd, Katan b. Nüseyr, Ali b. el-Medînî, Muhammed b. Hallâd el-Bâhilî, Muhammed b. Ubeydullah ez-Ziyâdî, Muhammed b. Beşşâr, Muhammed b. el-Müsennâ, Nasr b. Ali, Muhammed b. Ebî Safvân, Abdullah b. es-Sabbâh el-Attâr, Ali b. Nasr b. Ali, Muhammed b. Yahyâ b. Ebî Hazm el-Kutaî, Muhammed b. Yezîd el-Esfâtî, Muhammed b. Yahyâ el-Ezdî, İshâk b. İbrâhîm b. Habîb b. eş-Şehîd, Zeyd b. Ahzem et-Tâî, İbrâhîm b. Beşşâr er-Remâdî, Abdüssamed b. Muhammed el-Abbâdânî, Yahyâ b. Hakîm el-Mukavvim, Yahyâ b. Osman es-Siczî, Ebû Dâvûd Süleymân b. Ümeyye, Muhammed b. Ma‘mer el-Bahrânî, Kâsım b. Ümeyye el-Hazzâ, Muhammed b. el-Velîd el-Büsrî ve Ebû Saîd Ahmed b. Muhammed b. Yahyâ b. Saîd el-Kattân.\nHepsi dediler ki: “Kur’ân Allah’ın kelâmıdır, mahlûk değildir; kim ‘mahlûktur’ derse kâfirdir.”
+^ -
+=< ومن أهل واسط
+485 |  | Vâsıt ve Şutût ehlinden: Ebû Muâviye Hüşeym b. Beşîr el-Vâsıtî, Abbâd b. el-Avvâm, Ali b. Âsım, Yezîd b. Hârûn, Muhammed b. Yezîd el-Vâsıtî, Âsım b. Ali b. Âsım, Amr b. Avn, Vehb b. Bakıyye, Ebü’ş-Şa‘sâ Ali b. Hüseyin, Zekeriyyâ b. Yahyâ b. Hamûye, Mes‘ûd b. Müsebbih, Muhammed b. Süfyân b. Müsebbih, Câbir b. Kürdî, Temîm b. el-Muntasır, Muhammed b. Harb en-Neşâî, Ammâr b. Hâlid el-Vâsıtî, Muhammed b. el-Vezîr, İshâk b. Vehb el-Allâf, Ahmed b. Sinân el-Vâsıtî, Muhammed b. Ubâde, Muhammed b. İsmâîl el-Bahterî —o, el-Hassânî ed-Darîr’dir—, Muhammed b. es-Sabbâh el-Cercerâî ve Hubbî diye bilinen Muhammed b. Hâtim el-Cercerâî.\nHepsi dediler ki: “Kur’ân Allah’ın kelâmıdır, mahlûk değildir; kim ‘mahlûktur’ derse kâfirdir.”
+^ -
+486 |  | Bağdat ehlinden ve onlardan sayılanlardan: Şuayb b. Harb el-Medâinî, Ebü’n-Nadr Hâşim b. el-Kâsım, Haccâc b. Muhammed el-A‘ver, Şebâbe b. Sevvâr el-Medâinî, Esved b. Âmir, Hasan b. Mûsâ el-Eşyeb, Yûnus b. Muhammed el-Müeddib, Muallâ b. Mansûr er-Râzî, Esved b. Sâlim, Ruveym b. Yezîd el-Mukri’, Dâvûd b. el-Muhabber, Affân b. Müslim, Hâlid b. Hıdâş, Muâviye b. Amr, Süleymân b. Dâvûd el-Hâşimî, Ebû Müslim Abdurrahmân b. Yûnus el-Müstemlî, Muhammed b. Yûsuf et-Tabbâ‘, Ebü’s-Serî Sehl b. Mahmûd, Hişâm b. Behrâm el-Medâinî, Ebû Nasr Abdülmelik b. Abdülazîz et-Temmâr, Ebû İbrâhîm İsmâîl b. İbrâhîm et-Tercümânî, Bağdat’a yerleşmiş Abdülazîz b. Ebî Seleme el-Ömerî, Hakem b. Mûsâ, Velîd b. Sâlih el-Cezerî, Ubeydullah b. Ömer el-Kavârîrî, Muhriz b. Avn, Süveyd b. Saîd, zâhid Yahyâ b. Eyyûb, zâhid Bişr b. el-Hâris, Süreyc b. Yûnus, Dâvûd b. Rüşeyd, Muhammed b. Bekkâr b. er-Reyyân, Ahmed b. Hanbel, Yahyâ b. Maîn, Züheyr b. Harb, Ebû Ubeyd el-Kâsım b. Sellâm, Ebû Sevr İbrâhîm b. Hâlid el-Kelbî, Ahmed b. Hâtim et-Tavîl, Ebû Ma‘mer İsmâîl b. İbrâhîm el-Katîî, âbid Muhammed b. Mus‘ab el-Bekkâ, el-Eşca‘î’nin dâmadı İbrâhîm b. Ebi’l-Leys, Ebû Hemmâm el-Velîd b. Şücâ‘, Ebû Bekir b. Ebi’n-Nadr, Hasan b. es-Sabbâh el-Bezzâr, İbrâhîm’in iki oğlu ed-Devrakî Ya‘kûb ve Ahmed, Ziyâd b. Eyyûb, Yahyâ b. Ekser, Ali b. Müslim et-Tûsî, Ebû Saîd Ahmed b. Ziyâd el-Haddâd el-Vâsıtî, Hârûn b. Abdullah el-Hammâl, Saîd b. Yahyâ b. Saîd el-Emevî, Sâlih el-Hazzâz, Bağdat’a yerleşmiş Abdullah b. Hâşim b. Hayyân et-Tûsî, Hârûn el-Müstemlî, Muhammed b. Mansûr et-Tûsî, Ebû Yahyâ Muhammed b. Abdurrahmân el-Bezzâz, Abdülvehhâb b. el-Hakem el-Verrâk, İbrâhîm b. Nusayr, Bağdat’a yerleşmiş Hasan b. İbrâhîm eş-Şâmî el-Medenî, İshâk b. Dâvûd eş-Şa‘rânî, Hasan b. Arafe, Ali b. el-Hüseyin b. İbrâhîm b. İşkâb, Mahfûz b. Ebî Tevbe, Ebû Tâlib Ahmed b. Humeyd el-Verrâk, İbrâhîm b. Şeddâd, Muhammed b. Süheyl b. Asker el-Buhârî, Züheyr b. Muhammed b. Kumeyr, Yaîş b. el-Cehm el-Hadîsî, Ebû Bekir Ahmed b. Muhammed b. Hânî el-Esrem, Fadl b. Ziyâd et-Tûsî, Muhammed b. Abdülmelik Zencûye ve Harb b. İsmâîl el-Kirmânî —bu dördü Ahmed b. Hanbel’in ashâbıdır—, Fadl b. Sehl el-A‘rec, Humeyd b. er-Rebî‘ el-Hazzâz, Muhammed b. Abdullah el-Muharrimî, Abdullah b. Eyyûb el-Muharrimî, Muhammed b. İshâk es-Sagânî, Muhammed b. Sinân el-Kazzâz, Muhammed b. Yahyâ b. Ömer el-Vâsıtî, fakih Hubeyş b. Mübeşşir, Muhammed b. İbrâhîm b. Merba‘ el-Enmâtî, İsmâîl b. Sâlih el-Hulvânî ve Hâzim b. Yahyâ el-Hulvânî.\nHepsi dediler ki: “Kur’ân Allah’ın kelâmıdır, mahlûk değildir; kim ‘mahlûktur’ derse kâfirdir.”
+^ -
++
+487 |  | Şam, sugûr ve avâsım ehlinden: Ertât b. el-Münzir, Abdurrahmân b. Amr el-Evzâî, Seleme b. Amr el-Ukaylî, Ebû İshâk İbrâhîm b. Muhammed el-Fezârî, Mahled b. el-Hüseyin el-Massîsî, Ali b. Bekkâr, Muhammed b. Seleme el-Harrânî, Bakıyye b. el-Velîd, Velîd b. Müslim, Damra b. Rebîa, Revvâd b. el-Cerrâh, Yûsuf b. Esbât, Abdürrezzâk b. Hemmâm, Ebû Katâde Abdullah b. Vâkıd el-Harrânî, Muhammed b. Yûsuf el-Firyâbî, Muâfâ b. İmrân el-Mevsılî, Zeyd b. Ebi’z-Zerkâ, Ebû Tevbe er-Rebî‘ b. Nâfi‘, Heysem b. Cemîl, Mûsâ b. Dâvûd, Abdüla‘lâ b. Müshir ed-Dımaşkî, Âdem b. Ebî İyâs el-Askalânî, Mervân b. Muhammed et-Tâtarî, Hişâm b. Ammâr ed-Dımaşkî, Abbâs b. el-Velîd b. Subh, Îsâ b. Yûnus el-Fâhûrî, Ubeyd b. Âdem b. Ebî İyâs, Îsâ b. Muhammed Ebû Umeyr er-Remlî, Muhammed b. el-Musaffâ, Süleymân b. Hassân eş-Şâmî, Mahmûd b. Hâlid es-Sülemî, Kâsım b. Osman el-Cûî, Muhammed b. el-Vezîr ed-Dımaşkî, Müseyyeb b. Vâdıh, Hârûn b. Zeyd b. Ebi’z-Zerkâ, Muhammed b. el-Mütevekkil el-Askalânî, Ömer b. Osman b. Kesîr, Muhammed b. Avf el-Himsî, İshâk b. Süveyd er-Remlî, Muhammed b. Muhammed b. Mus‘ab es-Sûrî, Hâmid b. Yahyâ el-Belhî, Yahyâ b. Halef el-Mukri’, Muhammed b. Îsâ b. et-Tabbâ‘, Abdullah b. Muhammed en-Nüfeylî, Bişr b. Müslim b. Abdülhamîd et-Tenûhî, Saîd b. el-Mugîre es-Sayyâd el-Massîsî, Massîsa kâdısı Dâvûd b. Mansûr, Ebû Yûsuf el-Gasûlî, Ahmed b. Ebî Şuayb el-Harrânî, İsmâîl b. Ubeyd b. Ebî Kerîme el-Harrânî, Muhammed b. Yezîd el-Eslemî, Massîsa’ya yerleşmiş Süneyd b. Dâvûd el-Bağdâdî, Massîsa’ya yerleşmiş Abde b. Süleymân el-Mervezî, Saîd b. Rahme, Ali’nin kardeşi Ahmed b. Harb el-Mevsılî, İshâk b. Zerîk, Meymûn b. el-Asbağ en-Nasîbî, sınır şehrine yerleşmiş İbrâhîm b. Saîd el-Cevherî el-Bağdâdî, Abdullah b. Muhammed ed-Daîf, Abdülhamîd b. Muhammed b. el-Müstâm el-Harrânî, Muhammed b. Cebele er-Râfikî, Tarsus’a yerleşmiş Muhammed b. Mes‘ûd el-Acemî, Zerkân b. Muhammed el-Bağdâdî, Muhammed b. Âdem el-Massîsî, Nasr b. Mansûr ve Ahmed b. Abdurrahmân b. el-Mufaddal el-Harrânî.\nHepsi dediler ki: “Kur’ân Allah’ın kelâmıdır, mahlûk değildir; kim ‘mahlûktur’ derse kâfirdir.”
+^ -
+488 |  | Mısır ehlinden ve onlardan sayılanlardan: Ebü’l-Hâris el-Leys b. Sa‘d el-Fehmî, Abdullah b. Lehîa, Ammâr b. Sa‘d et-Tücîbî, Saîd b. el-Hakem b. Ebî Meryem, Amr b. er-Rebî‘ b. Târık, Ebü’l-Esved en-Nadr b. Abdülcebbâr, Asbağ b. el-Ferec, Ahmed b. Müslim, Ebû Ya‘kûb Yûsuf b. Yahyâ el-Büveytî, Harmele b. Yahyâ, Hâris b. Miskîn, İsmâîl b. Yahyâ el-Müzenî, Rebî‘ b. Süleymân el-Murâdî, Yûnus b. Abdüla‘lâ, Hârûn b. Saîd el-Eylî, Müemmel b. İhâb er-Rub‘î, İshâk b. ed-Dayf, Muhammed b. Dâvûd b. Ebî Nâciye el-İskenderânî, Ebû Ubeydullah Ahmed b. Abdurrahmân b. Vehb, Sa‘d b. Abdullah b. Abdülhakem, Hâlid b. Yezîd el-Eylî ve Muhammed b. Abdullah el-İskenderânî.\nHepsi dediler ki: “Kur’ân Allah’ın kelâmıdır, mahlûk değildir; kim ‘mahlûktur’ derse kâfirdir.”
+^ -
+=< ومن أهل الري
+489 |  | Rey ehlinden ve onlardan sayılanlardan: Cerîr b. Abdülhamîd, Ebû Ca‘fer Îsâ b. Mâhân er-Râzî, Amr b. Ebî Kays, Osman b. Zâide, Yahyâ b. ed-Durays, Seleme b. el-Fadl el-Ensârî, Rey kâdısı Anbese b. Saîd, Abdullah b. Ebî Ca‘fer er-Râzî, Osman b. Zâide’nin dâmadı Abdülazîz b. Ebî Osman, İshâk b. Süleymân er-Râzî, Ali b. Ebî Bekr el-İsfezenî, Hâris b. Müslim er-Rûzî, Abdurrahmân ed-Deştekî, Muhammed b. Saîd b. Sâbık, boğazlanan zâhid Ali er-Râzî, Rey kâdısı Fadl b. Gânim, Osman b. Zâide’nin dostu Amr b. Îsâ, Abdurrahmân b. el-Hakem b. Beşîr b. Süleymân, İbrâhîm b. Mûsâ er-Râzî, Ebû Ca‘fer Muhammed b. Mihrân el-Cemmâl, Yahyâ b. el-Mugîre es-Sa‘dî, Sehl b. Osman el-Askerî, Mukâtil b. Muhammed er-Râzî, Yahyâ b. Abdürrahîm, Abdüsselâm b. Âsım el-Hisincânî, Muhammed b. Humeyd, Nûh b. Enes el-Mukri’, Hafs b. Ömer el-Mihrikânî, Ebû Hasîn Yahyâ b. Süleym, Ebü’l-Hüseyin Muhammed b. Îsâ ed-Dâmegânî, İbn Ebî Süreyc diye bilinen Ahmed b. es-Sabbâh, İshâk b. el-Haccâc, Ahmed b. Abdurrahmân ed-Deştekî, Muhammed b. İdrîs el-Mukri’ ed-Dendânî, Ca‘fer b. Muhammed el-Alevî, Ebû Hârûn Muhammed b. Hâlid el-Hazzâz, Muhammed b. Hammâd et-Tihrânî, Muhammed b. Abdurrahmân el-Herevî, Rey’e yerleşmiş Ca‘fer b. Münîr el-Medâinî, Muhammed b. Âsım en-Nasrâbâzî, Ca‘fer b. Muhammed b. Hârûn b. Uzre el-Kattân, A‘yen b. Zeyd, Ebû Maîn el-Hüseyin b. el-Hasan et-Tabersî er-Râzî, Haccâc b. Hamza el-İclî el-Haşşâbî, Muhammed b. Ammâr b. el-Hâris, Ebû Zur‘a Ubeydullah b. Abdülkerîm ve Ebû Hâtim Muhammed b. İdrîs b. el-Münzir el-Hanzalî.\nHepsi dediler ki: “Kur’ân Allah’ın kelâmıdır, mahlûk değildir; kim ‘mahlûktur’ derse kâfirdir.”
+^ -
+=< ومن كور الجبال
+489.1 |  | Cibâl kûrelerinden İsfahan ehli: es-Sevrî’nin hizmetçisi, Cebr diye bilinen Isâm b. Yezîd, en-Nu‘mân b. Abdüsselâm’ın arkadaşı Sâlih b. Mihrân, Ebû Mes‘ûd Ahmed b. el-Furât er-Râzî, Abdürrezzâk b. Bekr el-Isbahânî, Üseyd b. Âsım, İbrâhîm b. Bûye, Ahmed b. Mehdî, Ahmed b. Isâm b. Abdülkebîr b. Ebî Gamra el-Ensârî, Muhammed b. Mûsâ b. Sâlim el-Kâsânî, Hemedân’a yerleşmiş İbrâhîm b. Ahmed b. Yaîş el-Bağdâdî, Hemedân’a yerleşmiş Abdülhamîd b. Isâm el-Cürcânî, Ahmed b. Muhammed b. Saîd b. Ebân b. Sâlih et-Teb‘î el-Hemedânî, Muhammed b. İmrân b. Habîb b. el-Kâsım el-Kureşî, Hârûn b. Mûsâ el-Hemedânî, Hemedân’a yerleşmiş İbrâhîm b. Mes‘ûd el-Kazvînî, Ahmed b. Mihrân b. el-Münzir, Ahmed b. Abdullah eş-Şa‘rânî, Ebû Ahmed Mahmûd b. Hâlid, Nadr b. Abdullah ed-Dîneverî, Kazvîn’e yerleşmiş Ali b. Muhammed et-Tanâfisî el-Kûfî ve Yahyâ b. Abdek el-Kazvînî.
+^ -
+:l Ara metin
+490 | Abdurrahmân b. Ebî Hâtim → Muhammed b. Ahmed b. Muhammed b. Amr b. Îsâ → babası | Muhammed b. Ahmed b. Muhammed b. Amr b. Îsâ’nın babası dedi ki: Kur’ân’ın mahlûk olduğuna dair mihne mektubu Kazvîn’de okununca mescid ehlinden bir uğultu işittim: “Hayır! Ona hiçbir itibar yoktur!” Hepsi dediler ki: “Kur’ân Allah’ın kelâmıdır, mahlûk değildir; kim ‘mahlûktur’ derse kâfirdir.”
+& kâle, haddesenâ, semi‘tü
+^ لما قرئ
+=< ذكر أهل خراسان
+491 |  | Horasan ehlinin ve onlardan sayılanların zikri: İbrâhîm b. Tahmân el-Herevî, Abdullah b. el-Mübârek el-Mervezî, Fadl b. Mûsâ es-Sînânî, Nadr b. Şümeyl el-Mervezî, Nadr b. Muhammed el-Mervezî, Ebû Tümeyle Yahyâ b. Vâdıh el-Ensârî, Abbâd b. Râşid el-Mervezî, Hârice b. Mus‘ab es-Serahsî, Sehl b. Müzâhim el-Mervezî, Abdullah b. Osman, Ali b. el-Hasan b. Şakîk, Ebû Muâz Hâlid b. Süleymân el-Belhî, Muâz b. Hâlid es-Sincî, Ahmed b. Şebbûye el-Mervezî, İshâk b. Râhûye, Sadaka b. el-Fadl el-Mervezî, Ali b. Hucr es-Sa‘dî, Abde b. Abdürrahîm, Ebû Akîl Muhammed b. Hâcib el-Mervezî, Ebû Ammâr el-Hüseyin b. Hureys el-Mervezî, Mahmûd b. Gaylân, Muhammed b. Abdülazîz b. Ebî Rizme, Muhammed b. Ali b. el-Hasan b. Şakîk, Ali b. Haşrem, Sâlih b. Mismâr, Ahmed b. Mansûr Zâc ve Süleymân b. Ma‘bed es-Sincî.\nHepsi dediler ki: “Kur’ân Allah’ın kelâmıdır, mahlûk değildir; kim ‘mahlûktur’ derse kâfirdir.”
+^ -
+=< جماعة من البلخيين
+492 |  | Belhlilerden bir topluluk: Ömer b. Hârûn el-Belhî, Hüseyin b. Süleymân, Ebû Mutî‘, Mukâtil b. el-Fadl, Müsâfir b. Mâhân, Belh kâdısı İbnü’r-Rimmâh, Leys b. Müsâvir, İbrâhîm b. Yûsuf el-Belhî ve oğlu Abdurrahmân, Sa‘d b. Muâz el-Mervezî, Hafs b. Abdurrahmân, Şeddâd b. Hükmî (metinde böyle), Kuteybe b. Saîd, Ahmed b. Harb, Ahmed b. Hafs, Eyyûb b. el-Hasan, Muhammed b. Yezîd, Tarhân, Abd b. Vehb el-Belhî, Ahmed b. Ya‘kûb el-Âbid el-Belhî, Muhammed b. Ca‘fer el-Belhî, Ahmed b. Muhammed el-Belhî, Muhammed b. Yahyâ el-Belhî, Ali b. Habîb el-Belhî, Dâvûd b. Mihrâk el-Fâryâbî, Muhammed b. Ebî Muâz el-Belhî, İbrâhîm b. Ahmed el-Belhî, Ahmed b. Ya‘kûb el-Belhî, Vekî‘in müstemlîsi Muhammed b. Ebân, Muhammed b. el-Fadl el-Belhî ve Muhammed b. Havneze el-Belhî.\nHepsi dediler ki: “Kur’ân Allah’ın kelâmıdır, mahlûk değildir; kim ‘mahlûktur’ derse kâfirdir.”
+^ -
+=< أهل نيسابور
+493 |  | Nîsâbur, Buhârâ, Semerkant ehli ve diğerleri: Yahyâ b. Yahyâ en-Nîsâbûrî, Ahmed b. en-Nadr en-Nîsâbûrî, Muhammed b. Yahyâ ez-Zühlî, Muhammed b. Râfi‘ en-Nîsâbûrî, Ahmed b. Saîd er-Râzî, Muhammed b. Akîl en-Nîsâbûrî, Ahmed b. Saîd ed-Dârimî, Yahyâ b. Muhammed b. Yahyâ ez-Zühlî, Muhammed b. Amrûye el-Herevî, Humeyd b. Zencûye en-Nesevî, Muhammed b. Abdülazîz el-Bârûdî, Abdullah b. Ebî Avâne eş-Şâşî, Abdullah b. Abdurrahmân es-Semerkandî, Muhammed b. İsmâîl el-Buhârî, Seleme b. Muhammed b. Mücâşi‘ es-Semerkandî, Ahmed b. Seleme en-Nîsâbûrî, Fadl b. Muhammed en-Nîsâbûrî, Ahmed b. Muhammed en-Nîsâbûrî, Ahmed b. Osman en-Nesevî ve Muâz b. Muhammed b. Muâz en-Nesevî.\nHepsi dediler ki: “Kur’ân Allah’ın kelâmıdır, mahlûk değildir; kim ‘mahlûktur’ derse kâfirdir.”
+^ -
+=< فهؤلاء خمس
+493.1 |  | İşte bunlar, hayırlı sahâbe dışında, asırların farklılığı, yılların ve senelerin geçmesi üzere tâbiînden, tâbiînin tâbiîlerinden ve kendilerinden razı olunan imamlardan beş yüz elli kişi ya da daha fazlasıdır. İçlerinde, insanların sözlerini aldığı ve mezheplerini din edindiği yüz kadar imam vardır. Muhaddislerin sözünü nakletmekle uğraşsaydım adları pek çok bine ulaşırdı; fakat kısalttım ve kısaltmak için senedleri çıkardım. Bunlardan asır asır naklettim; hiçbir inkâr eden onlara karşı çıkmaz. Onların sözünü inkâr edeni ise tövbeye çağırdılar ya da öldürülmesini veya sürgün edilmesini veya asılmasını emrettiler. Ümmet arasında şu konuda ihtilaf yoktur: “Kur’ân mahlûktur” diyen ilk kişi, yirmi küsur senelerinde Ca‘d b. Dirhem, sonra Cehm b. Safvân’dır. Ca‘d’ı Hâlid b. Abdullah el-Kasrî öldürdü; Cehm ise Hişâm b. Abdülmelik’in hilâfetinde Merv’de öldürüldü. İnşallah ikisinin kıssasını zikredeceğim. İlim ehlinin onlar hakkında gerekli gördüğü hadleri, onlarla ilişkiyi kesmeyi ve onlardan uzak durmayı zikretmekle başlıyorum; tâ ki Müslümanlar için onlar hakkında bir örnek ve önder bulunsun.
+^ -
+:l Ara metin
+@ Kur’ân mahlûktur diyen hakkında fetva verenlerden rivayet edilenlerin bağlamı
+@ar *
+493.2 |  | Fakihlerden: Mâlik b. Enes, Muhammed b. Abdurrahmân b. Ebî Leylâ ve Süfyân b. Uyeyne.\nHalifelerden: Ebû Ca‘fer el-Mansûr; Mu‘temir b. Süleymân et-Teymî, Yahyâ b. Saîd el-Kattân, Abdurrahmân b. Mehdî, Muâz b. Muâz, Vekî‘ b. el-Cerrâh ve babası, Abdullah b. Dâvûd el-Hureybî, Ali b. Âsım, Şebâbe b. Sevvâr, Ebü’n-Nadr Hâşim b. el-Kâsım, Hammâd b. Mes‘ade, Affân b. Müslim, Ebû Mus‘ab Ahmed b. Ebî Bekr ez-Zührî, Haccâc b. el-Minhâl, İshâk b. İbrâhîm el-Huneynî, Muâviye b. Amr, Bişr b. el-Velîd, Ebû Ubeyd el-Kâsım b. Sellâm, Ebû Sevr, Muhammed b. Beşşâr, Abbâs b. Abdülazîm el-Anberî ve Muhammed b. Yahyâ el-Kutaî.
+^ -
+:l Ara metin
++
+494 | Ahmed b. İbrâhîm el-Abkasî → Muhammed b. İbrâhîm b. Abdullah → Ali b. Zeyd el-Ferâizî → Yahyâ b. Halef el-Mukri’ → Mâlik b. Enes | Yahyâ b. Halef el-Mukri’ dedi ki: Mâlik b. Enes’in yanındaydım; bir adam ona dedi ki: “Ey Ebû Abdullah! ‘Kur’ân mahlûktur’ diyen bir adam hakkında ne dersin?” Mâlik b. Enes dedi ki: “Onu öldürün; kâfirdir.” (Adam) dedi ki: “Ey Ebû Abdullah! Ben onu söylemedim; sana ancak ‘Bir insan söyledi’ dedim.” Mâlik b. Enes dedi ki: “Ben onu ancak senden işittim.”
+& ahberanâ, haddesenâ, haddesenâ, haddesenâ, kâle
+% Ahmed b. İbrâhîm el-Abkasî’den yüz yüze icâzetle.
+^ كنت عند
+495 | Abdurrahmân b. Ebî Hâtim → babası → Meymûn b. Yahyâ el-Bekrî → Mâlik b. Enes | Mâlik b. Enes dedi ki: “Kim ‘Kur’ân mahlûktur’ derse tövbeye çağrılır; tövbe ederse (ne âlâ), etmezse boynu vurulur.”
+& kâle, haddesenâ, haddesenâ, kâle
+^ من قال القرآن
+496 | Abdurrahmân → Muhammed b. Ahmed el-Bağdâdî → Ya‘kûb b. Dînâr → Abdullah b. Nâfi‘ es-Sâyiğ → Mâlik b. Enes | Abdullah b. Nâfi‘ es-Sâyiğ dedi ki: Mâlik b. Enes’e dedim ki: “Irak’ta bir topluluk ‘Kur’ân mahlûktur’ diyor.” Elini elimden çekti; öğle, ikindi ve akşam (boyunca) benimle konuşmadı. Yatsı olunca bana dedi ki: “Ey Abdullah b. Nâfi‘! Bu söz sana nereden geldi? Kalbime küfür olan bir şey bıraktın. Bu sözün sahibi öldürülür, tövbeye çağrılmaz.”
+& kâle, haddesenâ, haddesenâ, an, kâle
+^ قال: قلت لمالك
+497 | Muhammed b. Abdullah b. Yûsuf → Ahmed b. el-Hasan → Abdullah b. Ahmed → Ebü’l-Hasan b. el-Attâr Muhammed b. Muhammed → Şüreyh b. en-Nu‘mân → Abdullah b. Nâfi‘ | Şüreyh b. en-Nu‘mân dedi ki: Abdullah b. Nâfi‘e sordum ve ona dedim ki: “Bizim tarafımızda ‘Kur’ân mahlûktur’ diyen var.” Bunu büyük bir şey saydı; acı ve hüzün içinde “innâ lillâh” demeye devam etti. Abdullah b. Nâfi‘ dedi ki: Mâlik b. Enes dedi ki: “Kim ‘Kur’ân mahlûktur’ derse, tövbesi anlaşılıncaya kadar hapsedilir.”
+& ahberanâ, haddesenâ, haddesenâ, haddesenî, semi‘tü, kâle
+^ سألت عبد الله
+498 | Abdurrahmân b. Ebî Hâtim → babası → Hasan b. es-Sabbâh → Şüreyh → Abdullah b. Nâfi‘ | (Abdullah b. Nâfi‘den) bunun benzeri (rivayet edildi).
+& kâle, haddesenâ, haddesenâ, haddesenâ, an
+^ مثله
+499 | Muhammed b. Ebî Attâb ve Sâlih b. Ahmed → babası → Şüreyh → Abdullah | (Abdullah’tan) bunun benzeri (rivayet edildi).
+& an, an, an, an
+% Arapça «ورواه عن» diye başlar; rivayet edenin adı yazılmamıştır.
+% «عن أبيه» Sâlih b. Ahmed’den sonra gelir; “babası” Sâlih’in babasıdır.
+^ مثله
+500 | Abdurrahmân → babası → Hasan b. Beyân → Şüreyh b. en-Nu‘mân → Abdullah b. Nâfi‘ es-Sâyiğ → Mâlik | Hasan b. Beyân dedi ki: (Hicrî) doksan senesinde Abdullah b. Nâfi‘ es-Sâyiğ’i konuşurken işittim, fakat onu ezberleyemedim. Sonra Şüreyh b. en-Nu‘mân’ı işittim; dedi ki: Abdullah b. Nâfi‘ es-Sâyiğ’i şöyle derken işittim —ve hikâyeyi zikretti; nihayet Mâlik dedi ki—: “Yazık sana ey Abdullah! Bu meseleyi sana kim sordu?” Dedim ki: “Tanımadığım iki adam.” Dedi ki: “Onları ara, ikisini ya da birini bana getir de emîre gideyim ve ona onları öldürmesini ya da hapsetmesini ya da sürgün etmesini emredeyim.”
+& kâle, haddesenâ, haddesenâ, semi‘tü, semi‘tü, kâle
+^ سمعت عبد الله بن نافع الصايغ سنة
+@ Süfyân b. Uyeyne’nin sözü
+@ar *
+501 | Muhammed b. Ubeydullah b. Yûsuf → Ahmed b. Selmân → Abdullah b. Ahmed → Ebü’l-Hasan b. el-Attâr Muhammed b. Muhammed → Yahyâ b. es-Serrâc → İbn Uyeyne | Yahyâ b. es-Serrâc dedi ki: İbn Uyeyne’nin yanındaydık; insanlar karıştı. İbn Uyeyne dedi ki: “Bu ne?” Dediler ki: “Bişr el-Merîsî geldi.” Dedi ki: “Ne diyor?” Dediler ki: “Kur’ân mahlûktur diyor.” Dedi ki: “Bana iki şahit getirin de valiye onun boynunu vurmasını emredeyim.”
+& ahberanâ, haddesenâ, haddesenâ, haddesenî, semi‘tü, kâle
+^ كنا عند
+@ Abdurrahmân b. Mehdî
+@ar *
+502 | Muhammed b. Abdurrahmân b. el-Abbâs → Abdullah b. Muhammed el-Begavî → Hafs b. Amr er-Rabâlî → Abdurrahmân b. Mehdî; ayrıca Muhammed b. el-Hüseyin el-Fârisî ve Kâsım b. Ca‘fer → Hasan b. Yahyâ b. Ayyâş → Hafs b. Ömer → Abdurrahmân b. Mehdî | Abdurrahmân b. Mehdî diyordu ki: “Hevâ ehlinden Cehmiyye dışında hiç kimseyi kılıca arz etmezdim.” er-Rabâlî dedi ki: “Vallahi onlar kâfirdir.”
+& ahberanâ, haddesenâ, haddesenâ, semi‘tü; ahberanâ, haddesenâ, haddesenâ, semi‘tü
+% Birinci yolda Hafs b. Amr er-Rabâlî, ikinci yolda Hafs b. Ömer diye geçer.
+^ ما كنت
+504 | Muhammed b. Muhammed b. Ömer el-Hatîb el-Enbârî → Ahmed b. Ya‘kûb el-Karancelî → Ahmed b. Asram el-Ma‘kılî → Hârûn el-Hammâl → İbrâhîm b. Ziyâd Seblân → Abdurrahmân b. Mehdî | Abdurrahmân b. Mehdî diyordu ki: “Köprünün başında durmayı, geçen herkese sormayı, ‘Kur’ân mahlûktur’ derse boynunu vurup onu suya atmayı isterdim.”
+& ahberanâ, haddesenâ, haddesenâ, kâle, ahberanâ, semi‘tü
+% Hârûn el-Hammâl’dan önce yalnız «قال:» yazılıdır; sîga yoktur.
+^ لوددت
+505 | Ahmed b. Muhammed b. Ebî Müslim → Ahmed b. Selmân → Abdullah b. Ahmed → babası → Abdurrahmân b. Mehdî | Abdurrahmân b. Mehdî diyordu ki: “Allah’ın (azze ve celle) Mûsâ b. İmrân ile konuşmadığını iddia eden tövbeye çağrılır; tövbe ederse (ne âlâ), etmezse boynu vurulur.”
+& ahberanâ, haddesenâ, haddesenâ, haddesenâ, semi‘tü
+^ من زعم
+@ Vekî‘ b. el-Cerrâh’ın sözü
+@ar *
+506 | Abdurrahmân b. Ahmed el-Kazvînî → Muhammed b. Ali b. Muhammed b. Âmir en-Nihâvendî → Ahmed b. Abdullah → İbrâhîm b. el-Cüneyd → Kâsım b. Yezîd el-Eşca‘î Ebû Muhammed → Vekî‘ b. el-Cerrâh | Vekî‘ b. el-Cerrâh diyordu ki: “Kim Kur’ân’ın mahlûk olduğunu iddia ederse Kur’ân’ın muhdes olduğunu iddia etmiş olur; kim de Kur’ân’ın muhdes olduğunu iddia ederse Allah’ın Muhammed’e ﷺ indirdiğini inkâr etmiş olur. Tövbeye çağrılır; tövbe ederse (ne âlâ), etmezse boynu vurulur.”
+& ahberanâ, haddesenâ, haddesenâ, haddesenâ, haddesenî, semi‘tü
+% Ahmed b. Abdullah, Ebû Sahra’nın vekilidir.
+^ من زعم
+@ Abdullah b. Dâvûd el-Hureybî
+@ar *
+507 | Muhammed b. Ömer b. Muhammed b. Humeyd → Muhammed b. Mahled → İshâk b. İbrâhîm el-Begavî → İbn Hazm en-Neccâr → Abdullah b. Dâvûd el-Hureybî | Abdullah b. Dâvûd el-Hureybî diyordu ki: “Kim ‘Kur’ân mahlûktur’ derse, imamın onu tövbeye çağırması gerekir; tövbe ederse (ne âlâ), etmezse boynu vurulur.”
+& ahberanâ, haddesenâ, haddesenâ, ahberanî, semi‘tü
+^ من قال
+@ Şebâbe ve Ebü’n-Nadr
+@ar *
+508 | Ahmed b. Ubeyd → Muhammed b. el-Hüseyin → Ahmed b. Züheyr → Yahyâ b. Yûsuf → Şebâbe | Şebâbe diyordu ki: “Benim, Ebü’n-Nadr Hâşim b. el-Kâsım’ın ve fakihlerden bir topluluğun görüşü, Bişr el-Merîsî’nin kâfir olduğunda birleşti; tövbe ederse (ne âlâ), etmezse boynu vurulur.”
+& ahberanâ, ahberanâ, haddesenâ, haddesenâ, semi‘tü
+^ اجتمع
+@ Ebû Ubeyd el-Kâsım b. Sellâm
+@ar *
+509 | Muhammed b. Ömer b. Muhammed el-Hatîb el-Enbârî → Ahmed b. Ya‘kûb el-Karancelî → Ahmed b. Asram b. Huzeyme el-Mugaffelî → Abdülmelik es-Simsâr → Ebû Ubeyd el-Kâsım b. Sellâm | Abdülmelik es-Simsâr dedi ki: Ben, Ali b. el-Medînî ve Ebû Ubeyd el-Kâsım b. Sellâm bir araya geldik. Ali ya da başkası dedi ki: “Ey Ebû Ubeyd! ‘Kur’ân mahlûktur’ diyen hakkında ne dersin?” Ebû Ubeyd dedi ki: “Bu, kendisine öğretilen ve ‘Bu küfürdür’ denilen bir adamdır; dönerse (ne âlâ), dönmezse boynu vurulur.”
+& ahberanâ, haddesenâ, haddesenâ, kâle, kâle
+^ اتفقت
+510 | el-Mugaffelî → Hüseyin b. Hayyân → Ebû Ubeyd el-Kâsım b. Sellâm | Ebû Ubeyd el-Kâsım b. Sellâm diyordu ki: “Kim ‘Kur’ân mahlûktur’ derse, ‘Allah üçün üçüncüsüdür’ diyenden daha kötüdür —Allah yücedir ve yücelerden yücedir—. Onlar (bir şey) ispat ediyorlar; bunlar ise manayı ispat etmiyorlar.”
+& kâle, kâle, semi‘tü
+^ من قال
+511 | Muhammed b. Ubeydullah b. el-Haccâc → Ahmed b. el-Hasan → Abdullah b. Ahmed → Ebû Abdurrahmân Abdullah b. Ahmed b. Şebbûye → Muhammed b. Beşşâr Bündâr | Muhammed b. Beşşâr Bündâr diyordu ki: “Davetçiler tövbeye çağrılmaz.” Ve dedi ki: “Falan yanımda olsaydı onu tövbeye çağırmazdım.”
+& ahberanâ, haddesenâ, haddesenâ, haddesenî, semi‘tü
+^ الدعاة
+512 | Muhammed b. Ömer b. Muhammed b. Humeyd → İbrâhîm b. Abdüssamed → Muhammed b. el-Velîd → Kâsım b. Ebî Süfyân → Abdüssamed b. Muhammed b. Habîb b. Ebî Habîb → babası → dedesi | Abdüssamed’in dedesi dedi ki: Hâlid b. Abdullah el-Kasrî’yi kurban bayramı günü hutbe okurken gördüm. Dedi ki: “Sizden kurban kesmek isteyen gitsin, kurbanını kessin; Allah kurbanını mübarek kılsın. Ben de Ca‘d b. Dirhem’i kurban edeceğim; o, Allah’ın Mûsâ ile gerçekten konuşmadığını ve İbrâhîm’i dost edinmediğini iddia etti. Allah, Ca‘d’ın söylediğinden pek yüce ve münezzehtir.” Sonra (minberden) indi ve onu boğazladı. Ben derim ki: Bu Kâsım b. Ebî Süfyân, Muhammed b. Humeyd el-Ma‘merî’nin oğludur; bu hikâyeyi ondan Kuteybe b. Saîd rivayet etti ve onu sağlam buldu. Bu hikâyeyi ondan Abbâs b. Ebî Tâlib ve Hasan b. es-Sabbâh el-Bezzâr da rivayet etti. Hasan ile Abbâs’ın hadisinde, onlara Vâsıt’ta hutbe okuduğu (vardır).
+& ahberanâ, haddesenâ, haddesenâ, haddesenâ, haddesenâ, an, an
+^ شهدت
+@ Onun ne mirasçı olacağını ne de ona mirasçı olunacağını söyleyenler
+@ar =< يحيى بن سعيد القطان , وعبد الرحمن بن مهدي , ومحمد بن مقاتل
+512.1 |  | Yahyâ b. Saîd el-Kattân, Abdurrahmân b. Mehdî, Muhammed b. Mukâtil el-Abbâdânî, Muhammed b. Ebî Safvân ve Muhammed b. Cerîr et-Taberî.
+^ -
+:l Ara metin
+513 | Ali b. Muhammed b. Ahmed b. Bekrân → Hasan b. Muhammed b. Osman → Ya‘kûb b. Süfyân → Ebû Hâşim Ziyâd b. Eyyûb → Ebû Abdullah Ahmed b. Hanbel | Ebû Hâşim Ziyâd b. Eyyûb dedi ki: Ebû Abdullah Ahmed b. Hanbel’e dedim ki: “Ey Ebû Abdullah! Bir adam ‘Kur’ân mahlûktur’ dedi; ben de ona ‘Ey kâfir!’ dedim. Bunda bana bir günah görür müsün?” Dedi ki: “Abdurrahmân b. Mehdî şöyle derdi: ‘Onlardan bir akrabam olsa da sonra ölse ona mirasçı olmazdım.’” Horasanlı biri ona Farsça dedi ki: “‘Kur’ân mahlûktur’ diyene kâfir diyeyim mi?” Dedi ki: “Evet.”
+& ahberanâ, enbe’enâ, haddesenâ, semi‘tü, kâle
+^ قلت لأبي عبد الله
+514 | Ubeydullah b. Muhammed b. Ahmed → Ahmed b. Kâmil → Ebû Ca‘fer Muhammed b. Cerîr et-Taberî | Ahmed b. Kâmil dedi ki: Ebû Ca‘fer Muhammed b. Cerîr et-Taberî’yi sayamayacağım kadar (çok) şöyle derken işittim: “Kim inanarak ‘Kur’ân mahlûktur’ derse kâfirdir; kanı ve malı helaldir, Müslüman mirasçıları ona mirasçı olmaz; tövbeye çağrılır, tövbe ederse (ne âlâ), etmezse boynu vurulur.” Ona dedim ki: “Müslüman mirasçılarının ona mirasçı olmayacağını kimden (naklediyorsun)?” Dedi ki: “Yahyâ el-Kattân’dan ve Abdurrahmân b. Mehdî’den.” Kâdî İbn Kâmil’e “Peki malı kimin olur?” denildi. Dedi ki: “Müslümanlar için fey olur.”
+& ahberanâ, haddesenâ, semi‘tü
+^ ما لا أحصي
+@ Karısının boş olduğunu söyleyenler
+@ar *
+515 | Abdullah b. Müslim b. Yahyâ → Hüseyin b. İsmâîl → Sellâm b. Sâlim → Mûsâ b. İbrâhîm el-Verrâk → Abdullah b. el-Mübârek | Abdullah b. el-Mübârek dedi ki: “Kırk dokuz yıldır insanları şöyle derken işittim: ‘Kim Kur’ân mahlûktur derse karısı kesin olarak üç talakla boştur.’” (Mûsâ) dedi ki: Dedim ki: “Bu niçin?” Dedi ki: “Çünkü karısı Müslümandır; Müslüman bir kadın ise bir kâfirin nikâhı altında olmaz.”
+& ahberanâ, enbe’enâ, haddesenâ, haddesenâ, haddesenâ
+^ سمعت الناس
+516 | Abdurrahmân b. Ebî Hâtim → İshâk b. el-Haccâc → Ahmed b. el-Velîd → Ebü’l-Velîd et-Tayâlisî | Ebü’l-Velîd et-Tayâlisî dedi ki: “Kim ‘Kur’ân mahlûktur’ derse mürted menzilesinde olarak karısıyla arası ayrılır.”
+& kâle, haddesenâ, haddesenâ, haddesenâ
+^ من قال
+=< من قال: لا ينكحون
+@ Onlarla evlenilmeyeceğini, arkalarında namaz kılınmayacağını, hastalarının ziyaret edilmeyeceğini, cenazelerinde bulunulmayacağını ve İslâm velâyetinin onlarla Müslümanlar arasında kesildiğini söyleyenler
+@ar =< وروي عن سلام
+516.1 |  | (Bu,) Sellâm b. Ebî Mutî‘, Hammâd b. Zeyd, Süfyân b. Uyeyne, Süfyân es-Sevrî, Ebû Damra Enes b. İyâz, Ebû Muâviye ed-Darîr, Yezîd b. Zürey‘, Yezîd b. Hârûn, Hâtim b. İsmâîl, İbn Uleyye, Abdurrahmân b. Mehdî, Kabîsa b. Ukbe, Haccâc b. el-Minhâl, Ubeydullah b. Âişe, Fıtr b. Hammâd, Muallâ b. Mansûr er-Râzî, Ahmed b. Hanbel ve er-Rebî‘ b. Süleymân el-Murâdî’den rivayet edildi.
+^ -
+:l Ara metin
+517 | Ali b. Muhammed b. Ahmed b. Bekr → Hasan b. Muhammed b. Osman → Ya‘kûb b. Süfyân → Ahmed b. İbrâhîm ed-Devrakî → Züheyr Ebû Abdurrahmân es-Sicistânî → Sellâm b. Ebî Mutî‘ | Züheyr Ebû Abdurrahmân es-Sicistânî’den: Sellâm b. Ebî Mutî‘e Cehmiyyeyi sordu; dedi ki: “Kâfirdirler; arkalarında namaz kılınmaz.”
+& ahberanâ, haddesenâ, haddesenâ, semi‘tü, haddesenâ, kâle
+^ أنه سأل
+518 | eş-Şeyh Ebû Hâmid Ahmed b. Ebî Tâhir el-Fakîh → Ömer b. Ahmed b. Ali el-Vâiz → Muhammed b. Ebî Muhammed b. Ebî Saîd el-Mukri’ → Ubeydullah b. Muhammed el-Kerecî → Abdurrahmân b. Ömer Rusteh → Abdurrahmân b. Mehdî | Abdurrahmân b. Ömer Rusteh dedi ki: Abdurrahmân b. Mehdî’yi işittim; ona hevâ ehlinin arkasında namaz kılmayı sormuştum. Dedi ki: “Evet; şu iki sınıfın, Cehmiyye ile Râfıza’nın arkasında namaz kılınmaz. Çünkü Cehmiyye Allah’ın kitabını inkâr eden kâfirlerdir.”
+& ahberanâ, haddesenâ, haddesenâ, haddesenâ, haddesenâ, semi‘tü
+% Ubeydullah b. Muhammed el-Kerecî: Tarsus’ta.
+^ وسألته
+519 | Ali b. Ömer b. İbrâhîm → Mükrem b. Ahmed → Ahmed b. Atıyye → Ebû Süleymân el-Cûzcânî → Muhammed b. el-Hasan | Muhammed b. el-Hasan diyordu ki: “Vallahi ‘Kur’ân mahlûktur’ diyenin arkasında namaz kılmam. Bu konuda bana fetva sorulursa (namazın) iadesini emrederim.”
+& ahberanâ, haddesenâ, haddesenâ, semi‘tü, semi‘tü
+^ والله لا أصلي
+520 | Hasan b. Ahmed et-Taberî → Yûsuf b. Ali er-Rûyânî → Muhammed b. Hamdân et-Tarâifî el-Bağdâdî → er-Rebî‘ b. Süleymân | Muhammed b. Hamdân et-Tarâifî el-Bağdâdî dedi ki: er-Rebî‘ b. Süleymân’a Kur’ân’ı sordum. Dedi ki: “Allah’ın kelâmıdır, mahlûk değildir. Bundan başkasını söyleyen hastalanırsa onu ziyaret etmeyin, ölürse cenazesinde bulunmayın; o, azîm olan Allah’ı inkâr eden bir kâfirdir.”
+& ahberanâ, haddesenâ, haddesenâ, kâle
+^ سألت الربيع
