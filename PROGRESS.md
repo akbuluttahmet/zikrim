@@ -9,7 +9,7 @@ Her oturum: önce `SPEC.md`, sonra bu dosya. Bitince burayı güncelle (kitap, s
 | Sünen-i Ebî Dâvûd (`sunan/`) | isnad standardı (SPEC) | **tamamlandı** — 40/40 bölüm, 5275 madde (2026-10-29) | `dogrula.py`: 0 hata, 106 uyarı (aşağıda) |
 | eş-Şerîa (`seria/`) | isnad standardı (SPEC) | **tamamlandı** — 17/17 bölüm, 2169 madde (2026-10-29) | `dogrula.py`: 0 hata, 419 uyarı (265 müellif notu, 83 metin başı, 61 sîga, 10 ﷺ) |
 | ez-Zühd (`zuhd/`) | isnad standardı (SPEC) | **tamamlandı** — 8/8 bölüm, 2375 madde (2026-10-29) | `dogrula.py`: 0 hata, 108 uyarı (68 metin başı, 32 ﷺ, 4 sîga, 4 k) |
-| ez-Zühd ve’r-Rekāik (`mubarek/`) | isnad standardı (SPEC) | **sürüyor** — 288/1604 madde derlendi (p001–p016, 15 bab) (2026-10-31). İbnü’l-Mübârek (ö. 181). Şâmile 13028. | `dogrula.py mubarek`: 0 hata, 3 uyarı |
+| ez-Zühd ve’r-Rekāik (`mubarek/`) | isnad standardı (SPEC) | **sürüyor** — 360/1604 madde derlendi (p001–p020, 19 bab) (2026-10-31). İbnü’l-Mübârek (ö. 181). Şâmile 13028. | `dogrula.py mubarek`: 0 hata, 4 uyarı |
 | Fezâilü’s-sahâbe (`fezail/`) | isnad standardı (SPEC) | **tamamlandı** — 9/9 bölüm, 1965 madde (2026-10-29) | `dogrula.py`: 0 hata, 154 uyarı (114 metin başı, 22 sîga, 16 k, 1 kısa) |
 | İmam Ahmed (`ahmed/`) | isnad standardı (SPEC) | **tamamlandı** — 9/9 kitap, 2117 madde (2026-10-29) | `dogrula.py`: 0 hata, 76 uyarı (51 metin başı, 14 sîga, 9 k, 2 kısa) |
 | el-Âcurrî (`acurri/`) | isnad standardı (SPEC) | **tamamlandı** — 12/12 kitap, 825 madde (2026-10-29) | `dogrula.py`: 0 hata, 62 uyarı (38 metin başı, 17 sîga, 5 k) |
@@ -96,6 +96,8 @@ Hepsi: `python3 araclar/dogrula.py <kitaplık> --hepsi`. Sayılar yukarıdaki ta
 - 2026-10-30 — Lâlekâî II. cüz, l10 (Kur’ân, 131 madde, 354–520) ve l11 (tevakkuf, 21 madde, 520.1–544). l10’da 385 ve 500 senedindeki çöp adlar düzeltildi; 463, 465, 494 ve 510’un düşen zincirleri panele alındı. 520.1 Medine ehli (Hârûn el-Ferevî), 539.1 İbn Râhûye numarasız. Nüshada yok: 525, 534, 538, 539, 542. 535’in ikinci ad listesinin yüklemi nüshada yok. `dogrula.py`: 0 hata.
 
 - 2026-10-30 — Lâlekâî II. cüz, l09 (tevhid, 27 madde). Giriş 326.1; 331 ve 346 tahvîl (`info.to`). 333’te isim bahsi 333.1. 335’e yapışık ikinci rivayet 335.1. Nüshada yok: 334, 336, 337. 327’nin 477 semâ kaydı zincire girmedi. Sözün kaynağı: 333’te cevaplayan Ömer, 353’te cevaplayan Muhammed b. Eslem `kâle` ile; 351’de Ahmed’e giden lafız `semi‘tü`, metin soruyu soran İbrâhîm’le başlar. `dogrula.py`: 0 hata.
+
+- 2026-10-31 — ez-Zühd ve’r-Rekāik (`mubarek/`): p017–p020 çevrildi ve derlendi (294–365, 72 yeni hadis, 4 yeni bab, toplam 360/1604 madde). `dogrula.py mubarek`: 0 hata, 4 uyarı. `ravi.json` güncellendi.
 
 - 2026-10-30 — Lâlekâî tahvîl maddeleri (31) metne yönlendirildi: `info.to`, “Bu senedin metni bir sonraki rivayettedir (no. N).”, “Metne git › No. N”. Art arda: 1 ve 2 → 3, 92 ve 93 → 94, 145 ve 146 → 147. Hepsi aynı babda; GOZDEN’e yeni madde yok. `dogrula.py` Lâlekâî 40 → 10 uyarı (metin başı 33 → 4, kısa 1 → 0); diğer kitaplıklar aynı (toplam 3578 → 3548, 0 hata).
 
