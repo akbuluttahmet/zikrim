@@ -17,7 +17,7 @@ Her oturum: önce `SPEC.md`, sonra bu dosya. Bitince burayı güncelle (kitap, s
 | el-Hallâl (`hallal/`) | isnad standardı (SPEC) | **tamamlandı** — 7/7 kitap, 372 madde (2026-10-29) | `dogrula.py`: 0 hata, 38 uyarı (28 metin başı, 7 sîga) |
 | eş-Şâfiî (`safii/`) | isnad standardı (SPEC) | **tamamlandı** — 1/1 kitap, 547 madde (2026-10-29) | `dogrula.py`: 0 hata, 5 uyarı |
 | el-Buhârî (`buhari/`) | isnad standardı (SPEC) | **tamamlandı** — 3/3 kitap, 609 madde (2026-10-30): b03 Halku ef‘âli’l-ibâd, 302 madde | `dogrula.py --ravi`: 0 hata; nüshada numara yok, sırayla numaralandı; notlar `GOZDEN.md` |
-| Sahîh-i Buhârî (`sahih/`) | isnad standardı (SPEC) | **sürüyor** — k01–k22, k26–k29, k31–k33 tamam (2026-10-31), 1603 madde. Açık: k23 cenâiz, k24 zekât, k25 hac, k30 savm, sonra k34. 97 kitaptan 29’u bitti | `dogrula.py sahih`: 0 hata, 193 uyarı. Şâmile 1681 |
+| Sahîh-i Buhârî (`sahih/`) | isnad standardı (SPEC) | **sürüyor** — 39 kitap, 2405 madde (2026-10-31). Yeni: k23 cenâiz, k24 zekât, k25 hac, k30 savm, k35 selem, k36 şüf‘a, k38 havâle, k48 rehin, k50 mükâteb, k71 akîka. Sıradaki boşluk: k34 büyû‘. 97 kitaptan 39’u bitti | `dogrula.py sahih`: 0 hata. Şâmile 1681 |
 | ed-Dârimî (`darimi/`) | isnad standardı (SPEC) | **d01 tamam** — er-Red ale’l-Cehmiyye, 397 madde (2026-10-30). Sıradaki: Nakzu’d-Dârimî (d02) | `c[0]` = ed-Dârimî; 163, 253, 388 nüshada yok; notlar `GOZDEN.md` |
 | el-İbâne (`ibane/`) | isnad standardı (SPEC) | **tamam** — 22/22 bölüm (i01–i22), 3134 madde (2026-10-29) | `dogrula.py`: 0 hata, 163 uyarı |
 | Şerhu usûli’l-i‘tikâd (`lalekai/`) | isnad standardı (SPEC) | **II. cüz sürüyor** — mukaddime + l01–l12, 584 madde (2026-10-31). l12: 544.1–614, 70 madde (yeni düzen: `araclar/lalekai/` kaynak_kur.py → kaynak/, ceviri/lNN.txt → derle.py; kılavuz `araclar/lalekai/kilavuz.md`). Sıradaki: l13–l38 (yarım çeviriler `araclar/lalekai/ceviri/`: l13, l24, l28, l29, l30). **l09–l11 yeniden yapılmalı**: Grok sürümünde başlık parçalarına gömülü numarasız rivayetler (İbnü’l-Mübârek, Vekî‘, Ahmed b. Hanbel başlıkları) ve ad listeleri çevrilmemiş, bazı `k` değerleri kaymış | `dogrula.py`: 0 hata. l20 ve l23 ikiye bölündü (l20b, l23b). Kerâmât anahtarları 3000+N (etiket “Kerâmât, no. N”) |
@@ -74,6 +74,8 @@ Hepsi: `python3 araclar/dogrula.py <kitaplık> --hepsi`. Sayılar yukarıdaki ta
 - Sîga eşlemesinin kendi raporu: `araclar/siga_hizala_rapor.md` (195 lafzı bulunamayan halka, 83 belirsiz hizalama).
 
 ## Günlük
+
+- 2026-10-31 — Sahîh-i Buhârî k23 cenâiz (181), k24 zekât (147), k25 hac (288), k30 savm (139), k35 selem, k36 şüf‘a, k38 havâle, k48 rehin, k50 mükâteb, k71 akîka. Toplam 39 kitap, 2405 madde. `dogrula.py sahih`: 0 hata. Sıradaki: k34 büyû‘.
 
 - 2026-10-31 — ez-Zühd ve’r-Rekāik (İbnü’l-Mübârek, mubarek/) p013–p016 derlendi (madde 220–293, 72 yeni madde, toplam 288/1604, 15 bab). dogrula.py mubarek: 0 hata, 3 uyarı.
 
